@@ -1,0 +1,35 @@
+.btn-green-wrapper{
+    background-color:var(--base-lightBlue);
+    height:40px;
+    width:40px;
+    border-radius:50px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center; 
+}
+
+.btn-light-blue{
+    background-color:var(--base-lightBlue);
+    border-radius:50px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    width:fit-content;
+    gap:14px;
+    padding:16px 35px;    
+    border:1px solid transparent;
+    transition:all 0.3s ease-in-out;
+}
+
+.btn-light-blue:hover{
+    background-color:var(--base-white);
+    border:1px solid var(--base-lightBlue)
+}
+
+.btn-light-blue:hover p{
+    color:var(--text-lightBlue)
+}
+.btn-light-blue:hover img{
+    filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%) hue-rotate(96deg) brightness(92%) contrast(82%);
+}

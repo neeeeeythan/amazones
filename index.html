@@ -1,71 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name = 'description' content = '女性専用24時間ジムAmazones（アマゾネス）は女性による女性のための女性専用24時間ジムです。ジムに通った事がない方でも、安心のサポート体制で初心者に優しいフィットネスジムです。'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="女性専用24時間ジムAmazones（アマゾネス）は女性による女性のための女性専用24時間ジムです。ジムに通った事がない方でも、安心のサポート体制で初心者に優しいフィットネスジムです。"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazones（アマゾネス） | 初心者向け女性専用24時間ジム</title>
-     <!-- GLOBAL CSS -->
-      <link href = 'assets/css/global.css' rel = 'stylesheet' type = 'text/css'>
-</head>
-<body>
+    <!-- GLOBAL CSS -->
+    <link href="assets/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/buttons.css" rel="stylesheet" type="text/css" />
+
+    <!--TOP CSS JS-->
+    <link href="assets/css/top.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/top.js" defer></script>
+  </head>
+  
+  <body>
     <!--HEADER-->
-    <header class = 'I-header '>
-        <div class = 'pl-40 pr-30 py-18 flex flex-row items-center justify-between'> 
-            <div class = 'flex flex-row items-center flex-1 gap-24px'>
-                <img src="assets/img/top/icon_logo.svg" alt="アマゾネス" width  = '159.97px' height = '62.77px'>
-                <a href="#" class = 'text-black1 fw-500' class = 'fs-14'>アマゾネス</a>
-                <p class = 'font-outfit text-black1 fw-500 fs-13'>WOMEN ONLY24h GYM</p>
-            </div>
-
-            <div class = 'flex flex-row items-center gap-15px'>
-                <a href = '#' class = 'header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content'>
-                    <div class = 'icon-wrapper bg-white radius-100 flex flex-row items-center justify-center'>
-                        <img src="assets/img/top/icon_search.svg" alt="アイコン">
-                    </div>
-                    <div class = 'flex flex-row  items-end gap-5px'>
-                        <div class = 'flex flex-col items-start gap-8px'>
-                            <p class = 'text-white fs-14 fw-700 '>全店相互利用可能</p>
-                            <p class = 'text-white fs-14 fw-700 '>近くの店舗を探す</p>
-                        </div>
-                        <img src="assets/img/top/icon_arrow.svg" alt="アイコン">
-                    </div>
-                    
-                </a>
-
-                 <a href = '#' class = 'header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content'>
-                    <div class = 'icon-wrapper bg-white radius-100 flex flex-row items-center justify-center'>
-                        <img src="assets/img/top/icon_24.svg" alt="アイコン">
-                    </div>
-                    <div class = 'flex flex-row  items-end gap-5px'>
-                        <div class = 'flex flex-col items-start gap-8px'>
-                            <p class = 'text-white fs-14 fw-700 text-center'>24時間WEB予約可能</p>
-                            <p class = 'text-white fs-15 fw-700 text-center'>体験予約はこちら</p>
-                        </div>
-                        <img src="assets/img/top/icon_arrow.svg" alt="アイコン">
-                    </div>
-                    
-                </a>
-                
-            </div>
-
-            <!--FLOATING HEADER MENU-->
-            <div class = 'header-floating-menu flex flex-col items-center justify-between relative'>
-                <div class = 'flex flex-col items-center gap-13px'>
-                    <img src="assets/img/top/icon_menu.svg" alt="">
-                    <p class = 'font-outfit fs-14 fw-500 text-white'>MENU</p>
-                </div>
-                <p class = 'text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500'>©2026 Wellness Land Co., Ltd. </p>
-                <div class = 'scroll-arrow flex flex-col items-center gap-8px'>
-                    <p class = 'font-outfit fs-12 text-white ls-10 fw-500'>SCROLL DOWN</p>
-                    <img src="assets/img/top/icon_scroll_arrow.svg" alt="">
-                </div>
-            </div>
-         
+    <header class="I-header">
+      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+        <div class="flex flex-row items-center flex-1 gap-24px">
+          <img
+            src="assets/img/top/icon_logo.svg"
+            alt="アマゾネス"
+            width="159.97px"
+            height="62.77px"
+          />
+          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
+          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
-        
+
+        <div class="flex flex-row items-center gap-15px">
+          <a
+            href="#"
+            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+          >
+            <div
+              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+            >
+              <img src="assets/img/top/icon_search.svg" alt="アイコン" />
+            </div>
+            <div class="flex flex-row items-end gap-5px">
+              <div class="flex flex-col items-start gap-8px">
+                <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+              </div>
+              <img src="assets/img/top/icon_arrow.svg" alt="アイコン" />
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+          >
+            <div
+              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+            >
+              <img src="assets/img/top/icon_24.svg" alt="アイコン" />
+            </div>
+            <div class="flex flex-row items-end gap-5px">
+              <div class="flex flex-col items-start gap-8px">
+                <p class="text-white fs-14 fw-700 text-center">
+                  24時間WEB予約可能
+                </p>
+                <p class="text-white fs-15 fw-700 text-center">
+                  体験予約はこちら
+                </p>
+              </div>
+              <img src="assets/img/top/icon_arrow.svg" alt="アイコン" />
+            </div>
+          </a>
+        </div>
+
+        <!--FLOATING HEADER MENU-->
+        <div
+          class="header-floating-menu flex flex-col items-center justify-between relative"
+        >
+          <div class="flex flex-col items-center gap-13px">
+            <img src="assets/img/top/icon_menu.svg" alt="アイコン" />
+            <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+          </div>
+          <p
+            class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500"
+          >
+            ©2026 Wellness Land Co., Ltd.
+          </p>
+          <div class="scroll-arrow flex flex-col items-center gap-8px">
+            <p class="font-outfit fs-12 text-white ls-10 fw-500">SCROLL DOWN</p>
+            <img src="assets/img/top/icon_scroll_arrow.svg" alt="アイコン" />
+          </div>
+        </div>
+      </div>
     </header>
     <!--END OF HEADER-->
-    
-</body>
+
+    <!--TOP HERO SECTION-->
+    <section class="carousel-container relative">
+      <div class="hero-text-slider-container flex flex-col gap-15px">
+        <div class="hero-text flex flex-col gap-25px items-start">
+          <h1 class="font-zen fw-400 text-white fs-39 lh-180">
+            女性による <br />
+            女性のための<br />
+            女性専用24時間ジム
+          </h1>
+          <div class="flex flex-row items-center gap-10px">
+            <p class="text-white fs-19 fw-500">Amazonesの特徴をみる</p>
+            <div class="btn-green-wrapper">
+              <img src="assets/img/top/icon_arrow.svg" alt="アイコン" />
+            </div>
+          </div>
+        </div>
+        <div class="dots-container">
+          <span class="dots" onclick="currentSlide(1)"></span>
+          <span class="dots" onclick="currentSlide(2)"></span>
+          <span class="dots" onclick="currentSlide(3)"></span>
+          <span class="dots" onclick="currentSlide(4)"></span>
+          <span class="dots" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+      <!--replace images here-->
+      <div class="mySlides animate">
+        <img src="assets/img/top/bg_hero.webp" alt="アマゾネス" />
+      </div>
+
+      <div class="mySlides animate">
+        <img src="assets/img/top/bg_hero.webp" alt="アマゾネス" />
+      </div>
+
+      <div class="mySlides animate">
+        <img src="assets/img/top/bg_hero.webp" alt="アマゾネス" />
+      </div>
+
+      <div class="mySlides animate">
+        <img src="assets/img/top/bg_hero.webp" alt="アマゾネス" />
+      </div>
+
+      <div class="mySlides animate">
+        <img src="assets/img/top/bg_hero.webp" alt="アマゾネス" />
+      </div>
+    </section>
+    <!--END TOP HERO SECTION-->
+
+    <!--TOP NEWS SECTION-->
+    <section
+      class="news-section w-full flex flex-col items-center justify-center pt-100"
+      id="news-section"
+    >
+      <div class="news-tabs-container flex flex-col gap-30px">
+        <div class="flex flex-col gap-20px">
+          <p class="fs-18 fw-500 text-black1">お知らせ</p>
+          <h2 class="fs-100 lh-normal font-outfit text-black1 fw-400">News</h2>
+        </div>
+        <div data-widget="tabs" data-tabs-animate="400, 80">
+          <div class="tabs-controls" data-type="fancy">
+            <button
+              type="button"
+              class="tabs-control"
+              aria-selected="true"
+              aria-controls="fancy-first"
+            >
+              すべて
+            </button>
+            <button
+              type="button"
+              class="tabs-control"
+              aria-selected="false"
+              aria-controls="fancy-second"
+            >
+              新店舗情報
+            </button>
+            <button
+              type="button"
+              class="tabs-control"
+              aria-selected="false"
+              aria-controls="fancy-third"
+            >
+              プレスリリース
+            </button>
+            <button
+              type="button"
+              class="tabs-control"
+              aria-selected="false"
+              aria-controls="fancy-fourth"
+            >
+              その他のお知らせ
+            </button>
+          </div>
+          <div class="tabs-panels">
+            <!--Tabs Panel1-->
+            <div
+              class="tabs-panel flex flex-col gap-20px items-start"
+              id="fancy-first"
+              aria-selected="true"
+            >
+              <!--Panel Content1-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      新店舗情報
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content2-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      プレスリリース
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content3-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      その他のお知らせ
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!--Tabs Panel2-->
+            <div
+              class="tabs-panel flex flex-col gap-20px items-start"
+              id="fancy-second"
+              aria-selected="false"
+            >
+              <!--Panel Content1-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      新店舗情報
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content2-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      プレスリリース
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content3-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      その他のお知らせ
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!--Tabs Panel3-->
+            <div
+              class="tabs-panel flex flex-col gap-20px items-start"
+              id="fancy-third"
+              aria-selected="false"
+            >
+              <!--Panel Content1-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      新店舗情報
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content2-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      プレスリリース
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content3-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      その他のお知らせ
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!--Tabs Panel4-->
+            <div
+              class="tabs-panel flex flex-col gap-20px items-start"
+              id="fancy-fourth"
+              aria-selected="false"
+            >
+              <!--Panel Content1-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      新店舗情報
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content2-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      プレスリリース
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+              <!--Panel Content3-->
+              <div class="panel-content">
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="panel-content fw-500 fs-14 news-label">
+                      その他のお知らせ
+                    </p>
+                    <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                      2026.00.00
+                    </p>
+                    <p class="fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-light-blue mt-50 ml-auto mr-auto">
+            <p class="text-white fs-16 font-outfit">View All</p>
+            <img src="assets/img/top/icon_btn_green_arrow.svg" alt="アイコン" />
+          </a>
+        </div>
+      </div>
+
+      <!--NEWS BANNER-->
+      <div class="news-banner relative">
+        <img
+          src="assets/img/top/img_news_banner.webp"
+          alt="Sustainable health and a beautiful body"
+          class="news-banner-img"
+        />
+        <div class="news-banner-context flex flex-col items-center gap-42px">
+          <div class="flex flex-col gap-40px items-center">
+            <p class="news-30min-label text-white fs-24">
+              1日<img
+                src="assets/img/top/icon_30min.svg"
+                alt="アイコン"
+              />から始める運動習慣
+            </p>
+            <h2 class="fs-54 fw-400 lh-normal">継続できる健康と美しい身体</h2>
+          </div>
+          <p class="fs-16 text-center lh-200">
+            全国に展開する女性専用24時間ジムAmazones（アマゾネス）は、通いやすさと快適さを追求した空間設計が特長。<br
+              class="news-banner-break"
+            />
+            地域最大級の下半身マシンや女性トレーナーによる丁寧なサポートで、運動初心者でも安心して始められます。<br
+              class="news-banner-break"
+            />
+            楽しさと成果を実感できるから、自然と続くトレーニング習慣が身につきます。
+          </p>
+        </div>
+      </div>
+
+      <!--TOP TEXT SLIDER-->
+      <div class="text-slider w-full">
+        <div class="slide-track">
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+          <div class="slide"><p class = 'font-outfit fw-300 fs-36 text-white'>Sustainable health and a beautiful body.</p></div>
+        </div>
+      </div>
+    </section>
+    <!--END TOP NEWS SECTION-->
+  </body>
 </html>

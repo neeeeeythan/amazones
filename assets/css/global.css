@@ -7,6 +7,8 @@
 
   /*BASE COLORS*/
   --base-black: #4F4F4F;
+  --base-gray:#EEF0F3;
+  --base-grayBlue:#97A5B5;
   --base-white:#ffffff;
   --base-lightBlue:#81D8D0;
 
@@ -14,6 +16,9 @@
     /*TEXT COLORS*/
   --text-black1: #4F4F4F;
   --text-white:#ffffff;
+  --text-lightBlue:#81D8D0;
+  --text-lightBlue:#81D8D0;
+
 
 
    /*FONTS*/
@@ -26,6 +31,7 @@ html, body {
 	background-color: #FAF8F5;
     font-family:var(--font-zen);
     line-height:100%;
+    color:var(--text-black1)
 }
 html body a {
   color: inherit;
@@ -39,12 +45,16 @@ main {
    🎨 COLOR UTILITIES
    =========================================== */
 .bg-base-black1 { background-color: var(--base-black); }
+.bg-gray {background-color:var(--base-gray);}
+.bg-grayBlue {background-color:var(--base-grayBlue);}
 .bg-white {background-color:var(--base-white);}
 .bg-lightBlue {background-color:var(--base-lightBlue);}
 
 
 .text-black1 { color: var(--text-black1); }
 .text-white {color:var(--text-white);}
+.text-lightBlue {color:var(--text-lightBlue);}
+
 
 .text-underline {
 	text-decoration: underline;
@@ -326,12 +336,14 @@ main {
 .fs-35 { font-size: 35px; }
 .fs-36 { font-size: 36px; }
 .fs-38 { font-size: 38px; }
+.fs-39 { font-size: 39px; }
 .fs-40 { font-size: 40px; }
 .fs-44 { font-size: 44px; }
 .fs-46 { font-size: 46px; }
 .fs-48 { font-size: 48px; }
 .fs-50 { font-size: 50px; }
 .fs-52 { font-size: 52px; }
+.fs-54 { font-size: 54px; }
 .fs-56 { font-size: 56px; }
 .fs-60 {font-size:60px;}
 .fs-64 { font-size: 64px; }
@@ -339,6 +351,7 @@ main {
 .fs-68 {font-size:68px;}
 .fs-70 { font-size: 70px; }
 .fs-74 { font-size: 74px; }
+.fs-100 { font-size: 100px; }
 .fs-120 { font-size: 120px; }
 
 
@@ -379,6 +392,7 @@ main {
 .lh-200 { line-height: 2em; }
 
 .lh-14px {line-height:14px}
+.lh-64px {line-height:64px}
 .lh-normal {line-height:100%}
 /* ===========================================
    LETTER SPACING (in em, using .05em step)
@@ -780,6 +794,8 @@ main {
 .ml-90 { margin-left: 90px; }
 .ml-95 { margin-left: 95px; }
 .ml-100 { margin-left: 100px; }
+.ml-auto { margin-left:auto}
+
 
 .mr-0 { margin-right: 0; }
 .mr-4 { margin-right: 4px; }
@@ -811,6 +827,7 @@ main {
 .mr-90 { margin-right: 90px; }
 .mr-95 { margin-right: 95px; }
 .mr-100 { margin-right: 100px; }
+.mr-auto { margin-right:auto}
 
 /* ===========================================
    🔁 MARGIN X / Y (shorthand)
@@ -1876,9 +1893,8 @@ a{
     right:0px;
     top:0px;
     padding:25px;
-
+    z-index:999;
 }
-
 .text-vertical{
     writing-mode: vertical-rl;
     text-orientation: mixed;
