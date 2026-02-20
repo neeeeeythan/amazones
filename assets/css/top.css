@@ -59,7 +59,7 @@
 
 /*TOP NEWS SECTION*/
 .news-section {
-  background-image: url("/assets/img/top/bg_news_section.webp");
+  background-image: url("/assets/img/top/bg_news_section.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
