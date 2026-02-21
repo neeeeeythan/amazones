@@ -146,6 +146,9 @@
   text-align: center;
 }
 
+.news-banner {
+  margin-top: -20px;
+}
 .news-banner-context {
   position: absolute;
   top: 210px;
@@ -156,7 +159,7 @@
 }
 .news-banner-img {
   width: 100vw;
-  min-height:578px;
+  min-height: 578px;
   object-fit: cover;
 }
 .news-30min-label {
@@ -174,12 +177,6 @@
 }
 
 /*END TOP NEWS SECTION*/
-
-
-
-
-
-
 
 /*TOP TEXT SLIDER*/
 @-webkit-keyframes scroll {
@@ -206,12 +203,12 @@
 
 .text-slider {
   height: 80px;
-  display:flex;
-  flex-direction:row;
-  align-items:center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   overflow: hidden;
   position: relative;
-  margin-top:-5px;
+  margin-top: -5px;
 }
 
 .text-slider .slide-track {
@@ -230,8 +227,206 @@
   box-sizing: border-box;
 }
 
-.text-slider .slide p{
-    text-wrap:nowrap;
+.text-slider .slide p {
+  text-wrap: nowrap;
 }
 
 /*END TOP TEXT SLIDER*/
+
+/*TOP SERVICE*/
+.service-topic-container {
+  background-image: url("/assets/img/top/bg_service_topic.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-section {
+  padding-top: 120px;
+}
+.service-container {
+  margin-right: 100px;
+}
+.service-section-title {
+  margin-left: 241px;
+}
+.service-wrapper {
+  width: 100%;
+  max-width: 640px;
+  background-color: var(--base-white);
+  z-index: 2;
+}
+.service-img {
+  height: 320px;
+  object-fit: cover;
+}
+.service-wrapper2 {
+  margin-top: -90px;
+  background-color: var(--base-gray);
+}
+.service-wrapper3 {
+  margin-top: -180px;
+}
+.service-ribbon {
+  position: absolute;
+  right: 0px;
+  top: -120px;
+  /* margin-top: -115px; */
+  z-index: 1;
+}
+/*END TOP SERVICE*/
+
+/*TOP TOPIC SECTION*/
+.topic-container {
+  padding-top: 60px;
+  padding-left: 241px;
+  /* background-color:blue; */
+}
+
+.topic-slider__track {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  margin-right: calc(var(--slider-column-gap) * -1);
+  z-index: 2;
+}
+
+.topic-slider__track > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding-right: 30px;
+  z-index: 2;
+}
+
+/* hide scrollbar */
+.topic-slider__track {
+  scrollbar-width: none;
+}
+
+.topic-slider__track::-webkit-scrollbar {
+  display: none;
+}
+.topic-slider__buttons {
+  margin-top: 12px;
+}
+
+.topic-slider__buttons [disabled] {
+  opacity: 0.5;
+}
+
+.topic-slider__button {
+  padding: 0.5rem 1rem;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.topic-slider__button:hover:not([disabled]) {
+  background: #5b4bc4;
+}
+
+.topic-slider__button[disabled] {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.topic-slider .slide {
+  width: 100%;
+  max-width: 400px;
+  z-index: 2;
+}
+
+.topic-sticker {
+  position: absolute;
+  top: -180px;
+  left: 320px;
+  z-index: 1;
+}
+.topic-speech-bubble {
+  position: absolute;
+  top: -20px;
+}
+
+/* Dots Navigator Styles */
+.topic-slider__dots {
+  display: flex;
+  justify-content: start;
+  gap: 0px;
+  margin-top: 15px;
+  height: 5px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.topic-slider__dot {
+  width: calc(100% / 4);
+  height: 2px;
+  background-color: var(--base-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+
+.topic-slider__dot.active {
+  background-color: var(--base-lightBlue);
+  height: 5px;
+}
+
+/* Optional: Add animation for active dot */
+.topic-slider__dot.active {
+  animation: dotPulse 0.3s ease;
+}
+
+@keyframes dotPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.topic-bg {
+  position: absolute;
+  bottom: 163.5px;
+  width: 100vw;
+  height: 80px;
+  object-fit: cover;
+}
+/*END TOPIC SECTION*/
+
+/*TOP DR AMAZONES SECTION*/
+.dr-amazones-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+}
+.dr-amazones-section {
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--base-white);
+  padding: 60px 77px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.dr-amazones-section .triangle-icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+/*END DR AMAZONES SECTION*/
