@@ -13,11 +13,7 @@
     <link href="/assets/css/buttons.css" rel="stylesheet" type="text/css" />
 
     <!--RESERVATION CSS-->
-    <link
-      href="/assets/css/reservation.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="/assets/css/reservation.css" rel="stylesheet" type="text/css" />
     <script src="/assets/js/global.js" defer></script>
     <script src="/assets/js/reservation.js" defer></script>
   </head>
@@ -122,55 +118,81 @@
 
     <main>
       <!-- BANNER -->
-      <section class="p-reservation_banner">
+      <section class="p-reservation_banner relative">
         <img
           src="/assets/img/reservation/banner_reservation.webp"
           alt="予約バナー"
           class="p-reservation_banner-img"
         />
-        <!-- Dark gradient overlay -->
         <div class="p-reservation_banner-overlay"></div>
-        <!-- Ribbon decoration -->
-        <img
-          src="/assets/img/reservation/img_reservation_ribbon.svg"
-          alt=""
-          class="p-reservation_banner-ribbon"
-        />
+
         <!-- Text content -->
         <div class="p-reservation_banner-content">
-          <h1 class="p-reservation_banner-title text-white fw-700">
+          <h1 class="p-reservation_banner-title font-zen text-white">
             無料体験・見学予約
           </h1>
-          <p class="p-reservation_banner-subtitle font-outfit fw-500">
-            Reservation
-          </p>
+          <p class="p-reservation_banner-subtitle font-outfit">Reservation</p>
           <!-- Breadcrumb -->
           <nav class="p-reservation_breadcrumb">
             <a href="/index.html" class="p-reservation_breadcrumb-home">
               <svg
-                width="14"
-                height="13"
-                viewBox="0 0 14 13"
-                fill="none"
+                version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 17 17"
+                width="17"
+                height="17"
               >
+                <style>
+                  .s0 {
+                    fill: #81d7cf;
+                  }
+                </style>
                 <path
-                  d="M1 5.5L7 1L13 5.5V12H9V8.5H5V12H1V5.5Z"
-                  stroke="#81d8d0"
-                  stroke-width="1.5"
-                  stroke-linejoin="round"
+                  id="シェイプ 894"
+                  class="s0"
+                  d="m6.81 16.4v-4.21c0-0.3 0.3-0.6 0.61-0.6h2.47c0.31 0 0.61 0.3 0.61 0.6v4.21c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6v-8.41q-0.01-0.25-0.18-0.43l-1.67-1.62v-3.96c0-0.33-0.28-0.6-0.62-0.6h-1.23c-0.34 0-0.62 0.27-0.62 0.6v1.56l-3.26-3.19c-0.24-0.23-0.63-0.23-0.87 0q0 0 0 0l-7.4 7.21q-0.17 0.18-0.18 0.43v8.41c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6z"
                 />
               </svg>
             </a>
-            <span class="p-reservation_breadcrumb-separator text-white"
+            <span class="p-reservation_breadcrumb-separator"
               >&#x203A;</span
             >
-            <span class="p-reservation_breadcrumb-text text-white fs-12"
+            <span class="text-white fs-14"
               >無料体験・見学予約</span
             >
           </nav>
         </div>
       </section>
+      <!-- Ribbon decoration -->
+      <img
+        src="/assets/img/reservation/img_reservation_ribbon.svg"
+        alt=""
+        class="p-reservation_banner-ribbon"
+      />
+      <!-- LINKS -->
+       <section class="p-reservation_flow c-maxWidth">
+        <nav class="p-reservation_links-nav">
+          <a href="#flow" class="p-reservation_links-item">
+            <span>ご予約の流れ</span>
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="#81d8d0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#form" class="p-reservation_links-item">
+            <span>予約フォーム</span>
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="#81d8d0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#info" class="p-reservation_links-item">
+            <span>当日の入館・ご予約変更について</span>
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="#81d8d0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </nav>
+        sample
+       </section>
     </main>
   </body>
 </html>
