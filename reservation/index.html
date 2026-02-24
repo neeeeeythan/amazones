@@ -122,17 +122,53 @@
 
     <main>
       <!-- BANNER -->
-      <section class="p-reservation__banner relative">
+      <section class="p-reservation__banner relative overflow-hidden">
         <img
-          src="../assets/img/reservation/reservation_banner.jpg"
+          src="../assets/img/reservation/banner_reservation.webp"
           alt="予約バナー"
-          class="w-full h-auto object-cover"
+          class="p-reservation__banner-img"
         />
-        <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
-        >
-          <h1 class="text-4xl font-bold mb-4">体験予約</h1>
-          <p class="text-lg">24時間WEB予約可能！体験予約はこちら</p>
+        <!-- Dark gradient overlay -->
+        <div class="p-reservation__banner-overlay"></div>
+        <!-- Ribbon decoration -->
+        <img
+          src="../assets/img/reservation/img_reservation_ribbon.svg"
+          alt=""
+          class="p-reservation__banner-ribbon"
+        />
+        <!-- Text content -->
+        <div class="p-reservation__banner-content">
+          <h1 class="p-reservation__banner-title text-white fw-700">
+            無料体験・見学予約
+          </h1>
+          <p class="p-reservation__banner-subtitle font-outfit fw-500">
+            Reservation
+          </p>
+          <!-- Breadcrumb -->
+          <nav class="p-reservation__breadcrumb">
+            <a href="../index.html" class="p-reservation__breadcrumb-home">
+              <svg
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 5.5L7 1L13 5.5V12H9V8.5H5V12H1V5.5Z"
+                  stroke="#81d8d0"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <span class="p-reservation__breadcrumb-separator text-white"
+              >&#x203A;</span
+            >
+            <span class="p-reservation__breadcrumb-text text-white fs-12"
+              >無料体験・見学予約</span
+            >
+          </nav>
         </div>
       </section>
     </main>
