@@ -12,15 +12,17 @@
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
 
-    <!--RESERVATION CSS JS-->
-    <link href="../assets/css/reservation.css" rel="stylesheet" type="text/css" />
+    <!--RESERVATION CSS-->
+    <link
+      href="../assets/css/reservation.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="../assets/js/global.js" defer></script>
     <script src="../assets/js/reservation.js" defer></script>
-
   </head>
 
   <body>
-
     <!--HEADER-->
     <header class="I-header">
       <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
@@ -117,7 +119,22 @@
         </div>
       </div>
     </header>
- 
-    
+
+    <main>
+      <!-- BANNER -->
+      <section class="p-reservation__banner relative">
+        <img
+          src="../assets/img/reservation/reservation_banner.jpg"
+          alt="予約バナー"
+          class="w-full h-auto object-cover"
+        />
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white"
+        >
+          <h1 class="text-4xl font-bold mb-4">体験予約</h1>
+          <p class="text-lg">24時間WEB予約可能！体験予約はこちら</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
