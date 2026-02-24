@@ -3,7 +3,7 @@
   position: absolute;
   top: 214px;
   left: 105px;
-  z-index: 1;
+  z-index: 2;
 }
 .carousel-container {
   overflow: hidden;
@@ -11,6 +11,15 @@
   position: relative;
   margin: auto;
   z-index: 0;
+  width:100vw;
+  height:100vh;
+}
+.carousel-img-container{
+  position:absolute;
+  top:0px;
+  width:100vw;
+  height:100vh;
+  z-index:1;
 }
 
 .mySlides {
@@ -18,7 +27,10 @@
 }
 .mySlides img {
   display: block;
-  width: 100%;
+  width: 100vw;
+  height:100vh;
+
+ 
   /* max-height: 860px; */
   /* object-fit: cover; */
   /* aspect-ratio: 16 / 9; */
@@ -57,11 +69,31 @@
 
 /*END HERO SECTION SLIDER*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*TOP NEWS SECTION*/
 .news-section {
-  background-image: url("../img/top/bg_news_section.svg");
+  background-image: url("../img/top/bg_news_section.webp");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position:70% 20%;
+}
+.news-ribbon{
+  position:absolute;
+  top:70px;
+  right:0px;
+  width:fit-content;
 }
 .news-tabs-container {
   width: 100%;

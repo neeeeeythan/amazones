@@ -1,3 +1,6 @@
+//RIBBON ON SCROLL
+
+
 //HERO SLIDER JS
 let slideIndex = 0;
 showSlides();
@@ -59,12 +62,10 @@ function init__tabs(selector = '[data-widget="tabs"]') {
   let tabs = document.querySelectorAll(selector);
   if (!tabs.length) return;
 
-  // Accessibility: skip animations when the user prefers reduced motion (OS-level setting).
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   ).matches;
 
-  // Helper for fancy indicator
   function updateFancyIndicator(tabsRoot, tab) {
     const width = tab.offsetWidth;
     const offset = tab.offsetLeft;
@@ -73,7 +74,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
     tabsRoot.style.setProperty("--active-button-offset", offset + "px");
   }
 
-  // Cubic-bezier evaluator (matches CSS easing functions exactly)
   function cubicBezier(p1x, p1y, p2x, p2y) {
     return function (t) {
       let start = 0,
@@ -96,7 +96,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
 
   const cssEaseOut = cubicBezier(0, 0, 0.58, 1);
 
-  // Helper for tracking active tab into view
   function scrollTabIntoView(container, button, duration) {
     if (!container || !button) return;
 
@@ -142,7 +141,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
     }
   }
 
-  // Helper for scroll-to-target (standalone version, no config dependency)
   function scrollToTarget(id, gap = 20) {
     let target = document.querySelector(id);
     if (!target) return;
@@ -165,7 +163,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
         ?.querySelector('[data-widget="swiper"] .swiper');
     }
 
-    // Fancy tabs
     let tabsControlsWrap = item.querySelector(".tabs-controls");
     let isFancy = tabsControlsWrap?.getAttribute("data-type") === "fancy";
     let hasTrack =
@@ -193,7 +190,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
       );
     }
 
-    // Init fancy indicator (1st tab)
     if (isFancy && tabs_controlers.length) {
       updateFancyIndicator(item, tabs_controlers[0]);
     }
@@ -205,21 +201,17 @@ function init__tabs(selector = '[data-widget="tabs"]') {
         let prevIndex = tab_index;
         tab_index = idx;
 
-        // Reset Previous Active Tab
         let tab_prev_active = item.querySelector(
           '.tabs-control[aria-selected="true"]',
         );
         tab_prev_active?.setAttribute("aria-selected", "false");
 
-        // Activate This Tab
         dft_tab.setAttribute("aria-selected", "true");
 
-        // Fancy indicator update
         if (isFancy) {
           updateFancyIndicator(item, dft_tab);
         }
 
-        // Scroll active tab into view
         if (hasTrack) {
           scrollTabIntoView(
             tabsControlsWrap,
@@ -228,17 +220,14 @@ function init__tabs(selector = '[data-widget="tabs"]') {
           );
         }
 
-        // Reset Previous Active Panel
         let panel_prev_active = item.querySelector(
           '.tabs-panel[aria-selected="true"]',
         );
         panel_prev_active?.setAttribute("aria-selected", "false");
 
-        // Activate This Panel
         let dft_panel = item.querySelector(`#${dft_tab__aria_controls}`);
         dft_panel?.setAttribute("aria-selected", "true");
 
-        // Direction-aware panel animation
         if (hasAnimation && !reduceMotion && dft_panel && prevIndex !== idx) {
           const direction = idx > prevIndex ? 1 : -1;
           dft_panel.animate(
@@ -256,7 +245,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
           );
         }
 
-        // Scroll Top on Change Tab
         if (tabs_scrollTop) {
           let tabs_controls_height =
             item.querySelector(".tabs-controls").offsetHeight;
@@ -264,7 +252,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
           scrollToTarget(`#${dft_tab__aria_controls}`, offset);
         }
 
-        // Tabs with synchronized images
         if (tabs_imageSlider) {
           tabs_imageSlider.swiper.slideTo(idx);
           ScrollTrigger.refresh();
@@ -272,7 +259,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
       });
     });
 
-    // Autoplay
     if (tabs_autoplay) {
       let speed = item.dataset.autoplaySpeed
         ? item.dataset.autoplaySpeed
@@ -308,7 +294,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
       observer.observe(item);
     }
 
-    // Recalculate fancy indicator on resize
     if (isFancy) {
       window.addEventListener("resize", () => {
         let activeTab = item.querySelector(
@@ -322,7 +307,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
   });
 }
 
-// Initialize on DOM ready
 document.addEventListener("DOMContentLoaded", () => {
   init__tabs();
 });
@@ -346,14 +330,12 @@ if (track) {
   const slides = track.children;
   const totalSlides = slides.length;
   
-  // Create dots
   const createDots = () => {
     for (let i = 0; i < totalSlides; i++) {
       const dot = document.createElement('button');
       dot.classList.add('topic-slider__dot');
       dot.setAttribute('data-slider-dot', i);
       
-      // Add click event to each dot
       dot.addEventListener('click', () => {
         const slideWidth = slides[0].offsetWidth;
         track.scrollTo({
@@ -366,17 +348,14 @@ if (track) {
     }
   };
   
-  // Update active dot based on scroll position
   const updateActiveDot = () => {
     const trackScrollWidth = track.scrollWidth;
     const trackOuterWidth = track.clientWidth;
     const maxScroll = trackScrollWidth - trackOuterWidth;
     
-    // Calculate current slide index
     const slideWidth = slides[0].offsetWidth;
     const currentIndex = Math.round(track.scrollLeft / slideWidth);
     
-    // Update dots
     const dots = dotsContainer.querySelectorAll('[data-slider-dot]');
     dots.forEach((dot, index) => {
       if (index === currentIndex) {
@@ -386,7 +365,6 @@ if (track) {
       }
     });
     
-    // Update button states
     prev.removeAttribute("disabled");
     next.removeAttribute("disabled");
 
@@ -399,15 +377,12 @@ if (track) {
     }
   };
   
-  // Initialize dots
   createDots();
   
-  // Set first dot as active initially
   setTimeout(() => {
     updateActiveDot();
   }, 100);
 
-  // Previous button click
   prev.addEventListener("click", () => {
     next.removeAttribute("disabled");
     track.scrollTo({
@@ -416,7 +391,6 @@ if (track) {
     });
   });
 
-  // Next button click
   next.addEventListener("click", () => {
     prev.removeAttribute("disabled");
     track.scrollTo({
@@ -425,12 +399,10 @@ if (track) {
     });
   });
 
-  // Track scroll event
   track.addEventListener("scroll", () => {
     updateActiveDot();
   });
 
-  // Optional: Update dots on window resize
   window.addEventListener('resize', () => {
     updateActiveDot();
   });
