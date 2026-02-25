@@ -5340,6 +5340,22 @@ a {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 767px) {
+  .c-maxWidth {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .c-maxWidth {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /*TOP TEXT SLIDER*/
