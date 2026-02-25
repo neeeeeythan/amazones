@@ -408,8 +408,7 @@
 
 .p-reservation_announcement {
   position: relative;
-  background-color: white;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -463,9 +462,8 @@
 
 .p-reservation_announcement_people {
   position: absolute;
-  bottom: 0%;
-  left: 0%;
-  transform: translate(40%, 50%);
+  bottom: -20%;
+  left: 10%;
   width: auto;
   height: auto;
   z-index: 2;
@@ -473,9 +471,8 @@
 
 .p-reservation_announcement_speak {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
-  transform: translate(20%, 35%);
+  bottom: -20%;
+  right: -4%;
   width: auto;
   height: auto;
   z-index: 2;
