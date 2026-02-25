@@ -5334,7 +5334,7 @@ a {
   }
 }
 
-/*MAX WIDTH CONTAINER*/
+/*START MAX WIDTH CONTAINER*/
 .c-maxWidth {
   max-width: 90rem;
   margin-left: auto;
@@ -5358,7 +5358,9 @@ a {
   }
 }
 
-/*TOP TEXT SLIDER*/
+/* END MAX WIDTH CONTAINER */
+
+/*START TEXT SLIDER*/
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -5412,4 +5414,4 @@ a {
   text-wrap: nowrap;
 }
 
-/*END TOP TEXT SLIDER*/
+/*END TEXT SLIDER*/
