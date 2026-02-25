@@ -39,7 +39,7 @@ main {
    🎨 COLOR UTILITIES
    =========================================== */
 .bg-base-black1 {
-background-color: var(--base-black);
+  background-color: var(--base-black);
 }
 .bg-gray {
   background-color: var(--base-gray);
@@ -5181,9 +5181,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
 /*HEADER CSS*/
 .I-header {
   width: calc(100% - 100px);
@@ -5247,8 +5244,6 @@ a {
 }
 /*END HEADER CSS*/
 
-
-
 /*SPEECH BUBBLE AND STICKER*/
 .speech-bubble {
   transform-origin: center;
@@ -5303,9 +5298,6 @@ a {
   }
 }
 
-
-
-
 /*HERO RIBBON*/
 .grow-wrapper-right.hero-ribbon {
   width: 100vw;
@@ -5319,7 +5311,7 @@ a {
   top: 0px;
   right: -10px;
   z-index: 2;
-  width:100vw;
+  width: 100vw;
 }
 .clip-grow-right.is-in-view {
   animation: clipRevealRight 2s ease-out forwards;
@@ -5327,7 +5319,7 @@ a {
 
 @keyframes clipRevealRight {
   0% {
-    clip-path: inset(0 0 0 100%); 
+    clip-path: inset(0 0 0 100%);
   }
   100% {
     clip-path: inset(0 0 0 0);
@@ -5340,8 +5332,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 @media (max-width: 767px) {
