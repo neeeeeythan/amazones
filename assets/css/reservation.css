@@ -334,15 +334,21 @@
 }
 
 /* ============================================
-   SIMULATION
+   FORM
    ============================================ */
+.p-reservation_form_section {
+  background-image: url("/assets/img/reservation/bg_reservation_form.webp");
+  background-size: cover;
+  background-position: center;
+}
 
 .p-reservation_form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   box-sizing: border-box;
-  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .p-reservation_form_titleContainer {
@@ -363,6 +369,71 @@
 }
 
 .p-reservation_form_content {
+  position: relative;
   padding: 4rem;
   background-color: white;
 }
+
+.p-reservation_form_speak_bubble {
+  position: absolute;
+  left: 20.5%;
+  bottom: -8.5%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+/* ============================================
+   ANNOUNCEMENT
+   ============================================ */
+.p-reservation_announcement_section {
+  background-image: url("/assets/img/reservation/bg_camouflage01.webp");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 5% 0%;
+}
+
+.p-reservation_announcement {
+  background-color: white;
+  opacity: 0.9;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 62.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-reservation_announcement_titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.p-reservation_announcement_titleContainer p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-lightBlue);
+}
+
+.p-reservation_announcement_titleContainer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.p-reservation_announcement_body {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.p-reservation_announcement_body span {
+  color: var(--base-lightBlue);
+  text-decoration: underline;
+}
+
