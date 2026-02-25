@@ -150,8 +150,9 @@
 
 .p-reservation_step_card_body {
   font-weight: 700;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   box-sizing: border-box;
+  line-height: 2rem;
 }
 
 .p-reservation_step_card_icon {
