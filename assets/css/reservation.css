@@ -1,5 +1,5 @@
 /* ============================================
-   RESERVATION BANNER
+    START RESERVATION BANNER
    ============================================ */
 .p-reservation_banner {
   width: 100%;
@@ -101,7 +101,11 @@
 }
 
 /* ============================================
-   RESERVATION FLOW 
+    END RESERVATION BANNER
+   ============================================ */
+
+/* ============================================
+   START RESERVATION FLOW
    ============================================ */
 
 .p-reservation_flow {
@@ -119,9 +123,7 @@
   position: relative;
 }
 
-/* ============================================
-   STEPS
-   ============================================ */
+/* STEPS */
 
 .p-reservation_step_list {
   display: flex;
@@ -179,9 +181,7 @@
   color: var(--text-black1);
 }
 
-/* ============================================
-   RESERVATION LINKS
-   ============================================ */
+/* RESERVATION LINKS */
 
 .p-reservation_links-nav {
   display: flex;
@@ -234,7 +234,11 @@
 }
 
 /* ============================================
-   SIMULATION
+   END RESERVATION FLOW
+   ============================================ */
+
+/* ============================================
+   START SIMULATION
    ============================================ */
 
 .p-reservation_simulation {
@@ -334,8 +338,12 @@
 }
 
 /* ============================================
-   FORM
+   END SIMULATION
    ============================================ */
+
+/* ============================================
+    START FORM
+    ============================================ */
 .p-reservation_form_section {
   background-image: url("/assets/img/reservation/bg_reservation_form.webp");
   background-size: cover;
@@ -384,10 +392,14 @@
 }
 
 /* ============================================
-   ANNOUNCEMENT
+   END FORM
+   ============================================ */
+
+/* ============================================
+   START ANNOUNCEMENT
    ============================================ */
 .p-reservation_announcement_section {
-  background-image: url("/assets/img/reservation/bg_camouflage01.webp");
+  background-image: url("/assets/img/common/bg_camouflage01.webp");
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -395,9 +407,10 @@
 }
 
 .p-reservation_announcement {
+  position: relative;
   background-color: white;
   opacity: 0.9;
-  padding: 3rem 5rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -437,3 +450,36 @@
   text-decoration: underline;
 }
 
+.p-reservation_announcement_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.p-reservation_announcement_people {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transform: translate(40%, 50%);
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+.p-reservation_announcement_speak {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(20%, 35%);
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+/* ============================================
+   END ANNOUNCEMENT
+   ============================================ */
