@@ -5334,7 +5334,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .c-maxWidth {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -5346,7 +5346,7 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
+} */
 
 /* END MAX WIDTH CONTAINER */
 
