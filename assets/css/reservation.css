@@ -113,7 +113,7 @@
   height: auto;
   overflow: hidden;
   box-sizing: border-box;
-  background-image: url("/assets/img/reservation/bg_reservation.svg");
+  background-image: url("../img/reservation/bg_reservation.svg");
   background-size: cover;
   background-position: 0% -20%;
   padding-bottom: 7rem;
@@ -253,7 +253,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/assets/img/reservation/bg_reservation_simulation.webp");
+  background-image: url("../img/reservation/bg_reservation_simulation.webp");
   background-size: cover;
   background-position: 20% 42%;
   filter: blur(0.208vw) brightness(0.5);
@@ -344,7 +344,7 @@
     START FORM
     ============================================ */
 .p-reservation_form_section {
-  background-image: url("/assets/img/reservation/bg_reservation_form.webp");
+  background-image: url("../img/reservation/bg_reservation_form.webp");
   background-size: cover;
   background-position: center;
 }
@@ -398,7 +398,7 @@
    START ANNOUNCEMENT
    ============================================ */
 .p-reservation_announcement_section {
-  background-image: url("/assets/img/common/bg_camouflage01.webp");
+  background-image: url("../img/common/bg_camouflage01.webp");
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -488,7 +488,7 @@
 .p-reservation_faq_section {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/img/common/img_gym01.webp");
+    url("../img/common/img_gym01.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
