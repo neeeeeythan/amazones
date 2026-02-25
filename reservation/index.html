@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -14,8 +14,11 @@
 
     <!--RESERVATION CSS-->
     <link href="/assets/css/reservation.css" rel="stylesheet" type="text/css" />
+
+    <!-- SCRIPTS -->
     <script src="/assets/js/global.js" defer></script>
     <script src="/assets/js/reservation.js" defer></script>
+    <script src="https://highness.hacomono.jp/js/widget.js" defer></script>
   </head>
 
   <body>
@@ -129,13 +132,13 @@
           <div class="p-reservation_banner-overlay"></div>
         </div>
 
-        <!-- Text content -->
+        <!-- BANNER TEXT -->
         <div class="p-reservation_banner-content">
           <h1 class="p-reservation_banner-title font-zen text-white">
             無料体験・見学予約
           </h1>
           <p class="p-reservation_banner-subtitle font-outfit">Reservation</p>
-          <!-- Breadcrumb -->
+          <!-- BREADCRUMB -->
           <nav class="p-reservation_breadcrumb">
             <a href="/index.html" class="p-reservation_breadcrumb-home">
               <svg
@@ -156,10 +159,10 @@
             <span class="text-white fs-14">無料体験・見学予約</span>
           </nav>
         </div>
-        <!-- Ribbon decoration -->
+        <!-- RIBBON DECORATION 01-->
         <img
-          src="/assets/img/reservation/img_reservation_ribbon.svg"
-          alt=""
+          src="/assets/img/top/img_hero_ribbon.svg"
+          alt="ribbon 01"
           class="p-reservation_banner-ribbon"
         />
       </section>
@@ -399,7 +402,7 @@
               </div>
             </div>
 
-            <button class="btn-light-blue02">
+            <button class="btn-light-blue02 mt-20">
               ご予約から無料体験・見学までの流れはこちら
               <svg
                 width="20"
@@ -425,6 +428,55 @@
           </div>
         </div>
       </section>
+
+      <!-- SIMULATION -->
+      <section class="p-reservation_simulation">
+        <!-- RIBBON DECORATION 02-->
+        <img
+          src="/assets/img/reservation/img_reservation_ribbon01.svg"
+          alt="ribbon decoration 02"
+          class="p-reservation_simulation_ribbon"
+        />
+        <!-- PEOPLE -->
+        <div class="p-reservation_simulation_people">
+          <img
+            src="/assets/img/reservation/img_reservation_people01.webp"
+            alt="people"
+          />
+        </div>
+        <!-- PHONE SCREEN -->
+        <div class="p-reservation_simulation_phone">
+          <video
+            class="p-reservation_simulation_phone_video"
+            src=""
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <img
+            src="/assets/img/reservation/img_phone_screen.webp"
+            alt="phone screen"
+          />
+        </div>
+        <!-- TEXT CONTENT -->
+        <div class="p-reservation_simulation_content">
+          <p class="font-zen">シミュレーション</p>
+          <h2 class="font-outfit">Simulation</h2>
+          <div>
+            <p class="font-zen">
+              ご予約までの実際の流れをこちらからもご確認いただけます。
+            </p>
+            <p>
+              前項目の流れではご予約が難しい場合、スマートフォンをお手元にご用意いただき、こちらを見ながら一緒に操作していただくことで、より簡単にご予約が可能です。
+            </p>
+          </div>
+        </div>
+      </section>
+      <iframe
+        id="hacomono-widget-w0001"
+        src="https://highness.hacomono.jp/widgets/1?isFilterableByCategory=false&isShowStudioInfo=false"
+      ></iframe>
     </main>
   </body>
 </html>

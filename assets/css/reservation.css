@@ -4,7 +4,6 @@
 .p-reservation_banner {
   width: 100%;
   height: calc(100vw * 300 / 1920);
-  /* height: 18.75rem; */
   position: relative;
   overflow: visible;
 }
@@ -42,11 +41,9 @@
   z-index: 1;
 }
 
-/* Ribbon SVG decoration */
+/* Ribbon banner SVG decoration */
 .p-reservation_banner-ribbon {
   position: absolute;
-  /* left: calc(100vw * 576 / 1920);
-  top: calc(100vw * -50 / 1920); */
   right: -45%;
   top: -43%;
   transform: translateY(-50%);
@@ -234,4 +231,100 @@
   position: absolute;
   right: 20%;
   top: 65%;
+}
+
+/* ============================================
+   SIMULATION
+   ============================================ */
+
+.p-reservation_simulation {
+  width: 100%;
+  height: calc(100vw * 802 / 1920);
+  position: relative;
+  overflow: hidden;
+}
+
+.p-reservation_simulation::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/img/reservation/bg_reservation_simulation.webp");
+  background-size: cover;
+  background-position: 20% 42%;
+  filter: blur(0.25rem) brightness(0.5);
+  z-index: 0;
+}
+
+/* Ribbon simulation SVG decoration */
+.p-reservation_simulation_ribbon {
+  position: absolute;
+  left: -2%;
+  top: 83%;
+  transform: translateY(-50%);
+  height: 53%;
+  width: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.p-reservation_simulation_people {
+  position: absolute;
+  top: 26%;
+  left: 15%;
+  z-index: 2;
+}
+
+.p-reservation_simulation_phone {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.p-reservation_simulation_phone img {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.p-reservation_simulation_phone_video {
+  position: absolute;
+  top: 3.2%;
+  left: 5.5%;
+  width: 89%;
+  height: 93.5%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 1.875rem;
+  background-color: var(--base-lightBlue);
+}
+
+.p-reservation_simulation_content {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 2;
+}
+
+.p-reservation_simulation_content p {
+  font-weight: 400;
+}
+
+.p-reservation_simulation_content h2 {
+  font-size: 6.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.p-reservation_simulation_content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 29rem;
+  text-align: justify;
+  line-height: 2;
 }
