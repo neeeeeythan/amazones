@@ -5350,6 +5350,28 @@ a {
 
 /* END MAX WIDTH CONTAINER */
 
+/* START BREADCRUMB */
+
+.c-breadcrumb {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c-breadcrumb-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-breadcrumb-separator {
+  font-size: 1rem;
+  color: var(--text-lightBlue);
+}
+
+/* END BREADCRUMB */
+
 /*START TEXT SLIDER*/
 @-webkit-keyframes scroll {
   0% {
