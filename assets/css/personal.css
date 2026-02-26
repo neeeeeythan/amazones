@@ -187,3 +187,88 @@
   gap: 1rem;
   padding-top: 1.5rem;
 }
+
+/* END PROGRAM SECTION */
+
+/* START ANNOUNCEMENT SECTION  */
+
+.p-personal_announcement_section {
+  background-image: url("../img/common/bg_camouflage01.webp");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 5% 0%;
+}
+
+.p-personal_announcement {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 62.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-personal_announcement_titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.p-personal_announcement_titleContainer p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-lightBlue);
+}
+
+.p-personal_announcement_titleContainer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.p-personal_announcement_body {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.p-personal_announcement_body span {
+  color: var(--base-lightBlue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.p-personal_announcement_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.p-personal_announcement_people {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+.p-personal_announcement_speak {
+  position: absolute;
+  bottom: -20%;
+  right: -4%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
