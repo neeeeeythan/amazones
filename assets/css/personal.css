@@ -104,3 +104,44 @@
   gap: 3rem;
   margin-top: 15rem;
 }
+
+/* END AMAZONES AND CASE STUDY SECTION */
+
+/* START CTA SECTION */
+.p-personal_cta_section {
+  width: 100%;
+  height: 56.25rem;
+  background-image: url("../img/personal/img_group_collage.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.p-personal_cta_ribbon {
+  position: absolute;
+  top: 0%;
+  left: -10%;
+}
+
+.p-personal_cta_text_container {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.p-personal_cta_text_container h2 {
+  font-size: 3rem;
+  line-height: 4.375rem;
+  font-weight: 500;
+}
+
+.p-personal_cta_white_box {
+  position: absolute;
+  bottom: 0%;
+  background-color: white;
+  width: 100%;
+}
