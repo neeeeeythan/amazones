@@ -80,24 +80,9 @@
   padding-left: 0.75rem;
 }
 
-/* Breadcrumb */
+/* Custom Breadcrumb styles for reservation page  */
 .p-reservation_breadcrumb {
-  position: absolute;
   top: 140%;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.p-reservation_breadcrumb-home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-reservation_breadcrumb-separator {
-  font-size: 1rem;
-  color: var(--text-lightBlue);
 }
 
 /* ============================================
@@ -344,7 +329,7 @@
     START FORM
     ============================================ */
 .p-reservation_form_section {
-  background-image: url("../img/reservation/bg_reservation_form.webp");
+  background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
 }

@@ -13,6 +13,7 @@
   --text-black1: #4f4f4f;
   --text-white: #ffffff;
   --text-lightBlue: #81d8d0;
+  --text-lightBlue: #81d8d0;
 
   /*FONTS*/
   --font-outfit: "Outfit";
@@ -268,9 +269,6 @@ main {
 .items-stretch {
   align-items: stretch;
 }
-.items-baseline{
-  align-items:baseline
-}
 
 .justify-start {
   justify-content: flex-start;
@@ -290,10 +288,6 @@ main {
 .justify-evenly {
   justify-content: space-evenly;
 }
-.items-baseline{
-  justify-content:baseline
-}
-
 
 .content-center {
   align-content: center;
@@ -665,10 +659,6 @@ main {
 .gap-100px {
   gap: 100px;
 }
-.gap-150px {
-  gap: 100px;
-}
-
 
 /* ========== GRID ========== */
 .grid-cols-1 {
@@ -866,10 +856,6 @@ main {
 .fs-120 {
   font-size: 120px;
 }
-.fs-320 {
-  font-size: 320px;
-}
-
 
 /* ===========================================
    FONT WEIGHT
@@ -1417,9 +1403,6 @@ main {
 .pl-90 {
   padding-left: 90px;
 }
-.pl-240 {
-  padding-left: 240px;
-}
 .pl-100 {
   padding-left: 100px;
 }
@@ -1515,10 +1498,6 @@ main {
 .pr-100 {
   padding-right: 100px;
 }
-.pr-241 {
-  padding-right: 241px;
-}
-
 
 /* ===========================================
    🔁 PADDING X / Y (shorthand)
@@ -1631,10 +1610,6 @@ main {
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.py-24 {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .py-25 {
   padding-top: 25px;
@@ -2133,9 +2108,6 @@ main {
 .ml-100 {
   margin-left: 100px;
 }
-.ml-240 {
-  margin-left: 240px;
-}
 .ml-auto {
   margin-left: auto;
 }
@@ -2226,9 +2198,6 @@ main {
 }
 .mr-95 {
   margin-right: 95px;
-}
-.mr-241px{
-  margin-right:241px;
 }
 .mr-100 {
   margin-right: 100px;
@@ -5364,7 +5333,6 @@ a {
   }
 }
 
-<<<<<<< Updated upstream
 /*START MAX WIDTH CONTAINER*/
 .c-maxWidth {
   max-width: 90rem;
@@ -5388,6 +5356,28 @@ a {
 } */
 
 /* END MAX WIDTH CONTAINER */
+
+/* START BREADCRUMB */
+
+.c-breadcrumb {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c-breadcrumb-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-breadcrumb-separator {
+  font-size: 1rem;
+  color: var(--text-lightBlue);
+}
+
+/* END BREADCRUMB */
 
 /*START TEXT SLIDER*/
 @-webkit-keyframes scroll {
