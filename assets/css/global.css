@@ -13,7 +13,6 @@
   --text-black1: #4f4f4f;
   --text-white: #ffffff;
   --text-lightBlue: #81d8d0;
-  --text-lightBlue: #81d8d0;
 
   /*FONTS*/
   --font-outfit: "Outfit";
@@ -268,6 +267,9 @@ main {
 }
 .items-stretch {
   align-items: stretch;
+}
+.items-baseline{
+  align-items:baseline
 }
 
 .justify-start {
@@ -659,6 +661,10 @@ main {
 .gap-100px {
   gap: 100px;
 }
+.gap-150px {
+  gap: 100px;
+}
+
 
 /* ========== GRID ========== */
 .grid-cols-1 {
@@ -856,6 +862,10 @@ main {
 .fs-120 {
   font-size: 120px;
 }
+.fs-320 {
+  font-size: 320px;
+}
+
 
 /* ===========================================
    FONT WEIGHT
@@ -1403,6 +1413,9 @@ main {
 .pl-90 {
   padding-left: 90px;
 }
+.pl-240 {
+  padding-left: 240px;
+}
 .pl-100 {
   padding-left: 100px;
 }
@@ -1498,6 +1511,10 @@ main {
 .pr-100 {
   padding-right: 100px;
 }
+.pr-241 {
+  padding-right: 241px;
+}
+
 
 /* ===========================================
    🔁 PADDING X / Y (shorthand)
@@ -1610,6 +1627,10 @@ main {
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .py-25 {
   padding-top: 25px;
@@ -2108,6 +2129,9 @@ main {
 .ml-100 {
   margin-left: 100px;
 }
+.ml-240 {
+  margin-left: 240px;
+}
 .ml-auto {
   margin-left: auto;
 }
@@ -2198,6 +2222,9 @@ main {
 }
 .mr-95 {
   margin-right: 95px;
+}
+.mr-241px{
+  margin-right:241px;
 }
 .mr-100 {
   margin-right: 100px;
@@ -5434,7 +5461,7 @@ a {
 }
 
 /*END TEXT SLIDER*/
-=======
+
 
 
 
@@ -5721,4 +5748,3 @@ a {
   justify-content: center;
 }
 /*END FOOTER SECTION*/
->>>>>>> Stashed changes
