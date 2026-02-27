@@ -6,6 +6,13 @@
   background-size: cover;
   background-position: center top;
   position: relative;
+  overflow: hidden;
+}
+
+.p-personal_banner_ribbon {
+  position: absolute;
+  top: -4%;
+  right: -2%;
 }
 
 .p-personal_banner_title {
@@ -74,6 +81,14 @@
   font-size: 6.25rem;
   line-height: 7.5rem;
   font-weight: 500;
+}
+
+.p-personal_amazones_method_img {
+  position: absolute;
+  width: 57rem;
+  height: 48rem;
+  right: -3%;
+  top: 10%;
 }
 
 .p-personal_topic_body p {
@@ -214,21 +229,20 @@
 
 .p-personal_announcement_titleContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-}
-.p-personal_announcement_titleContainer p {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-lightBlue);
 }
 
 .p-personal_announcement_titleContainer h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.p-personal_announcement_titleContainer h2:nth-child(2) {
+  color: var(--text-lightBlue);
+  font-size: 3.75rem;
 }
 
 .p-personal_announcement_body {
@@ -254,21 +268,30 @@
   font-size: 1.25rem;
 }
 
-.p-personal_announcement_people {
+.p-personal_announcement_speak01 {
   position: absolute;
-  bottom: -20%;
-  left: 10%;
+  bottom: -2%;
+  left: -11%;
   width: auto;
   height: auto;
   z-index: 2;
 }
 
-.p-personal_announcement_speak {
+.p-personal_announcement_speak02 {
   position: absolute;
-  bottom: -20%;
-  right: -4%;
+  bottom: -2%;
+  right: -9.5%;
   width: auto;
   height: auto;
   z-index: 2;
 }
 
+/* Icon hover lightblue effect */
+.icon-hover-lightblue {
+  transition: filter 0.3s ease;
+}
+
+.icon-hover-lightblue:hover {
+  filter: invert(82%) sepia(28%) saturate(512%) hue-rotate(128deg)
+    brightness(102%) contrast(83%);
+}
