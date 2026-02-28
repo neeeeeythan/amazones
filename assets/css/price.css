@@ -96,7 +96,7 @@
 .p-price_section_white {
   width: 100%;
   height: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-sizing: border-box;
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
@@ -213,6 +213,8 @@
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
 }
 
 .p-price_special_plan {
@@ -443,6 +445,10 @@
   line-height: 1.4;
 }
 
+.p-price_tier_features--cols-5 .p-price_tier_feature {
+  flex: 0 0 calc(20% - 0.6rem);
+}
+
 .p-price_tier_extra_note {
   position: absolute;
   bottom: -6rem;
@@ -560,6 +566,21 @@
   gap: 2.5rem;
 }
 
+/* PEOPLE JUMP */
+.p-price_people_image01 {
+  position: absolute;
+  top: -15rem;
+  right: -3rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-price_people_jump01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
 /* SPEAK PERSON */
 
 /* 01 */
@@ -590,7 +611,7 @@
 .p-price_speak_container02 {
   position: absolute;
   bottom: 0rem;
-  left: 1rem;
+  left: -1rem;
   z-index: 2;
   pointer-events: none;
 }
@@ -621,7 +642,7 @@
 .p-price_speak_container03 {
   position: absolute;
   bottom: 0rem;
-  right: 0rem;
+  right: -1rem;
   z-index: 2;
   pointer-events: none;
 }
