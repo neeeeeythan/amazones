@@ -1,14 +1,14 @@
 /* ============================================
-    START RESERVATION BANNER
+    START PAYMENT BANNER
    ============================================ */
-.p-reservation_banner {
+.p-payment_banner {
   width: 100%;
   height: calc(100vw * 300 / 1920);
   position: relative;
   overflow: visible;
 }
 
-.p-reservation_banner-inner {
+.p-payment_banner-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.p-reservation_banner-img {
+.p-payment_banner-img {
   position: absolute;
   right: -9.8%;
   top: -85%;
@@ -26,7 +26,7 @@
   max-width: none;
 }
 
-.p-reservation_banner-overlay {
+.p-payment_banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@
 }
 
 /* Ribbon banner SVG decoration */
-.p-reservation_banner-ribbon {
+.p-payment_banner-ribbon {
   position: absolute;
   right: -45%;
   top: -43%;
@@ -54,7 +54,7 @@
 }
 
 /* Text content */
-.p-reservation_banner-content {
+.p-payment_banner-content {
   position: absolute;
   top: 50%;
   left: 5.75rem;
@@ -62,7 +62,7 @@
   z-index: 3;
 }
 
-.p-reservation_banner-title {
+.p-payment_banner-title {
   font-size: 2.5rem;
   line-height: 1.3;
   letter-spacing: 0.08em;
@@ -70,7 +70,7 @@
   font-weight: 400;
 }
 
-.p-reservation_banner-subtitle {
+.p-payment_banner-subtitle {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: var(--base-lightBlue);
@@ -80,96 +80,70 @@
   padding-left: 0.75rem;
 }
 
-/* Custom Breadcrumb styles for reservation page  */
-.p-reservation_breadcrumb {
+/* Custom Breadcrumb styles for payment page  */
+.p-payment_breadcrumb {
   top: 140%;
 }
 
 /* ============================================
-    END RESERVATION BANNER
+    END PAYMENT BANNER
    ============================================ */
 
 /* ============================================
-   START RESERVATION FLOW
+   START PAYMENT FLOW
    ============================================ */
 
-.p-reservation_flow {
+.p-payment_section_white {
   width: 100%;
   height: auto;
   overflow: hidden;
   box-sizing: border-box;
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
-  background-position: 0% -20%;
+  background-position: center;
+  
+}
+
+.p-payment_content {
+  position: relative;
   padding-bottom: 7rem;
 }
 
-.p-reservation_flow_content {
-  position: relative;
-}
-
-/* STEPS */
-
-.p-reservation_step_list {
+/* TEXT CONTAINER */
+.p-payment_text_container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: white;
+  padding: 2.5rem;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
-.p-reservation_step_card {
-  width: 100%;
-  height: 100%;
+.p-payment_text_block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* gap: 1rem; */
-  background-color: white;
 }
 
-.p-reservation_step_card span {
-  color: #f53662;
-}
-
-.p-reservation_step_card_body {
-  font-weight: 700;
-  padding: 1.5rem 2.5rem;
-  box-sizing: border-box;
+.p-payment_text_block p {
+  font-size: 1rem;
   line-height: 2rem;
+  font-weight: 500;
 }
 
-.p-reservation_step_card_icon {
-  width: auto;
-  height: auto;
-  padding: 1.5rem;
-  box-sizing: border-box;
-  background-color: var(--base-lightBlue);
-}
-
-.p-reservation_step_card_title {
-  display: flex;
-  align-items: center;
-  padding-left: 1.5rem;
-  gap: 1rem;
-}
-
-.p-reservation_step_card_title h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.p-payment_text_block span {
+  font-weight: 500;
   color: var(--text-lightBlue);
 }
 
-.p-reservation_step_card_title > p {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-black1);
+.p-payment_card_logo {
+  width: auto;
+  height: 1.5rem;
 }
 
-/* RESERVATION LINKS */
+/* PAYMENT LINKS */
 
-.p-reservation_links-nav {
+.p-payment_links-nav {
   display: flex;
   align-items: center;
   padding-top: 3rem;
@@ -178,7 +152,7 @@
   margin-bottom: 10rem;
 }
 
-.p-reservation_links-item {
+.p-payment_links-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,150 +165,48 @@
   transition: color 0.3s ease;
 }
 
-.p-reservation_links-item:hover {
+.p-payment_links-item:hover {
   color: var(--base-lightBlue);
 }
 
-.p-reservation_title_container {
+.p-payment_title_container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 3rem;
 }
 
-.p-reservation_flow_subtitle {
+.p-payment_subtitle {
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-.p-reservation_flow_title {
+.p-payment_title {
   font-size: 6.259rem;
   line-height: 1.3;
   font-weight: 400;
 }
 
-.p-reservation_speak_imgContainer {
+.p-payment_speak_imgContainer {
   position: absolute;
   right: 20%;
   top: 65%;
 }
 
 /* ============================================
-   END RESERVATION FLOW
+   END PAYMENT
    ============================================ */
 
 /* ============================================
-   START SIMULATION
-   ============================================ */
-
-.p-reservation_simulation {
-  width: 100%;
-  height: calc(100vw * 802 / 1920);
-  position: relative;
-  overflow: hidden;
-}
-
-.p-reservation_simulation::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../img/reservation/bg_reservation_simulation.webp");
-  background-size: cover;
-  background-position: 20% 42%;
-  filter: blur(0.208vw) brightness(0.5);
-  z-index: 0;
-}
-
-/* Ribbon simulation SVG decoration */
-.p-reservation_simulation_ribbon {
-  position: absolute;
-  left: -2%;
-  top: 83%;
-  transform: translateY(-50%);
-  height: 53%;
-  width: auto;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.p-reservation_simulation_people {
-  position: absolute;
-  bottom: 19%;
-  left: 15%;
-  z-index: 2;
-}
-
-.p-reservation_simulation_phone {
-  position: absolute;
-  top: 50%;
-  left: 44%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.p-reservation_simulation_phone img {
-  position: relative;
-  z-index: 2;
-  display: block;
-  height: 33.333vw;
-  width: auto;
-}
-
-.p-reservation_simulation_phone_video {
-  position: absolute;
-  top: 2%;
-  left: 5.5%;
-  width: 89%;
-  height: 95.5%;
-  object-fit: fill;
-  z-index: 1;
-  border-radius: 1.5625vw;
-  background-color: var(--base-lightBlue);
-}
-
-.p-reservation_simulation_content {
-  position: absolute;
-  right: 20%;
-  top: 20%;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  z-index: 2;
-}
-
-.p-reservation_simulation_content p {
-  font-weight: 400;
-}
-
-.p-reservation_simulation_content h2 {
-  font-size: 5.208vw;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.p-reservation_simulation_content > div {
-  display: flex;
-  flex-direction: column;
-  gap: 1.667vw;
-  width: 24.167vw;
-  text-align: justify;
-  line-height: 2;
-}
-
-/* ============================================
-   END SIMULATION
-   ============================================ */
-
-/* ============================================
-    START FORM
+    START ABOUT
     ============================================ */
-.p-reservation_form_section {
+.p-payment_section_lightblue {
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
 }
 
-.p-reservation_form {
+.p-payment_about {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -343,46 +215,79 @@
   padding-bottom: 5rem;
 }
 
-.p-reservation_form_titleContainer {
+/* ABOUT BOX */
+
+.p-payment_about_card {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-}
-
-.p-reservation_form_titleContainer p {
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-
-.p-reservation_form_titleContainer h2 {
-  font-size: 6.25rem;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.p-reservation_form_content {
-  position: relative;
-  padding: 4rem;
+  justify-content: center;
+  /* gap: 1rem; */
   background-color: white;
 }
 
-.p-reservation_form_speak_bubble {
-  position: absolute;
-  left: 20.5%;
-  bottom: -8.5%;
+.p-payment_about_card span {
+  color: #f53662;
+}
+
+.p-payment_about_card_body {
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.p-payment_about_card_body p {
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.p-payment_about_card_icon {
   width: auto;
   height: auto;
-  z-index: 1;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background-color: var(--base-lightBlue);
+}
+
+.p-payment_about_card_title {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  gap: 1rem;
+}
+
+.p-payment_about_card_title h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-black1);
+}
+
+.p-payment_about_subheader {
+  width: 15rem;
+  background-color: var(--base-lightBlue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.p-payment_about_subheader h4 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /* ============================================
-   END FORM
+   END ABOUT
    ============================================ */
 
 /* ============================================
    START ANNOUNCEMENT
    ============================================ */
-.p-reservation_announcement_section {
+.p-payment_announcement_section {
   background-image: url("../img/common/bg_camouflage01.webp");
   background-size: cover;
   background-position: center;
@@ -390,7 +295,7 @@
   padding: 5% 0%;
 }
 
-.p-reservation_announcement {
+.p-payment_announcement {
   position: relative;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 5rem;
@@ -402,39 +307,39 @@
   align-items: center;
 }
 
-.p-reservation_announcement_titleContainer {
+.p-payment_announcement_titleContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
-.p-reservation_announcement_titleContainer p {
+.p-payment_announcement_titleContainer p {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-lightBlue);
 }
 
-.p-reservation_announcement_titleContainer h2 {
+.p-payment_announcement_titleContainer h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.p-reservation_announcement_body {
+.p-payment_announcement_body {
   display: flex;
   flex-direction: column;
   line-height: 2;
   font-weight: 500;
 }
 
-.p-reservation_announcement_body span {
+.p-payment_announcement_body span {
   color: var(--base-lightBlue);
   text-decoration: underline;
   cursor: pointer;
 }
 
-.p-reservation_announcement_btn {
+.p-payment_announcement_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,7 +349,7 @@
   font-size: 1.25rem;
 }
 
-.p-reservation_announcement_people {
+.p-payment_announcement_people {
   position: absolute;
   bottom: -20%;
   left: 10%;
@@ -453,7 +358,7 @@
   z-index: 2;
 }
 
-.p-reservation_announcement_speak {
+.p-payment_announcement_speak {
   position: absolute;
   bottom: -20%;
   right: -4%;
@@ -470,7 +375,7 @@
    START FAQ
    ============================================ */
 
-.p-reservation_faq_section {
+.p-payment_faq_section {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/common/img_gym01.webp");
@@ -479,14 +384,14 @@
   background-repeat: no-repeat;
 }
 
-.p-reservation_faq {
+.p-payment_faq {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   padding: 8rem 0;
 }
 
-.p_reservation_faq_card {
+.p_payment_faq_card {
   display: flex;
   flex-direction: column;
 
@@ -494,17 +399,17 @@
   flex: 1;
 }
 
-.p_reservation_faq_card_header {
+.p_payment_faq_card_header {
   display: flex;
   align-items: center;
 }
 
-.p_reservation_faq_card_header h3 {
+.p_payment_faq_card_header h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.p_reservation_faq_card_icon {
+.p_payment_faq_card_icon {
   background-color: var(--base-lightBlue);
   display: flex;
   align-items: center;
@@ -514,7 +419,7 @@
   width: 5.625rem;
 }
 
-.p_reservation_faq_card_icon_btn {
+.p_payment_faq_card_icon_btn {
   width: 2.5rem;
   height: 2.5rem;
   background-color: var(--base-lightBlue);
@@ -524,26 +429,59 @@
   justify-content: center;
 }
 
-.p_reservation_faq_card_body {
+.p_payment_faq_card_body {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
   padding: 2rem 2.5rem;
 }
 
-.p_reservation_faq_card span {
+.p_payment_faq_card span {
   color: var(--base-lightBlue);
 }
 
-.p-reservation_faq_row {
+.p-payment_faq_row {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
 }
 
+/* SPEAK PERSON */
+
+/* 01 */
+.p-payment_speak_container01 {
+  position: absolute;
+  top: -11rem;
+  right: 3rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-payment_speak_image01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-payment_speak_bubble01 {
+  position: absolute;
+  top: 0;
+  right: 10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-payment_speak_person01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
 /* TABLET */
 @media (max-width: 1024px) {
-  .p-reservation_banner {
+  .p-payment_banner {
     width: 100%;
     height: 20rem;
     position: relative;
@@ -553,7 +491,7 @@
 
 /* MOBILE */
 @media (max-width: 767px) {
-  .p-reservation_faq_row {
+  .p-payment_faq_row {
     gap: 1.5rem;
   }
 }

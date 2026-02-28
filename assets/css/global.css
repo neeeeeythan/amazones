@@ -13,6 +13,7 @@
   --text-black1: #4f4f4f;
   --text-white: #ffffff;
   --text-lightBlue: #81d8d0;
+  --text-red: #f53662;
 
   /*FONTS*/
   --font-outfit: "Outfit";
@@ -68,6 +69,9 @@ main {
 }
 .text-lightBlue {
   color: var(--text-lightBlue);
+}
+.text-red {
+  color: var(--text-red);
 }
 
 .text-underline {
