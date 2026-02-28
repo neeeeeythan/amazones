@@ -569,16 +569,36 @@
 /* PEOPLE JUMP */
 .p-price_people_image01 {
   position: absolute;
-  top: -15rem;
+  top: -13rem;
   right: -3rem;
   z-index: 2;
   pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+}
+
+.p-price_people_jump {
+  width: auto;
+  height: 23rem;
+  object-fit: contain;
 }
 
 .p-price_people_jump01 {
-  width: auto;
-  height: 25rem;
-  object-fit: contain;
+  margin-right: -2.5rem;
+  z-index: 1;
+}
+
+.p-price_people_jump02 {
+  height: 21rem;
+  margin-right: -2.5rem;
+  z-index: 3;
+}
+
+.p-price_people_jump03 {
+  height: 23rem;
+  margin-left: -4rem;
+  z-index: 2;
 }
 
 /* SPEAK PERSON */
