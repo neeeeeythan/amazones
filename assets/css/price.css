@@ -1,0 +1,500 @@
+/* ============================================
+    START PAYMENT BANNER
+   ============================================ */
+.p-price_banner {
+  width: 100%;
+  height: calc(100vw * 300 / 1920);
+  position: relative;
+  overflow: visible;
+}
+
+.p-price_banner-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.p-price_banner-img {
+  position: absolute;
+  right: -9.8%;
+  top: -85%;
+  width: auto;
+  height: 325%;
+  max-width: none;
+}
+
+.p-price_banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(79, 79, 79, 1) 0%,
+    rgb(79, 79, 79, 1) 47%,
+    rgb(79, 79, 79, 0) 100%
+  );
+  z-index: 1;
+}
+
+/* Ribbon banner SVG decoration */
+.p-price_banner-ribbon {
+  position: absolute;
+  right: -45%;
+  top: -43%;
+  transform: translateY(-50%);
+  height: 300%;
+  width: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Text content */
+.p-price_banner-content {
+  position: absolute;
+  top: 50%;
+  left: 5.75rem;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.p-price_banner-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.375rem;
+  font-weight: 400;
+}
+
+.p-price_banner-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: var(--base-lightBlue);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  padding-left: 0.75rem;
+}
+
+/* Custom Breadcrumb styles for price page  */
+.p-price_breadcrumb {
+  top: 140%;
+}
+
+/* ============================================
+    END PAYMENT BANNER
+   ============================================ */
+
+/* ============================================
+   START PAYMENT
+   ============================================ */
+
+.p-price_section_white {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_white_pattern.webp");
+  background-size: cover;
+  background-position: 0% -10%;
+}
+
+.p-price_content {
+  position: relative;
+  padding-bottom: 7rem;
+}
+
+/* TEXT CONTAINER */
+.p-price_text_container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  background-color: white;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.p-price_text_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-price_item_row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--base-gray);
+  padding: 1rem 0;
+}
+
+.p-price_text_block,
+.p-price_item_row p {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.p-price_text_block,
+.p-price_item_row span {
+  font-weight: 500;
+  color: var(--text-lightBlue);
+}
+
+.p-price_card_logo {
+  width: auto;
+  height: 1.5rem;
+}
+
+/* PAYMENT LINKS */
+
+.p-price_links-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
+  cursor: pointer;
+  margin-bottom: 10rem;
+}
+
+.p-price_links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: var(--text-black1);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.p-price_links-item:hover {
+  color: var(--base-lightBlue);
+}
+
+.p-price_title_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.p-price_subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.p-price_title {
+  font-size: 6.259rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.p-price_speak_imgContainer {
+  position: absolute;
+  right: 20%;
+  top: 65%;
+}
+
+/* ============================================
+   END PAYMENT
+   ============================================ */
+
+/* ============================================
+    START ABOUT
+    ============================================ */
+.p-price_section_lightblue {
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.p-price_about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ABOUT BOX */
+
+.p-price_about_card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+  background-color: white;
+}
+
+.p-price_about_card span {
+  color: #f53662;
+}
+
+.p-price_about_card_body {
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.p-price_about_card_body p {
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.p-price_about_card_icon {
+  width: auto;
+  height: auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background-color: var(--base-lightBlue);
+}
+
+.p-price_about_card_title {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  gap: 1rem;
+}
+
+.p-price_about_card_title h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-black1);
+}
+
+.p-price_subheader {
+  width: 15rem;
+  background-color: var(--base-lightBlue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.p-price_subheader h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   END ABOUT
+   ============================================ */
+
+/* ============================================
+   START ANNOUNCEMENT
+   ============================================ */
+
+.p-price_announcement_people {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+.p-price_announcement_speak {
+  position: absolute;
+  bottom: -20%;
+  right: -4%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+/* ============================================
+   END ANNOUNCEMENT
+   ============================================ */
+
+/* ============================================
+   START FAQ
+   ============================================ */
+
+.p-price_faq_section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/common/img_gym01.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-price_faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 8rem 0;
+}
+
+.p_price_faq_card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  flex: 1;
+}
+
+.p_price_faq_card_header {
+  display: flex;
+  align-items: center;
+}
+
+.p_price_faq_card_header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.p_price_faq_card_icon {
+  background-color: var(--base-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  height: 5.625rem;
+  width: 5.625rem;
+}
+
+.p_price_faq_card_icon_btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--base-lightBlue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p_price_faq_card_body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 2rem 2.5rem;
+}
+
+.p_price_faq_card span {
+  color: var(--base-lightBlue);
+}
+
+.p-price_faq_row {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+/* SPEAK PERSON */
+
+/* 01 */
+
+.p-price_speak_image01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-price_speak_bubble01 {
+  position: absolute;
+  top: -4rem;
+  right: -3rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-price_speak_person01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 02 */
+.p-price_speak_container02 {
+  position: absolute;
+  bottom: 0rem;
+  left: 1rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-price_speak_image02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-price_speak_bubble02 {
+  position: absolute;
+  top: -3rem;
+  right: 10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-price_speak_person02 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 03 */
+.p-price_speak_container03 {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-price_speak_image03 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-price_speak_bubble03 {
+  position: absolute;
+  top: -4rem;
+  right: -7rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-price_speak_person03 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .p-price_banner {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    overflow: visible;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .p-price_faq_row {
+    gap: 1.5rem;
+  }
+}

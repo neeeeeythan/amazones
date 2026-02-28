@@ -13,11 +13,11 @@
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
 
     <!--PAYMENT CSS-->
-    <link href="../assets/css/payment.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/price.css" rel="stylesheet" type="text/css" />
 
     <!-- SCRIPTS -->
     <script src="../assets/js/global.js" defer></script>
-    <script src="../assets/js/payment.js" defer></script>
+    <script src="../assets/js/price.js" defer></script>
     <script src="https://highness.hacomono.jp/js/widget.js" defer></script>
   </head>
 
@@ -121,25 +121,23 @@
 
     <main>
       <!-- BANNER -->
-      <section class="p-payment_banner">
-        <div class="p-payment_banner-inner">
+      <section class="p-price_banner">
+        <div class="p-price_banner-inner">
           <img
             src="../assets/img/common/img_gym02.webp"
             alt="予約バナー"
-            class="p-payment_banner-img"
+            class="p-price_banner-img"
           />
 
-          <div class="p-payment_banner-overlay"></div>
+          <div class="p-price_banner-overlay"></div>
         </div>
 
         <!-- BANNER TEXT -->
-        <div class="p-payment_banner-content">
-          <h1 class="p-payment_banner-title font-zen text-white">
-            お支払いについて
-          </h1>
-          <p class="p-payment_banner-subtitle font-outfit">Payment</p>
+        <div class="p-price_banner-content">
+          <h1 class="p-price_banner-title font-zen text-white">料金案内</h1>
+          <p class="p-price_banner-subtitle font-outfit">Price</p>
           <!-- BREADCRUMB -->
-          <nav class="c-breadcrumb p-payment_breadcrumb">
+          <nav class="c-breadcrumb p-price_breadcrumb">
             <a href="../index.html" class="c-breadcrumb-home">
               <svg
                 version="1.2"
@@ -157,24 +155,22 @@
             </a>
             <span class="c-breadcrumb-separator">&#x203A;</span>
             <span class="text-white fs-14">料金案内</span>
-            <span class="c-breadcrumb-separator">&#x203A;</span>
-            <span class="text-white fs-14">お支払いについて</span>
           </nav>
         </div>
         <!-- RIBBON DECORATION 01-->
         <img
           src="../assets/img/top/img_hero_ribbon.svg"
           alt="ribbon 01"
-          class="p-payment_banner-ribbon"
+          class="p-price_banner-ribbon"
         />
       </section>
 
       <!-- PAYMENT CONTENT -->
-      <section class="p-payment_section_white">
+      <section class="p-price_section_white">
         <!-- LINKS -->
-        <nav class="p-payment_links-nav c-maxWidth">
-          <div class="p-payment_links-item">
-            <span>お支払い方法</span>
+        <nav class="p-price_links-nav c-maxWidth">
+          <div class="p-price_links-item">
+            <span>月額プラン</span>
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -189,8 +185,8 @@
               />
             </svg>
           </div>
-          <div class="p-payment_links-item">
-            <span>クレジットカード決済について</span>
+          <div class="p-price_links-item">
+            <span>人数限定プラン</span>
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -205,8 +201,8 @@
               />
             </svg>
           </div>
-          <div class="p-payment_links-item">
-            <span>口座振替について</span>
+          <div class="p-price_links-item">
+            <span>初期費用</span>
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -221,24 +217,8 @@
               />
             </svg>
           </div>
-          <div class="p-payment_links-item">
-            <span>店頭現金決済について</span>
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 13 8"
-              width="13"
-              height="8"
-            >
-              <path
-                id="長方形 6 のコピー 6"
-                fill="#81d8d0"
-                d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-              />
-            </svg>
-          </div>
-          <div class="p-payment_links-item">
-            <span>日割り計算について</span>
+          <div class="p-price_links-item">
+            <span>オプションサービス</span>
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -256,159 +236,110 @@
         </nav>
 
         <!-- CONTENT -->
-        <div class="p-payment_content c-maxWidth">
+        <div class="p-price_content c-maxWidth">
           <!-- TITLE -->
-          <div class="p-payment_title_container">
-            <p class="p-payment_subtitle font-zen">お支払方法</p>
-            <h1 class="p-payment_title font-outfit">Payment</h1>
+          <div class="flex items-center gap-50px">
+            <div class="p-price_title_container">
+              <p class="p-price_subtitle font-zen">月額プラン</p>
+              <h1 class="p-price_title font-outfit">Monthly Plan</h1>
+            </div>
+            <div class="font-zen fw-500 lh-200">
+              <p>
+                スタンダード会員の月会費が永年割引きになるキャンペーンもございます。
+              </p>
+              <p>詳細は各店舗へお尋ねください。</p>
+            </div>
           </div>
-          <!-- TEXT CONTAINER -->
-          <div class="p-payment_text_container">
-            <!-- FLOATING SPEAK PERSON 01 -->
-            <div class="p-payment_speak_container01">
-              <div class="p-payment_speak_image01">
-                <img
-                  src="../assets/img/payment/img_payment_speak_bubble01.svg"
-                  alt="speak person image"
-                  class="p-payment_speak_bubble01"
-                />
-                <img
-                  src="../assets/img/payment/img_payment_speak_person01.webp"
-                  alt="speak person image"
-                  class="p-payment_speak_person01"
-                />
+
+          <div class="flex">
+            <!-- TEXT CONTENT -->
+            <div class="flex flex-col flex-1">
+              <!-- SUBHEADER -->
+              <div class="p-price_subheader">
+                <h4>基本料金</h4>
+              </div>
+
+              <!-- PRICE LIST -->
+              <div class="p-price_text_container">
+                <!-- ITEM 1 -->
+                <div class="p-price_item_row font-zen">
+                  <p class="p-price_item_row_name">スタンダード会員</p>
+                  <p class="p-price_item_row_value">月額 9,900円</p>
+                </div>
+                <!-- ITEM 2 -->
+                <div class="p-price_item_row font-zen">
+                  <p class="p-price_item_row_name">
+                    学生会員
+                    <span>（大学・専門学生含む / 学生期間のみ適用）</span>
+                  </p>
+                  <p class="p-price_item_row_value">月額 7,700円</p>
+                </div>
+                <!-- ITEM 3 -->
+                <div class="p-price_item_row font-zen">
+                  <p class="p-price_item_row_name">
+                    シニア会員
+                    <span>（満60歳以上より適用）</span>
+                  </p>
+                  <p class="p-price_item_row_value">月額 7,700円</p>
+                </div>
+                <!-- ITEM 4 -->
+                <div class="p-price_item_row font-zen">
+                  <p class="p-price_item_row_name">
+                    おさんぽ会員
+                    <span>（ルームランナーのみ使用可能なプラン）</span>
+                  </p>
+                  <p class="p-price_item_row_value">月額 5,500円</p>
+                </div>
+                <!-- ITEM 5 -->
+                <div class="p-price_item_row font-zen">
+                  <p class="p-price_item_row_name">休憩・休会会員</p>
+                  <p class="p-price_item_row_value">月額 2,200円</p>
+                </div>
               </div>
             </div>
-            <!-- TEXT BLOCK 1 -->
-            <div class="p-payment_text_block">
-              <p class="font-zen">
-                お支払い方法は、クレジットカードと口座振替からお選びいただけます。
-              </p>
-              <p class="font-zen">
-                <span>● クレジットカードの場合｜</span
-                >クレジットカード（VISA・MasterCard・JCB・American
-                Express・Diners Club）、もしくはデビットカードをご用意ください。
-              </p>
-            </div>
-            <!-- PAYMENT LOGOS -->
-            <div class="flex gap-2">
+            <!-- IMAGE CONTENT -->
+            <!-- FLOATING SPEAK PERSON 01 -->
+            <div class="p-price_speak_image01 flex-1">
               <img
-                src="../assets/img/common/img_visa_logo.svg"
-                alt="visa logo"
-                class="p-payment_card_logo"
+                src="../assets/img/price/img_price_speak_bubble01.svg"
+                alt="speak person image"
+                class="p-price_speak_bubble01"
               />
               <img
-                src="../assets/img/common/img_mastercard_logo.svg"
-                alt="mastercard logo"
-                class="p-payment_card_logo"
+                src="../assets/img/price/img_price_speak_person01.webp"
+                alt="speak person image"
+                class="p-price_speak_person01"
               />
-              <img
-                src="../assets/img/common/img_jcb_logo.svg"
-                alt="jcb logo"
-                class="p-payment_card_logo"
-              />
-              <img
-                src="../assets/img/common/img_amex_logo.svg"
-                alt="amex logo"
-                class="p-payment_card_logo"
-              />
-              <img
-                src="../assets/img/common/img_dinersclub_logo.svg"
-                alt="diners club logo"
-                class="p-payment_card_logo"
-              />
-            </div>
-
-            <!-- TEXT BLOCK 2 -->
-            <div class="p-payment_text_block">
-              <p class="font-zen">
-                <span>● 口座振替の場合｜</span
-                >会費引落口座の銀行情報をお持ちください。
-              </p>
-              <p class="font-zen">
-                なお、一部ご利用になれない金融機関・キャッシュカードがございます。詳細は各店舗のスタッフへお確かめください。
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- BG LIGHT BLUE SECTION 1-->
-      <section class="p-payment_section_lightblue">
-        <div class="p-payment_about c-maxWidth">
-          <div class="p-payment_about_card">
-            <div class="flex">
-              <div class="p-payment_about_card_icon">
-                <svg
-                  version="1.2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 41 28"
-                  width="41"
-                  height="28"
-                >
-                  <path
-                    id="シェイプ 550"
-                    fill-rule="evenodd"
-                    fill="#fbfdfd"
-                    class="s0"
-                    d="m37.61 27.12h-34.22c-0.76 0-1.48-0.3-2.03-0.84-0.55-0.55-0.84-1.27-0.84-2.03v-20.5c0-0.76 0.29-1.48 0.84-2.03 0.55-0.54 1.27-0.84 2.03-0.84h34.26 0.04 0.03l0.36 0.04c0.6 0.1 1.14 0.37 1.56 0.8q0.33 0.33 0.55 0.76l0.01 0.02q0.02 0.05 0.04 0.1l0.04 0.1 0.1 0.27 0.05 0.19 0.04 0.26 0.01 0.26v0.07 20.5c0 0.76-0.29 1.48-0.84 2.03-0.55 0.54-1.27 0.84-2.03 0.84zm-35.45-14.49v11.62q0 0.51 0.36 0.87 0.36 0.36 0.87 0.36h34.22q0.51 0 0.87-0.36 0.36-0.37 0.36-0.87v-11.62zm31.56 11.04h-6.3c-0.46 0-0.88-0.18-1.2-0.5-0.32-0.32-0.5-0.75-0.5-1.2v-3.21c0-0.45 0.18-0.88 0.5-1.2 0.32-0.32 0.74-0.5 1.2-0.5h6.3c0.45 0 0.88 0.18 1.2 0.5 0.32 0.32 0.49 0.75 0.49 1.2v3.21c0 0.45-0.17 0.88-0.49 1.2-0.32 0.32-0.75 0.5-1.2 0.5zm-6.3-4.97q-0.03 0.01-0.04 0.02-0.02 0.01-0.02 0.04v3.21q0 0.02 0.02 0.03 0.01 0.02 0.04 0.02h6.3q0.03 0 0.04-0.01 0.01-0.02 0.01-0.04v-3.21q0-0.03-0.01-0.04-0.02-0.01-0.04-0.02zm-25.25-7.71h36.68v-3.32h-36.68zm0-4.96h36.68v-2.37l-0.04-0.22-0.07-0.21-0.1-0.16-0.17-0.21q-0.29-0.27-0.68-0.33l-0.17-0.01h-34.22q-0.51 0-0.87 0.36-0.36 0.36-0.36 0.87z"
-                  />
-                </svg>
-              </div>
-              <div class="p-payment_about_card_title">
-                <h3 class="font-zen">クレジットカード決済について</h3>
-              </div>
+      <section class="p-price_section_lightblue">
+        <div class="p-price_about c-maxWidth">
+          <!-- TITLE -->
+          <div class="flex items-center gap-50px">
+            <div class="p-price_title_container">
+              <p class="p-price_subtitle font-zen">人数限定プラン</p>
+              <h1 class="p-price_title font-outfit">Special Plan</h1>
             </div>
-            <div class="p-payment_about_card_body">
-              <div>
-                <p class="font-zen">
-                  クレジットカードをご登録いただけましたら、契約期間中は継続してクレジット支払いで毎月の決済が可能となります。
-                </p>
-                <p class="font-zen">
-                  なお、デビットやチャージ式クレジットの場合は残高にご注意いただき、毎月20日の決済前にご確認いただくようお願いします。
-                </p>
-                <p class="font-zen">
-                  また、有効期限切れなどで決済不可になった場合は、オンラインから使用可能なクレジットカードへ変更をしていただくようお願いいたします。
-                </p>
-                <p class="font-zen">
-                  クレジットカードの変更完了報告をしていただくことにより、決済することが可能です。
-                </p>
-              </div>
-              <div class="flex gap-50px">
-                <div>
-                  <img
-                    src="../assets/img/payment/img_payment_about01.svg"
-                    alt="payment about 1 image"
-                  />
-                </div>
-                <div class="flex flex-col gap-4">
-                  <div class="p-payment_about_subheader">
-                    <h4 class="font-zen">お支払い例</h4>
-                  </div>
-                  <div class="font-zen">
-                    <p class="text-red">
-                      ※ 9月15日ご契約、ご入会日を10月1日に指定された場合
-                    </p>
-                    <p>
-                      10月分の月会費、11月分の月会費はご契約いただいた当日（※9月15日）が決済日になります。
-                    </p>
-                    <p>
-                      また12月分の月会費は、11月20日に決済されます。（以降は毎月20日が次月分決済日）
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="font-zen fw-500 lh-200">
+              <p>
+                スタンダード会員の月会費が永年割引きになるキャンペーンもございます。
+              </p>
+              <p>詳細は各店舗へお尋ねください。</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- WHITE SECTION 1 -->
-      <section class="p-payment_section_white">
-        <div class="p-payment_about c-maxWidth">
-          <div class="p-payment_about_card">
+      <section class="p-price_section_white">
+        <div class="p-price_about c-maxWidth">
+          <div class="p-price_about_card">
             <div class="flex">
-              <div class="p-payment_about_card_icon">
+              <div class="p-price_about_card_icon">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -424,11 +355,11 @@
                   />
                 </svg>
               </div>
-              <div class="p-payment_about_card_title">
+              <div class="p-price_about_card_title">
                 <h3 class="font-zen">口座振替について</h3>
               </div>
             </div>
-            <div class="p-payment_about_card_body">
+            <div class="p-price_about_card_body">
               <div>
                 <p class="font-zen">
                   店頭にて口座振替用紙に氏名・住所・銀行情報の記入、およびご捺印していただく必要がございます。
@@ -443,12 +374,12 @@
               <div class="flex gap-50px">
                 <div>
                   <img
-                    src="../assets/img/payment/img_payment_about02.svg"
-                    alt="payment about 2 image"
+                    src="../assets/img/price/img_price_about02.svg"
+                    alt="price about 2 image"
                   />
                 </div>
                 <div class="flex flex-col gap-4">
-                  <div class="p-payment_about_subheader">
+                  <div class="p-price_about_subheader">
                     <h4 class="font-zen">お支払い例</h4>
                   </div>
                   <div class="font-zen">
@@ -470,11 +401,11 @@
       </section>
 
       <!-- BG LIGHT BLUE SECTION 2-->
-      <section class="p-payment_section_lightblue">
-        <div class="p-payment_about c-maxWidth">
-          <div class="p-payment_about_card">
+      <section class="p-price_section_lightblue">
+        <div class="p-price_about c-maxWidth">
+          <div class="p-price_about_card">
             <div class="flex">
-              <div class="p-payment_about_card_icon">
+              <div class="p-price_about_card_icon">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -490,11 +421,11 @@
                   />
                 </svg>
               </div>
-              <div class="p-payment_about_card_title">
+              <div class="p-price_about_card_title">
                 <h3 class="font-zen">店頭現金決済について</h3>
               </div>
             </div>
-            <div class="p-payment_about_card_body">
+            <div class="p-price_about_card_body">
               <div>
                 <p class="font-zen">
                   店頭で月会費やご入会金、備品などを現金でお支払い可能です。
@@ -509,11 +440,11 @@
       </section>
 
       <!-- WHITE SECTION 2 -->
-      <section class="p-payment_section_white">
-        <div class="p-payment_about c-maxWidth">
-          <div class="p-payment_about_card">
+      <section class="p-price_section_white">
+        <div class="p-price_about c-maxWidth">
+          <div class="p-price_about_card">
             <div class="flex">
-              <div class="p-payment_about_card_icon">
+              <div class="p-price_about_card_icon">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -529,11 +460,11 @@
                   />
                 </svg>
               </div>
-              <div class="p-payment_about_card_title">
+              <div class="p-price_about_card_title">
                 <h3 class="font-zen">日割り計算について</h3>
               </div>
             </div>
-            <div class="p-payment_about_card_body">
+            <div class="p-price_about_card_body">
               <div>
                 <p class="font-zen">
                   初月の日割り計算はご指定いただいたご入会日から起算されます。
@@ -542,12 +473,12 @@
               <div class="flex gap-50px">
                 <div>
                   <img
-                    src="../assets/img/payment/img_payment_about03.svg"
-                    alt="payment about 3 image"
+                    src="../assets/img/price/img_price_about03.svg"
+                    alt="price about 3 image"
                   />
                 </div>
                 <div class="flex flex-col gap-4">
-                  <div class="p-payment_about_subheader">
+                  <div class="p-price_about_subheader">
                     <h4 class="font-zen">日割り例</h4>
                   </div>
                   <div class="font-zen">
@@ -615,32 +546,32 @@
             </p>
           </button>
           <!-- FLOATING SPEAK PERSON 02 -->
-          <div class="p-payment_speak_container02">
-            <div class="p-payment_speak_image02">
+          <div class="p-price_speak_container02">
+            <div class="p-price_speak_image02">
               <img
-                src="../assets/img/payment/img_payment_speak_bubble02.svg"
+                src="../assets/img/price/img_price_speak_bubble02.svg"
                 alt="speak person image"
-                class="p-payment_speak_bubble02"
+                class="p-price_speak_bubble02"
               />
               <img
-                src="../assets/img/payment/img_payment_speak_person02.webp"
+                src="../assets/img/price/img_price_speak_person02.webp"
                 alt="speak person image"
-                class="p-payment_speak_person02"
+                class="p-price_speak_person02"
               />
             </div>
           </div>
           <!-- FLOATING SPEAK PERSON 03 -->
-          <div class="p-payment_speak_container03">
-            <div class="p-payment_speak_image03">
+          <div class="p-price_speak_container03">
+            <div class="p-price_speak_image03">
               <img
-                src="../assets/img/payment/img_payment_speak_bubble03.svg"
+                src="../assets/img/price/img_price_speak_bubble03.svg"
                 alt="speak person image"
-                class="p-payment_speak_bubble03"
+                class="p-price_speak_bubble03"
               />
               <img
-                src="../assets/img/payment/img_payment_speak_person03.webp"
+                src="../assets/img/price/img_price_speak_person03.webp"
                 alt="speak person image"
-                class="p-payment_speak_person03"
+                class="p-price_speak_person03"
               />
             </div>
           </div>
@@ -726,14 +657,14 @@
       </section>
 
       <!-- FAQ -->
-      <section class="p-payment_faq_section">
-        <div class="p-payment_faq c-maxWidth">
+      <section class="p-price_faq_section">
+        <div class="p-price_faq c-maxWidth">
           <!-- ROW 1 -->
-          <div class="p-payment_faq_row">
+          <div class="p-price_faq_row">
             <!-- CARD 1 -->
-            <div class="p_payment_faq_card">
-              <div class="p_payment_faq_card_header">
-                <div class="p_payment_faq_card_icon">
+            <div class="p_price_faq_card">
+              <div class="p_price_faq_card_header">
+                <div class="p_price_faq_card_icon">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -776,7 +707,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p_payment_faq_card_body">
+              <div class="p_price_faq_card_body">
                 <p class="font-zen">
                   よくあるお問い合わせ内容をまとめて掲載しております。
                 </p>
@@ -786,9 +717,9 @@
               </div>
             </div>
             <!-- CARD 2 -->
-            <div class="p_payment_faq_card">
-              <div class="p_payment_faq_card_header">
-                <div class="p_payment_faq_card_icon">
+            <div class="p_price_faq_card">
+              <div class="p_price_faq_card_header">
+                <div class="p_price_faq_card_icon">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -831,7 +762,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p_payment_faq_card_body">
+              <div class="p_price_faq_card_body">
                 <p class="font-zen">
                   女性専用24時間ジム
                   Amazones（アマゾネス）として運営する、スポーツクラブの利用に関し適用されるご利用規約です。
@@ -840,11 +771,11 @@
             </div>
           </div>
           <!-- ROW 2 -->
-          <div class="p-payment_faq_row">
+          <div class="p-price_faq_row">
             <!-- CARD 3 -->
-            <div class="p_payment_faq_card">
-              <div class="p_payment_faq_card_header">
-                <div class="p_payment_faq_card_icon">
+            <div class="p_price_faq_card">
+              <div class="p_price_faq_card_header">
+                <div class="p_price_faq_card_icon">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -886,16 +817,16 @@
                   </div>
                 </div>
               </div>
-              <div class="p_payment_faq_card_body">
+              <div class="p_price_faq_card_body">
                 <p class="font-zen">
                   ご予約方法や変更・キャンセルについてなど、ご不明点はお気軽にお尋ねください。
                 </p>
               </div>
             </div>
             <!-- CARD 4 -->
-            <div class="p_payment_faq_card">
-              <div class="p_payment_faq_card_header">
-                <div class="p_payment_faq_card_icon">
+            <div class="p_price_faq_card">
+              <div class="p_price_faq_card_header">
+                <div class="p_price_faq_card_icon">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -932,7 +863,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p_payment_faq_card_body">
+              <div class="p_price_faq_card_body">
                 <p class="font-zen">
                   パーソナルトレーニングはこちらのページからご予約ください。
                 </p>
