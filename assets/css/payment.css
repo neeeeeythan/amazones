@@ -248,6 +248,11 @@
   height: auto;
   padding: 1.5rem;
   box-sizing: border-box;
+  width: 5.625rem;
+  height: 5.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--base-lightBlue);
 }
 

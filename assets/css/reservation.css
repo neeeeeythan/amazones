@@ -141,9 +141,12 @@
 }
 
 .p-reservation_step_card_icon {
-  width: auto;
-  height: auto;
+  width: 5.625rem;
+  height: 5.625rem;
   padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   background-color: var(--base-lightBlue);
 }
