@@ -5752,3 +5752,68 @@ a {
   justify-content: center;
 }
 /*END FOOTER SECTION*/
+
+/* START ANNOUNCEMENT SECTION  */
+
+.c-announcement_section {
+  background-image: url("../img/common/bg_camouflage01.webp");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 5% 0%;
+}
+
+.c-announcement {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 62.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-announcement_titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.c-announcement_titleContainer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.c-announcement_titleContainer h2:nth-child(2) {
+  color: var(--text-lightBlue);
+  font-size: 3.75rem;
+}
+
+.c-announcement_body {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.c-announcement_body span {
+  color: var(--base-lightBlue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c-announcement_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* END ANNOUNCEMENT SECTION */
