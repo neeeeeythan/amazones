@@ -11,8 +11,11 @@
 
 .p-personal_banner_ribbon {
   position: absolute;
-  top: -4%;
-  right: -2%;
+  bottom: 8%;
+  left: 2%;
+  width: 100vw;
+  height: auto;
+  pointer-events: none;
 }
 
 .p-personal_banner_title {

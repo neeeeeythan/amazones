@@ -5754,7 +5754,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 62.5rem;
+  
+ width: 67.5rem;
   justify-content: center;
   align-items: center;
 }

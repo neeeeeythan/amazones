@@ -426,7 +426,7 @@
 .p-payment_speak_container02 {
   position: absolute;
   bottom: 0rem;
-  left: 1rem;
+  left: 2rem;
   z-index: 2;
   pointer-events: none;
 }
@@ -441,7 +441,7 @@
 .p-payment_speak_bubble02 {
   position: absolute;
   top: -3rem;
-  right: 10rem;
+  right: 9rem;
   width: auto;
   height: auto;
   z-index: 1;
@@ -457,7 +457,7 @@
 .p-payment_speak_container03 {
   position: absolute;
   bottom: 0rem;
-  right: 0rem;
+  right: 3rem;
   z-index: 2;
   pointer-events: none;
 }
@@ -472,7 +472,7 @@
 .p-payment_speak_bubble03 {
   position: absolute;
   top: -4rem;
-  right: -7rem;
+  right: -6rem;
   width: auto;
   height: auto;
   z-index: 1;
