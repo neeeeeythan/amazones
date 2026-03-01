@@ -1,0 +1,620 @@
+/* ============================================
+    START VISITOR BANNER
+   ============================================ */
+.p-visitor_banner {
+  width: 100%;
+  height: calc(100vw * 300 / 1920);
+  position: relative;
+  overflow: visible;
+}
+
+.p-visitor_banner-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.p-visitor_banner-img {
+  position: absolute;
+  right: -25.8%;
+  bottom: -146%;
+  width: auto;
+  height: 425%;
+  max-width: none;
+}
+
+.p-visitor_banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(79, 79, 79, 1) 0%,
+    rgb(79, 79, 79, 1) 47%,
+    rgb(79, 79, 79, 0) 100%
+  );
+  z-index: 1;
+}
+
+/* Ribbon banner SVG decoration */
+.p-visitor_banner-ribbon {
+  position: absolute;
+  right: -45%;
+  top: -43%;
+  transform: translateY(-50%);
+  height: 300%;
+  width: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Text content */
+.p-visitor_banner-content {
+  position: absolute;
+  top: 50%;
+  left: 5.75rem;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.p-visitor_banner-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.375rem;
+  font-weight: 400;
+}
+
+.p-visitor_banner-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: var(--base-lightBlue);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  padding-left: 0.75rem;
+}
+
+/* Custom Breadcrumb styles for visitor page  */
+.p-visitor_breadcrumb {
+  top: 140%;
+}
+
+/* ============================================
+    END VISITOR BANNER
+   ============================================ */
+
+/* ============================================
+   START VISITOR
+   ============================================ */
+
+.p-visitor_section_white {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_white_pattern.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.p-visitor_content {
+  position: relative;
+  padding: 7rem 0;
+}
+
+/* TEXT CONTAINER */
+.p-visitor_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.p-visitor_text_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-visitor_text_block p {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.p-visitor_text_block span {
+  font-weight: 500;
+  color: var(--text-lightBlue);
+}
+
+.p-visitor_card_logo {
+  width: auto;
+  height: 1.5rem;
+}
+
+.p-visitor_title_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.p-visitor_subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.p-visitor_title {
+  font-size: 6.259rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.p-visitor_campaign_block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.p-visitor_campaign_header {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--base-lightBlue);
+}
+
+.p-visitor_campaign_header p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.p-visitor_campaign_header span {
+  font-size: 1.5rem;
+  color: var(--text-lightBlue);
+  font-weight: 500;
+}
+
+/* ============================================
+   END VISITOR
+   ============================================ */
+
+/* ============================================
+    START ABOUT
+    ============================================ */
+.p-visitor_section_lightblue {
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.p-visitor_about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-sizing: border-box;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ABOUT BOX */
+
+.p-visitor_about_card,
+.p-visitor_about_card2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+  background-color: white;
+}
+
+.p-visitor_about_card2 {
+  min-height: 18rem;
+  justify-content: start;
+  font-weight: 500;
+}
+
+.p-visitor_about_card span,
+.p-visitor_about_card2 span {
+  color: var(--text-lightBlue);
+}
+
+.p-visitor_about_card_body,
+.p-visitor_about_card_body2 {
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.p-visitor_about_card_body p {
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.p-visitor_about_card_body2 p {
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.p-visitor_about_card_icon {
+  width: auto;
+  height: auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  width: 5.625rem;
+  height: 5.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base-lightBlue);
+}
+
+.p-visitor_about_header,
+.p-visitor_header_red {
+  width: 15rem;
+  background-color: var(--base-lightBlue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.p-visitor_header_red {
+  background-color: var(--base-red);
+}
+
+.p-visitor_about_subheader h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   END ABOUT
+   ============================================ */
+
+/* ============================================
+   START ANNOUNCEMENT
+   ============================================ */
+
+.p-visitor_announcement_people {
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+.p-visitor_announcement_speak {
+  position: absolute;
+  bottom: -20%;
+  right: -4%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+/* ============================================
+   END ANNOUNCEMENT
+   ============================================ */
+
+/* ============================================
+   START FAQ
+   ============================================ */
+
+.p-visitor_faq_section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/common/img_gym01.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-visitor_faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 8rem 0;
+}
+
+.p_visitor_faq_card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  flex: 1;
+}
+
+.p_visitor_faq_card_header {
+  display: flex;
+  align-items: center;
+}
+
+.p_visitor_faq_card_header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.p_visitor_faq_card_icon {
+  background-color: var(--base-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  height: 5.625rem;
+  width: 5.625rem;
+}
+
+.p_visitor_faq_card_icon_btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--base-lightBlue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p_visitor_faq_card_body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 2rem 2.5rem;
+}
+
+.p_visitor_faq_card span {
+  color: var(--base-lightBlue);
+}
+
+.p-visitor_faq_row {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+/* SPEAK PERSON */
+
+/* 01 */
+.p-visitor_speak_container01 {
+  position: absolute;
+  top: -11rem;
+  right: 3rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-visitor_speak_image01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-visitor_speak_bubble01 {
+  position: absolute;
+  top: 0;
+  right: 10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-visitor_speak_person01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 02 */
+.p-visitor_speak_container02 {
+  position: absolute;
+  bottom: 0rem;
+  left: 1rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-visitor_speak_image02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-visitor_speak_bubble02 {
+  position: absolute;
+  top: -3rem;
+  right: 10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-visitor_speak_person02 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 03 */
+.p-visitor_speak_container03 {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-visitor_speak_image03 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-visitor_speak_bubble03 {
+  position: absolute;
+  top: -4rem;
+  right: -7rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-visitor_speak_person03 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* START CHECKLIST */
+.p-visitor_checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.p-visitor_checklist_item {
+  color: #333;
+  line-height: 1.6;
+}
+
+.p-visitor_checklist_note {
+  color: #555;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  font-size: 0.9em;
+}
+
+/* END CHECKLIST */
+
+/* START HOW TO USE SECTION */
+
+.p-visitor_howTo_section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/common/img_gym03.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-visitor_glassy_background_container {
+  background-color: rgba(42, 42, 42, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 1rem;
+}
+
+.p-visitor_howTo_steps {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border: 1px solid rgba(129, 216, 208, 0.4);
+}
+
+.p-visitor_howTo_step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  gap: 2.5rem;
+}
+
+.p-visitor_howTo_divider {
+  width: 1px;
+  height: 15rem;
+  background-color: rgba(238, 240, 243, 0.5);
+  align-self: center;
+}
+
+.p-visitor_howTo_step_icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1.5px solid var(--base-lightBlue);
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.p-visitor_howTo_step_label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.p-visitor_howTo_step_title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--text-lightBlue);
+  letter-spacing: 0.05em;
+}
+
+.p-visitor_howTo_step_desc {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  line-height: 2.5rem;
+  /* max-width: 18rem; */
+  text-align: justify;
+}
+
+.p-visitor_howTo_step_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.625rem 1.75rem;
+  border: 1px solid var(--base-lightBlue);
+  border-radius: 50px;
+  color: var(--base-lightBlue);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.p-visitor_howTo_step_btn:hover {
+  background-color: var(--base-lightBlue);
+  color: white;
+}
+
+/* END HOW TO USE SECTION */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .p-visitor_banner {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    overflow: visible;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .p-visitor_faq_row {
+    gap: 1.5rem;
+  }
+}
