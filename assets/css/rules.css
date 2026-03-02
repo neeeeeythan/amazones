@@ -1,0 +1,26 @@
+.rules-section{
+    width:100%;
+    padding:70px 16px 100px 16px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-bottom:1px solid var(--base-gray);
+}
+
+.rules-container{
+    width:100%;
+    max-width:1440px;
+}
+.rules-label{
+    display:inline-flex;
+    gap:23px;
+    align-items: center;
+}
+.rules-item{
+    padding-top:32px;
+    padding-bottom:30px;
+    border-bottom:1px solid var(--base-gray);
+}
+.rules-item:last-child{
+    border-bottom:none;
+}

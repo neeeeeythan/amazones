@@ -1,0 +1,95 @@
+.member-page-section{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:100px 16px;
+    background-color:var(--base-white)
+}
+.member-page-container{
+    width:100%;
+    max-width:1440px;
+    display:flex;
+    flex-direction:column;
+    gap:60px;
+}
+.member-cards-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:30px;
+    row-gap:40px;
+}
+.voice-slide {
+  background-color: var(--base-white);
+  padding: 30px 30px 30px 30px;
+  max-width:460px;
+  border:1px solid var(--base-gray)
+  
+}
+
+.voice-label {
+  background-color: var(--base-lightBlue);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 8px 33px;
+}
+.voice-name {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--base-gray);
+}
+/* Pagination Styles */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 30px;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--base-lightBlue);
+  background: white;
+  color: var(--base-lightBlue);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(.disabled):not(.active) {
+  background: var(--base-lightBlue);
+  color: white;
+}
+
+.pagination-btn.active {
+  background: var(--base-lightBlue);
+  color: white;
+  border-color: var(--base-lightBlue);
+}
+
+.pagination-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.member-speech-bubble{
+    position:absolute;
+    top:-230px;
+    right:200px;
+}
+.member-speech{
+    position:absolute;
+    top:0px;
+    left:140px;
+}
