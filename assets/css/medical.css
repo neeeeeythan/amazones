@@ -1,0 +1,48 @@
+.p-medical_banner_content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.p-medical_breadcrumb {
+  bottom: 4%;
+  left: 5%;
+}
+
+/* Ribbon banner SVG decoration */
+.p-medical_banner-ribbon {
+  position: absolute;
+  left: -2%;
+  bottom: -42%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-medical_section_white {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_white_pattern.webp");
+  background-size: cover;
+  background-position: 0% -170%;
+}
+
+.p-medical_online_consultation_banner {
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/medical/img_medical01.webp");
+  background-size: cover;
+  background-position: center;
+}
