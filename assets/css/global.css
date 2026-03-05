@@ -6098,3 +6098,18 @@ a {
   background-size: cover;
   background-position: 0% -170%;
 }
+
+/* END WHITE BACKGROUND */
+
+/* START LIGHT BLUE BACKGROUND */
+.c-section_lightBlue {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* END LIGHT BLUE BACKGROUND */
