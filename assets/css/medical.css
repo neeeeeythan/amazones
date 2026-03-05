@@ -125,6 +125,39 @@
   color: var(--text-black1);
 }
 
+/* Lineup grid */
+.p-medical_lineup_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.p-medical_lineup_item {
+  width: calc(25% - 1.5rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.p-medical_lineup_item p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+}
+
+.p-medical_lineup_icon {
+  width: 5rem;
+  height: 5rem;
+  min-width: 5rem;
+  background-color: var(--base-lightBlue);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .p-medical_lightBlue_container {
   width: fit-content;
   background-color: var(--base-lightBlue);
