@@ -168,7 +168,6 @@
   padding: 1rem 2rem;
 }
 
-
 .p-medical_faq_ribbon {
   position: absolute;
   top: -5%;
@@ -337,4 +336,102 @@
   width: auto;
   height: 25rem;
   object-fit: contain;
+}
+
+/* VOICE */
+.p-medical_voice_grid {
+  display: flex;
+  align-items: flex-end;
+}
+
+.p-medical_voice_card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+}
+
+.p-medical_voice_card:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.p-medical_voice_card:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+.p-medical_voice_card:nth-child(3) {
+  margin-bottom: 10rem;
+}
+
+.p-medical_voice_card:nth-child(1) .p-medical_voice_card_body {
+  background-color: white;
+}
+
+.p-medical_voice_card:nth-child(2) .p-medical_voice_card_body {
+  background-color: var(--base-gray);
+}
+
+.p-medical_voice_card:nth-child(3) .p-medical_voice_card_body {
+  background-color: white;
+}
+
+.p-medical_voice_card_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.p-medical_voice_card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #e0e0e0;
+}
+
+.p-medical_voice_card_body {
+  position: relative;
+  padding: 3rem;
+}
+
+.p-medical_voice_watermark {
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  font-size: 3.75rem;
+  font-weight: 400;
+  color: rgba(79, 79, 79, 0.15);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.p-medical_voice_badge {
+  display: inline-block;
+  background-color: var(--base-lightBlue);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.p-medical_voice_card_body h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--text-lightBlue);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.p-medical_voice_card_body > p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #4f4f4f;
+  position: relative;
+  z-index: 1;
 }
