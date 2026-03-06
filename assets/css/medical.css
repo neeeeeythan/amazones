@@ -167,3 +167,174 @@
   justify-content: center;
   padding: 1rem 2rem;
 }
+
+
+.p-medical_faq_ribbon {
+  position: absolute;
+  top: -5%;
+  right: -10%;
+  width: 82vw;
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+.p-medical_faq_card {
+  border: 1px solid var(--base-lightBlue);
+  width: 100%;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-medical_faq_q,
+.p-medical_faq_a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 1.2rem 0;
+}
+
+.p-medical_faq_q {
+  border-bottom: 1px solid var(--base-lightBlue);
+}
+
+.p-medical_horizontal_line {
+  width: 5%;
+  height: 2px;
+  background-color: var(--base-lightBlue);
+}
+
+.p-medical_faq_section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/common/img_gym01.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-medical_faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 8rem 0;
+}
+
+.p_medical_faq_card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  flex: 1;
+}
+
+.p_medical_faq_card_header {
+  display: flex;
+  align-items: center;
+}
+
+.p_medical_faq_card_header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.p_medical_faq_card_icon {
+  background-color: var(--base-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  height: 5.625rem;
+  width: 5.625rem;
+}
+
+.p_medical_faq_card_icon_btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--base-lightBlue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p_medical_faq_card_body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 2rem 2.5rem;
+}
+
+.p_medical_faq_card span {
+  color: var(--base-lightBlue);
+}
+
+.p-medical_faq_row {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+/* SPEAK PERSON */
+
+/* 01 */
+.p-medical_speak_container01 {
+  position: absolute;
+  bottom: 0rem;
+  left: 4rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-medical_speak_image01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-medical_speak_bubble01 {
+  position: absolute;
+  top: -1rem;
+  left: -8rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-medical_speak_person01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 02 */
+.p-medical_speak_container02 {
+  position: absolute;
+  bottom: 0rem;
+  right: 4rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-medical_speak_image02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-medical_speak_bubble02 {
+  position: absolute;
+  top: -5%;
+  right: -10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-medical_speak_person02 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
