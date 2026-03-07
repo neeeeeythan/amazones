@@ -181,17 +181,25 @@
   flex-direction: column;
   gap: 2rem;
   background-color: white;
-  padding: 3.5rem;
+  padding: 4rem;
   box-sizing: border-box;
   position: absolute;
-  width: 100%;
-  top: 10%;
-  right: -80%;
+  width: 47dvw;
+  top: 4dvw;
+  right: -43dvw;
 }
 
-.p-protein_text_container02 {
-  top: 25%;
-  left: 0%;
+.p-protein_text_container_left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 4rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 47dvw;
+  top: 4dvw;
+  left: -41dvw;
 }
 
 .p-protein_img_pattern {
@@ -249,7 +257,6 @@
   height: 1.5rem;
 }
 
-
 /* SPEAK PERSON */
 
 /* 01 */
@@ -267,7 +274,9 @@
   position: absolute;
   display: flex;
   justify-content: end;
-  top: -193%;
+  top: 0%;
+  transform: translate(0%, -100%);
+  right: 9dvw;
 }
 
 .p-protein_speak_bubble02 {
@@ -285,3 +294,22 @@
   object-fit: contain;
 }
 
+/* FLAVOR */
+.p-protein_flavor_header {
+  color: white;
+  padding: 0.9rem 1.5rem;
+  width: fit-content;
+}
+
+.p-protein_flavor_nutrition {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.p-protein_flavor_item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--base-gray);
+  padding: 1.5rem 0;
+}
