@@ -170,6 +170,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  z-index: 2;
 }
 
 .p-storelist_card {
@@ -355,4 +356,23 @@
   width: auto;
   height: 25rem;
   object-fit: contain;
+}
+
+/* RIBBON  */
+.p-storelist_ribbon01 {
+  position: absolute;
+  bottom: -2rem;
+  right: -10rem;
+  width: auto;
+  height: auto;
+  z-index: 0;
+}
+
+.p-storelist_ribbon02 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0rem;
+  width: auto;
+  height: auto;
+  z-index: 0;
 }
