@@ -293,3 +293,66 @@
   align-items: center;
   justify-content: center;
 }
+
+/* SPEAK */
+/* 01 */
+.p-storelist_speak_container01 {
+  position: absolute;
+  bottom: 0rem;
+  left: -1rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-storelist_speak_image01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-storelist_speak_bubble01 {
+  position: absolute;
+  top: -3rem;
+  right: 10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-storelist_speak_person01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 02 */
+.p-storelist_speak_container02 {
+  position: absolute;
+  bottom: 0rem;
+  right: -1rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-storelist_speak_image02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-storelist_speak_bubble02 {
+  position: absolute;
+  top: -4rem;
+  right: -7rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-storelist_speak_person02 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
