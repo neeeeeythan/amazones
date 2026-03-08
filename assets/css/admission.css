@@ -133,8 +133,3 @@
   width:100%;
   max-width:1440px;
 }
-.admission-text-link{
-    color:var(--text-lightBlue);
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}

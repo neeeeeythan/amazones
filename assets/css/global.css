@@ -36,7 +36,7 @@ html body a {
 main {
   transition: margin-top 0.35s ease;
 }
-ul li::marker{
+ul li::marker {
   color: var(--base-lightBlue);
   width: 10px;
   height: 10px;
@@ -117,7 +117,11 @@ ul li::marker{
   filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
     hue-rotate(96deg) brightness(92%) contrast(82%);
 }
-
+.text-link {
+  color: var(--text-lightBlue);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 /* ========== DISPLAY ========== */
 .block {
   display: block;
@@ -5224,10 +5228,65 @@ a {
   text-decoration: none;
 }
 
+/* ═══════════════════════════════════
+       SCROLL REVEAL ANIMATIONS
+    ═══════════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* ============================================
     HOVER 
    ============================================ */
-   
+
 .hover-text-underline {
   text-align: center;
   margin: 0 auto;
@@ -5254,15 +5313,13 @@ a {
 .hover-text-underline:hover::after {
   right: 0;
 }
-.banner-a-link:hover{
-  color:var(--base-lightBlue);
-  transition:all 0.3s ease-in-out;
+.banner-a-link:hover {
+  color: var(--base-lightBlue);
+  transition: all 0.3s ease-in-out;
 }
 /* ============================================
     END OF HOVER 
    ============================================ */
-
-
 
 /*HEADER CSS*/
 .I-header {
@@ -5327,8 +5384,6 @@ a {
 }
 /*END HEADER CSS*/
 
-
-
 /*SPEECH BUBBLE AND STICKER*/
 .speech-bubble {
   transform-origin: center;
@@ -5383,9 +5438,6 @@ a {
   }
 }
 
-
-
-
 /*HERO RIBBON*/
 .grow-wrapper-right.hero-ribbon {
   width: 100vw;
@@ -5438,8 +5490,6 @@ a {
 
 /* END MAX WIDTH CONTAINER */
 
-
-
 /* START BREADCRUMB */
 .c-breadcrumb {
   position: absolute;
@@ -5460,8 +5510,6 @@ a {
 }
 
 /* END BREADCRUMB */
-
-
 
 /*START TEXT SLIDER*/
 @-webkit-keyframes scroll {
@@ -5680,9 +5728,6 @@ a {
 }
 /*END TOPIC SECTION*/
 
-
-
-
 /*RECRUIT BANNER*/
 .recruit-banner-section {
   width: 100%;
@@ -5745,25 +5790,22 @@ a {
 }
 /*END RECRUIT BANNER*/
 
-
-
-
 /* ============================================
     START BANNER
    ============================================ */
-.banner-section{
-  height:auto;
-  position:relative;
-  padding-bottom:20px;
+.banner-section {
+  height: auto;
+  position: relative;
+  padding-bottom: 20px;
 }
-.ribbon-banner{
-  position:absolute;
-  bottom:10px;
-  z-index:2;
-  right:0px;
+.ribbon-banner {
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+  right: 0px;
   width: auto;
   z-index: 2;
-  width:auto;
+  width: auto;
 }
 .p-banner {
   width: 100%;
@@ -5853,141 +5895,135 @@ a {
     END  BANNER
    ============================================ */
 
-
 /*TOP FOOTER BANNER SECTION*/
-.top-banner-section{
-  width:100%;
-  display:flex;
-  align-items:center;
+.top-banner-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding:72px 16px;
-  background-image:url('../img/top/bg_banner.png');
-  background-repeat:no-repeat;
-  background-size:cover;
+  padding: 72px 16px;
+  background-image: url("../img/top/bg_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .top-banner-container {
-  width:100%;
-  max-width:1000px;
-  padding:72px 16px 60px 16px;
-  background-color:rgba(255,255,255,0.9)
+  width: 100%;
+  max-width: 1000px;
+  padding: 72px 16px 60px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
-.banner-sticker1{
-  position:absolute;
-  top:45px;
-  left:0px;
+.banner-sticker1 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
 }
 .banner-speechbubble1 {
-  position:absolute;
-  top:-60px;
-  left:-93px;
+  position: absolute;
+  top: -60px;
+  left: -93px;
 }
-.banner-sticker2{
-  position:absolute;
-  top:30px;
-  right:-40px;
+.banner-sticker2 {
+  position: absolute;
+  top: 30px;
+  right: -40px;
 }
-.banner-speechbubble2{
-  position:absolute;
-  top:-60px;
-  right:-63px;
+.banner-speechbubble2 {
+  position: absolute;
+  top: -60px;
+  right: -63px;
 }
 /*END TOP FOOTER BANNER SECTION*/
 
-
-
 /*FOOTER SECTION*/
-.I-footer{
-  overflow:hidden;
-  background-image:url('../img/top/bg-footer.webp');
-  background-repeat:no-repeat;
-  background-size:cover;
- 
+.I-footer {
+  overflow: hidden;
+  background-image: url("../img/top/bg-footer.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.footer-main-container{
-  padding:72px 120px 50px 120px;
+.footer-main-container {
+  padding: 72px 120px 50px 120px;
 }
-.footer-page-link{
-  padding-bottom:25px;
-  border-bottom:1px solid var(--base-gray);
+.footer-page-link {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--base-gray);
 }
-.footer-link-line{
-  position:absolute;
-  bottom:0px;
-  height:2px;
-  width:50px;
-  background-color:var(--base-lightBlue)
-}
-
-.footer-icon-link{
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
-
+.footer-link-line {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 50px;
+  background-color: var(--base-lightBlue);
 }
 
-.footer-btn{
-  font-size:15px;
-  color:var(--text-black);
-  background-color:var(--base-white);
-  border-radius:5px;
-  border:none;
-  padding:5px 10px;
-  font-weight:600;
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.scroll-up{
-  margin-right:-80px;
+.footer-btn {
+  font-size: 15px;
+  color: var(--text-black);
+  background-color: var(--base-white);
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 600;
 }
 
-.footer-blue-btn{
-  width:100%;
-  min-width:200px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.scroll-up {
+  margin-right: -80px;
+}
+
+.footer-blue-btn {
+  width: 100%;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ============================================
     END  BANNER
    ============================================ */
 
-
 /*TOP FOOTER BANNER SECTION*/
-.top-banner-section{
-  width:100%;
-  display:flex;
-  align-items:center;
+.top-banner-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding:72px 16px;
-  background-image:url('../img/top/bg_banner.png');
-  background-repeat:no-repeat;
-  background-size:cover;
+  padding: 72px 16px;
+  background-image: url("../img/top/bg_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .top-banner-container {
-  width:100%;
-  max-width:1000px;
-  padding:72px 16px 60px 16px;
-  background-color:rgba(255,255,255,0.9)
+  width: 100%;
+  max-width: 1000px;
+  padding: 72px 16px 60px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
-.banner-sticker1{
-  position:absolute;
-  top:45px;
-  left:0px;
+.banner-sticker1 {
+  position: absolute;
+  top: 45px;
+  left: 0px;
 }
 .banner-speechbubble1 {
-  position:absolute;
-  top:-60px;
-  left:-93px;
+  position: absolute;
+  top: -60px;
+  left: -93px;
 }
-.banner-sticker2{
-  position:absolute;
-  top:30px;
-  right:-40px;
+.banner-sticker2 {
+  position: absolute;
+  top: 30px;
+  right: -40px;
 }
-.banner-speechbubble2{
-  position:absolute;
-  top:-60px;
-  right:-63px;
+.banner-speechbubble2 {
+  position: absolute;
+  top: -60px;
+  right: -63px;
 }
 /*END TOP FOOTER BANNER SECTION*/
 
@@ -6062,8 +6098,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  
- width: 67.5rem;
+
+  width: 67.5rem;
   justify-content: center;
   align-items: center;
 }
