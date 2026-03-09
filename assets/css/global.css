@@ -6267,3 +6267,327 @@ a {
 }
 
 /* END ENDNOTE */
+
+/* ============================================
+   GLOBAL RESPONSIVE STYLES
+   Tablet  ≤ 1024px  |  Mobile ≤ 767px
+   ============================================ */
+
+/* ──────────────────────────────────────────
+   TABLET  (max-width: 1024px)
+   ────────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  /* MAX-WIDTH CONTAINER */
+  .c-maxWidth {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* HEADER */
+  .I-header {
+    width: 100%;
+  }
+
+  /* Shrink the header action buttons slightly but keep them visible */
+  .header-btn {
+    min-width: 0;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  /* BANNER */
+  .p-banner {
+    height: 20rem;
+  }
+
+  .p-banner-content {
+    left: 3rem;
+  }
+
+  .p-banner-title {
+    font-size: 1.875rem;
+  }
+
+  .p-banner-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .p-banner-ribbon {
+    right: -55%;
+  }
+
+  /* C-ANNOUNCEMENT */
+  .c-announcement {
+    width: 100%;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .c-announcement_titleContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .c-announcement_titleContainer h2:nth-child(2) {
+    font-size: 2.75rem;
+  }
+
+  /* ENDNOTE */
+  .c-endNote {
+    padding: 6rem 0;
+    gap: 2rem;
+  }
+
+  .c-endNote_row {
+    gap: 1.5rem;
+  }
+
+  /* FOOTER */
+  .footer-main-container {
+    padding: 60px 48px 40px 48px;
+    gap: 60px;
+  }
+
+  /* Stack the top footer row (logo/links) vertically */
+  .footer-main-container > .flex.flex-row.justify-between.w-full:first-child {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Footer link columns: wrap instead of overflow */
+  .footer-main-container .flex.flex-row.gap-100px {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .scroll-up {
+    margin-right: 0;
+  }
+
+  /* TEXT SLIDER */
+  .text-slider {
+    height: 64px;
+  }
+}
+
+
+/* ──────────────────────────────────────────
+   MOBILE  (max-width: 767px)
+   ────────────────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* MAX-WIDTH CONTAINER */
+  .c-maxWidth {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* HEADER — keep all elements, just tighten spacing */
+  .I-header {
+    width: 100%;
+  }
+
+  /* Shrink header CTA buttons to fit smaller screens */
+  .I-header .header-btn {
+    min-width: 0;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  /* Tighten button text on mobile */
+  .I-header .header-btn p {
+    font-size: 11px !important;
+  }
+
+  /* Tighten icon wrapper */
+  .I-header .icon-wrapper {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+  }
+
+  /* Keep logo + site name but shrink gap */
+  .I-header > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .I-header .flex-1 {
+    gap: 8px;
+  }
+
+  .I-header .flex-1 img {
+    width: 90px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  /* Hide the site name text on mobile to save space */
+  .I-header .flex-1 > a,
+  .I-header .flex-1 > p {
+    display: none;
+  }
+
+  /* Tighten gap between the two CTA buttons */
+  .I-header .flex.flex-row.items-center.gap-15px {
+    gap: 6px !important;
+  }
+
+  /* Float menu: shrink slightly */
+  .header-floating-menu {
+    width: 64px;
+    height: 72px;
+    padding: 16px;
+  }
+
+  /* BANNER */
+  .p-banner {
+    height: 14rem;
+    overflow: hidden;
+  }
+
+  /* BREADCRUMB */
+  .c-breadcrumb {
+    font-size: 0.8125rem;
+  }
+
+  /* C-ANNOUNCEMENT */
+  .c-announcement {
+    width: 100%;
+    padding: 2.5rem 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .c-announcement_titleContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .c-announcement_titleContainer h2 {
+    font-size: 1.375rem;
+  }
+
+  .c-announcement_titleContainer h2:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .c-announcement_body {
+    font-size: 0.9375rem;
+    line-height: 1.9;
+  }
+
+  .c-announcement_btn {
+    font-size: 1rem;
+  }
+
+  /* ENDNOTE */
+  .c-endNote {
+    padding: 4rem 0;
+    gap: 1.5rem;
+  }
+
+  .c-endNote_row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .c-endNote_card_header h3 {
+    font-size: 1.125rem;
+  }
+
+  .c-endNote_card_icon {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+  }
+
+  .c-endNote_card_body {
+    font-size: 0.9375rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  /* TEXT SLIDER */
+  .text-slider {
+    height: 56px;
+  }
+
+  .text-slider .slide p {
+    font-size: 20px !important;
+  }
+
+  /* FOOTER */
+  .footer-main-container {
+    padding: 48px 1.25rem 32px 1.25rem;
+    gap: 40px;
+  }
+
+  /* Stack all footer rows vertically */
+  .footer-main-container > div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  /* Footer nav column groups: stack */
+  .footer-main-container .flex.flex-row.gap-100px,
+  .footer-main-container .flex.flex-row.gap-60px {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* Bottom footer row: links + scroll-up */
+  .footer-main-container > .flex.flex-row.justify-between.w-full.items-center {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+  }
+
+  /* Footer bottom links: wrap */
+  .footer-main-container .flex.flex-row.gap-55px {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* scroll-up button: reset the negative margin */
+  .scroll-up {
+    margin-right: 0;
+    align-self: flex-end;
+  }
+
+  /* Cookie bar */
+  .flex.flex-row.items-center.gap-15px.py-15.px-120 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    gap: 12px;
+  }
+
+  /* BANNER STICKERS — hide on mobile to avoid overflow */
+  .banner-sticker1,
+  .banner-sticker2,
+  .banner-speechbubble1,
+  .banner-speechbubble2 {
+    display: none;
+  }
+
+  /* TOP BANNER SECTION */
+  .top-banner-section {
+    padding: 40px 1.25rem;
+  }
+
+  .top-banner-container {
+    padding: 40px 1.25rem 32px 1.25rem;
+  }
+
+  /* TOPIC STICKER — hide on mobile */
+  .topic-sticker {
+    display: none;
+  }
+}

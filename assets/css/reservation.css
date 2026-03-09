@@ -670,19 +670,367 @@
   object-fit: contain;
 }
 
-/* TABLET */
+/* ============================================
+   TABLET (max-width: 1024px)
+   ============================================ */
 @media (max-width: 1024px) {
+  /* BANNER */
   .p-reservation_banner {
     width: 100%;
     height: 20rem;
-    position: relative;
     overflow: visible;
+  }
+
+  .p-reservation_banner-title {
+    font-size: 1.875rem;
+  }
+
+  .p-reservation_banner-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .p-reservation_banner-content {
+    left: 3rem;
+  }
+
+  .p-reservation_banner-ribbon {
+    right: -55%;
+  }
+
+  /* FLOW */
+  .p-reservation_flow_title {
+    font-size: 4rem;
+  }
+
+  .p-reservation_links-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+  }
+
+  /* Hide decorative speak characters on tablet to prevent overflow */
+  .p-reservation_speak_container01 {
+    display: none;
+  }
+
+  /* SIMULATION */
+  .p-reservation_simulation {
+    height: auto;
+    min-height: 32rem;
+    padding: 4rem 2rem;
+  }
+
+  .p-reservation_simulation_phone {
+    left: 38%;
+  }
+
+  .p-reservation_simulation_phone img {
+    height: 24vw;
+  }
+
+  .p-reservation_simulation_content {
+    right: 5%;
+    top: 10%;
+  }
+
+  .p-reservation_simulation_content h2 {
+    font-size: 4vw;
+  }
+
+  .p-reservation_simulation_content > div {
+    width: 28vw;
+    font-size: 0.875rem;
+  }
+
+  .p-reservation_speak_container02 {
+    left: 3%;
+    bottom: 10%;
+  }
+
+  .p-reservation_speak_person02 {
+    height: 18rem;
+  }
+
+  /* FORM */
+  .p-reservation_form_titleContainer h2 {
+    font-size: 4rem;
+  }
+
+  .p-reservation_form_content {
+    padding: 2.5rem;
+  }
+
+  .p-reservation_speak_container03 {
+    display: none;
+  }
+
+  /* ANNOUNCEMENT */
+  .p-reservation_announcement {
+    padding: 3rem 2rem;
+  }
+
+  .p-reservation_announcement_speak {
+    display: none;
+  }
+
+  .p-reservation_speak_container04,
+  .p-reservation_speak_container05 {
+    display: none;
+  }
+
+  /* ENDNOTE */
+  .p-reservation_endNote_row {
+    gap: 1.5rem;
   }
 }
 
-/* MOBILE */
+/* ============================================
+   MOBILE (max-width: 767px)
+   ============================================ */
 @media (max-width: 767px) {
-  .p-reservation_endNote_row {
+  /* BANNER */
+  .p-reservation_banner {
+    height: 14rem;
+    overflow: hidden;
+  }
+
+  .p-reservation_banner-inner {
+    overflow: hidden;
+  }
+
+  .p-reservation_banner-img {
+    right: -20%;
+    top: -30%;
+    height: 220%;
+  }
+
+  .p-reservation_banner-content {
+    left: 1.25rem;
+  }
+
+  .p-reservation_banner-title {
+    font-size: 1.375rem;
+    letter-spacing: 0.04em;
+  }
+
+  .p-reservation_banner-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .p-reservation_banner-ribbon {
+    right: -60%;
+    height: 220%;
+  }
+
+  /* RESERVATION FLOW */
+  .p-reservation_flow {
+    padding-bottom: 4rem;
+    background-position: center;
+  }
+
+  .p-reservation_links-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.5rem 1.25rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .p-reservation_links-item {
+    font-size: 0.875rem;
+  }
+
+  .p-reservation_title_container {
+    margin-bottom: 1.5rem;
+  }
+
+  .p-reservation_flow_subtitle {
+    font-size: 1rem;
+  }
+
+  .p-reservation_flow_title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  /* Hide all decorative speak characters on mobile */
+  .p-reservation_speak_container01,
+  .p-reservation_speak_container02,
+  .p-reservation_speak_container03,
+  .p-reservation_speak_container04,
+  .p-reservation_speak_container05 {
+    display: none;
+  }
+
+  /* STEPS */
+  .p-reservation_step_list {
+    gap: 1.25rem;
+  }
+
+  .p-reservation_step_card_title h3 {
+    font-size: 1.125rem;
+  }
+
+  .p-reservation_step_card_title > p {
+    font-size: 1.125rem;
+  }
+
+  .p-reservation_step_card_icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    flex-shrink: 0;
+  }
+
+  .p-reservation_step_card_body {
+    padding: 1rem 1.25rem;
+    font-size: 0.9375rem;
+    line-height: 1.8rem;
+  }
+
+  .p-reservation_step_card_title {
+    padding-left: 1rem;
+    gap: 0.625rem;
+  }
+
+  /* SIMULATION */
+  .p-reservation_simulation {
+    height: auto;
+    min-height: unset;
+    padding: 3rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .p-reservation_simulation::before {
+    background-position: center;
+  }
+
+  .p-reservation_simulation_ribbon {
+    left: -5%;
+    top: auto;
+    bottom: 0;
+    height: 35%;
+  }
+
+  /* Stack phone + content vertically */
+  .p-reservation_simulation_phone {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .p-reservation_simulation_phone img {
+    height: 55vw;
+  }
+
+  .p-reservation_simulation_phone_video {
+    border-radius: 3vw;
+  }
+
+  .p-reservation_simulation_content {
+    position: relative;
+    right: auto;
+    top: auto;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .p-reservation_simulation_content h2 {
+    font-size: 2.5rem;
+  }
+
+  .p-reservation_simulation_content > div {
+    width: 100%;
+    font-size: 0.9rem;
+    gap: 1rem;
+    text-align: justify;
+  }
+
+  /* FORM */
+  .p-reservation_form {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .p-reservation_form_titleContainer p {
+    font-size: 1rem;
+  }
+
+  .p-reservation_form_titleContainer h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .p-reservation_form_content {
+    padding: 1.25rem;
+  }
+
+  .p-reservation_form_speak_bubble {
+    display: none;
+  }
+
+  /* ANNOUNCEMENT */
+  .p-reservation_announcement_section {
+    padding: 8% 0;
+  }
+
+  .p-reservation_announcement {
+    padding: 2.5rem 1.5rem;
     gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .p-reservation_announcement_titleContainer h2 {
+    font-size: 1.375rem;
+    text-align: center;
+  }
+
+  .p-reservation_announcement_titleContainer p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .p-reservation_announcement_body {
+    font-size: 0.9375rem;
+    line-height: 1.9;
+  }
+
+  .p-reservation_announcement_btn {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .p-reservation_announcement_speak {
+    display: none;
+  }
+
+  /* ENDNOTE */
+  .p-reservation_endNote_row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .p-reservation_endNote {
+    padding: 4rem 0;
+    gap: 1.5rem;
+  }
+
+  .p_reservation_endNote_card_body {
+    font-size: 0.9375rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .p_reservation_endNote_card_header h3 {
+    font-size: 1.125rem;
   }
 }
