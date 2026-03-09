@@ -11,6 +11,7 @@
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/faq.css" rel="stylesheet" type="text/css" />
 
     <!--PROTEIN CSS-->
     <link href="../assets/css/protein.css" rel="stylesheet" type="text/css" />
@@ -120,49 +121,53 @@
 
     <main>
       <!-- BANNER -->
-      <section class="p-protein_banner">
-        <div class="p-protein_banner-inner">
-          <img
-            src="../assets/img/visitor/banner_visitor.webp"
-            alt="protein banner image"
-            class="p-protein_banner-img"
-          />
+      <section class="banner-section">
+        <div class="p-banner">
+          <div class="p-banner-inner">
+            <img
+              src="../assets/img/visitor/banner_visitor.webp"
+              alt="予約バナー"
+              class="p-protein_banner-img"
+            />
 
-          <div class="p-protein_banner-overlay"></div>
-        </div>
+            <div class="p-banner-overlay"></div>
+          </div>
 
-        <!-- BANNER TEXT -->
-        <div class="p-protein_banner-content">
-          <h1 class="p-protein_banner-title font-zen text-white">
-            アマゾネスプロテイン
-          </h1>
-          <p class="p-protein_banner-subtitle font-outfit">Amazones Protein</p>
-          <!-- BREADCRUMB -->
-          <nav class="c-breadcrumb p-protein_breadcrumb">
-            <a href="../index.html" class="c-breadcrumb-home">
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17 17"
-                width="17"
-                height="17"
+          <!-- BANNER TEXT -->
+          <div class="p-banner-content">
+            <h1 class="p-banner-title font-zen text-white">
+              アマゾネスプロテイン
+            </h1>
+            <p class="p-banner-subtitle font-outfit">Amazones Protein</p>
+            <!-- BREADCRUMB -->
+            <nav class="c-breadcrumb p-breadcrumb">
+              <a href="../index.html" class="c-breadcrumb-home">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 17 17"
+                  width="17"
+                  height="17"
+                >
+                  <path
+                    id="シェイプ894"
+                    fill="#81d7cf"
+                    d="m6.81 16.4v-4.21c0-0.3 0.3-0.6 0.61-0.6h2.47c0.31 0 0.61 0.3 0.61 0.6v4.21c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6v-8.41q-0.01-0.25-0.18-0.43l-1.67-1.62v-3.96c0-0.33-0.28-0.6-0.62-0.6h-1.23c-0.34 0-0.62 0.27-0.62 0.6v1.56l-3.26-3.19c-0.24-0.23-0.63-0.23-0.87 0q0 0 0 0l-7.4 7.21q-0.17 0.18-0.18 0.43v8.41c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6z"
+                  />
+                </svg>
+              </a>
+              <span class="c-breadcrumb-separator">&#x203A;</span>
+              <a href="#" class="text-white fs-14 banner-a-link"
+                >アマゾネスプロテイン</a
               >
-                <path
-                  id="シェイプ 894"
-                  fill="#81d7cf"
-                  d="m6.81 16.4v-4.21c0-0.3 0.3-0.6 0.61-0.6h2.47c0.31 0 0.61 0.3 0.61 0.6v4.21c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6v-8.41q-0.01-0.25-0.18-0.43l-1.67-1.62v-3.96c0-0.33-0.28-0.6-0.62-0.6h-1.23c-0.34 0-0.62 0.27-0.62 0.6v1.56l-3.26-3.19c-0.24-0.23-0.63-0.23-0.87 0q0 0 0 0l-7.4 7.21q-0.17 0.18-0.18 0.43v8.41c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6z"
-                />
-              </svg>
-            </a>
-            <span class="c-breadcrumb-separator">&#x203A;</span>
-            <span class="text-white fs-14">アマゾネスプロテイン</span>
-          </nav>
+            </nav>
+          </div>
         </div>
         <!-- RIBBON DECORATION 01-->
         <img
-          src="../assets/img/top/img_hero_ribbon.svg"
+          src="../assets/img/common/img_ribbon_banner.svg"
           alt="ribbon 01"
-          class="p-protein_banner-ribbon"
+          class="ribbon-banner clip-grow-right"
         />
       </section>
 
@@ -213,7 +218,7 @@
               <img
                 src="../assets/img/protein/img_protein_speak_bubble01.svg"
                 alt="speak bubble 01"
-                class="p-protein_opening_speak_bubble01"
+                class="p-protein_opening_speak_bubble01 speech-bubble"
               />
               <h3 class="font-zen text-white fs-24 fw-700">
                 Amazonesが本気で作った「女性のためのプロテイン」
@@ -443,7 +448,7 @@
                   <img
                     src="../assets/img/protein/img_protein_speak_bubble02.svg"
                     alt="protein speak02"
-                    class="p-protein_speak_bubble02"
+                    class="p-protein_speak_bubble02 speech-bubble"
                   />
                   <img
                     src="../assets/img/protein/img_protein_speak_person02.webp"
@@ -1016,116 +1021,7 @@
           </div>
           <!-- FAQ LIST -->
           <div class="flex flex-col gap-40px py-50">
-            <!-- FAQ 1 -->
-            <div class="p-protein_faq_card">
-              <div class="p-protein_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">
-                    プロテインは運動していなくても飲んで大丈夫？
-                  </p>
-                </div>
-                <div class="p-protein_horizontal_line"></div>
-              </div>
-              <div class="p-protein_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <p>
-                  はい、むしろ日常的な栄養補助として取り入れていただきたい商品です。美容や健康維持のために、どなたでもご利用いただけます。
-                </p>
-              </div>
-            </div>
-            <!-- FAQ 2 -->
-            <div class="p-protein_faq_card">
-              <div class="p-protein_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">どのタイミングで飲むのが良いですか？</p>
-                </div>
-                <div class="p-protein_horizontal_line"></div>
-              </div>
-              <div class="p-protein_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <p>
-                  朝の栄養補給・間食代わり・運動後などがオススメです。置き換えダイエットにも適しています。
-                </p>
-              </div>
-            </div>
-            <!-- FAQ 3 -->
-            <div class="p-protein_faq_card">
-              <div class="p-protein_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">水や牛乳、何で割るのが良いですか？</p>
-                </div>
-                <div class="p-protein_horizontal_line"></div>
-              </div>
-              <div class="p-protein_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <div class="flex flex-col gap-3 font-zen">
-                  <p>
-                    お水でも飲みやすく設計していますが、牛乳や豆乳で割るとよりコクのある味わいになります。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- FAQ 4 -->
-            <div class="p-protein_faq_card">
-              <div class="p-protein_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">アレルギーが心配です。</p>
-                </div>
-                <div class="p-protein_horizontal_line"></div>
-              </div>
-              <div class="p-protein_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <p>
-                    原材料をご確認のうえ、ご不安な場合は医師・薬剤師にご相談ください。
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div id="プロテインFAQ" class="faq-container w-full"></div>
           </div>
         </div>
       </section>
@@ -1178,23 +1074,29 @@
               />
               <h5 class="font-outfit fs-24 fw-600 text-red">Flavor01</h5>
               <p class="font-zen fs-30 fw-700">アップルフレーバー</p>
-              <button class="btn-buyNow bg-red mt-20">
-                ご購入はこちら
-                <svg
-                  version="1.2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                >
-                  <path
-                    id="シェイプ 1359"
-                    fill-rule="evenodd"
-                    fill="white"
-                    d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
-                  />
-                </svg>
-              </button>
+              <a
+                href="https://shop.amazones.fit/product/detail/amz-3?vid=amz-3-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn-buyNow bg-red mt-20">
+                  ご購入はこちら
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      id="シェイプ 1359"
+                      fill-rule="evenodd"
+                      fill="white"
+                      d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
+                    />
+                  </svg>
+                </button>
+              </a>
             </div>
 
             <!-- FLAVOR 2 -->
@@ -1209,23 +1111,29 @@
               />
               <h5 class="font-outfit fs-24 fw-600 text-peach">Flavor02</h5>
               <p class="font-zen fs-30 fw-700">ピーチフレーバー</p>
-              <button class="btn-buyNow bg-peach mt-20">
-                ご購入はこちら
-                <svg
-                  version="1.2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                >
-                  <path
-                    id="シェイプ 1359"
-                    fill-rule="evenodd"
-                    fill="white"
-                    d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
-                  />
-                </svg>
-              </button>
+              <a
+                href="https://shop.amazones.fit/product/detail/amz-3?vid=amz-3-3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn-buyNow bg-peach mt-20">
+                  ご購入はこちら
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      id="シェイプ 1359"
+                      fill-rule="evenodd"
+                      fill="white"
+                      d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
+                    />
+                  </svg>
+                </button>
+              </a>
             </div>
 
             <!-- FLAVOR 3 -->
@@ -1240,23 +1148,29 @@
               />
               <h5 class="font-outfit fs-24 fw-600 text-brown">Flavor03</h5>
               <p class="font-zen fs-30 fw-700">チョコレートフレーバー</p>
-              <button class="btn-buyNow bg-brown mt-20">
-                ご購入はこちら
-                <svg
-                  version="1.2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                >
-                  <path
-                    id="シェイプ 1359"
-                    fill-rule="evenodd"
-                    fill="white"
-                    d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
-                  />
-                </svg>
-              </button>
+              <a
+                href="https://shop.amazones.fit/product/detail/amz-3?vid=amz-3-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn-buyNow bg-brown mt-20">
+                  ご購入はこちら
+                  <svg
+                    version="1.2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      id="シェイプ 1359"
+                      fill-rule="evenodd"
+                      fill="white"
+                      d="m14.99 1.01v11.36h-11.36v-11.36zm-1.09 3.06h-9.17v7.21h9.17zm-1.53 9.82v1.1h-11.36v-11.36h1.1v10.26z"
+                    />
+                  </svg>
+                </button>
+              </a>
             </div>
           </div>
         </div>
