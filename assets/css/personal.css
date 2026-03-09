@@ -505,3 +505,350 @@
   height: 25rem;
   object-fit: contain;
 }
+
+
+/* ============================================
+   PERSONAL PAGE — RESPONSIVE STYLES
+   Tablet ≤ 1024px  |  Mobile ≤ 767px
+   ============================================ */
+
+/* ──────────────────────────────────────────
+   TABLET  (max-width: 1024px)
+   ────────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  /* BANNER */
+  .p-personal_banner {
+    height: 36rem;
+    background-position: center top;
+  }
+
+  .p-personal_banner_title {
+    top: 30%;
+    left: 5%;
+  }
+
+  .p-personal_banner_title h1 {
+    font-size: 2rem;
+    line-height: 3.25rem;
+  }
+
+  .p-personal_breadcrumb {
+    left: 5%;
+  }
+
+  /* Banner ribbon: scale down to avoid overflow */
+  .p-personal_banner_ribbon {
+    bottom: 5%;
+    left: 0;
+    width: 120vw;
+  }
+
+  /* AMAZONES METHOD SECTION */
+  .p-personal_amazones_section,
+  .p-personal_program_section {
+    overflow: hidden;
+  }
+
+  /* Method image: shrink and reposition so it doesn't overlap text */
+  .p-personal_amazones_method_img {
+    width: 42rem;
+    height: 36rem;
+    right: -5%;
+    top: 5%;
+  }
+
+  /* Give text container more breathing room */
+  .p-personal_topic_text_container {
+    max-width: 55%;
+  }
+
+  /* Section header title */
+  .p-personal_section_header h2 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+
+  /* Case study: stack header + topic icon vertically */
+  .p-personal_case_study_container .flex.items-center.gap-70px {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .p-personal_case_study_container {
+    margin-top: 10rem;
+  }
+
+  /* Boxed info items: allow wrapping */
+  .p-personal_boxed_info .flex.gap-3.items-start {
+    flex-wrap: wrap;
+  }
+
+  /* CTA SECTION */
+  .p-personal_cta_section {
+    height: auto;
+    min-height: 32rem;
+    padding: 6rem 0;
+    overflow: hidden;
+  }
+
+  .p-personal_cta_text_container {
+    left: 7%;
+    top: 50%;
+  }
+
+  .p-personal_cta_text_container h2 {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+
+  .p-personal_cta_ribbon {
+    left: -15%;
+    top: -5%;
+  }
+
+  /* PROGRAM SECTION */
+  .p-personal_program_white_box {
+    position: static;
+    top: auto;
+    margin-bottom: 3rem;
+  }
+
+  .p-personal_program_container {
+    margin-top: 3rem;
+  }
+
+  .p-personal_program_white_box_header h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* ANNOUNCEMENT */
+  .p-personal_announcement {
+    padding: 4rem 2.5rem;
+    max-width: 100%;
+  }
+
+  .p-personal_announcement_titleContainer {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .p-personal_announcement_titleContainer h2:nth-child(2) {
+    font-size: 2.75rem;
+  }
+
+  /* Push speak characters further out so they don't overlap content */
+  .p-personal_speak_container01 {
+    left: -6%;
+  }
+
+  .p-personal_speak_container02 {
+    right: -6%;
+  }
+
+  .p-personal_speak_person01,
+  .p-personal_speak_person02 {
+    height: 18rem;
+  }
+}
+
+
+/* ──────────────────────────────────────────
+   MOBILE  (max-width: 767px)
+   ────────────────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* BANNER */
+  .p-personal_banner {
+    height: 26rem;
+    background-position: 70% top;
+  }
+
+  .p-personal_banner_title {
+    top: 25%;
+    left: 1.25rem;
+  }
+
+  .p-personal_banner_title h1 {
+    font-size: 1.375rem;
+    line-height: 2.5rem;
+  }
+
+  .p-personal_breadcrumb {
+    left: 1.25rem;
+    bottom: 4%;
+  }
+
+  /* Banner ribbon: keep visible, fit mobile width */
+  .p-personal_banner_ribbon {
+    bottom: 2%;
+    left: -5%;
+    width: 160vw;
+  }
+
+  /* AMAZONES METHOD SECTION */
+
+  /* Method image: switch to in-flow block above text */
+  .p-personal_amazones_method_img {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Let text container go full width */
+  .p-personal_topic_text_container {
+    max-width: 100%;
+    gap: 1.5rem;
+  }
+
+  /* Section container: tighter padding */
+  .p-personal_amazones_section .c-maxWidth,
+  .p-personal_program_section .c-maxWidth {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Section header */
+  .p-personal_section_header h2 {
+    font-size: 2.75rem;
+    line-height: 3.5rem;
+  }
+
+  .p-personal_section_header p {
+    font-size: 1rem;
+  }
+
+  /* Topic header icon row: wrap on very small screens */
+  .p-personal_amazones_container .flex.gap-3.items-center,
+  .p-personal_case_study_container .flex.gap-3.items-center {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* Boxed info: stack pairs into single column */
+  .p-personal_boxed_info .flex.gap-3.items-start {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .p-personal_boxed_info_item {
+    flex: 1 1 100%;
+  }
+
+  .p-personal_boxed_info_item p {
+    font-size: 1rem;
+  }
+
+  /* Case study: stack and remove large top margin */
+  .p-personal_case_study_container {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  .p-personal_case_study_container .flex.items-center.gap-70px {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  /* CTA SECTION */
+  .p-personal_cta_section {
+    height: auto;
+    min-height: 22rem;
+    padding: 4rem 0;
+    background-position: 60% center;
+  }
+
+  .p-personal_cta_text_container {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .p-personal_cta_text_container h2 {
+    font-size: 1.375rem;
+    line-height: 2.25rem;
+  }
+
+  /* CTA ribbon: keep visible, rescale */
+  .p-personal_cta_ribbon {
+    left: -20%;
+    top: -8%;
+  }
+
+  .p-personal_cta_ribbon svg {
+    width: 100vw;
+    height: auto;
+  }
+
+  /* PROGRAM SECTION */
+  .p-personal_program_white_box {
+    position: static;
+    top: auto;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .p-personal_program_white_box_header h3 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .p-personal_program_container {
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  /* Program illustration: allow horizontal scroll, show scrollbar hint */
+  .p-personal_program_illustration {
+    width: 60rem;
+    margin-top: 1rem;
+  }
+
+  /* ANNOUNCEMENT */
+  .p-personal_announcement {
+    padding: 2.5rem 1.25rem;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .p-personal_announcement_titleContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .p-personal_announcement_titleContainer h2 {
+    font-size: 1.25rem;
+  }
+
+  .p-personal_announcement_titleContainer h2:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .p-personal_announcement_body {
+    font-size: 0.9375rem;
+    line-height: 1.9;
+  }
+
+  .p-personal_announcement_btn {
+    font-size: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  /* Floating speak characters: hide on mobile to prevent overflow */
+  .p-personal_speak_container01,
+  .p-personal_speak_container02 {
+    display: none;
+  }
+}
