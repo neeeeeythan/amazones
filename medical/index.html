@@ -11,6 +11,7 @@
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/faq.css" rel="stylesheet" type="text/css" />
 
     <!--MEDICAL CSS-->
     <link href="../assets/css/medical.css" rel="stylesheet" type="text/css" />
@@ -122,7 +123,7 @@
       <!-- BANNER -->
       <section class="relative">
         <img
-          src="../assets/img/medical/banner_medical.webp"
+          src="../assets/img/medical/banner_medical.png"
           alt="banner medical"
           class="w-full h-auto"
         />
@@ -181,7 +182,7 @@
         <img
           src="../assets/img/top/img_hero_ribbon.svg"
           alt="ribbon 01"
-          class="p-medical_banner-ribbon"
+          class="p-medical_banner-ribbon clip-grow-right"
         />
       </section>
 
@@ -1091,7 +1092,7 @@
 
       <!-- FAQ -->
       <section class="p-medical_section_white relative">
-        <div class="p-medical_faq_ribbon">
+        <div class="p-medical_faq_ribbon clip-grow-right">
           <svg
             version="1.2"
             xmlns="http://www.w3.org/2000/svg"
@@ -1114,173 +1115,7 @@
           </div>
           <!-- FAQ LIST -->
           <div class="flex flex-col gap-40px py-50">
-            <!-- FAQ 1 -->
-            <div class="p-medical_faq_card">
-              <div class="p-medical_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">保険は適用されますか？</p>
-                </div>
-                <div class="p-medical_horizontal_line"></div>
-              </div>
-              <div class="p-medical_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <p>完全自費診療（保険外診療）のため、保険は適用されません。</p>
-              </div>
-            </div>
-            <!-- FAQ 2 -->
-            <div class="p-medical_faq_card">
-              <div class="p-medical_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">他の薬と併用できますか？</p>
-                </div>
-                <div class="p-medical_horizontal_line"></div>
-              </div>
-              <div class="p-medical_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <p>
-                  問診票に記載の上、診察時に医師にご相談ください。飲み合わせに問題のないお薬の処方を行わせていただきます。
-                </p>
-              </div>
-            </div>
-            <!-- FAQ 3 -->
-            <div class="p-medical_faq_card">
-              <div class="p-medical_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">
-                    ドラッグストアで購入できる薬との違いはなんですか？
-                  </p>
-                </div>
-                <div class="p-medical_horizontal_line"></div>
-              </div>
-              <div class="p-medical_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <div class="flex flex-col gap-3 font-zen">
-                  <p>
-                    医療用漢方製剤が医師の診察に基づいて選ばれるのに対して、ドラッグストアなどで販売している一般用漢方製剤は、服用者自身で選び、購入することができます。
-                  </p>
-                  <p>
-                    しかし、一般用漢方製剤は安全性を考慮して1日の服用量中の成分量を調整しており、多くの場合においては医療用漢方薬の50～80%程度の成分量しか含まれておりません。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- FAQ 4 -->
-            <div class="p-medical_faq_card">
-              <div class="p-medical_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">処方薬の効果はどのくらいで出ますか？</p>
-                </div>
-                <div class="p-medical_horizontal_line"></div>
-              </div>
-              <div class="p-medical_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <p>2～3ヶ月使用していただくと徐々に効果があらわれます。</p>
-                </div>
-              </div>
-            </div>
-            <!-- FAQ 5 -->
-            <div class="p-medical_faq_card">
-              <div class="p-medical_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">
-                    薬が合わなかった時は、どうしたら良いですか？
-                  </p>
-                </div>
-                <div class="p-medical_horizontal_line"></div>
-              </div>
-              <div class="p-medical_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <p>
-                    薬が合わなかった場合は、いつでもLINEで相談できます。お薬の変更も可能です。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- FAQ 6 -->
-            <div class="p-medical_faq_card">
-              <div class="p-medical_faq_q">
-                <div class="flex gap-3 items-center flex-1">
-                  <div
-                    class="bg-lightBlue radius-100 flex items-center justify-center"
-                    style="width: 50px; height: 50px"
-                  >
-                    <p class="font-outfit text-white fs-24">Q</p>
-                  </div>
-                  <p class="font-zen">副作用のリスクはありますか？</p>
-                </div>
-                <div class="p-medical_horizontal_line"></div>
-              </div>
-              <div class="p-medical_faq_a gap-3">
-                <div
-                  class="radius-100 flex items-center justify-center"
-                  style="width: 50px; height: 50px; background-color: #98a6b5"
-                >
-                  <p class="font-outfit text-white fs-24">A</p>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <p>
-                    西洋薬のように飲み始めて数日間で治療が必要なほど大きな副作用が出るということはまれですが、吐き気や下痢といった副作用が起こる可能性はあります。
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div id="医療FAQ" class="faq-container w-full"></div>
           </div>
         </div>
       </section>
@@ -1391,7 +1226,7 @@
               <img
                 src="../assets/img/medical/img_medical_speak_bubble01.svg"
                 alt="speak person image"
-                class="p-medical_speak_bubble01"
+                class="p-medical_speak_bubble01 speech-bubble"
               />
               <img
                 src="../assets/img/medical/img_medical_speak_person01.webp"
@@ -1406,7 +1241,7 @@
               <img
                 src="../assets/img/medical/img_medical_speak_bubble02.svg"
                 alt="speak person image"
-                class="p-medical_speak_bubble02"
+                class="p-medical_speak_bubble02 speech-bubble"
               />
               <img
                 src="../assets/img/medical/img_medical_speak_person02.webp"
