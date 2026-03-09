@@ -37,55 +37,53 @@ headerFloatingMenu.addEventListener("mouseleave", function (e) {
   }
 });
 
-
-
 //FOR ELEMENT ANIMATIONS
-document.addEventListener('DOMContentLoaded', function() {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {        
-        if (!entry.target.classList.contains('is-in-view')) {
-          // Add class to trigger animation
-          entry.target.classList.add('is-in-view');
-          
-          // Remove class after animation completes
-          setTimeout(() => {
-            entry.target.classList.remove('is-in-view');
-          }, 1800); 
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!entry.target.classList.contains("is-in-view")) {
+            // Add class to trigger animation
+            entry.target.classList.add("is-in-view");
+
+            // Remove class after animation completes
+            setTimeout(() => {
+              entry.target.classList.remove("is-in-view");
+            }, 1800);
+          }
+        } else {
         }
-        
-      } else {
-      }
-    });
-  }, {
-    threshold: 0.3, // Trigger when 30% of element is visible
-    rootMargin: '0px'
-  });
+      });
+    },
+    {
+      threshold: 0.3, // Trigger when 30% of element is visible
+      rootMargin: "0px",
+    },
+  );
 
   const elementsToObserve = document.querySelectorAll(
-    '.speech-bubble, ' +      
-    '.clip-grow-right, ' +    
-    '.service-wrapper, ' +   
-    '.topic-slider, ' +       
-    '.news-section, ' +       
-    '.dr-amazones-container'  
+    ".speech-bubble, " +
+      ".clip-grow-right, " +
+      ".service-wrapper, " +
+      ".topic-slider, " +
+      ".news-section, " +
+      ".dr-amazones-container",
   );
-  
+
   if (elementsToObserve.length > 0) {
     elementsToObserve.forEach((element, index) => {
       observer.observe(element);
     });
-  } 
+  }
 });
-
-
 
 // //TOP TOPIC JS
 // // TOP TOPIC JS - Multiple Sliders with Auto-slide
 
 // function initTopicSlider(sliderElement) {
 //   if (!sliderElement) return;
-  
+
 //   const track = sliderElement.querySelector("[data-slider-track]");
 //   const prev = sliderElement.querySelector("[data-slider-prev]");
 //   const next = sliderElement.querySelector("[data-slider-next]");
@@ -94,15 +92,15 @@ document.addEventListener('DOMContentLoaded', function() {
 //   if (track && dotsContainer) {
 //     const slides = track.children;
 //     const totalSlides = slides.length;
-    
+
 //     dotsContainer.innerHTML = '';
-    
+
 //     const createDots = () => {
 //       for (let i = 0; i < totalSlides; i++) {
 //         const dot = document.createElement('button');
 //         dot.classList.add('topic-slider__dot');
 //         dot.setAttribute('data-slider-dot', i);
-        
+
 //         dot.addEventListener('click', () => {
 //           const slideWidth = slides[0].offsetWidth;
 //           track.scrollTo({
@@ -110,19 +108,19 @@ document.addEventListener('DOMContentLoaded', function() {
 //             behavior: "smooth"
 //           });
 //         });
-        
+
 //         dotsContainer.appendChild(dot);
 //       }
 //     };
-    
+
 //     const updateActiveDot = () => {
 //       const trackScrollWidth = track.scrollWidth;
 //       const trackOuterWidth = track.clientWidth;
 //       const maxScroll = trackScrollWidth - trackOuterWidth;
-      
+
 //       const slideWidth = slides[0].offsetWidth;
 //       const currentIndex = Math.round(track.scrollLeft / slideWidth);
-      
+
 //       const dots = dotsContainer.querySelectorAll('[data-slider-dot]');
 //       dots.forEach((dot, index) => {
 //         if (index === currentIndex) {
@@ -131,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //           dot.classList.remove('active');
 //         }
 //       });
-      
+
 //       if (prev) prev.removeAttribute("disabled");
 //       if (next) next.removeAttribute("disabled");
 
@@ -142,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //       if (track.scrollLeft >= maxScroll - 1 && next) {
 //         next.setAttribute("disabled", "");
 //       }
-      
+
 //       // Check if we're on the first slide and set margin accordingly
 //       if (currentIndex === 0) {
 //         console.log('=== FIRST SLIDE REACHED - SETTING MARGIN TO 240px ===');
@@ -152,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function() {
 //         track.style.marginLeft = '0';
 //       }
 //     };
-    
+
 //     createDots();
-    
+
 //     setTimeout(() => {
 //       updateActiveDot();
 //     }, 100);
@@ -200,11 +198,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // });
 // //END TOPIC JS
 
-
 // // TOP TOPIC JS - Multiple Sliders Support
 function initTopicSlider(sliderElement) {
   if (!sliderElement) return;
-  
+
   const track = sliderElement.querySelector("[data-slider-track]");
   const prev = sliderElement.querySelector("[data-slider-prev]");
   const next = sliderElement.querySelector("[data-slider-next]");
@@ -215,46 +212,46 @@ function initTopicSlider(sliderElement) {
   if (track && dotsContainer) {
     const slides = track.children;
     const totalSlides = slides.length;
-    
+
     // Clear existing dots (in case of re-initialization)
-    dotsContainer.innerHTML = '';
-    
+    dotsContainer.innerHTML = "";
+
     const createDots = () => {
       for (let i = 0; i < totalSlides; i++) {
-        const dot = document.createElement('button');
-        dot.classList.add('topic-slider__dot');
-        dot.setAttribute('data-slider-dot', i);
-        
-        dot.addEventListener('click', () => {
+        const dot = document.createElement("button");
+        dot.classList.add("topic-slider__dot");
+        dot.setAttribute("data-slider-dot", i);
+
+        dot.addEventListener("click", () => {
           const slideWidth = slides[0].offsetWidth;
           track.scrollTo({
             left: slideWidth * i,
-            behavior: "smooth"
+            behavior: "smooth",
           });
           removePaddingOnFirstSlide(); // Remove padding when dot is clicked
         });
-        
+
         dotsContainer.appendChild(dot);
       }
     };
-    
+
     const updateActiveDot = () => {
       const trackScrollWidth = track.scrollWidth;
       const trackOuterWidth = track.clientWidth;
       const maxScroll = trackScrollWidth - trackOuterWidth;
-      
+
       const slideWidth = slides[0].offsetWidth;
       const currentIndex = Math.round(track.scrollLeft / slideWidth);
-      
-      const dots = dotsContainer.querySelectorAll('[data-slider-dot]');
+
+      const dots = dotsContainer.querySelectorAll("[data-slider-dot]");
       dots.forEach((dot, index) => {
         if (index === currentIndex) {
-          dot.classList.add('active');
+          dot.classList.add("active");
         } else {
-          dot.classList.remove('active');
+          dot.classList.remove("active");
         }
       });
-      
+
       if (prev) prev.removeAttribute("disabled");
       if (next) next.removeAttribute("disabled");
 
@@ -266,7 +263,7 @@ function initTopicSlider(sliderElement) {
         next.setAttribute("disabled", "");
       }
     };
-    
+
     // Function to remove padding on first slide
     const removePaddingOnFirstSlide = () => {
       if (!hasSlid && sliderContainer) {
@@ -275,9 +272,9 @@ function initTopicSlider(sliderElement) {
         hasSlid = true;
       }
     };
-    
+
     createDots();
-    
+
     setTimeout(() => {
       updateActiveDot();
     }, 100);
@@ -308,25 +305,23 @@ function initTopicSlider(sliderElement) {
       updateActiveDot();
     });
 
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       updateActiveDot();
     });
   }
 }
 
 // Initialize all sliders
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const sliders = document.querySelectorAll("[data-slider]");
-  sliders.forEach(slider => {
+  sliders.forEach((slider) => {
     initTopicSlider(slider);
   });
 });
 // //END TOPIC JS
 
-
-
 //if vidoes are fetched from wp files
-//TOP MOVIE 
+//TOP MOVIE
 // var myMp4 = document.getElementById("mp4"),
 //     myWebm = document.getElementById("webm"),
 //     myVid = document.getElementById("myVideo"),
@@ -341,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //     thumbnails.forEach(function(thumb) {
 //         thumb.classList.remove('active-thumb');
 //     });
-    
+
 //     var thumbIndex;
 //     switch (ID) {
 //         case "one":
@@ -357,12 +352,12 @@ document.addEventListener('DOMContentLoaded', () => {
 //             thumbIndex = 3;
 //             break;
 //     }
-    
+
 //     var activeThumb = document.querySelectorAll('.thumb')[thumbIndex];
 //     if (activeThumb) {
 //         activeThumb.classList.add('active-thumb');
 //     }
-    
+
 //     switch (ID) {
 //         case "one":
 //             mp4Url = "https://youtu.be/9lsfbbWFtEM?si=5f8orNFlVWziLKEW";
@@ -379,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //     }
 //     myMp4.setAttribute("src", mp4Url);
 //     myVid.load();
-//     myVid.poster = ""; 
+//     myVid.poster = "";
 // }
 
 // function playVid(ID) {
@@ -390,56 +385,110 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //if vidoes are fetched from youtube
 const videoIds = {
-    one: "9lsfbbWFtEM",
-    two: "c-JyRI7P4zk",
-    three: "sf4CZ-kEXB0",
-    four: "KqAKFB3-w30"
+  one: "9lsfbbWFtEM",
+  two: "c-JyRI7P4zk",
+  three: "sf4CZ-kEXB0",
+  four: "KqAKFB3-w30",
 };
 // Get the YouTube iframe element
-const youtubePlayer = document.getElementById('youtube-player');
+const youtubePlayer = document.getElementById("youtube-player");
 
-document.addEventListener('DOMContentLoaded', function() {
-    selectVid('one');
+document.addEventListener("DOMContentLoaded", function () {
+  selectVid("one");
 });
 
 function selectVid(ID) {
-    // Update active thumbnail
-    var thumbnails = document.querySelectorAll('.thumb');
-    thumbnails.forEach(function(thumb) {
-        thumb.classList.remove('active-thumb');
-    });
-    
-    var thumbIndex;
-    switch (ID) {
-        case "one":
-            thumbIndex = 0;
-            break;
-        case "two":
-            thumbIndex = 1;
-            break;
-        case "three":
-            thumbIndex = 2;
-            break;
-        case "four":
-            thumbIndex = 3;
-            break;
-    }
-    
-    var activeThumb = document.querySelectorAll('.thumb')[thumbIndex];
-    if (activeThumb) {
-        activeThumb.classList.add('active-thumb');
-    }
-    // Update YouTube video
-    if (youtubePlayer) {
-        youtubePlayer.src = "https://www.youtube.com/embed/" + videoIds[ID] + "?enablejsapi=1&autoplay=0";
-    }
+  // Update active thumbnail
+  var thumbnails = document.querySelectorAll(".thumb");
+  thumbnails.forEach(function (thumb) {
+    thumb.classList.remove("active-thumb");
+  });
+
+  var thumbIndex;
+  switch (ID) {
+    case "one":
+      thumbIndex = 0;
+      break;
+    case "two":
+      thumbIndex = 1;
+      break;
+    case "three":
+      thumbIndex = 2;
+      break;
+    case "four":
+      thumbIndex = 3;
+      break;
+  }
+
+  var activeThumb = document.querySelectorAll(".thumb")[thumbIndex];
+  if (activeThumb) {
+    activeThumb.classList.add("active-thumb");
+  }
+  // Update YouTube video
+  if (youtubePlayer) {
+    youtubePlayer.src =
+      "https://www.youtube.com/embed/" +
+      videoIds[ID] +
+      "?enablejsapi=1&autoplay=0";
+  }
 }
 
 function playVid(ID) {
-    selectVid(ID);
-    // Auto-play the video after selection
-    if (youtubePlayer) {
-        youtubePlayer.src = "https://www.youtube.com/embed/" + videoIds[ID] + "?enablejsapi=1&autoplay=1";
-    }
+  selectVid(ID);
+  // Auto-play the video after selection
+  if (youtubePlayer) {
+    youtubePlayer.src =
+      "https://www.youtube.com/embed/" +
+      videoIds[ID] +
+      "?enablejsapi=1&autoplay=1";
+  }
 }
 //END MOVIE
+
+//scroll animation
+(function () {
+  "use strict";
+  /* ─────────────────────────────────────────────
+               3. SCROLL REVEAL — IntersectionObserver
+            ───────────────────────────────────────────────── */
+  const scrollReveal = {
+    init() {
+      const targets = document.querySelectorAll(
+        ".reveal, .reveal-left, .reveal-right, .reveal-scale",
+      );
+      if (!targets.length) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              observer.unobserve(entry.target); // animate once
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+          rootMargin: "0px 0px -40px 0px",
+        },
+      );
+
+      targets.forEach((el) => observer.observe(el));
+    },
+  };
+
+  scrollReveal.init();
+
+  /* ─────────────────────────────────────────────
+               5. SMOOTH ANCHOR LINKS
+            ───────────────────────────────────────────────── */
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+})();

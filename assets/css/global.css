@@ -135,7 +135,11 @@ ul li::marker {
   filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
     hue-rotate(96deg) brightness(92%) contrast(82%);
 }
-
+.text-link {
+  color: var(--text-lightBlue);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 /* ========== DISPLAY ========== */
 .block {
   display: block;
@@ -5240,6 +5244,61 @@ html {
 
 a {
   text-decoration: none;
+}
+
+/* ═══════════════════════════════════
+       SCROLL REVEAL ANIMATIONS
+    ═══════════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* ============================================
