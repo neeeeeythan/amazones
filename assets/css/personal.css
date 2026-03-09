@@ -2,7 +2,7 @@
 .p-personal_banner {
   width: 100%;
   height: 53.5rem;
-  background-image: url("../img/personal/banner_personal02.webp");
+  background-image: url("../img/personal/banner_personal.png");
   background-size: cover;
   background-position: center top;
   position: relative;
@@ -200,8 +200,8 @@
 }
 
 .p-personal_program_illustration {
-  width: auto;
-  height: 100%;
+  width: 83rem;
+  height: auto;
   margin-top: 2rem;
 }
 
@@ -404,4 +404,67 @@
 .icon-hover-lightblue:hover {
   filter: invert(82%) sepia(28%) saturate(512%) hue-rotate(128deg)
     brightness(102%) contrast(83%);
+}
+
+/* SPEAK */
+/* 01 */
+.p-personal_speak_container01 {
+  position: absolute;
+  bottom: 0rem;
+  left: -1rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-personal_speak_image01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-personal_speak_bubble01 {
+  position: absolute;
+  top: -3rem;
+  right: 10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-personal_speak_person01 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
+}
+
+/* 02 */
+.p-personal_speak_container02 {
+  position: absolute;
+  bottom: 0rem;
+  right: -1rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.p-personal_speak_image02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-personal_speak_bubble02 {
+  position: absolute;
+  top: -4rem;
+  right: -7rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-personal_speak_person02 {
+  width: auto;
+  height: 25rem;
+  object-fit: contain;
 }
