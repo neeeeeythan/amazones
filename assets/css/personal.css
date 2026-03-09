@@ -199,11 +199,48 @@
   gap: 2rem;
 }
 
+.p-personal_program_illustration_scroll {
+  overflow-x: auto;
+  width: 100%;
+}
+
 .p-personal_program_illustration {
   width: 83rem;
   height: auto;
   margin-top: 2rem;
+  display: block;
 }
+.p-personal_program_scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #5cc4bb #e8f7f6;
+  padding-bottom: 0.5rem;
+}
+
+.p-personal_program_scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.p-personal_program_scroll::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.p-personal_program_scroll::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #a8e8e2, #ffffff);
+  border-radius: 999px;
+}
+
+.p-personal_program_scroll::-webkit-scrollbar-thumb {
+  background: #5cc4bb;
+  border-radius: 999px;
+}
+
+.p-personal_program_scroll::-webkit-scrollbar-thumb:hover {
+  background: #4ab3aa;
+}
+
 
 /* PROGRAM SLIDER CARDS */
 .p-personal_program_card {
