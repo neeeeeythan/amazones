@@ -435,3 +435,386 @@
   position: relative;
   z-index: 1;
 }
+
+
+
+/* ============================================
+   MEDICAL PAGE — RESPONSIVE STYLES
+   Tablet ≤ 1024px  |  Mobile ≤ 767px
+   ============================================ */
+
+/* ──────────────────────────────────────────
+   TABLET  (max-width: 1024px)
+   ────────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  /* BANNER */
+  .p-medical_banner_content {
+    top: 28%;
+    left: 4%;
+    gap: 1rem;
+  }
+
+  .p-medical_banner_content h1 {
+    font-size: 1.875rem;
+    line-height: 1.5;
+  }
+
+  .p-medical_banner-ribbon {
+    bottom: -30%;
+    left: -1%;
+    height: 80%;
+  }
+
+  /* SECTION HEADER */
+  .p-medical_section_header h2 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+
+  /* SECTION TITLE ROW — stack on tablet */
+  .p-medical_section_title_row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .p-medical_section_subtitle {
+    margin-top: 0;
+  }
+
+  /* ENGAGEMENT — stack left/right */
+  .p-medical_engagement_row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .p-medical_engagement_logo svg {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+  .p-medical_engagement_right {
+    width: 100%;
+  }
+
+  .p-medical_engagement_tagline {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  /* ONLINE CONSULTATION BANNER */
+  .p-medical_online_consultation_banner {
+    height: auto;
+    padding: 5rem 0;
+  }
+
+  .p-medical_online_consultation_banner h2 {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+
+  /* PARTNERS — stack columns */
+  .p-medical_partners_row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .p-medical_partners_logo_row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .p-medical_partners_list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .p-medical_partners_right {
+    width: 100%;
+  }
+
+  /* STEPS — reduce gap */
+  .p-medical_step_row {
+    gap: 2rem;
+  }
+
+  /* LINEUP — 3 per row */
+  .p-medical_lineup_item {
+    width: calc(33.333% - 1.35rem);
+  }
+
+  /* VOICE — reduce stagger */
+  .p-medical_voice_card:nth-child(2) {
+    margin-bottom: 3rem;
+  }
+
+  .p-medical_voice_card:nth-child(3) {
+    margin-bottom: 6rem;
+  }
+
+  .p-medical_voice_card_body {
+    padding: 2rem;
+  }
+
+  /* FAQ RIBBON */
+  .p-medical_faq_ribbon {
+    right: -5%;
+    width: 90vw;
+  }
+
+  /* FAQ ROW — stack */
+  .p-medical_faq_row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* SPEAK PERSONS */
+  .p-medical_speak_container01 {
+    left: 1rem;
+  }
+
+  .p-medical_speak_container02 {
+    right: 1rem;
+  }
+
+  .p-medical_speak_person01,
+  .p-medical_speak_person02 {
+    height: 18rem;
+  }
+}
+
+
+/* ──────────────────────────────────────────
+   MOBILE  (max-width: 767px)
+   ────────────────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* BANNER */
+  .p-medical_banner_content {
+    top: 22%;
+    left: 1.25rem;
+    gap: 0.75rem;
+  }
+
+  .p-medical_banner_content h1 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .p-medical_banner_content svg[viewBox="0 0 441 67"] {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+  }
+
+  .p-medical_breadcrumb {
+    left: 1.25rem;
+    bottom: 3%;
+  }
+
+  .p-medical_banner-ribbon {
+    bottom: -15%;
+    left: -3%;
+    height: 60%;
+  }
+
+  /* SECTION HEADER */
+  .p-medical_section_header h2 {
+    font-size: 2.75rem;
+    line-height: 3.5rem;
+  }
+
+  .p-medical_section_header p {
+    font-size: 1rem;
+  }
+
+  /* ENGAGEMENT */
+  .p-medical_engagement_row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .p-medical_engagement_logo {
+    align-items: flex-start;
+  }
+
+  .p-medical_engagement_logo svg {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .p-medical_engagement_right {
+    width: 100%;
+  }
+
+  .p-medical_engagement_tagline {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+
+  .p-medical_engagement_tagline h4 {
+    font-size: 1rem;
+  }
+
+  /* ONLINE CONSULTATION BANNER */
+  .p-medical_online_consultation_banner {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .p-medical_online_consultation_banner h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .p-medical_online_consultation_banner .bg-white.w-fit-content p {
+    font-size: 1rem;
+  }
+
+  /* PARTNERS */
+  .p-medical_partners_row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .p-medical_partners_logo_row {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .p-medical_partners_logo_row img[width="240px"] {
+    width: 140px;
+  }
+
+  .p-medical_partners_clinic h4 {
+    font-size: 1.25rem;
+  }
+
+  .p-medical_partners_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .p-medical_list_box {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .p-medical_partners_right {
+    width: 100%;
+  }
+
+  /* STEPS — stack vertically */
+  .p-medical_step_row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .p-medical_step_card_title h3 {
+    font-size: 1.25rem;
+  }
+
+  .p-medical_step_card_title > p {
+    font-size: 1.125rem;
+  }
+
+  .p-medical_step_card_body {
+    padding: 1.25rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .p-medical_lightBlue_container p {
+    font-size: 0.9375rem;
+  }
+
+  /* inline code/input row in step 6 */
+  .p-medical_step_card_body .bg-gray {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* VOICE — remove stagger, stack */
+  .p-medical_voice_grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .p-medical_voice_card:nth-child(1),
+  .p-medical_voice_card:nth-child(2),
+  .p-medical_voice_card:nth-child(3) {
+    margin-bottom: 0;
+    flex: none;
+  }
+
+  .p-medical_voice_card_body {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .p-medical_voice_watermark {
+    font-size: 2.5rem;
+  }
+
+  .p-medical_voice_card_body h3 {
+    font-size: 1rem;
+  }
+
+  /* LINEUP — 2 per row */
+  .p-medical_lineup_grid {
+    gap: 1rem;
+  }
+
+  .p-medical_lineup_item {
+    width: calc(50% - 0.5rem);
+  }
+
+  .p-medical_lineup_item p {
+    font-size: 0.9375rem;
+  }
+
+  .p-medical_lineup_icon {
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+  }
+
+  /* FAQ */
+  .p-medical_faq_ribbon {
+    top: -2%;
+    right: -10%;
+    width: 120vw;
+  }
+
+  .p-medical_faq {
+    padding: 4rem 0;
+    gap: 1.5rem;
+  }
+
+  .p_medical_faq_card_header h3 {
+    font-size: 1.125rem;
+  }
+
+  .p_medical_faq_card_body {
+    padding: 1.25rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  /* SPEAK PERSONS — hide on mobile */
+  .p-medical_speak_container01,
+  .p-medical_speak_container02 {
+    display: none;
+  }
+
+  /* ANNOUNCEMENT — breathe without speak persons */
+  .c-announcement {
+    padding: 2.5rem 1.25rem !important;
+  }
+}
