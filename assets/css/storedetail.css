@@ -523,3 +523,116 @@
   position: relative;
   z-index: 1;
 }
+
+/* INTRODUCTION PEOPLE */
+.p-storedetail_introduction_people {
+  position: absolute;
+  display: flex;
+  gap: 2.5rem;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 0;
+}
+
+/* INTRODUCTION IMAGES */
+.p-storedetail_introduction-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1em;
+  z-index: 1;
+  width: 100%;
+}
+
+.p-storedetail_introduction-main-photo {
+  background: #ccc;
+  aspect-ratio: 4/3;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.p-storedetail_introduction-grid-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  min-width: 0; /* prevents grid blowout */
+}
+
+.p-storedetail_introduction-thumb {
+  background: #ccc;
+  aspect-ratio: 4/3;
+  border-radius: 3px;
+  width: 100%;
+}
+
+/* GRAY CONTAINER */
+
+.p-storedetail_gray_container {
+  width: 100%;
+  height: 3.75rem;
+  background-color: var(--base-grayBlue);
+  padding: 0 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.p-storedetail_cutout {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: auto;
+}
+
+/* MAP */
+
+.p-storedetail_map {
+  flex: 1;
+  min-width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-height: 240px;
+}
+.p-storedetail_map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  border: none;
+  display: block;
+}
+
+/* FACILITIES */
+.p-storedetail_introduction_facilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+
+.p-storedetail_introduction_facility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 7rem;
+}
+
+.p-storedetail_introduction_facility_icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--base-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-storedetail_introduction_facility p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-black1);
+  text-align: center;
+  line-height: 1.4;
+}
