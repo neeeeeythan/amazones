@@ -636,3 +636,35 @@
   text-align: center;
   line-height: 1.4;
 }
+
+/* PRICE IMAGE */
+.p-storedetail_price_image_container {
+  display: flex;
+  height: 33.75rem;
+  margin-bottom: 7rem;
+}
+
+.p-storedetail_price_image_container p {
+  line-height: 2;
+}
+
+.p-storedetail_price_image_left,
+.p-storedetail_price_image_right {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1.4;
+}
+
+.p-storedetail_price_image_left {
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg01.png");
+}
+
+.p-storedetail_price_image_right {
+  background-image: url("../img/storedetail/img_storedetail_price_titleImg02.png");
+}
