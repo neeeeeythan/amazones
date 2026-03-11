@@ -668,3 +668,30 @@
 .p-storedetail_price_image_right {
   background-image: url("../img/storedetail/img_storedetail_price_titleImg02.png");
 }
+
+/* CTA */
+.p-storedetail_cta_container {
+  height: 47.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/common/img_gym05.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.p-storedetail_cta_ribbon {
+  position: absolute;
+  top: 7%;
+  left: -10%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
