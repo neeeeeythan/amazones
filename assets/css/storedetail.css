@@ -192,9 +192,7 @@
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
-  transition:
-    background 0.15s,
-    color 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 
 .p-storedetail_filter-btn:hover {
@@ -679,8 +677,7 @@
   padding: 3rem 0;
   clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
   overflow: hidden;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/common/img_gym05.png");
   background-size: cover;
   background-position: center;
@@ -711,14 +708,8 @@
   color: var(--base-lightBlue);
   font-weight: 800;
   text-align: center;
-  text-shadow:
-    -4px -4px 0 #4f4f4f,
-    4px -4px 0 #4f4f4f,
-    -4px 4px 0 #4f4f4f,
-    4px 4px 0 #4f4f4f,
-    0 -4px 0 #4f4f4f,
-    0 4px 0 #4f4f4f,
-    -4px 0 0 #4f4f4f,
+  text-shadow: -4px -4px 0 #4f4f4f, 4px -4px 0 #4f4f4f, -4px 4px 0 #4f4f4f,
+    4px 4px 0 #4f4f4f, 0 -4px 0 #4f4f4f, 0 4px 0 #4f4f4f, -4px 0 0 #4f4f4f,
     4px 0 0 #4f4f4f;
 }
 
@@ -737,14 +728,8 @@
   color: var(--text-white);
   text-align: end;
   line-height: 1.6;
-  text-shadow:
-    -4px -4px 0 #4f4f4f,
-    4px -4px 0 #4f4f4f,
-    -4px 4px 0 #4f4f4f,
-    4px 4px 0 #4f4f4f,
-    0 -4px 0 #4f4f4f,
-    0 4px 0 #4f4f4f,
-    -4px 0 0 #4f4f4f,
+  text-shadow: -4px -4px 0 #4f4f4f, 4px -4px 0 #4f4f4f, -4px 4px 0 #4f4f4f,
+    4px 4px 0 #4f4f4f, 0 -4px 0 #4f4f4f, 0 4px 0 #4f4f4f, -4px 0 0 #4f4f4f,
     4px 0 0 #4f4f4f;
 }
 
@@ -753,15 +738,10 @@
   font-weight: 800;
   color: white;
   line-height: 1;
-  text-shadow:
-    -6px -6px 0 var(--text-black1),
-    6px -6px 0 var(--text-black1),
-    -6px 6px 0 var(--text-black1),
-    6px 6px 0 var(--text-black1),
-    0 -6px 0 var(--text-black1),
-    0 6px 0 var(--text-black1),
-    -6px 0 0 var(--text-black1),
-    6px 0 0 var(--text-black1);
+  text-shadow: -6px -6px 0 var(--text-black1), 6px -6px 0 var(--text-black1),
+    -6px 6px 0 var(--text-black1), 6px 6px 0 var(--text-black1),
+    0 -6px 0 var(--text-black1), 0 6px 0 var(--text-black1),
+    -6px 0 0 var(--text-black1), 6px 0 0 var(--text-black1);
 }
 
 .p-storedetail_cta_stats_number span {
@@ -792,7 +772,7 @@
   width: auto;
   height: 70rem;
   object-fit: contain;
-  transform: translate(-6rem,10rem);
+  transform: translate(-6rem, 10rem);
 }
 
 .p-storedetail_cta_person02 {
@@ -808,4 +788,98 @@
   padding: 1rem 2rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* FREETRIAL SPEAK */
+.p-storedetail_freetrial_speak_container01 {
+  position: absolute;
+  right: 5%;
+  top: -2rem;
+}
+
+.p-storedetail_freetrial_speak_image01 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-storedetail_freetrial_speak_bubble01 {
+  position: absolute;
+  top: -1rem;
+  left: -10rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.p-storedetail_freetrial_speak_person01 {
+  width: auto;
+  height: 23rem;
+  object-fit: contain;
+}
+
+.p-storedetail-freetrial_spanLightBlue {
+  color: var(--base-lightBlue);
+  text-decoration: underline;
+}
+
+
+.p-storedetail_freetrial_step_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-storedetail_freetrial_step_card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 1rem; */
+  background-color: white;
+}
+
+
+.p-storedetail_freetrial_step_card_body {
+  font-weight: 500;
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  line-height: 2rem;
+}
+
+.p-storedetail_freetrial_step_card_icon {
+  width: 5.625rem;
+  height: 5.625rem;
+  /* padding: 1.5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: var(--base-lightBlue);
+}
+
+
+
+.p-storedetail_freetrial_step_card_title {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  gap: 1rem;
+}
+
+.p-storedetail_freetrial_step_card_title h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-lightBlue);
+}
+
+.p-storedetail_freetrial_step_card_title > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-black1);
 }
