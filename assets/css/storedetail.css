@@ -529,8 +529,9 @@
   position: absolute;
   display: flex;
   gap: 2.5rem;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   right: 0;
+  bottom: -110%;
   z-index: 0;
 }
 
@@ -1237,4 +1238,92 @@
   .review-card {
     min-width: 100%;
   }
+}
+
+/* ═══════════════════════════════════════════════════════
+   Photo Gallery – Missing responsive utility classes
+   (Tailwind-style lg:/md: breakpoint variants)
+   ═══════════════════════════════════════════════════════ */
+
+/* Full-width bleed section: mx-[calc(50%-50vw)] */
+.mx-\[calc\(50\%-50vw\)\] {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Responsive padding at md (768px): md:pt-20, md:pb-20 */
+@media (min-width: 768px) {
+  .md\:pt-20 { padding-top: 5rem; }
+  .md\:pb-20 { padding-bottom: 5rem; }
+}
+
+/* Responsive layout at lg (1024px) */
+@media (min-width: 1024px) {
+  /* Switch flex column → row */
+  .lg\:flex-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  /* 2/3 width for main slider */
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+    flex-shrink: 0;
+  }
+  /* 1/3 width for thumbnail grid */
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+    flex-shrink: 0;
+  }
+}
+
+/* ── lg:self-start utility (missing from global.css) ── */
+@media (min-width: 1024px) {
+  .lg\:self-start {
+    align-self: flex-start;
+  }
+}
+
+/* ── .container fallback (no definition in global.css) ── */
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* ── Photo gallery slider ── */
+#js-slider {
+  overflow: hidden;
+  background: transparent;
+  aspect-ratio: 3 / 2;          /* lock the container to 3:2 */
+}
+
+/* Before Swiper initialises, prevent all 10 slides from stacking */
+#js-slider:not(.swiper-initialized) .swiper-slide:not(:first-child) {
+  display: none;
+}
+
+#js-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Thumbnail grid — prevent rows from stretching to fill parent */
+.slider-thumbs .grid {
+  align-content: start;
+}
+
+.slider-thumbs .js-thumb-button {
+  aspect-ratio: 3 / 2;
+}
+
+.slider-thumbs .js-thumb-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

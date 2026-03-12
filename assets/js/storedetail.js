@@ -184,3 +184,43 @@ Object.keys(franchiseContainers).forEach((section) => {
 //  Initial render
 // ─────────────────────────────────────────────
 renderFranchiseSection("フランチャイズFAQ", franchiseQuestionSets.フランチャイズFAQ);
+
+// ─────────────────────────────────────────────
+//  Photo Gallery Slider
+//  (script is defer-loaded so DOM is already ready — no DOMContentLoaded needed)
+// ─────────────────────────────────────────────
+(function () {
+  const sliderEl = document.getElementById("js-slider");
+  if (!sliderEl || typeof Swiper === "undefined") return;
+
+  const swiper = new Swiper(sliderEl, {
+    effect: "fade",
+    fadeEffect: { crossFade: true },
+    speed: 400,
+    allowTouchMove: false,
+  });
+
+  const thumbButtons = document.querySelectorAll(".js-thumb-button");
+
+  function setActiveThumb(index) {
+    thumbButtons.forEach((b) => b.classList.remove("swiper-slide-thumb-active"));
+    if (thumbButtons[index]) {
+      thumbButtons[index].classList.add("swiper-slide-thumb-active");
+      thumbButtons[index].scrollIntoView({ block: "nearest", inline: "nearest" });
+    }
+  }
+
+  thumbButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const index = parseInt(this.getAttribute("data-slide-index"), 10);
+      swiper.slideTo(index);
+      setActiveThumb(index);
+    });
+  });
+
+  swiper.on("slideChange", function () {
+    setActiveThumb(swiper.activeIndex);
+  });
+
+  setActiveThumb(0);
+}());
