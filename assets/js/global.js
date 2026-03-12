@@ -492,3 +492,45 @@ function playVid(ID) {
     });
   });
 })();
+
+
+// Trigger opening image jump each time it enters the viewport.
+(function () {
+  const openingJumpImages = document.querySelectorAll(
+    ".c-animation-jump"
+  );
+  if (!openingJumpImages.length) return;
+
+  const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (motionQuery.matches) return;
+
+  const triggerJump = (element) => {
+    element.classList.remove("is-jump-once");
+    // Reflow ensures the CSS animation restarts on each viewport entry.
+    void element.offsetWidth;
+    element.classList.add("is-jump-once");
+  };
+
+  if (!("IntersectionObserver" in window)) {
+    openingJumpImages.forEach(triggerJump);
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          triggerJump(entry.target);
+          return;
+        }
+
+        entry.target.classList.remove("is-jump-once");
+      });
+    },
+    {
+      threshold: 0.35,
+    }
+  );
+
+  openingJumpImages.forEach((image) => observer.observe(image));
+}());
