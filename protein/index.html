@@ -7,7 +7,10 @@
       content="女性専用24時間ジムAmazones（アマゾネス）のオリジナルプロテインを紹介しています。"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amazonesオリジナルプロテイン | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム</title>
+    <title>
+      Amazonesオリジナルプロテイン | Amazones（アマゾネス） |
+      初心者向け女性専用24時間ジム
+    </title>
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
@@ -556,7 +559,10 @@
                         </div>
                       </div>
                       <div class="flex flex-col justify-end items-end flex-1">
-                        <button class="btn-light-blue02">
+                        <button
+                          class="btn-light-blue02 cursor-pointer"
+                          onclick="openIngredientsModalApple()"
+                        >
                           原材料・栄養成分・アレルギー情報
                           <svg
                             width="20"
@@ -579,6 +585,27 @@
                             />
                           </svg>
                         </button>
+
+                        <!-- Modal Overlay -->
+                        <div
+                          class="p-protein_modal-overlay"
+                          id="ingredientsModalApple"
+                        >
+                          <div class="p-protein_modal">
+                            <button
+                              class="p-protein_modal__close"
+                              onclick="closeIngredientsModalApple()"
+                              aria-label="閉じる"
+                            >
+                              ✕
+                            </button>
+                            <img
+                              src="../assets/img/protein/protein_modal_apple.png"
+                              alt="protein apple"
+                              style="display: block; width: 100%"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -695,7 +722,10 @@
                         </div>
                       </div>
                       <div class="flex flex-col justify-end items-end flex-1">
-                        <button class="btn-light-blue02">
+                        <button
+                          class="btn-light-blue02 cursor-pointer"
+                          onclick="openIngredientsModalPeach()"
+                        >
                           原材料・栄養成分・アレルギー情報
                           <svg
                             width="20"
@@ -718,6 +748,27 @@
                             />
                           </svg>
                         </button>
+
+                        <!-- Modal Overlay -->
+                        <div
+                          class="p-protein_modal-overlay"
+                          id="ingredientsModalPeach"
+                        >
+                          <div class="p-protein_modal">
+                            <button
+                              class="p-protein_modal__close"
+                              onclick="closeIngredientsModalPeach()"
+                              aria-label="閉じる"
+                            >
+                              ✕
+                            </button>
+                            <img
+                              src="../assets/img/protein/protein_modal_peach.png"
+                              alt="protein peach"
+                              style="display: block; width: 100%"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -836,7 +887,10 @@
                         </div>
                       </div>
                       <div class="flex flex-col justify-end items-end flex-1">
-                        <button class="btn-light-blue02">
+                        <button
+                          class="btn-light-blue02 cursor-pointer"
+                          onclick="openIngredientsModalChocolate()"
+                        >
                           原材料・栄養成分・アレルギー情報
                           <svg
                             width="20"
@@ -859,6 +913,26 @@
                             />
                           </svg>
                         </button>
+                        <!-- Modal Overlay -->
+                        <div
+                          class="p-protein_modal-overlay"
+                          id="ingredientsModalChocolate"
+                        >
+                          <div class="p-protein_modal">
+                            <button
+                              class="p-protein_modal__close"
+                              onclick="closeIngredientsModalChocolate()"
+                              aria-label="閉じる"
+                            >
+                              ✕
+                            </button>
+                            <img
+                              src="../assets/img/protein/protein_modal_chocolate.png"
+                              alt="protein chocolate"
+                              style="display: block; width: 100%"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
