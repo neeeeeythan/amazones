@@ -571,6 +571,7 @@
   width: 80%;
   height: auto;
   z-index: 0;
+  pointer-events: none; /* decorative — must not block clicks */
 }
 
 /* INTRODUCTION PEOPLE */
@@ -582,6 +583,7 @@
   right: 3%;
   bottom: -110%;
   z-index: 0;
+  pointer-events: none; /* decorative — must not block clicks */
 }
 
 /* INTRODUCTION IMAGES */
@@ -1348,6 +1350,8 @@
   overflow: hidden;
   background: transparent;
   aspect-ratio: 3 / 2;          /* lock the container to 3:2 */
+  margin-left: 0;               /* reset .swiper margin:auto so flex stretch works on mobile */
+  margin-right: 0;
 }
 
 /* Before Swiper initialises, prevent all 10 slides from stacking */
@@ -1375,4 +1379,404 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* ═══════════════════════════════════════════════════
+   MOBILE RESPONSIVE — TABLET  (max-width: 1024px)
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+
+  /* Topic headers */
+  .p-storedetail_topic_header h2 {
+    font-size: 3.5rem;
+  }
+
+  /* Links nav */
+  .p-storedetail_links-nav {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Service card stagger — reduce on tablet */
+  .p-storedetail_service_card:nth-child(2) {
+    margin-bottom: 2.5rem;
+  }
+  .p-storedetail_service_card:nth-child(3) {
+    margin-bottom: 5rem;
+  }
+
+  /* CTA section */
+  .p-storedetail_cta_container {
+    height: auto;
+    min-height: 30rem;
+  }
+  .p-storedetail_cta_stats_number {
+    font-size: 8rem;
+  }
+
+  /* Why Choose Us — reduce panel width */
+  .p-storedetail_whychooseus_text_container_left,
+  .p-storedetail_whychooseus_text_container_right {
+    width: 70vw;
+  }
+
+  /* Reason images */
+  .p-storedetail_reason_img01,
+  .p-storedetail_reason_img02,
+  .p-storedetail_reason_img03 {
+    width: 100%;
+    height: 25rem;
+  }
+
+  /* Price images — stack vertically */
+  .p-storedetail_price_image_container {
+    flex-direction: column;
+    height: auto;
+  }
+  /* Give each price image explicit height so background-image shows at tablet */
+  .p-storedetail_price_image_left,
+  .p-storedetail_price_image_right {
+    flex: none;
+    height: 18rem;
+    width: 100%;
+  }
+
+  /* Dr. Amazones — constrain at tablet too */
+  .dr-amazones-container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .dr-amazones-container > img:first-child {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .dr-amazones-section {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Service section — stack at tablet too */
+  .service-container {
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 0;
+  }
+  .service-wrapper,
+  .service-wrapper2,
+  .service-wrapper3 {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0 !important;
+  }
+
+  /* Hide decorative people floating out of frame */
+  .p-storedetail_introduction_people {
+    display: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   MOBILE RESPONSIVE — MOBILE  (max-width: 767px)
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 767px) {
+
+  /* ── Banner ── */
+  .p-storedetail_banner-content {
+    left: 1.5rem;
+  }
+  .p-storedetail_banner-ribbon {
+    display: none;
+  }
+
+  /* ── Links Navigation ── */
+  .p-storedetail_links-nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail_links-item {
+    flex: 0 0 auto;
+  }
+
+  /* ── Topic Headers ── */
+  .p-storedetail_topic_header h2 {
+    font-size: 2rem;
+  }
+  .p-storedetail_topic_header p {
+    font-size: 0.9rem;
+  }
+
+  /* ── Opening Section ── */
+  .p-storedetail_opening_block {
+    flex-direction: column;
+  }
+
+  /* ── Service Cards ── */
+  .p-storedetail_service_grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .p-storedetail_service_card:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .p-storedetail_service_card:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .p-storedetail_service_card_img {
+    height: 12rem;
+  }
+
+  /* ── Speak Containers (decorative persons) ── */
+  .p-storedetail_speak_container01,
+  .p-storedetail_speak_container02 {
+    display: none;
+  }
+
+  /* ── Introduction Section ── */
+  .p-storedetail_introduction_ribbon {
+    display: none;
+  }
+  .p-storedetail_introduction_people {
+    display: none;
+  }
+  .p-storedetail_introduction-layout {
+    grid-template-columns: 1fr;
+  }
+  .p-storedetail_introduction-grid-photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Facilities */
+  .p-storedetail_introduction_facilities {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .p-storedetail_introduction_facility {
+    width: 5rem;
+  }
+  .p-storedetail_introduction_facility_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .p-storedetail_facility-tile {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* ── Grid ── */
+  .p-storedetail_grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Gray Container (store info bar) ── */
+  .p-storedetail_gray_container {
+    height: auto;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* ── Map ── */
+  .p-storedetail_map {
+    height: 15rem;
+  }
+
+  /* ── Price Images ── */
+  .p-storedetail_price_image_container {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail_price_image_left,
+  .p-storedetail_price_image_right {
+    height: 12rem;
+    flex: none;
+    width: 100%;
+  }
+
+  /* ── CTA Section ── */
+  .p-storedetail_cta_container {
+    height: auto;
+    padding: 3rem 1.5rem;
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+  }
+  .p-storedetail_cta_content {
+    padding: 0;
+  }
+  .p-storedetail_cta_heading {
+    font-size: 1.75rem;
+  }
+  .p-storedetail_cta_stats_number {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .p-storedetail_cta_stats_number span {
+    font-size: 2rem;
+  }
+  .p-storedetail_cta_stats_left {
+    font-size: 1.25rem;
+  }
+  .p-storedetail_cta_people {
+    display: none;
+  }
+  .p-storedetail_cta_person01,
+  .p-storedetail_cta_person02 {
+    display: none;
+  }
+
+  /* ── Why Choose Us ── */
+  div:has(> .p-storedetail_whychooseus_text_container_left),
+  div:has(> .p-storedetail_whychooseus_text_container_right) {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+  .p-storedetail_whychooseus_text_container_left,
+  .p-storedetail_whychooseus_text_container_right {
+    position: static;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+  .p-storedetail_reason_img01,
+  .p-storedetail_reason_img02,
+  .p-storedetail_reason_img03 {
+    width: 100%;
+    height: 15rem;
+  }
+  .p-storedetail_reason_ribbon01,
+  .p-storedetail_reason_ribbon02 {
+    display: none;
+  }
+
+  /* ── Free Trial ── */
+  .p-storedetail_freetrial_speak_container01 {
+    display: none;
+  }
+  .p-storedetail_freetrial_step_list {
+    flex-direction: column;
+  }
+
+  /* ── FAQ ── */
+  .p-storedetail_faq_ribbon {
+    display: none;
+  }
+
+  /* ── Photo Gallery Slider ── */
+  /* Main slider: full width with a compact 4:3 ratio on mobile */
+  #js-slider {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Thumbnail strip: switch from 3-col grid to horizontal scroll row */
+  .slider-thumbs {
+    width: 100%;
+  }
+  .slider-thumbs .grid {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* Smooth momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  .slider-thumbs .grid::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  /* Each thumb: fixed compact size in the scroll row */
+  .slider-thumbs .js-thumb-button,
+  .slider-thumbs .grid > * {
+    flex: 0 0 5.5rem;
+    width: 5.5rem;
+    height: 3.75rem;
+  }
+  .slider-thumbs .js-thumb-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: unset;
+  }
+
+  /* ── Dr. Amazones Section ── */
+  /* On desktop the text block is position:absolute over the image.
+     On mobile we stack them and let the image fill the width. */
+  .dr-amazones-container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  /* The raw <img> in this container has no class — target it directly */
+  .dr-amazones-container > img:first-child {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
+  }
+  /* Pull the absolutely-positioned text block back into flow */
+  .dr-amazones-section {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .dr-amazones-section .triangle-icon {
+    display: none;
+  }
+
+  /* ── Service Section ── */
+  /* Stack the three service cards vertically and kill the stagger margins */
+  .service-container {
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 0;
+  }
+  .service-wrapper,
+  .service-wrapper2,
+  .service-wrapper3 {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0 !important;
+  }
+  .service-img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  /* Service section title: reset huge left padding */
+  .service-section-title {
+    padding-left: 1.5rem;
+  }
+
+  /* ── Opening Block: stack text + jump image ── */
+  /* The parent <div class="flex gap-30px"> wraps text + person image */
+  .c-maxWidth.pb-100.flex.flex-col > .flex.gap-30px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p-storedetail_opening_jump {
+    display: flex;
+    justify-content: center;
+  }
+  .p-storedetail_opening_jump img {
+    max-height: 16rem;
+    width: auto;
+  }
 }

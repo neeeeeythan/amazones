@@ -551,19 +551,317 @@
   object-fit: contain;
 }
 
-/* TABLET */
+/* ──────────────────────────────────────────
+   TABLET  (max-width: 1024px)
+   ────────────────────────────────────────── */
 @media (max-width: 1024px) {
+
+  /* BANNER */
   .p-sportip_banner {
     width: 100%;
     height: 20rem;
     position: relative;
     overflow: visible;
   }
-}
 
-/* MOBILE */
-@media (max-width: 767px) {
+  .p-sportip_banner-content {
+    left: 3rem;
+  }
+
+  .p-sportip_banner-title {
+    font-size: 1.875rem;
+  }
+
+  /* TITLE */
+  .p-sportip_title {
+    font-size: 4.5rem;
+  }
+
+  /* TEXT CONTAINERS — shrink to fit tablet */
+  .p-sportip_text_container,
+  .p-sportip_text_container02 {
+    width: 55vw;
+    padding: 2.5rem;
+  }
+
+  /* PHONE SECTION */
+  .p-sportip_phone img {
+    height: 28vw;
+  }
+
+  /* YOUTUBE */
+  .p-sportip_youtube {
+    width: 100%;
+    height: 28rem;
+  }
+
+  /* FAQ ROW — tighter gap on tablet */
   .p-sportip_faq_row {
     gap: 1.5rem;
+  }
+
+  /* SPEAK PERSONS — scale down */
+  .p-sportip_speak_person01,
+  .p-sportip_speak_person02,
+  .p-sportip_speak_person03 {
+    height: 18rem;
+  }
+}
+
+/* ──────────────────────────────────────────
+   MOBILE  (max-width: 767px)
+   ────────────────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* ── BANNER ── */
+  .p-sportip_banner {
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+  }
+
+  .p-sportip_banner-content {
+    left: 1.25rem;
+  }
+
+  .p-sportip_banner-title {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
+
+  .p-sportip_banner-logo {
+    width: 25%;
+    height: auto;
+    top: 15%;
+  }
+
+  .p-sportip_banner-ribbon {
+    display: none;
+  }
+
+  /* ── LINKS NAV ── */
+  .p-sportip_links-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── POINT TITLE SECTION ── */
+  .p-sportip_content .flex.gap-40px.items-center {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .p-sportip_title_container {
+    margin-bottom: 0;
+  }
+
+  .p-sportip_title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .p-sportip_subtitle {
+    font-size: 0.875rem;
+  }
+
+  /* Subtitle text + icon row — stack */
+  .p-sportip_content .flex.items-end.gap-15px.pb-10 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .p-sportip_content .flex.items-end.gap-15px.pb-10 h4 {
+    font-size: 1rem;
+  }
+
+  /* ── CONTENT ITEM 01 & 03 (text container on right) ── */
+
+  /* Make the outer .relative flex-col on mobile */
+  div:has(> .p-sportip_text_container) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Images — full width */
+  div:has(> .p-sportip_text_container) > .p-sportip_img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Un-position the overlay text panel */
+  .p-sportip_text_container {
+    position: static;
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    top: auto;
+    right: auto;
+  }
+
+  /* ── CONTENT ITEM 02 (text container on left) ── */
+  div:has(> .p-sportip_text_container02) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  div:has(> .p-sportip_text_container02) > .p-sportip_img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .p-sportip_text_container02 {
+    position: static;
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    top: auto;
+    left: auto;
+  }
+
+  /* ── TEXT CONTAINER INTERNALS ── */
+
+  /* Hide pattern cutout */
+  .p-sportip_img_pattern {
+    display: none;
+  }
+
+  /* Number + icon + label row — wrap nicely */
+  .p-sportip_text_container .flex.items-center.gap-4,
+  .p-sportip_text_container02 .flex.items-center.gap-4 {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  /* Large number heading */
+  .p-sportip_text_container h2[style],
+  .p-sportip_text_container02 h2[style] {
+    font-size: 3.5rem !important;
+  }
+
+  /* Section label heading */
+  .p-sportip_text_container h4,
+  .p-sportip_text_container02 h4 {
+    font-size: 1.25rem;
+  }
+
+  /* Bullet rows */
+  .p-sportip_text_block {
+    gap: 0.75rem;
+  }
+
+  .p-sportip_text_block p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  /* mb-100 and mt-100 — reduce on mobile */
+  .w-100.flex.mb-100,
+  .w-100.flex.justify-end.mb-100 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mt-100 {
+    margin-top: 2.5rem !important;
+  }
+
+  /* ── PHONE + TEXT BLOCK SECTION ── */
+  .flex.items-start.w-full.justify-between.c-maxWidth.relative {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Ribbon — hide on mobile */
+  .p-sportip_ribbon02 {
+    display: none;
+  }
+
+  /* White text block — full width, no fixed max */
+  .flex.items-start.w-full.justify-between.c-maxWidth.relative > .bg-white {
+    max-width: 100% !important;
+    padding: 1.5rem !important;
+  }
+
+  /* Phone mockup — center + scale down */
+  .p-sportip_phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .p-sportip_phone img {
+    height: 55vw;
+    max-height: 320px;
+  }
+
+  .p-sportip_phone_video {
+    border-radius: 4vw;
+  }
+
+  /* ── YOUTUBE ── */
+  .p-sportip_youtube_wrap {
+    margin-top: 1.5rem;
+  }
+
+  .p-sportip_youtube {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* ── DESCRIPTION SECTIONS ── */
+  .flex.flex-col.gap-30px.w-full.c-maxWidth h2 {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  /* ── ABOUT CARDS ── */
+  .p-sportip_about_card_body {
+    padding: 1.25rem;
+  }
+
+  .p-sportip_about_subheader {
+    width: 100%;
+  }
+
+  /* ── FAQ SECTION ── */
+  .p-sportip_faq_row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .p_sportip_faq_card_body {
+    padding: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .p_sportip_faq_card_header h3 {
+    font-size: 1.125rem;
+  }
+
+  /* ── SPEAK PERSONS — hide on mobile ── */
+  .p-sportip_speak_container01,
+  .p-sportip_speak_container02,
+  .p-sportip_speak_container03 {
+    display: none;
+  }
+
+  /* ── ANNOUNCEMENT PEOPLE IMAGE ── */
+  .p-sportip_announcement_people,
+  .p-sportip_announcement_speak {
+    display: none;
   }
 }
