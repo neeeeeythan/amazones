@@ -72,6 +72,10 @@
   background-position: 0% -170%;
 }
 
+.p-medical_badge_break {
+  display: none;
+}
+
 .p-medical_online_consultation_banner {
   width: 100%;
   height: 50rem;
@@ -109,6 +113,11 @@
   font-size: 6.25rem;
   line-height: 7.5rem;
   font-weight: 400;
+}
+
+.p-medical_step_row {
+  display: flex;
+  gap: 3.125rem;
 }
 
 .p-medical_step_card {
@@ -559,7 +568,8 @@
 
   .p-medical_partners_logo_row {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .p-medical_partners_list {
@@ -705,47 +715,95 @@
   /* ENGAGEMENT */
   .p-medical_engagement_row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
   }
 
   .p-medical_engagement_logo {
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
   }
 
-  .p-medical_engagement_logo svg {
+  /* Reverse inner div: logo SVG shows above clinic name on mobile */
+  .p-medical_engagement_logo > div {
+    flex-direction: column-reverse;
+    align-items: center;
     width: 100%;
-    max-width: 280px;
+  }
+
+  .p-medical_engagement_logo svg[viewBox="0 0 441 67"] {
+    width: 100%;
+    max-width: 300px;
     height: auto;
   }
 
+  /* Stretch children to full width — fixes button */
   .p-medical_engagement_right {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .p-medical_engagement_right h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  /* Slashes stay flanking the text; text wraps internally inside h4 */
+  .p-medical_engagement_tagline {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
     width: 100%;
   }
 
-  .p-medical_engagement_tagline {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: flex-start;
+  .p-medical_engagement_tagline svg {
+    flex-shrink: 0;
+    margin-top: 4px;
   }
 
   .p-medical_engagement_tagline h4 {
+    flex: 1;
     font-size: 1rem;
+    text-align: center;
+    line-height: 1.6;
   }
 
   /* ONLINE CONSULTATION BANNER */
   .p-medical_online_consultation_banner {
-    height: auto;
-    padding: 4rem 0;
+    height: 28rem;
+    padding: 0;
+    background-position: 68% center;
   }
 
-  .p-medical_online_consultation_banner h2 {
-    font-size: 2rem;
-    line-height: 1.5;
+  .p-medical_online_consultation_banner .c-maxWidth {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    justify-content: flex-end;
+    padding-bottom: 2.5rem;
+  }
+
+  .p-medical_online_consultation_banner .bg-white.w-fit-content {
+    max-width: 62%;
+    padding: 0.625rem 0.875rem;
   }
 
   .p-medical_online_consultation_banner .bg-white.w-fit-content p {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .p-medical_online_consultation_banner h2 {
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+
+  .p-medical_online_consultation_banner .flex.flex-col.gap-4 {
+    gap: 0.5rem;
+  }
+
+  .p-medical_badge_break {
+    display: inline;
   }
 
   /* PARTNERS */
@@ -757,7 +815,8 @@
   .p-medical_partners_logo_row {
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .p-medical_partners_logo_row img[width="240px"] {
@@ -768,10 +827,19 @@
     font-size: 1.25rem;
   }
 
+  .p-medical_partners_clinic p {
+    font-size: 0.875rem;
+  }
+
   .p-medical_partners_list {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+  }
+
+  .p-medical_partners_list > div {
+    width: calc(33.333% - 0.75rem);
+    justify-content: flex-start;
   }
 
   .p-medical_list_box {
@@ -781,6 +849,25 @@
 
   .p-medical_partners_right {
     width: 100%;
+  }
+
+  .p-medical_partners_row .fs-36 {
+    font-size: 1.5rem;
+  }
+
+  .p-medical_partners_row .fs-30 {
+    font-size: 1.25rem;
+  }
+
+  /* HOW TO USE title — stack vertically */
+  .p-medical_how_to_use_title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .p-medical_how_to_use_title .mt-50 {
+    margin-top: 0;
   }
 
   /* STEPS — stack vertically */
