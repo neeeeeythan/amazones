@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="女性専用24時間ジムAmazones（アマゾネス）へ実際に来館されたお客様から、ご入会いただいた会員様まで、いただいた様々な口コミを掲載しています。"
+      content="女性専用24時間ジムAmazones（アマゾネス）からのお知らせ一覧を掲載しています。"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      会員様の声一覧 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
+      title｜お知らせ一覧 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
     </title>
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/member.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/information.css" rel="stylesheet" type="text/css" />
 
     <!-- SCRIPTS -->
     <script src="../assets/js/global.js" defer></script>
-    <script src="../assets/js/member.js" defer></script>
+      <script src="../assets/js/information.js" defer></script>
+
   </head>
   <body>
     <!--HEADER-->
@@ -134,9 +135,9 @@
           <!-- BANNER TEXT -->
           <div class="p-banner-content">
             <h1 class="p-banner-title font-zen text-white">
-              会員様からいただいた声
+              お知らせ
             </h1>
-            <p class="p-banner-subtitle font-outfit mt-18">Member</p>
+            <p class="p-banner-subtitle font-outfit mt-18">Information</p>
             <!-- BREADCRUMB -->
             <nav class="c-breadcrumb p-breadcrumb">
               <a href="../index.html" class="c-breadcrumb-home">
@@ -156,7 +157,7 @@
               </a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
               <a href="#" class="text-white fs-14 banner-a-link"
-                >会員様からいただいた声</a
+                >お知らせ</a
               >
             </nav>
           </div>
@@ -170,180 +171,336 @@
       </section>
 
       <!--MAIN CONTENT-->
-      <section class="member-page-section">
-        <div class="member-page-container">
-          <div class="flex flex-row gap-75px items-center">
-            <div class="flex flex-col gap-18px">
-              <p class="fs-18 fw-500 text-black1">会員様の声</p>
-              <h2 class="fs-100 lh-normal font-outfit fw-400">Voice</h2>
-            </div>
-            <div class="flex flex-row items-center gap-20px mt-50">
-              <img src="../assets/img/top/icon_speaker.svg" alt="24時間" />
-              <div class="flex flex-col items-start gap-26px">
-                <p class="fw-700 fs-24">
-                  女性がいつでも安心して通える女性専用24時間ジム
+       <section
+  class="news-section w-full flex flex-col items-center justify-center pt-100 relative"
+  id="news-section"
+>
+  <div class="ribbon-scroll-container news-ribbon">
+    <div class="grow-wrapper-right" id="ribbonTrigger">
+      <div class="clip-grow-right">
+        <svg
+          width="538"
+          height="119"
+          viewBox="0 0 538 119"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.8">
+            <path
+              d="M394.484 4.59178C388.736 3.72039 382.712 2.98535 376.391 2.40312C206.789 -13.2239 68.8573 50.7173 0 97.1885L25.8052 118.015C91.7347 73.52 233.664 -2.83069 394.49 4.4758L394.484 4.59178Z"
+              fill="#81D8D0"
+            />
+            <path
+              d="M565.587 104.509C513.684 91.479 506.881 21.663 394.484 4.59178L394.49 4.4758C401.631 4.79866 408.811 5.28842 416.022 5.95372C552.278 18.5081 541.336 104.419 603 112.32L565.587 104.509Z"
+              fill="#81D8D0"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="news-tabs-container flex flex-col gap-30px">
+    <div class="flex flex-col gap-18px">
+      <p class="fs-18 fw-500 text-black1">お知らせ</p>
+      <h2 class="fs-100 lh-normal font-outfit text-black1 fw-400">
+        News
+      </h2>
+    </div>
+    <div data-widget="tabs" data-tabs-animate="400, 80">
+      <div class="tabs-controls" data-type="fancy">
+        <button
+          type="button"
+          class="tabs-control"
+          aria-selected="true"
+          aria-controls="fancy-first"
+        >
+          すべて
+        </button>
+        <button
+          type="button"
+          class="tabs-control"
+          aria-selected="false"
+          aria-controls="fancy-second"
+        >
+          新店舗情報
+        </button>
+        <button
+          type="button"
+          class="tabs-control"
+          aria-selected="false"
+          aria-controls="fancy-third"
+        >
+          プレスリリース
+        </button>
+        <button
+          type="button"
+          class="tabs-control"
+          aria-selected="false"
+          aria-controls="fancy-fourth"
+        >
+          その他のお知らせ
+        </button>
+      </div>
+      <div class="tabs-panels">
+        <!--Tabs Panel1 - すべて-->
+        <div
+          class="tabs-panel flex flex-col gap-20px items-start"
+          id="fancy-first"
+          aria-selected="true"
+        >
+          <!--Panel Content1-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  新店舗情報
                 </p>
-                <p class="fw-500 fs-16">
-                  ※
-                  個人の感想です。効果には個人差があり、効果効能を保証するものではありません。
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.00
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  こちらにお知らせタイトルが入ります
                 </p>
               </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
             </div>
           </div>
-
-          <div class="flex flex-col items-end relative">
-            <div class="member-speech-bubble">
+          <!--Panel Content2-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  プレスリリース
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.00
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                </p>
+              </div>
               <img
-                src="../assets/img/member/img_member_sticker1.webp"
-                height="350px"
-                width="112px"
-                alt="ステッカー"
-              />
-              <img
-                src="../assets/img/member/img_member_speech_bubble1.svg"
-                alt="たくさんのお声ありがとうございます！"
-                class="member-speech speech-bubble"
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
               />
             </div>
-            <div id="member-cards-container" class="member-cards-grid"></div>
-            <div class="pagination-container">
-              <div id="pagination" class="pagination"></div>
+          </div>
+          <!--Panel Content3-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  その他のお知らせ
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.00
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                </p>
+              </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
             </div>
           </div>
         </div>
-      </section>
 
-      <!--MEMBER BANNER-->
-      <section class="top-banner-section">
+        <!--Tabs Panel2 - 新店舗情報-->
         <div
-          class="top-banner-container flex flex-col gap-53px items-center justify-center relative"
+          class="tabs-panel flex flex-col gap-20px items-start"
+          id="fancy-second"
+          aria-selected="false"
         >
-          <h2 class="fw-700 fs-32">
-            まずはお気軽に無料体験・見学へ
-            <span class="fs-60 font-outfit fw-600 text-lightBlue">GO!</span>
-          </h2>
-          <p class="fw-500 fs-16 lh-180">
-            女性専用24時間ジムAmazones（アマゾネス）では、無料体験や見学を随時受付しております。<br
-              class="banner-break"
-            />
-            トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
-          </p>
-          <a href="#" class="btn-light-blue mx-auto">
-            <img src="../assets/img/top/icon_24_white.svg" alt="アイコン" />
-            <p class="text-white fs-16 font-outfit">
-              無料体験・見学予約はこちら
-            </p>
-            <img
-              src="../assets/img/top/icon_btn_green_arrow.svg"
-              alt="アイコン"
-            />
-          </a>
-
-          <div class="banner-sticker1">
-            <img
-              src="../assets/img/top/img_banner_speechbubble1.svg"
-              alt="待ってるよー"
-              class="banner-speechbubble1 speech-bubble"
-            />
-            <img
-              src="../assets/img/top/img_banner_sticker1.webp"
-              alt="待ってるよー"
-              height="349px"
-              width="152px"
-            />
+          <!--Panel Content1-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  新店舗情報
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.00
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  こちらにお知らせタイトルが入ります
+                </p>
+              </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
+            </div>
           </div>
-
-          <div class="banner-sticker2">
-            <img
-              src="../assets/img/top/img_banner_speechbubble2.svg"
-              alt="待ってるよー"
-              class="banner-speechbubble2 speech-bubble"
-            />
-            <img
-              src="../assets/img/top/img_banner_sticker2.webp"
-              alt="待ってるよー"
-              height="360px"
-              width="199px"
-            />
+          <!--Panel Content2-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  新店舗情報
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.01
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  2つ目の新店舗情報タイトルが入ります
+                </p>
+              </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
+            </div>
           </div>
         </div>
-      </section>
 
-      <!--TOP TEXT SLIDER-->
-      <div class="text-slider w-full">
-        <div class="slide-track">
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
+        <!--Tabs Panel3 - プレスリリース-->
+        <div
+          class="tabs-panel flex flex-col gap-20px items-start"
+          id="fancy-third"
+          aria-selected="false"
+        >
+          <!--Panel Content1-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  プレスリリース
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.00
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  プレスリリースのお知らせが入ります
+                </p>
+              </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
+            </div>
           </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
+          <!--Panel Content2-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  プレスリリース
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.05
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  2つ目のプレスリリースタイトル
+                </p>
+              </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
+            </div>
           </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
+        </div>
+
+        <!--Tabs Panel4 - その他のお知らせ-->
+        <div
+          class="tabs-panel flex flex-col gap-20px items-start"
+          id="fancy-fourth"
+          aria-selected="false"
+        >
+          <!--Panel Content1-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  その他のお知らせ
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.00
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  その他のお知らせタイトルが入ります
+                </p>
+              </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
+            </div>
           </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
-          </div>
-          <div class="slide">
-            <p class="font-outfit fw-300 fs-36 text-white">
-              For a free trial or tour enquiry, please here.
-            </p>
+          <!--Panel Content2-->
+          <div class="panel-content">
+            <div
+              class="flex flex-row justify-between items-center w-full"
+            >
+              <div
+                class="news-info-container flex flex-row gap-25px items-center"
+              >
+                <p class="fw-500 fs-14 news-label">
+                  その他のお知らせ
+                </p>
+                <p class="fs-16 fw-500 font-outfit text-lightBlue">
+                  2026.00.10
+                </p>
+                <p class="fw-500 fs-16 ls-20">
+                  臨時休業のお知らせ
+                </p>
+              </div>
+              <img
+                src="../assets/img/top/icon_arrow_blue.svg"
+                alt="アイコン"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <a href="#" class="btn-light-blue mt-50 ml-auto mr-auto">
+        <p class="text-white fs-16 font-outfit">View All</p>
+        <img
+          src="../assets/img/top/icon_btn_green_arrow.svg"
+          alt="アイコン"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="I-footer w-full flex flex-col gap-0px">
@@ -537,5 +694,6 @@
         </div>
       </div>
     </footer>
+  
   </body>
 </html>

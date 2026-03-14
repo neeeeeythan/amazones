@@ -1,0 +1,212 @@
+.point-redemption-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.point-redemption-main-container {
+  width: 100%;
+}
+.point-redemption-content1 {
+  background-image: url("../img/family/bg_family_content1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -50px;
+}
+.point-redemption-content1-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 150px 0px 100px 0px;
+}
+.point-redemption-content1-wrapper h2 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--base-lightBlue);
+}
+
+.point-redemption-content2 {
+  background-image: url("../img/family/bg_summary.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.point-redemption-content2-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 150px 0px 100px 0px;
+}
+.summary-content {
+  padding: 75px 30px 40px 30px;
+}
+.summary-last-content {
+  padding-bottom: 33px;
+}
+.summary-label {
+  background-color: var(--base-lightBlue);
+  width: fit-content;
+  padding: 10px 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 240px;
+}
+.summary-content-left {
+  width: calc(100% - 60px);
+}
+.summary-content-right {
+  width: calc(100% - 60px);
+}
+
+.pricing-table-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.point-redemption-content .pricing-table thead th {
+  text-align: left;
+  padding: 0px 0px 25px 0px;
+  color: var(--text-lightBlue);
+  font-weight: 700;
+  border-bottom: 1px solid #e6eeee;
+  font-size: 16px;
+  text-wrap: nowrap;
+}
+
+.point-redemption-content .pricing-table tbody td {
+  padding: 24px 0px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pricing-table tbody tr:hover {
+  background: #f9fbfb;
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing-table tbody tr td:first-child {
+  width: 320px;
+  border-right: 1px solid #eaeaea;
+}
+.pricing-table tbody tr td:last-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.point-redemption-ribbon {
+  position: absolute;
+  top: -120px;
+  z-index: 1;
+  right: -190px;
+  width: 100%;
+}
+.point-redemption-sticker1 {
+  margin-left: 20px;
+  top: 30px;
+}
+.point-redemption-sticker2 {
+  margin-right: 60px;
+  top: 35px;
+}
+
+.summary-label-red {
+  background-color: var(--base-red);
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.summary-content-warn {
+  padding-bottom: 20px;
+}
+.summary-content-warn ul {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.summary-content-warn ul li {
+  margin-bottom: 20px;
+}
+
+.summary-content-warn ul li::marker {
+  font-size: 13px;
+}
+
+.recommended-container {
+  background-image: url("../img/point-redemption/bg_recommended.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+.recommended-btn {
+  position: absolute;
+  bottom: 11px;
+  right: 10px;
+}
+
+/*RECOMMENDED SECTION*/
+.hospitality-section {
+  width: 100%;
+  padding: 100px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/point-redemption/bg_hospitality.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hospitality-main-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.hospitality-item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  width: 100%;
+}
+.hospitality-item {
+  background-color: var(--base-white);
+}
+.hospitality-label {
+  background-color: var(--base-lightBlue);
+  padding: 15px 0px;
+  width: 100%;
+  text-align: center;
+}
+.hospitality-label2 {
+  background-color: var(--base-darkGray);
+}
+.hospitality-item p:not(.hospitality-label) {
+  text-align: center;
+  padding: 20px;
+}
+.online-shop-section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+}
+.online-shop-desc {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--base-white);
+  padding: 80px 300px 80px 80px;
+}
+
+.shop-triangle {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+/*END OF RECOMMENDED SECTION*/

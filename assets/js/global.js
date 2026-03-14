@@ -198,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // });
 // //END TOPIC JS
 
+
 // // TOP TOPIC JS - Multiple Sliders Support
 function initTopicSlider(sliderElement) {
   if (!sliderElement) return;

@@ -85,3 +85,28 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.btn-red{
+  background-color:var(--base-lightPink);
+  padding:15px 30px;
+  border-radius:50px;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  color:var(--text-white);
+  width:fit-content;
+  gap:10px;
+  border:1px solid transparent;
+  transition:all 0.3s ease-in-out;
+
+}
+.btn-red:hover{
+  background-color: var(--base-white);
+  border:1px solid var(--base-lightPink);
+  color:var(--base-lightPink);
+}
+.btn-red:hover img{
+  filter: brightness(0) saturate(100%) invert(30%) sepia(36%) saturate(5575%) hue-rotate(330deg) brightness(104%) contrast(92%);
+}
