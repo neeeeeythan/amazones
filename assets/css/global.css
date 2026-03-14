@@ -6296,10 +6296,6 @@ a {
    TABLET  (max-width: 1024px)
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .md-mt-70{
-    margin-top: 70px;
-  }
-
   /* MAX-WIDTH CONTAINER */
   .c-maxWidth {
     padding-left: 2rem;
