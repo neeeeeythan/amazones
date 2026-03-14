@@ -61,6 +61,15 @@
   overflow: hidden;
 }
 
+.p-personal_case_study_section {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 .p-personal_amazones_container,
 .p-personal_program_container {
   display: flex;
@@ -89,7 +98,7 @@
 .p-personal_section_header h2 {
   font-size: 6.25rem;
   line-height: 7.5rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .p-personal_amazones_method_img {
@@ -97,7 +106,7 @@
   width: 57rem;
   height: 48rem;
   right: 0%;
-  top: 10%;
+  top: 20%;
 }
 
 .p-personal_topic_body p {
@@ -131,7 +140,6 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin-top: 15rem;
 }
 
 /* END AMAZONES AND CASE STUDY SECTION */
@@ -175,8 +183,9 @@
 .p-personal_program_white_box {
   position: absolute;
   top: -10%;
+  left: 0;
+  right: 0;
   background-color: white;
-  width: 100%;
   box-sizing: border-box;
   padding: 2rem;
 }
@@ -227,7 +236,7 @@
 }
 
 .p-personal_program_scroll::-webkit-scrollbar-button {
-  display: none;
+  
   width: 0;
   height: 0;
   background: transparent;
@@ -519,7 +528,7 @@
 /* ──────────────────────────────────────────
    TABLET  (max-width: 1024px)
    ────────────────────────────────────────── */
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .p-personal-md-block {
     display: block;
   }
@@ -553,16 +562,17 @@
 
   /* AMAZONES METHOD SECTION */
   .p-personal_amazones_section,
-  .p-personal_program_section {
+  
+  .p-personal_case_study_section {
     overflow: hidden;
   }
 
   /* Method image: shrink and reposition so it doesn't overlap text */
   .p-personal_amazones_method_img {
-    width: 42rem;
-    height: 36rem;
-    right: -5%;
-    top: 5%;
+    width: 35rem;
+    height: auto;
+    right: 0%;
+    top: 25%;
   }
 
   /* Give text container more breathing room */
@@ -584,7 +594,7 @@
   }
 
   .p-personal_case_study_container {
-    margin-top: 10rem;
+    margin-top: 0;
   }
 
   /* Boxed info items: allow wrapping */
@@ -616,15 +626,15 @@
   }
 
   /* PROGRAM SECTION */
-  .p-personal_program_white_box {
+  /* .p-personal_program_white_box {
     position: static;
     top: auto;
     margin-bottom: 3rem;
-  }
+  } */
 
-  .p-personal_program_container {
+  /* .p-personal_program_container {
     margin-top: 3rem;
-  }
+  } */
 
   .p-personal_program_white_box_header h3 {
     font-size: 1.5rem;
@@ -663,9 +673,9 @@
 }
 
 /* ──────────────────────────────────────────
-   MOBILE  (max-width: 480px)
+   MOBILE  (max-width: 768px)
    ────────────────────────────────────────── */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
    .p-personal-md-block {
     display: none;
   }
@@ -707,6 +717,11 @@
 
 
   /* AMAZONES METHOD SECTION */
+  .p-personal_amazones_section {
+    background-image: url("../img/common/bg_white_pattern.webp");
+    background-size: cover;
+    background-position: 0% -170%;
+  }
 
   /* Method image: switch to in-flow block above text */
   .p-personal_amazones_method_img {
@@ -726,15 +741,15 @@
 
   /* Section container: tighter padding */
   .p-personal_amazones_section .c-maxWidth,
-  .p-personal_program_section .c-maxWidth {
+  .p-personal_case_study_section .c-maxWidth {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 
   /* Section header */
   .p-personal_section_header h2 {
-    font-size: 2.75rem;
-    line-height: 3.5rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
   }
 
   .p-personal_section_header p {
@@ -764,7 +779,7 @@
 
   /* Case study: stack and remove large top margin */
   .p-personal_case_study_container {
-    margin-top: 3rem;
+    margin-top: 0;
     gap: 2rem;
   }
 
@@ -808,8 +823,11 @@
 
   /* PROGRAM SECTION */
   .p-personal_program_white_box {
-    position: static;
-    top: auto;
+    /* position: relative; */
+    top: -5%;
+    left: 2rem;
+    right:2rem;
+    /* width: 83%; */
     padding: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -820,7 +838,7 @@
   }
 
   .p-personal_program_container {
-    margin-top: 2rem;
+    margin-top: 35rem;
     gap: 1.5rem;
   }
 
