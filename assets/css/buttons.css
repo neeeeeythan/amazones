@@ -79,6 +79,7 @@
 .btn_icn_light_blue {
   width: 2.5rem;
   height: 2.5rem;
+  flex-shrink: 0;
   background-color: var(--base-lightBlue);
   border-radius: 50%;
   display: flex;

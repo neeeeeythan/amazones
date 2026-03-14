@@ -181,10 +181,10 @@
 /* START PROGRAM SECTION */
 
 .p-personal_program_white_box {
-  position: absolute;
-  top: -10%;
-  left: 0;
-  right: 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -8rem;
+  margin-bottom: 3rem;
   background-color: white;
   box-sizing: border-box;
   padding: 2rem;
@@ -210,7 +210,7 @@
 }
 
 .p-personal_program_container {
-  margin-top: 15rem;
+  margin-top: 3rem;
   gap: 2rem;
 }
 
@@ -239,7 +239,7 @@
   
   width: 0;
   height: 0;
-  background: transparent;
+  /* background: transparent; */
 }
 
 .p-personal_program_scroll::-webkit-scrollbar-track {
@@ -625,17 +625,6 @@
     top: -5%;
   }
 
-  /* PROGRAM SECTION */
-  /* .p-personal_program_white_box {
-    position: static;
-    top: auto;
-    margin-bottom: 3rem;
-  } */
-
-  /* .p-personal_program_container {
-    margin-top: 3rem;
-  } */
-
   .p-personal_program_white_box_header h3 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -756,11 +745,22 @@
     font-size: 1rem;
   }
 
-  /* Topic header icon row: wrap on very small screens */
+  /* Topic header icon row: keep side-by-side on mobile */
   .p-personal_amazones_container .flex.gap-3.items-center,
   .p-personal_case_study_container .flex.gap-3.items-center {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     gap: 1rem;
+  }
+
+  .p-personal_amazones_container .flex.gap-3.items-center > svg,
+  .p-personal_case_study_container .flex.gap-3.items-center > svg {
+    flex-shrink: 0;
+  }
+
+  .p-personal_amazones_container .flex.gap-3.items-center > div,
+  .p-personal_case_study_container .flex.gap-3.items-center > div {
+    min-width: 0;
   }
 
   /* Boxed info: stack pairs into single column */
@@ -823,11 +823,7 @@
 
   /* PROGRAM SECTION */
   .p-personal_program_white_box {
-    /* position: relative; */
-    top: -5%;
-    left: 2rem;
-    right:2rem;
-    /* width: 83%; */
+    margin-top: -6rem;
     padding: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -838,7 +834,7 @@
   }
 
   .p-personal_program_container {
-    margin-top: 35rem;
+    margin-top: 2rem;
     gap: 1.5rem;
   }
 
@@ -881,9 +877,36 @@
     text-align: center;
   }
 
-  /* Floating speak characters: hide on mobile to prevent overflow */
+  /* Floating speak characters: reposition for mobile */
   .p-personal_speak_container01,
   .p-personal_speak_container02 {
-    display: none;
+    display: block;
+    position: absolute;
+    bottom: -0.5rem;
+  }
+
+  .p-personal_speak_container01 {
+    left: 4rem;
+  }
+
+  .p-personal_speak_container02 {
+    right: 5rem;
+  }
+
+  .p-personal_speak_person01,
+  .p-personal_speak_person02 {
+    height: 15rem;
+  }
+
+  .p-personal_speak_bubble01 {
+    height: 5rem;
+    top: -2rem;
+    right: 6rem;
+  }
+
+  .p-personal_speak_bubble02 {
+    height: 5rem;
+    top: -3.5rem;
+    right: -5rem;
   }
 }

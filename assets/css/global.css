@@ -4343,7 +4343,7 @@ ul li::marker {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .sm-block {
     display: block;
   }
@@ -6296,6 +6296,9 @@ a {
    TABLET  (max-width: 1024px)
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
+  .md-mt-70{
+    margin-top: 70px;
+  }
 
   /* MAX-WIDTH CONTAINER */
   .c-maxWidth {
@@ -6490,6 +6493,7 @@ a {
   .c-announcement {
     width: 100%;
     padding: 2.5rem 1.25rem;
+    padding-bottom: 13rem;
     gap: 1.25rem;
   }
 
