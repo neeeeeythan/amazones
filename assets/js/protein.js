@@ -230,3 +230,42 @@ document.getElementById('ingredientsModalChocolate').addEventListener('click', f
 });
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeIngredientsModalChocolate(); });
+
+// ─────────────────────────────────────────────
+//  Points card carousel (mobile)
+// ─────────────────────────────────────────────
+(function () {
+  const track = document.querySelector(".p-protein_points_track");
+  const btnPrev = document.querySelector(".p-protein_points_nav--prev");
+  const btnNext = document.querySelector(".p-protein_points_nav--next");
+  if (!track || !btnPrev || !btnNext) return;
+
+  const cards = track.querySelectorAll(".p-protein_point_card");
+  const total = cards.length;
+  let current = 0;
+
+  function isMobile() {
+    return window.innerWidth <= 767;
+  }
+
+  function goTo(index) {
+    if (!isMobile()) return;
+    current = (index + total) % total;
+    track.style.transform = "translateX(-" + current * 100 + "%)";
+  }
+
+  btnPrev.addEventListener("click", function () {
+    goTo(current - 1);
+  });
+
+  btnNext.addEventListener("click", function () {
+    goTo(current + 1);
+  });
+
+  window.addEventListener("resize", function () {
+    if (!isMobile()) {
+      track.style.transform = "";
+      current = 0;
+    }
+  });
+})();
