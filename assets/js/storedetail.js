@@ -186,6 +186,20 @@ Object.keys(franchiseContainers).forEach((section) => {
 renderFranchiseSection("フランチャイズFAQ", franchiseQuestionSets.フランチャイズFAQ);
 
 // ─────────────────────────────────────────────
+//  Nav smooth scroll
+// ─────────────────────────────────────────────
+document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    const target = document.querySelector(href);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// ─────────────────────────────────────────────
 //  Photo Gallery Slider
 //  (script is defer-loaded so DOM is already ready — no DOMContentLoaded needed)
 // ─────────────────────────────────────────────
