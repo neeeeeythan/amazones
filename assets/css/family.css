@@ -1,0 +1,355 @@
+.family-content{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.family-main-container{
+    width:100%;
+   
+}
+ .family-content1{
+    background-image:url('../img/family/bg_family_content1.webp');
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin-top:-50px;
+    
+ }
+ .family-content1-wrapper{
+    width:100%;
+    max-width:1440px;
+    padding:150px 0px 100px 0px;
+ }
+ .family-content1-wrapper h2{
+    padding-bottom:30px;
+    border-bottom:1px solid var(--base-lightBlue);
+ }
+
+ .family-content2{
+    background-image:url('../img/family/bg_summary.webp');
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:2;
+ }
+ .family-content2-wrapper{
+     width:100%;
+    max-width:1440px;
+    padding:150px 0px 100px 0px;
+ }
+ .summary-content{
+    padding:75px 30px 50px 30px;
+ }
+.summary-last-content {
+    padding-bottom:33px;
+}
+ .summary-label{
+    background-color:var(--base-lightBlue);
+    width:fit-content;
+    padding:10px 40px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    min-width:240px;
+ }
+ .summary-content-left{
+   width:calc(100% - 60px);
+ }
+.summary-content-right {
+      width:calc(100% - 60px);
+
+}
+.pricing-table-wrapper{
+  padding-left:20px;
+    padding-right:20px;
+}
+ .pricing-table {
+  width: 100% ;
+  border-collapse: collapse;
+  
+}
+
+.pricing-table thead th {
+  text-align: left;
+  padding: 18px 0px 25px 0px;
+  color: var(--text-lightBlue);
+  font-weight: 700;
+  border-bottom: 1px solid #e6eeee;
+  font-size:16px;
+  text-wrap:nowrap;
+}
+
+.pricing-table tbody td {
+  padding: 20px 0px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 16px;
+  font-weight:500;
+}
+
+.pricing-table tbody tr:hover {
+  background: #f9fbfb;
+  transition:all 0.3s ease-in-out;
+}
+
+.pricing-table tbody tr td:first-child{
+    min-width:321px;
+}
+.pricing-table tbody tr td:last-child{
+    text-align:right;
+}
+
+.normal {
+  color: #666;
+  text-decoration: line-through;
+  text-wrap:nowrap;
+}
+.case-strike{
+    text-decoration: line-through;
+    margin-right:5px;
+
+}
+.case-item {
+    padding-bottom:40px;
+    border-bottom:1px solid var(--base-gray);
+}
+.case-item:last-child{
+    padding-bottom:0px;
+    border-bottom:none;
+}
+.case-item .text-red{
+    margin-left:5px;
+}
+.discount {
+  color: #ff4d5a;
+  font-weight: 700;
+  font-size:16px;
+}
+
+
+
+.family-faq{
+  background-image:url('../img/family/bg_family_faq.webp');
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow:hidden;
+}
+.faq-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.faq-main-content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.faq-section {
+  width: 100%;
+}
+.faq-item-container {
+    padding:100px 0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.faq3-ribbon{
+    position:absolute;
+    right:0px;
+    top:-80px;
+}
+.faq9-ribbon{
+    position:absolute;
+    right:0px;
+    top:-140px;
+}
+.faq-item-content{
+    width:100%;
+    max-width:1440px;
+}
+.page-faq-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+/* Accordion Wrapper */
+.accordion_one {
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-left:20px;
+  padding-right:20px;
+  border:1px solid var(--base-lightBlue);
+  background-color:var(--base-white);
+  width:100%;
+}
+
+/* Header */
+.accordion_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.accordion_header:hover {
+  opacity: 0.7;
+}
+
+.one_i {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one_i::before,
+.one_i::after {
+  content: "";
+  position: absolute;
+  background-color: var(--base-lightBlue);
+  transition: transform 0.3s ease;
+}
+
+.one_i::before {
+  width: 16px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.one_i::after {
+  width: 2px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.one_i.active::after {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.accordion_inner {
+  max-height: 0;
+  overflow: hidden;
+  border-top: 1px solid var(--base-lightBlue);
+  opacity: 0;
+  box-sizing: border-box;
+  transform: translateZ(0);
+  transition: none; /* Remove transition from base state */
+}
+
+.accordion_inner.open {
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px 0px;
+  border-top: 1px solid var(--base-lightBlue);
+}
+
+.accordion_inner.opening {
+  animation: slideDown 0.4s ease forwards;
+}
+
+.accordion_inner.closing {
+  animation: slideUp 0.4s ease forwards;
+}
+
+.box_one p{
+    margin-top:2px;
+}
+
+.box_one img {
+  flex-shrink: 0;
+  height:40px;
+}
+
+@keyframes slideDown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-width: 0;
+  }
+  1% {
+    border-top-width: 1px;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-width: 1px;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-width: 1px;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.3;
+    border-top-width: 1px;
+  }
+  99% {
+    border-top-width: 1px;
+  }
+  100% {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-width: 0;
+  }
+}
+.faq-break {
+  display: block;
+}
+
+.family-ribbon{
+  position:absolute;
+  top:-120px;
+  z-index:1;
+  right:-190px;
+  width:100%;
+}
+.family-sticker1{
+  margin-left:20px;
+  top:30px;
+}
+.family-sticker2{
+  margin-right:60px;
+  top:35px;
+}

@@ -9,8 +9,10 @@
   --base-white: #ffffff;
   --base-lightBlue: #81d8d0;
   --base-red: #f53662;
+  --base-lightPink:#F53561;
   --base-peach: #ec73b2;
   --base-brown: #8c4239;
+  --base-darkGray:#97A5B5;
 
   /*TEXT COLORS*/
   --text-black1: #4f4f4f;
@@ -19,6 +21,8 @@
   --text-red: #f53662;
   --text-peach: #ec73b2;
   --text-brown: #8c4239;
+  --text-lightPink:#F53561;
+
 
   /*FONTS*/
   --font-outfit: "Outfit";
@@ -96,6 +100,9 @@ ul li::marker {
 }
 .text-brown {
   color: var(--text-brown);
+}
+.text-lightPink{
+  color:var(--text-lightPink)
 }
 .text-underline {
   text-decoration: underline;
@@ -5745,6 +5752,8 @@ a {
   object-fit: cover;
 }
 /*END TOPIC SECTION*/
+
+
 
 
 
