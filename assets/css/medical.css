@@ -150,6 +150,13 @@
   font-weight: 400;
 }
 
+.p-medical_steps_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding: 3.125rem 0;
+}
+
 .p-medical_step_row {
   display: flex;
   gap: 3.125rem;
@@ -631,6 +638,11 @@
   }
 
   /* STEPS — reduce gap */
+  .p-medical_steps_wrapper {
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
   .p-medical_step_row {
     gap: 2rem;
   }
@@ -932,7 +944,12 @@
     margin-top: 0;
   }
 
-  /* STEPS — stack vertically */
+  /* STEPS — stack vertically, unified gap */
+  .p-medical_steps_wrapper {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
   .p-medical_step_row {
     flex-direction: column;
     gap: 1.5rem;
@@ -964,6 +981,7 @@
 
   /* VOICE — slider on mobile */
   .p-medical_voice_slider_wrapper {
+    margin-top: 1.5rem;
     position: relative;
     overflow: hidden;
   }
@@ -1085,11 +1103,13 @@
   }
 
   .p-medical_speak_container01 {
-    left: 0;
+    bottom: -1rem;
+    left: 5rem;
   }
 
   .p-medical_speak_container02 {
-    right: 0;
+    bottom: -1rem;
+    right: 5rem;
   }
 
   .p-medical_speak_person01,
@@ -1098,14 +1118,14 @@
   }
 
   .p-medical_speak_bubble01 {
-    width: 7rem;
-    left: -3rem;
+    width: 6rem;
+    left: -6rem;
     top: -2rem;
   }
 
   .p-medical_speak_bubble02 {
-    width: 7rem;
-    right: -3rem;
+    width: 6rem;
+    right: -6rem;
     top: -2rem;
   }
 
