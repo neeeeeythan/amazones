@@ -1,3 +1,4 @@
+
 /* START BANNER */
 .p-personal_banner {
   width: 100%;
@@ -17,6 +18,11 @@
   height: auto;
   pointer-events: none;
 }
+
+.p-personal_banner-ribbon_sp {
+  display: none;
+}
+
 
 .p-personal_banner_title {
   position: absolute;
@@ -240,7 +246,6 @@
 .p-personal_program_scroll::-webkit-scrollbar-thumb:hover {
   background: #4ab3aa;
 }
-
 
 /* PROGRAM SLIDER CARDS */
 .p-personal_program_card {
@@ -506,7 +511,6 @@
   object-fit: contain;
 }
 
-
 /* ============================================
    PERSONAL PAGE — RESPONSIVE STYLES
    Tablet ≤ 1024px  |  Mobile ≤ 767px
@@ -516,6 +520,9 @@
    TABLET  (max-width: 1024px)
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
+  .p-personal-md-block {
+    display: block;
+  }
 
   /* BANNER */
   .p-personal_banner {
@@ -655,20 +662,22 @@
   }
 }
 
-
 /* ──────────────────────────────────────────
-   MOBILE  (max-width: 767px)
+   MOBILE  (max-width: 480px)
    ────────────────────────────────────────── */
-@media (max-width: 767px) {
-
+@media (max-width: 480px) {
+   .p-personal-md-block {
+    display: none;
+  }
   /* BANNER */
   .p-personal_banner {
-    height: 26rem;
+    height: 800px;
     background-position: 70% top;
+    background-image: url("../img/personal/banner_personal_sp.png");
   }
 
   .p-personal_banner_title {
-    top: 25%;
+    top: 15%;
     left: 1.25rem;
   }
 
@@ -684,10 +693,18 @@
 
   /* Banner ribbon: keep visible, fit mobile width */
   .p-personal_banner_ribbon {
-    bottom: 2%;
-    left: -5%;
-    width: 160vw;
+    display: none;
   }
+
+   .p-personal_banner-ribbon_sp {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: auto;
+    right: -15%;
+    height: 50%;
+  }
+
 
   /* AMAZONES METHOD SECTION */
 

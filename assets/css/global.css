@@ -4339,6 +4339,10 @@ ul li::marker {
   }
 }
 
+.sm-block {
+  display: none;
+}
+
 @media screen and (max-width: 480px) {
   .sm-block {
     display: block;
