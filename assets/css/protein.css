@@ -305,6 +305,31 @@
   object-fit: contain;
 }
 
+.p-protein_quality_header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 1rem;
+}
+
+.p-protein_quality_sub {
+  display: flex;
+  width: 100%;
+  background-color: var(--base-lightBlue);
+  padding: 10px 30px;
+}
+
+.p-protein_quality_body {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.p-protein_quality_line {
+  height: 1px;
+  width: 10rem;
+}
+
 /* FLAVOR */
 .p-protein_flavor_header {
   color: white;
@@ -623,6 +648,26 @@
   }
 
   /* ── SECTION HEADER ── */
+  .p-protein_quality_header {
+    padding: 1rem;
+  }
+
+  .p-protein_quality_header p {
+    font-size: 0.875rem;
+  }
+
+  .p-protein_quality_sub {
+    padding: 0.5rem 1rem;
+  }
+
+  .p-protein_quality_body {
+    padding: 1rem;
+  }
+
+  .p-protein_quality_line {
+    width: 3rem;
+  }
+
   .p-protein_section_header h2 {
     font-size: 3rem;
     line-height: 4rem;
@@ -721,7 +766,7 @@
   }
 
   .p-protein_img_pattern {
-    height: 5%;
+    height: 10%;
     width: auto;
   }
 
@@ -734,6 +779,7 @@
   .p-protein_text_container h2,
   .p-protein_text_container_left h2 {
     font-size: 1.25rem;
+    text-align: center;
   }
 
   /* Inner content gap */
@@ -764,6 +810,7 @@
   .p-protein_flavor_header {
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
   }
 
   /* Flavor item row */
@@ -873,5 +920,10 @@
 
   .p-protein_onlineshop_text_container .flex.flex-col.gap-40px {
     gap: 1.5rem;
+  }
+
+  /* Peach flavor — shift image left to avoid clipping */
+  div:has(> img[alt="peach flavor"]) > img {
+    object-position: right top;
   }
 }
