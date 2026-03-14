@@ -15,7 +15,7 @@ const franchiseQuestionSets = {
       question: "フィットネス業界の将来の見通しは？",
       // ↓ This injects a section divider BEFORE this item
       sectionBreak: {
-        icon: "../assets/img/faq/icon_faq_label2.svg", // adjust icon path as needed
+        icon: "../../assets/img/faq/icon_faq_label2.svg", // adjust icon path as needed
         title: "施設について",
       },
       answer:
