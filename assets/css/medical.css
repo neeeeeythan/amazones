@@ -103,7 +103,24 @@
 }
 
 .p-medical_partners_clinic {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: max-content;
+}
+
+.p-medical_partners_clinic h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-black1);
+  line-height: 2.5rem;
+}
+
+.p-medical_partners_clinic p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-black1);
+  line-height: 1rem;
 }
 
 .p-medical_list_box {
@@ -220,6 +237,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.p-medical_howtouse_icn {
+  width: 35px;
+  height: 63px;
 }
 
 .p-medical_lightBlue_container {
@@ -537,10 +559,10 @@
   }
 
   /* SECTION HEADER */
-  .p-medical_section_header h2 {
+  /* .p-medical_section_header h2 {
     font-size: 4.5rem;
     line-height: 5.5rem;
-  }
+  } */
 
   /* SECTION TITLE ROW — stack on tablet */
   .p-medical_section_title_row {
@@ -616,6 +638,12 @@
   /* LINEUP — 3 per row */
   .p-medical_lineup_item {
     width: calc(33.333% - 1.35rem);
+  }
+
+  /* HOW TO USE */
+  .p-medical_howtouse_icn {
+    width: auto;
+    height: 100px;
   }
 
   /* VOICE — reduce stagger */
@@ -730,7 +758,7 @@
 
   /* SECTION HEADER */
   .p-medical_section_header h2 {
-    font-size: 2.75rem;
+    font-size: 3.8rem;
     line-height: 3.5rem;
   }
 
@@ -858,20 +886,16 @@
   }
 
   .p-medical_partners_logo_row img[width="240px"] {
-    width: 140px;
+    width: 220px;
   }
 
-  .p-medical_partners_clinic h4 {
-    font-size: 1.25rem;
-  }
-
-  .p-medical_partners_clinic p {
-    font-size: 0.875rem;
+  .p-medical_partners_clinic {
+    align-items: center;
   }
 
   .p-medical_partners_list {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
   }
 
