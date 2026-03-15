@@ -897,11 +897,40 @@
     font-size: 1.125rem;
   }
 
-  /* ── SPEAK PERSONS — hide on mobile ── */
-  .p-sportip_speak_container01,
-  .p-sportip_speak_container02,
-  .p-sportip_speak_container03 {
+  /* ── SPEAK PERSONS ── */
+  .p-sportip_speak_container01 {
     display: none;
+  }
+
+  .p-sportip_speak_container02 {
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    left: 7rem;
+  }
+
+  .p-sportip_speak_container03 {
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    right: 7rem;
+  }
+
+  .p-sportip_speak_person02,
+  .p-sportip_speak_person03 {
+    height: 12rem;
+  }
+
+  .p-sportip_speak_bubble02 {
+    height: 5rem;
+    top: -2rem;
+    right: 5rem;
+  }
+
+  .p-sportip_speak_bubble03 {
+    height: 5rem;
+    top: -2.5rem;
+    right: -6rem;
   }
 
   /* ── ANNOUNCEMENT PEOPLE IMAGE ── */
