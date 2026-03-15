@@ -1065,93 +1065,95 @@
   }
 }
 
-/* ── EXTRA WORDS CARDS ── */
-.c-section_lightBlue > .c-maxWidth > .flex.w-full.gap-30px {
-  flex-direction: column;
-  gap: 1.5rem;
-}
+@media (max-width: 1024px) {
+  /* ── EXTRA WORDS CARDS ── */
+  .c-section_lightBlue > .c-maxWidth > .flex.w-full.gap-30px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-/* ── FAQ SECTION ── */
-.p-protein_faq_ribbon {
-  display: none;
-}
+  /* ── FAQ SECTION ── */
+  .p-protein_faq_ribbon {
+    display: none;
+  }
 
-/* ── BUY NOW SECTION ── */
+  /* ── BUY NOW SECTION ── */
 
-/* Title row — stack */
-.c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  padding-bottom: 2rem;
-}
+  /* Title row — stack */
+  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
 
-.c-section_lightBlue
-  .c-maxWidth
-  > .flex.items-center.gap-70px.pb-50
-  .flex.gap-3.items-end {
-  margin-top: 0 !important;
-}
+  .c-section_lightBlue
+    .c-maxWidth
+    > .flex.items-center.gap-70px.pb-50
+    .flex.gap-3.items-end {
+    margin-top: 0 !important;
+  }
 
-.c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 h3 {
-  font-size: 1rem !important;
-}
+  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 h3 {
+    font-size: 1rem !important;
+  }
 
-/* Product list — stack */
-.c-section_lightBlue .c-maxWidth > .flex.gap-30px {
-  flex-direction: column;
-  gap: 1.5rem;
-}
+  /* Product list — stack */
+  .c-section_lightBlue .c-maxWidth > .flex.gap-30px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-/* Individual buy now cards — reduce padding */
-div:has(> h5.font-outfit.fs-24.fw-600.text-red),
-div:has(> h5.font-outfit.fs-24.fw-600.text-peach),
-div:has(> h5.font-outfit.fs-24.fw-600.text-brown) {
-  padding: 2rem 1.5rem !important;
-  gap: 1rem !important;
-}
+  /* Individual buy now cards — reduce padding */
+  div:has(> h5.font-outfit.fs-24.fw-600.text-red),
+  div:has(> h5.font-outfit.fs-24.fw-600.text-peach),
+  div:has(> h5.font-outfit.fs-24.fw-600.text-brown) {
+    padding: 2rem 1.5rem !important;
+    gap: 1rem !important;
+  }
 
-/* Flavor name size in buy now cards */
-.c-section_lightBlue .font-zen.fs-30.fw-700 {
-  font-size: 1.25rem;
-}
+  /* Flavor name size in buy now cards */
+  .c-section_lightBlue .font-zen.fs-30.fw-700 {
+    font-size: 1.25rem;
+  }
 
-/* Product images in buy now */
-.c-section_lightBlue img[width="250"] {
-  width: 160px;
-  height: 160px;
-}
+  /* Product images in buy now */
+  .c-section_lightBlue img[width="250"] {
+    width: 160px;
+    height: 160px;
+  }
 
-/* ── ONLINE SHOP SECTION ── */
+  /* ── ONLINE SHOP SECTION ── */
 
-/* Stack the background image + text panel */
-section.relative:has(.p-protein_onlineshop_text_container) {
-  display: flex;
-  flex-direction: column;
-}
+  /* Stack the background image + text panel */
+  section.relative:has(.p-protein_onlineshop_text_container) {
+    display: flex;
+    flex-direction: column;
+  }
 
-section.relative:has(.p-protein_onlineshop_text_container) > img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: center;
-}
+  section.relative:has(.p-protein_onlineshop_text_container) > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
 
-.p-protein_onlineshop_text_container {
-  position: relative;
-  width: 100%;
-  transform: none;
-  padding: 2rem 1.5rem;
-  box-sizing: border-box;
-  top: auto;
-  right: auto;
-  overflow: hidden;
-}
+  .p-protein_onlineshop_text_container {
+    position: relative;
+    width: 100%;
+    transform: none;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    top: auto;
+    right: auto;
+    overflow: hidden;
+  }
 
-.p-protein_onlineshop_text_container .fs-60 {
-  font-size: 1.75rem !important;
-}
+  .p-protein_onlineshop_text_container .fs-60 {
+    font-size: 1.75rem !important;
+  }
 
-.p-protein_onlineshop_text_container .flex.flex-col.gap-40px {
-  gap: 1.5rem;
+  .p-protein_onlineshop_text_container .flex.flex-col.gap-40px {
+    gap: 1.5rem;
+  }
 }
