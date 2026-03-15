@@ -9,10 +9,10 @@
   --base-white: #ffffff;
   --base-lightBlue: #81d8d0;
   --base-red: #f53662;
-  --base-lightPink:#F53561;
+  --base-lightPink: #f53561;
   --base-peach: #ec73b2;
   --base-brown: #8c4239;
-  --base-darkGray:#97A5B5;
+  --base-darkGray: #97a5b5;
 
   /*TEXT COLORS*/
   --text-black1: #4f4f4f;
@@ -21,8 +21,7 @@
   --text-red: #f53662;
   --text-peach: #ec73b2;
   --text-brown: #8c4239;
-  --text-lightPink:#F53561;
-
+  --text-lightPink: #f53561;
 
   /*FONTS*/
   --font-outfit: "Outfit";
@@ -101,8 +100,8 @@ ul li::marker {
 .text-brown {
   color: var(--text-brown);
 }
-.text-lightPink{
-  color:var(--text-lightPink)
+.text-lightPink {
+  color: var(--text-lightPink);
 }
 .text-underline {
   text-decoration: underline;
@@ -5500,8 +5499,8 @@ a {
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
-   /* padding-left: 2rem;
-    padding-right: 2rem; */
+  padding-left: 2rem;
+    padding-right: 2rem;
   box-sizing: border-box;
 }
 
@@ -5759,10 +5758,6 @@ a {
 }
 /*END TOPIC SECTION*/
 
-
-
-
-
 /*RECRUIT BANNER*/
 .recruit-banner-section {
   width: 100%;
@@ -5824,8 +5819,6 @@ a {
   }
 }
 /*END RECRUIT BANNER*/
-
-
 
 /* ============================================
     START BANNER
@@ -5929,8 +5922,6 @@ a {
 /* ============================================
     END  BANNER
    ============================================ */
-
-   
 
 /*TOP FOOTER BANNER SECTION*/
 .top-banner-section {
@@ -6193,6 +6184,7 @@ a {
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
   background-position: 0% -170%;
+ 
 }
 
 /* END WHITE BACKGROUND */
@@ -6206,6 +6198,7 @@ a {
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
+  
 }
 
 /* END LIGHT BLUE BACKGROUND */
@@ -6392,12 +6385,10 @@ a {
   }
 }
 
-
 /* ──────────────────────────────────────────
    MOBILE  (max-width: 767px)
    ────────────────────────────────────────── */
 @media (max-width: 767px) {
-
   .lg-block {
     display: none;
   }
