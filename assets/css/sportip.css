@@ -264,6 +264,16 @@
   display: none;
 }
 
+.p-sportip_diagnosis_block {
+  background-color: white;
+  width: 100%;
+  padding: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  z-index: 10;
+}
+
 /* ============================================
    END SPORTIP CONTENT
    ============================================ */
@@ -794,15 +804,25 @@
   .p-sportip_ribbon02 {
     position: absolute;
     top: 5%;
-    left: -30%;
+    left: -74%;
     right: auto;
     z-index: 0;
   }
 
-  /* White text block — full width, no fixed max */
-  .flex.items-start.w-full.justify-between.c-maxWidth.relative > .bg-white {
+  /* White text block — tighter padding on mobile */
+  .p-sportip_diagnosis_block {
     max-width: 100% !important;
-    padding: 1.5rem !important;
+    padding: 1rem 0.75rem !important;
+    gap: 1rem;
+  }
+
+  .p-sportip_diagnosis_block h2 {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   /* Desktop phone — hide on mobile */
@@ -826,8 +846,10 @@
 
   .p-sportip_phone_video {
     border-radius: 4vw;
-    width: 50%;
+    width: 45%;
     object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* ── YOUTUBE ── */
