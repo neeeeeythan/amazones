@@ -560,18 +560,29 @@
     line-height: 5.5rem;
   }
 
-  /* FLAVOR TEXT CONTAINERS — shrink so they don't overflow */
-  .p-protein_text_container,
-  .p-protein_onlineshop_text_container {
-    width: 54dvw;
-    right: -38dvw;
-    padding: 2.5rem;
+  /* ── FLAVOR SECTION — stacked layout (matches mobile) ── */
+
+  /* Outer relative container → flex column */
+  div:has(> .p-protein_text_container),
+  div:has(> .p-protein_text_container_left) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: visible;
   }
 
+  /* Un-position the text overlay panels */
+  .p-protein_text_container,
   .p-protein_text_container_left {
-    width: 54dvw;
-    left: -38dvw;
-    padding: 2.5rem;
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    padding-top: calc(1.5rem + 60px);
+    box-sizing: border-box;
+    top: auto;
+    right: auto;
+    left: auto;
+    overflow: hidden;
   }
 
   /* ── OPENING SECTION ── */
@@ -632,19 +643,47 @@
     padding-right: 5rem;
   }
 
-  /* FLAVOR IMAGES — reduce width at tablet */
+  /* FLAVOR IMAGES — full width stacked (matches mobile) */
   .p-protein_flavor_img {
-    width: 42vw;
+    width: 100%;
+    height: 538px;
+    object-fit: cover;
+    object-position: center top;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -67px;
   }
 
-  /* SPEAK PERSON 02 */
+  /* Peach image — shift right to avoid clipping */
+  div:has(> img[alt="peach flavor"]) > img {
+    object-position: right top;
+  }
+
+  /* SPEAK PERSON 02 — hide desktop, show mobile duplicate */
   .p-protein_speak_image02 {
-    right: 2dvw;
-    width: 28rem;
+    display: none;
   }
 
-  .p-protein_speak_person02 {
-    height: 14rem;
+  .p-protein_speak_image02.is-mobile-only {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    transform: none;
+    top: auto;
+    /* right: auto; */
+  }
+
+  .p-protein_speak_image02.is-mobile-only .p-protein_speak_person02 {
+    height: 13rem;
+  }
+
+  .p-protein_speak_image02.is-mobile-only .p-protein_speak_bubble02 {
+    left: auto;
+    right: 14rem;
+    top: 0;
+    width: 7rem;
+    height: auto;
   }
 
   /* Stack nutrition + taste factor columns to prevent overflow */
@@ -670,15 +709,92 @@
     text-align: center;
   }
 
-  /* FLAVOR SECTION title row */
+  /* FLAVOR SECTION title row — stack (matches mobile) */
   .p-protein_about > .flex.items-center.gap-70px {
-    gap: 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .p-protein_about > .flex.items-center.gap-70px > .flex.gap-3 {
+    margin-top: 0 !important;
+  }
+
+  .p-protein_about > .flex.items-center.gap-70px .flex.flex-col.gap-30px h3 {
+    font-size: 1rem !important;
+  }
+
+  /* Recommendation card row — stack */
+  .p-protein_about .w-full.flex.gap-4 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Flavors container — reduce top margin and gap */
+  .c-section_lightBlue > .flex.flex-col.gap-50px {
+    margin-top: 2.5rem !important;
+    gap: 1rem !important;
+  }
+
+  /* Each flavor block outer wrapper — remove bottom margin */
+  .w-100.flex.mb-100,
+  .w-100.flex.justify-end.mb-100 {
+    margin-bottom: 0 !important;
+  }
+
+  /* Flavor title */
+  .p-protein_text_container h2,
+  .p-protein_text_container_left h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  /* Inner content gap */
+  .p-protein_text_container > .flex.flex-col.gap-30px,
+  .p-protein_text_container_left > .flex.flex-col.gap-30px {
+    gap: 1.25rem;
+  }
+
+  /* Nutrition header strip full width */
+  .p-protein_flavor_header {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Flavor item row */
+  .p-protein_flavor_item {
+    padding: 0.6rem 0;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  /* Star rating — tighten gaps */
+  .p-protein_flavor_item .flex.gap-4 {
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+
+  /* Ingredient info button — left-align */
+  .p-protein_text_container .flex.flex-col.justify-end.items-end,
+  .p-protein_text_container_left .flex.flex-col.justify-end.items-end {
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  /* Pattern cutout — match mobile size */
+  .p-protein_img_pattern {
+    height: 10%;
+    width: auto;
   }
 
   /* ONLINE SHOP text container */
   .p-protein_onlineshop_text_container {
     width: 54dvw;
     right: 0;
+    padding: 2.5rem;
   }
 }
 
