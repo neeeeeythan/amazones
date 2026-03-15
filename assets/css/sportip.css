@@ -259,6 +259,11 @@
   z-index: 1;
 }
 
+/* Mobile phone duplicate — hidden on desktop */
+.p-sportip_phone--mobile {
+  display: none;
+}
+
 /* ============================================
    END SPORTIP CONTENT
    ============================================ */
@@ -555,7 +560,6 @@
    TABLET  (max-width: 1024px)
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
-
   /* BANNER */
   .p-sportip_banner {
     width: 100%;
@@ -612,7 +616,6 @@
    MOBILE  (max-width: 767px)
    ────────────────────────────────────────── */
 @media (max-width: 767px) {
-
   /* ── BANNER ── */
   .p-sportip_banner {
     width: 100%;
@@ -787,9 +790,13 @@
     gap: 2rem;
   }
 
-  /* Ribbon — hide on mobile */
+  /* Ribbon — reposition behind phone on mobile */
   .p-sportip_ribbon02 {
-    display: none;
+    position: absolute;
+    top: 5%;
+    left: -30%;
+    right: auto;
+    z-index: 0;
   }
 
   /* White text block — full width, no fixed max */
@@ -798,20 +805,29 @@
     padding: 1.5rem !important;
   }
 
-  /* Phone mockup — center + scale down */
-  .p-sportip_phone {
-    width: 100%;
+  /* Desktop phone — hide on mobile */
+  .p-sportip_phone--desktop {
+    display: none;
+  }
+
+  /* Mobile phone — show and center */
+  .p-sportip_phone--mobile {
     display: flex;
     justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
   }
 
   .p-sportip_phone img {
-    height: 55vw;
-    max-height: 320px;
+    height: 85vw;
+    max-height: 520px;
   }
 
   .p-sportip_phone_video {
     border-radius: 4vw;
+    width: 50%;
+    object-fit: cover;
   }
 
   /* ── YOUTUBE ── */
