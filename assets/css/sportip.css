@@ -626,6 +626,13 @@
    MOBILE  (max-width: 767px)
    ────────────────────────────────────────── */
 @media (max-width: 767px) {
+  /* ── 03 SECTION — white background on mobile ── */
+  .p-sportip_section_03 {
+    background-image: url("../img/common/bg_white_pattern.webp");
+    background-size: cover;
+    background-position: 0% -170%;
+  }
+
   /* ── BANNER ── */
   .p-sportip_banner {
     width: 100%;
