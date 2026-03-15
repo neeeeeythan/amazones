@@ -211,6 +211,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-black1);
+  line-height: 1.2;
 }
 
 /* Lineup grid */
@@ -751,6 +752,7 @@
   }
 
   .p-medical_breadcrumb {
+    position: absolute;
     left: 1.25rem;
     bottom: 3%;
   }
