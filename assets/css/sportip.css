@@ -713,12 +713,14 @@
 
   /* Un-position the overlay text panel */
   .p-sportip_text_container {
-    position: static;
+    position: relative;
     width: 100%;
     padding: 1.5rem;
+    padding-top: 3rem;
     box-sizing: border-box;
     top: auto;
     right: auto;
+    overflow: hidden;
   }
 
   /* ── CONTENT ITEM 02 (text container on left) ── */
@@ -738,25 +740,27 @@
   }
 
   .p-sportip_text_container02 {
-    position: static;
+    position: relative;
     width: 100%;
     padding: 1.5rem;
+    padding-top: 3rem;
     box-sizing: border-box;
     top: auto;
     left: auto;
+    overflow: hidden;
   }
 
   /* ── TEXT CONTAINER INTERNALS ── */
 
-  /* Hide pattern cutout */
+  /* Scale down pattern cutout */
   .p-sportip_img_pattern {
-    display: none;
+    height: 10%;
+    width: auto;
   }
 
   /* Number + icon + label row — stack on mobile */
   .p-sportip_text_container .flex.items-center.gap-4,
   .p-sportip_text_container02 .flex.items-center.gap-4 {
-    padding-top: 1rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
