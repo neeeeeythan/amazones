@@ -663,6 +663,7 @@
   }
 
   .p-sportip_banner-content {
+    top: 20%;
     left: 1.25rem;
   }
 
@@ -673,9 +674,7 @@
   }
 
   .p-sportip_banner-logo {
-    width: 25%;
-    height: auto;
-    top: 15%;
+    display: none;
   }
 
   .p-sportip_banner-ribbon {
