@@ -213,7 +213,8 @@
   left: -41dvw;
 }
 
-.p-protein_img_pattern, .p-protein_img_pattern2 {
+.p-protein_img_pattern,
+.p-protein_img_pattern2 {
   position: absolute;
   top: 0%;
   right: 0%;
@@ -349,7 +350,45 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .p-protein_flavor_img {
-    max-width: 55vw;
+    max-width: 45vw;
+  }
+
+  /* Speak image — reduce from desktop 40rem/25rem */
+  .p-protein_speak_image02 {
+    width: 35rem;
+  }
+
+  .p-protein_speak_person02 {
+    height: 15rem;
+  }
+
+  .p-protein_speak_bubble02 {
+    height: 7rem;
+    top: 1rem;
+    left: 12rem;
+  }
+
+  /* Text container — tighten padding */
+  .p-protein_text_container,
+  .p-protein_text_container_left,
+  .p-protein_onlineshop_text_container {
+    width: 60dvw;
+    padding: 3rem;
+  }
+
+  .p-protein_text_container {
+    right: -55dvw;
+  }
+
+  /* Inner row — reduce gap and margin so columns don't overflow */
+  .p-protein_text_container > .flex.flex-col.gap-30px > .flex.gap-50px,
+  .p-protein_text_container_left > .flex.flex-col.gap-30px > .flex.gap-50px {
+    gap: 1.5rem;
+  }
+
+  .p-protein_text_container .flex.flex-col.flex-1.mr-60,
+  .p-protein_text_container_left .flex.flex-col.flex-1.mr-60 {
+    margin-right: 1rem;
   }
 }
 
@@ -440,12 +479,14 @@
   opacity: 0;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.75);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 1000;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .p-protein_modal-overlay.is-open {
@@ -462,7 +503,9 @@
   border-radius: 8px;
   transform: translateY(16px);
   opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .p-protein_modal-overlay.is-open .p-protein_modal {
@@ -475,7 +518,7 @@
   top: 8px;
   float: right;
   margin: 8px 8px 0 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border: none;
   color: #fff;
   font-size: 18px;
@@ -490,7 +533,6 @@
    TABLET  (max-width: 1024px)
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
-
   /* BANNER — adjust protein image position */
   .p-protein_banner-img {
     right: -15%;
@@ -526,10 +568,27 @@
   /* SPEAK PERSON 02 */
   .p-protein_speak_image02 {
     right: 2dvw;
+    width: 28rem;
   }
 
   .p-protein_speak_person02 {
-    height: 18rem;
+    height: 14rem;
+  }
+
+  /* Stack nutrition + taste factor columns to prevent overflow */
+  .p-protein_text_container > .flex.flex-col.gap-30px > .flex.gap-50px,
+  .p-protein_text_container_left > .flex.flex-col.gap-30px > .flex.gap-50px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .p-protein_text_container .flex.flex-col.flex-1.mr-60,
+  .p-protein_text_container_left .flex.flex-col.flex-1.mr-60 {
+    margin-right: 0;
+  }
+
+  .p-protein_flavor_nutrition {
+    width: 100%;
   }
 
   /* POINT CARDS */
@@ -554,7 +613,6 @@
    MOBILE  (max-width: 767px)
    ────────────────────────────────────────── */
 @media (max-width: 767px) {
-
   /* ── BANNER ── */
   .p-protein_banner-img {
     right: -10%;
@@ -891,7 +949,10 @@
     padding-bottom: 2rem;
   }
 
-  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 .flex.gap-3.items-end {
+  .c-section_lightBlue
+    .c-maxWidth
+    > .flex.items-center.gap-70px.pb-50
+    .flex.gap-3.items-end {
     margin-top: 0 !important;
   }
 
