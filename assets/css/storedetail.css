@@ -651,7 +651,6 @@
 .p-storedetail_map {
   flex: 1;
   min-width: 280px;
-  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   min-height: 240px;
@@ -1565,15 +1564,23 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Facilities */
+  /* Facilities — 3-col grid on mobile */
   .p-storedetail_introduction_facilities {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
   }
   .p-storedetail_introduction_facility {
-    width: 5rem;
+    width: 100%;
+    align-items: center;
   }
+
+  .p-storedetail_introduction_facility p {
+    font-size: 0.875rem;
+  }
+
   .p-storedetail_introduction_facility_icon {
     width: 3.5rem;
     height: 3.5rem;
@@ -1603,9 +1610,22 @@
     width: auto;
   }
 
-  /* ── Map ── */
+  /* ── Map Row: stack card + map vertically ── */
+  .p-storedetail_gray_container + .flex.gap-30px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
   .p-storedetail_map {
     height: 15rem;
+  }
+
+  /* ── Store Card: stack info rows + hide arrow ── */
+  .p-storelist_card .flex.gap-3 {
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .p-storelist_card-header-inner img {
+    display: none;
   }
 
   /* ── Price Images ── */
