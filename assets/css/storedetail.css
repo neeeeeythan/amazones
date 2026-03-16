@@ -1595,6 +1595,13 @@
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+  .p-storedetail_gray_container h3 {
+    font-size: 1rem;
+  }
+  .p-storedetail_cutout {
+    height: 100%;
+    width: auto;
+  }
 
   /* ── Map ── */
   .p-storedetail_map {
