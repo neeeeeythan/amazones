@@ -205,6 +205,42 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
 // ─────────────────────────────────────────────
 (function () {
   const sliderEl = document.getElementById("js-slider");
+
+  // Mobile: create a dedicated hero image, swap src on thumbnail click
+  if (window.innerWidth < 768) {
+    var grid = document.querySelector(".slider-thumbs .grid");
+    if (!grid) return;
+    var thumbs = grid.querySelectorAll(".js-thumb-button");
+    if (!thumbs.length) return;
+
+    // Create hero element from first thumbnail's image
+    var hero = document.createElement("div");
+    hero.className = "mobile-hero";
+    var heroImg = document.createElement("img");
+    var firstImg = thumbs[0].querySelector("img");
+    heroImg.src = firstImg.src;
+    heroImg.srcset = firstImg.srcset || "";
+    heroImg.alt = firstImg.alt || "";
+    hero.appendChild(heroImg);
+    grid.prepend(hero);
+
+    // Mark first thumb as active
+    thumbs[0].classList.add("swiper-slide-thumb-active");
+
+    thumbs.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var img = this.querySelector("img");
+        heroImg.src = img.src;
+        heroImg.srcset = img.srcset || "";
+        // Update active state
+        thumbs.forEach(function (b) { b.classList.remove("swiper-slide-thumb-active"); });
+        this.classList.add("swiper-slide-thumb-active");
+      });
+    });
+    return;
+  }
+
+  // Desktop: Swiper slider
   if (!sliderEl || typeof Swiper === "undefined") return;
 
   const swiper = new Swiper(sliderEl, {

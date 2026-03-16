@@ -1687,37 +1687,46 @@
   }
 
   /* ── Photo Gallery Slider ── */
-  /* Main slider: full width with a compact 4:3 ratio on mobile */
+  /* Hide the Swiper slider on mobile — show static grid instead */
   #js-slider {
-    width: 100%;
-    aspect-ratio: 4 / 3;
+    display: none !important;
   }
 
-  /* Thumbnail strip: switch from 3-col grid to horizontal scroll row */
+  /* Thumbnail section becomes the primary gallery */
   .slider-thumbs {
     width: 100%;
   }
+
+  /* Restore grid layout (undo horizontal scroll override) */
   .slider-thumbs .grid {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
-    /* Smooth momentum scrolling on iOS */
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    overflow-x: visible;
+    padding: 0;
   }
-  .slider-thumbs .grid::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+
+  /* Hero display element — spans full width */
+  .mobile-hero {
+    grid-column: 1 / -1;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
   }
-  /* Each thumb: fixed compact size in the scroll row */
+  .mobile-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Reset fixed thumbnail sizes — let images fill grid cells */
   .slider-thumbs .js-thumb-button,
   .slider-thumbs .grid > * {
-    flex: 0 0 5.5rem;
-    width: 5.5rem;
-    height: 3.75rem;
+    flex: unset;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
+
   .slider-thumbs .js-thumb-button img {
     width: 100%;
     height: 100%;
