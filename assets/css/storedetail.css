@@ -1313,8 +1313,12 @@
 
 /* Responsive padding at md (768px): md:pt-20, md:pb-20 */
 @media (min-width: 768px) {
-  .md\:pt-20 { padding-top: 5rem; }
-  .md\:pb-20 { padding-bottom: 5rem; }
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
 }
 
 /* Responsive layout at lg (1024px) */
@@ -1358,8 +1362,8 @@
 #js-slider {
   overflow: hidden;
   background: transparent;
-  aspect-ratio: 3 / 2;          /* lock the container to 3:2 */
-  margin-left: 0;               /* reset .swiper margin:auto so flex stretch works on mobile */
+  aspect-ratio: 3 / 2; /* lock the container to 3:2 */
+  margin-left: 0; /* reset .swiper margin:auto so flex stretch works on mobile */
   margin-right: 0;
 }
 
@@ -1394,7 +1398,6 @@
    MOBILE RESPONSIVE — TABLET  (max-width: 1024px)
    ═══════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
-
   /* Topic headers */
   .p-storedetail_topic_header h2 {
     font-size: 3.5rem;
@@ -1494,7 +1497,6 @@
    MOBILE RESPONSIVE — MOBILE  (max-width: 767px)
    ═══════════════════════════════════════════════════ */
 @media (max-width: 767px) {
-
   /* ── Banner ── */
   .p-storedetail_banner-content {
     left: 1.5rem;
@@ -1516,7 +1518,8 @@
 
   /* ── Topic Headers ── */
   .p-storedetail_topic_header h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 2rem;
   }
   .p-storedetail_topic_header p {
     font-size: 0.9rem;
@@ -1790,8 +1793,12 @@
     transform: translateY(-50%);
     z-index: 10;
   }
-  .p-service_nav--prev { left: 0.75rem; }
-  .p-service_nav--next { right: 0.75rem; }
+  .p-service_nav--prev {
+    left: 0.75rem;
+  }
+  .p-service_nav--next {
+    right: 0.75rem;
+  }
   /* Service section title: reset huge left padding */
   .service-section-title {
     padding-left: 1.5rem;
