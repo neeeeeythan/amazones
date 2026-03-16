@@ -1524,6 +1524,31 @@
     font-size: 0.9rem;
   }
 
+  /* ── Price title: stack header + icon row vertically ── */
+  .flex.items-center.gap-70px {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center > svg {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center h3 {
+    font-size: 1rem;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center p {
+    font-size: 0.875rem;
+  }
+
   /* ── Opening Section ── */
   .p-storedetail_opening_block {
     flex-direction: column;
