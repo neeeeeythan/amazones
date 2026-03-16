@@ -114,7 +114,7 @@
   display: flex;
   align-items: center;
   padding-top: 3rem;
-  gap: 2rem;
+  gap: 3rem;
   cursor: pointer;
   margin-bottom: 7rem;
 }
@@ -1497,7 +1497,7 @@
   /* ── Links Navigation ── */
   .p-storedetail_links-nav {
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     padding-top: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -1765,12 +1765,25 @@
     padding-left: 1.5rem;
   }
 
+  .service-section-title h2 {
+    font-size: 60px !important;
+  }
+
   /* ── Opening Block: stack text + jump image ── */
   /* The parent <div class="flex gap-30px"> wraps text + person image */
   .c-maxWidth.pb-100.flex.flex-col > .flex.gap-30px {
     flex-direction: column;
     gap: 1.5rem;
   }
+  .p-storedetail_opening_header p,
+  .p-storedetail_opening_header span {
+    font-size: 1rem;
+  }
+
+  .p-storedetail_opening_header span {
+    display: block;
+  }
+
   .p-storedetail_opening_jump {
     display: flex;
     justify-content: center;
