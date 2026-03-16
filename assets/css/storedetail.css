@@ -136,6 +136,15 @@
   color: var(--base-lightBlue);
 }
 
+/* ── Service Slider Wrapper ── */
+.p-service_slider_wrapper {
+  position: relative;
+}
+
+.p-service_nav {
+  display: none;
+}
+
 .p-storedetail_opening_block {
   flex: 1;
   display: flex;
@@ -1741,16 +1750,22 @@
     display: none;
   }
 
-  /* ── Service Section ── */
-  /* Stack the three service cards vertically and kill the stagger margins */
+  /* ── Service Section — mobile slider ── */
+  .p-service_slider_wrapper {
+    overflow: hidden;
+  }
   .service-container {
-    flex-direction: column;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
     align-items: stretch;
+    justify-content: flex-start !important;
     margin-right: 0;
+    transition: transform 0.4s ease;
   }
   .service-wrapper,
   .service-wrapper2,
   .service-wrapper3 {
+    flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
     margin-top: 0 !important;
@@ -1760,6 +1775,23 @@
     height: 14rem;
     object-fit: cover;
   }
+  .p-service_nav {
+    display: flex;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--base-lightBlue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .p-service_nav--prev { left: 0.75rem; }
+  .p-service_nav--next { right: 0.75rem; }
   /* Service section title: reset huge left padding */
   .service-section-title {
     padding-left: 1.5rem;

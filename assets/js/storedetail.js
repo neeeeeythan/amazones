@@ -241,3 +241,29 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
   setActiveThumb(0, false);
 }());
 
+// Service section — mobile slider
+(function () {
+  var container = document.querySelector('.service-container');
+  var btnPrev = document.querySelector('.p-service_nav--prev');
+  var btnNext = document.querySelector('.p-service_nav--next');
+  if (!container || !btnPrev || !btnNext) return;
+
+  var cards = container.querySelectorAll('.service-wrapper');
+  var total = cards.length;
+  var current = 0;
+
+  function isMobile() { return window.innerWidth <= 767; }
+
+  function goTo(index) {
+    if (!isMobile()) return;
+    current = (index + total) % total;
+    container.style.transform = 'translateX(-' + current * 100 + '%)';
+  }
+
+  btnPrev.addEventListener('click', function () { goTo(current - 1); });
+  btnNext.addEventListener('click', function () { goTo(current + 1); });
+
+  window.addEventListener('resize', function () {
+    if (!isMobile()) { container.style.transform = ''; current = 0; }
+  });
+}());
