@@ -108,6 +108,11 @@
   padding-bottom: 7rem;
 }
 
+/* Two-column list that stacks to single column on mobile */
+.p-price_flex_list {
+  display: flex;
+}
+
 /* TEXT CONTAINER */
 .p-price_text_container {
   display: flex;
@@ -451,7 +456,7 @@
 
 .p-price_tier_extra_note {
   position: absolute;
-  bottom: -6rem;
+  bottom: -7rem;
 }
 
 .p-price_tier_extra_note p {
@@ -703,6 +708,17 @@
   display: none;
 }
 
+.p-price_tier_card2_group {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-price_tier_card2_group > .p-price_tier_card {
+  flex: 1;
+}
+
 /* TABLET */
 @media (max-width: 1024px) {
   .p-price_banner {
@@ -826,6 +842,36 @@
   /* TWO-COLUMN PRICE LISTS */
   .p-price_text_container.flex-1 {
     flex: 1 1 100%;
+  }
+
+  .p-price_flex_list {
+    flex-direction: column;
+  }
+
+  /* Price item row: stack name + span vertically, constrain to available space */
+  .p-price_item_row_name {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Anchor price to the right — never shrink, never wrap */
+  .p-price_item_row_value {
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding-left: 0.75rem;
+  }
+
+  /* Adjust font sizes for mobile */
+  .p-price_item_row p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+
+  .p-price_item_row span {
+    font-size: 0.75rem;
+    line-height: 1.4rem;
   }
 
   /* SECTION PADDING */
