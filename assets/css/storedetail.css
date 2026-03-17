@@ -1439,18 +1439,35 @@
     height: 25rem;
   }
 
-  /* Price images — stack vertically */
+   /* ── Price Images ── */
   .p-storedetail_price_image_container {
     flex-direction: column;
     height: auto;
+    margin-bottom: 2rem;
   }
-  /* Give each price image explicit height so background-image shows at tablet */
   .p-storedetail_price_image_left,
   .p-storedetail_price_image_right {
+    height: auto;
     flex: none;
-    height: 18rem;
     width: 100%;
+    padding: 2rem;
+    background-size: cover;
   }
+
+  .p-storedetail_price_image_left {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-position: left center;
+  }
+
+  .p-storedetail_price_image_right {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-position: 35% center;
+  }
+
 
   /* Dr. Amazones — constrain at tablet too */
   .dr-amazones-container {
@@ -1661,9 +1678,38 @@
   }
   .p-storedetail_price_image_left,
   .p-storedetail_price_image_right {
-    height: 12rem;
+    height: auto;
     flex: none;
     width: 100%;
+    padding: 2rem;
+    background-size: cover;
+  }
+
+  .p-storedetail_price_image_left {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-position: 75% center;
+  }
+
+  .p-storedetail_price_image_right {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-position: 35% center;
+  }
+
+  .p-storedetail_price_image_left h4,
+  .p-storedetail_price_image_right h4 {
+    font-size: 1.25rem; /* 20px — down from 30px */
+  }
+  .p-storedetail_price_image_left > p,
+  .p-storedetail_price_image_right > p {
+    font-size: 0.875rem; /* 14px — down from 16px */
+  }
+  .p-storedetail_price_image_left > div,
+  .p-storedetail_price_image_right > div {
+    font-size: 0.8125rem; /* 13px — down from 16px */
   }
 
   /* ── CTA Section ── */
