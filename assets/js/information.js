@@ -202,9 +202,12 @@ function init__tabs(selector = '[data-widget="tabs"]') {
   }
 
 
-  // FIXED YEAR FILTER - Now works with your buttons
+  // FIXED YEAR FILTER
+  // ✅ FIX: Use '.button-filter-wrapper button' instead of '.news-section > div button'
+  // The old selector also matched .tabs-control buttons, causing the active-year
+  // class to be stripped whenever a tab was clicked.
   function initYearFilters(tabsWidget) {
-    const yearButtons = document.querySelectorAll('.news-section > div button');
+    const yearButtons = document.querySelectorAll('.button-filter-wrapper button');
     
     if (!yearButtons.length || !tabsWidget) return;
     
@@ -230,7 +233,7 @@ function init__tabs(selector = '[data-widget="tabs"]') {
         // Get year from button text (remove '年' character)
         let yearText = button.textContent.trim().replace('年', '');
         
-        // Update active state for year buttons
+        // Update active state for year buttons only
         yearButtons.forEach(btn => btn.classList.remove('active-year'));
         button.classList.add('active-year');
         

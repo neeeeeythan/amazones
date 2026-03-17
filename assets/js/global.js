@@ -78,9 +78,72 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// //TOP TOPIC JS
-// // TOP TOPIC JS - Multiple Sliders with Auto-slide
 
+// HEADER MOBILE
+const isMobile = () => window.innerWidth <= 1091;
+
+floatingBtn.addEventListener("click", function () {
+  if (!isMobile()) return;
+
+  const overlay = document.querySelector(".mobile-header-overlay");
+  const hamburger = document.querySelector(".mobile-hamburger");
+  const isActive = overlay.classList.toggle("active");
+
+  headerFloatingMenu.classList.toggle("active", isActive);
+  hamburger.classList.toggle("active", isActive);
+});
+
+// Close overlay + reset hamburger on resize to desktop
+window.addEventListener("resize", function () {
+  if (!isMobile()) {
+    const overlay = document.querySelector(".mobile-header-overlay");
+    const hamburger = document.querySelector(".mobile-hamburger");
+
+    overlay.classList.remove("active");
+    hamburger.classList.remove("active");
+    headerFloatingMenu.classList.remove("active");
+  }
+});
+
+// Guard hover listeners so they don't fire on mobile
+floatingBtn.addEventListener("mouseenter", function () {
+  if (isMobile()) return;
+  floatingBtnContent.classList.add("active");
+  headerFloatingMenu.classList.add("active");
+});
+
+floatingBtnContent.addEventListener("mouseenter", function () {
+  if (isMobile()) return;
+  floatingBtnContent.classList.add("active");
+  headerFloatingMenu.classList.add("active");
+});
+
+floatingBtnContent.addEventListener("mouseleave", function (e) {
+  if (isMobile()) return;
+  const relatedTarget = e.relatedTarget;
+  if (relatedTarget && headerFloatingMenu.contains(relatedTarget)) return;
+  floatingBtnContent.classList.remove("active");
+  headerFloatingMenu.classList.remove("active");
+});
+
+headerFloatingMenu.addEventListener("mouseleave", function (e) {
+  if (isMobile()) return;
+  const relatedTarget = e.relatedTarget;
+  if (
+    relatedTarget !== floatingBtnContent &&
+    relatedTarget !== floatingBtn &&
+    !floatingBtnContent.contains(relatedTarget) &&
+    !floatingBtn.contains(relatedTarget)
+  ) {
+    floatingBtnContent.classList.remove("active");
+    headerFloatingMenu.classList.remove("active");
+  }
+});
+
+
+
+
+// // // TOP TOPIC JS - Multiple Sliders Support
 // function initTopicSlider(sliderElement) {
 //   if (!sliderElement) return;
 
@@ -88,25 +151,29 @@ document.addEventListener("DOMContentLoaded", function () {
 //   const prev = sliderElement.querySelector("[data-slider-prev]");
 //   const next = sliderElement.querySelector("[data-slider-next]");
 //   const dotsContainer = sliderElement.querySelector("[data-slider-dots]");
+//   const sliderContainer = document.querySelector(".slider-wrapper"); // Fixed: Changed to querySelector
+//   let hasSlid = false; // Flag to track if sliding has occurred
 
 //   if (track && dotsContainer) {
 //     const slides = track.children;
 //     const totalSlides = slides.length;
 
-//     dotsContainer.innerHTML = '';
+//     // Clear existing dots (in case of re-initialization)
+//     dotsContainer.innerHTML = "";
 
 //     const createDots = () => {
 //       for (let i = 0; i < totalSlides; i++) {
-//         const dot = document.createElement('button');
-//         dot.classList.add('topic-slider__dot');
-//         dot.setAttribute('data-slider-dot', i);
+//         const dot = document.createElement("button");
+//         dot.classList.add("topic-slider__dot");
+//         dot.setAttribute("data-slider-dot", i);
 
-//         dot.addEventListener('click', () => {
+//         dot.addEventListener("click", () => {
 //           const slideWidth = slides[0].offsetWidth;
 //           track.scrollTo({
 //             left: slideWidth * i,
-//             behavior: "smooth"
+//             behavior: "smooth",
 //           });
+//           removePaddingOnFirstSlide(); // Remove padding when dot is clicked
 //         });
 
 //         dotsContainer.appendChild(dot);
@@ -121,12 +188,12 @@ document.addEventListener("DOMContentLoaded", function () {
 //       const slideWidth = slides[0].offsetWidth;
 //       const currentIndex = Math.round(track.scrollLeft / slideWidth);
 
-//       const dots = dotsContainer.querySelectorAll('[data-slider-dot]');
+//       const dots = dotsContainer.querySelectorAll("[data-slider-dot]");
 //       dots.forEach((dot, index) => {
 //         if (index === currentIndex) {
-//           dot.classList.add('active');
+//           dot.classList.add("active");
 //         } else {
-//           dot.classList.remove('active');
+//           dot.classList.remove("active");
 //         }
 //       });
 
@@ -140,14 +207,14 @@ document.addEventListener("DOMContentLoaded", function () {
 //       if (track.scrollLeft >= maxScroll - 1 && next) {
 //         next.setAttribute("disabled", "");
 //       }
+//     };
 
-//       // Check if we're on the first slide and set margin accordingly
-//       if (currentIndex === 0) {
-//         console.log('=== FIRST SLIDE REACHED - SETTING MARGIN TO 240px ===');
-//         track.style.marginLeft = '240px';
-//       } else {
-//         // Remove margin when not on first slide
-//         track.style.marginLeft = '0';
+//     // Function to remove padding on first slide
+//     const removePaddingOnFirstSlide = () => {
+//       if (!hasSlid && sliderContainer) {
+//         sliderContainer.style.paddingLeft = "0"; // Remove padding by setting to 0
+//         // Alternative: sliderContainer.classList.remove('pl-240'); if using class
+//         hasSlid = true;
 //       }
 //     };
 
@@ -159,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //     if (prev) {
 //       prev.addEventListener("click", () => {
-//         console.log('Prev clicked');
+//         removePaddingOnFirstSlide(); // Remove padding on first slide
 //         if (next) next.removeAttribute("disabled");
 //         track.scrollTo({
 //           left: track.scrollLeft - track.firstElementChild.offsetWidth,
@@ -170,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //     if (next) {
 //       next.addEventListener("click", () => {
-//         console.log('Next clicked');
+//         removePaddingOnFirstSlide(); // Remove padding on first slide
 //         if (prev) prev.removeAttribute("disabled");
 //         track.scrollTo({
 //           left: track.scrollLeft + track.firstElementChild.offsetWidth,
@@ -183,23 +250,20 @@ document.addEventListener("DOMContentLoaded", function () {
 //       updateActiveDot();
 //     });
 
-//     window.addEventListener('resize', () => {
+//     window.addEventListener("resize", () => {
 //       updateActiveDot();
 //     });
 //   }
 // }
 
 // // Initialize all sliders
-// document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener("DOMContentLoaded", () => {
 //   const sliders = document.querySelectorAll("[data-slider]");
-//   sliders.forEach(slider => {
+//   sliders.forEach((slider) => {
 //     initTopicSlider(slider);
 //   });
 // });
-// //END TOPIC JS
 
-
-// // TOP TOPIC JS - Multiple Sliders Support
 function initTopicSlider(sliderElement) {
   if (!sliderElement) return;
 
@@ -207,119 +271,100 @@ function initTopicSlider(sliderElement) {
   const prev = sliderElement.querySelector("[data-slider-prev]");
   const next = sliderElement.querySelector("[data-slider-next]");
   const dotsContainer = sliderElement.querySelector("[data-slider-dots]");
-  const sliderContainer = document.querySelector(".slider-wrapper"); // Fixed: Changed to querySelector
-  let hasSlid = false; // Flag to track if sliding has occurred
+  const sliderContainer = document.querySelector(".slider-wrapper");
+  let hasSlid = false;
 
   if (track && dotsContainer) {
-    const slides = track.children;
-    const totalSlides = slides.length;
+    const getVisibleSlides = () =>
+      Array.from(track.children).filter(
+        (el) => el.offsetWidth > 0 && el.offsetHeight > 0
+      );
 
-    // Clear existing dots (in case of re-initialization)
-    dotsContainer.innerHTML = "";
+    // ── reads the inner .slide width so CSS breakpoint changes are respected ──
+    const getSlideWidth = () => {
+      const firstVisible = getVisibleSlides()[0];
+      if (!firstVisible) return 0;
+      const innerSlide = firstVisible.querySelector(".slide");
+      return (innerSlide ?? firstVisible).offsetWidth;
+    };
 
     const createDots = () => {
-      for (let i = 0; i < totalSlides; i++) {
+      dotsContainer.innerHTML = "";
+      const visibleSlides = getVisibleSlides();
+      visibleSlides.forEach((_, i) => {
         const dot = document.createElement("button");
         dot.classList.add("topic-slider__dot");
         dot.setAttribute("data-slider-dot", i);
-
         dot.addEventListener("click", () => {
-          const slideWidth = slides[0].offsetWidth;
-          track.scrollTo({
-            left: slideWidth * i,
-            behavior: "smooth",
-          });
-          removePaddingOnFirstSlide(); // Remove padding when dot is clicked
+          track.scrollTo({ left: getSlideWidth() * i, behavior: "smooth" });
+          removePaddingOnFirstSlide();
         });
-
         dotsContainer.appendChild(dot);
-      }
+      });
     };
 
     const updateActiveDot = () => {
-      const trackScrollWidth = track.scrollWidth;
-      const trackOuterWidth = track.clientWidth;
-      const maxScroll = trackScrollWidth - trackOuterWidth;
+      const visibleSlides = getVisibleSlides();
+      if (!visibleSlides.length) return;
 
-      const slideWidth = slides[0].offsetWidth;
-      const currentIndex = Math.round(track.scrollLeft / slideWidth);
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      const slideWidth = getSlideWidth();
+      const currentIndex = slideWidth > 0 ? Math.round(track.scrollLeft / slideWidth) : 0;
 
-      const dots = dotsContainer.querySelectorAll("[data-slider-dot]");
-      dots.forEach((dot, index) => {
-        if (index === currentIndex) {
-          dot.classList.add("active");
-        } else {
-          dot.classList.remove("active");
-        }
+      dotsContainer.querySelectorAll("[data-slider-dot]").forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentIndex);
       });
 
       if (prev) prev.removeAttribute("disabled");
       if (next) next.removeAttribute("disabled");
-
-      if (track.scrollLeft <= 0 && prev) {
-        prev.setAttribute("disabled", "");
-      }
-
-      if (track.scrollLeft >= maxScroll - 1 && next) {
-        next.setAttribute("disabled", "");
-      }
+      if (track.scrollLeft <= 0 && prev) prev.setAttribute("disabled", "");
+      if (track.scrollLeft >= maxScroll - 1 && next) next.setAttribute("disabled", "");
     };
 
-    // Function to remove padding on first slide
     const removePaddingOnFirstSlide = () => {
       if (!hasSlid && sliderContainer) {
-        sliderContainer.style.paddingLeft = "0"; // Remove padding by setting to 0
-        // Alternative: sliderContainer.classList.remove('pl-240'); if using class
+        sliderContainer.style.paddingLeft = "0";
         hasSlid = true;
       }
     };
 
-    createDots();
-
-    setTimeout(() => {
-      updateActiveDot();
-    }, 100);
-
     if (prev) {
       prev.addEventListener("click", () => {
-        removePaddingOnFirstSlide(); // Remove padding on first slide
-        if (next) next.removeAttribute("disabled");
-        track.scrollTo({
-          left: track.scrollLeft - track.firstElementChild.offsetWidth,
-          behavior: "smooth",
-        });
+        removePaddingOnFirstSlide();
+        next?.removeAttribute("disabled");
+        track.scrollTo({ left: track.scrollLeft - getSlideWidth(), behavior: "smooth" });
       });
     }
 
     if (next) {
       next.addEventListener("click", () => {
-        removePaddingOnFirstSlide(); // Remove padding on first slide
-        if (prev) prev.removeAttribute("disabled");
-        track.scrollTo({
-          left: track.scrollLeft + track.firstElementChild.offsetWidth,
-          behavior: "smooth",
-        });
+        removePaddingOnFirstSlide();
+        prev?.removeAttribute("disabled");
+        track.scrollTo({ left: track.scrollLeft + getSlideWidth(), behavior: "smooth" });
       });
     }
 
-    track.addEventListener("scroll", () => {
+    track.addEventListener("scroll", updateActiveDot);
+
+    window.addEventListener("resize", () => {
+      createDots();
       updateActiveDot();
     });
 
-    window.addEventListener("resize", () => {
-      updateActiveDot();
-    });
+    createDots();
+    setTimeout(updateActiveDot, 100);
   }
 }
 
-// Initialize all sliders
 document.addEventListener("DOMContentLoaded", () => {
-  const sliders = document.querySelectorAll("[data-slider]");
-  sliders.forEach((slider) => {
-    initTopicSlider(slider);
-  });
+  document.querySelectorAll("[data-slider]").forEach(initTopicSlider);
 });
-// //END TOPIC JS
+
+
+
+
+
+
 
 //if vidoes are fetched from wp files
 //TOP MOVIE
@@ -446,6 +491,9 @@ function playVid(ID) {
 }
 //END MOVIE
 
+
+
+
 //scroll animation
 (function () {
   "use strict";
@@ -535,3 +583,45 @@ function playVid(ID) {
 
   openingJumpImages.forEach((image) => observer.observe(image));
 }());
+
+
+
+// ─────────────────────────────────────────────
+//  Voice slider (mobile only)
+// ─────────────────────────────────────────────
+(function () {
+  const grid = document.querySelector(".p-medical_voice_grid");
+  const btnPrev = document.querySelector(".p-medical_voice_nav--prev");
+  const btnNext = document.querySelector(".p-medical_voice_nav--next");
+  if (!grid || !btnPrev || !btnNext) return;
+
+  const cards = grid.querySelectorAll(".p-medical_voice_card");
+  const total = cards.length;
+  let current = 0;
+
+  function isMobile() {
+    return window.innerWidth <= 1200;
+  }
+
+  function goTo(index) {
+    if (!isMobile()) return;
+    current = (index + total) % total;
+    grid.style.transform = "translateX(-" + current * 100 + "%)";
+  }
+
+  btnPrev.addEventListener("click", function () {
+    goTo(current - 1);
+  });
+
+  btnNext.addEventListener("click", function () {
+    goTo(current + 1);
+  });
+
+  // Reset transform when resizing to desktop
+  window.addEventListener("resize", function () {
+    if (!isMobile()) {
+      grid.style.transform = "";
+      current = 0;
+    }
+  });
+})();

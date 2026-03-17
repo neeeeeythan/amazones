@@ -1,3 +1,12 @@
+.header-btn:hover,
+.sp-header-btn:hover{
+  opacity:0.7;
+}
+.header-btn:hover .arrow-img,
+.sp-header-btn:hover .arrow-img{
+  transform: translateX(8px);
+}
+
 .btn-green-wrapper {
   background-color: var(--base-lightBlue);
   height: 40px;
@@ -33,17 +42,23 @@
 }
 
 .btn-light-blue:hover {
-  background-color: var(--base-white);
+  /* background-color: var(--base-white);
   border: 1px solid var(--base-lightBlue);
-  color: var(--text-lightBlue);
+  color: var(--text-lightBlue); */
+  opacity:0.7;
 }
 
 .btn-light-blue:hover p {
-  color: var(--text-lightBlue);
+  /* color: var(--text-lightBlue); */
+}
+.btn-light-blue img{
+  transition:all 0.3s ease-in-out;
 }
 .btn-light-blue:hover img {
-  filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
-    hue-rotate(96deg) brightness(92%) contrast(82%);
+  /* filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
+    hue-rotate(96deg) brightness(92%) contrast(82%); */
+      transform: translateX(8px);
+
 }
 
 .btn-light-blue02 {
@@ -109,4 +124,10 @@
 }
 .btn-red:hover img{
   filter: brightness(0) saturate(100%) invert(30%) sepia(36%) saturate(5575%) hue-rotate(330deg) brightness(104%) contrast(92%);
+}
+
+@media screen and (max-width:767px){
+  .btn-light-blue {
+    font-size:16px;
+  }
 }
