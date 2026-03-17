@@ -954,8 +954,7 @@
   .shop-label-icon {
     width: 66px;
   }
-  .shop-list-section-container .fs-18 {
-  }
+  
   .shop-header-text-desk {
     display: none;
   }
@@ -963,7 +962,7 @@
     display: block;
   }
   .shop-list-section-container {
-    gap: 20px;
+    gap: 0px;
   }
   .shop-text-p {
     max-width: 100%;
@@ -1025,6 +1024,12 @@
   .shop-list-section .btn-light-blue {
     margin-top: 50px;
   }
+  .icon_no1{
+    width:57.9px;
+    height:auto;
+    margin-top:10px;
+    margin-left:5px;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -1069,6 +1074,12 @@
   }
   .shop-map-box-sp .shop-map {
     margin-left: 190px !important;
+  }
+}
+
+@media screen and (max-width:370px){
+  .shop-header-text-sp .fs-18{
+    font-size:15px;
   }
 }
 /*END SHOP LIST SECTION*/
