@@ -173,40 +173,7 @@
   display: inline-flex;
 }
 
-.c-animation-jump {
-  display: block;
-  transform-origin: center bottom;
-}
 
-.c-animation-jump.is-jump-once {
-  animation: p-storedetail-jump 1.8s ease-in-out 1;
-}
-
-@keyframes p-storedetail-jump {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-0.875rem);
-  }
-  35% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-0.4375rem);
-  }
-  65% {
-    transform: translateY(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .c-animation-jump,
-  .c-animation-jump.is-jump-once {
-    animation: none;
-  }
-}
 
 /* LOCATION ICON */
 .p-storedetail_location_icon {
