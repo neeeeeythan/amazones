@@ -113,6 +113,10 @@
   display: flex;
 }
 
+.p-price_col_row {
+  display: flex;
+}
+
 /* TEXT CONTAINER */
 .p-price_text_container {
   display: flex;
@@ -831,7 +835,8 @@
     padding-bottom: 3rem;
   }
 
-  .p-price_content .flex {
+  .p-price_content .flex,
+  .p-price_col_row {
     flex-direction: column;
   }
 
@@ -918,31 +923,31 @@
 
   /* ANNOUNCEMENT SPEAK PERSONS */
   .p-price_speak_container02 {
-    bottom: 0;
-    left: -0.5rem;
+    bottom: -1.5rem;
+    left: 4.5rem;
   }
 
   .p-price_speak_container03 {
-    bottom: 0;
-    right: -0.5rem;
+    bottom: -1.5rem;
+    right: 4.5rem;
   }
 
   .p-price_speak_person02,
   .p-price_speak_person03 {
-    height: 13rem;
+    height: 15rem;
   }
 
   .p-price_speak_bubble02 {
-    right: 8rem;
-    top: -2rem;
-    width: 6rem;
+    right: 6rem;
+    top: -1rem;
+    width: 5rem;
     height: auto;
   }
 
   .p-price_speak_bubble03 {
     right: -4rem;
-    top: -2.5rem;
-    width: 6rem;
+    top: -1rem;
+    width: 5rem;
     height: auto;
   }
 

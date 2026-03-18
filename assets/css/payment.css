@@ -572,12 +572,30 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
     width: 100%;
     margin-top: 2rem;
   }
+  .p-payment_speak_mobile_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .p-payment_speak_bubble_mobile {
+    position: absolute;
+    top: -2.5rem;
+    right: 8rem;
+    width: 5rem;
+    height: auto;
+    max-width: 10rem;
+    z-index: 1;
+  }
+  .p-payment_speak_bubble_mobile--right {
+    right: -5rem;
+  }
   .p-payment_speak_person_mobile {
-    height: 15rem;
+    height: 20rem;
     width: auto;
     object-fit: contain;
   }
@@ -633,13 +651,21 @@
   .p-payment_about_card_body {
     padding: 1.25rem;
   }
+
+  .p-payment_about_card_title {
+    padding-right: 1.25rem;
+  }
+
+
   .p-payment_about_card_title h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
   }
   .p-payment_about_card_icon {
     width: 4rem;
     height: 4rem;
     flex-shrink: 0;
+    padding: 0.5rem;
   }
 
   /* FAQ CARDS */
@@ -661,6 +687,35 @@
 
   /* MOBILE SPEAK */
   .p-payment_speak_person_mobile {
-    height: 12rem;
+    height: 18rem;
+  }
+  .p-payment_speak_bubble_mobile {
+    max-width: 8rem;
+    top: -2rem;
+    right: 6rem;
+  }
+  .p-payment_speak_bubble_mobile--right {
+    right: -3.5rem;
+  }
+
+  /* SPEAK PERSON 01 — show in-flow above text block, centered */
+  .p-payment_speak_container01 {
+    display: flex;
+    position: relative;
+    top: auto;
+    right: auto;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .p-payment_speak_image01 {
+    align-items: center;
+  }
+  .p-payment_speak_person01 {
+    height: 16rem;
+  }
+  .p-payment_speak_bubble01 {
+    top: -1rem;
+    right: 7rem;
+    height: 6rem;
   }
 }
