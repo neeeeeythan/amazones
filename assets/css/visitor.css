@@ -105,7 +105,8 @@
 
 .p-visitor_content {
   position: relative;
-  padding: 7rem 0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 /* TEXT CONTAINER */
@@ -172,12 +173,12 @@
 }
 
 .p-visitor_campaign_header h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
 .p-visitor_campaign_header span {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--text-lightBlue);
   font-weight: 500;
 }
@@ -606,7 +607,7 @@
   /* CAMPAIGN SECTION — stack vertically */
   .p-visitor_campaign_row { flex-direction: column; }
   .p-visitor_campaign_img { width: 100%; max-width: 100%; }
-  .p-visitor_content { padding: 4rem 0; }
+  .p-visitor_content { padding-top: 4rem; padding-bottom: 4rem; }
 
   /* SUMMARY / ABOUT — stack card rows to single column */
   .p-visitor_about { padding-top: 3rem; padding-bottom: 3rem; }
@@ -668,8 +669,18 @@
   /* VISITOR TITLES */
   .p-visitor_title { font-size: 2.5rem; }
   .p-visitor_subtitle { font-size: 1rem; }
-  .p-visitor_content { padding: 3rem 0; }
+  .p-visitor_content { padding-top: 3rem; padding-bottom: 3rem; }
   .p-visitor_title_container { margin-bottom: 1.5rem; }
+
+  /* CAMPAIGN SECTION — mobile fine-tuning */
+  .p-visitor_campaign_row {
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .p-visitor_campaign_img {
+    max-height: 260px;
+    object-fit: contain;
+  }
 
   /* CAMPAIGN HEADING */
   .p-visitor_campaign_header h2 { font-size: 1.25rem; }
