@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* ============================================
     START STORELIST BANNER
    ============================================ */
@@ -100,6 +104,15 @@
   margin-bottom: 7rem;
 }
 
+.p-storelist_links-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .p-storelist_links-item {
   display: flex;
   align-items: center;
@@ -114,6 +127,19 @@
 }
 
 .p-storelist_links-item:hover {
+  color: var(--base-lightBlue);
+}
+
+.p-storelist_links-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.p-storelist_links-item a:hover {
   color: var(--base-lightBlue);
 }
 
