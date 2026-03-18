@@ -54,7 +54,7 @@
 .btn-light-blue img{
   transition:all 0.3s ease-in-out;
 }
-.btn-light-blue:hover img {
+.btn-light-blue:hover img:last-child {
   /* filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
     hue-rotate(96deg) brightness(92%) contrast(82%); */
       transform: translateX(8px);
