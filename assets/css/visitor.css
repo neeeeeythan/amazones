@@ -156,6 +156,7 @@
   font-size: 6.259rem;
   line-height: 1.3;
   font-weight: 400;
+  margin: 0;
 }
 
 .p-visitor_campaign_block {
@@ -170,7 +171,7 @@
   border-bottom: 1px solid var(--base-lightBlue);
 }
 
-.p-visitor_campaign_header p {
+.p-visitor_campaign_header h2 {
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -481,6 +482,10 @@
 
 /* END CHECKLIST */
 
+.footer-page-link h3 {
+  margin: 0;
+}
+
 /* START HOW TO USE SECTION */
 
 .p-visitor_howTo_section {
@@ -580,30 +585,104 @@
 
 /* END HOW TO USE SECTION */
 
-/* TABLET */
+/* Campaign image — desktop sizing */
+.p-visitor_campaign_img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Mobile speak block — hidden by default on desktop */
+.p-visitor_speak_mobile {
+  display: none;
+}
+
+/* TABLET + MOBILE */
 @media (max-width: 1024px) {
-  .p-visitor_banner {
-    width: 100%;
-    height: 20rem;
-    position: relative;
-    overflow: visible;
+  /* BANNER */
+  .p-banner-content { left: 2.5rem; }
+  .p-banner-title { font-size: 1.875rem; }
+  .p-banner-subtitle { font-size: 1.125rem; }
+
+  /* VISITOR TITLE */
+  .p-visitor_title { font-size: 4rem; }
+
+  /* CAMPAIGN SECTION — stack vertically */
+  .p-visitor_campaign_row { flex-direction: column; }
+  .p-visitor_campaign_img { width: 100%; max-width: 100%; }
+  .p-visitor_content { padding: 4rem 0; }
+
+  /* SUMMARY / ABOUT — stack card rows to single column */
+  .p-visitor_about { padding-top: 3rem; padding-bottom: 3rem; }
+  .p-visitor_about_row { flex-direction: column; gap: 2rem; }
+  .p-visitor_about_header,
+  .p-visitor_header_red { width: 100%; }
+  .p-visitor_about_card_body,
+  .p-visitor_about_card_body2 { padding: 1.5rem; }
+
+  /* HOW TO USE — stack steps vertically, rotate dividers */
+  .p-visitor_howTo_steps { flex-direction: column; }
+  .p-visitor_howTo_divider {
+    width: 80%;
+    height: 1px;
+    align-self: center;
   }
 
-  .p-visitor_faq_ribbon {
-    width: 90vw;
-    right: -5%;
+  /* FAQ */
+  .p-visitor_faq_ribbon { width: 90vw; right: -5%; }
+  .p-visitor_faq_row { flex-direction: column; gap: 1.5rem; }
+
+  /* SPEAK PERSONS — hide absolutely-positioned desktop versions */
+  .p-visitor_speak_container01 { display: none; }
+  .p-visitor_speak_container02 { display: none; }
+
+  /* MOBILE SPEAK BLOCK — show in-flow */
+  .p-visitor_speak_mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .p-visitor_speak_person_mobile {
+    height: 15rem;
+    width: auto;
+    object-fit: contain;
   }
 }
 
-/* MOBILE */
+/* MOBILE — fine-tuning */
 @media (max-width: 767px) {
-  .p-visitor_faq_row {
-    gap: 1.5rem;
-  }
+  /* BANNER */
+  .p-banner-content { left: 1.25rem; gap: 0.5rem; }
+  .p-banner-title { font-size: 1.375rem; }
+  .p-banner-subtitle { font-size: 0.9375rem; }
 
-  .p-visitor_faq_ribbon {
-    width: 100vw;
-    right: 0;
-    top: 0;
-  }
+  /* VISITOR TITLES */
+  .p-visitor_title { font-size: 2.5rem; }
+  .p-visitor_subtitle { font-size: 1rem; }
+  .p-visitor_content { padding: 3rem 0; }
+  .p-visitor_title_container { margin-bottom: 1.5rem; }
+
+  /* CAMPAIGN HEADING */
+  .p-visitor_campaign_header h2 { font-size: 1.25rem; }
+
+  /* ABOUT CARDS */
+  .p-visitor_about_card_body,
+  .p-visitor_about_card_body2 { padding: 1.25rem; }
+
+  /* HOW TO USE */
+  .p-visitor_howTo_step { padding: 2rem 1.25rem; gap: 1.5rem; }
+  .p-visitor_howTo_step_title { font-size: 1.5rem; }
+  .p-visitor_howTo_step_desc { line-height: 2rem; }
+
+  /* FAQ */
+  .p-visitor_faq { padding: 4rem 0; }
+  .p-visitor_faq_ribbon { width: 100vw; right: 0; top: 0; }
+
+  /* MOBILE SPEAK */
+  .p-visitor_speak_person_mobile { height: 12rem; }
 }
