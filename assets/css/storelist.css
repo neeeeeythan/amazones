@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mobile ribbon hidden by default on desktop */
+.p-storelist_banner-ribbon_sp {
+  display: none;
+}
+
 /* ============================================
     START STORELIST BANNER
    ============================================ */
@@ -401,4 +406,116 @@ html {
   width: auto;
   height: auto;
   z-index: 0;
+}
+
+/* ============================================
+   TABLET + MOBILE  (max-width: 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+  /* --- BANNER --- */
+  .p-storelist_banner {
+    height: 280px;
+  }
+
+  .p-storelist_banner-content {
+    left: 1.25rem;
+  }
+
+  .p-storelist_banner-title {
+    font-size: 1.75rem;
+  }
+
+  .p-storelist_banner-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .p-storelist_banner-ribbon {
+    display: none;
+  }
+
+  .p-storelist_banner-ribbon_sp {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: auto;
+    right: -15%;
+    height: 50%;
+    width: auto;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  /* --- NAV LINKS --- */
+  .p-storelist_links-nav {
+    flex-wrap: wrap;
+    gap: 0.875rem;
+    padding-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .p-storelist_links-list {
+    flex-wrap: wrap;
+    gap: 0.875rem;
+  }
+
+  /* --- SECTION HEADER --- */
+  .p-storelist_location_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+  }
+
+  /* --- SECTION CONTENT PADDING --- */
+  #hokkaido-tohoku .c-maxWidth,
+  #kanto .c-maxWidth,
+  #chubu .c-maxWidth,
+  #kinki .c-maxWidth,
+  #chugoku-shikoku .c-maxWidth,
+  #kyushu-okinawa .c-maxWidth {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* --- STORE CARD GRID: 1 column --- */
+  .p-storelist_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .p-storelist_card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  /* --- DECORATIVE ELEMENTS --- */
+  .p-storelist_speak_container01,
+  .p-storelist_speak_container02 {
+    display: none;
+  }
+
+  .p-storelist_ribbon01,
+  .p-storelist_ribbon02 {
+    display: none;
+  }
+}
+
+/* ============================================
+   MOBILE ONLY  (max-width: 767px)
+   ============================================ */
+@media (max-width: 767px) {
+  .p-storelist_banner {
+    height: 220px;
+  }
+
+  .p-storelist_banner-title {
+    font-size: 1.5rem;
+  }
+
+  .p-storelist_banner-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .p-storelist_links-nav {
+    margin-bottom: 2rem;
+  }
 }
