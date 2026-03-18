@@ -593,8 +593,13 @@
   flex-shrink: 0;
 }
 
-/* Mobile speak block — hidden by default on desktop */
-.p-visitor_speak_mobile {
+/* SPEAK PERSONS — mobile in-flow versions, hidden on desktop */
+.p-visitor_speak_row--sp {
+  display: none;
+}
+
+.p-visitor_speak_image01--sp,
+.p-visitor_speak_image02--sp {
   display: none;
 }
 
@@ -637,8 +642,8 @@
   .p-visitor_speak_container01 { display: none; }
   .p-visitor_speak_container02 { display: none; }
 
-  /* MOBILE SPEAK BLOCK — show in-flow */
-  .p-visitor_speak_mobile {
+  /* SPEAK PERSONS — show in-flow on tablet/mobile */
+  .p-visitor_speak_row--sp {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -647,10 +652,31 @@
     width: 100%;
     margin-top: 2rem;
   }
-  .p-visitor_speak_person_mobile {
+  .p-visitor_speak_image01--sp,
+  .p-visitor_speak_image02--sp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+  }
+  .p-visitor_speak_image01--sp .p-visitor_speak_person01,
+  .p-visitor_speak_image02--sp .p-visitor_speak_person02 {
     height: 15rem;
     width: auto;
     object-fit: contain;
+  }
+  .p-visitor_speak_image01--sp .p-visitor_speak_bubble01 {
+    width: 5rem;
+    height: auto;
+    top: -2rem;
+    right: -1rem;
+  }
+  .p-visitor_speak_image02--sp .p-visitor_speak_bubble02 {
+    width: 5rem;
+    height: auto;
+    top: -2rem;
+    left: -1rem;
   }
 }
 
@@ -683,6 +709,7 @@
   .p-visitor_faq { padding: 4rem 0; }
   .p-visitor_faq_ribbon { width: 100vw; right: 0; top: 0; }
 
-  /* MOBILE SPEAK */
-  .p-visitor_speak_person_mobile { height: 12rem; }
+  /* SPEAK PERSONS — fine-tune size on mobile */
+  .p-visitor_speak_image01--sp .p-visitor_speak_person01,
+  .p-visitor_speak_image02--sp .p-visitor_speak_person02 { height: 12rem; }
 }
