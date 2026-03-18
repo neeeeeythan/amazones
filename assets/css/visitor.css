@@ -593,16 +593,6 @@
   flex-shrink: 0;
 }
 
-/* SPEAK PERSONS — mobile in-flow versions, hidden on desktop */
-.p-visitor_speak_row--sp {
-  display: none;
-}
-
-.p-visitor_speak_image01--sp,
-.p-visitor_speak_image02--sp {
-  display: none;
-}
-
 /* TABLET + MOBILE */
 @media (max-width: 1024px) {
   /* BANNER */
@@ -638,45 +628,33 @@
   .p-visitor_faq_ribbon { width: 90vw; right: -5%; }
   .p-visitor_faq_row { flex-direction: column; gap: 1.5rem; }
 
-  /* SPEAK PERSONS — hide absolutely-positioned desktop versions */
-  .p-visitor_speak_container01 { display: none; }
-  .p-visitor_speak_container02 { display: none; }
-
-  /* SPEAK PERSONS — show in-flow on tablet/mobile */
-  .p-visitor_speak_row--sp {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 3rem;
-    width: 100%;
-    margin-top: 2rem;
+  /* SPEAK PERSONS — reposition at bottom on tablet/mobile */
+  .p-visitor_speak_container01 {
+    bottom: -1.5rem;
+    left: 5rem;
   }
-  .p-visitor_speak_image01--sp,
-  .p-visitor_speak_image02--sp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    flex: 1;
+  .p-visitor_speak_container02 {
+    bottom: -1.5rem;
+    right: 5rem;
   }
-  .p-visitor_speak_image01--sp .p-visitor_speak_person01,
-  .p-visitor_speak_image02--sp .p-visitor_speak_person02 {
-    height: 15rem;
-    width: auto;
-    object-fit: contain;
+  .p-visitor_speak_person01,
+  .p-visitor_speak_person02 {
+    height: 18rem;
   }
-  .p-visitor_speak_image01--sp .p-visitor_speak_bubble01 {
+  .p-visitor_speak_bubble01 {
+    right: 5rem;
+    top: -1rem;
     width: 5rem;
     height: auto;
-    top: -2rem;
-    right: -1rem;
   }
-  .p-visitor_speak_image02--sp .p-visitor_speak_bubble02 {
+  .p-visitor_speak_bubble02 {
+    right: -4rem;
+    top: -1rem;
     width: 5rem;
     height: auto;
-    top: -2rem;
-    left: -1rem;
+  }
+  .c-announcement {
+    padding-bottom: 14rem !important;
   }
 }
 
@@ -710,6 +688,6 @@
   .p-visitor_faq_ribbon { width: 100vw; right: 0; top: 0; }
 
   /* SPEAK PERSONS — fine-tune size on mobile */
-  .p-visitor_speak_image01--sp .p-visitor_speak_person01,
-  .p-visitor_speak_image02--sp .p-visitor_speak_person02 { height: 12rem; }
+  .p-visitor_speak_person01,
+  .p-visitor_speak_person02 { height: 15rem; }
 }
