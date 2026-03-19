@@ -1,14 +1,14 @@
 /* ============================================
     START VISITOR BANNER
    ============================================ */
-.p-visitor_banner {
+.p-visitor__banner {
   width: 100%;
   height: calc(100vw * 300 / 1920);
   position: relative;
   overflow: visible;
 }
 
-.p-visitor_banner-inner {
+.p-visitor__banner-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.p-visitor_banner-img {
+.p-visitor__banner-img {
   position: absolute;
   right: -25.8%;
   bottom: -146%;
@@ -26,7 +26,7 @@
   max-width: none;
 }
 
-.p-visitor_banner-overlay {
+.p-visitor__banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@
 }
 
 /* Ribbon banner SVG decoration */
-.p-visitor_banner-ribbon {
+.p-visitor__banner-ribbon {
   position: absolute;
   right: -45%;
   top: -43%;
@@ -54,7 +54,7 @@
 }
 
 /* Text content */
-.p-visitor_banner-content {
+.p-visitor__banner-content {
   position: absolute;
   top: 50%;
   left: 5.75rem;
@@ -62,7 +62,7 @@
   z-index: 3;
 }
 
-.p-visitor_banner-title {
+.p-visitor__banner-title {
   font-size: 2.5rem;
   line-height: 1.3;
   letter-spacing: 0.08em;
@@ -70,7 +70,7 @@
   font-weight: 400;
 }
 
-.p-visitor_banner-subtitle {
+.p-visitor__banner-subtitle {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: var(--base-lightBlue);
@@ -81,7 +81,7 @@
 }
 
 /* Custom Breadcrumb styles for visitor page  */
-.p-visitor_breadcrumb {
+.p-visitor__breadcrumb {
   top: 140%;
 }
 
@@ -93,7 +93,7 @@
    START VISITOR
    ============================================ */
 
-.p-visitor_section_white {
+.p-visitor__section--white {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -101,15 +101,17 @@
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
-.p-visitor_content {
+.p-visitor__content {
   position: relative;
-  padding: 7rem 0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 /* TEXT CONTAINER */
-.p-visitor_text_container {
+.p-visitor__text-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -119,64 +121,66 @@
   position: relative;
 }
 
-.p-visitor_text_block {
+.p-visitor__text-block {
   display: flex;
   flex-direction: column;
 }
 
-.p-visitor_text_block p {
+.p-visitor__text-block p {
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 500;
 }
 
-.p-visitor_text_block span {
+.p-visitor__text-block span {
   font-weight: 500;
   color: var(--text-lightBlue);
 }
 
-.p-visitor_card_logo {
+.p-visitor__card-logo {
   width: auto;
   height: 1.5rem;
 }
 
-.p-visitor_title_container {
+.p-visitor__title-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 3rem;
 }
 
-.p-visitor_subtitle {
+.p-visitor__subtitle {
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-.p-visitor_title {
+.p-visitor__title {
   font-size: 6.259rem;
   line-height: 1.3;
   font-weight: 400;
+  margin: 0;
 }
 
-.p-visitor_campaign_block {
+.p-visitor__campaign-block {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.p-visitor_campaign_header {
+.p-visitor__campaign-header {
   padding: 2rem 0;
   border-bottom: 1px solid var(--base-lightBlue);
 }
 
-.p-visitor_campaign_header p {
-  font-size: 1.5rem;
+.p-visitor__campaign-header h2 {
+  font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
-.p-visitor_campaign_header span {
-  font-size: 1.5rem;
+.p-visitor__campaign-header span {
+  font-size: 1.25rem;
   color: var(--text-lightBlue);
   font-weight: 500;
 }
@@ -188,13 +192,13 @@
 /* ============================================
     START ABOUT
     ============================================ */
-.p-visitor_section_lightblue {
+.p-visitor__section--lightblue {
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
 }
 
-.p-visitor_about {
+.p-visitor__about {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -205,8 +209,8 @@
 
 /* ABOUT BOX */
 
-.p-visitor_about_card,
-.p-visitor_about_card2 {
+.p-visitor__about-card,
+.p-visitor__about-card--alt {
   width: 100%;
   height: 100%;
   display: flex;
@@ -214,39 +218,43 @@
   justify-content: center;
   /* gap: 1rem; */
   background-color: white;
+  flex: 1 1 0%;
 }
 
-.p-visitor_about_card2 {
+.p-visitor__about-card--alt {
   min-height: 18rem;
   justify-content: start;
   font-weight: 500;
 }
 
-.p-visitor_about_card span,
-.p-visitor_about_card2 span {
+.p-visitor__about-card span,
+.p-visitor__about-card--alt span {
   color: var(--text-lightBlue);
 }
 
-.p-visitor_about_card_body,
-.p-visitor_about_card_body2 {
+.p-visitor__about-card-body,
+.p-visitor__about-card-body--alt {
   padding: 1.5rem 2.5rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-family: var(--font-zen);
 }
 
-.p-visitor_about_card_body p {
+.p-visitor__about-card-body p {
   font-weight: 500;
   line-height: 2rem;
+  font-family: var(--font-zen);
 }
 
-.p-visitor_about_card_body2 p {
+.p-visitor__about-card-body--alt p {
   font-weight: 500;
   line-height: 2rem;
+  font-family: var(--font-zen);
 }
 
-.p-visitor_about_card_icon {
+.p-visitor__about-card-icon {
   width: auto;
   height: auto;
   padding: 1.5rem;
@@ -259,8 +267,8 @@
   background-color: var(--base-lightBlue);
 }
 
-.p-visitor_about_header,
-.p-visitor_header_red {
+.p-visitor__about-header,
+.p-visitor__about-header--red {
   width: 15rem;
   background-color: var(--base-lightBlue);
   color: white;
@@ -270,11 +278,17 @@
   padding: 1rem 0;
 }
 
-.p-visitor_header_red {
-  background-color: var(--base-red);
+.p-visitor__about-header h4,
+.p-visitor__about-header--red h4 {
+  font-family: var(--font-zen);
 }
 
-.p-visitor_about_subheader h4 {
+.p-visitor__about-header--red {
+  background-color: var(--base-red);
+  gap: 0.5rem;
+}
+
+.p-visitor__about-subheader h4 {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -287,7 +301,7 @@
    START FAQ
    ============================================ */
 
-.p-visitor_faq_ribbon {
+.p-visitor__faq-ribbon {
   position: absolute;
   top: -5%;
   right: -10%;
@@ -296,7 +310,7 @@
   pointer-events: none;
   overflow: hidden;
 }
-.p-visitor_faq_card {
+.p-visitor__faq-card {
   border: 1px solid var(--base-lightBlue);
   width: 100%;
   padding: 0 1.2rem;
@@ -304,25 +318,25 @@
   flex-direction: column;
 }
 
-.p-visitor_faq_q,
-.p-visitor_faq_a {
+.p-visitor__faq-question,
+.p-visitor__faq-answer {
   display: flex;
   align-items: center;
   font-weight: 500;
   padding: 1.2rem 0;
 }
 
-.p-visitor_faq_q {
+.p-visitor__faq-question {
   border-bottom: 1px solid var(--base-lightBlue);
 }
 
-.p-visitor_horizontal_line {
+.p-visitor__horizontal-line {
   width: 5%;
   height: 2px;
   background-color: var(--base-lightBlue);
 }
 
-.p-visitor_faq_section {
+.p-visitor__faq-section {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/common/img_gym01.webp");
@@ -331,14 +345,14 @@
   background-repeat: no-repeat;
 }
 
-.p-visitor_faq {
+.p-visitor__faq {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   padding: 8rem 0;
 }
 
-.p_visitor_faq_card {
+.p-visitor__info-card {
   display: flex;
   flex-direction: column;
 
@@ -346,17 +360,17 @@
   flex: 1;
 }
 
-.p_visitor_faq_card_header {
+.p-visitor__info-card-header {
   display: flex;
   align-items: center;
 }
 
-.p_visitor_faq_card_header h3 {
+.p-visitor__info-card-header h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.p_visitor_faq_card_icon {
+.p-visitor__info-card-icon {
   background-color: var(--base-lightBlue);
   display: flex;
   align-items: center;
@@ -366,7 +380,7 @@
   width: 5.625rem;
 }
 
-.p_visitor_faq_card_icon_btn {
+.p-visitor__info-card-icon-btn {
   width: 2.5rem;
   height: 2.5rem;
   background-color: var(--base-lightBlue);
@@ -376,18 +390,18 @@
   justify-content: center;
 }
 
-.p_visitor_faq_card_body {
+.p-visitor__info-card-body {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
   padding: 2rem 2.5rem;
 }
 
-.p_visitor_faq_card span {
+.p-visitor__info-card span {
   color: var(--base-lightBlue);
 }
 
-.p-visitor_faq_row {
+.p-visitor__faq-row {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
@@ -395,8 +409,8 @@
 
 /* SPEAK PERSON */
 
-/* 01 */
-.p-visitor_speak_container01 {
+/* LEFT */
+.p-visitor__speak-container--left {
   position: absolute;
   bottom: 0rem;
   left: 0.5rem;
@@ -404,14 +418,14 @@
   pointer-events: none;
 }
 
-.p-visitor_speak_image01 {
+.p-visitor__speak-image--left {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.p-visitor_speak_bubble01 {
+.p-visitor__speak-bubble--left {
   position: absolute;
   top: -3rem;
   right: 7rem;
@@ -420,14 +434,14 @@
   z-index: 1;
 }
 
-.p-visitor_speak_person01 {
+.p-visitor__speak-person--left {
   width: auto;
   height: 25rem;
   object-fit: contain;
 }
 
-/* 02 */
-.p-visitor_speak_container02 {
+/* RIGHT */
+.p-visitor__speak-container--right {
   position: absolute;
   bottom: 0rem;
   right: -3rem;
@@ -435,14 +449,14 @@
   pointer-events: none;
 }
 
-.p-visitor_speak_image02 {
+.p-visitor__speak-image--right {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.p-visitor_speak_bubble02 {
+.p-visitor__speak-bubble--right {
   position: absolute;
   top: -5rem;
   right: -4rem;
@@ -451,14 +465,14 @@
   z-index: 1;
 }
 
-.p-visitor_speak_person02 {
+.p-visitor__speak-person--right {
   width: auto;
   height: 25rem;
   object-fit: contain;
 }
 
 /* START CHECKLIST */
-.p-visitor_checklist {
+.p-visitor__checklist {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -467,12 +481,17 @@
   gap: 0.75rem;
 }
 
-.p-visitor_checklist_item {
+.p-visitor__checklist-item {
   color: #333;
   line-height: 1.6;
+  font-family: var(--font-zen);
 }
 
-.p-visitor_checklist_note {
+.p-visitor__checklist-item span {
+  color: var(--text-lightBlue);
+}
+
+.p-visitor__checklist-note {
   color: #555;
   padding-left: 1.2rem;
   line-height: 1.6;
@@ -481,9 +500,113 @@
 
 /* END CHECKLIST */
 
+/* ============================================
+   NEW BEM CLASSES (replacing utility classes)
+   ============================================ */
+
+/* CAMPAIGN ROW */
+.p-visitor__campaign-row {
+  display: flex;
+  gap: 30px;
+}
+
+/* CAMPAIGN BLOCK */
+.p-visitor__campaign-block {
+  font-family: var(--font-zen);
+}
+
+/* CAMPAIGN DESC */
+.p-visitor__campaign-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 500;
+  font-family: var(--font-zen);
+}
+
+/* ABOUT GROUPS */
+.p-visitor__about-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* ABOUT GROUP */
+.p-visitor__about-group {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ABOUT ROW */
+.p-visitor__about-row {
+  display: flex;
+  gap: 50px;
+}
+
+/* ABOUT ALT HEADING */
+.p-visitor__about-alt-heading {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 12px 0;
+  line-height: 2;
+}
+
+.p-visitor__about-alt-heading h2 {
+  font-family: var(--font-zen);
+  color: var(--text-lightBlue);
+}
+
+/* SUBTITLE & TITLE font families */
+.p-visitor__subtitle {
+  font-family: var(--font-zen);
+}
+
+.p-visitor__title {
+  font-family: var(--font-outfit);
+}
+
+/* White text for howto section */
+.p-visitor__howto-section .p-visitor__title-container,
+.p-visitor__howto-section .p-visitor__subtitle,
+.p-visitor__howto-section .p-visitor__title {
+  color: white;
+}
+
+/* HOWTO CONTENT (was py-100) */
+.p-visitor__howto-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* HOWTO CONTENT BODY */
+.p-visitor__howto-content-body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* FAQ CONTENT (was py-100) */
+.p-visitor__faq-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* FAQ LIST */
+.p-visitor__faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-page-link h3 {
+  margin: 0;
+}
+
 /* START HOW TO USE SECTION */
 
-.p-visitor_howTo_section {
+.p-visitor__howto-section {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/common/img_gym03.webp");
@@ -492,21 +615,21 @@
   background-repeat: no-repeat;
 }
 
-.p-visitor_glassy_background_container {
+.p-visitor__glassy-bg {
   background-color: rgba(42, 42, 42, 0.5);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   padding: 1rem;
 }
 
-.p-visitor_howTo_steps {
+.p-visitor__howto-steps {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   border: 1px solid rgba(129, 216, 208, 0.4);
 }
 
-.p-visitor_howTo_step {
+.p-visitor__howto-step {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -516,14 +639,14 @@
   gap: 2.5rem;
 }
 
-.p-visitor_howTo_divider {
+.p-visitor__howto-divider {
   width: 1px;
   height: 15rem;
   background-color: rgba(238, 240, 243, 0.5);
   align-self: center;
 }
 
-.p-visitor_howTo_step_icon {
+.p-visitor__howto-step-icon {
   width: 3.5rem;
   height: 3.5rem;
   border: 1.5px solid var(--base-lightBlue);
@@ -535,30 +658,33 @@
   box-sizing: border-box;
 }
 
-.p-visitor_howTo_step_label {
+.p-visitor__howto-step-label {
   font-size: 1.5rem;
   font-weight: 500;
   color: white;
   letter-spacing: 0.05em;
+  font-family: var(--font-outfit);
 }
 
-.p-visitor_howTo_step_title {
+.p-visitor__howto-step-title {
   font-size: 1.875rem;
   font-weight: 600;
   color: var(--text-lightBlue);
   letter-spacing: 0.05em;
+  font-family: var(--font-zen);
 }
 
-.p-visitor_howTo_step_desc {
+.p-visitor__howto-step-desc {
   font-size: 1rem;
   font-weight: 500;
   color: white;
   line-height: 2.5rem;
   /* max-width: 18rem; */
   text-align: justify;
+  font-family: var(--font-zen);
 }
 
-.p-visitor_howTo_step_btn {
+.p-visitor__howto-step-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -573,37 +699,135 @@
   transition: all 0.3s ease-in-out;
 }
 
-.p-visitor_howTo_step_btn:hover {
+.p-visitor__howto-step-btn:hover {
   background-color: var(--base-lightBlue);
   color: white;
 }
 
 /* END HOW TO USE SECTION */
 
-/* TABLET */
-@media (max-width: 1024px) {
-  .p-visitor_banner {
-    width: 100%;
-    height: 20rem;
-    position: relative;
-    overflow: visible;
-  }
+/* Campaign image — desktop sizing */
+.p-visitor__campaign-img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
 
-  .p-visitor_faq_ribbon {
-    width: 90vw;
-    right: -5%;
+/* TABLET + MOBILE */
+@media (max-width: 1024px) {
+  /* BANNER */
+  .p-banner-content { left: 2.5rem; }
+  .p-banner-title { font-size: 1.875rem; }
+  .p-banner-subtitle { font-size: 1.125rem; }
+
+  /* VISITOR TITLE */
+  .p-visitor__title { font-size: 4rem; }
+
+  /* CAMPAIGN SECTION — stack vertically */
+  .p-visitor__campaign-row { flex-direction: column; }
+  .p-visitor__campaign-img { width: 100%; max-width: 100%; }
+  .p-visitor__content { padding-top: 4rem; padding-bottom: 4rem; }
+
+  /* SUMMARY / ABOUT — stack card rows to single column */
+  .p-visitor__about { padding-top: 3rem; padding-bottom: 3rem; }
+  .p-visitor__about-row { flex-direction: column; gap: 2rem; }
+  .p-visitor__about-header,
+  .p-visitor__about-header--red { width: 100%; }
+  .p-visitor__about-card-body,
+  .p-visitor__about-card-body--alt { padding: 1.5rem; }
+
+  /* HOW TO USE — stack steps vertically, rotate dividers */
+  .p-visitor__howto-steps { flex-direction: column; }
+  .p-visitor__howto-divider {
+    width: 80%;
+    height: 1px;
+    align-self: center;
+  }
+  .p-visitor__howto-content { padding-top: 60px; padding-bottom: 60px; }
+  .p-visitor__howto-content-body { gap: 2rem; }
+
+  /* ABOUT GROUPS */
+  .p-visitor__about-groups { gap: 3rem; }
+  .p-visitor__about-group { gap: 2rem; }
+
+  /* FAQ */
+  .p-visitor__faq-content { padding-top: 60px; padding-bottom: 60px; }
+  .p-visitor__faq-ribbon { width: 90vw; right: -5%; }
+  .p-visitor__faq-row { flex-direction: column; gap: 1.5rem; }
+
+  /* SPEAK PERSONS — reposition at bottom on tablet/mobile */
+  .p-visitor__speak-container--left {
+    bottom: -1.5rem;
+    left: 5rem;
+  }
+  .p-visitor__speak-container--right {
+    bottom: -1.5rem;
+    right: 5rem;
+  }
+  .p-visitor__speak-person--left,
+  .p-visitor__speak-person--right {
+    height: 18rem;
+  }
+  .p-visitor__speak-bubble--left {
+    right: 5rem;
+    top: -1rem;
+    width: 5rem;
+    height: auto;
+  }
+  .p-visitor__speak-bubble--right {
+    right: -4rem;
+    top: -1rem;
+    width: 5rem;
+    height: auto;
+  }
+  .c-announcement {
+    padding-bottom: 14rem !important;
   }
 }
 
-/* MOBILE */
+/* MOBILE — fine-tuning */
 @media (max-width: 767px) {
-  .p-visitor_faq_row {
+  /* BANNER */
+  .p-banner-content { left: 1.25rem; gap: 0.5rem; }
+  .p-banner-title { font-size: 1.375rem; }
+  .p-banner-subtitle { font-size: 0.9375rem; }
+
+  /* VISITOR TITLES */
+  .p-visitor__title { font-size: 2.5rem; }
+  .p-visitor__subtitle { font-size: 1rem; }
+  .p-visitor__content { padding-top: 3rem; padding-bottom: 3rem; }
+  .p-visitor__title-container { margin-bottom: 1.5rem; }
+
+  /* CAMPAIGN SECTION — mobile fine-tuning */
+  .p-visitor__campaign-row {
     gap: 1.5rem;
+    align-items: center;
+  }
+  .p-visitor__campaign-img {
+    max-height: 260px;
+    object-fit: contain;
   }
 
-  .p-visitor_faq_ribbon {
-    width: 100vw;
-    right: 0;
-    top: 0;
-  }
+  /* CAMPAIGN HEADING */
+  .p-visitor__campaign-header h2 { font-size: 1.25rem; }
+
+  /* ABOUT CARDS */
+  .p-visitor__about-card-body,
+  .p-visitor__about-card-body--alt { padding: 1.25rem; }
+
+  /* HOW TO USE */
+  .p-visitor__howto-step { padding: 2rem 1.25rem; gap: 1.5rem; }
+  .p-visitor__howto-step-title { font-size: 1.5rem; }
+  .p-visitor__howto-step-desc { line-height: 2rem; }
+  .p-visitor__howto-content { padding-top: 40px; padding-bottom: 40px; }
+
+  /* FAQ */
+  .p-visitor__faq-content { padding-top: 40px; padding-bottom: 40px; }
+  .p-visitor__faq { padding: 4rem 0; }
+  .p-visitor__faq-ribbon { width: 100vw; right: 0; top: 0; }
+
+  /* SPEAK PERSONS — fine-tune size on mobile */
+  .p-visitor__speak-person--left,
+  .p-visitor__speak-person--right { height: 15rem; }
 }

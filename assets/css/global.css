@@ -5246,7 +5246,14 @@ body,
 html {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+html {
   overflow-x: hidden;
+}
+
+body {
+  overflow-x: clip;
 }
 
 html {
@@ -5355,7 +5362,7 @@ a {
     END OF HOVER 
    ============================================ */
 /* start jump animation */
-   .c-animation-jump {
+.c-animation-jump {
   display: block;
   transform-origin: center bottom;
 }
@@ -5412,6 +5419,9 @@ a {
 .I-header {
   width: calc(100% - 100px);
   background-color: var(--base-white);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .header-btn {
   width: fit-content;
@@ -5533,7 +5543,7 @@ a {
 }
 @media screen and (max-width: 1090px) {
   .I-header {
-    position: fixed;
+    position: sticky;
     top: 0px;
     z-index: 999;
   }
@@ -6072,8 +6082,6 @@ a {
 }
 /*END TOPIC SECTION*/
 
-
-
 /*RECRUIT BANNER*/
 .recruit-banner-section {
   width: 100%;
@@ -6275,6 +6283,15 @@ a {
   max-width: none;
 }
 
+.p-banner-img2 {
+  position: absolute;
+  right: -25.8%;
+  bottom: -146%;
+  width: auto;
+  height: 425%;
+  max-width: none;
+}
+
 .p-banner-overlay {
   position: absolute;
   top: 0;
@@ -6332,6 +6349,131 @@ a {
 /* Custom Breadcrumb styles for reservation page  */
 .p-breadcrumb {
   top: 140%;
+}
+
+/* --- Banner Responsive Breakpoints --- */
+
+/* Laptop / small desktop */
+@media screen and (max-width: 1440px) {
+  .p-banner {
+    height: calc(100vw * 300 / 1440);
+  }
+  .p-banner-title {
+    font-size: 2rem;
+  }
+  .p-banner-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .ribbon-banner {
+    max-width: 50rem;
+  }
+
+  .p-banner-ribbon {
+    position: absolute;
+    right: -45%;
+    top: -43%;
+    transform: translateY(-50%);
+    height: 250%;
+    width: auto;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .p-banner-content {
+    left: 4rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .p-banner {
+    height: calc(100vw * 280 / 1024);
+  }
+  .p-banner-title {
+    font-size: 1.75rem;
+  }
+  .p-banner-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+  .ribbon-banner {
+    max-width: 40rem;
+  }
+}
+
+/* Small tablet / large mobile */
+@media screen and (max-width: 768px) {
+  .p-banner {
+    height: 20rem;
+  }
+
+  .ribbon-banner {
+    bottom: 25%;
+    right: -30%;
+    height: 30%;
+  }
+
+  .p-banner-content {
+    top: 0;
+    height: 100%;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    left: 1.5rem;
+  }
+
+  .p-banner-title {
+    font-size: 1.375rem;
+  }
+
+  .p-banner-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .p-banner-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgb(79, 79, 79, 1) 0%,
+      rgb(79, 79, 79, 0.6) 20%,
+      rgb(79, 79, 79, 0) 100%
+    );
+  }
+
+  /* BREADCRUMB */
+  .c-breadcrumb {
+    font-size: 0.8125rem;
+    position: relative;
+    margin-top: auto;
+    padding-bottom: 1.25rem;
+  }
+
+  .p-breadcrumb {
+    top: auto;
+  }
+
+  .p-banner-img {
+    left: -50%;
+    top: -80%;
+    height: 300%;
+  }
+
+  .p-banner-img2 {
+    right: -120%;
+    bottom: -70%;
+    height: 280%;
+  }
+}
+
+/* NORMAL MOBILE */
+@media screen and (max-width: 425px) {
+  .p-banner-img {
+    left: -40%;
+    top: -20%;
+    height: 180%;
+  }
 }
 
 /* ============================================
@@ -6699,7 +6841,6 @@ a {
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
   background-position: 0% -170%;
- 
 }
 
 /* END WHITE BACKGROUND */
@@ -6713,7 +6854,6 @@ a {
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
-  
 }
 
 /* END LIGHT BLUE BACKGROUND */
@@ -6795,6 +6935,44 @@ a {
 
 /* END ENDNOTE */
 
+/* start jump animation */
+.c-animation-jump {
+  display: block;
+  transform-origin: center bottom;
+}
+
+.c-animation-jump.is-jump-once {
+  animation: p-storedetail-jump 1.8s ease-in-out 1;
+}
+
+@keyframes p-storedetail-jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-0.875rem);
+  }
+  35% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.4375rem);
+  }
+  65% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-animation-jump,
+  .c-animation-jump.is-jump-once {
+    animation: none;
+  }
+}
+
+/* end jump animation */
+
 /* ============================================
    GLOBAL RESPONSIVE STYLES
    Tablet  ≤ 1024px  |  Mobile ≤ 767px
@@ -6824,27 +7002,6 @@ a {
     min-width: 0;
     padding-left: 14px !important;
     padding-right: 14px !important;
-  }
-
-  /* BANNER */
-  .p-banner {
-    height: 20rem;
-  }
-
-  .p-banner-content {
-    left: 3rem;
-  }
-
-  .p-banner-title {
-    font-size: 1.875rem;
-  }
-
-  .p-banner-subtitle {
-    font-size: 1.125rem;
-  }
-
-  .p-banner-ribbon {
-    right: -55%;
   }
 
   /* C-ANNOUNCEMENT */
@@ -6922,82 +7079,6 @@ a {
   .c-maxWidth {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  /* BANNER */
-  .p-banner {
-    height: 18rem;
-  }
-
-  .ribbon-banner {
-    bottom: 25%;
-    left: 10%;
-    height: 30%;
-  }
-
-  .p-banner-content {
-    top: 0;
-    height: 100%;
-    transform: none;
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    left: 1.5rem;
-  }
-
-  .p-banner-title {
-    font-size: 1.375rem;
-  }
-
-  /* BANNER */
-  .p-banner {
-    height: 18rem;
-  }
-
-  .ribbon-banner {
-    bottom: 25%;
-    left: 10%;
-    height: 30%;
-  }
-
-  .p-banner-content {
-    top: 0;
-    height: 100%;
-    transform: none;
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    left: 1.5rem;
-  }
-
-  .p-banner-title {
-    font-size: 1.375rem;
-  }
-
-  .p-banner-subtitle {
-    font-size: 0.875rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .p-banner-overlay {
-    background: linear-gradient(
-      to bottom,
-      rgb(79, 79, 79, 1) 0%,
-      rgb(79, 79, 79, 0.6) 20%,
-      rgb(79, 79, 79, 0) 100%
-    );
-  }
-
-  /* BREADCRUMB */
-  .c-breadcrumb {
-    font-size: 0.8125rem;
-    position: relative;
-    margin-top: auto;
-    padding-bottom: 1.25rem;
-  }
-
-  .p-breadcrumb {
-    top: auto;
   }
 
   /* C-ANNOUNCEMENT */

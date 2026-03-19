@@ -1,4 +1,4 @@
-document.querySelectorAll('.p-payment_links-nav a').forEach(link => {
+document.querySelectorAll('.p-payment__links-nav a').forEach(link => {
   link.addEventListener('click', e => {
     const href = link.getAttribute('href');
     if (!href || href === '#') return;

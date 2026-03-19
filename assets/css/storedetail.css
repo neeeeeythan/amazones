@@ -1905,3 +1905,134 @@
     width: auto;
   }
 }
+
+/* ═══════════════════════════════════════════════════
+   DR AMAZONES SECTION
+   ═══════════════════════════════════════════════════ */
+
+/* Block */
+.p-storedetail_dr-amazones {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(to bottom, #fafcfb 0%, #fdfdfd 100%);
+}
+
+/* Full-width photo */
+.p-storedetail_dr-amazones-pic {
+  width: 100%;
+  display: block;
+}
+
+/* Content panel — absolutely positioned over the image on desktop */
+.p-storedetail_dr-amazones-content {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--base-white);
+  padding: 60px 77px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Decorative triangle — top-right corner of content panel */
+.p-storedetail_dr-amazones-triangle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Inner flex wrapper (title block + body block) */
+.p-storedetail_dr-amazones-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Header: subtitle label + clinic logo */
+.p-storedetail_dr-amazones-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Clinic logo image */
+.p-storedetail_dr-amazones-label {
+  /* sized by its natural dimensions; overridden on small screens */
+}
+
+/* Body: heading + description text */
+.p-storedetail_dr-amazones-body {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* CTA button */
+.p-storedetail_dr-amazones-btn {
+  margin-top: 40px;
+}
+
+/* ── Tablet (≤ 1024px) — stacked layout, same as mobile ── */
+@media (max-width: 1024px) {
+  .p-storedetail_dr-amazones {
+    flex-direction: column;
+  }
+
+  .p-storedetail_dr-amazones-pic {
+    width: 100vw;
+  }
+
+  .p-storedetail_dr-amazones-content {
+    position: relative;
+    top: auto;
+    transform: none;
+    align-self: flex-end;
+    width: 95%;
+    padding: 30px;
+  }
+
+  .p-storedetail_dr-amazones-inner {
+    gap: 20px;
+  }
+
+  .p-storedetail_dr-amazones-body {
+    gap: 20px;
+  }
+
+  .p-storedetail_dr-amazones-header .fs-18 {
+    font-size: 16px;
+  }
+
+  .p-storedetail_dr-amazones-label {
+    width: 295px;
+    height: auto;
+  }
+
+  .p-storedetail_dr-amazones-triangle {
+    width: 120px;
+    height: auto;
+  }
+
+  .p-storedetail_dr-amazones-btn {
+    display: none;
+  }
+}
+
+/* ── Mobile (≤ 767px) — adds image scale transform ── */
+@media (max-width: 767px) {
+  .p-storedetail_dr-amazones-pic {
+    transform: scale(1.4);
+    object-position: 0 -20px;
+    margin-top: 40px;
+  }
+}

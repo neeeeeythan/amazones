@@ -182,12 +182,12 @@ renderMedicalSection("医療FAQ", medicalQuestionSets.医療FAQ);
 //  Voice slider (mobile only)
 // ─────────────────────────────────────────────
 (function () {
-  const grid = document.querySelector(".p-medical_voice_grid");
-  const btnPrev = document.querySelector(".p-medical_voice_nav--prev");
-  const btnNext = document.querySelector(".p-medical_voice_nav--next");
+  const grid = document.querySelector(".p-medical__voice-grid");
+  const btnPrev = document.querySelector(".p-medical__voice-nav--prev");
+  const btnNext = document.querySelector(".p-medical__voice-nav--next");
   if (!grid || !btnPrev || !btnNext) return;
 
-  const cards = grid.querySelectorAll(".p-medical_voice_card");
+  const cards = grid.querySelectorAll(".p-medical__voice-card");
   const total = cards.length;
   let current = 0;
 

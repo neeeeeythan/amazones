@@ -21,18 +21,19 @@
   </head>
 
   <body>
-    <!--HEADER-->
+   <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
             width="159.97px"
             height="62.77px"
+            class = 'amazones-header-logo'
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14">アマゾネス</a>
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -50,7 +51,7 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
             </div>
           </a>
 
@@ -72,39 +73,39 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
             </div>
           </a>
         </div>
 
-        <!--FLOATING HEADER MENU-->
+       <!--FLOATING HEADER MENU-->
         <div
           id="header-floating-menu"
           class="header-floating-menu flex flex-col items-center justify-between relative"
         >
-          <div
-            id="floating-menu-btn"
-            class="flex flex-col items-center gap-13px"
-          >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
-            <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
-          </div>
+        <div
+          id="floating-menu-btn"
+          class="flex flex-col items-center gap-13px"
+        >
+          <img src="../assets/img/top/icon_menu.svg" alt="アイコン" class="desktop-menu-icon" />
+          <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+          <button class="mobile-hamburger" aria-label="メニュー">
+            <span class="mh-bar"></span>
+            <span class="mh-bar"></span>
+            <span class="mh-bar"></span>
+          </button>
+        </div>
 
           <div
             id="floating-menu-content"
             class="floating-menu-content cursor-pointer"
           >
-            <p
-              class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500"
-            >
+            <p class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500">
               ©2026 Wellness Land Co., Ltd.
             </p>
-            <div
-              class="flex flex-col items-center gap-8px justify-center bg-base-black1"
-            >
-              <p
-                class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover"
-              >
+            <div class="flex flex-col items-center gap-8px justify-center bg-base-black1">
+              <p class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover">
                 SCROLL DOWN
               </p>
               <img
@@ -115,155 +116,221 @@
             </div>
           </div>
         </div>
+
+      
+        <!--header mobile-->
+        <div class = 'mobile-header-overlay relative'>
+          <div class = 'mobile-header-overlay-content'>
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn  bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+              ©2026 Wellness Land Co., Ltd.
+            </p>
       </div>
     </header>
 
     <main>
       <!-- BANNER -->
-      <section class="p-storelist_banner">
-        <div class="p-storelist_banner-inner">
-          <img
-            src="../assets/img/common/img_gym02.webp"
-            alt="予約バナー"
-            class="p-storelist_banner-img"
-          />
+      <section class="banner-section">
+        <div class="p-banner">
+          <div class="p-banner-inner">
+            <img
+              src="../assets/img/common/img_gym02.webp"
+              alt="予約バナー"
+              class="p-banner-img"
+            />
 
-          <div class="p-storelist_banner-overlay"></div>
-        </div>
+            <div class="p-banner-overlay"></div>
+          </div>
 
-        <!-- BANNER TEXT -->
-        <div class="p-storelist_banner-content">
-          <h1 class="p-storelist_banner-title font-zen text-white">店舗一覧</h1>
-          <p class="p-storelist_banner-subtitle font-outfit">Storelist</p>
-          <!-- BREADCRUMB -->
-          <nav class="c-breadcrumb p-storelist_breadcrumb">
-            <a href="../index.html" class="c-breadcrumb-home">
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 17 17"
-                width="17"
-                height="17"
-              >
-                <path
-                  id="シェイプ 894"
-                  fill="#81d7cf"
-                  d="m6.81 16.4v-4.21c0-0.3 0.3-0.6 0.61-0.6h2.47c0.31 0 0.61 0.3 0.61 0.6v4.21c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6v-8.41q-0.01-0.25-0.18-0.43l-1.67-1.62v-3.96c0-0.33-0.28-0.6-0.62-0.6h-1.23c-0.34 0-0.62 0.27-0.62 0.6v1.56l-3.26-3.19c-0.24-0.23-0.63-0.23-0.87 0q0 0 0 0l-7.4 7.21q-0.17 0.18-0.18 0.43v8.41c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6z"
-                />
-              </svg>
-            </a>
-            <span class="c-breadcrumb-separator">&#x203A;</span>
-            <span class="text-white fs-14">店舗一覧</span>
-          </nav>
+          <!-- BANNER TEXT -->
+          <div class="p-banner-content">
+            <h1 class="p-banner-title font-zen text-white">店舗一覧</h1>
+            <p class="p-banner-subtitle font-outfit">Storelist</p>
+            <!-- BREADCRUMB -->
+            <nav class="c-breadcrumb p-breadcrumb">
+              <a href="../index.html" class="c-breadcrumb-home">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 17 17"
+                  width="17"
+                  height="17"
+                >
+                  <path
+                    id="シェイプ 894"
+                    fill="#81d7cf"
+                    d="m6.81 16.4v-4.21c0-0.3 0.3-0.6 0.61-0.6h2.47c0.31 0 0.61 0.3 0.61 0.6v4.21c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6v-8.41q-0.01-0.25-0.18-0.43l-1.67-1.62v-3.96c0-0.33-0.28-0.6-0.62-0.6h-1.23c-0.34 0-0.62 0.27-0.62 0.6v1.56l-3.26-3.19c-0.24-0.23-0.63-0.23-0.87 0q0 0 0 0l-7.4 7.21q-0.17 0.18-0.18 0.43v8.41c0 0.33 0.28 0.6 0.62 0.6h4.93c0.34 0 0.62-0.27 0.62-0.6z"
+                  />
+                </svg>
+              </a>
+              <span class="c-breadcrumb-separator">&#x203A;</span>
+              <a href="#" class="text-white fs-14 banner-a-link">店舗一覧</a>
+            </nav>
+          </div>
         </div>
         <!-- RIBBON DECORATION 01-->
         <img
-          src="../assets/img/top/img_hero_ribbon.svg"
+          src="../assets/img/common/img_ribbon_banner.svg"
           alt="ribbon 01"
-          class="p-storelist_banner-ribbon"
+          class="ribbon-banner clip-grow-right"
         />
       </section>
 
       <!-- HOKKAIDOU -->
-      <section class="c-section_white">
+      <section id="hokkaido-tohoku" class="c-section_white">
         <!-- LINKS -->
-        <nav class="p-storelist_links-nav c-maxWidth">
-          <div class="p-storelist_links-item">
-            <span>北海道・東北エリア</span>
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 13 8"
-              width="13"
-              height="8"
-            >
-              <path
-                id="長方形 6 のコピー 6"
-                fill="#81d8d0"
-                d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-              />
-            </svg>
-          </div>
-          <div class="p-storelist_links-item">
-            <span>関東エリア</span>
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 13 8"
-              width="13"
-              height="8"
-            >
-              <path
-                id="長方形 6 のコピー 6"
-                fill="#81d8d0"
-                d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-              />
-            </svg>
-          </div>
-          <div class="p-storelist_links-item">
-            <span>中部エリア</span>
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 13 8"
-              width="13"
-              height="8"
-            >
-              <path
-                id="長方形 6 のコピー 6"
-                fill="#81d8d0"
-                d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-              />
-            </svg>
-          </div>
-          <div class="p-storelist_links-item">
-            <span>近畿エリア</span>
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 13 8"
-              width="13"
-              height="8"
-            >
-              <path
-                id="長方形 6 のコピー 6"
-                fill="#81d8d0"
-                d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-              />
-            </svg>
-          </div>
-          <div class="p-storelist_links-item">
-            <span>中国・四国エリア</span>
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 13 8"
-              width="13"
-              height="8"
-            >
-              <path
-                id="長方形 6 のコピー 6"
-                fill="#81d8d0"
-                d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-              />
-            </svg>
-          </div>
-          <div class="p-storelist_links-item">
-            <span>九州・沖縄エリア</span>
-            <svg
-              version="1.2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 13 8"
-              width="13"
-              height="8"
-            >
-              <path
-                id="長方形 6 のコピー 6"
-                fill="#81d8d0"
-                d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
-              />
-            </svg>
-          </div>
+        <nav class="p-storelist__links-nav c-maxWidth">
+          <ul class="p-storelist__links-list">
+            <li class="p-storelist__links-item">
+              <a href="#hokkaido-tohoku">
+                北海道・東北エリア
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 13 8"
+                  width="13"
+                  height="8"
+                >
+                  <path
+                    id="長方形 6 のコピー 6"
+                    fill="#81d8d0"
+                    d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="p-storelist__links-item">
+              <a href="#kanto">
+                関東エリア
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 13 8"
+                  width="13"
+                  height="8"
+                >
+                  <path
+                    id="長方形 6 のコピー 6"
+                    fill="#81d8d0"
+                    d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="p-storelist__links-item">
+              <a href="#chubu">
+                中部エリア
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 13 8"
+                  width="13"
+                  height="8"
+                >
+                  <path
+                    id="長方形 6 のコピー 6"
+                    fill="#81d8d0"
+                    d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="p-storelist__links-item">
+              <a href="#kinki">
+                近畿エリア
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 13 8"
+                  width="13"
+                  height="8"
+                >
+                  <path
+                    id="長方形 6 のコピー 6"
+                    fill="#81d8d0"
+                    d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="p-storelist__links-item">
+              <a href="#chugoku-shikoku">
+                中国・四国エリア
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 13 8"
+                  width="13"
+                  height="8"
+                >
+                  <path
+                    id="長方形 6 のコピー 6"
+                    fill="#81d8d0"
+                    d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="p-storelist__links-item">
+              <a href="#kyushu-okinawa">
+                九州・沖縄エリア
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 13 8"
+                  width="13"
+                  height="8"
+                >
+                  <path
+                    id="長方形 6 のコピー 6"
+                    fill="#81d8d0"
+                    d="m10.63 1.23l0.79 0.79-4.75 4.75-0.79-0.79zm-8.42 0l-0.79 0.79 4.74 4.75 0.79-0.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
 
         <!-- CONTENT -->
@@ -271,7 +338,7 @@
           <!-- HEADER -->
           <div class="flex items-center gap-30px">
             <!-- ICON -->
-            <div class="p-storelist_location_icon">
+            <div class="p-storelist__location-icon">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -305,9 +372,9 @@
             <h2 class="font-zen fs-24 fw-700">北海道・東北エリア</h2>
           </div>
           <!-- BTNS -->
-          <div class="p-storelist_filter-row">
+          <div class="p-storelist__filter-row">
             <!-- BUTTON 1 -->
-            <button class="p-storelist_filter-btn active">
+            <button class="p-storelist__filter-btn p-storelist__filter-btn--active">
               全て
               <svg
                 version="1.2"
@@ -343,7 +410,7 @@
               </svg>
             </button>
             <!-- BUTTON 2 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               北海道
               <svg
                 version="1.2"
@@ -379,7 +446,7 @@
               </svg>
             </button>
             <!-- BUTTON 3 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               青森県
               <svg
                 version="1.2"
@@ -415,7 +482,7 @@
               </svg>
             </button>
             <!-- BUTTON 4 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               秋田県
               <svg
                 version="1.2"
@@ -451,7 +518,7 @@
               </svg>
             </button>
             <!-- BUTTON 5 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               岩手県
               <svg
                 version="1.2"
@@ -487,7 +554,7 @@
               </svg>
             </button>
             <!-- BUTTON 6 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               宮城県
               <svg
                 version="1.2"
@@ -523,7 +590,7 @@
               </svg>
             </button>
             <!-- BUTTON 7 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               山形県
               <svg
                 version="1.2"
@@ -559,7 +626,7 @@
               </svg>
             </button>
             <!-- BUTTON 8 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               福島県
               <svg
                 version="1.2"
@@ -597,21 +664,21 @@
           </div>
 
           <!-- LIST -->
-          <div class="p-storelist_grid">
+          <div class="p-storelist__grid">
             <!-- Card 1 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">北海道</span>
-                  <span class="p-storelist_store-name">●●●●店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">北海道</span>
+                  <h3 class="p-storelist__store-name">●●●●店</h3>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -626,12 +693,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     所在地が入ります
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -646,7 +713,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">000-000-0000</span>
+                  <span class="p-storelist__phone-number">000-000-0000</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -672,11 +739,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -692,7 +759,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -709,7 +776,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -725,7 +792,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -741,7 +808,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -759,25 +826,25 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- KANTOU -->
-      <section class="c-section_lightBlue relative">
+      <section id="kanto" class="c-section_lightBlue relative">
         <!-- RIBBON -->
         <img
           src="../assets/img/common/img_ribbon_white01.svg"
           alt="ribbon white"
-          class="p-storelist_ribbon01"
+          class="p-storelist__ribbon--01"
         />
         <!-- CONTENT -->
         <div class="c-maxWidth py-100 flex flex-col gap-30px">
           <!-- HEADER -->
           <div class="flex items-center gap-30px">
             <!-- ICON -->
-            <div class="p-storelist_location_icon">
+            <div class="p-storelist__location-icon">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -811,9 +878,9 @@
             <h2 class="font-zen fs-24 fw-700">関東エリア</h2>
           </div>
           <!-- BTNS -->
-          <div class="p-storelist_filter-row">
+          <div class="p-storelist__filter-row">
             <!-- BUTTON 1 -->
-            <button class="p-storelist_filter-btn active">
+            <button class="p-storelist__filter-btn p-storelist__filter-btn--active">
               全て
               <svg
                 version="1.2"
@@ -849,7 +916,7 @@
               </svg>
             </button>
             <!-- BUTTON 2 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               茨城県
               <svg
                 version="1.2"
@@ -885,7 +952,7 @@
               </svg>
             </button>
             <!-- BUTTON 3 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               栃木県
               <svg
                 version="1.2"
@@ -921,7 +988,7 @@
               </svg>
             </button>
             <!-- BUTTON 4 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               群馬県
               <svg
                 version="1.2"
@@ -957,7 +1024,7 @@
               </svg>
             </button>
             <!-- BUTTON 5 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               埼玉県
               <svg
                 version="1.2"
@@ -993,7 +1060,7 @@
               </svg>
             </button>
             <!-- BUTTON 6 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               千葉県
               <svg
                 version="1.2"
@@ -1029,7 +1096,7 @@
               </svg>
             </button>
             <!-- BUTTON 7 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               東京都
               <svg
                 version="1.2"
@@ -1065,7 +1132,7 @@
               </svg>
             </button>
             <!-- BUTTON 8 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               神奈川県
               <svg
                 version="1.2"
@@ -1103,21 +1170,21 @@
           </div>
 
           <!-- LIST -->
-          <div class="p-storelist_grid">
+          <div class="p-storelist__grid">
             <!-- Card 1 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">東京都</span>
-                  <span class="p-storelist_store-name">板橋大原町店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">東京都</span>
+                  <h3 class="p-storelist__store-name">板橋大原町店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1132,12 +1199,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     東京都板橋区大原町11-14
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1152,7 +1219,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">03-5939-8581</span>
+                  <span class="p-storelist__phone-number">03-5939-8581</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -1178,11 +1245,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1198,7 +1265,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1215,7 +1282,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1231,7 +1298,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1247,7 +1314,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1265,22 +1332,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 2 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">東京都</span>
-                  <span class="p-storelist_store-name">阿佐ヶ谷店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">東京都</span>
+                  <h3 class="p-storelist__store-name">阿佐ヶ谷店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1295,12 +1362,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     東京都杉並区阿佐谷北5-42-11
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1315,7 +1382,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">03-3337-3131</span>
+                  <span class="p-storelist__phone-number">03-3337-3131</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -1341,11 +1408,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1361,7 +1428,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1378,7 +1445,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1394,7 +1461,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1410,7 +1477,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1428,22 +1495,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 3 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">東京都</span>
-                  <span class="p-storelist_store-name">田端店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">東京都</span>
+                  <h3 class="p-storelist__store-name">田端店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1458,12 +1525,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     東京都北区田端3-4-14
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1478,7 +1545,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">03-3821-1040</span>
+                  <span class="p-storelist__phone-number">03-3821-1040</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -1504,11 +1571,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1524,7 +1591,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1541,7 +1608,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1557,7 +1624,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1573,7 +1640,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1591,22 +1658,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 4 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">東京都</span>
-                  <span class="p-storelist_store-name">葛飾新宿店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">東京都</span>
+                  <h3 class="p-storelist__store-name">葛飾新宿店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1621,12 +1688,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     葛飾区新宿1-23-6 2F
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1641,7 +1708,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">03-5876-5625</span>
+                  <span class="p-storelist__phone-number">03-5876-5625</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -1667,11 +1734,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1687,7 +1754,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1704,7 +1771,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1720,7 +1787,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1736,7 +1803,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1754,22 +1821,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 5 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">千葉県</span>
-                  <span class="p-storelist_store-name">北習志野店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">千葉県</span>
+                  <h3 class="p-storelist__store-name">北習志野店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1784,12 +1851,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     船橋市習志野台1-34-25ロイヤルASビル 2F
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1804,7 +1871,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">047-462-0772</span>
+                  <span class="p-storelist__phone-number">047-462-0772</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -1830,11 +1897,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1850,7 +1917,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1867,7 +1934,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1883,7 +1950,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1899,7 +1966,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1917,22 +1984,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 6 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">栃木県</span>
-                  <span class="p-storelist_store-name">宇都宮店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">栃木県</span>
+                  <h3 class="p-storelist__store-name">宇都宮店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1947,12 +2014,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     栃木県宇都宮市岩曽町1392-45
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1967,7 +2034,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">028-666-7646</span>
+                  <span class="p-storelist__phone-number">028-666-7646</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -1993,11 +2060,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2013,7 +2080,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2030,7 +2097,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2046,7 +2113,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2062,7 +2129,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2080,22 +2147,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 7 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">埼玉県</span>
-                  <span class="p-storelist_store-name">埼玉所沢店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">埼玉県</span>
+                  <h3 class="p-storelist__store-name">埼玉所沢店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2110,12 +2177,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     埼玉県所沢市寿町21-12
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2130,7 +2197,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">04-2935-3471</span>
+                  <span class="p-storelist__phone-number">04-2935-3471</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -2156,11 +2223,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2176,7 +2243,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2193,7 +2260,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2209,7 +2276,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2225,7 +2292,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2243,22 +2310,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 8 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">神奈川県</span>
-                  <span class="p-storelist_store-name">大和つきみ野店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">神奈川県</span>
+                  <h3 class="p-storelist__store-name">大和つきみ野店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2273,12 +2340,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     神奈川県大和市林間2丁目20-26 SunVillage 南林間 1階
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2293,7 +2360,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">046-277-5507</span>
+                  <span class="p-storelist__phone-number">046-277-5507</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -2319,11 +2386,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2339,7 +2406,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2356,7 +2423,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2372,7 +2439,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2388,7 +2455,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2406,19 +2473,19 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- CHUBU -->
-      <section class="c-section_white">
+      <section id="chubu" class="c-section_white">
         <!-- CONTENT -->
         <div class="c-maxWidth py-100 flex flex-col gap-30px">
           <!-- HEADER -->
           <div class="flex items-center gap-30px">
             <!-- ICON -->
-            <div class="p-storelist_location_icon">
+            <div class="p-storelist__location-icon">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -2452,9 +2519,9 @@
             <h2 class="font-zen fs-24 fw-700">中部エリア</h2>
           </div>
           <!-- BTNS -->
-          <div class="p-storelist_filter-row">
+          <div class="p-storelist__filter-row">
             <!-- BUTTON 1 -->
-            <button class="p-storelist_filter-btn active">
+            <button class="p-storelist__filter-btn p-storelist__filter-btn--active">
               全て
               <svg
                 version="1.2"
@@ -2490,7 +2557,7 @@
               </svg>
             </button>
             <!-- BUTTON 2 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               新潟県
               <svg
                 version="1.2"
@@ -2526,7 +2593,7 @@
               </svg>
             </button>
             <!-- BUTTON 3 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               富山県
               <svg
                 version="1.2"
@@ -2562,7 +2629,7 @@
               </svg>
             </button>
             <!-- BUTTON 4 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               石川県
               <svg
                 version="1.2"
@@ -2598,7 +2665,7 @@
               </svg>
             </button>
             <!-- BUTTON 5 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               福井県
               <svg
                 version="1.2"
@@ -2634,7 +2701,7 @@
               </svg>
             </button>
             <!-- BUTTON 6 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               山梨県
               <svg
                 version="1.2"
@@ -2670,7 +2737,7 @@
               </svg>
             </button>
             <!-- BUTTON 7 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               長野県
               <svg
                 version="1.2"
@@ -2706,7 +2773,7 @@
               </svg>
             </button>
             <!-- BUTTON 8 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               岐阜県
               <svg
                 version="1.2"
@@ -2742,7 +2809,7 @@
               </svg>
             </button>
             <!-- BUTTON 9 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               静岡県
               <svg
                 version="1.2"
@@ -2778,7 +2845,7 @@
               </svg>
             </button>
             <!-- BUTTON 10 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               愛知県
               <svg
                 version="1.2"
@@ -2816,21 +2883,21 @@
           </div>
 
           <!-- LIST -->
-          <div class="p-storelist_grid">
+          <div class="p-storelist__grid">
             <!-- Card 1 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">岐阜県</span>
-                  <span class="p-storelist_store-name">アクロスプラザ関店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">岐阜県</span>
+                  <h3 class="p-storelist__store-name">アクロスプラザ関店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2845,12 +2912,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     関市市平賀456の1
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -2865,7 +2932,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">0575-29-6230</span>
+                  <span class="p-storelist__phone-number">0575-29-6230</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -2891,11 +2958,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2911,7 +2978,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2928,7 +2995,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2944,7 +3011,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2960,7 +3027,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -2978,22 +3045,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 2 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">岐阜県</span>
-                  <span class="p-storelist_store-name">岐阜都通店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">岐阜県</span>
+                  <h3 class="p-storelist__store-name">岐阜都通店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3008,12 +3075,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     岐阜市都通4-4-2
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3028,7 +3095,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">058-216-5773</span>
+                  <span class="p-storelist__phone-number">058-216-5773</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -3054,11 +3121,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3074,7 +3141,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3091,7 +3158,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3107,7 +3174,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3123,7 +3190,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3141,19 +3208,19 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- KINKI -->
-      <section class="c-section_lightBlue">
+      <section id="kinki" class="c-section_lightBlue">
         <!-- CONTENT -->
         <div class="c-maxWidth py-100 flex flex-col gap-30px">
           <!-- HEADER -->
           <div class="flex items-center gap-30px">
             <!-- ICON -->
-            <div class="p-storelist_location_icon">
+            <div class="p-storelist__location-icon">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -3187,9 +3254,9 @@
             <h2 class="font-zen fs-24 fw-700">近畿エリア</h2>
           </div>
           <!-- BTNS -->
-          <div class="p-storelist_filter-row">
+          <div class="p-storelist__filter-row">
             <!-- BUTTON 1 -->
-            <button class="p-storelist_filter-btn active">
+            <button class="p-storelist__filter-btn p-storelist__filter-btn--active">
               全て
               <svg
                 version="1.2"
@@ -3225,7 +3292,7 @@
               </svg>
             </button>
             <!-- BUTTON 2 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               三重県
               <svg
                 version="1.2"
@@ -3261,7 +3328,7 @@
               </svg>
             </button>
             <!-- BUTTON 3 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               滋賀県
               <svg
                 version="1.2"
@@ -3297,7 +3364,7 @@
               </svg>
             </button>
             <!-- BUTTON 4 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               京都府
               <svg
                 version="1.2"
@@ -3333,7 +3400,7 @@
               </svg>
             </button>
             <!-- BUTTON 5 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               大阪府
               <svg
                 version="1.2"
@@ -3369,7 +3436,7 @@
               </svg>
             </button>
             <!-- BUTTON 6 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               兵庫県
               <svg
                 version="1.2"
@@ -3405,7 +3472,7 @@
               </svg>
             </button>
             <!-- BUTTON 7 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               奈良県
               <svg
                 version="1.2"
@@ -3441,7 +3508,7 @@
               </svg>
             </button>
             <!-- BUTTON 8 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               和歌山県
               <svg
                 version="1.2"
@@ -3479,21 +3546,21 @@
           </div>
 
           <!-- LIST -->
-          <div class="p-storelist_grid">
+          <div class="p-storelist__grid">
             <!-- Card 1 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">京都府</span>
-                  <span class="p-storelist_store-name">京都一乗寺店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">京都府</span>
+                  <h3 class="p-storelist__store-name">京都一乗寺店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3508,12 +3575,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     京都市左京区一乗寺地蔵本町6-1
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3528,7 +3595,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">075-721-0804</span>
+                  <span class="p-storelist__phone-number">075-721-0804</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -3554,11 +3621,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3574,7 +3641,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3591,7 +3658,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3607,7 +3674,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3623,7 +3690,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3641,22 +3708,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 2 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">大阪府</span>
-                  <span class="p-storelist_store-name">難波本店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">大阪府</span>
+                  <h3 class="p-storelist__store-name">難波本店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3671,12 +3738,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     大阪市浪速区桜川1-3-2
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3691,7 +3758,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">06-4400-9876</span>
+                  <span class="p-storelist__phone-number">06-4400-9876</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -3717,11 +3784,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3737,7 +3804,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3754,7 +3821,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3770,7 +3837,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3786,7 +3853,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3804,22 +3871,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 3 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">大阪府</span>
-                  <span class="p-storelist_store-name">大阪十三店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">大阪府</span>
+                  <h3 class="p-storelist__store-name">大阪十三店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3834,12 +3901,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     大阪市淀川区十三東4-5-10
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3854,7 +3921,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">06-6390-5255</span>
+                  <span class="p-storelist__phone-number">06-6390-5255</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -3880,11 +3947,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3900,7 +3967,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3917,7 +3984,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3933,7 +4000,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3949,7 +4016,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -3967,22 +4034,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 4 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">大阪府</span>
-                  <span class="p-storelist_store-name">大阪あべの店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">大阪府</span>
+                  <h3 class="p-storelist__store-name">大阪あべの店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -3997,12 +4064,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     大阪市阿倍野区松崎町3-12-5
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4017,7 +4084,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">06-6623-1222</span>
+                  <span class="p-storelist__phone-number">06-6623-1222</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -4043,11 +4110,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4063,7 +4130,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4080,7 +4147,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4096,7 +4163,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4112,7 +4179,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4130,22 +4197,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 5 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">大阪府</span>
-                  <span class="p-storelist_store-name">此花店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">大阪府</span>
+                  <h3 class="p-storelist__store-name">此花店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4160,12 +4227,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     大阪市此花区四貫島1-5-9
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4180,7 +4247,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">06-6690-8989</span>
+                  <span class="p-storelist__phone-number">06-6690-8989</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -4206,11 +4273,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4226,7 +4293,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4243,7 +4310,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4259,7 +4326,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4275,7 +4342,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4293,22 +4360,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 6 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">大阪府</span>
-                  <span class="p-storelist_store-name">大阪本町店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">大阪府</span>
+                  <h3 class="p-storelist__store-name">大阪本町店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4323,12 +4390,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     大阪市中央区南本町3-3-10
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4343,7 +4410,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">06-6251-6607</span>
+                  <span class="p-storelist__phone-number">06-6251-6607</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -4369,11 +4436,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4389,7 +4456,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4406,7 +4473,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4422,7 +4489,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4438,7 +4505,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4456,22 +4523,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 7 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">大阪府</span>
-                  <span class="p-storelist_store-name">天満橋店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">大阪府</span>
+                  <h3 class="p-storelist__store-name">天満橋店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4486,12 +4553,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     大阪市中央区島町2-2-19
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4506,7 +4573,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">06-4792-0707</span>
+                  <span class="p-storelist__phone-number">06-4792-0707</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -4532,11 +4599,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4552,7 +4619,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4569,7 +4636,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4585,7 +4652,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4601,7 +4668,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4619,22 +4686,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 8 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">兵庫県</span>
-                  <span class="p-storelist_store-name">西明石店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">兵庫県</span>
+                  <h3 class="p-storelist__store-name">西明石店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4649,12 +4716,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     兵庫県明石市大久保町大久保町592-4
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4669,7 +4736,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">078-936-6033</span>
+                  <span class="p-storelist__phone-number">078-936-6033</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -4695,11 +4762,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4715,7 +4782,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4732,7 +4799,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4748,7 +4815,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4764,7 +4831,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4782,22 +4849,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 9 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">兵庫県</span>
-                  <span class="p-storelist_store-name">阪神尼崎店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">兵庫県</span>
+                  <h3 class="p-storelist__store-name">阪神尼崎店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4812,12 +4879,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     兵庫県尼崎市神田中通4-116
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4832,7 +4899,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">06-4869-6455</span>
+                  <span class="p-storelist__phone-number">06-4869-6455</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -4858,11 +4925,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4878,7 +4945,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4895,7 +4962,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4911,7 +4978,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4927,7 +4994,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -4945,22 +5012,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 10 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">兵庫県</span>
-                  <span class="p-storelist_store-name">姫路店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">兵庫県</span>
+                  <h3 class="p-storelist__store-name">姫路店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4975,12 +5042,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     兵庫県姫路市忍町154
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -4995,7 +5062,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">079-280-9393</span>
+                  <span class="p-storelist__phone-number">079-280-9393</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -5021,11 +5088,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5041,7 +5108,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5058,7 +5125,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5074,7 +5141,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5090,7 +5157,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5108,22 +5175,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 11 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">奈良県</span>
-                  <span class="p-storelist_store-name">葛城新庄店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">奈良県</span>
+                  <h3 class="p-storelist__store-name">葛城新庄店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -5138,12 +5205,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     奈良県葛城市東室204-4
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -5158,7 +5225,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">0745-69-2772</span>
+                  <span class="p-storelist__phone-number">0745-69-2772</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -5184,11 +5251,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5204,7 +5271,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5221,7 +5288,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5237,7 +5304,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5253,7 +5320,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5271,22 +5338,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 12 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">和歌山県</span>
-                  <span class="p-storelist_store-name">和歌山駅前店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">和歌山県</span>
+                  <h3 class="p-storelist__store-name">和歌山駅前店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -5301,12 +5368,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     和歌山市美園町5-12-2 3F
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -5321,7 +5388,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">073-488-9948</span>
+                  <span class="p-storelist__phone-number">073-488-9948</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -5347,11 +5414,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5367,7 +5434,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5384,7 +5451,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5400,7 +5467,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5416,7 +5483,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5434,25 +5501,25 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- CHUGOKU -->
-      <section class="c-section_white relative">
+      <section id="chugoku-shikoku" class="c-section_white relative">
         <!-- RIBBON -->
         <img
           src="../assets/img/common/img_ribbon06.webp"
           alt="ribbon light blue"
-          class="p-storelist_ribbon02"
+          class="p-storelist__ribbon--02"
         />
         <!-- CONTENT -->
         <div class="c-maxWidth py-100 flex flex-col gap-30px">
           <!-- HEADER -->
           <div class="flex items-center gap-30px">
             <!-- ICON -->
-            <div class="p-storelist_location_icon">
+            <div class="p-storelist__location-icon">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -5486,9 +5553,9 @@
             <h2 class="font-zen fs-24 fw-700">中国・四国エリア</h2>
           </div>
           <!-- BTNS -->
-          <div class="p-storelist_filter-row">
+          <div class="p-storelist__filter-row">
             <!-- BUTTON 1 -->
-            <button class="p-storelist_filter-btn active">
+            <button class="p-storelist__filter-btn p-storelist__filter-btn--active">
               全て
               <svg
                 version="1.2"
@@ -5524,7 +5591,7 @@
               </svg>
             </button>
             <!-- BUTTON 2 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               鳥取県
               <svg
                 version="1.2"
@@ -5560,7 +5627,7 @@
               </svg>
             </button>
             <!-- BUTTON 3 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               島根県
               <svg
                 version="1.2"
@@ -5596,7 +5663,7 @@
               </svg>
             </button>
             <!-- BUTTON 4 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               岡山県
               <svg
                 version="1.2"
@@ -5632,7 +5699,7 @@
               </svg>
             </button>
             <!-- BUTTON 5 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               広島県
               <svg
                 version="1.2"
@@ -5668,7 +5735,7 @@
               </svg>
             </button>
             <!-- BUTTON 6 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               山口県
               <svg
                 version="1.2"
@@ -5704,7 +5771,7 @@
               </svg>
             </button>
             <!-- BUTTON 7 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               徳島県
               <svg
                 version="1.2"
@@ -5740,7 +5807,7 @@
               </svg>
             </button>
             <!-- BUTTON 8 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               香川県
               <svg
                 version="1.2"
@@ -5776,7 +5843,7 @@
               </svg>
             </button>
             <!-- BUTTON 9 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               愛媛県
               <svg
                 version="1.2"
@@ -5812,7 +5879,7 @@
               </svg>
             </button>
             <!-- BUTTON 10 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               高知県
               <svg
                 version="1.2"
@@ -5850,21 +5917,21 @@
           </div>
 
           <!-- LIST -->
-          <div class="p-storelist_grid">
+          <div class="p-storelist__grid">
             <!-- Card 1 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">岡山県</span>
-                  <span class="p-storelist_store-name">ブランチ北長瀬店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">岡山県</span>
+                  <h3 class="p-storelist__store-name">ブランチ北長瀬店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -5879,12 +5946,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     岡山市北区北長瀬表町2-17-80
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -5899,7 +5966,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">086-241-1550</span>
+                  <span class="p-storelist__phone-number">086-241-1550</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -5925,11 +5992,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5945,7 +6012,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5962,7 +6029,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5978,7 +6045,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -5994,7 +6061,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6012,22 +6079,22 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Card 2 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">徳島県</span>
-                  <span class="p-storelist_store-name">徳島鮎喰店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">徳島県</span>
+                  <h3 class="p-storelist__store-name">徳島鮎喰店</span>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -6042,12 +6109,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     徳島市鮎喰町2-74-1
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -6062,7 +6129,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">088-631-6766</span>
+                  <span class="p-storelist__phone-number">088-631-6766</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -6088,11 +6155,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6108,7 +6175,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6125,7 +6192,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6141,7 +6208,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6157,7 +6224,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6175,19 +6242,19 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- OKINAWA -->
-      <section class="c-section_lightBlue">
+      <section id="kyushu-okinawa" class="c-section_lightBlue">
         <!-- CONTENT -->
         <div class="c-maxWidth py-100 flex flex-col gap-30px">
           <!-- HEADER -->
           <div class="flex items-center gap-30px">
             <!-- ICON -->
-            <div class="p-storelist_location_icon">
+            <div class="p-storelist__location-icon">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -6221,9 +6288,9 @@
             <h2 class="font-zen fs-24 fw-700">九州・沖縄エリア</h2>
           </div>
           <!-- BTNS -->
-          <div class="p-storelist_filter-row">
+          <div class="p-storelist__filter-row">
             <!-- BUTTON 1 -->
-            <button class="p-storelist_filter-btn active">
+            <button class="p-storelist__filter-btn p-storelist__filter-btn--active">
               全て
               <svg
                 version="1.2"
@@ -6259,7 +6326,7 @@
               </svg>
             </button>
             <!-- BUTTON 2 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               福岡県
               <svg
                 version="1.2"
@@ -6295,7 +6362,7 @@
               </svg>
             </button>
             <!-- BUTTON 3 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               佐賀県
               <svg
                 version="1.2"
@@ -6331,7 +6398,7 @@
               </svg>
             </button>
             <!-- BUTTON 4 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               長崎県
               <svg
                 version="1.2"
@@ -6367,7 +6434,7 @@
               </svg>
             </button>
             <!-- BUTTON 5 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               熊本県
               <svg
                 version="1.2"
@@ -6403,7 +6470,7 @@
               </svg>
             </button>
             <!-- BUTTON 6 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               大分県
               <svg
                 version="1.2"
@@ -6439,7 +6506,7 @@
               </svg>
             </button>
             <!-- BUTTON 7 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               宮崎県
               <svg
                 version="1.2"
@@ -6475,7 +6542,7 @@
               </svg>
             </button>
             <!-- BUTTON 8 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               鹿児島県
               <svg
                 version="1.2"
@@ -6511,7 +6578,7 @@
               </svg>
             </button>
             <!-- BUTTON 9 -->
-            <button class="p-storelist_filter-btn">
+            <button class="p-storelist__filter-btn">
               沖縄県
               <svg
                 version="1.2"
@@ -6549,21 +6616,21 @@
           </div>
 
           <!-- LIST -->
-          <div class="p-storelist_grid">
+          <div class="p-storelist__grid">
             <!-- Card 1 -->
-            <div class="p-storelist_card">
-              <div class="p-storelist_card-header">
-                <div class="p-storelist_card-header-inner">
-                  <span class="p-storelist_prefecture-tag">福岡県</span>
-                  <span class="p-storelist_store-name">●●●●店</span>
+            <article class="p-storelist__card">
+              <header class="p-storelist__card-header">
+                <div class="p-storelist__card-header-inner">
+                  <span class="p-storelist__prefecture-tag">福岡県</span>
+                  <h3 class="p-storelist__store-name">●●●●店</h3>
                   <img
                     src="../assets/img/top/icon_arrow_blue.svg"
                     alt="arrow"
                   />
                 </div>
-              </div>
-              <div class="p-storelist_card-body">
-                <div class="p-storelist_info-row">
+              </header>
+              <div class="p-storelist__card-body">
+                <div class="p-storelist__info-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -6578,12 +6645,12 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_address-text">
+                  <span class="p-storelist__address-text">
                     所在地が入ります
-                    <a href="#" class="p-storelist_map-link">［map］</a>
+                    <a href="#" class="p-storelist__map-link">［map］</a>
                   </span>
                 </div>
-                <div class="p-storelist_info-row p-storelist_phone-row">
+                <div class="p-storelist__info-row p-storelist__phone-row">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -6598,7 +6665,7 @@
                     />
                   </svg>
 
-                  <span class="p-storelist_phone-number">000-000-0000</span>
+                  <span class="p-storelist__phone-number">000-000-0000</span>
 
                   <img
                     src="../assets/img/common/img_instagram_logo02.webp"
@@ -6624,11 +6691,11 @@
                   </svg>
                 </div>
               </div>
-              <div class="p-storelist_facilities-row">
-                <span class="p-storelist_facilities-label">設備</span>
-                <div class="p-storelist_facility-icons">
+              <div class="p-storelist__facilities-row">
+                <h4 class="p-storelist__facilities-label">設備</h4>
+                <div class="p-storelist__facility-icons">
                   <!-- SHOWER -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6644,7 +6711,7 @@
                     </svg>
                   </div>
                   <!-- TOOTH -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6661,7 +6728,7 @@
                     </svg>
                   </div>
                   <!-- HAIR -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6677,7 +6744,7 @@
                     </svg>
                   </div>
                   <!-- BABY -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6693,7 +6760,7 @@
                     </svg>
                   </div>
                   <!-- PARKING -->
-                  <div class="p-storelist_facility-tile">
+                  <div class="p-storelist__facility-tile">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -6711,7 +6778,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -6763,32 +6830,32 @@
             </p>
           </button>
           <!-- FLOATING SPEAK PERSON 01 -->
-          <div class="p-storelist_speak_container01">
-            <div class="p-storelist_speak_image01">
+          <div class="p-storelist__speak-container--01">
+            <div class="p-storelist__speak-image--01">
               <img
                 src="../assets/img/price/img_price_speak_bubble02.svg"
                 alt="speak person image"
-                class="p-storelist_speak_bubble01"
+                class="p-storelist__speak-bubble--01"
               />
               <img
                 src="../assets/img/price/img_price_speak_person02.webp"
                 alt="speak person image"
-                class="p-storelist_speak_person01"
+                class="p-storelist__speak-person--01"
               />
             </div>
           </div>
           <!-- FLOATING SPEAK PERSON 02 -->
-          <div class="p-storelist_speak_container02">
-            <div class="p-storelist_speak_image02">
+          <div class="p-storelist__speak-container--02">
+            <div class="p-storelist__speak-image--02">
               <img
                 src="../assets/img/price/img_price_speak_bubble03.svg"
                 alt="speak person image"
-                class="p-storelist_speak_bubble02"
+                class="p-storelist__speak-bubble--02"
               />
               <img
                 src="../assets/img/price/img_price_speak_person03.webp"
                 alt="speak person image"
-                class="p-storelist_speak_person02"
+                class="p-storelist__speak-person--02"
               />
             </div>
           </div>
@@ -6905,31 +6972,23 @@
               <div
                 class="footer-page-link flex flex-row justify-between items-center relative"
               >
-                <p class="font-outfit fs-18 fw-500">About Us</p>
+                <h3 class="font-outfit fs-18 fw-500">About Us</h3>
                 <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                 <div class="footer-link-line"></div>
               </div>
-              <div class="flex flex-col gap-25px items-start">
-                <a href="#" class="fw-500 fs-15">トップページ</a>
-                <a href="#" class="fw-500 fs-15">お知らせ</a>
-                <a href="#" class="fw-500 fs-15">ゾネスタイムズ</a>
-                <a href="#" class="fw-500 fs-15">店舗一覧</a>
-                <a href="#" class="fw-500 fs-15">無料体験・見学予約</a>
-                <a href="#" class="fw-500 fs-15 text-lightBlue"
-                  >ご予約から無料体験・見学までの流れ</a
-                >
-                <a href="#" class="fw-500 fs-15">料金案内</a>
-                <a href="#" class="fw-500 fs-15 text-lightBlue"
-                  >入会手続きのご案内</a
-                >
-                <a href="#" class="fw-500 fs-15 text-lightBlue"
-                  >お支払いについて</a
-                >
-                <a href="#" class="fw-500 fs-15 text-lightBlue"
-                  >よくあるご質問</a
-                >
-                <a href="#" class="fw-500 fs-15">会員様からいただいた声</a>
-              </div>
+              <ul class="flex flex-col gap-25px items-start">
+                <li><a href="#" class="fw-500 fs-15">トップページ</a></li>
+                <li><a href="#" class="fw-500 fs-15">お知らせ</a></li>
+                <li><a href="#" class="fw-500 fs-15">ゾネスタイムズ</a></li>
+                <li><a href="#" class="fw-500 fs-15">店舗一覧</a></li>
+                <li><a href="#" class="fw-500 fs-15">無料体験・見学予約</a></li>
+                <li><a href="#" class="fw-500 fs-15 text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
+                <li><a href="#" class="fw-500 fs-15">料金案内</a></li>
+                <li><a href="#" class="fw-500 fs-15 text-lightBlue">入会手続きのご案内</a></li>
+                <li><a href="#" class="fw-500 fs-15 text-lightBlue">お支払いについて</a></li>
+                <li><a href="#" class="fw-500 fs-15 text-lightBlue">よくあるご質問</a></li>
+                <li><a href="#" class="fw-500 fs-15">会員様からいただいた声</a></li>
+              </ul>
             </div>
 
             <div class="flex flex-col gap-60px">
@@ -6937,33 +6996,31 @@
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Service</p>
+                  <h3 class="font-outfit fs-18 fw-500">Service</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
-                  <a href="#" class="fw-500 fs-15">女性専用24時間ジム</a>
-                  <a href="#" class="fw-500 fs-15"
-                    >Amazonesのパーソナルトレーニング</a
-                  >
-                  <a href="#" class="fw-500 fs-15">Dr.Amazones</a>
-                </div>
+                <ul class="flex flex-col gap-25px items-start">
+                  <li><a href="#" class="fw-500 fs-15">女性専用24時間ジム</a></li>
+                  <li><a href="#" class="fw-500 fs-15">Amazonesのパーソナルトレーニング</a></li>
+                  <li><a href="#" class="fw-500 fs-15">Dr.Amazones</a></li>
+                </ul>
               </div>
               <div class="flex flex-col gap-30px">
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Recruitment</p>
+                  <h3 class="font-outfit fs-18 fw-500">Recruitment</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
-                  <a href="#" class="fw-500 fs-15 footer-icon-link"
+                <ul class="flex flex-col gap-25px items-start">
+                  <li><a href="#" class="fw-500 fs-15 footer-icon-link"
                     >女性専用24時間ジム<img
                       src="../assets/img/top/icon_recruitment.svg"
                       alt="アイコン"
-                  /></a>
-                </div>
+                  /></a></li>
+                </ul>
               </div>
             </div>
 
@@ -6972,75 +7029,71 @@
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Other Shops</p>
+                  <h3 class="font-outfit fs-18 fw-500">Other Shops</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
-                  <a href="#" class="footer-icon-link fw-500 fs-15"
+                <ul class="flex flex-col gap-25px items-start">
+                  <li><a href="#" class="footer-icon-link fw-500 fs-15"
                     >完全個室PRIVATE GYM Highness<img
                       src="../assets/img/top/icon_recruitment.svg"
                       alt="アイコン"
-                  /></a>
-                  <a href="#" class="footer-icon-link fw-500 fs-15"
+                  /></a></li>
+                  <li><a href="#" class="footer-icon-link fw-500 fs-15"
                     >24時間ジム Amazones & Herculest<img
                       src="../assets/img/top/icon_recruitment.svg"
                       alt="アイコン"
-                  /></a>
-                  <a href="#" class="footer-icon-link fw-500 fs-15"
+                  /></a></li>
+                  <li><a href="#" class="footer-icon-link fw-500 fs-15"
                     >AMAZONES ONLINE SHOP<img
                       src="../assets/img/top/icon_recruitment.svg"
                       alt="アイコン"
-                  /></a>
-                </div>
+                  /></a></li>
+                </ul>
               </div>
               <div class="flex flex-col gap-30px">
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Sns</p>
+                  <h3 class="font-outfit fs-18 fw-500">Sns</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
-                  <a href="#" class="footer-icon-link fw-500 fs-15"
+                <ul class="flex flex-col gap-25px items-start">
+                  <li><a href="#" class="footer-icon-link fw-500 fs-15"
                     ><img
                       src="../assets/img/top/icon_youtube.svg"
                       alt="Amazones｜公式YouTube"
                       class="mr-5" />Amazones｜公式YouTube<img
                       src="../assets/img/top/icon_recruitment.svg"
                       alt="アイコン"
-                  /></a>
-                  <a href="#" class="footer-icon-link fw-500 fs-15"
+                  /></a></li>
+                  <li><a href="#" class="footer-icon-link fw-500 fs-15"
                     ><img
                       src="../assets/img/top/icon_instragram.svg"
                       alt="Amazones｜公式Instagram"
                       class="mr-5" />Amazones｜公式Instagram<img
                       src="../assets/img/top/icon_recruitment.svg"
                       alt="アイコン"
-                  /></a>
-                </div>
+                  /></a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
         <div class="flex flex-row justify-between w-full items-center">
-          <div class="flex flex-row gap-55px">
-            <a href="#" class="footer-icon-link fw-500 fs-15"
+          <ul class="flex flex-row gap-55px">
+            <li><a href="#" class="footer-icon-link fw-500 fs-15"
               >運営会社について<img
                 src="../assets/img/top/icon_recruitment.svg"
                 alt="アイコン"
-            /></a>
-            <a href="#" class="footer-icon-link fw-500 fs-15">サイトマップ</a>
-            <a href="#" class="footer-icon-link fw-500 fs-15">ご利用規約</a>
-            <a href="#" class="footer-icon-link fw-500 fs-15"
-              >個人情報保護方針</a
-            >
-            <a href="#" class="footer-icon-link fw-500 fs-15"
-              >WEBサイトのご利用に当たって</a
-            >
-          </div>
+            /></a></li>
+            <li><a href="#" class="footer-icon-link fw-500 fs-15">サイトマップ</a></li>
+            <li><a href="#" class="footer-icon-link fw-500 fs-15">ご利用規約</a></li>
+            <li><a href="#" class="footer-icon-link fw-500 fs-15">個人情報保護方針</a></li>
+            <li><a href="#" class="footer-icon-link fw-500 fs-15">WEBサイトのご利用に当たって</a></li>
+          </ul>
           <div class="btn-green-wrapper scroll-up">
             <img
               src="../assets/img/top/icon_arrow.svg"

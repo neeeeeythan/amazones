@@ -7,7 +7,10 @@
       content="女性専用24時間ジムAmazones（アマゾネス）のビジター特別割引キャンペーンを紹介しています。"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ビジター特別割引キャンペーン | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム</title>
+    <title>
+      ビジター特別割引キャンペーン | Amazones（アマゾネス） |
+      初心者向け女性専用24時間ジム
+    </title>
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
@@ -24,16 +27,23 @@
   <body>
     <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div
+        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+      >
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
             width="159.97px"
             height="62.77px"
+            class="amazones-header-logo"
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14"
+            >アマゾネス</a
+          >
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">
+            WOMEN ONLY24h GYM
+          </p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -51,7 +61,11 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
 
@@ -73,7 +87,11 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
         </div>
@@ -87,8 +105,18 @@
             id="floating-menu-btn"
             class="flex flex-col items-center gap-13px"
           >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
+            <img
+              src="../assets/img/top/icon_menu.svg"
+              alt="アイコン"
+              class="desktop-menu-icon"
+            />
             <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+            <button class="mobile-hamburger" aria-label="メニュー">
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+            </button>
           </div>
 
           <div
@@ -116,6 +144,64 @@
             </div>
           </div>
         </div>
+
+        <!--header mobile-->
+        <div class="mobile-header-overlay relative">
+          <div class="mobile-header-overlay-content">
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+            ©2026 Wellness Land Co., Ltd.
+          </p>
+        </div>
       </div>
     </header>
 
@@ -127,7 +213,7 @@
             <img
               src="../assets/img/visitor/banner_visitor.webp"
               alt="予約バナー"
-              class="p-visitor_banner-img"
+              class="p-banner-img2"
             />
 
             <div class="p-banner-overlay"></div>
@@ -172,19 +258,19 @@
       </section>
 
       <!-- VISITOR CONTENT -->
-      <section class="p-visitor_section_white">
+      <section class="p-visitor__section--white">
         <!-- CONTENT -->
-        <div class="p-visitor_content c-maxWidth">
-          <div class="flex gap-30px">
+        <div class="p-visitor__content c-maxWidth">
+          <div class="p-visitor__campaign-row">
             <!-- TEXT BLOCK -->
-            <div class="p-visitor_campaign_block font-zen">
-              <div class="p-visitor_campaign_header">
-                <p>
+            <div class="p-visitor__campaign-block">
+              <div class="p-visitor__campaign-header">
+                <h2>
                   初めての方も大歓迎！今だけお得に試せる
                   <span>「ビジター特別割引キャンペーン」</span>
-                </p>
+                </h2>
               </div>
-              <div class="font-zen flex flex-col gap-4 fw-500">
+              <div class="p-visitor__campaign-desc">
                 <p>
                   女性専用24時間ジムAmazones（アマゾネス）では、期間限定でビジター利用キャンペーンを開催中！
                 </p>
@@ -199,57 +285,57 @@
             <img
               src="../assets/img/visitor/img_visitor_campaign.webp"
               alt="visitor campaign image"
-              class="p-visitor_campaign_img"
+              class="p-visitor__campaign-img"
             />
           </div>
         </div>
       </section>
 
       <!-- SUMMARY SECTION -->
-      <section class="p-visitor_section_lightblue">
-        <div class="p-visitor_about c-maxWidth">
+      <section class="p-visitor__section--lightblue">
+        <div class="p-visitor__about c-maxWidth">
           <!-- TITLE -->
-          <div class="p-visitor_title_container">
-            <p class="p-visitor_subtitle font-zen">キャンペーン概要</p>
-            <h1 class="p-visitor_title font-outfit">Summary</h1>
+          <div class="p-visitor__title-container">
+            <p class="p-visitor__subtitle">キャンペーン概要</p>
+            <h2 class="p-visitor__title">Summary</h2>
           </div>
-          <div class="flex flex-col gap-100px">
+          <div class="p-visitor__about-groups">
             <!-- 1 -->
-            <div class="flex flex-col gap-50px">
+            <div class="p-visitor__about-group">
               <!-- ROW 1 -->
-              <div class="flex gap-50px">
+              <div class="p-visitor__about-row">
                 <!-- CARD 1 -->
-                <div class="p-visitor_about_card flex-1">
-                  <div class="p-visitor_about_header">
-                    <h4 class="font-zen">対象</h4>
+                <div class="p-visitor__about-card">
+                  <div class="p-visitor__about-header">
+                    <h4>対象</h4>
                   </div>
-                  <div class="p-visitor_about_card_body">
-                    <p class="font-zen">
+                  <div class="p-visitor__about-card-body">
+                    <p>
                       どなたでも（女性限定）※会員でない方もOK
                     </p>
                   </div>
                 </div>
                 <!-- CARD 2 -->
-                <div class="p-visitor_about_card flex-1">
-                  <div class="p-visitor_about_header">
-                    <h4 class="font-zen">期間</h4>
+                <div class="p-visitor__about-card">
+                  <div class="p-visitor__about-header">
+                    <h4>期間</h4>
                   </div>
-                  <div class="p-visitor_about_card_body">
-                    <p class="font-zen">
+                  <div class="p-visitor__about-card-body">
+                    <p>
                       無期限　※会員数が上限に達した店舗ではご利用いただけません
                     </p>
                   </div>
                 </div>
               </div>
               <!-- ROW 2 -->
-              <div class="flex gap-50px">
+              <div class="p-visitor__about-row">
                 <!-- CARD 1 -->
-                <div class="p-visitor_about_card flex-1">
-                  <div class="p-visitor_about_header">
-                    <h4 class="font-zen">内容</h4>
+                <div class="p-visitor__about-card">
+                  <div class="p-visitor__about-header">
+                    <h4>内容</h4>
                   </div>
-                  <div class="p-visitor_about_card_body">
-                    <p class="font-zen">
+                  <div class="p-visitor__about-card-body">
+                    <p>
                       3時間利用 2,200円（税込）　→
                       <span> 　キャンペーン価格　</span> 3時間利用
                       1,650円（税込）
@@ -257,12 +343,12 @@
                   </div>
                 </div>
                 <!-- CARD 2 -->
-                <div class="p-visitor_about_card flex-1">
-                  <div class="p-visitor_about_header">
-                    <h4 class="font-zen">施設利用可能時間</h4>
+                <div class="p-visitor__about-card">
+                  <div class="p-visitor__about-header">
+                    <h4>施設利用可能時間</h4>
                   </div>
-                  <div class="p-visitor_about_card_body">
-                    <p class="font-zen">
+                  <div class="p-visitor__about-card-body">
+                    <p>
                       スタッフアワー（月・火・木・金・土：11:00 -
                       20:00）の中で最大3時間まで
                     </p>
@@ -272,12 +358,12 @@
             </div>
             <!-- 2 -->
             <!-- ROW 1 -->
-            <div class="flex gap-50px">
+            <div class="p-visitor__about-row">
               <!-- CARD 1 -->
-              <div class="p-visitor_about_card2 flex-1">
-                <div class="p-visitor_about_card_body2">
-                  <div class="flex gap-3 items-center py-12">
-                    <h2 class="font-zen text-lightBlue">ビジター利用とは？</h2>
+              <div class="p-visitor__about-card--alt">
+                <div class="p-visitor__about-card-body--alt">
+                  <div class="p-visitor__about-alt-heading">
+                    <h2>ビジター利用とは？</h2>
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +379,7 @@
                       />
                     </svg>
                   </div>
-                  <p class="font-zen">
+                  <p>
                     ビジター利用とは、会員登録をせずに1回ごとの都度利用ができるサービスです。
                     「いきなり入会は不安…」「まずは一度試してみたい」という方にぴったり！
                     館内のトレーニングマシン・ストレッチスペースなど、会員同様の設備をご利用いただけます。
@@ -301,10 +387,10 @@
                 </div>
               </div>
               <!-- CARD 2 -->
-              <div class="p-visitor_about_card2 flex-1">
-                <div class="p-visitor_about_card_body2 font-zen">
-                  <div class="flex gap-3 items-center py-12">
-                    <h2 class="font-zen text-lightBlue">確認事項</h2>
+              <div class="p-visitor__about-card--alt">
+                <div class="p-visitor__about-card-body--alt">
+                  <div class="p-visitor__about-alt-heading">
+                    <h2>確認事項</h2>
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -320,13 +406,13 @@
                       />
                     </svg>
                   </div>
-                  <ul class="p-visitor_checklist">
-                    <li class="font-zen p-visitor_checklist_item">
-                      <span class="text-lightBlue">●</span>
+                  <ul class="p-visitor__checklist">
+                    <li class="p-visitor__checklist-item">
+                      <span>●</span>
                       ご本人確認のため、身分証のご提示をお願いしております。
                     </li>
-                    <li class="font-zen p-visitor_checklist_item">
-                      <span class="text-lightBlue">●</span>
+                    <li class="p-visitor__checklist-item">
+                      <span>●</span>
                       トレーニングウェア・シューズ・タオル等はご持参ください。
                     </li>
                   </ul>
@@ -334,13 +420,13 @@
                   ※
                   ウェアやシューズなどのレンタルもございますが、別途料金が発生いたします。
 
-                  <ul class="p-visitor_checklist">
-                    <li class="font-zen p-visitor_checklist_item">
-                      <span class="text-lightBlue">●</span>
+                  <ul class="p-visitor__checklist">
+                    <li class="p-visitor__checklist-item">
+                      <span>●</span>
                       混雑時は入場をお待ちいただく場合がございます。
                     </li>
-                    <li class="font-zen p-visitor_checklist_item">
-                      <span class="text-lightBlue">●</span>
+                    <li class="p-visitor__checklist-item">
+                      <span>●</span>
                       その他、ジム内の利用規約に従ってご利用ください。
                     </li>
                   </ul>
@@ -352,19 +438,19 @@
       </section>
 
       <!-- HOW TO USE SECTION -->
-      <section class="p-visitor_howTo_section">
-        <div class="py-100 c-maxWidth">
+      <section class="p-visitor__howto-section">
+        <div class="p-visitor__howto-content c-maxWidth">
           <!-- TITLE -->
-          <div class="p-visitor_title_container text-white">
-            <p class="p-visitor_subtitle font-zen text-white">ご利用方法</p>
-            <h1 class="p-visitor_title font-outfit text-white">How to Use</h1>
+          <div class="p-visitor__title-container">
+            <p class="p-visitor__subtitle">ご利用方法</p>
+            <h2 class="p-visitor__title">How to Use</h2>
           </div>
-          <div class="flex flex-col gap-50px">
+          <div class="p-visitor__howto-content-body">
             <!-- CONTENT -->
-            <div class="p-visitor_glassy_background_container">
-              <div class="p-visitor_howTo_steps">
+            <div class="p-visitor__glassy-bg">
+              <div class="p-visitor__howto-steps">
                 <!-- STEP 01 -->
-                <div class="p-visitor_howTo_step">
+                <div class="p-visitor__howto-step">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -380,11 +466,11 @@
                     />
                   </svg>
 
-                  <p class="p-visitor_howTo_step_label font-outfit">Step01</p>
-                  <h3 class="p-visitor_howTo_step_title font-zen">
+                  <p class="p-visitor__howto-step-label">Step01</p>
+                  <h3 class="p-visitor__howto-step-title">
                     無料会員登録
                   </h3>
-                  <p class="p-visitor_howTo_step_desc font-zen">
+                  <p class="p-visitor__howto-step-desc">
                     下記サイトにてAmazones（アマゾネス）無料会員登録を行ってください。
                   </p>
                   <a
@@ -393,7 +479,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <p class="font-zen">無料会員登録はこちら</p>
+                    <p>無料会員登録はこちら</p>
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -412,10 +498,10 @@
                 </div>
 
                 <!-- DIVIDER -->
-                <div class="p-visitor_howTo_divider"></div>
+                <div class="p-visitor__howto-divider"></div>
 
                 <!-- STEP 02 -->
-                <div class="p-visitor_howTo_step">
+                <div class="p-visitor__howto-step">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -438,11 +524,11 @@
                       transform="matrix(1,0,0,1,0,0)"
                     />
                   </svg>
-                  <p class="p-visitor_howTo_step_label font-outfit">Step02</p>
-                  <h3 class="p-visitor_howTo_step_title font-zen">
+                  <p class="p-visitor__howto-step-label">Step02</p>
+                  <h3 class="p-visitor__howto-step-title">
                     チケット購入
                   </h3>
-                  <p class="p-visitor_howTo_step_desc font-zen">
+                  <p class="p-visitor__howto-step-desc">
                     会員サイト内にあるマイページへ進んでいただき、
                     ［チケット購入］より［アマゾネス
                     ビジター利用【新価格】］を選択し、クレジット決済にてチケット代金をお支払いください。
@@ -450,10 +536,10 @@
                 </div>
 
                 <!-- DIVIDER -->
-                <div class="p-visitor_howTo_divider"></div>
+                <div class="p-visitor__howto-divider"></div>
 
                 <!-- STEP 03 -->
-                <div class="p-visitor_howTo_step">
+                <div class="p-visitor__howto-step">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -473,13 +559,13 @@
                       d="m39.7 48.5v6.4q-1.3 0.6-2.6 0.9-1.4 0.3-2.9 0.3-3.2 0-5.2-1.8-1.9-1.9-1.9-5 0-3.2 2-5 1.9-1.8 5.3-1.8 1.3 0 2.5 0.2 1.2 0.3 2.3 0.7v2.8q-1.1-0.7-2.2-1-1.1-0.3-2.2-0.3-2 0-3.1 1.2-1.1 1.1-1.1 3.2 0 2.1 1.1 3.2 1 1.1 3 1.1 0.5 0 1 0 0.4-0.1 0.8-0.2v-2.6h-2.1v-2.3zm6.7 7.7l-4.4-10.2h3.1l2.7 6.7 2.2-6.7h3.2l-4.2 10.8q-0.6 1.6-1.4 2.3-0.9 0.6-2.2 0.6h-1.8v-2h0.9q0.8 0 1.2-0.3 0.4-0.3 0.6-0.9zm18.1-8.6q0.6-0.9 1.4-1.4 0.8-0.5 1.8-0.5 1.7 0 2.6 1.1 0.9 1 0.9 3v6h-3.2v-5.1q0-0.1 0-0.3 0-0.1 0-0.3 0-1.1-0.3-1.5-0.3-0.5-1-0.5-0.9 0-1.3 0.7-0.5 0.8-0.5 2.2v4.8h-3.2v-5.1q0-1.7-0.3-2.1-0.3-0.5-1-0.5-0.9 0-1.4 0.7-0.5 0.8-0.5 2.2v4.8h-3.2v-9.8h3.2v1.4q0.6-0.8 1.3-1.3 0.8-0.4 1.7-0.4 1 0 1.8 0.5 0.8 0.5 1.2 1.4z"
                     />
                   </svg>
-                  <p class="p-visitor_howTo_step_label font-outfit">Step03</p>
-                  <h3 class="p-visitor_howTo_step_title font-zen">ご来店</h3>
+                  <p class="p-visitor__howto-step-label">Step03</p>
+                  <h3 class="p-visitor__howto-step-title">ご来店</h3>
                   <div>
-                    <p class="p-visitor_howTo_step_desc font-zen">
+                    <p class="p-visitor__howto-step-desc">
                       入館の際は、会員サイト内にある会員証よりQRコードを表示させ、店舗入り口に備え付けのバーコードリーダーにかざしご入館ください。
                     </p>
-                    <p class="p-visitor_howTo_step_desc font-zen">
+                    <p class="p-visitor__howto-step-desc">
                       会員証のQRコードでご入館いただくことでチケットが消化されます。
                     </p>
                   </div>
@@ -487,8 +573,8 @@
               </div>
             </div>
             <!-- CAUTION CARD -->
-            <div class="p-visitor_about_card flex-1">
-              <div class="p-visitor_header_red flex gap-2">
+            <div class="p-visitor__about-card">
+              <div class="p-visitor__about-header--red">
                 <svg
                   version="1.2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -503,14 +589,14 @@
                     d="m24.62 20.54c-0.16 0.28-0.47 0.46-0.8 0.46h-21.83c-0.33 0-0.63-0.18-0.79-0.46-0.17-0.29-0.16-0.64 0.01-0.92l10.92-18.18c0.16-0.27 0.46-0.44 0.78-0.44 0.32 0 0.61 0.17 0.78 0.44l10.91 18.18c0.17 0.28 0.18 0.63 0.02 0.92zm-2.4-1.36l-9.31-15.5-9.32 15.5zm-9.31-11.82c0.51 0 0.91 0.41 0.91 0.91v4.55c0 0.5-0.4 0.91-0.91 0.91-0.5 0-0.91-0.41-0.91-0.91v-4.55c0-0.5 0.41-0.91 0.91-0.91zm0.91 8.18v0.91c0 0.5-0.4 0.91-0.91 0.91-0.5 0-0.91-0.41-0.91-0.91v-0.91c0-0.5 0.41-0.9 0.91-0.9 0.51 0 0.91 0.4 0.91 0.9z"
                   />
                 </svg>
-                <h4 class="font-zen">ご注意ください</h4>
+                <h4>ご注意ください</h4>
               </div>
-              <div class="p-visitor_about_card_body">
-                <p class="font-zen">
+              <div class="p-visitor__about-card-body">
+                <p>
                   ※
                   ビジター利用は、事前にチケットを購入していただくことでご利用が可能となります
                 </p>
-                <p class="font-zen">
+                <p>
                   ※ 入館可能な時間は、スタッフアワー（月・火・木・金・土：11:00
                   - 20:00）内のみとなります
                 </p>
@@ -521,8 +607,8 @@
       </section>
 
       <!-- FAQ SECTION -->
-      <section class="p-visitor_section_white relative">
-        <div class="p-visitor_faq_ribbon clip-grow-right">
+      <section class="p-visitor__section--white">
+        <div class="p-visitor__faq-ribbon clip-grow-right">
           <svg
             version="1.2"
             xmlns="http://www.w3.org/2000/svg"
@@ -537,16 +623,16 @@
             />
           </svg>
         </div>
-        <div class="py-100 c-maxWidth">
+        <div class="p-visitor__faq-content c-maxWidth">
           <!-- TITLE -->
-          <div class="p-visitor_title_container">
-            <p class="p-visitor_subtitle font-zen">
+          <div class="p-visitor__title-container">
+            <p class="p-visitor__subtitle">
               よくあるご質問　- ビジター利用について -
             </p>
-            <h1 class="p-visitor_title font-outfit">Faq</h1>
+            <h2 class="p-visitor__title">Faq</h2>
           </div>
           <!-- FAQ LIST -->
-          <div class="flex flex-col gap-40px">
+          <div class="p-visitor__faq-list">
             <div id="ビジターFAQ" class="faq-container w-full"></div>
           </div>
         </div>
@@ -612,32 +698,32 @@
             </button>
           </a>
           <!-- FLOATING SPEAK PERSON 01 -->
-          <div class="p-visitor_speak_container01">
-            <div class="p-visitor_speak_image01">
+          <div class="p-visitor__speak-container--left">
+            <div class="p-visitor__speak-image--left">
               <img
                 src="../assets/img/visitor/img_visitor_speak_bubble01.svg"
                 alt="speak person image"
-                class="p-visitor_speak_bubble01 speech-bubble"
+                class="p-visitor__speak-bubble--left speech-bubble"
               />
               <img
                 src="../assets/img/visitor/img_visitor_speak_person01.webp"
                 alt="speak person image"
-                class="p-visitor_speak_person01"
+                class="p-visitor__speak-person--left"
               />
             </div>
           </div>
           <!-- FLOATING SPEAK PERSON 02 -->
-          <div class="p-visitor_speak_container02">
-            <div class="p-visitor_speak_image02">
+          <div class="p-visitor__speak-container--right">
+            <div class="p-visitor__speak-image--right">
               <img
                 src="../assets/img/visitor/img_visitor_speak_bubble02.svg"
                 alt="speak person image"
-                class="p-visitor_speak_bubble02 speech-bubble"
+                class="p-visitor__speak-bubble--right speech-bubble"
               />
               <img
                 src="../assets/img/visitor/img_visitor_speak_person02.webp"
                 alt="speak person image"
-                class="p-visitor_speak_person02"
+                class="p-visitor__speak-person--right"
               />
             </div>
           </div>
@@ -754,7 +840,7 @@
               <div
                 class="footer-page-link flex flex-row justify-between items-center relative"
               >
-                <p class="font-outfit fs-18 fw-500">About Us</p>
+                <h3 class="font-outfit fs-18 fw-500">About Us</h3>
                 <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                 <div class="footer-link-line"></div>
               </div>
@@ -786,7 +872,7 @@
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Service</p>
+                  <h3 class="font-outfit fs-18 fw-500">Service</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
@@ -802,7 +888,7 @@
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Recruitment</p>
+                  <h3 class="font-outfit fs-18 fw-500">Recruitment</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
@@ -821,7 +907,7 @@
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Other Shops</p>
+                  <h3 class="font-outfit fs-18 fw-500">Other Shops</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
@@ -847,7 +933,7 @@
                 <div
                   class="footer-page-link flex flex-row justify-between items-center relative"
                 >
-                  <p class="font-outfit fs-18 fw-500">Sns</p>
+                  <h3 class="font-outfit fs-18 fw-500">Sns</h3>
                   <img src="../assets/img/top/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>

@@ -1,4 +1,4 @@
-document.querySelectorAll('.p-sportip_links-nav a').forEach(link => {
+document.querySelectorAll('.p-sportip__links-nav a').forEach(link => {
   link.addEventListener('click', e => {
     const href = link.getAttribute('href');
     if (!href || href === '#') return;
