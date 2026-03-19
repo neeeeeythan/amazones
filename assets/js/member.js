@@ -181,20 +181,17 @@ const memberData = [
   }
 ];
 
-const ITEMS_PER_PAGE = 15; 
-let currentPage = 1;
-
 // Function to create a member card HTML
 function createMemberCard(member) {
   return `
-    <div class="member-content">
-      <div class="relative voice-slide">
-        <div class="slide-content flex flex-col gap-15px w-full voice-slide-content">
-          <p class="fw-500 fs-14 text-white voice-label">${member.shop}</p>
-          <div class="flex flex-row items-center gap-20px">
+    <div class="p-member-content">
+      <div class="relative p-member-voice-slide">
+        <div class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content">
+          <p class="fw-500 fs-14 text-white p-member-voice-label ">${member.shop}</p>
+          <div class="p-member-voice-img-box flex flex-row items-center gap-20px">
             <img src="${member.image}" alt="${member.name}" />
           
-              <p class="fw-700 text-lightBlue voice-name">${member.name}</p>
+              <p class="fw-700 text-lightBlue p-member-voice-name">${member.name}</p>
              
           </div>
           <p class="fw-500 fs-15 lh-180">${member.comment}</p>
@@ -204,65 +201,19 @@ function createMemberCard(member) {
   `;
 }
 
-// Function to render cards for current page
+// Function to render all cards at once
 function renderCards() {
-  const container = document.getElementById('member-cards-container');
-  const start = (currentPage - 1) * ITEMS_PER_PAGE;
-  const end = start + ITEMS_PER_PAGE;
-  const paginatedMembers = memberData.slice(start, end);
-  
+  const container = document.getElementById('p-member-cards-container');
+
   let cardsHTML = '';
-  paginatedMembers.forEach(member => {
+  memberData.forEach(member => {
     cardsHTML += createMemberCard(member);
   });
-  
+
   container.innerHTML = cardsHTML;
-}
-
-// Function to render pagination
-function renderPagination() {
-  const paginationContainer = document.getElementById('pagination');
-  const totalPages = Math.ceil(memberData.length / ITEMS_PER_PAGE);
-  
-  let paginationHTML = '';
-  
-
-  // Page numbers
-  for (let i = 1; i <= totalPages; i++) {
-    paginationHTML += `
-      <button class="pagination-btn ${currentPage === i ? 'active' : ''}" 
-              onclick="changePage(${i})">
-        ${i}
-      </button>
-    `;
-  }
-  
-
-  
-  paginationContainer.innerHTML = paginationHTML;
-}
-
-// Function to change page
-function changePage(page) {
-  const totalPages = Math.ceil(memberData.length / ITEMS_PER_PAGE);
-  
-  if (page < 1 || page > totalPages) {
-    return;
-  }
-  
-  currentPage = page;
-  renderCards();
-  renderPagination();
-  
-  // Optional: Scroll to top of cards section
-  document.querySelector('.member-page-section').scrollIntoView({ 
-    behavior: 'smooth',
-    block: 'start'
-  });
 }
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   renderCards();
-  renderPagination();
 });

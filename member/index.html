@@ -22,16 +22,23 @@
   <body>
     <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div
+        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+      >
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
-            width="159.97"
-            height="62.77"
+            width="159.97px"
+            height="62.77px"
+            class="amazones-header-logo"
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14"
+            >アマゾネス</a
+          >
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">
+            WOMEN ONLY24h GYM
+          </p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -49,7 +56,11 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
 
@@ -71,7 +82,11 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
         </div>
@@ -85,8 +100,18 @@
             id="floating-menu-btn"
             class="flex flex-col items-center gap-13px"
           >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
+            <img
+              src="../assets/img/top/icon_menu.svg"
+              alt="アイコン"
+              class="desktop-menu-icon"
+            />
             <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+            <button class="mobile-hamburger" aria-label="メニュー">
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+            </button>
           </div>
 
           <div
@@ -113,6 +138,64 @@
               />
             </div>
           </div>
+        </div>
+
+        <!--header mobile-->
+        <div class="mobile-header-overlay relative">
+          <div class="mobile-header-overlay-content">
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+            ©2026 Wellness Land Co., Ltd.
+          </p>
         </div>
       </div>
     </header>
@@ -168,31 +251,40 @@
           class="ribbon-banner clip-grow-right"
         />
       </section>
-
       <!--MAIN CONTENT-->
-      <section class="member-page-section">
-        <div class="member-page-container">
-          <div class="flex flex-row gap-75px items-center">
-            <div class="flex flex-col gap-18px">
-              <p class="fs-18 fw-500 text-black1">会員様の声</p>
-              <h2 class="fs-100 lh-normal font-outfit fw-400">Voice</h2>
+      <section class="p-member-page-section">
+        <article class="p-member-page-container">
+          <div class="p-member-header-row flex flex-row gap-75px items-center">
+            <div class="section-header-wrapper flex flex-col gap-18px">
+              <p class="section-sub-text fs-18 fw-500 text-black1">
+                会員様の声
+              </p>
+              <h2
+                class="section-header-text fs-100 lh-normal font-outfit fw-400"
+              >
+                Voice
+              </h2>
             </div>
             <div class="flex flex-row items-center gap-20px mt-50">
               <img src="../assets/img/top/icon_speaker.svg" alt="24時間" />
-              <div class="flex flex-col items-start gap-26px">
-                <p class="fw-700 fs-24">
+              <div>
+                <p class="fw-700 fs-24 lh-200">
                   女性がいつでも安心して通える女性専用24時間ジム
                 </p>
-                <p class="fw-500 fs-16">
+                <p class="display-desk fw-500 fs-16 lh-200">
                   ※
                   個人の感想です。効果には個人差があり、効果効能を保証するものではありません。
                 </p>
               </div>
             </div>
+            <p class="display-sp fw-500 fs-16 lh-200 mt-5">
+              ※
+              個人の感想です。効果には個人差があり、効果効能を保証するものではありません。
+            </p>
           </div>
 
-          <div class="flex flex-col items-end relative">
-            <div class="member-speech-bubble">
+          <section class="flex flex-col items-center relative">
+            <figure class="p-member-speech-bubble">
               <img
                 src="../assets/img/member/img_member_sticker1.webp"
                 height="350px"
@@ -202,15 +294,22 @@
               <img
                 src="../assets/img/member/img_member_speech_bubble1.svg"
                 alt="たくさんのお声ありがとうございます！"
-                class="member-speech speech-bubble"
+                class="p-member-speech speech-bubble"
               />
-            </div>
-            <div id="member-cards-container" class="member-cards-grid"></div>
-            <div class="pagination-container">
-              <div id="pagination" class="pagination"></div>
-            </div>
-          </div>
-        </div>
+            </figure>
+
+            <ul id="p-member-cards-container" class="p-member-cards-grid"></ul>
+
+            <nav class="p-member-pagination-container">
+              <menu id="p-pagination" class="p-pagination">
+                <li><button class="p-member-pagination-btn active">1</button></li>
+                <li><button class="p-member-pagination-btn">2</button></li>
+                <li><button class="p-member-pagination-btn">3</button></li>
+              </menu>
+            </nav>
+
+           </section>
+        </article>
       </section>
 
       <!--MEMBER BANNER-->
@@ -218,11 +317,11 @@
         <div
           class="top-banner-container flex flex-col gap-53px items-center justify-center relative"
         >
-          <h2 class="fw-700 fs-32">
-            まずはお気軽に無料体験・見学へ
+          <h2 class="reveal fw-700 fs-32">
+            まずはお気軽に<br class="display-sp" />無料体験・見学へ
             <span class="fs-60 font-outfit fw-600 text-lightBlue">GO!</span>
           </h2>
-          <p class="fw-500 fs-16 lh-180">
+          <p class="reveal fw-500 fs-16 lh-180">
             女性専用24時間ジムAmazones（アマゾネス）では、無料体験や見学を随時受付しております。<br
               class="banner-break"
             />
@@ -232,39 +331,40 @@
             <img src="../assets/img/top/icon_24_white.svg" alt="アイコン" />
             <p class="text-white fs-16 font-outfit">
               無料体験・見学予約はこちら
+              <img
+                src="../assets/img/top/icon_btn_green_arrow.svg"
+                alt="アイコン"
+              />
             </p>
-            <img
-              src="../assets/img/top/icon_btn_green_arrow.svg"
-              alt="アイコン"
-            />
           </a>
 
-          <div class="banner-sticker1">
-            <img
-              src="../assets/img/top/img_banner_speechbubble1.svg"
-              alt="待ってるよー"
-              class="banner-speechbubble1 speech-bubble"
-            />
-            <img
-              src="../assets/img/top/img_banner_sticker1.webp"
-              alt="待ってるよー"
-              height="349px"
-              width="152px"
-            />
-          </div>
-
-          <div class="banner-sticker2">
-            <img
-              src="../assets/img/top/img_banner_speechbubble2.svg"
-              alt="待ってるよー"
-              class="banner-speechbubble2 speech-bubble"
-            />
-            <img
-              src="../assets/img/top/img_banner_sticker2.webp"
-              alt="待ってるよー"
-              height="360px"
-              width="199px"
-            />
+          <div class="banner-stickers-row">
+            <div class="banner-sticker1">
+              <img
+                src="../assets/img/top/img_banner_speechbubble1.svg"
+                alt="待ってるよー"
+                class="banner-speechbubble1 speech-bubble"
+              />
+              <img
+                src="../assets/img/top/img_banner_sticker1.webp"
+                alt="待ってるよー"
+                height="349px"
+                width="152px"
+              />
+            </div>
+            <div class="banner-sticker2">
+              <img
+                src="../assets/img/top/img_banner_speechbubble2.svg"
+                alt="待ってるよー"
+                class="banner-speechbubble2 speech-bubble"
+              />
+              <img
+                src="../assets/img/top/img_banner_sticker2.webp"
+                alt="待ってるよー"
+                height="360px"
+                width="199px"
+              />
+            </div>
           </div>
         </div>
       </section>

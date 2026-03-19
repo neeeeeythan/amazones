@@ -6066,7 +6066,7 @@ a {
   .topic-slider__track .slide {
     width: 290px;
   }
-  .topic-slider__track .slide img {
+  .topic-slider__track .slide img:not(a img) {
     width: 290px;
   }
 }

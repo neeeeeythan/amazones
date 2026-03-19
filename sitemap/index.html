@@ -21,16 +21,23 @@
   <body>
     <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div
+        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+      >
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
-            width="159.97"
-            height="62.77"
+            width="159.97px"
+            height="62.77px"
+            class="amazones-header-logo"
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14"
+            >アマゾネス</a
+          >
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">
+            WOMEN ONLY24h GYM
+          </p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -48,7 +55,11 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
 
@@ -70,7 +81,11 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
         </div>
@@ -84,8 +99,18 @@
             id="floating-menu-btn"
             class="flex flex-col items-center gap-13px"
           >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
+            <img
+              src="../assets/img/top/icon_menu.svg"
+              alt="アイコン"
+              class="desktop-menu-icon"
+            />
             <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+            <button class="mobile-hamburger" aria-label="メニュー">
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+            </button>
           </div>
 
           <div
@@ -113,10 +138,68 @@
             </div>
           </div>
         </div>
+
+        <!--header mobile-->
+        <div class="mobile-header-overlay relative">
+          <div class="mobile-header-overlay-content">
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+            ©2026 Wellness Land Co., Ltd.
+          </p>
+        </div>
       </div>
     </header>
 
-    <main>
+    <main class = 'p-sitemap-page'>
       <!--HERO BANNER-->
       <section class="banner-section">
         <div class="p-banner">
@@ -167,35 +250,35 @@
       </section>
 
       <!--MAIN CONTENT-->
-      <section class="sitemap-content">
-        <div class="sitemap-content-container">
+      <section class="p-sitemap-content">
+        <div class="p-sitemap-content-container">
           <!--First Content-->
-          <div class="flex flex-col items-start gap-39px sitemap-content">
-            <div class="sitemap-content-item">
-              <div class="sitemap-label">
+          <div class="flex flex-col items-start gap-39px p-sitemap-content">
+            <div class="p-sitemap-content-item">
+              <div class="p-sitemap-label">
                 <img
                   src="../assets/img/sitemap/icon_sitemap_icon1.svg"
                   alt="Amazonesについて"
                 />
-                <p class="fw-700 fs-24">Amazonesについて</p>
+                <h2 class="fw-700 fs-24">Amazonesについて</h2>
               </div>
 
-              <ul class="sitemap-ul">
+              <ul class="p-sitemap-ul">
                 <li><a href="#">トップページ</a></li>
                 <li><a href="#">お知らせ</a></li>
                 <li><a href="#">ゾネスタイムズ</a></li>
                 <li>
-                  <div class="sitemap-nested-link">
+                  <div class="p-sitemap-nested-link">
                     <p class="fw-500 fs-16">無料体験・見学予約</p>
-                    <a href="#" class="sitemap-ul-sub-link"
+                    <a href="#" class="p-sitemap-ul-sub-link"
                       >ご予約から無料体験・見学までの流れ</a
                     >
                   </div>
                 </li>
                 <li>
-                  <div class="sitemap-nested-link">
+                  <div class="p-sitemap-nested-link">
                     <p class="fw-500 fs-16">入会手続きのご案内</p>
-                    <a href="#" class="sitemap-ul-sub-link"
+                    <a href="#" class="p-sitemap-ul-sub-link"
                       >お支払い方法について</a
                     >
                   </div>
@@ -216,16 +299,16 @@
               </ul>
             </div>
 
-            <div class="sitemap-content-item">
-              <div class="sitemap-label">
+            <div class="p-sitemap-content-item">
+              <div class="p-sitemap-label">
                 <img
                   src="../assets/img/sitemap/icon_sitemap_icon2.svg"
                   alt="Amazonesのサービス"
                 />
-                <p class="fw-700 fs-24">Amazonesのサービス</p>
+                <h2 class="fw-700 fs-24">Amazonesのサービス</h2>
               </div>
 
-              <ul class="sitemap-ul">
+              <ul class="p-sitemap-ul">
                 <li><a href="#">女性専用24時間ジム</a></li>
                 <li><a href="#">Amazonesのパーソナルトレーニング</a></li>
                 <li><a href="#">Dr.Amazones</a></li>
@@ -235,42 +318,42 @@
           </div>
 
           <!--Second Content-->
-          <div class="flex flex-col items-start gap-39px sitemap-content">
-            <div class="sitemap-content-item">
-              <div class="sitemap-label">
+          <div class="flex flex-col items-start gap-39px p-sitemap-content">
+            <div class="p-sitemap-content-item">
+              <div class="p-sitemap-label">
                 <img
                   src="../assets/img/sitemap/icon_sitemap_icon3.svg"
                   alt="Amazones店舗一覧"
                 />
-                <p class="fw-700 fs-24">Amazones店舗一覧</p>
+                <h2 class="fw-700 fs-24">Amazones店舗一覧</h2>
               </div>
-              <ul class="sitemap-ul">
+              <ul class="p-sitemap-ul">
                 <li>
-                  <div class="sitemap-nested-link">
+                  <div class="p-sitemap-nested-link">
                     <p class="fw-500 fs-16">店舗一覧</p>
-                    <a href="#" class="sitemap-ul-sub-link">難波本店</a>
-                    <a href="#" class="sitemap-ul-sub-link">和歌山駅前店</a>
-                    <a href="#" class="sitemap-ul-sub-link">岡山野田店</a>
-                    <a href="#" class="sitemap-ul-sub-link">西明石店</a>
-                    <a href="#" class="sitemap-ul-sub-link">大阪十三店</a>
-                    <a href="#" class="sitemap-ul-sub-link">阪神尼崎店</a>
-                    <a href="#" class="sitemap-ul-sub-link">大和つきみ野店</a>
-                    <a href="#" class="sitemap-ul-sub-link">大阪あべの店</a>
-                    <a href="#" class="sitemap-ul-sub-link">京都一乗寺店</a>
-                    <a href="#" class="sitemap-ul-sub-link">埼玉所沢店</a>
-                    <a href="#" class="sitemap-ul-sub-link">宇都宮店</a>
-                    <a href="#" class="sitemap-ul-sub-link">此花店</a>
-                    <a href="#" class="sitemap-ul-sub-link">大阪本町店</a>
-                    <a href="#" class="sitemap-ul-sub-link">姫路店</a>
-                    <a href="#" class="sitemap-ul-sub-link">葛飾新宿店</a>
-                    <a href="#" class="sitemap-ul-sub-link">北習志野店</a>
-                    <a href="#" class="sitemap-ul-sub-link">葛城新庄店</a>
-                    <a href="#" class="sitemap-ul-sub-link">岐阜都通店</a>
-                    <a href="#" class="sitemap-ul-sub-link">田端店</a>
-                    <a href="#" class="sitemap-ul-sub-link">堀江店</a>
-                    <a href="#" class="sitemap-ul-sub-link">天満橋店</a>
-                    <a href="#" class="sitemap-ul-sub-link">徳島鮎喰店</a>
-                    <a href="#" class="sitemap-ul-sub-link"
+                    <a href="#" class="p-sitemap-ul-sub-link">難波本店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">和歌山駅前店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">岡山野田店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">西明石店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">大阪十三店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">阪神尼崎店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">大和つきみ野店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">大阪あべの店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">京都一乗寺店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">埼玉所沢店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">宇都宮店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">此花店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">大阪本町店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">姫路店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">葛飾新宿店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">北習志野店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">葛城新庄店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">岐阜都通店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">田端店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">堀江店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">天満橋店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link">徳島鮎喰店</a>
+                    <a href="#" class="p-sitemap-ul-sub-link"
                       >アクロスプラザ関店</a
                     >
                   </div>
@@ -280,17 +363,17 @@
           </div>
 
           <!-- Third section - Topics, Other Stores, Recruitment -->
-          <div class="flex flex-col items-start gap-39px sitemap-content">
-            <div class="sitemap-content-item">
-              <div class="sitemap-label">
+          <div class="flex flex-col items-start gap-39px p-sitemap-content">
+            <div class="p-sitemap-content-item">
+              <div class="p-sitemap-label">
                 <img
                   src="../assets/img/sitemap/icon_sitemap_icon5.svg"
                   alt="Amazones以外の店舗"
                 />
-                <p class="fw-700 fs-24">Amazones以外の店舗</p>
+                <h2 class="fw-700 fs-24">Amazones以外の店舗</>
               </div>
 
-              <ul class="sitemap-ul">
+              <ul class="p-sitemap-ul">
                 <li><a href="#">家族割キャンペーン</a></li>
                 <li><a href="#">ビジター特別割引キャンペーン</a></li>
                 <li><a href="#">月会費ポイント還元 + 特典・優待</a></li>
@@ -298,16 +381,16 @@
               </ul>
             </div>
 
-            <div class="sitemap-content-item">
-              <div class="sitemap-label">
+            <div class="p-sitemap-content-item">
+              <div class="p-sitemap-label">
                 <img
                   src="../assets/img/sitemap/icon_sitemap_icon4.svg"
                   alt="Amazonesのトピックス"
                 />
-                <p class="fw-700 fs-24">Amazonesのトピックス</p>
+                <h2 class="fw-700 fs-24">Amazonesのトピックス</h2>
               </div>
 
-              <ul class="sitemap-ul">
+              <ul class="p-sitemap-ul">
                 <li>
                   <a href="#" class="fw-500 fs-15 footer-icon-link"
                     >完全個室PRIVATE GYM Highness
@@ -335,16 +418,16 @@
               </ul>
             </div>
 
-            <div class="sitemap-content-item">
-              <div class="sitemap-label">
+            <div class="p-sitemap-content-item">
+              <div class="p-sitemap-label">
                 <img
                   src="../assets/img/sitemap/icon_sitemap_icon6.svg"
                   alt="Amazonesの採用情報"
                 />
-                <p class="fw-700 fs-24">Amazonesの採用情報</p>
+                <h2 class="fw-700 fs-24">Amazonesの採用情報</h2>
               </div>
 
-              <ul class="sitemap-ul">
+              <ul class="p-sitemap-ul">
                 <li>
                   <a href="#" class="fw-500 fs-15 footer-icon-link"
                     >採用情報
@@ -356,16 +439,16 @@
               </ul>
             </div>
 
-            <div class="sitemap-content-item">
-              <div class="sitemap-label">
+            <div class="p-sitemap-content-item">
+              <div class="p-sitemap-label">
                 <img
                   src="../assets/img/sitemap/icon_sitemap_icon7.svg"
                   alt="Amazonesに関連するSNS"
                 />
-                <p class="fw-700 fs-24">Amazonesに関連するSNS</p>
+                <h2 class="fw-700 fs-24">Amazonesに関連するSNS</=>
               </div>
 
-              <ul class="sitemap-ul">
+              <ul class="p-sitemap-ul">
                 <li>
                   <a href="#" class="footer-icon-link fw-500 fs-15">
                     <img
@@ -400,10 +483,11 @@
         </div>
       </section>
 
+
+
       <!--SITEMAP BANNER-->
-      <section class="sitemap-banner">
-        <div class="sitemap-banner-container flex flex-row gap-40px">
-          <div class="sitemap-banner-item flex flex-col gap-32px w-full">
+        <!-- <div class="p-sitemap-banner-container flex flex-row gap-40px">
+          <div class="p-p-sitemap-banner-item flex flex-col gap-32px w-full">
             <div class="flex flex-row justify-between items-center w-full">
               <div class="flex flex-row gap-32px items-center">
                 <img
@@ -417,12 +501,12 @@
                 <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
               </div>
             </div>
-            <p class="fw-500 fs-16 sitemap-banner-p">
+            <p class="fw-500 fs-16 p-sitemap-banner-p">
               各ページの掲載内容についてご不明点はお気軽にお尋ねください
             </p>
           </div>
 
-          <div class="sitemap-banner-item flex flex-col gap-32px w-full">
+          <div class="p-p-sitemap-banner-item flex flex-col gap-32px w-full">
             <div class="flex flex-row justify-between items-center w-full">
               <div class="flex flex-row gap-32px items-center">
                 <img
@@ -436,15 +520,70 @@
                 <img src="../assets/img/top/icon_videos.svg" alt="アイコン" />
               </div>
             </div>
-            <p class="fw-500 fs-16 sitemap-banner-p">
+            <p class="fw-500 fs-16 p-sitemap-banner-p">
               パーソナルトレーニングはこちらのページからご予約ください。
             </p>
           </div>
+        </div> -->
+      
+        <div class="c-other-details-banner">
+          <div
+            class="reveal-scale c-other-details-banner-container flex flex-row gap-40px"
+          >
+            <ul class="w-full flex flex-col items-start gap-40px">
+              <li
+                class="c-other-details-banner-item flex flex-col gap-32px w-full"
+              >
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div class="flex flex-row gap-32px items-center">
+                    <img
+                      src="../assets/img/sitemap/icon_message.svg"
+                      alt="お問い合わせ"
+                    />
+                    <p class="fw-700 fs-24">お問い合わせ</p>
+                  </div>
+                  <div class="btn-green-wrapper">
+                    <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+                  </div>
+                </div>
+                <p class="fw-500 fs-16 c-other-details-banner-p lh-200">
+                各ページの掲載内容についてご不明点はお気軽にお尋ねください
+                </p>
+              </li>
+
+              <li
+                class="c-other-details-banner-item flex flex-col gap-32px w-full"
+              >
+                <div class="flex flex-row justify-between items-center w-full">
+                  <div class="flex flex-row gap-32px items-center">
+                    <img
+                      src="../assets/img/sitemap/icon_user.svg"
+                      alt="お問い合わせ"
+                    />
+                    <p class="fw-700 fs-24">マイページ</p>
+                  </div>
+                  <div class="btn-green-wrapper">
+                    <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+                  </div>
+                </div>
+                <p class="fw-500 fs-16 c-other-details-banner-p lh-200">
+                  パーソナルトレーニングはこちらのページからご予約ください。
+                </p>
+              </li>
+            </ul>
+            
+          </div>
         </div>
-      </section>
+        
+
+
+      
     </main>
+
+
+    
     <footer>
-      <div class="footer-sitemap">
+      <div class="p-footer-sitemap">
         <img
           src="../assets/img/common/img_amazones_logo.png"
           alt="WOMEN ONLY 24h GYM"

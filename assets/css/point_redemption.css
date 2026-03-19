@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* padding-left:20px;
+  padding-right:20px; */
 }
 .point-redemption-main-container {
   width: 100%;
@@ -17,7 +19,7 @@
 .point-redemption-content1-wrapper {
   width: 100%;
   max-width: 1440px;
-  padding: 150px 0px 100px 0px;
+  padding: 150px 20px 100px 20px;
 }
 .point-redemption-content1-wrapper h2 {
   padding-bottom: 30px;
@@ -33,7 +35,7 @@
 .point-redemption-content2-wrapper {
   width: 100%;
   max-width: 1440px;
-  padding: 150px 0px 100px 0px;
+  padding: 150px 20px 100px 20px;
 }
 .summary-content {
   padding: 75px 30px 40px 30px;
@@ -49,9 +51,12 @@
   top: 0px;
   left: 0px;
   min-width: 240px;
+  text-align:center;
+   white-space: nowrap;
 }
-.summary-content-left {
-  width: calc(100% - 60px);
+.summary-content-left,
+.hospitality-item-wrapper {
+  list-style: none;
 }
 .summary-content-right {
   width: calc(100% - 60px);
@@ -65,7 +70,9 @@
   width: 100%;
   border-collapse: collapse;
 }
-
+.point-redemption-content1-wrapper p:first-child{
+  line-height:30px !important;
+}
 .point-redemption-content .pricing-table thead th {
   text-align: left;
   padding: 0px 0px 25px 0px;
@@ -82,7 +89,9 @@
   font-size: 16px;
   font-weight: 500;
 }
-
+/* .p-protein_campaign_header p{
+  line-height:30px !important;
+} */
 .pricing-table tbody tr:hover {
   background: #f9fbfb;
   transition: all 0.3s ease-in-out;
@@ -129,7 +138,7 @@
   margin-right: 20px;
 }
 .summary-content-warn ul li {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .summary-content-warn ul li::marker {
@@ -209,4 +218,290 @@
   right: 0px;
   top: 0px;
 }
+.summary-content-warn ul li {
+  line-height:30px;
+}
+.point-redemption-content ul li p:not(.summary-label){
+  line-height:30px;
+}
+.amazones-online-shop .gap-50px{
+  gap:40px;
+}
+@media screen and (max-width:1200px){
+  .point-redemption-item1 {
+  flex-direction:column;
+}
+.summary-content-right {
+  width:100%;
+}
+}
+
+@media screen and (max-width:1024px){
+  .point-redemption-content1-wrapper div.gap-30px{
+    flex-direction:column;
+  }
+  .point-redemption-content1-wrapper div.gap-30px img{
+    width:100%;
+  }
+  .point-redemption-content1-wrapper p{
+  line-height:30px !important;
+}
+.point-redemption-content1-wrapper .gap-4{
+  gap:0px;
+}
+.summary-content-left{
+  gap:20px;
+}
+}
+
+
+@media screen and (max-width:1000px){
+  .hospitality-item-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+@media screen and (max-width:767px){
+  .point-redemption-content2-wrapper {
+    padding:50px 20px;
+  }
+  .point-redemption-content .p-protein_campaign_block {
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .point-redemption-content1-wrapper{
+    padding:100px 0px;
+  }
+  .point-redemption-content2-wrapper{
+    gap:30px;
+  }
+  .summary-label,
+  .hospitality-label{
+    font-size:16px;
+    text-align:center;
+    padding:8px 0px;
+    min-width:200px;
+  }
+  .summary-content{
+    padding: 55px 15px 20px 15px;
+  }
+  .pricing-table tbody tr td:first-child {
+    width: 140px;
+    
+}
+.summary-content-left .pt-70{
+  padding-top:50px;
+}
+.summary-content-left .pb-40{
+  padding-bottom:20px;
+}
+.point-redemption-item1,
+.point-redemption-content2-wrapper .gap-50px{
+  gap:20px;
+}
+
+.recommended-container{
+  padding-bottom:50px;
+}
+.hospitality-section{
+  padding:100px 20px;
+}
+.hospitality-main-container{
+  gap:30px;
+}
+.hospitality-main-container .gap-62px,
+.hospitality-main-container .gap-60px{
+  gap:40px;
+}
+
+ .hospitality-item-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .hospitality-section .gap-30px{
+    gap:15px;
+  }
+   .hospitality-section .gap-30px img{
+    width:50px;
+   }
+   .hospitality-section .gap-30px p.fs-24{
+    font-size:20px;
+   }
+   .amazones-online-shop .dr-amazones-section{
+    margin-top:200px;
+   }
+   .amazones-online-shop .dr-amazones-container {
+    max-height: 800px;
+}
+}
+
+
+@media screen and (max-width:500px){
+  /* .pricing-table tbody tr td:first-child {
+      width: 120px;
+      
+  } */
+  .point-redemption-content .pricing-table thead th{
+    text-wrap:wrap;
+    line-height:30px;
+    text-align:center;
+  }
+}
 /*END OF RECOMMENDED SECTION*/
+
+
+
+
+
+
+
+
+
+/*DR AMAZONES*/
+/*TOP DR AMAZONES SECTION*/
+.dr-amazones-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+}
+.dr-amazones-section {
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--base-white);
+  padding: 60px 77px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.dr-amazones-section .triangle-icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.shop-ribbon-sp {
+  display: none;
+}
+.dr-amazones-container h2{
+  line-height:50px;
+}
+@media screen and (max-width: 1700px) {
+  .dr-amazones-container {
+    flex-direction: column !important;
+  }
+  .dr-amazones-section {
+    position: relative !important;
+    align-self: end;
+    margin-top: 100px;
+  }
+  .dr-amazones-section {
+    /* max-height:350px; */
+  }
+  .dr-amazones-container {
+    max-height: 1000px;
+  }
+   .drAmazones-pic {
+    width: 100vw;
+    /* transform:scale(1.4);
+  object-position: 0 -20px;
+  margin-top:40px; */
+  }
+}
+
+@media screen and (max-width:800px){
+   .dr-amazones-container h2{
+  font-size:42px;
+  margin-top:10px;
+}
+}
+@media screen and (max-width: 767px) {
+  .dr-amazones-section {
+    width: 95%;
+  }
+  .dr-amazones-container .gap-35px,
+  .dr-amazones-container .gap-50px {
+    gap: 20px;
+  }
+ 
+  .dr-amazones-section {
+    padding: 30px;
+  }
+  .dr-amazones-section .fs-18 {
+    font-size: 16px;
+  }
+  .dr-amazones-label {
+    width: 295px;
+    height: auto;
+  }
+  .triangle-icon {
+    width: 120px;
+    height: auto;
+  }
+  .dr-amazones-btn {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .drAmazones-pic {
+    width: 100vw;
+    transform: scale(1.4);
+    object-position: 0 -20px;
+    margin-top: 40px;
+  }
+}
+/*END DR AMAZONES SECTION*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*reusable*/
+.p-protein_campaign_block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.p-protein_campaign_header {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--base-lightBlue);
+}
+
+.p-protein_campaign_header p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.p-protein_campaign_header span {
+  font-size: 1.5rem;
+  color: var(--text-lightBlue);
+  font-weight: 500;
+}
+
+
+@media screen and (max-width:1024px){
+   .p-protein_campaign_header p,
+  .p-protein_campaign_header span {
+    font-size: 1rem;
+    /* line-height: 1.7; */
+  }
+  .p-protein_campaign_block {
+    /* line-height: 1.5rem; */
+  }
+  
+}
