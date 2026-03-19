@@ -6426,7 +6426,7 @@ a {
   }
 
   .p-banner-img {
-    right: -170%;
+    left: -50%;
     top: -80%;
     height: 300%;
   }
