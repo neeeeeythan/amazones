@@ -1,14 +1,14 @@
 /* ============================================
     START SPORTIP BANNER
    ============================================ */
-.p-sportip_banner {
+.p-sportip__banner {
   /* width: 100%;
   height: calc(100vw * 300 / 1920); */
   position: relative;
   overflow: visible;
 }
 
-.p-sportip_banner-logo {
+.p-sportip__banner-logo {
   position: absolute;
   top: 25%;
   left: 5%;
@@ -17,21 +17,21 @@
   overflow: hidden;
 }
 
-.p-sportip_banner-img {
+.p-sportip__banner-img {
   width: 100%;
   height: 100%;
 }
 
-.p-sportip_banner-img_sp {
+.p-sportip__banner-img--sp {
   display: none;
 }
 
-.p-sportip_banner-ribbon_sp {
+.p-sportip__banner-ribbon--sp {
   display: none;
 }
 
 /* Ribbon banner SVG decoration */
-.p-sportip_banner-ribbon {
+.p-sportip__banner-ribbon {
   position: absolute;
   left: 0%;
   bottom: -38%;
@@ -43,7 +43,7 @@
 }
 
 /* Text content */
-.p-sportip_banner-content {
+.p-sportip__banner-content {
   position: absolute;
   top: 50%;
   left: 5.75rem;
@@ -51,7 +51,7 @@
   z-index: 3;
 }
 
-.p-sportip_banner-title {
+.p-sportip__banner-title {
   font-size: 2.5rem;
   line-height: 1.3;
   letter-spacing: 0.08em;
@@ -59,7 +59,7 @@
   font-weight: 400;
 }
 
-.p-sportip_banner-subtitle {
+.p-sportip__banner-subtitle {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: var(--base-lightBlue);
@@ -70,7 +70,7 @@
 }
 
 /* Custom Breadcrumb styles for sportip page  */
-.p-sportip_breadcrumb {
+.p-sportip__breadcrumb {
   bottom: 4%;
   left: 5%;
 }
@@ -83,7 +83,7 @@
    START SPORTIP CONTENT
    ============================================ */
 
-.p-sportip_section_white {
+.p-sportip__section--white {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -93,14 +93,14 @@
   background-position: 0% -170%;
 }
 
-.p-sportip_content {
+.p-sportip__content {
   position: relative;
   padding-bottom: 2rem;
 }
 
 /* IMG CONTAINER */
 
-.p-sportip_img {
+.p-sportip__img {
   display: block;
   width: 100%;
   height: auto;
@@ -109,8 +109,8 @@
 }
 
 /* TEXT CONTAINER */
-.p-sportip_text_container,
-.p-sportip_text_container02 {
+.p-sportip__text-container,
+.p-sportip__text-container--02 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -123,12 +123,12 @@
   right: 0%;
 }
 
-.p-sportip_text_container02 {
+.p-sportip__text-container--02 {
   top: 25%;
   left: 0%;
 }
 
-.p-sportip_img_pattern {
+.p-sportip__img-pattern {
   position: absolute;
   top: 0%;
   right: 0%;
@@ -138,14 +138,14 @@
 }
 
 /* YOUTUBE */
-.p-sportip_youtube_wrap {
+.p-sportip__youtube-wrap {
   margin-top: 3rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.p-sportip_youtube {
+.p-sportip__youtube {
   position: relative;
   width: 55rem;
   height: 31rem;
@@ -153,7 +153,7 @@
   overflow: hidden;
 }
 
-.p-sportip_youtube iframe {
+.p-sportip__youtube iframe {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -161,31 +161,31 @@
   border: none;
 }
 
-.p-sportip_text_block {
+.p-sportip__text-block {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.p-sportip_text_block p {
+.p-sportip__text-block p {
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 600;
 }
 
-.p-sportip_text_block span {
+.p-sportip__text-block span {
   font-weight: 500;
   color: var(--text-lightBlue);
 }
 
-.p-sportip_card_logo {
+.p-sportip__card-logo {
   width: auto;
   height: 1.5rem;
 }
 
 /* SPORTIP LINKS */
 
-.p-sportip_links-nav {
+.p-sportip__links-nav {
   display: flex;
   align-items: center;
   padding-top: 3rem;
@@ -194,7 +194,7 @@
   margin-bottom: 10rem;
 }
 
-.p-sportip_links-item {
+.p-sportip__links-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,39 +207,39 @@
   transition: color 0.3s ease;
 }
 
-.p-sportip_links-item:hover {
+.p-sportip__links-item:hover {
   color: var(--base-lightBlue);
 }
 
-.p-sportip_title_container {
+.p-sportip__title-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 3rem;
 }
 
-.p-sportip_subtitle {
+.p-sportip__subtitle {
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-.p-sportip_title {
+.p-sportip__title {
   font-size: 6.259rem;
   line-height: 1.3;
   font-weight: 400;
 }
 
-.p-sportip_speak_imgContainer {
+.p-sportip__speak-img-container {
   position: absolute;
   right: 20%;
   top: 65%;
 }
 
-.p-sportip_phone {
+.p-sportip__phone {
   position: relative;
 }
 
-.p-sportip_phone img {
+.p-sportip__phone img {
   position: relative;
   z-index: 2;
   display: block;
@@ -247,7 +247,7 @@
   width: auto;
 }
 
-.p-sportip_phone_video {
+.p-sportip__phone-video {
   position: absolute;
   top: 2%;
   left: 5.5%;
@@ -259,7 +259,7 @@
   background-color: var(--base-lightBlue);
 }
 
-.p-sportip_ribbon02 {
+.p-sportip__ribbon--02 {
   position: absolute;
   top: 25%;
   right: -50%;
@@ -269,11 +269,11 @@
 }
 
 /* Mobile phone duplicate — hidden on desktop */
-.p-sportip_phone--mobile {
+.p-sportip__phone--mobile {
   display: none;
 }
 
-.p-sportip_diagnosis_block {
+.p-sportip__diagnosis-block {
   background-color: white;
   width: 100%;
   padding: 3.125rem;
@@ -290,13 +290,13 @@
 /* ============================================
     START ABOUT
     ============================================ */
-.p-sportip_section_lightblue {
+.p-sportip__section--lightblue {
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
 }
 
-.p-sportip_about {
+.p-sportip__about {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -307,7 +307,7 @@
 
 /* ABOUT BOX */
 
-.p-sportip_about_card {
+.p-sportip__about-card {
   width: 100%;
   height: 100%;
   display: flex;
@@ -317,11 +317,11 @@
   background-color: white;
 }
 
-.p-sportip_about_card span {
+.p-sportip__about-card span {
   color: #f53662;
 }
 
-.p-sportip_about_card_body {
+.p-sportip__about-card-body {
   padding: 1.5rem 2.5rem;
   box-sizing: border-box;
   display: flex;
@@ -329,12 +329,12 @@
   gap: 2rem;
 }
 
-.p-sportip_about_card_body p {
+.p-sportip__about-card-body p {
   font-weight: 500;
   line-height: 2rem;
 }
 
-.p-sportip_about_card_icon {
+.p-sportip__about-card-icon {
   width: auto;
   height: auto;
   padding: 1.5rem;
@@ -347,20 +347,20 @@
   background-color: var(--base-lightBlue);
 }
 
-.p-sportip_about_card_title {
+.p-sportip__about-card-title {
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
   gap: 1rem;
 }
 
-.p-sportip_about_card_title h3 {
+.p-sportip__about-card-title h3 {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-black1);
 }
 
-.p-sportip_about_subheader {
+.p-sportip__about-subheader {
   width: 15rem;
   background-color: var(--base-lightBlue);
   color: white;
@@ -370,7 +370,7 @@
   padding: 1rem 0;
 }
 
-.p-sportip_about_subheader h4 {
+.p-sportip__about-subheader h4 {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -383,7 +383,7 @@
    START ANNOUNCEMENT
    ============================================ */
 
-.p-sportip_announcement_people {
+.p-sportip__announcement-people {
   position: absolute;
   bottom: -20%;
   left: 10%;
@@ -392,7 +392,7 @@
   z-index: 2;
 }
 
-.p-sportip_announcement_speak {
+.p-sportip__announcement-speak {
   position: absolute;
   bottom: -20%;
   right: -4%;
@@ -409,7 +409,7 @@
    START FAQ
    ============================================ */
 
-.p-sportip_faq_section {
+.p-sportip__faq-section {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/common/img_gym01.webp");
@@ -418,14 +418,14 @@
   background-repeat: no-repeat;
 }
 
-.p-sportip_faq {
+.p-sportip__faq {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   padding: 8rem 0;
 }
 
-.p_sportip_faq_card {
+.p-sportip__faq-card {
   display: flex;
   flex-direction: column;
 
@@ -433,17 +433,17 @@
   flex: 1;
 }
 
-.p_sportip_faq_card_header {
+.p-sportip__faq-card-header {
   display: flex;
   align-items: center;
 }
 
-.p_sportip_faq_card_header h3 {
+.p-sportip__faq-card-header h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.p_sportip_faq_card_icon {
+.p-sportip__faq-card-icon {
   background-color: var(--base-lightBlue);
   display: flex;
   align-items: center;
@@ -453,7 +453,7 @@
   width: 5.625rem;
 }
 
-.p_sportip_faq_card_icon_btn {
+.p-sportip__faq-card-icon-btn {
   width: 2.5rem;
   height: 2.5rem;
   background-color: var(--base-lightBlue);
@@ -463,18 +463,18 @@
   justify-content: center;
 }
 
-.p_sportip_faq_card_body {
+.p-sportip__faq-card-body {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
   padding: 2rem 2.5rem;
 }
 
-.p_sportip_faq_card span {
+.p-sportip__faq-card span {
   color: var(--base-lightBlue);
 }
 
-.p-sportip_faq_row {
+.p-sportip__faq-row {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
@@ -483,7 +483,7 @@
 /* SPEAK PERSON */
 
 /* 01 */
-.p-sportip_speak_container01 {
+.p-sportip__speak-container--01 {
   position: absolute;
   top: -11rem;
   right: 3rem;
@@ -491,14 +491,14 @@
   pointer-events: none;
 }
 
-.p-sportip_speak_image01 {
+.p-sportip__speak-image--01 {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.p-sportip_speak_bubble01 {
+.p-sportip__speak-bubble--01 {
   position: absolute;
   top: 0;
   right: 10rem;
@@ -507,14 +507,14 @@
   z-index: 1;
 }
 
-.p-sportip_speak_person01 {
+.p-sportip__speak-person--01 {
   width: auto;
   height: 25rem;
   object-fit: contain;
 }
 
 /* 02 */
-.p-sportip_speak_container02 {
+.p-sportip__speak-container--02 {
   position: absolute;
   bottom: 0rem;
   left: 2rem;
@@ -522,14 +522,14 @@
   pointer-events: none;
 }
 
-.p-sportip_speak_image02 {
+.p-sportip__speak-image--02 {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.p-sportip_speak_bubble02 {
+.p-sportip__speak-bubble--02 {
   position: absolute;
   top: -3rem;
   right: 9rem;
@@ -538,14 +538,14 @@
   z-index: 1;
 }
 
-.p-sportip_speak_person02 {
+.p-sportip__speak-person--02 {
   width: auto;
   height: 25rem;
   object-fit: contain;
 }
 
 /* 03 */
-.p-sportip_speak_container03 {
+.p-sportip__speak-container--03 {
   position: absolute;
   bottom: 0rem;
   right: 3rem;
@@ -553,14 +553,14 @@
   pointer-events: none;
 }
 
-.p-sportip_speak_image03 {
+.p-sportip__speak-image--03 {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.p-sportip_speak_bubble03 {
+.p-sportip__speak-bubble--03 {
   position: absolute;
   top: -4rem;
   right: -6rem;
@@ -569,7 +569,7 @@
   z-index: 1;
 }
 
-.p-sportip_speak_person03 {
+.p-sportip__speak-person--03 {
   width: auto;
   height: 25rem;
   object-fit: contain;
@@ -580,53 +580,53 @@
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
   /* BANNER */
-  .p-sportip_banner {
+  .p-sportip__banner {
     width: 100%;
     height: 20rem;
     position: relative;
     overflow: visible;
   }
 
-  .p-sportip_banner-content {
+  .p-sportip__banner-content {
     left: 3rem;
   }
 
-  .p-sportip_banner-title {
+  .p-sportip__banner-title {
     font-size: 1.875rem;
   }
 
   /* TITLE */
-  .p-sportip_title {
+  .p-sportip__title {
     font-size: 4.5rem;
   }
 
   /* TEXT CONTAINERS — shrink to fit tablet */
-  .p-sportip_text_container,
-  .p-sportip_text_container02 {
+  .p-sportip__text-container,
+  .p-sportip__text-container--02 {
     width: 55vw;
     padding: 2.5rem;
   }
 
   /* PHONE SECTION */
-  .p-sportip_phone img {
+  .p-sportip__phone img {
     height: 28vw;
   }
 
   /* YOUTUBE */
-  .p-sportip_youtube {
+  .p-sportip__youtube {
     width: 100%;
     height: 28rem;
   }
 
   /* FAQ ROW — tighter gap on tablet */
-  .p-sportip_faq_row {
+  .p-sportip__faq-row {
     gap: 1.5rem;
   }
 
   /* SPEAK PERSONS — scale down */
-  .p-sportip_speak_person01,
-  .p-sportip_speak_person02,
-  .p-sportip_speak_person03 {
+  .p-sportip__speak-person--01,
+  .p-sportip__speak-person--02,
+  .p-sportip__speak-person--03 {
     height: 18rem;
   }
 }
@@ -636,52 +636,52 @@
    ────────────────────────────────────────── */
 @media (max-width: 767px) {
   /* ── 03 SECTION — white background on mobile ── */
-  .p-sportip_section_03 {
+  .p-sportip__section--03 {
     background-image: url("../img/common/bg_white_pattern.webp");
     background-size: cover;
     background-position: 0% -170%;
   }
 
   /* ── BANNER ── */
-  .p-sportip_banner {
+  .p-sportip__banner {
     width: 100%;
     height: auto;
     overflow: hidden;
   }
 
-  .p-sportip_banner-img_pc {
+  .p-sportip__banner-img--pc {
     display: none;
   }
 
-  .p-sportip_banner-img_sp {
+  .p-sportip__banner-img--sp {
     display: block;
   }
 
-  .p-sportip_banner-img_sp img {
+  .p-sportip__banner-img--sp img {
     width: auto;
     height: 100%;
   }
 
-  .p-sportip_banner-content {
+  .p-sportip__banner-content {
     top: 20%;
     left: 1.25rem;
   }
 
-  .p-sportip_banner-title {
+  .p-sportip__banner-title {
     font-size: 1.25rem;
     line-height: 1.5;
     letter-spacing: 0.04em;
   }
 
-  .p-sportip_banner-logo {
+  .p-sportip__banner-logo {
     display: none;
   }
 
-  .p-sportip_banner-ribbon {
+  .p-sportip__banner-ribbon {
     display: none;
   }
 
-  .p-sportip_banner-ribbon_sp {
+  .p-sportip__banner-ribbon--sp {
     display: block;
     position: absolute;
     top: 20%;
@@ -690,14 +690,14 @@
     height: 50%;
   }
 
-  .p-sportip_breadcrumb {
+  .p-sportip__breadcrumb {
     position: absolute;
     left: 1.25rem;
     bottom: 3%;
   }
 
   /* ── LINKS NAV ── */
-  .p-sportip_links-nav {
+  .p-sportip__links-nav {
     flex-wrap: wrap;
     gap: 1rem;
     padding-top: 1.5rem;
@@ -705,48 +705,48 @@
   }
 
   /* ── POINT TITLE SECTION ── */
-  .p-sportip_content .flex.gap-40px.items-center {
+  .p-sportip__content .flex.gap-40px.items-center {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
 
-  .p-sportip_title_container {
+  .p-sportip__title-container {
     margin-bottom: 0;
   }
 
-  .p-sportip_title {
+  .p-sportip__title {
     font-size: 3rem;
     line-height: 1.2;
   }
 
-  .p-sportip_subtitle {
+  .p-sportip__subtitle {
     font-size: 0.875rem;
   }
 
   /* Subtitle text + icon row — keep side-by-side */
-  .p-sportip_content .flex.items-end.gap-15px.pb-10 {
+  .p-sportip__content .flex.items-end.gap-15px.pb-10 {
     flex-direction: row;
     align-items: flex-start;
     gap: 0.5rem;
     line-height: 2;
   }
 
-  .p-sportip_content .flex.items-end.gap-15px.pb-10 h4 {
+  .p-sportip__content .flex.items-end.gap-15px.pb-10 h4 {
     font-size: 1rem;
   }
 
   /* ── CONTENT ITEM 01 & 03 (text container on right) ── */
 
   /* Make the outer .relative flex-col on mobile */
-  div:has(> .p-sportip_text_container) {
+  div:has(> .p-sportip__text-container) {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
   /* Images — full width */
-  div:has(> .p-sportip_text_container) > .p-sportip_img {
+  div:has(> .p-sportip__text-container) > .p-sportip__img {
     width: 100%;
     max-width: 100%;
     max-height: 240px;
@@ -755,7 +755,7 @@
   }
 
   /* Un-position the overlay text panel */
-  .p-sportip_text_container {
+  .p-sportip__text-container {
     position: relative;
     width: 100%;
     padding: 1.5rem;
@@ -767,14 +767,14 @@
   }
 
   /* ── CONTENT ITEM 02 (text container on left) ── */
-  div:has(> .p-sportip_text_container02) {
+  div:has(> .p-sportip__text-container--02) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
   }
 
-  div:has(> .p-sportip_text_container02) > .p-sportip_img {
+  div:has(> .p-sportip__text-container--02) > .p-sportip__img {
     width: 100%;
     max-width: 100%;
     max-height: 240px;
@@ -782,7 +782,7 @@
     object-position: center;
   }
 
-  .p-sportip_text_container02 {
+  .p-sportip__text-container--02 {
     position: relative;
     width: 100%;
     padding: 1.5rem;
@@ -796,37 +796,37 @@
   /* ── TEXT CONTAINER INTERNALS ── */
 
   /* Scale down pattern cutout */
-  .p-sportip_img_pattern {
+  .p-sportip__img-pattern {
     height: 10%;
     width: auto;
   }
 
   /* Number + icon + label row — stack on mobile */
-  .p-sportip_text_container .flex.items-center.gap-4,
-  .p-sportip_text_container02 .flex.items-center.gap-4 {
+  .p-sportip__text-container .flex.items-center.gap-4,
+  .p-sportip__text-container--02 .flex.items-center.gap-4 {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
   }
 
   /* Large number heading */
-  .p-sportip_text_container h2[style],
-  .p-sportip_text_container02 h2[style] {
+  .p-sportip__text-container h2[style],
+  .p-sportip__text-container--02 h2[style] {
     font-size: 3.5rem !important;
   }
 
   /* Section label heading */
-  .p-sportip_text_container h4,
-  .p-sportip_text_container02 h4 {
+  .p-sportip__text-container h4,
+  .p-sportip__text-container--02 h4 {
     font-size: 1.25rem;
   }
 
   /* Bullet rows */
-  .p-sportip_text_block {
+  .p-sportip__text-block {
     gap: 0.75rem;
   }
 
-  .p-sportip_text_block p {
+  .p-sportip__text-block p {
     font-size: 0.875rem;
     line-height: 1.7;
   }
@@ -848,7 +848,7 @@
   }
 
   /* Ribbon — reposition behind phone on mobile */
-  .p-sportip_ribbon02 {
+  .p-sportip__ribbon--02 {
     position: absolute;
     top: 5%;
     left: -74%;
@@ -857,13 +857,13 @@
   }
 
   /* White text block — tighter padding on mobile */
-  .p-sportip_diagnosis_block {
+  .p-sportip__diagnosis-block {
     max-width: 100% !important;
     padding: 1rem 0.75rem !important;
     gap: 1rem;
   }
 
-  .p-sportip_diagnosis_block h2 {
+  .p-sportip__diagnosis-block h2 {
     font-size: 1rem;
     line-height: 1.5;
     display: flex;
@@ -873,12 +873,12 @@
   }
 
   /* Desktop phone — hide on mobile */
-  .p-sportip_phone--desktop {
+  .p-sportip__phone--desktop {
     display: none;
   }
 
   /* Mobile phone — show and center */
-  .p-sportip_phone--mobile {
+  .p-sportip__phone--mobile {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -886,12 +886,12 @@
     z-index: 1;
   }
 
-  .p-sportip_phone img {
+  .p-sportip__phone img {
     height: 85vw;
     max-height: 520px;
   }
 
-  .p-sportip_phone_video {
+  .p-sportip__phone-video {
     border-radius: 4vw;
     width: 45%;
     object-fit: cover;
@@ -900,11 +900,11 @@
   }
 
   /* ── YOUTUBE ── */
-  .p-sportip_youtube_wrap {
+  .p-sportip__youtube-wrap {
     margin-top: 1.5rem;
   }
 
-  .p-sportip_youtube {
+  .p-sportip__youtube {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
@@ -917,68 +917,68 @@
   }
 
   /* ── ABOUT CARDS ── */
-  .p-sportip_about_card_body {
+  .p-sportip__about-card-body {
     padding: 1.25rem;
   }
 
-  .p-sportip_about_subheader {
+  .p-sportip__about-subheader {
     width: 100%;
   }
 
   /* ── FAQ SECTION ── */
-  .p-sportip_faq_row {
+  .p-sportip__faq-row {
     flex-direction: column;
     gap: 1.25rem;
   }
 
-  .p_sportip_faq_card_body {
+  .p-sportip__faq-card-body {
     padding: 1.25rem;
     font-size: 0.875rem;
   }
 
-  .p_sportip_faq_card_header h3 {
+  .p-sportip__faq-card-header h3 {
     font-size: 1.125rem;
   }
 
   /* ── SPEAK PERSONS ── */
-  .p-sportip_speak_container01 {
+  .p-sportip__speak-container--01 {
     display: none;
   }
 
-  .p-sportip_speak_container02 {
+  .p-sportip__speak-container--02 {
     display: block;
     position: absolute;
     bottom: -1rem;
     left: 7rem;
   }
 
-  .p-sportip_speak_container03 {
+  .p-sportip__speak-container--03 {
     display: block;
     position: absolute;
     bottom: -1rem;
     right: 7rem;
   }
 
-  .p-sportip_speak_person02,
-  .p-sportip_speak_person03 {
+  .p-sportip__speak-person--02,
+  .p-sportip__speak-person--03 {
     height: 12rem;
   }
 
-  .p-sportip_speak_bubble02 {
+  .p-sportip__speak-bubble--02 {
     height: 5rem;
     top: -2rem;
     right: 5rem;
   }
 
-  .p-sportip_speak_bubble03 {
+  .p-sportip__speak-bubble--03 {
     height: 5rem;
     top: -2.5rem;
     right: -6rem;
   }
 
   /* ── ANNOUNCEMENT PEOPLE IMAGE ── */
-  .p-sportip_announcement_people,
-  .p-sportip_announcement_speak {
+  .p-sportip__announcement-people,
+  .p-sportip__announcement-speak {
     display: none;
   }
 }
