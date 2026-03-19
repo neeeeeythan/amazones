@@ -6400,7 +6400,6 @@ a {
   .ribbon-banner {
     max-width: 40rem;
   }
- 
 }
 
 /* Small tablet / large mobile */
@@ -6465,6 +6464,15 @@ a {
     right: -120%;
     bottom: -70%;
     height: 280%;
+  }
+}
+
+/* NORMAL MOBILE */
+@media screen and (max-width: 425px) {
+  .p-banner-img {
+    left: -40%;
+    top: -20%;
+    height: 180%;
   }
 }
 
@@ -6995,7 +7003,6 @@ a {
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
-
 
   /* C-ANNOUNCEMENT */
   .c-announcement {
