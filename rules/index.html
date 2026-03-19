@@ -21,16 +21,23 @@
   <body>
     <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div
+        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+      >
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
-            width="159.97"
-            height="62.77"
+            width="159.97px"
+            height="62.77px"
+            class="amazones-header-logo"
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14"
+            >アマゾネス</a
+          >
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">
+            WOMEN ONLY24h GYM
+          </p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -48,7 +55,11 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
 
@@ -70,7 +81,11 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
         </div>
@@ -84,8 +99,18 @@
             id="floating-menu-btn"
             class="flex flex-col items-center gap-13px"
           >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
+            <img
+              src="../assets/img/top/icon_menu.svg"
+              alt="アイコン"
+              class="desktop-menu-icon"
+            />
             <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+            <button class="mobile-hamburger" aria-label="メニュー">
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+            </button>
           </div>
 
           <div
@@ -113,6 +138,64 @@
             </div>
           </div>
         </div>
+
+        <!--header mobile-->
+        <div class="mobile-header-overlay relative">
+          <div class="mobile-header-overlay-content">
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+            ©2026 Wellness Land Co., Ltd.
+          </p>
+        </div>
       </div>
     </header>
 
@@ -132,9 +215,7 @@
 
           <!-- BANNER TEXT -->
           <div class="p-banner-content">
-            <h1 class="p-banner-title font-zen text-white">
-              ご利用規約
-            </h1>
+            <h1 class="p-banner-title font-zen text-white">ご利用規約</h1>
             <p class="p-banner-subtitle font-outfit mt-18">Rules</p>
             <!-- BREADCRUMB -->
             <nav class="c-breadcrumb p-breadcrumb">
@@ -167,272 +248,562 @@
       </section>
 
       <!--MAIN CONTENT-->
-      <section class="rules-section">
-        <div class = 'rules-container'>
-            <!--RULE 1-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>01</span>適用範囲</p>
-                <p class = 'fw-500 fs-16 lh-200'>本規約は、「女性専用 24 時間ジム Amazones」「男性専用 24 時間ジム Hercules」として運営するスポーツクラブ（以下「当クラブ」という。）の利用に関し適用されるものとします。</p>
+      <section class="p-rules">
+        <div class="p-rules__container">
+          <!-- RULE 1 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">01</b>適用範囲
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              本規約は、「女性専用 24 時間ジム Amazones」「男性専用 24 時間ジム
+              Hercules」として運営するスポーツクラブ（以下「当クラブ」という。）の利用に関し適用されるものとします。
+            </p>
+          </section>
+
+          <!-- RULE 2 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">02</b>会員制度
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              当クラブは会員制とします。当クラブに入会される方は、本規約を事前に確認し、承諾しているものとします。
+            </p>
+          </section>
+
+          <!-- RULE 3 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">03</b>入会資格
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                次の各号のいずれかに該当する者は当クラブの会員になることはできません。
+              </p>
+              <ol class="p-rules__container__ol">
+                <li>
+                  <b class="text-lightBlue">1. </b
+                  >本規約および当クラブの諸規則を遵守できない者
+                </li>
+                <li>
+                  <b class="text-lightBlue">2. </b
+                  >本申込を行う者が記載した会員と相違ないことを確認できない者
+                </li>
+                <li>
+                  <b class="text-lightBlue">3. </b
+                  >本申込を行う者が記載した会員と相違ないことを確認できない者
+                </li>
+                <li>
+                  <b class="text-lightBlue">4. </b
+                  >医師等により運動を禁じられている者
+                </li>
+                <li>
+                  <b class="text-lightBlue">5. </b
+                  >伝染病、その他、他人に伝染または感染する恐れのある疾病を有している者
+                </li>
+                <li>
+                  <b class="text-lightBlue">6. </b
+                  >その他本部および加盟店が会員としてふさわしくないと判断した者
+                </li>
+              </ol>
             </div>
-             <!--RULE 2-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>02</span>会員制度</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは会員制とします。当クラブに入会される方は、本規約を事前に確認し、承諾しているものとします。</p>
+          </section>
+
+          <!-- RULE 4 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">04</b>入退館
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                当クラブは会員に対し入退館キーを登録します。会員がクラブ諸施設に入る際には、入退館キーを使用するものとします。
+              </p>
+              <p>
+                入退館キーは、本人もしくは利用権限を有する者のみが使用し、他の者が使用することはできません。
+              </p>
+              <p>会員資格停止時は入退館キーの使用ができなくなります。</p>
             </div>
-             <!--RULE 3-->
-             <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>03</span>入会資格</p>
-                <p class = 'fw-500 fs-16 lh-200'>次の各号のいずれかに該当する者は当クラブの会員になることはできません。<br  class = 'rules-break'/>
-                    <span class = 'text-lightBlue'>1. </span>本規約および当クラブの諸規則を遵守できない者 <br  class = 'rules-break'/>
-                    <span class = 'text-lightBlue'>2. </span>本申込を行う者が記載した会員と相違ないことを確認できない者 <br  class = 'rules-break'/>
-                    <span class = 'text-lightBlue'>3. </span>本申込を行う者が記載した会員と相違ないことを確認できない者 <br  class = 'rules-break'/>
-                    <span class = 'text-lightBlue'>4. </span>医師等により運動を禁じられている者 <br  class = 'rules-break'/>
-                    <span class = 'text-lightBlue'>5. </span>伝染病、その他、他人に伝染または感染する恐れのある疾病を有している者 <br  class = 'rules-break'/>
-                    <span class = 'text-lightBlue'>6. </span>その他本部および加盟店が会員としてふさわしくないと判断した者
-                </p>
-            </div>
-            <!--RULE 4-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>04</span>入退館</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは会員に対し入退館キーを登録します。会員がクラブ諸施設に入る際には、入退館キーを使用するものとします。<br class = 'rules-break'/>
-                入退館キーは、本人もしくは利用権限を有する者のみが使用し、他の者が使用することはできません。<br  class = 'rules-break'/>
-                会員資格停止時は入退館キーの使用ができなくなります。
-                </p>
-            </div>
-             <!--RULE 5-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>05</span>諸規定の遵守</p>
-                <p class = 'fw-500 fs-16 lh-200'>会員は本規約並びに施設内利用規則、その他施設の定める諸規則をすべて遵守しなければなりません。 <br class = 'rules-break'/>
-                施設および機器の使用にあたっては、記載されたルールに従うものとします。<br  class = 'rules-break'/>
-                施設の具体的利用にあたっては、店舗の説明および指示に従わなければなりません。 <br  class = 'rules-break'/>
-                会員は、施設内において、いかなる営利活動・ビジネス活動・勧誘行為等を行ってはなりません。 <br  class = 'rules-break'/>
-                会員は他のメンバーもしくはその同伴者に対し、パーソナルトレーニング等の営業行為をおこなうことは禁じます。 <br  class = 'rules-break'/>
-                会員は、施設の利用時は常に当クラブが定めるドレスコードを遵守します。当クラブは、施設利用時以下の各号に該当する方については注意または退場を命じることができます。 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>1. </span>リベット（びょう）がついているパンツ・ショートパンツ <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>2. </span>ゴム草履・ゴム長靴 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>3. </span>裸足 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>4. </span>かかとがない・ヒールが高い・滑りやすい履物 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>5. </span>スパイクシューズ等施設利用にあたり器具を傷つける可能性のある履物  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>6. </span>その他、当クラブがふさわしくないと判断した服装・履物 <br  class = 'rules-break'/>
+          </section>
+
+          <!-- RULE 5 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">05</b>諸規定の遵守
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                会員は本規約並びに施設内利用規則、その他施設の定める諸規則をすべて遵守しなければなりません。
+              </p>
+              <p>
+                施設および機器の使用にあたっては、記載されたルールに従うものとします。
+              </p>
+              <p>
+                施設の具体的利用にあたっては、店舗の説明および指示に従わなければなりません。
+              </p>
+              <p>
+                会員は、施設内において、いかなる営利活動・ビジネス活動・勧誘行為等を行ってはなりません。
+              </p>
+              <p>
+                会員は他のメンバーもしくはその同伴者に対し、パーソナルトレーニング等の営業行為をおこなうことは禁じます。
+              </p>
+              <p>
+                会員は、施設の利用時は常に当クラブが定めるドレスコードを遵守します。当クラブは、施設利用時以下の各号に該当する方については注意または退場を命じることができます。
+              </p>
+              <ol class="p-rules__container__ol">
+                <li>
+                  <b class="text-lightBlue">1. </b
+                  >リベット（びょう）がついているパンツ・ショートパンツ
+                </li>
+                <li><b class="text-lightBlue">2. </b>ゴム草履・ゴム長靴</li>
+                <li><b class="text-lightBlue">3. </b>裸足</li>
+                <li>
+                  <b class="text-lightBlue">4. </b
+                  >かかとがない・ヒールが高い・滑りやすい履物
+                </li>
+                <li>
+                  <b class="text-lightBlue">5. </b
+                  >スパイクシューズ等施設利用にあたり器具を傷つける可能性のある履物
+                </li>
+                <li>
+                  <b class="text-lightBlue">6. </b
+                  >その他、当クラブがふさわしくないと判断した服装・履物
+                </li>
+              </ol>
+              <p>
                 会員資格停止時はバーコードリーダーでの入室ができなくなる場合がございます。
-                </p>
+              </p>
             </div>
+          </section>
 
-             <!--RULE 6-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>06</span>入場の禁止および退場</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは、以下の各号に該当する方の入場の禁止または退場を命じることができます。 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>1. </span>本規約および当クラブの諸規則を遵守しない者 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>2. </span>暴力団関係者または反社会的勢力関係者と本部および加盟店が判断した者  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>3. </span>医師等により運動を禁じられている者  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>4. </span>伝染病、その他、他人に伝染または感染する恐れのある疾病を有している者  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>5. </span>大声・奇声を発したり、不適切な言動で他の人間に迷惑をかける者   <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>6. </span> 飲酒等により正常の施設利用ができないと認められた者 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>7. </span> 著しく不潔な身体または服装により他の人間に迷惑を及ぼす者
-                </p>
+          <!-- RULE 6 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">06</b
+              >入場の禁止および退場
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                当クラブは、以下の各号に該当する方の入場の禁止または退場を命じることができます。
+              </p>
+              <ol class="p-rules__container__ol">
+                <li>
+                  <b class="text-lightBlue">1. </b
+                  >本規約および当クラブの諸規則を遵守しない者
+                </li>
+                <li>
+                  <b class="text-lightBlue">2. </b
+                  >暴力団関係者または反社会的勢力関係者と本部および加盟店が判断した者
+                </li>
+                <li>
+                  <b class="text-lightBlue">3. </b
+                  >医師等により運動を禁じられている者
+                </li>
+                <li>
+                  <b class="text-lightBlue">4. </b
+                  >伝染病、その他、他人に伝染または感染する恐れのある疾病を有している者
+                </li>
+                <li>
+                  <b class="text-lightBlue">5. </b
+                  >大声・奇声を発したり、不適切な言動で他の人間に迷惑をかける者
+                </li>
+                <li>
+                  <b class="text-lightBlue">6. </b
+                  >飲酒等により正常の施設利用ができないと認められた者
+                </li>
+                <li>
+                  <b class="text-lightBlue">7. </b
+                  >著しく不潔な身体または服装により他の人間に迷惑を及ぼす者
+                </li>
+              </ol>
             </div>
+          </section>
 
-             <!--RULE 7-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>07</span>退会</p>
-                <p class = 'fw-500 fs-16 lh-200'>会員が自己都合により当クラブを退会する場合は、退会希望月のクレジットカードでお支払の方は前月19日まで、口座振替でお支払の方は前月9日までにまでに来店し、書面による所定の退会届により<br class = 'rules-break'/>
-                手続きを行った上で、翌月末をもって退会することができます。（電話等による申し出は受け付けられません）<br  class = 'rules-break'/>
-                退会、コース変更の手続きは希望月の前月までとなります。会員が入会申込書に記載した内容に変更があったときは、速やかに変更手続をしなければなりません。 <br  class = 'rules-break'/>
-                加盟店より会員に通知する場合は、会員から届け出のあった最新の連絡先に行うものとし、会員から届け出のあった最新の連絡先に通知が発信されたときは、通知未達等発信後の責を負いません。<br  class = 'rules-break'/>
-                退会手続は、入会した店舗にて直接退会申し出し、手続きを行うものとします。退会届が提出されない場合は在籍となりますので、施設のご利用がなくても会費が発生します。<br  class = 'rules-break'/>
-                キャンペーンでのお申し込みの際、通常会費の発生する在籍2か月目から6か月間（または12か月間）の契約解除はできません。<br  class = 'rules-break'/>
-                料金変更は6か月間及び12か月間の出来ません。但しスタンダード会員以上の会費変動させることは可能とする。<br  class = 'rules-break'/>
+          <!-- RULE 7 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">07</b>退会
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                会員が自己都合により当クラブを退会する場合は、退会希望月のクレジットカードでお支払の方は前月19日まで、口座振替でお支払の方は前月9日までにまでに来店し、書面による所定の退会届により手続きを行った上で、翌月末をもって退会することができます。（電話等による申し出は受け付けられません）
+              </p>
+              <p>
+                退会、コース変更の手続きは希望月の前月までとなります。会員が入会申込書に記載した内容に変更があったときは、速やかに変更手続をしなければなりません。
+              </p>
+              <p>
+                加盟店より会員に通知する場合は、会員から届け出のあった最新の連絡先に行うものとし、会員から届け出のあった最新の連絡先に通知が発信されたときは、通知未達等発信後の責を負いません。
+              </p>
+              <p>
+                退会手続は、入会した店舗にて直接退会申し出し、手続きを行うものとします。退会届が提出されない場合は在籍となりますので、施設のご利用がなくても会費が発生します。
+              </p>
+              <p>
+                キャンペーンでのお申し込みの際、通常会費の発生する在籍2か月目から6か月間（または12か月間）の契約解除はできません。
+              </p>
+              <p>
+                料金変更は6か月間及び12か月間の出来ません。但しスタンダード会員以上の会費変動させることは可能とする。
+              </p>
+              <p>
                 キャンペーンでお申し込みの際、通常会費の発生する在籍2か月目から6か月目（または12か月目）の間に休会会員の移行は可能ですが在籍期間とはみなしません。
-                </p>
+              </p>
             </div>
+          </section>
 
-            <!--RULE 8-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>08</span>諸手続き</p>
-                <p class = 'fw-500 fs-16 lh-200'>退会、コース変更の手続きは希望月の前月19日までとなります。<br class = 'rules-break'/>
-                会員が入会申込書に記載した内容に変更があったときは、速やかに変更手続をしなければなりません。<br  class = 'rules-break'/>
+          <!-- RULE 8 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">08</b>諸手続き
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>退会、コース変更の手続きは希望月の前月19日までとなります。</p>
+              <p>
+                会員が入会申込書に記載した内容に変更があったときは、速やかに変更手続をしなければなりません。
+              </p>
+              <p>
                 当クラブより会員に通知する場合は、会員から届け出のあった最新の連絡先に行うものとし、会員から届け出のあった最新の連絡先に通知が発信されたときは、通知未達等発信後の責を負いません。
-                </p>
+              </p>
             </div>
+          </section>
 
-            <!--RULE 9-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>09</span>会員資格の停止および除名</p>
-                <p class = 'fw-500 fs-16 lh-200'>本部・加盟店は、会員が次の各号に該当するときは、当クラブへの入館を一時停止し、または当該会員を当クラブから除名することができます。<br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>1. </span>第6条の内容に違反したとき <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>2. </span>会員・当クラブ従業員に対する迷惑行為および当クラブ内における宗教活動・営業行為・その他当クラブの目的に反する行為により、当クラブの秩序を乱し、または当クラブの名誉・品位を著しく傷つけたとき <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>3. </span>規約その他、本部・加盟店の定めた諸規則に違反したとき <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>4. </span>会費その他の債務を滞納し、本部・加盟店からの催告に応じないとき。 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>5. </span>入会に際して加盟店に虚偽の申告をした、または第4条に違反していることを故意に申告しなかったと判明したとき  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>6. </span>当クラブの施設・什器を故意または過失により破損したとき<br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>7. </span>その他、会員としてふさわしくない言動があったと本部・加盟店が認めたとき<br  class = 'rules-break'/>
-                月会費の支払いが確認できなかった場合こちらから連絡の上、期日までにお支払いをいただきます <br  class = 'rules-break'/>
-                期日までにお支払いが確認できない場合は、お支払いが確認できるまで会員資格を停止します。  <br  class = 'rules-break'/>
-                なお、退会手続きが完了してない場合、会員として在籍しているものとみなし、退会手続き完了日までの未納会費についてはいかなる理由によるものであっても支払い義務が生じるものとします。 <br  class = 'rules-break'/>
-                当クラブへの入館停止中の会員は、当クラブの施設を使用することができません。<br  class = 'rules-break'/>
-                なお、当クラブへの入館停止中の会員は、停止中も会費を支払わなければならないものとします。<br  class = 'rules-break'/>
-                当クラブへの入館停止中の会員に対しては、本部・加盟店は、停止期間中の会費について、 前納分あるいは会費その他諸費用等の既払分を返還することはいたしません。
-                </p>
+          <!-- RULE 9 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">09</b
+              >会員資格の停止および除名
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                本部・加盟店は、会員が次の各号に該当するときは、当クラブへの入館を一時停止し、または当該会員を当クラブから除名することができます。
+              </p>
+              <ol class="p-rules__container__ol">
+                <li>
+                  <b class="text-lightBlue">1. </b>第6条の内容に違反したとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">2. </b
+                  >会員・当クラブ従業員に対する迷惑行為および当クラブ内における宗教活動・営業行為・その他当クラブの目的に反する行為により、当クラブの秩序を乱し、または当クラブの名誉・品位を著しく傷つけたとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">3. </b
+                  >規約その他、本部・加盟店の定めた諸規則に違反したとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">4. </b
+                  >会費その他の債務を滞納し、本部・加盟店からの催告に応じないとき。
+                </li>
+                <li>
+                  <b class="text-lightBlue">5. </b
+                  >入会に際して加盟店に虚偽の申告をした、または第4条に違反していることを故意に申告しなかったと判明したとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">6. </b
+                  >当クラブの施設・什器を故意または過失により破損したとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">7. </b
+                  >その他、会員としてふさわしくない言動があったと本部・加盟店が認めたとき
+                </li>
+              </ol>
+              <p>
+                月会費の支払いが確認できなかった場合こちらから連絡の上、期日までにお支払いをいただきます
+              </p>
+              <p>
+                期日までにお支払いが確認できない場合は、お支払いが確認できるまで会員資格を停止します。
+              </p>
+              <p>
+                なお、退会手続きが完了してない場合、会員として在籍しているものとみなし、退会手続き完了日までの未納会費についてはいかなる理由によるものであっても支払い義務が生じるものとします。
+              </p>
+              <p>
+                当クラブへの入館停止中の会員は、当クラブの施設を使用することができません。
+              </p>
+              <p>
+                なお、当クラブへの入館停止中の会員は、停止中も会費を支払わなければならないものとします。
+              </p>
+              <p>
+                当クラブへの入館停止中の会員に対しては、本部・加盟店は、停止期間中の会費について、前納分あるいは会費その他諸費用等の既払分を返還することはいたしません。
+              </p>
             </div>
+          </section>
 
-            
-             <!--RULE 10-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>10</span>資格喪失</p>
-                <p class = 'fw-500 fs-16 lh-200'>会員は次の場合にその資格を喪失します。 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>1. </span>退会 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>2. </span>死亡  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>3. </span>除名  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>4. </span>運営上重大な理由により当クラブを閉鎖したとき 
-                </p>
+          <!-- RULE 10 -->
+          <section class="reveal  p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">10</b>資格喪失
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>会員は次の場合にその資格を喪失します。</p>
+              <ol class="p-rules__container__ol">
+                <li><b class="text-lightBlue">1. </b>退会</li>
+                <li><b class="text-lightBlue">2. </b>死亡</li>
+                <li><b class="text-lightBlue">3. </b>除名</li>
+                <li>
+                  <b class="text-lightBlue">4. </b
+                  >運営上重大な理由により当クラブを閉鎖したとき
+                </li>
+              </ol>
             </div>
+          </section>
 
-              
-            <!--RULE 11-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>11</span>会員資格の譲渡禁止等</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブの会員資格は本人限りとし、第三者への譲渡・売買・貸与・名義変更・質権の設定その他の担保に供する等の行為、もしくは相続その他の包括継承はできません。</p>
+          <!-- RULE 11 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">11</b
+              >会員資格の譲渡禁止等
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              当クラブの会員資格は本人限りとし、第三者への譲渡・売買・貸与・名義変更・質権の設定その他の担保に供する等の行為、もしくは相続その他の包括継承はできません。
+            </p>
+          </section>
+
+          <!-- RULE 12 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">12</b
+              >会費・手数料および利用料
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                会費のお支払い方法は、クレジットカード・口座引き落としになります。
+              </p>
+              <p>
+                入会月の退会はできません。いかなる理由がありましても翌月の返金はいたしません。一括払いでご入会のお客様は1年契約未満退館で退会をされても返金はいたしません。
+              </p>
             </div>
+          </section>
 
-            <!--RULE 12-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>12</span>会費・手数料および利用料</p>
-                <p class = 'fw-500 fs-16 lh-200'>会費のお支払い方法は、クレジットカード・口座引き落としになります。<br  class = 'rules-break'/>
-                入会月の退会はできません。いかなる理由がありましても翌月の返金はいたしません。
-                一括払いでご入会のお客様は1年契約未満退館で退会をされても返金はいたしません。
+          <!-- RULE 13 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">13</b
+              >会費・手数料および利用料等の改定
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              各店舗は、別に定める会費・手数料または利用料等の改定を行うことができます。規約の改定を行なう場合、1か月前までに会員に告知するものとします。
+            </p>
+          </section>
 
-                </p>
+          <!-- RULE 14 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">14</b
+              >営業日および営業時間
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              クラブの営業日および営業時間については、別に定めます。
+            </p>
+          </section>
+
+          <!-- RULE 15 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">15</b
+              >施設の利用制限
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              当クラブは、必要と認めた場合に、施設の全部または一部の利用を制限することがあります。その場合、1週間前までにその旨を告示します。
+            </p>
+          </section>
+
+          <!-- RULE 16 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">16</b>休業
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                当クラブは次の理由により施設の全部または一部を休業することがあります。
+              </p>
+              <ol class="p-rules__container__ol">
+                <li>
+                  <b class="text-lightBlue">1. </b
+                  >気象・災害等により会員にその災害が及ぶと当クラブが判断し、営業を困難と認めたとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">2. </b
+                  >施設の点検・補修または改修をするとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">3. </b
+                  >法令の制定・改廃・行政指導・社会経済情勢の著しい変化、その他止むを得ざる事由が発生したとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">4. </b
+                  >その他、当クラブが休業を必要と認めるとき
+                </li>
+              </ol>
             </div>
+          </section>
 
-            <!--RULE 13-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>13</span>会費・手数料および利用料等の改定</p>
-                <p class = 'fw-500 fs-16 lh-200'>各店舗は、別に定める会費・手数料または利用料等の改定を行うことができます。規約の改定を行なう場合、1か月前までに会員に告知するものとします。
-                </p>
+          <!-- RULE 17 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">17</b
+              >施設の閉鎖・変更
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                当クラブは、次の理由により施設の全部または一部を閉鎖または変更することがあります。
+              </p>
+              <ol class="p-rules__container__ol">
+                <li>
+                  <b class="text-lightBlue">1. </b
+                  >気象・災害等により会員にその災害が及ぶと当クラブが判断し、営業を不可能と認めたとき
+                </li>
+                <li>
+                  <b class="text-lightBlue">2. </b
+                  >法令の制定・改廃・行政指導・社会経済情勢の著しい変化・その他加盟店の経営上止むを得ざる事由が発生したとき
+                </li>
+              </ol>
             </div>
+          </section>
 
-            <!--RULE 14-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>14</span>営業日および営業時間</p>
-                <p class = 'fw-500 fs-16 lh-200'>クラブの営業日および営業時間については、別に定めます。
-                </p>
-            </div>
-
-
-             <!--RULE 15-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>15</span>施設の利用制限</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは、必要と認めた場合に、施設の全部または一部の利用を制限することがあります。その場合、1週間前までにその旨を告示します。</p>
-            </div>
-
-            <!--RULE 16-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>16</span>休業</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは次の理由により施設の全部または一部を休業することがあります。 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>1. </span>気象・災害等により会員にその災害が及ぶと当クラブが判断し、営業を困難と認めたとき <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>2. </span>施設の点検・補修または改修をするとき  <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>3. </span>法令の制定・改廃・行政指導・社会経済情勢の著しい変化、その他止むを得ざる事由が発生したとき <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>4. </span>その他、当クラブが休業を必要と認めるとき
-                </p>
-            </div>
-
-             <!--RULE 17-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>17</span>施設の閉鎖・変更/p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは、次の理由により施設の全部または一部を閉鎖または変更することがあります。 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>1. </span>気象・災害等により会員にその災害が及ぶと当クラブが判断し、営業を不可能と認めたとき <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>2. </span>法令の制定・改廃・行政指導・社会経済情勢の著しい変化・その他加盟店の経営上止むを得ざる事由が発生したとき  <br  class = 'rules-break'/>
-                </p>
-            </div>
-
-            <!--RULE 18-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>18</span>賠償責任</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブ内で発生した紛失・盗難・傷害その他事故について当クラブは一切の責任を負いません。<br  class = 'rules-break'/>
+          <!-- RULE 18 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">18</b>賠償責任
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                当クラブ内で発生した紛失・盗難・傷害その他事故について当クラブは一切の責任を負いません。
+              </p>
+              <p>
                 会員は、自己の責に帰すべき原因により、施設または第三者に損害を与えた場合は、速やかにその賠償責任を果たさなければなりません。
-                </p>
+              </p>
             </div>
+          </section>
 
-            
-            <!--RULE 19-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>19</span>解散</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは止むを得ざる事由が発生した場合には、3か月前の予告をすることにより、施設を解散することができます。<br  class = 'rules-break'/>
+          <!-- RULE 19 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">19</b>解散
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                当クラブは止むを得ざる事由が発生した場合には、3か月前の予告をすることにより、施設を解散することができます。
+              </p>
+              <p>
                 解散の事由が天災・地変・公権力の命令・強制その他の不可抗力である場合には、予告期間を短縮することができます。
-                </p>
+              </p>
             </div>
+          </section>
 
-             <!--RULE 20-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>20</span>通知予告</p>
-                <p class = 'fw-500 fs-16 lh-200'>本規約および当クラブの諸事情に関する通知または予告は、当クラブ所定の場所に提示する方法により行います。</p>
+          <!-- RULE 20 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">20</b>通知予告
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              本規約および当クラブの諸事情に関する通知または予告は、当クラブ所定の場所に提示する方法により行います。
+            </p>
+          </section>
+
+          <!-- RULE 21 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">21</b
+              >本規約その他の諸規則の改定
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              当クラブは、本規約・細則・利用規定・その他運営・管理に関する事項を改定することができます。また、その効力はすべての会員に適用されます。
+            </p>
+          </section>
+
+          <!-- RULE 22 -->
+          <section class="reveal  p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">22</b
+              >適用法および管轄裁判所
+            </p>
+            <p class="fw-500 fs-16 lh-200">
+              この会員規約に関する準拠法は、日本法とします。会員と当クラブの間で訴訟の必要が生じた場合、大阪地方裁判所を当該訴訟の第一審専属的合意管轄裁判所とします。
+            </p>
+          </section>
+
+          <!-- RULE 23 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">23</b>正本
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                当クラブは、本規約を外国語に翻訳し日本語と外国語との対訳形式で本規約を発行することができるものとします。
+              </p>
+              <p>
+                ただし、外国語との対訳形式による規約において、日本語による規約と外国語による規約に不一致がある場合は、日本語版を正本とします。
+              </p>
             </div>
+          </section>
 
-            
-             <!--RULE 21-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>21</span>本規約その他の諸規則の改定</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは、本規約・細則・利用規定・その他運営・管理に関する事項を改定することができます。また、その効力はすべての会員に適用されます。</p>
-            </div>
-
-             <!--RULE 22-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>22</span>適用法および管轄裁判所</p>
-                <p class = 'fw-500 fs-16 lh-200'>この会員規約に関する準拠法は、日本法とします。会員と当クラブの間で訴訟の必要が生じた場合、大阪地方裁判所を当該訴訟の第一審専属的合意管轄裁判所とします。</p>
-            </div>
-
-             <!--RULE 23-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>23</span>正本</p>
-                <p class = 'fw-500 fs-16 lh-200'>当クラブは、本規約を外国語に翻訳し日本語と外国語との対訳形式で本規約を発行するこ とができるものとします。<br  class = 'rules-break'/>
-                ただし、外国語との対訳形式による規約において、日本語によ る規約と外国語による規約に不一致がある場合は、日本語版を正本とします。
-                </p>
-            </div>
-
-            <!--RULE 24-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>24</span>提携クリニックについて</p>
-                <p class = 'fw-500 fs-16 lh-200'>本メディカルダイエットプランにおいて利用者が支払う費用は、提携医療機関が利用者に対して請求する診療関連費用を中心に構成されます。<br  class = 'rules-break'/>
+          <!-- RULE 24 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">24</b
+              >提携クリニックについて
+            </p>
+            <div class="fw-500 fs-16 lh-200">
+              <p>
+                本メディカルダイエットプランにおいて利用者が支払う費用は、提携医療機関が利用者に対して請求する診療関連費用を中心に構成されます。
+              </p>
+              <p>
                 提携医療機関が利用者から徴収する費用には、以下の内容が含まれます。
-                <br  class = 'rules-break'/>
-                <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>1. </span> 提携医療機関によるオンライン診療に係る診療報酬（医薬品等の費用を含みます） <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>2. </span>医薬品等の配送料 <br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>3. </span>本サービスに付随するシステム利用料<br  class = 'rules-break'/>
-                <span class = 'text-lightBlue'>4. </span>スポーツクラブの利用費用
-                <br  class = 'rules-break'/>
-                <br  class = 'rules-break'/>
-                当社は、提携医療機関より診療報酬の弁済に関する代理受領の委託を受け、提携医療機関に代わって利用者に対する請求および代金回収業務を行う場合があります。 <br  class = 'rules-break'/>
-                ただし、当社自らが医療行為を行うものではなく、また医薬品の販売主体となるものでもありません。  <br  class = 'rules-break'/>
-                医療行為および診療内容に関する一切の責任は、提携医療機関が負うものとします。  <br  class = 'rules-break'/>
-                <br  class = 'rules-break'/>
-                <br  class = 'rules-break'/>
-                本サービスにおける診療は、原則として自由診療となります。  <br  class = 'rules-break'/>  
-                自由診療に該当する診療費用や事前に確定可能な予約料等については、提携医療機関または本サイト等において原則として事前に明示されます。 <br  class = 'rules-break'/>
+              </p>
+              <ol class="p-rules__container__ol">
+                <li>
+                  <b class="text-lightBlue">1. </b
+                  >提携医療機関によるオンライン診療に係る診療報酬（医薬品等の費用を含みます）
+                </li>
+                <li><b class="text-lightBlue">2. </b>医薬品等の配送料</li>
+                <li>
+                  <b class="text-lightBlue">3. </b
+                  >本サービスに付随するシステム利用料
+                </li>
+                <li>
+                  <b class="text-lightBlue">4. </b>スポーツクラブの利用費用
+                </li>
+              </ol>
+              <p>
+                当社は、提携医療機関より診療報酬の弁済に関する代理受領の委託を受け、提携医療機関に代わって利用者に対する請求および代金回収業務を行う場合があります。
+              </p>
+              <p>
+                ただし、当社自らが医療行為を行うものではなく、また医薬品の販売主体となるものでもありません。
+              </p>
+              <p>
+                医療行為および診療内容に関する一切の責任は、提携医療機関が負うものとします。
+              </p>
+              <p>本サービスにおける診療は、原則として自由診療となります。</p>
+              <p>
+                自由診療に該当する診療費用や事前に確定可能な予約料等については、提携医療機関または本サイト等において原則として事前に明示されます。
+              </p>
+              <p>
                 なお、保険診療を対象とする医療については、患者の症状や診療内容等により費用が異なるため、通常の対面診療と同様に診療前に金額を確定することができない場合があります。
-                </p>
+              </p>
             </div>
+          </section>
 
-               <!--RULE 25-->
-            <div class = 'rules-item flex flex-col gap-28px'>
-                <p class = 'rules-label fw-700 fs-24 text-lightBlue'><span class = 'font-outfit fw-600 fs-24 text-black1'>25</span>お問い合わせ</p>
-                    <div class = 'bg-gray py-30 px-30 w-fit-content'>
-                        <p class = 'fw-500 fs-16 lh-200'>株式会社 Wellness Land（ウェルネスランド）<br  class = 'rules-break'/>
-                        <span class = 'text-lightBlue'>[所在地] </span> 大阪府大阪市浪速区桜川1-3-2 <br  class = 'rules-break'/>
-                        <span class = 'text-lightBlue'>[電話番号]  </span>06-4400-9876（11:00-20:00 水・日除く）<br  class = 'rules-break'/>
-                        <span class = 'text-lightBlue'>[Email] . </span>contact@amazones.fit<br  class = 'rules-break'/>
-                        </p>
-                    </div>
-            </div>
-             
-            </div>
+          <!-- RULE 25 -->
+          <section class="reveal p-rules__container__item flex flex-col gap-28px">
+            <p class="p-rules__container__label fw-700 fs-24 text-lightBlue">
+              <b class="font-outfit fw-600 fs-24 text-black1">25</b>お問い合わせ
+            </p>
+            <address
+              class="bg-gray py-30 px-30 w-fit-content fw-500 fs-16 lh-200"
+            >
+              <p>株式会社 Wellness Land（ウェルネスランド）</p>
+              <p>
+                <b class="text-lightBlue">[所在地] </b
+                >大阪府大阪市浪速区桜川1-3-2
+              </p>
+              <p>
+                <b class="text-lightBlue">[電話番号] </b
+                >06-4400-9876（11:00-20:00 水・日除く）
+              </p>
+              <p>
+                <b class="text-lightBlue">[Email] </b
+                ><a href="mailto:contact@amazones.fit">contact@amazones.fit</a>
+              </p>
+            </address>
+          </section>
         </div>
       </section>
-
-   
-
-
-    
     </main>
 
     <footer class="I-footer w-full flex flex-col gap-0px">

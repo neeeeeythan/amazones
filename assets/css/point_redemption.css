@@ -134,9 +134,6 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-.p.point__item_summary-warn ul li {
-  /* margin-bottom: 20px; */
-}
 
 .p.point__item_summary-warn ul li::marker {
   font-size: 13px;
