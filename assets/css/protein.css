@@ -1,11 +1,11 @@
-.p-protein_banner {
+.p-protein__banner {
   width: 100%;
   height: calc(100vw * 300 / 1920);
   position: relative;
   overflow: visible;
 }
 
-.p-protein_banner-inner {
+.p-protein__banner-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-.p-protein_banner-img {
+.p-protein__banner-img {
   position: absolute;
   right: -25.8%;
   bottom: -146%;
@@ -23,7 +23,7 @@
   max-width: none;
 }
 
-.p-protein_banner-overlay {
+.p-protein__banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,7 +39,7 @@
 }
 
 /* Ribbon banner SVG decoration */
-.p-protein_banner-ribbon {
+.p-protein__banner-ribbon {
   position: absolute;
   right: -45%;
   top: -43%;
@@ -51,7 +51,7 @@
 }
 
 /* Text content */
-.p-protein_banner-content {
+.p-protein__banner-content {
   position: absolute;
   top: 50%;
   left: 5.75rem;
@@ -59,7 +59,7 @@
   z-index: 3;
 }
 
-.p-protein_banner-title {
+.p-protein__banner-title {
   font-size: 2.5rem;
   line-height: 1.3;
   letter-spacing: 0.08em;
@@ -67,7 +67,7 @@
   font-weight: 400;
 }
 
-.p-protein_banner-subtitle {
+.p-protein__banner-subtitle {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: var(--base-lightBlue);
@@ -78,40 +78,40 @@
 }
 
 /* Custom Breadcrumb styles for protein page  */
-.p-protein_breadcrumb {
+.p-protein__breadcrumb {
   top: 140%;
 }
 
-.p-protein_content {
+.p-protein__content {
   position: relative;
   /* padding: 7rem 0; */
 }
 
-.p-protein_campaign_block {
+.p-protein__campaign-block {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.p-protein_campaign_header {
+.p-protein__campaign-header {
   padding: 2rem 0;
   border-bottom: 1px solid var(--base-lightBlue);
 }
 
-.p-protein_campaign_header p {
+.p-protein__campaign-header p {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;
 }
 
-.p-protein_campaign_header span {
+.p-protein__campaign-header span {
   font-size: 1.5rem;
   color: var(--text-lightBlue);
   font-weight: 500;
 }
 
-.p-protein_opening_gray_container {
+.p-protein__opening-gray-container {
   width: 100%;
   height: 3.75rem;
   background-color: var(--base-grayBlue);
@@ -121,14 +121,14 @@
   align-items: center;
 }
 
-.p-protein_opening_cutout {
+.p-protein__opening-cutout {
   position: absolute;
   bottom: 0%;
   right: 0%;
   width: auto;
 }
 
-.p-protein_point_card {
+.p-protein__point-card {
   background-color: white;
   padding: 2rem;
   border: 1px solid var(--base-lightBlue);
@@ -141,34 +141,34 @@
 }
 
 /* Points slider wrapper */
-.p-protein_points_slider {
+.p-protein__points-slider {
   position: relative;
   width: 100%;
 }
 
-.p-protein_points_nav {
+.p-protein__points-nav {
   display: none;
 }
 
-.p-protein_section_header {
+.p-protein__section-header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   color: #4f4f4f;
 }
 
-.p-protein_section_header p {
+.p-protein__section-header p {
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-.p-protein_section_header h2 {
+.p-protein__section-header h2 {
   font-size: 6.25rem;
   line-height: 7.5rem;
   font-weight: 400;
 }
 
-.p-protein_card_header_lightBlue {
+.p-protein__card-header--light-blue {
   width: 15rem;
   background-color: var(--base-lightBlue);
   padding: 1rem;
@@ -177,7 +177,7 @@
   justify-content: center;
 }
 
-.p-protein_card_body {
+.p-protein__card-body {
   padding: 1.5rem 2.5rem;
   box-sizing: border-box;
   display: flex;
@@ -186,8 +186,8 @@
 
 /* PROTEIN FLAVOR CARD */
 
-.p-protein_text_container,
-.p-protein_onlineshop_text_container {
+.p-protein__text-container,
+.p-protein__onlineshop-text-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -200,7 +200,7 @@
   right: -43dvw;
 }
 
-.p-protein_text_container_left {
+.p-protein__text-container--left {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -213,8 +213,8 @@
   left: -41dvw;
 }
 
-.p-protein_img_pattern,
-.p-protein_img_pattern2 {
+.p-protein__img-pattern,
+.p-protein__img-pattern--2 {
   position: absolute;
   top: 0%;
   right: 0%;
@@ -224,14 +224,14 @@
 }
 
 /* YOUTUBE */
-.p-protein_youtube_wrap {
+.p-protein__youtube-wrap {
   margin-top: 3rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.p-protein_youtube {
+.p-protein__youtube {
   position: relative;
   width: 55rem;
   height: 31rem;
@@ -239,7 +239,7 @@
   overflow: hidden;
 }
 
-.p-protein_youtube iframe {
+.p-protein__youtube iframe {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -247,24 +247,24 @@
   border: none;
 }
 
-.p-protein_text_block {
+.p-protein__text-block {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.p-protein_text_block p {
+.p-protein__text-block p {
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 600;
 }
 
-.p-protein_text_block span {
+.p-protein__text-block span {
   font-weight: 500;
   color: var(--text-lightBlue);
 }
 
-.p-protein_card_logo {
+.p-protein__card-logo {
   width: auto;
   height: 1.5rem;
 }
@@ -272,7 +272,7 @@
 /* SPEAK PERSON */
 
 /* 01 */
-.p-protein_opening_speak_bubble01 {
+.p-protein__opening-speak-bubble {
   position: absolute;
   top: -110%;
   left: 0%;
@@ -281,7 +281,7 @@
 
 /* 02 */
 
-.p-protein_speak_image02 {
+.p-protein__speak-image {
   width: 40rem;
   position: absolute;
   display: flex;
@@ -291,7 +291,7 @@
   right: 9dvw;
 }
 
-.p-protein_speak_bubble02 {
+.p-protein__speak-bubble {
   position: absolute;
   top: -2rem;
   left: 5rem;
@@ -300,55 +300,55 @@
   z-index: 1;
 }
 
-.p-protein_speak_person02 {
+.p-protein__speak-person {
   width: auto;
   height: 25rem;
   object-fit: contain;
 }
 
-.p-protein_speak_image02.is-mobile-only {
+.p-protein__speak-image.is-mobile-only {
   display: none;
 }
 
-.p-protein_quality_header {
+.p-protein__quality-header {
   display: flex;
   align-items: center;
   padding: 30px;
   gap: 1rem;
 }
 
-.p-protein_quality_sub {
+.p-protein__quality-sub {
   display: flex;
   width: 100%;
   background-color: var(--base-lightBlue);
   padding: 10px 30px;
 }
 
-.p-protein_quality_body {
+.p-protein__quality-body {
   display: flex;
   flex-direction: column;
   padding: 30px;
 }
 
-.p-protein_quality_line {
+.p-protein__quality-line {
   height: 1px;
   width: 10rem;
 }
 
 /* FLAVOR */
-.p-protein_flavor_header {
+.p-protein__flavor-header {
   color: white;
   padding: 0.9rem 1.5rem;
   width: fit-content;
 }
 
-.p-protein_flavor_nutrition {
+.p-protein__flavor-nutrition {
   display: flex;
   flex-direction: column;
   width: max-content;
 }
 
-.p-protein_flavor_item {
+.p-protein__flavor-item {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--base-gray);
@@ -356,13 +356,13 @@
 }
 
 /* HORIZONTAL LINE */
-.p-protein_horizontal_line {
+.p-protein__horizontal-line {
   width: 5%;
   height: 2px;
   background-color: var(--base-lightBlue);
 }
 
-.p-protein_faq_ribbon {
+.p-protein__faq-ribbon {
   position: absolute;
   top: -5%;
   right: -10%;
@@ -372,7 +372,7 @@
   overflow: hidden;
 }
 
-.p-protein_faq_card {
+.p-protein__faq-card {
   border: 1px solid var(--base-lightBlue);
   width: 100%;
   padding: 0 1.2rem;
@@ -380,19 +380,19 @@
   flex-direction: column;
 }
 
-.p-protein_faq_q,
-.p-protein_faq_a {
+.p-protein__faq-q,
+.p-protein__faq-a {
   display: flex;
   align-items: center;
   font-weight: 500;
   padding: 1.2rem 0;
 }
 
-.p-protein_faq_q {
+.p-protein__faq-q {
   border-bottom: 1px solid var(--base-lightBlue);
 }
 
-.p-protein_horizontal_line {
+.p-protein__horizontal-line {
   width: 5%;
   height: 2px;
   background-color: var(--base-lightBlue);
@@ -420,7 +420,7 @@
 
 /* ONLINE SHOP */
 
-.p-protein_onlineshop_text_container {
+.p-protein__onlineshop-text-container {
   width: 50dvw;
   top: 50%;
   right: 0;
@@ -429,7 +429,7 @@
 
 /* MODAL */
 
-.p-protein_modal-overlay {
+.p-protein__modal-overlay {
   display: flex;
   visibility: hidden;
   opacity: 0;
@@ -445,12 +445,12 @@
     visibility 0.3s ease;
 }
 
-.p-protein_modal-overlay.is-open {
+.p-protein__modal-overlay.is-open {
   visibility: visible;
   opacity: 1;
 }
 
-.p-protein_modal {
+.p-protein__modal {
   position: relative;
   max-width: 560px;
   width: 100%;
@@ -464,12 +464,12 @@
     opacity 0.3s ease;
 }
 
-.p-protein_modal-overlay.is-open .p-protein_modal {
+.p-protein__modal-overlay.is-open .p-protein__modal {
   transform: translateY(0);
   opacity: 1;
 }
 
-.p-protein_modal__close {
+.p-protein__modal-close {
   position: sticky;
   top: 8px;
   float: right;
@@ -490,55 +490,55 @@
    ────────────────────────────────────────── */
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .p-protein_flavor_img {
+  .p-protein__flavor-img {
     max-width: 45vw;
   }
 
   /* Speak image — reduce from desktop 40rem/25rem */
-  .p-protein_speak_image02 {
+  .p-protein__speak-image {
     width: 35rem;
   }
 
-  .p-protein_speak_person02 {
+  .p-protein__speak-person {
     height: 15rem;
   }
 
-  .p-protein_speak_bubble02 {
+  .p-protein__speak-bubble {
     height: 7rem;
     top: 1rem;
     left: 12rem;
   }
 
   /* Text container — tighten padding */
-  .p-protein_text_container,
-  .p-protein_text_container_left,
-  .p-protein_onlineshop_text_container {
+  .p-protein__text-container,
+  .p-protein__text-container--left,
+  .p-protein__onlineshop-text-container {
     width: 60dvw;
     padding: 3rem;
   }
 
-  .p-protein_text_container {
+  .p-protein__text-container {
     right: -55dvw;
   }
 
-  .p-protein_text_container_left {
+  .p-protein__text-container--left {
     left: -55dvw;
   }
 
   /* Inner row — reduce gap and margin so columns don't overflow */
-  .p-protein_text_container > .flex.flex-col.gap-30px > .flex.gap-50px,
-  .p-protein_text_container_left > .flex.flex-col.gap-30px > .flex.gap-50px {
+  .p-protein__text-container > .flex.flex-col.gap-30px > .flex.gap-50px,
+  .p-protein__text-container--left > .flex.flex-col.gap-30px > .flex.gap-50px {
     gap: 1.5rem;
   }
 
-  .p-protein_text_container .flex.flex-col.flex-1.mr-60,
-  .p-protein_text_container_left .flex.flex-col.flex-1.mr-60 {
+  .p-protein__text-container .flex.flex-col.flex-1.mr-60,
+  .p-protein__text-container--left .flex.flex-col.flex-1.mr-60 {
     margin-right: 1rem;
   }
 
   /* Reserve vertical space so the overflowing text card doesn't overlap the next flavor section */
-  div:has(> .p-protein_text_container),
-  div:has(> .p-protein_text_container_left) {
+  div:has(> .p-protein__text-container),
+  div:has(> .p-protein__text-container--left) {
     padding-bottom: 15rem;
   }
 }
@@ -548,14 +548,14 @@
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
   /* BANNER — adjust protein image position */
-  .p-protein_banner-img {
+  .p-protein__banner-img {
     right: -15%;
     bottom: -110%;
     height: 380%;
   }
 
   /* SECTION HEADER — shrink large display font */
-  .p-protein_section_header h2 {
+  .p-protein__section-header h2 {
     font-size: 4.5rem;
     line-height: 5.5rem;
   }
@@ -563,8 +563,8 @@
   /* ── FLAVOR SECTION — stacked layout (matches mobile) ── */
 
   /* Outer relative container → flex column */
-  div:has(> .p-protein_text_container),
-  div:has(> .p-protein_text_container_left) {
+  div:has(> .p-protein__text-container),
+  div:has(> .p-protein__text-container--left) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -572,8 +572,8 @@
   }
 
   /* Un-position the text overlay panels */
-  .p-protein_text_container,
-  .p-protein_text_container_left {
+  .p-protein__text-container,
+  .p-protein__text-container--left {
     position: relative;
     width: 100%;
     padding: 1.5rem;
@@ -586,65 +586,65 @@
   }
 
   /* ── OPENING SECTION ── */
-  .p-protein_content {
+  .p-protein__content {
     padding: 1rem 2rem;
     gap: 3rem;
   }
 
-  .p-protein_campaign_block {
+  .p-protein__campaign-block {
     line-height: 1.5rem;
   }
 
   /* Stack text block + image side by side → column */
-  .p-protein_content > .flex.gap-30px {
+  .p-protein__content > .flex.gap-30px {
     flex-direction: column;
   }
 
   /* Opening image full width */
-  .p-protein_content > .flex.gap-30px > div:last-child img {
+  .p-protein__content > .flex.gap-30px > div:last-child img {
     width: 100%;
     height: auto;
   }
 
   /* Campaign header text size */
-  .p-protein_campaign_header p,
-  .p-protein_campaign_header span {
+  .p-protein__campaign-header p,
+  .p-protein__campaign-header span {
     font-size: 1rem;
     line-height: 1.7;
   }
 
   /* Gray header bar — allow text to wrap */
-  .p-protein_opening_gray_container {
+  .p-protein__opening-gray-container {
     height: auto;
     min-height: 3.75rem;
     padding: 0.875rem 1rem;
   }
 
-  .p-protein_opening_gray_container h3 {
+  .p-protein__opening-gray-container h3 {
     font-size: 1rem;
     line-height: 1.5;
   }
 
   /* Speech bubble + cutout — scaled for mobile */
-  .p-protein_opening_speak_bubble01 {
+  .p-protein__opening-speak-bubble {
     width: 5rem;
     top: -60%;
     left: 0.5rem;
   }
 
-  .p-protein_opening_cutout {
+  .p-protein__opening-cutout {
     height: 50%;
     width: auto;
   }
 
-  .p-protein_opening_gray_container {
+  .p-protein__opening-gray-container {
     margin-top: 2.5rem;
     overflow: visible;
     padding-right: 5rem;
   }
 
   /* FLAVOR IMAGES — full width stacked (matches mobile) */
-  .p-protein_flavor_img {
+  .p-protein__flavor-img {
     width: 100%;
     height: 538px;
     object-fit: cover;
@@ -660,11 +660,11 @@
   }
 
   /* SPEAK PERSON 02 — hide desktop, show mobile duplicate */
-  .p-protein_speak_image02 {
+  .p-protein__speak-image {
     display: none;
   }
 
-  .p-protein_speak_image02.is-mobile-only {
+  .p-protein__speak-image.is-mobile-only {
     display: flex;
     position: relative;
     width: 100%;
@@ -674,11 +674,11 @@
     /* right: auto; */
   }
 
-  .p-protein_speak_image02.is-mobile-only .p-protein_speak_person02 {
+  .p-protein__speak-image.is-mobile-only .p-protein__speak-person {
     height: 13rem;
   }
 
-  .p-protein_speak_image02.is-mobile-only .p-protein_speak_bubble02 {
+  .p-protein__speak-image.is-mobile-only .p-protein__speak-bubble {
     left: auto;
     right: 14rem;
     top: 0;
@@ -687,46 +687,46 @@
   }
 
   /* Stack nutrition + taste factor columns to prevent overflow */
-  .p-protein_text_container > .flex.flex-col.gap-30px > .flex.gap-50px,
-  .p-protein_text_container_left > .flex.flex-col.gap-30px > .flex.gap-50px {
+  .p-protein__text-container > .flex.flex-col.gap-30px > .flex.gap-50px,
+  .p-protein__text-container--left > .flex.flex-col.gap-30px > .flex.gap-50px {
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  .p-protein_text_container .flex.flex-col.flex-1.mr-60,
-  .p-protein_text_container_left .flex.flex-col.flex-1.mr-60 {
+  .p-protein__text-container .flex.flex-col.flex-1.mr-60,
+  .p-protein__text-container--left .flex.flex-col.flex-1.mr-60 {
     margin-right: 0;
   }
 
-  .p-protein_flavor_nutrition {
+  .p-protein__flavor-nutrition {
     width: 100%;
   }
 
   /* POINT CARDS */
-  .p-protein_point_card {
+  .p-protein__point-card {
     padding: 1.5rem 1rem;
     gap: 1.5rem;
     text-align: center;
   }
 
   /* FLAVOR SECTION title row — stack (matches mobile) */
-  .p-protein_about > .flex.items-center.gap-70px {
+  .p-protein__about > .flex.items-center.gap-70px {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     padding-bottom: 2rem;
   }
 
-  .p-protein_about > .flex.items-center.gap-70px > .flex.gap-3 {
+  .p-protein__about > .flex.items-center.gap-70px > .flex.gap-3 {
     margin-top: 0 !important;
   }
 
-  .p-protein_about > .flex.items-center.gap-70px .flex.flex-col.gap-30px h3 {
+  .p-protein__about > .flex.items-center.gap-70px .flex.flex-col.gap-30px h3 {
     font-size: 1rem !important;
   }
 
   /* Recommendation card row — stack */
-  .p-protein_about .w-full.flex.gap-4 {
+  .p-protein__about .w-full.flex.gap-4 {
     flex-direction: column;
     gap: 0;
   }
@@ -744,54 +744,54 @@
   }
 
   /* Flavor title */
-  .p-protein_text_container h2,
-  .p-protein_text_container_left h2 {
+  .p-protein__text-container h2,
+  .p-protein__text-container--left h2 {
     font-size: 1.25rem;
     text-align: center;
   }
 
   /* Inner content gap */
-  .p-protein_text_container > .flex.flex-col.gap-30px,
-  .p-protein_text_container_left > .flex.flex-col.gap-30px {
+  .p-protein__text-container > .flex.flex-col.gap-30px,
+  .p-protein__text-container--left > .flex.flex-col.gap-30px {
     gap: 1.25rem;
   }
 
   /* Nutrition header strip full width */
-  .p-protein_flavor_header {
+  .p-protein__flavor-header {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
   }
 
   /* Flavor item row */
-  .p-protein_flavor_item {
+  .p-protein__flavor-item {
     padding: 0.6rem 0;
     gap: 0.5rem;
     font-size: 0.875rem;
   }
 
   /* Star rating — tighten gaps */
-  .p-protein_flavor_item .flex.gap-4 {
+  .p-protein__flavor-item .flex.gap-4 {
     gap: 0.35rem;
     flex-wrap: wrap;
     font-size: 0.8rem;
   }
 
   /* Ingredient info button — left-align */
-  .p-protein_text_container .flex.flex-col.justify-end.items-end,
-  .p-protein_text_container_left .flex.flex-col.justify-end.items-end {
+  .p-protein__text-container .flex.flex-col.justify-end.items-end,
+  .p-protein__text-container--left .flex.flex-col.justify-end.items-end {
     align-items: flex-start;
     margin-top: 1rem;
   }
 
   /* Pattern cutout — match mobile size */
-  .p-protein_img_pattern {
+  .p-protein__img-pattern {
     height: 10%;
     width: auto;
   }
 
   /* ONLINE SHOP text container */
-  .p-protein_onlineshop_text_container {
+  .p-protein__onlineshop-text-container {
     width: 54dvw;
     right: 0;
     padding: 2.5rem;
@@ -803,31 +803,31 @@
    ────────────────────────────────────────── */
 @media (max-width: 767px) {
   /* ── BANNER ── */
-  .p-protein_banner-img {
+  .p-protein__banner-img {
     right: -120%;
     bottom: -70%;
     height: 280%;
   }
 
   /* POINT CARDS — transform-based carousel (mobile) */
-  .p-protein_points_slider {
+  .p-protein__points-slider {
     overflow: hidden;
   }
 
-  .p-protein_points_track {
+  .p-protein__points-track {
     flex-direction: row !important;
     flex-wrap: nowrap;
     gap: 0 !important;
     transition: transform 0.4s ease;
   }
 
-  .p-protein_points_track .p-protein_point_card {
+  .p-protein__points-track .p-protein__point-card {
     flex: 0 0 100%;
     padding: 1.5rem 1rem;
     gap: 1rem;
   }
 
-  .p-protein_points_nav {
+  .p-protein__points-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -843,48 +843,48 @@
     z-index: 10;
   }
 
-  .p-protein_points_nav--prev {
+  .p-protein__points-nav--prev {
     left: 0.75rem;
   }
 
-  .p-protein_points_nav--next {
+  .p-protein__points-nav--next {
     right: 0.75rem;
   }
 
   /* ── SECTION HEADER ── */
-  .p-protein_quality_header {
+  .p-protein__quality-header {
     padding: 1rem;
   }
 
-  .p-protein_quality_header p {
+  .p-protein__quality-header p {
     font-size: 0.875rem;
   }
 
-  .p-protein_quality_sub {
+  .p-protein__quality-sub {
     padding: 0.5rem 1rem;
   }
 
-  .p-protein_quality_body {
+  .p-protein__quality-body {
     padding: 1rem;
   }
 
-  .p-protein_quality_line {
+  .p-protein__quality-line {
     width: 3rem;
   }
 
-  .p-protein_section_header h2 {
+  .p-protein__section-header h2 {
     font-size: 3rem;
     line-height: 4rem;
   }
 
-  .p-protein_section_header p {
+  .p-protein__section-header p {
     font-size: 0.875rem;
   }
 
   /* ── FLAVOR SECTION ── */
 
   /* Title row — stack on mobile */
-  .p-protein_about > .flex.items-center.gap-70px {
+  .p-protein__about > .flex.items-center.gap-70px {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
@@ -892,25 +892,25 @@
   }
 
   /* Subtitle + icon — remove the large top margin */
-  .p-protein_about > .flex.items-center.gap-70px > .flex.gap-3 {
+  .p-protein__about > .flex.items-center.gap-70px > .flex.gap-3 {
     margin-top: 0 !important;
   }
 
-  .p-protein_about > .flex.items-center.gap-70px .flex.flex-col.gap-30px h3 {
+  .p-protein__about > .flex.items-center.gap-70px .flex.flex-col.gap-30px h3 {
     font-size: 1rem !important;
   }
 
   /* Recommendation card row — stack */
-  .p-protein_about .w-full.flex.gap-4 {
+  .p-protein__about .w-full.flex.gap-4 {
     flex-direction: column;
     gap: 0;
   }
 
-  .p-protein_card_header_lightBlue {
+  .p-protein__card-header--light-blue {
     width: fit-content;
   }
 
-  .p-protein_card_body {
+  .p-protein__card-body {
     flex-direction: column;
     padding: 1.25rem 1.5rem;
     gap: 0.75rem;
@@ -930,8 +930,8 @@
 
   /* The inner .relative container holding image + text overlay:
      switch from relative-positioned overlay to stacked column */
-  div:has(> .p-protein_text_container),
-  div:has(> .p-protein_text_container_left) {
+  div:has(> .p-protein__text-container),
+  div:has(> .p-protein__text-container--left) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -939,7 +939,7 @@
   }
 
   /* Flavor images — full width, fixed height, protrudes into card top */
-  .p-protein_flavor_img {
+  .p-protein__flavor-img {
     width: 100%;
     height: 320px;
     object-fit: cover;
@@ -950,8 +950,8 @@
   }
 
   /* Un-position the text overlay panels */
-  .p-protein_text_container,
-  .p-protein_text_container_left {
+  .p-protein__text-container,
+  .p-protein__text-container--left {
     position: relative;
     width: 100%;
     padding: 1.5rem;
@@ -964,12 +964,12 @@
   }
 
   /* Hide original speak (inside text container) */
-  .p-protein_speak_image02 {
+  .p-protein__speak-image {
     display: none;
   }
 
   /* Show mobile duplicate */
-  .p-protein_speak_image02.is-mobile-only {
+  .p-protein__speak-image.is-mobile-only {
     display: flex;
     position: relative;
     width: 100%;
@@ -979,82 +979,82 @@
     right: auto;
   }
 
-  .p-protein_speak_image02.is-mobile-only .p-protein_speak_person02 {
+  .p-protein__speak-image.is-mobile-only .p-protein__speak-person {
     height: 13rem;
   }
 
-  .p-protein_speak_image02.is-mobile-only .p-protein_speak_bubble02 {
+  .p-protein__speak-image.is-mobile-only .p-protein__speak-bubble {
     left: 3rem;
     top: 0;
     width: 7rem;
     height: auto;
   }
 
-  .p-protein_img_pattern {
+  .p-protein__img-pattern {
     height: 10%;
     width: auto;
   }
 
-  .p-protein_img_pattern2 {
+  .p-protein__img-pattern--2 {
     height: 15%;
     width: auto;
   }
 
   /* Flavor title */
-  .p-protein_text_container h2,
-  .p-protein_text_container_left h2 {
+  .p-protein__text-container h2,
+  .p-protein__text-container--left h2 {
     font-size: 1.25rem;
     text-align: center;
   }
 
   /* Inner content gap */
-  .p-protein_text_container > .flex.flex-col.gap-30px,
-  .p-protein_text_container_left > .flex.flex-col.gap-30px {
+  .p-protein__text-container > .flex.flex-col.gap-30px,
+  .p-protein__text-container--left > .flex.flex-col.gap-30px {
     gap: 1.25rem;
   }
 
   /* Stack nutrition table + taste factor */
-  .p-protein_text_container > .flex.flex-col.gap-30px > .flex.gap-50px,
-  .p-protein_text_container_left > .flex.flex-col.gap-30px > .flex.gap-50px {
+  .p-protein__text-container > .flex.flex-col.gap-30px > .flex.gap-50px,
+  .p-protein__text-container--left > .flex.flex-col.gap-30px > .flex.gap-50px {
     flex-direction: column;
     gap: 1.25rem;
   }
 
   /* Taste factor — remove right margin */
-  .p-protein_text_container .flex.flex-col.flex-1.mr-60,
-  .p-protein_text_container_left .flex.flex-col.flex-1.mr-60 {
+  .p-protein__text-container .flex.flex-col.flex-1.mr-60,
+  .p-protein__text-container--left .flex.flex-col.flex-1.mr-60 {
     margin-right: 0;
   }
 
   /* Nutrition table — full width */
-  .p-protein_flavor_nutrition {
+  .p-protein__flavor-nutrition {
     width: 100%;
   }
 
   /* Nutrition header strip full width */
-  .p-protein_flavor_header {
+  .p-protein__flavor-header {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
   }
 
   /* Flavor item row */
-  .p-protein_flavor_item {
+  .p-protein__flavor-item {
     padding: 0.6rem 0;
     gap: 0.5rem;
     font-size: 0.875rem;
   }
 
   /* Star rating — tighten gaps */
-  .p-protein_flavor_item .flex.gap-4 {
+  .p-protein__flavor-item .flex.gap-4 {
     gap: 0.35rem;
     flex-wrap: wrap;
     font-size: 0.8rem;
   }
 
   /* Ingredient info button — left-align */
-  .p-protein_text_container .flex.flex-col.justify-end.items-end,
-  .p-protein_text_container_left .flex.flex-col.justify-end.items-end {
+  .p-protein__text-container .flex.flex-col.justify-end.items-end,
+  .p-protein__text-container--left .flex.flex-col.justify-end.items-end {
     align-items: flex-start;
     margin-top: 1rem;
   }
@@ -1073,7 +1073,7 @@
   }
 
   /* ── FAQ SECTION ── */
-  .p-protein_faq_ribbon {
+  .p-protein__faq-ribbon {
     display: none;
   }
 
@@ -1126,19 +1126,19 @@
   /* ── ONLINE SHOP SECTION ── */
 
   /* Stack the background image + text panel */
-  section.relative:has(.p-protein_onlineshop_text_container) {
+  section.relative:has(.p-protein__onlineshop-text-container) {
     display: flex;
     flex-direction: column;
   }
 
-  section.relative:has(.p-protein_onlineshop_text_container) > img {
+  section.relative:has(.p-protein__onlineshop-text-container) > img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     object-position: center;
   }
 
-  .p-protein_onlineshop_text_container {
+  .p-protein__onlineshop-text-container {
     position: relative;
     width: 100%;
     transform: none;
@@ -1149,11 +1149,98 @@
     overflow: hidden;
   }
 
-  .p-protein_onlineshop_text_container .fs-60 {
+  .p-protein__onlineshop-text-container .fs-60 {
     font-size: 1.75rem !important;
   }
 
-  .p-protein_onlineshop_text_container .flex.flex-col.gap-40px {
+  .p-protein__onlineshop-text-container .flex.flex-col.gap-40px {
     gap: 1.5rem;
   }
+}
+
+/* ──────────────────────────────────────────
+   FAQ ACCORDION (BEM, protein-page only)
+   ────────────────────────────────────────── */
+.p-protein__faq-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--base-lightBlue);
+  background-color: var(--base-white);
+  width: 100%;
+}
+
+.p-protein__faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.p-protein__faq-header:hover {
+  opacity: 0.7;
+}
+
+.p-protein__faq-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-protein__faq-icon::before,
+.p-protein__faq-icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--base-lightBlue);
+  transition: transform 0.3s ease;
+}
+
+.p-protein__faq-icon::before {
+  width: 16px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-protein__faq-icon::after {
+  width: 2px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-protein__faq-icon--active::after {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.p-protein__faq-body {
+  max-height: 0;
+  overflow: hidden;
+  border-top: 1px solid var(--base-lightBlue);
+  opacity: 0;
+  box-sizing: border-box;
+  transform: translateZ(0);
+}
+
+.p-protein__faq-body--open {
+  background-color: var(--base-white);
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px 0;
+}
+
+.p-protein__faq-body--opening {
+  animation: slideDown 0.4s ease forwards;
+}
+
+.p-protein__faq-body--closing {
+  animation: slideUp 0.4s ease forwards;
 }

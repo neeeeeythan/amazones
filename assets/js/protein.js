@@ -60,9 +60,9 @@ function toggleProteinAccordion(section, id) {
   const header = container.querySelector(`[data-id="${id}"]`);
   if (!header) return;
 
-  const faqElement = header.closest(".accordion_one");
-  const inner = faqElement.querySelector(".accordion_inner");
-  const arrow = faqElement.querySelector(".one_i");
+  const faqElement = header.closest(".p-protein__faq-item");
+  const inner = faqElement.querySelector(".p-protein__faq-body");
+  const arrow = faqElement.querySelector(".p-protein__faq-icon");
 
   const wasOpen = proteinOpenIds[section].includes(id);
 
@@ -71,31 +71,31 @@ function toggleProteinAccordion(section, id) {
   if (wasOpen) {
     proteinOpenIds[section] = proteinOpenIds[section].filter((v) => v !== id);
 
-    inner.classList.remove("opening");
-    inner.classList.add("closing");
+    inner.classList.remove("p-protein__faq-body--opening");
+    inner.classList.add("p-protein__faq-body--closing");
     header.setAttribute("aria-expanded", "false");
 
     setTimeout(() => {
-      inner.classList.remove("closing", "open");
-      arrow.classList.remove("active");
-      header.classList.remove("open");
+      inner.classList.remove("p-protein__faq-body--closing", "p-protein__faq-body--open");
+      arrow.classList.remove("p-protein__faq-icon--active");
+      header.classList.remove("p-protein__faq-header--open");
       proteinAnimating[section] = false;
     }, 400);
   } else {
     proteinOpenIds[section].push(id);
 
-    inner.classList.add("open");
-    header.classList.add("open");
-    arrow.classList.add("active");
+    inner.classList.add("p-protein__faq-body--open");
+    header.classList.add("p-protein__faq-header--open");
+    arrow.classList.add("p-protein__faq-icon--active");
     header.setAttribute("aria-expanded", "true");
 
     requestAnimationFrame(() => {
-      inner.classList.remove("opening");
+      inner.classList.remove("p-protein__faq-body--opening");
       void inner.offsetWidth;
-      inner.classList.add("opening");
+      inner.classList.add("p-protein__faq-body--opening");
 
       setTimeout(() => {
-        inner.classList.remove("opening");
+        inner.classList.remove("p-protein__faq-body--opening");
         proteinAnimating[section] = false;
       }, 400);
     });
@@ -112,8 +112,8 @@ function renderProteinSection(section, questions) {
   container.innerHTML = questions
     .map((faq) => {
       const isOpen = proteinOpenIds[section].includes(faq.id);
-      return `<div class="accordion_one">
-      <div class="accordion_header ${isOpen ? "open" : ""}"
+      return `<div class="p-protein__faq-item">
+      <div class="p-protein__faq-header ${isOpen ? "p-protein__faq-header--open" : ""}"
            role="button" tabindex="0"
            aria-expanded="${isOpen}"
            data-id="${faq.id}">
@@ -125,10 +125,10 @@ function renderProteinSection(section, questions) {
           <p class="font-zen fw-700 fs-16">${faq.question}</p>
         </div>
         <div class="i_box">
-          <i class="one_i ${isOpen ? "active" : ""}"></i>
+          <i class="p-protein__faq-icon ${isOpen ? "p-protein__faq-icon--active" : ""}"></i>
         </div>
       </div>
-      <div class="accordion_inner ${isOpen ? "open" : ""}">
+      <div class="p-protein__faq-body ${isOpen ? "p-protein__faq-body--open" : ""}">
         <div class="box_one flex flex-row items-start gap-20px">
           <div class="radius-100 flex items-center justify-center"
                style="width:50px;height:50px;flex-shrink:0;background-color:#98a6b5">
@@ -149,12 +149,12 @@ Object.keys(proteinContainers).forEach((section) => {
   const container = proteinContainers[section];
 
   container.addEventListener("click", (e) => {
-    const header = e.target.closest(".accordion_header");
+    const header = e.target.closest(".p-protein__faq-header");
     if (header) toggleProteinAccordion(section, Number(header.dataset.id));
   });
 
   container.addEventListener("keydown", (e) => {
-    const header = e.target.closest(".accordion_header");
+    const header = e.target.closest(".p-protein__faq-header");
     if (header && (e.key === "Enter" || e.key === " ")) {
       e.preventDefault();
       toggleProteinAccordion(section, Number(header.dataset.id));
@@ -235,12 +235,12 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeIngredi
 //  Points card carousel (mobile)
 // ─────────────────────────────────────────────
 (function () {
-  const track = document.querySelector(".p-protein_points_track");
-  const btnPrev = document.querySelector(".p-protein_points_nav--prev");
-  const btnNext = document.querySelector(".p-protein_points_nav--next");
+  const track = document.querySelector(".p-protein__points-track");
+  const btnPrev = document.querySelector(".p-protein__points-nav--prev");
+  const btnNext = document.querySelector(".p-protein__points-nav--next");
   if (!track || !btnPrev || !btnNext) return;
 
-  const cards = track.querySelectorAll(".p-protein_point_card");
+  const cards = track.querySelectorAll(".p-protein__point-card");
   const total = cards.length;
   let current = 0;
 
