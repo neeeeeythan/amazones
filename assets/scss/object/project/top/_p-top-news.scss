@@ -1,0 +1,443 @@
+
+// ===========================================
+// Project: Top News Section
+// ===========================================
+
+.p-top-news {
+  background-image: url("../img/top/bg_news_section.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 20%;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  position: relative;
+
+  &__ribbon {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: fit-content;
+  }
+
+  &__tabs-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  // Tab widget styles
+  &__tabs-widget {
+    [data-type="fancy"].tabs-controls {
+      width: 100%;
+      position: relative;
+      display: inline-flex;
+      gap: 2px;
+      isolation: isolate;
+    }
+
+    [data-type="fancy"].tabs-controls .tabs-control {
+      background-color: $color-white;
+      border: 1px solid $color-light-blue;
+      color: $color-light-blue;
+      font-weight: 500;
+      padding: 10px;
+      height: 40px;
+      width: 100%;
+      max-width: 298px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $color-light-blue;
+        color: $color-white;
+      }
+
+      &[aria-selected="true"] {
+        background-color: $color-light-blue;
+        color: $color-white;
+      }
+
+      &::before {
+        content: unset;
+      }
+    }
+
+    .tabs-panel[aria-selected="false"] {
+      display: none;
+    }
+
+    .tabs-panel[aria-selected="true"] {
+      display: flex;
+    }
+  }
+
+  &__panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  &__panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid $color-gray;
+
+    &:hover .p-top-news__panel-title {
+      color: $color-light-blue;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__panel-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__info-container {
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__label {
+    background-color: $color-gray;
+    padding: 10px 0;
+    min-width: 140px;
+    width: fit-content;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &__date {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $font-outfit;
+    color: $color-light-blue;
+  }
+
+  &__panel-title {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+
+    &--desk {
+      // visible on desktop by default
+    }
+
+    &--sp {
+      display: none;
+    }
+  }
+
+  &__view-all {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // ── Banner section (desktop) ──
+  &__banner-desk {
+    min-height: 500px;
+    width: 100vw;
+    background-image: url("../img/top/bg_news_banner_desk.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+    position: relative;
+  }
+
+  &__banner-context {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 827.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+  }
+
+  &__banner-context-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__30min-label {
+    display: inline-flex;
+    align-items: center;
+    background-color: $color-light-blue;
+    height: 50px;
+    padding-left: 32px;
+    padding-right: 42px;
+    color: $color-white;
+    font-size: 24px;
+
+    img {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: -15px;
+    }
+  }
+
+  &__banner-heading {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__banner-desc {
+    font-size: 16px;
+    text-align: center;
+    line-height: 200%;
+    font-weight: 500;
+  }
+
+  &__ribbon-desk {
+    position: absolute;
+    top: -70px;
+    left: -450px;
+  }
+
+  &__ribbon-desk2 {
+    position: absolute;
+    bottom: -90px;
+    right: -30px;
+  }
+
+  &__sticker1 {
+    position: absolute;
+    top: -90px;
+    left: 365px;
+  }
+
+  &__sticker2 {
+    position: absolute;
+    top: -100px;
+    right: 300px;
+  }
+
+  &__sticker3 {
+    position: absolute;
+    bottom: 70px;
+    left: 190px;
+  }
+
+  &__sticker4 {
+    position: absolute;
+    bottom: 70px;
+    right: 120px;
+    z-index: 2;
+  }
+
+  // ── Banner section (mobile) ──
+  &__banner-sp {
+    display: none;
+    background-image: url("../img/top/bg_news_banner_sp.webp") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 700px;
+    margin-top: 90px;
+    position: relative;
+  }
+
+  &__ribbon-sp {
+    position: absolute;
+    top: -40px;
+    left: -230px;
+  }
+
+  &__ribbon-sp2 {
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+  }
+
+  &__sticker1-sp {
+    position: absolute;
+    top: -75px;
+    left: 15px;
+  }
+
+  &__sticker2-sp {
+    position: absolute;
+    top: -80px;
+    right: 25px;
+  }
+
+  &__sticker3-sp {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    left: 20px;
+  }
+
+  &__sticker4-sp {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    z-index: 2;
+  }
+
+  // ── Responsive ──
+
+  @include mq-down(1665px) {
+    &__sticker1 { left: 265px; }
+    &__sticker2 { right: 200px; }
+    &__sticker3 { left: 90px; }
+    &__sticker4 { right: 20px; }
+  }
+
+  @include mq-down(1440px) {
+    &__sticker1 { left: 165px; }
+    &__sticker2 { right: 180px; }
+    &__sticker3 { left: 0; }
+    &__sticker4 { right: 0; }
+  }
+
+  @include mq-down(1200px) {
+    &__sticker1 { left: 65px; }
+    &__sticker2 { right: 80px; }
+    &__sticker3 { left: -80px; }
+    &__sticker4 { right: -80px; }
+  }
+
+  @include mq-down($bp-md) {
+    background-image: url("../img/top/bg_news_section_sp.webp");
+    padding-top: 52px;
+
+    &__tabs-widget .tabs-controls {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      row-gap: 10px !important;
+      column-gap: 10px !important;
+    }
+
+    &__tabs-widget [data-type="fancy"].tabs-controls .tabs-control {
+      max-width: 100%;
+    }
+
+    &__ribbon {
+      transform: scale(0.4);
+      top: 0;
+      right: -190px;
+    }
+
+    &__panel-title--desk {
+      display: none;
+    }
+
+    &__panel-title--sp {
+      display: block;
+    }
+
+    &__panel-row {
+      align-items: flex-start;
+    }
+
+    &__panel-content img {
+      margin-top: 15px;
+    }
+
+    &__info-container {
+      padding-bottom: 0;
+    }
+
+    &__panel-content {
+      padding-bottom: 20px;
+    }
+
+    &__date {
+      font-size: 15px;
+    }
+
+    &__label {
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+
+    &__panel {
+      padding-top: 30px;
+    }
+
+    &__banner-desk {
+      display: none;
+    }
+
+    &__banner-sp {
+      display: block;
+    }
+
+    &__30min-label {
+      font-size: 20px;
+      gap: 10px;
+    }
+
+    &__min-30 {
+      width: 62px;
+      height: auto;
+    }
+
+    &__banner-sp .p-top-news__banner-context {
+      padding-left: 20px;
+      padding-right: 20px;
+      top: 70px;
+      gap: 26px;
+    }
+
+    &__banner-sp .p-top-news__banner-context-inner {
+      gap: 30px;
+    }
+
+    &__banner-sp .p-top-news__banner-heading {
+      font-size: 37px;
+      line-height: 140%;
+      text-align: center;
+    }
+  }
+
+  @include mq-down(450px) {
+    &__banner-sp .p-top-news__banner-desc {
+      text-align: left;
+    }
+
+    &__banner-sp .p-top-news__30min-label {
+      padding-left: 20px !important;
+      padding-right: 20px;
+      gap: 0;
+      height: 40px;
+
+      img {
+        margin-right: 8px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

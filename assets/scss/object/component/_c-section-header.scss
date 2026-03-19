@@ -1,0 +1,45 @@
+
+// ===========================================
+// Component: Section Header
+// ===========================================
+
+.c-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  &__sub-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-black;
+  }
+
+  &__heading {
+    font-size: 100px;
+    line-height: normal;
+    font-family: $font-outfit;
+    color: $color-black;
+    font-weight: 400;
+  }
+
+  &--white &__sub-text {
+    color: $color-white;
+  }
+
+  &--white &__heading {
+    color: $color-white;
+  }
+
+  @include mq-down($bp-sm) {
+    gap: 10px;
+    z-index: 2;
+
+    &__sub-text {
+      font-size: 16px;
+    }
+
+    &__heading {
+      font-size: 60px;
+    }
+  }
+}

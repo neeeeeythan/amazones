@@ -1,0 +1,32 @@
+// ─────────────────────────────────────────────
+//  Amazones — Main Stylesheet (FLOCSS)
+// ─────────────────────────────────────────────
+
+// Foundation
+@import "foundation/variables";
+@import "foundation/mixins";
+@import "foundation/base";
+
+// Layout
+@import "layout/l-header";
+@import "layout/l-footer";
+
+// Object — Component
+@import "object/component/c-btn";
+@import "object/component/c-section-header";
+@import "object/component/c-text-slider";
+@import "object/component/c-recruit-banner";
+@import "object/component/c-top-banner";
+
+// Object — Project (Top page)
+@import "object/project/top/p-top-hero";
+@import "object/project/top/p-top-news";
+@import "object/project/top/p-top-service";
+@import "object/project/top/p-top-topic";
+@import "object/project/top/p-top-dr-amazones";
+@import "object/project/top/p-top-shop-list";
+@import "object/project/top/p-top-training";
+@import "object/project/top/p-top-price";
+@import "object/project/top/p-top-voice";
+@import "object/project/top/p-top-movie";
+@import "object/project/top/p-top-column";

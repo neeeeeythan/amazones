@@ -1,0 +1,237 @@
+
+// ===========================================
+// Project: Top Topic Section
+// ===========================================
+
+.p-top-topic {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  position: relative;
+  margin-top: 50px;
+  padding-top: 60px;
+
+  &__title {
+    padding-left: 240px;
+  }
+
+  &__ribbon {
+    position: absolute;
+    right: 0;
+    top: -170px;
+    z-index: 1;
+
+    &-img {
+      // topic ribbon image
+    }
+  }
+
+  &__slider {
+    z-index: 10;
+    position: relative;
+  }
+
+  &__sticker {
+    position: absolute;
+    top: -170px;
+    left: 555px;
+    z-index: 1;
+  }
+
+  &__sticker-img {
+    // sticker image
+  }
+
+  &__speech-bubble {
+    position: absolute;
+    top: -20px;
+  }
+
+  &__track {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    margin-right: calc(var(--slider-column-gap) * -1);
+    z-index: 2;
+    scroll-padding-right: 100px;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      padding-right: 30px;
+      z-index: 2;
+      flex-shrink: 0;
+    }
+
+    > *:first-child {
+      width: 250px;
+      height: 100%;
+      padding-right: 0;
+    }
+
+    > *:last-child {
+      padding-right: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: var(--left-spacing, 100px);
+      transition: width 0.3s ease;
+    }
+
+    &.no-spacing::before {
+      width: 0;
+    }
+  }
+
+  &__slide {
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+  }
+
+  &__buttons {
+    padding-left: 240px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__nav-buttons {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    [disabled] {
+      opacity: 0.5;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0;
+    margin-top: 15px;
+    height: 5px;
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  &__dot {
+    height: 2px;
+    background-color: $color-white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+    flex: 1;
+
+    &--active {
+      background-color: $color-light-blue;
+      height: 5px;
+      animation: dotPulse 0.3s ease;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 163.5px;
+    width: 100vw;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  // ── Responsive ──
+
+  @include mq-down(1200px) {
+    &__track > *:first-child {
+      display: none;
+    }
+
+    &__track > * {
+      padding-left: 20px;
+      padding-right: 0;
+    }
+
+    &__track > *:last-child {
+      padding-right: 20px;
+    }
+
+    &__buttons {
+      padding-left: 16px;
+    }
+
+    &__sticker {
+      left: 280px;
+      z-index: 1;
+    }
+  }
+
+  @include mq-down($bp-sm) {
+    gap: 30px;
+    padding-top: 40px;
+
+    &__sticker {
+      display: block !important;
+      left: 160px;
+      top: -120px;
+      z-index: 1;
+    }
+
+    &__sticker-img {
+      width: 94.2px;
+      height: auto;
+    }
+
+    &__speech-bubble {
+      width: 106.6px;
+      height: auto;
+    }
+
+    &__buttons {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    &__dots {
+      padding-right: 20px;
+    }
+
+    &__bg {
+      display: none;
+    }
+  }
+
+  @include mq-down(400px) {
+    &__slide {
+      width: 290px;
+    }
+
+    &__slide img {
+      width: 290px;
+    }
+  }
+}
+
+@keyframes dotPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

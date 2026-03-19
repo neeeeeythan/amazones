@@ -1,0 +1,143 @@
+
+// ===========================================
+// Project: Top Dr. Amazones Section
+// ===========================================
+
+.p-top-dr-amazones {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #fafcfb 0%, #fdfdfd 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  &__image {
+    // dr amazones picture
+  }
+
+  &__content {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-white;
+    padding: 60px 77px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__triangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__label {
+    // dr amazones label image
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 200%;
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+  // ── Responsive ──
+
+  @include mq-down(1700px) {
+    flex-direction: column !important;
+
+    &__content {
+      position: relative !important;
+      align-self: end;
+      margin-top: 100px;
+    }
+
+    max-height: 1000px;
+  }
+
+  @include mq-down($bp-sm) {
+    &__content {
+      width: 95%;
+      padding: 30px;
+    }
+
+    &__inner {
+      gap: 20px;
+    }
+
+    &__body {
+      gap: 20px;
+    }
+
+    &__image {
+      width: 100vw;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+
+    &__label {
+      width: 295px;
+      height: auto;
+    }
+
+    &__triangle {
+      width: 120px;
+      height: auto;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+
+  @include mq-down($bp-xs) {
+    &__image {
+      width: 100vw;
+      transform: scale(1.4);
+      object-position: 0 -20px;
+      margin-top: 40px;
+    }
+  }
+}

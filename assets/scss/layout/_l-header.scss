@@ -1,0 +1,424 @@
+
+// ===========================================
+// Layout: Header
+// ===========================================
+
+.l-header {
+  width: calc(100% - 100px);
+  background-color: $color-white;
+
+  &__wrapper {
+    z-index: 999999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 30px 18px 40px;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 0%;
+    gap: 24px;
+  }
+
+  &__logo {
+    // default size from HTML attributes
+  }
+
+  &__brand-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-black;
+  }
+
+  &__brand-subtitle {
+    font-family: $font-outfit;
+    font-weight: 500;
+    font-size: 13px;
+    color: $color-black;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__btn {
+    width: fit-content;
+    min-width: 235px;
+    background-color: $color-light-blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 25px 14px 21px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:hover .l-header__arrow-img {
+      transform: translateX(8px);
+    }
+
+    &--reserve {
+      padding-left: 21px;
+      padding-right: 21px;
+    }
+  }
+
+  &__btn-icon {
+    height: 34px;
+    width: 34px;
+    background-color: $color-white;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn-text-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+  }
+
+  &__btn-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  &__btn-label {
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 700;
+
+    &--large {
+      font-size: 15px;
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__arrow-img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  // Floating menu
+  &__floating-menu {
+    background-color: $color-black;
+    width: 100px;
+    height: 104px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 25px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+
+    &--active {
+      height: 100vh;
+      background-color: $color-black;
+    }
+  }
+
+  &__floating-menu-trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &__floating-menu-label {
+    font-family: $font-outfit;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-white;
+  }
+
+  &__floating-menu-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    cursor: pointer;
+
+    &--active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__menu-copyright {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-white;
+    font-size: 12px;
+    font-family: $font-outfit;
+    font-weight: 500;
+  }
+
+  &__scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    background-color: $color-black;
+  }
+
+  &__scroll-text {
+    font-family: $font-outfit;
+    font-size: 12px;
+    color: $color-white;
+    letter-spacing: 10px;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    &:hover {
+      color: $color-light-blue;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__desktop-menu-icon {
+    // visible by default
+  }
+
+  // Hamburger
+  &__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__hamburger-bar {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform-origin: center;
+  }
+
+  // Mobile overlay
+  &__mobile-overlay {
+    z-index: 2;
+    position: fixed;
+    top: 98px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    position: relative;
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      background-color: $color-white;
+    }
+  }
+
+  &__mobile-overlay-content {
+    width: fit-content;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__mobile-overlay--active &__mobile-overlay-content {
+    opacity: 1;
+  }
+
+  &__mobile-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__mobile-btn {
+    width: 100% !important;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+    background-color: $color-light-blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 25px 14px 21px;
+    border-radius: 50px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:hover .l-header__arrow-img {
+      transform: translateX(8px);
+    }
+  }
+
+  &__trademark {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-black;
+    font-size: 12px;
+    font-family: $font-outfit;
+    font-weight: 500;
+  }
+
+  // ── Responsive ──
+  @include mq-down($bp-md) {
+    & {
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+
+    &__floating-menu-content {
+      display: none;
+    }
+
+    &__floating-menu-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      .l-header__floating-menu-label {
+        display: none;
+      }
+    }
+
+    &__btn:not(.l-header__mobile-btn) {
+      display: none;
+    }
+
+    &__floating-menu {
+      max-height: 98.77px;
+    }
+
+    &__desktop-menu-icon {
+      display: none;
+    }
+
+    &__hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      padding: 5px;
+
+      &--active {
+        background-color: transparent;
+      }
+
+      &--active .l-header__hamburger-bar:nth-child(1) {
+        transform: translateY(18px) rotate(45deg);
+      }
+
+      &--active .l-header__hamburger-bar:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+
+      &--active .l-header__hamburger-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+
+  @include mq-down($bp-sm) {
+    &__logo {
+      width: 70px;
+      height: auto;
+    }
+
+    &__wrapper {
+      padding-left: 10px;
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 50px;
+    }
+
+    &__brand {
+      gap: 14px;
+    }
+
+    &__brand-text,
+    &__brand-subtitle {
+      font-size: 10px;
+    }
+
+    &__floating-menu {
+      max-height: 50px;
+      width: 50px;
+    }
+
+    &__hamburger {
+      gap: 5px;
+    }
+
+    &__hamburger-bar {
+      width: 25px;
+      height: 1px;
+    }
+
+    &__hamburger--active .l-header__hamburger-bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &__hamburger--active .l-header__hamburger-bar:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &__hamburger--active .l-header__hamburger-bar:nth-child(3) {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+
+    &__mobile-overlay {
+      top: 50px;
+    }
+  }
+
+  @include mq-down($bp-xs) {
+    &__mobile-overlay-content {
+      min-width: 100%;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+}

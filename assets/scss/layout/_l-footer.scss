@@ -1,0 +1,222 @@
+
+// ===========================================
+// Layout: Footer
+// ===========================================
+
+.l-footer {
+  overflow: hidden;
+  background-image: url("../img/top/bg-footer.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    padding: 72px 120px 50px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  &__top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  &__brand-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__brand-subtitle {
+    font-family: $font-outfit;
+    font-weight: 500;
+  }
+
+  &__brand-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__blue-btn {
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-light-blue;
+    border-radius: 50px;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  &__nav-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  &__nav-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__page-link {
+    padding-bottom: 25px;
+    border-bottom: 1px solid $color-gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__page-link-title {
+    font-family: $font-outfit;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__link-line {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background-color: $color-light-blue;
+  }
+
+  &__nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  &__nav-link {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  &__icon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  // Bottom row
+  &__bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__bottom-links {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+  }
+
+  &__scroll-up {
+    margin-right: -80px;
+  }
+
+  // Cookie bar
+  &__cookie-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 120px;
+    background-color: $color-black;
+  }
+
+  &__cookie-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-white;
+  }
+
+  &__cookie-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  &__cookie-btn {
+    font-size: 15px;
+    color: $color-black;
+    background-color: $color-white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 600;
+  }
+
+  // ── Responsive ──
+  @include mq-down($bp-md) {
+    &__main {
+      padding: 60px 16px 40px 16px;
+      gap: 60px;
+    }
+
+    &__top-row {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__nav-columns {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  @include mq-down($bp-sm) {
+    &__main {
+      padding: 40px 16px 30px 16px;
+      gap: 40px;
+    }
+
+    &__bottom-row {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__bottom-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__cookie-bar {
+      flex-direction: column;
+      padding: 15px 16px;
+    }
+  }
+}

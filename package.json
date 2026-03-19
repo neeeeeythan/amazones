@@ -1,0 +1,25 @@
+{
+  "name": "amazones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass assets/scss/style.scss assets/css/style.css --style=expanded --no-source-map",
+    "sass:watch": "sass assets/scss/style.scss assets/css/style.css --style=expanded --no-source-map --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neeeeeythan/amazones.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/neeeeeythan/amazones/issues"
+  },
+  "homepage": "https://github.com/neeeeeythan/amazones#readme",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}

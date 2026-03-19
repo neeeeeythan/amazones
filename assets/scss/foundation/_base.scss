@@ -1,0 +1,28 @@
+// ─────────────────────────────────────────────
+//  Base / Reset
+// ─────────────────────────────────────────────
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: $color-bg;
+  font-family: $font-zen;
+  line-height: 100%;
+  color: $color-black;
+}
+
+html body a {
+  color: inherit;
+}
+
+main {
+  transition: margin-top 0.35s ease;
+}
+
+ul li::marker {
+  color: $color-light-blue;
+  width: 10px;
+  height: 10px;
+}

@@ -1,0 +1,125 @@
+
+// ===========================================
+// Component: Buttons
+// ===========================================
+
+.c-btn-green {
+  background-color: $color-light-blue;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $color-white;
+    border: 1px solid $color-light-blue;
+  }
+
+  &:hover img {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(97%) saturate(209%)
+      hue-rotate(94deg) brightness(91%) contrast(85%);
+  }
+}
+
+.c-btn-light-blue {
+  background-color: $color-light-blue;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 14px;
+  padding: 16px 35px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover img:last-child {
+    transform: translateX(8px);
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 16px;
+    font-family: $font-outfit;
+  }
+
+  @include mq-down($bp-sm) {
+    font-size: 16px;
+  }
+}
+
+.c-btn-light-blue02 {
+  background-color: $color-light-blue;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 14px;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: $color-white;
+    border: 1px solid $color-light-blue;
+    color: $color-light-blue;
+  }
+
+  &:hover img {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
+      hue-rotate(96deg) brightness(92%) contrast(82%);
+  }
+}
+
+.c-btn-icon-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  background-color: $color-light-blue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-btn-red {
+  background-color: $color-light-pink;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  width: fit-content;
+  gap: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-white;
+    border: 1px solid $color-light-pink;
+    color: $color-light-pink;
+  }
+
+  &:hover img {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(36%) saturate(5575%)
+      hue-rotate(330deg) brightness(104%) contrast(92%);
+  }
+}

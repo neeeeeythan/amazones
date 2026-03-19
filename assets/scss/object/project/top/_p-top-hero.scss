@@ -1,0 +1,162 @@
+
+// ===========================================
+// Project: Top Hero Section
+// ===========================================
+
+.p-top-hero {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+
+  &__ribbon {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  &__text-container {
+    position: absolute;
+    top: 214px;
+    left: 105px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  &__heading {
+    font-family: $font-zen;
+    font-weight: 500;
+    color: $color-white;
+    font-size: 39px;
+    line-height: 180%;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__cta-text {
+    color: $color-white;
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  &__dots {
+    // container for dots
+  }
+
+  &__dot {
+    cursor: pointer;
+    height: 3px;
+    width: 25px;
+    margin: 0;
+    background-color: $color-white;
+    backdrop-filter: blur(2px);
+    display: inline-block;
+    transition: background-color 0.3s ease;
+
+    &--active,
+    &:hover {
+      background-color: $color-light-blue;
+    }
+  }
+
+  &__img-container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  &__slide {
+    display: none;
+
+    img {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+
+  &__slide--animate {
+    animation-name: heroAnimate;
+    animation-duration: 5s;
+  }
+}
+
+@keyframes heroAnimate {
+  from {
+    transform: scale(1.1) rotateY(10deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+// ── Responsive ──
+
+@include mq-down($bp-md) {
+  .p-top-hero {
+    margin-top: 90px;
+  }
+}
+
+@include mq-down($bp-sm) {
+  .p-top-hero {
+    margin-top: 0;
+
+    &__slide img {
+      object-position: 0px 50px;
+    }
+
+    &__text-container {
+      top: 150px;
+      left: 20px;
+      gap: 10px;
+    }
+
+    &__text {
+      gap: 10px;
+    }
+
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__cta-text {
+      font-size: 15px;
+    }
+  }
+}
+
+@include mq-down($bp-xxs) {
+  .p-top-hero {
+    &__img--1 {
+      object-position: -70px 50px !important;
+    }
+
+    &__img--4 {
+      object-position: -30px 50px !important;
+    }
+
+    &__img--5 {
+      object-position: -100px center !important;
+    }
+  }
+}

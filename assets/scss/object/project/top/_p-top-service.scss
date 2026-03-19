@@ -1,0 +1,199 @@
+
+// ===========================================
+// Project: Top Service Section
+// ===========================================
+
+.p-top-service-topic {
+  background-image: url("../img/top/bg_service_topic.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.p-top-service {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  &__title {
+    padding-left: 240px;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 640px;
+    background-color: $color-white;
+    z-index: 2;
+    overflow: hidden;
+
+    &--offset {
+      margin-top: -90px;
+      background-color: $color-gray;
+    }
+
+    &--offset-more {
+      margin-top: -180px;
+    }
+  }
+
+  &__card-img {
+    height: 320px;
+    object-fit: cover;
+    object-position: center center !important;
+  }
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 16px;
+  }
+
+  &__card-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__card-title {
+    font-size: 30px;
+    color: $color-light-blue;
+    font-weight: 700;
+  }
+
+  &__card-desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 200%;
+    text-align: center;
+  }
+
+  &__ribbon {
+    position: absolute;
+    right: 0;
+    top: -170px;
+    z-index: 1;
+  }
+
+  // ── Mobile Slider ──
+  &__slider-sp {
+    display: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__slider-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    transition: transform 0.4s ease;
+  }
+
+  &__slider-card {
+    margin-bottom: 0;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  &__slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $color-light-blue;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    top: calc(50vw * 0.5);
+    transform: translateY(-50%);
+
+    &--prev {
+      left: 0.75rem;
+    }
+
+    &--next {
+      right: 0.75rem;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  // ── Responsive ──
+
+  @include mq-down(1500px) {
+    gap: 100px;
+  }
+
+  @include mq-down($bp-md) {
+    gap: 40px;
+
+    &__slider-sp {
+      display: block;
+    }
+
+    &__title {
+      padding-left: 16px;
+    }
+
+    &__container {
+      display: none;
+    }
+
+    &__card {
+      max-width: 100%;
+      min-height: 539px;
+    }
+
+    &__card--offset-more {
+      margin-top: 0 !important;
+    }
+
+    &__card--offset {
+      margin-top: 0;
+    }
+
+    &__card-img {
+      width: 100%;
+      height: 500px;
+    }
+  }
+
+  @include mq-down($bp-sm) {
+    padding-top: 50px;
+
+    &__card-img {
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  @include mq-down($bp-xs) {
+    &__card-img {
+      width: 100%;
+      height: 200px;
+    }
+
+    &__break {
+      display: none;
+    }
+  }
+}

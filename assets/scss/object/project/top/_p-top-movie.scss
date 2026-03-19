@@ -1,0 +1,346 @@
+
+// ===========================================
+// Project: Top Movie Section
+// ===========================================
+
+.p-top-movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 16px;
+  background-image: url("../img/top/bg_movie.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+
+  &__ribbon {
+    position: absolute;
+    top: 80px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    align-items: center;
+  }
+
+  &__header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  &__label-break {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__label-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__min1-logo {
+    // 1min logo
+  }
+
+  &__label-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 200%;
+  }
+
+  &__header-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+  }
+
+  &__video {
+    width: 1000px;
+    height: 564px;
+  }
+
+  &__video-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+    position: relative;
+  }
+
+  &__thumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  &__thumb {
+    border: 5px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &--active {
+      border: 5px solid $color-light-blue;
+    }
+  }
+
+  &__thumbnail {
+    width: 333px;
+    height: 185px;
+    object-fit: cover;
+  }
+
+  &__sticker-container {
+    position: absolute;
+    left: 0;
+  }
+
+  &__sticker-girl {
+    width: 100%;
+    top: 140px;
+    position: absolute;
+  }
+
+  &__sticker1 {
+    position: absolute;
+    top: 110px;
+  }
+
+  &__sticker2 {
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+
+  &__sticker-container-sp {
+    min-height: 450px;
+    position: relative;
+  }
+
+  &__sticker-sp1 {
+    position: absolute;
+    top: 200px;
+    left: 180px;
+  }
+
+  &__sticker-sp2 {
+    position: absolute;
+    right: 180px;
+    top: 130px;
+  }
+
+  &__ribbon-sp {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    transform: scale(2);
+  }
+
+  // ── Responsive ──
+
+  @include mq-down(1450px) {
+    &__video {
+      width: 1000px;
+      height: 564px;
+    }
+
+    &__thumbs {
+      gap: 10px !important;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include mq-down(1410px) {
+    &__sticker-container {
+      display: none;
+    }
+
+    &__video {
+      margin: 0 auto;
+    }
+  }
+
+  @include mq-down(1250px) {
+    &__video {
+      width: 100%;
+    }
+
+    &__header {
+      flex-direction: column;
+      gap: 30px;
+
+      .c-section-header {
+        align-self: flex-start;
+      }
+    }
+
+    &__ribbon {
+      display: none;
+    }
+
+    &__label-break {
+      flex-direction: column !important;
+      align-items: center;
+      width: 100%;
+      gap: 30px;
+    }
+  }
+
+  @include mq-down($bp-sm) {
+    padding-top: 50px;
+    background-image: url("../img/top/bg_movie_sp.webp");
+
+    &__container {
+      gap: 36px;
+    }
+
+    &__video {
+      height: 400px;
+    }
+
+    &__min1-logo {
+      width: 61.9px;
+      height: auto;
+    }
+
+    &__label-inner {
+      gap: 10px;
+    }
+
+    &__label-title {
+      font-size: 18px;
+    }
+
+    &__video-holder {
+      gap: 10px;
+    }
+
+    &__thumbnail {
+      width: 100%;
+      height: auto;
+    }
+
+    &__thumbs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__video-holder .c-btn-light-blue {
+      margin-top: 30px;
+    }
+
+    &__sticker-container-sp .p-top-movie__speech-bubble {
+      width: 335px;
+      height: auto;
+      margin-left: 200px;
+    }
+  }
+
+  @include mq-down(650px) {
+    &__sticker-container-sp .p-top-movie__speech-bubble {
+      margin-left: 100px;
+    }
+
+    &__sticker-sp1 {
+      left: 80px;
+    }
+
+    &__sticker-sp2 {
+      top: 120px;
+    }
+
+    &__ribbon-sp {
+      transform: scale(1.4);
+    }
+  }
+
+  @include mq-down($bp-xs) {
+    &__sticker-container-sp .p-top-movie__speech-bubble {
+      margin-left: 50px;
+    }
+
+    &__sticker-sp1 {
+      left: 80px;
+    }
+
+    &__sticker-sp2 {
+      top: 120px;
+      right: 100px;
+    }
+
+    &__ribbon-sp {
+      transform: scale(1.2);
+    }
+  }
+
+  @include mq-down(480px) {
+    &__video {
+      width: 100%;
+      height: 200px;
+    }
+
+    &__thumbs {
+      row-gap: 10px !important;
+      column-gap: 10px !important;
+      gap: 0 !important;
+    }
+
+    &__thumb {
+      border: 3px solid transparent;
+
+      &--active {
+        border: 3px solid $color-light-blue;
+      }
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    &__sticker-container-sp .p-top-movie__speech-bubble {
+      margin-left: 0 !important;
+    }
+
+    &__ribbon-sp {
+      position: absolute;
+      top: 180px !important;
+      left: -20px !important;
+      transform: scale(1);
+    }
+
+    &__sticker-sp1 {
+      position: absolute;
+      top: 200px;
+      left: 50px;
+    }
+
+    &__sticker-sp2 {
+      position: absolute;
+      right: 80px;
+      top: 130px;
+    }
+  }
+}

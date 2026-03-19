@@ -1,0 +1,179 @@
+
+// ===========================================
+// Component: Top Banner (CTA)
+// ===========================================
+
+.c-top-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 16px;
+  background-image: url("../img/top/bg_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 72px 16px 60px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  &__heading-accent {
+    font-size: 60px;
+    font-family: $font-outfit;
+    font-weight: 600;
+    color: $color-light-blue;
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+  }
+
+  &__btn-arrow {
+    margin-left: 10px;
+    margin-bottom: 2px;
+  }
+
+  &__stickers-row {
+    display: contents;
+  }
+
+  &__sticker1 {
+    position: absolute;
+    top: 45px;
+    left: 0;
+  }
+
+  &__speechbubble1 {
+    position: absolute;
+    top: -60px;
+    left: -93px;
+  }
+
+  &__sticker2 {
+    position: absolute;
+    top: 30px;
+    right: -40px;
+  }
+
+  &__speechbubble2 {
+    position: absolute;
+    top: -60px;
+    right: -63px;
+  }
+
+  // ── Responsive ──
+
+  @include mq-down(1200px) {
+    &__heading {
+      line-height: 200%;
+    }
+
+    &__container a {
+      line-height: 180%;
+    }
+
+    &__sticker1,
+    &__sticker2 {
+      display: none;
+    }
+
+    &__container {
+      width: auto;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+
+  @include mq-down($bp-sm) {
+    padding: 40px 16px;
+
+    &__container {
+      width: 100%;
+      padding: 40px 26px 0 26px;
+      gap: 10px;
+    }
+
+    &__heading {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__heading-accent {
+      font-size: 36px;
+    }
+
+    &__container a {
+      padding: 10px 35px 10px 20px;
+      margin-top: 10px;
+    }
+
+    &__stickers-row {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      padding-top: 30px;
+      margin-top: 10px;
+      z-index: 22;
+    }
+
+    &__sticker1,
+    &__sticker2 {
+      display: block !important;
+      position: relative;
+      top: 10px;
+      left: auto;
+      right: auto;
+      bottom: auto;
+    }
+
+    &__sticker1 img:last-child {
+      width: 130px;
+      height: auto;
+      display: block !important;
+      margin-left: 25px;
+    }
+
+    &__sticker1 img:first-child {
+      position: absolute;
+      top: -45px;
+      left: -40px;
+      width: 90px;
+      height: auto;
+      display: block !important;
+    }
+
+    &__sticker2 img:last-child {
+      width: 170px;
+      height: auto;
+      display: block;
+    }
+
+    &__sticker2 img:first-child {
+      position: absolute;
+      top: -50px;
+      right: -5px;
+      width: 93px;
+      height: auto;
+      display: block !important;
+    }
+  }
+}

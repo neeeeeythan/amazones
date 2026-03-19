@@ -1,0 +1,47 @@
+
+// ===========================================
+// Component: Text Slider (Marquee)
+// ===========================================
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.c-text-slider {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: -5px;
+  width: 100%;
+
+  &__track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  &__slide {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-gray-blue;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    text-wrap: nowrap;
+    font-family: $font-outfit;
+    font-weight: 300;
+    font-size: 36px;
+    color: $color-white;
+  }
+}

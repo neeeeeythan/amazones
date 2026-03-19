@@ -8,12 +8,15 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazones（アマゾネス） | 初心者向け女性専用24時間ジム</title>
-    <!-- GLOBAL CSS -->
+    <!-- GLOBAL CSS (kept for backward compatibility during migration) -->
     <link href="assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/buttons.css" rel="stylesheet" type="text/css" />
 
-    <!--TOP CSS JS-->
+    <!--TOP CSS JS (kept for backward compatibility during migration) -->
     <link href="assets/css/top.css" rel="stylesheet" type="text/css" />
+
+    <!-- SCSS compiled output (uncomment when SCSS build is active, then remove above CSS links) -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet" type="text/css" /> -->
     <script src="assets/js/utils.js" defer></script>
     <script src="assets/js/global.js" defer></script>
     <script src="assets/js/top.js" defer></script>
@@ -21,58 +24,54 @@
 
   <body>
     <!--HEADER-->
-    <header class="I-header">
-      <div class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
-        <div class="flex flex-row items-center flex-1 gap-24px">
+    <header class="l-header I-header">
+      <div class="l-header__wrapper I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+        <div class="l-header__brand flex flex-row items-center flex-1 gap-24px">
           <img
             src="assets/img/common/icon_logo.svg"
             alt="アマゾネス"
             width="159.97px"
             height="62.77px"
-            class = 'amazones-header-logo'
+            class="l-header__logo amazones-header-logo"
           />
-          <a href="#" class="header-text text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="l-header__brand-text header-text text-black1 fw-500 fs-14">アマゾネス</a>
+          <p class="l-header__brand-subtitle header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions flex flex-row items-center gap-15px">
           <a
             href="#"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="l-header__btn header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
           >
-            <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
-            >
+            <div class="l-header__btn-icon icon-wrapper bg-white radius-100 flex flex-row items-center justify-center">
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
-                <p class="text-white fs-14 fw-700">全店相互利用可能</p>
-                <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+            <div class="l-header__btn-text-group flex flex-row items-end gap-5px">
+              <div class="l-header__btn-labels flex flex-col items-start gap-8px">
+                <p class="l-header__btn-label text-white fs-14 fw-700">全店相互利用可能</p>
+                <p class="l-header__btn-label text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="l-header__arrow-img arrow-img"/>
             </div>
           </a>
 
           <a
             href="#"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="l-header__btn l-header__btn--reserve header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
           >
-            <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
-            >
+            <div class="l-header__btn-icon icon-wrapper bg-white radius-100 flex flex-row items-center justify-center">
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
-                <p class="text-white fs-14 fw-700 text-center">
+            <div class="l-header__btn-text-group flex flex-row items-end gap-5px">
+              <div class="l-header__btn-labels flex flex-col items-start gap-8px">
+                <p class="l-header__btn-label l-header__btn-label--center text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
-                <p class="text-white fs-15 fw-700 text-center">
+                <p class="l-header__btn-label l-header__btn-label--large l-header__btn-label--center text-white fs-15 fw-700 text-center">
                   体験予約はこちら
                 </p>
               </div>
-              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+              <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="l-header__arrow-img arrow-img"/>
             </div>
           </a>
         </div>
@@ -80,31 +79,31 @@
        <!--FLOATING HEADER MENU-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="l-header__floating-menu header-floating-menu flex flex-col items-center justify-between relative"
         >
         <div
           id="floating-menu-btn"
-          class="flex flex-col items-center gap-13px"
+          class="l-header__floating-menu-trigger flex flex-col items-center gap-13px"
         >
-          <img src="assets/img/common/icon_menu.svg" alt="アイコン" class="desktop-menu-icon" />
-          <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+          <img src="assets/img/common/icon_menu.svg" alt="アイコン" class="l-header__desktop-menu-icon desktop-menu-icon" />
+          <p class="l-header__floating-menu-label font-outfit fs-14 fw-500 text-white">MENU</p>
 
-          <button class="mobile-hamburger" aria-label="メニュー">
-            <span class="mh-bar"></span>
-            <span class="mh-bar"></span>
-            <span class="mh-bar"></span>
+          <button class="l-header__hamburger mobile-hamburger" aria-label="メニュー">
+            <span class="l-header__hamburger-bar mh-bar"></span>
+            <span class="l-header__hamburger-bar mh-bar"></span>
+            <span class="l-header__hamburger-bar mh-bar"></span>
           </button>
         </div>
 
           <div
             id="floating-menu-content"
-            class="floating-menu-content cursor-pointer"
+            class="l-header__floating-menu-content floating-menu-content cursor-pointer"
           >
-            <p class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500">
+            <p class="l-header__menu-copyright text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500">
               ©2026 Wellness Land Co., Ltd.
             </p>
-            <div class="flex flex-col items-center gap-8px justify-center bg-base-black1">
-              <p class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover">
+            <div class="l-header__scroll-indicator flex flex-col items-center gap-8px justify-center bg-base-black1">
+              <p class="l-header__scroll-text font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover">
                 SCROLL DOWN
               </p>
               <img
@@ -116,53 +115,49 @@
           </div>
         </div>
 
-      
+
         <!--header mobile-->
-        <div class = 'mobile-header-overlay relative'>
-          <div class = 'mobile-header-overlay-content'>
-            <div class="reveal-scale flex flex-col items-center gap-15px">
+        <div class="l-header__mobile-overlay mobile-header-overlay relative">
+          <div class="l-header__mobile-overlay-content mobile-header-overlay-content">
+            <div class="l-header__mobile-btns reveal-scale flex flex-col items-center gap-15px">
               <a
                 href="#"
-                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+                class="l-header__mobile-btn header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
               >
-                <div
-                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
-                >
+                <div class="l-header__btn-icon icon-wrapper bg-white radius-100 flex flex-row items-center justify-center">
                   <img src="assets/img/common/icon_search.svg" alt="アイコン" />
                 </div>
-                <div class="flex flex-row items-end gap-5px">
-                  <div class="flex flex-col items-start gap-8px">
-                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
-                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                <div class="l-header__btn-text-group flex flex-row items-end gap-5px">
+                  <div class="l-header__btn-labels flex flex-col items-start gap-8px">
+                    <p class="l-header__btn-label text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="l-header__btn-label text-white fs-14 fw-700">近くの店舗を探す</p>
                   </div>
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="l-header__arrow-img arrow-img"/>
                 </div>
               </a>
 
               <a
                 href="#"
-                class="header-btn sp-header-btn  bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+                class="l-header__mobile-btn header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
               >
-                <div
-                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
-                >
+                <div class="l-header__btn-icon icon-wrapper bg-white radius-100 flex flex-row items-center justify-center">
                   <img src="assets/img/common/icon_24.svg" alt="アイコン" />
                 </div>
-                <div class="flex flex-row items-end gap-5px">
-                  <div class="flex flex-col items-start gap-8px">
-                    <p class="text-white fs-14 fw-700 text-center">
+                <div class="l-header__btn-text-group flex flex-row items-end gap-5px">
+                  <div class="l-header__btn-labels flex flex-col items-start gap-8px">
+                    <p class="l-header__btn-label l-header__btn-label--center text-white fs-14 fw-700 text-center">
                       24時間WEB予約可能
                     </p>
-                    <p class="text-white fs-15 fw-700 text-center">
+                    <p class="l-header__btn-label l-header__btn-label--large l-header__btn-label--center text-white fs-15 fw-700 text-center">
                       体験予約はこちら
                     </p>
                   </div>
-                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+                  <img src="assets/img/common/icon_arrow.svg" alt="アイコン" class="l-header__arrow-img arrow-img"/>
                 </div>
               </a>
             </div>
           </div>
-          <p class="trademark fs-12 font-outfit fw-500">
+          <p class="l-header__trademark trademark fs-12 font-outfit fw-500">
               ©2026 Wellness Land Co., Ltd.
             </p>
       </div>
@@ -170,9 +165,9 @@
 
     <main>
       <!--TOP HERO SECTION-->
-      <section class="carousel-container relative">
+      <section class="p-top-hero carousel-container relative">
         <div
-          class="grow-wrapper-right hero-ribbon"
+          class="p-top-hero__ribbon grow-wrapper-right hero-ribbon"
           style="width: 100vw; overflow: hidden"
         >
           <div class="clip-grow-right" style="width: 100%">
@@ -200,60 +195,60 @@
             </svg>
           </div>
         </div>
-        <div class="hero-text-slider-container flex flex-col gap-15px">
-          <div class="hero-text flex flex-col gap-25px items-start">
-            <h1 class="reveal font-zen fw-500 text-white fs-39 lh-180">    
+        <div class="p-top-hero__text-container hero-text-slider-container flex flex-col gap-15px">
+          <div class="p-top-hero__text hero-text flex flex-col gap-25px items-start">
+            <h1 class="p-top-hero__heading reveal font-zen fw-500 text-white fs-39 lh-180">
             </h1>
-            <div class="reveal flex flex-row items-center gap-10px">
-              <p class="text-white fs-19 fw-700"></p>
-              <a href = '#' class="btn-green-wrapper">
+            <div class="p-top-hero__cta reveal flex flex-row items-center gap-10px">
+              <p class="p-top-hero__cta-text text-white fs-19 fw-700"></p>
+              <a href="#" class="c-btn-green btn-green-wrapper">
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
               </a>
             </div>
           </div>
-          <div class="dots-container">
-            <span class="dots" onclick="currentSlide(1)"></span>
-            <span class="dots" onclick="currentSlide(2)"></span>
-            <span class="dots" onclick="currentSlide(3)"></span>
-            <span class="dots" onclick="currentSlide(4)"></span>
-            <span class="dots" onclick="currentSlide(5)"></span>
+          <div class="p-top-hero__dots dots-container">
+            <span class="p-top-hero__dot dots" onclick="currentSlide(1)"></span>
+            <span class="p-top-hero__dot dots" onclick="currentSlide(2)"></span>
+            <span class="p-top-hero__dot dots" onclick="currentSlide(3)"></span>
+            <span class="p-top-hero__dot dots" onclick="currentSlide(4)"></span>
+            <span class="p-top-hero__dot dots" onclick="currentSlide(5)"></span>
           </div>
         </div>
 
-        <div class="carousel-img-container">
+        <div class="p-top-hero__img-container carousel-img-container">
           <!--replace images here-->
-          <div class="mySlides animate">
+          <div class="p-top-hero__slide mySlides animate">
             <picture>
-              <source srcset="assets/img/common/bg_hero_sp1.png" media = "(max-width:767px)" alt = ""/>
-              <img src="assets/img/common/bg_hero.webp" alt="アマゾネス" class = 'bg-hero-img1'/>
+              <source srcset="assets/img/common/bg_hero_sp1.png" media="(max-width:767px)" alt=""/>
+              <img src="assets/img/common/bg_hero.webp" alt="アマゾネス" class="p-top-hero__img--1 bg-hero-img1"/>
             </picture>
           </div>
 
-          <div class="mySlides animate">
+          <div class="p-top-hero__slide mySlides animate">
              <picture>
-              <source srcset="assets/img/common/bg_hero_sp2.png" media = "(max-width:767px)" alt = ""/>
+              <source srcset="assets/img/common/bg_hero_sp2.png" media="(max-width:767px)" alt=""/>
               <img src="assets/img/common/bg_hero2.png" alt="アマゾネス" />
             </picture>
           </div>
 
-          <div class="mySlides animate">
+          <div class="p-top-hero__slide mySlides animate">
              <picture>
-              <source srcset="assets/img/common/bg_hero_sp3.png" media = "(max-width:767px)" alt = ""/>
+              <source srcset="assets/img/common/bg_hero_sp3.png" media="(max-width:767px)" alt=""/>
               <img src="assets/img/common/bg_hero3.png" alt="アマゾネス" />
             </picture>
           </div>
 
-          <div class="mySlides animate">
+          <div class="p-top-hero__slide mySlides animate">
              <picture>
-              <source srcset="assets/img/common/bg_hero_sp4.png" media = "(max-width:767px)" alt = ""/>
-              <img src="assets/img/common/bg_hero4.png" alt="アマゾネス" class = 'bg-hero-img4'/>
+              <source srcset="assets/img/common/bg_hero_sp4.png" media="(max-width:767px)" alt=""/>
+              <img src="assets/img/common/bg_hero4.png" alt="アマゾネス" class="p-top-hero__img--4 bg-hero-img4"/>
             </picture>
           </div>
 
-          <div class="mySlides animate">
+          <div class="p-top-hero__slide mySlides animate">
              <picture>
-              <source srcset="assets/img/common/bg_hero_sp5.png" media = "(max-width:767px)" alt = ""/>
-              <img src="assets/img/common/bg_hero5.png" alt="アマゾネス" class = 'bg-hero-img5'/>
+              <source srcset="assets/img/common/bg_hero_sp5.png" media="(max-width:767px)" alt=""/>
+              <img src="assets/img/common/bg_hero5.png" alt="アマゾネス" class="p-top-hero__img--5 bg-hero-img5"/>
             </picture>
           </div>
         </div>
@@ -261,10 +256,10 @@
 
       <!--TOP NEWS SECTION-->
       <section
-        class="news-section w-full flex flex-col items-center justify-center pt-100 relative"
+        class="p-top-news news-section w-full flex flex-col items-center justify-center pt-100 relative"
         id="news-section"
       >
-        <div class="ribbon-scroll-container news-ribbon">
+        <div class="p-top-news__ribbon ribbon-scroll-container news-ribbon">
           <div class="grow-wrapper-right" id="ribbonTrigger">
             <div class="clip-grow-right">
               <svg
@@ -288,10 +283,10 @@
             </div>
           </div>
         </div>
-        <div class="news-tabs-container flex flex-col gap-30px">
-          <div class="section-header-wrapper flex flex-col gap-18px">
-            <p class="reveal section-sub-text fs-18 fw-500 text-black1">お知らせ</p>
-            <h2 class="reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
+        <div class="p-top-news__tabs-container news-tabs-container flex flex-col gap-30px">
+          <div class="c-section-header section-header-wrapper flex flex-col gap-18px">
+            <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">お知らせ</p>
+            <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
               News
             </h2>
           </div>
@@ -347,7 +342,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -356,7 +351,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -371,7 +366,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -380,7 +375,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -395,7 +390,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -404,7 +399,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -419,7 +414,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -428,7 +423,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
                       こちらにお知らせタイトルが入ります
                   </p>
                   
@@ -452,7 +447,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -461,7 +456,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -476,7 +471,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -485,7 +480,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -500,7 +495,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -509,7 +504,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -524,7 +519,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -533,7 +528,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
                       こちらにお知らせタイトルが入ります
                   </p>
                   
@@ -556,7 +551,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -565,7 +560,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -580,7 +575,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -589,7 +584,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -604,7 +599,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -613,7 +608,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -628,7 +623,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -637,7 +632,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
                       こちらにお知らせタイトルが入ります
                   </p>
                   
@@ -660,7 +655,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -669,7 +664,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -684,7 +679,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -693,7 +688,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -708,7 +703,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -717,7 +712,7 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20">
                         こちらにお知らせタイトルが入ります
                     </p>
                   
@@ -732,7 +727,7 @@
                       <p class="fs-16 fw-500 font-outfit text-lightBlue">
                         2026.00.00
                       </p>
-                      <p class="panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
+                      <p class="p-top-news__panel-title p-top-news__panel-title--desk panel-content-text-desk fw-500 fs-16 ls-20 lh-200">
                         こちらにお知らせタイトルが入ります
                       </p>
                     </div>
@@ -741,14 +736,14 @@
                       alt="アイコン"
                     />
                   </div>
-                   <p class="panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
+                   <p class="p-top-news__panel-title p-top-news__panel-title--sp panel-content-text-sp fw-500 fs-16 ls-20 lh-200">
                       こちらにお知らせタイトルが入ります
                   </p>
                   
                 </div>
               </div>
             </div>
-            <a href="#" class="btn-light-blue mt-50 ml-auto mr-auto">
+            <a href="#" class="c-btn-light-blue btn-light-bluemt-50 ml-auto mr-auto">
               <p class="text-white fs-16 font-outfit">View All</p>
               <img
                 src="assets/img/common/icon_btn_green_arrow.svg"
@@ -759,7 +754,7 @@
         </div>
 
         <!--NEWS BANNER-->
-        <div class="news-banner news-banner-desk relative">
+        <div class="p-top-news__banner-desk news-banner news-banner-desk relative">
           <img src="assets/img/common/bg_news_banner_ribbon-desk.svg" class = 'clip-grow-right news-ribbon-desk'>
           <img src="assets/img/common/img_news_banner_sticker1_sp.webp" class = 'news-banner-sticker1' width = '210px' height = 'auto'>
           <img src="assets/img/common/img_news_banner_sticker2_sp.webp" class = 'news-banner-sticker2' width = '139.4' height = 'auto'>
@@ -789,7 +784,7 @@
 
         </div>
 
-        <div class = 'news-banner-sp relative'>
+        <div class="p-top-news__banner-sp news-banner-sp relative">
           <img src="assets/img/common/bg_news_banner_ribbon.svg" class = 'clip-grow-right news-ribbon-sp'>
           <img src="assets/img/common/img_news_banner_sticker1_sp.webp" class = 'news-banner-sticker1-sp' width = '138px' height = 'auto'>
           <img src="assets/img/common/img_news_banner_sticker2_sp.webp" class = 'news-banner-sticker2-sp' width = '88px' height = 'auto'>
@@ -821,8 +816,8 @@
       </section>
 
        <!--TOP TEXT SLIDER-->
-      <div class="text-slider w-full">
-          <div class="slide-track">
+      <div class="c-text-slider text-slider w-full">
+          <div class="c-text-slider__track slide-track">
             <div class="slide">
               <p class="font-outfit fw-300 fs-36 text-white">
                 Sustainable health and a beautiful body.
@@ -897,27 +892,27 @@
       </div>
 
       <!--TOP SERVICE AND TOPIC SECTION-->
-      <div class="service-topic-container pb-80 relative">
+      <div class="p-top-service-topic service-topic-container pb-80 relative">
         <!--TOP SERVICE SECTION-->
         <section
-          class="service-section flex flex-col gap-50px"
+          class="p-top-service service-section flex flex-col gap-50px"
           id="service-section"
         >
-          <div class="section-header-wrapper flex flex-col gap-18px service-section-title pl-240">
-            <p class="reveal section-sub-text fs-18 fw-500 text-black1">サービス</p>
-            <h2 class="reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
+          <div class="p-top-service__title c-section-header section-header-wrapper flex flex-col gap-18px service-section-title pl-240">
+            <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">サービス</p>
+            <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
               Service
             </h2>
           </div>
           <div
-            class="service-container w-full flex flex-row gap-0px justify-center items-center"
+            class="p-top-service__container service-container w-full flex flex-row gap-0px justify-center items-center"
           >
             <!--SERVICE 1-->
-            <div class="reveal-left service-wrapper">
+            <div class="p-top-service__card reveal-left service-wrapper">
               <img
                 src="assets/img/common/img_service1.png"
                 alt="女性専用24時間ジム"
-                class="service-img"
+                class="p-top-service__card-img service-img"
               />
               <div
                 class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
@@ -927,18 +922,18 @@
                 <p class="fs-16 fw-500 lh-200 text-center">
                   Amazones（アマゾネス）は全国に20店舗以上！<br />もちろん、全店舗行き来自由！
                 </p>
-                <a href="#" class="btn-green-wrapper">
+                <a href="#" class="c-btn-green btn-green-wrapper">
                   <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                 </a>
               </div>
             </div>
 
             <!--SERVICE 2-->
-            <div class="reveal service-wrapper service-wrapper2">
+            <div class="p-top-service__card p-top-service__card--offset reveal service-wrapper service-wrapper2">
               <img
                 src="assets/img/common/img_service2.webp"
                 alt="女性専用24時間ジム"
-                class="service-img"
+                class="p-top-service__card-img service-img"
               />
               <div
                 class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
@@ -949,18 +944,18 @@
                   姿勢診断の判定結果に基づいたトレーニングや自宅でできる体操、
                   <br />ストレッチ・一本歯下駄？のトレーニングで効果的に改善！
                 </p>
-                <a href="#" class="btn-green-wrapper">
+                <a href="#" class="c-btn-green btn-green-wrapper">
                   <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                 </a>
               </div>
             </div>
 
             <!--SERVICE 3-->
-            <div class="reveal-right service-wrapper service-wrapper3">
+            <div class="p-top-service__card p-top-service__card--offset-more reveal-right service-wrapper service-wrapper3">
               <img
                 src="assets/img/common/img_service3.webp"
                 alt="女性専用24時間ジム"
-                class="service-img"
+                class="p-top-service__card-img service-img"
               />
               <div
                 class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
@@ -973,14 +968,14 @@
                   ダイエットの知識やトレーニングマシンの使い方をはじめ
                   <br />トレーニングジムの利用方法までしっかりと解消！
                 </p>
-                <div class="btn-green-wrapper">
+                <div class="c-btn-green btn-green-wrapper">
                   <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="service-container-sp p-medical_voice_slider_wrapper">
+          <div class="p-top-service__slider-sp service-container-sp p-medical_voice_slider_wrapper">
             <button
               class="p-medical_voice_nav p-medical_voice_nav--prev"
               aria-label="前へ"
@@ -1000,7 +995,7 @@
                   <img
                     src="assets/img/common/img_service1.png"
                     alt="女性専用24時間ジム"
-                    class="service-img"
+                    class="p-top-service__card-img service-img"
                   />
                   <div
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
@@ -1010,7 +1005,7 @@
                     <p class="fs-16 fw-500 lh-200 text-center">
                       Amazones（アマゾネス）は全国に20店舗以上！<br />もちろん、全店舗行き来自由！
                     </p>
-                    <a href="#" class="btn-green-wrapper">
+                    <a href="#" class="c-btn-green btn-green-wrapper">
                       <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                     </a>
                   </div>
@@ -1023,7 +1018,7 @@
                   <img
                     src="assets/img/common/img_service2.webp"
                     alt="女性専用24時間ジム"
-                    class="service-img"
+                    class="p-top-service__card-img service-img"
                   />
                   <div
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
@@ -1034,7 +1029,7 @@
                       姿勢診断の判定結果に基づいたトレーニングや自宅でできる体操、
                       <br class = 'service-break'/>ストレッチ・一本歯下駄？のトレーニングで効果的に改善！
                     </p>
-                    <a href="#" class="btn-green-wrapper">
+                    <a href="#" class="c-btn-green btn-green-wrapper">
                       <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                     </a>
                   </div>
@@ -1046,7 +1041,7 @@
                   <img
                     src="assets/img/common/img_service3.webp"
                     alt="女性専用24時間ジム"
-                    class="service-img"
+                    class="p-top-service__card-img service-img"
                   />
                   <div
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
@@ -1059,7 +1054,7 @@
                       ダイエットの知識やトレーニングマシンの使い方をはじめ
                        <br class = 'service-break'/>トレーニングジムの利用方法までしっかりと解消！
                     </p>
-                    <div class="btn-green-wrapper">
+                    <div class="c-btn-green btn-green-wrapper">
                       <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                     </div>
                   </div>
@@ -1071,15 +1066,15 @@
 
 
         <!--TOP TOPIC SECTION-->
-        <section class="topic-container flex flex-col gap-52px relative mt-50">
+        <section class="p-top-topic topic-container flex flex-col gap-52px relative mt-50">
           <div class="grow-wrapper-right service-ribbon">
             <div class="clip-grow-right">
               <img src="assets/img/common/icon_ribbon_service.svg" alt="リボン"  class = 'topic-ribbon'/>
             </div>
           </div>
-          <div class="section-header-wrapper flex flex-col gap-18px pl-240">
-            <p class="reveal section-sub-text fs-18 fw-500 text-black1">トピックス</p>
-            <h2 class="reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
+          <div class="c-section-header section-header-wrapper flex flex-col gap-18px pl-240">
+            <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">トピックス</p>
+            <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
               Topics
             </h2>
           </div>
@@ -1160,14 +1155,14 @@
               class="pl-240 topic-buttons-container flex flex-row gap-30px items-center mt-30"
             >
               <div class="topic-slider__buttons flex flex-row gap-10px">
-                <div class="btn-green-wrapper" data-slider-prev disabled>
+                <div class="c-btn-green btn-green-wrapper" data-slider-prev disabled>
                   <img
                     src="assets/img/common/icon_arrow.svg"
                     alt="アイコン"
                     style="transform: scaleX(-1)"
                   />
                 </div>
-                <div class="btn-green-wrapper" data-slider-next>
+                <div class="c-btn-green btn-green-wrapper" data-slider-next>
                   <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                 </div>
               </div>
@@ -1182,27 +1177,27 @@
       </div>
 
       <!--TOP TRAINING MACHINE-->
-      <div class="shop-training-machine-container">
+      <div class="p-top-shop-training shop-training-machine-container">
         <!--Dr Amazones Shop List Section-->
         <div>
           <!--TOP DR AMAZONES-->
           <section
-            class="dr-amazones-container bg-linearLightGray flex flex-row items-center relative"
+            class="p-top-dr-amazones dr-amazones-container bg-linearLightGray flex flex-row items-center relative"
           > 
           <picture>
             <source srcset = 'assets/img/common/img_drAmazones_sp.webp' media = '(max-width:767px)'/>
             <img
               src="assets/img/common/img_drAmazones.webp"
               alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
-              class = 'drAmazones-pic'
+              class="p-top-dr-amazones__image drAmazones-pic"
             />
           </picture>
             
-            <div class=" flex flex-col items-start dr-amazones-section">
+            <div class="p-top-dr-amazones__content flex flex-col items-start dr-amazones-section">
               <img
                 src="assets/img/common/img_triangle.svg"
                 alt="三角形のアイコン"
-                class="triangle-icon"
+                class="p-top-dr-amazones__triangle triangle-icon"
               />
               <div class="flex flex-col gap-50px">
                 <div class="flex flex-col gap-20px">
@@ -1223,7 +1218,7 @@
                 </div>
               </div>
 
-              <a href="#" class="btn-light-blue mt-40 dr-amazones-btn">
+              <a href="#" class="c-btn-light-blue btn-light-bluemt-40 dr-amazones-btn">
                 <p class="text-white fs-16 font-outfit">View More</p>
                 <img
                   src="assets/img/common/icon_btn_green_arrow.svg"
@@ -1235,13 +1230,13 @@
         </div>
 
         <!--Shop List-->
-        <section class="shop-list-section pt-120 relative">
+        <section class="p-top-shop-list shop-list-section pt-120 relative">
           <div
-            class="shop-list-section-container flex flex-col items-start gap-150px pl-240"
+            class="p-top-shop-list__container shop-list-section-container flex flex-col items-start gap-150px pl-240"
           >
-            <div class="section-header-wrapper flex flex-col gap-18px">
-              <p class="reveal section-sub-text fs-18 fw-500 text-black1">店舗一覧</p>
-              <h2 class="reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
+            <div class="c-section-header section-header-wrapper flex flex-col gap-18px">
+              <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">店舗一覧</p>
+              <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
                 Shop List
               </h2>
             </div>
@@ -1303,7 +1298,7 @@
                   />
                   全店舗追加料金なしで相互利用OK。お仕事帰りやお出掛け先など、ライフスタイルに合わせて好きな店舗を自由に使えるからジム通いがもっと便利に、もっと続けやすくなります。
                 </p>
-                <a href="#" class="btn-light-blue mt-30">
+                <a href="#" class="c-btn-light-blue btn-light-bluemt-30">
                   <p class="text-white fs-16 font-outfit">近くの店舗を探す</p>
                   <img
                     src="assets/img/common/icon_btn_green_arrow.svg"
@@ -1378,12 +1373,12 @@
 
         <!--Training Machine Section-->
         <section
-          class="training-machine-section flex flex-col gap-50px relative"
+          class="p-top-training training-machine-section flex flex-col gap-50px relative"
         >
-          <div class="training-machine-container pl-240 flex flex-row items-center gap-60px">
-            <div class="section-header-wrapper flex flex-col gap-18px">
-              <p class="reveal section-sub-text fs-18 fw-500 text-black1">トレーニングマシン</p>
-              <h2 class="reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
+          <div class="p-top-training__header training-machine-container pl-240 flex flex-row items-center gap-60px">
+            <div class="c-section-header section-header-wrapper flex flex-col gap-18px">
+              <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">トレーニングマシン</p>
+              <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
                 Training <br />
                 Machine
               </h2>
@@ -1419,7 +1414,7 @@
                         src="assets/img/common/img_trainingmachine1.webp"
                         alt="ケーブルタフスタック"
                       />
-                      <p class="fw-500 text-white fs-14 training-machine-label">
+                      <p class="p-top-training__machine-label fw-500 text-white fs-14 training-machine-label">
                         ケーブルタフスタック
                       </p>
                     </div>
@@ -1432,7 +1427,7 @@
                         src="assets/img/common/img_trainingmachine2.webp"
                         alt="シーテッドレッグカールプリコー"
                       />
-                      <p class="fw-500 text-white fs-14 training-machine-label">
+                      <p class="p-top-training__machine-label fw-500 text-white fs-14 training-machine-label">
                         シーテッドレッグカールプリコー
                       </p>
                     </div>
@@ -1445,7 +1440,7 @@
                         src="assets/img/common/img_trainingmachine3.webp"
                         alt="ラットプルダウンプリコー"
                       />
-                      <p class="fw-500 text-white fs-14 training-machine-label">
+                      <p class="p-top-training__machine-label fw-500 text-white fs-14 training-machine-label">
                         ラットプルダウンプリコー
                       </p>
                     </div>
@@ -1458,7 +1453,7 @@
                         src="assets/img/common/img_trainingmachine4.webp"
                         alt="バックエクステンションプリコー"
                       />
-                      <p class="fw-500 text-white fs-14 training-machine-label">
+                      <p class="p-top-training__machine-label fw-500 text-white fs-14 training-machine-label">
                         バックエクステンションプリコー
                       </p>
                     </div>
@@ -1471,7 +1466,7 @@
                         src="assets/img/common/img_trainingmachine5.webp"
                         alt="トレッドミル  テクノジム"
                       />
-                      <p class="fw-500 text-white fs-14 training-machine-label">
+                      <p class="p-top-training__machine-label fw-500 text-white fs-14 training-machine-label">
                         トレッドミル テクノジム
                       </p>
                     </div>
@@ -1484,7 +1479,7 @@
                         src="assets/img/common/img_trainingmachine6.webp"
                         alt="トレッドミル  テクノジム"
                       />
-                      <p class="fw-500 text-white fs-14 training-machine-label">
+                      <p class="p-top-training__machine-label fw-500 text-white fs-14 training-machine-label">
                         トレッドミル テクノジム
                       </p>
                     </div>
@@ -1496,14 +1491,14 @@
                 class="pl-240 topic-buttons-container flex flex-row gap-30px items-center mt-30"
               >
                 <div class="topic-slider__buttons flex flex-row gap-10px">
-                  <div class="btn-green-wrapper" data-slider-prev disabled>
+                  <div class="c-btn-green btn-green-wrapper" data-slider-prev disabled>
                     <img
                       src="assets/img/common/icon_arrow.svg"
                       alt="アイコン"
                       style="transform: scaleX(-1)"
                     />
                   </div>
-                  <div class="btn-green-wrapper" data-slider-next>
+                  <div class="c-btn-green btn-green-wrapper" data-slider-next>
                     <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                   </div>
                 </div>
@@ -1545,13 +1540,13 @@
       </div>
 
       <!--Price Section-->
-      <section class="price-section">
-        <div class="price-section-container flex flex-col items-start gap-50px">
+      <section class="p-top-price price-section">
+        <div class="p-top-price__container price-section-container flex flex-col items-start gap-50px">
           <div class="price-section-header flex flex-row gap-60px">
             <div class="reveal section-header-wrapper flex flex-col gap-18px">
-              <p class="reveal section-sub-text fs-18 fw-500 text-black1 text-white">料金案内</p>
+              <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1 text-white">料金案内</p>
               <h2
-                class="section-header-text fs-100 lh-normal font-outfit text-black1 fw-400 text-white"
+                class="c-section-header__heading section-header-text fs-100 lh-normal font-outfit text-black1 fw-400 text-white"
               >
                 Price
               </h2>
@@ -1577,8 +1572,8 @@
             </p>
           </div>
 
-          <div class="price-desc-wrapper w-full">
-            <div class="price-desc">
+          <div class="p-top-price__desc-wrapper price-desc-wrapper w-full">
+            <div class="p-top-price__desc price-desc">
               <!--price item 1-->
               <div class="reveal price-desc-item">
                 <div class="price-desc-content">
@@ -1647,7 +1642,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn-light-blue mt-30 price-button mx-auto">
+          <a href="#" class="c-btn-light-blue btn-light-bluemt-30 price-button mx-auto">
             <p class="text-white fs-16 font-outfit">
               お支払方法についてはこちら
             </p>
@@ -1671,7 +1666,7 @@
                     class = 'blue-line'
                   />
                 </p>
-                <a href="#" class="btn-green-wrapper" data-slider-prev disabled>
+                <a href="#" class="c-btn-green btn-green-wrapper" data-slider-prev disabled>
                   <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                 </a>
               </div>
@@ -1701,7 +1696,7 @@
                      class = 'blue-line'
                   />
                 </p>
-                <a href="#" class="btn-green-wrapper" data-slider-prev disabled>
+                <a href="#" class="c-btn-green btn-green-wrapper" data-slider-prev disabled>
                   <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                 </a>
               </div>
@@ -1715,12 +1710,12 @@
       </section>
 
       <!--Voice Section-->
-      <section class="voice-section py-100 relative">
+      <section class="p-top-voice voice-section py-100 relative">
         <div class="flex flex-col gap-50px">
           <div class="flex flex-row gap-75px items-center pl-240">
-            <div class="section-header-wrapper flex flex-col gap-18px">
-              <p class="reveal section-sub-text fs-18 fw-500 text-black1">会員様の声</p>
-              <h2 class="reveal section-header-text fs-100 lh-normal font-outfit fw-400">Voice</h2>
+            <div class="c-section-header section-header-wrapper flex flex-col gap-18px">
+              <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">会員様の声</p>
+              <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit fw-400">Voice</h2>
             </div>
             <div class="reveal-scale flex flex-row items-center gap-20px mt-50">
               <img src="assets/img/common/icon_speaker.svg" alt="24時間" />
@@ -1747,11 +1742,11 @@
                 </div>
               </li>
               <li>
-                <div class="slide relative voice-slide">
+                <div class="p-top-voice__slide slide relative voice-slide">
                   <div
                     class="slide-content flex flex-col gap-15px w-full voice-slide-content"
                   >
-                    <p class="fw-500 fs-14 text-white voice-label">
+                    <p class="p-top-voice__label fw-500 fs-14 text-white voice-label">
                       和歌山駅前店
                     </p>
                     <div class="voice-img-box flex flex-row items-center gap-20px">
@@ -1759,7 +1754,7 @@
                         src="assets/img/common/icon_voice_image1.png"
                         alt="宮崎葵 様"
                       />
-                      <p class="fw-700 text-lightBlue voice-name">宮崎葵 様</p>
+                      <p class="p-top-voice__name fw-700 text-lightBlue voice-name">宮崎葵 様</p>
                     </div>
                     <p class="fw-500 fs-15 lh-180">
                       女性専用ジムで24時間空いているので自分の生活にぴったりなので通えそうです♪♪
@@ -1769,11 +1764,11 @@
               </li>
 
               <li>
-                <div class="slide relative voice-slide">
+                <div class="p-top-voice__slide slide relative voice-slide">
                   <div
                     class="slide-content flex flex-col gap-15px w-full voice-slide-content"
                   >
-                    <p class="fw-500 fs-14 text-white voice-label">
+                    <p class="p-top-voice__label fw-500 fs-14 text-white voice-label">
                       ブランチ北長瀬店
                     </p>
                     <div class="voice-img-box flex flex-row items-center gap-20px">
@@ -1781,7 +1776,7 @@
                         src="assets/img/common/icon_voice_image2.png"
                         alt="宮崎葵 様"
                       />
-                      <p class="fw-700 text-lightBlue voice-name">y u 様</p>
+                      <p class="p-top-voice__name fw-700 text-lightBlue voice-name">y u 様</p>
                     </div>
                     <p class="fw-500 fs-15 lh-180">
                       女性専用ジムを探してきました。<br />
@@ -1793,11 +1788,11 @@
               </li>
 
               <li>
-                <div class="slide relative voice-slide">
+                <div class="p-top-voice__slide slide relative voice-slide">
                   <div
                     class="slide-content flex flex-col gap-15px w-full voice-slide-content"
                   >
-                    <p class="fw-500 fs-14 text-white voice-label">
+                    <p class="p-top-voice__label fw-500 fs-14 text-white voice-label">
                       アクロスプラザ関店
                     </p>
                     <div class="voice-img-box  flex flex-row items-center gap-20px">
@@ -1805,7 +1800,7 @@
                         src="assets/img/common/icon_voice_image3.png"
                         alt="宮崎葵 様"
                       />
-                      <p class="fw-700 text-lightBlue voice-name">u yuu 様</p>
+                      <p class="p-top-voice__name fw-700 text-lightBlue voice-name">u yuu 様</p>
                     </div>
                     <p class="fw-500 fs-15 lh-180">
                       友人の紹介で体験へ来ました！ <br />
@@ -1818,17 +1813,17 @@
               </li>
 
               <li>
-                <div class="slide relative voice-slide">
+                <div class="p-top-voice__slide slide relative voice-slide">
                   <div
                     class="slide-content flex flex-col gap-15px w-full voice-slide-content"
                   >
-                    <p class="fw-500 fs-14 text-white voice-label">難波本店</p>
+                    <p class="p-top-voice__label fw-500 fs-14 text-white voice-label">難波本店</p>
                     <div class="voice-img-box  flex flex-row items-center gap-20px">
                       <img
                         src="assets/img/common/icon_voice_image4.png"
                         alt="宮崎葵 様"
                       />
-                      <p class="fw-700 text-lightBlue voice-name">
+                      <p class="p-top-voice__name fw-700 text-lightBlue voice-name">
                         Aoi Uchi 様
                       </p>
                     </div>
@@ -1846,14 +1841,14 @@
               class="pl-240 topic-buttons-container flex flex-row gap-30px items-center mt-30"
             >
               <div class="topic-slider__buttons flex flex-row gap-10px">
-                <div class="btn-green-wrapper" data-slider-prev disabled>
+                <div class="c-btn-green btn-green-wrapper" data-slider-prev disabled>
                   <img
                     src="assets/img/common/icon_arrow.svg"
                     alt="アイコン"
                     style="transform: scaleX(-1)"
                   />
                 </div>
-                <div class="btn-green-wrapper" data-slider-next>
+                <div class="c-btn-green btn-green-wrapper" data-slider-next>
                   <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                 </div>
               </div>
@@ -1864,20 +1859,20 @@
           </div>
         </div>
 
-        <a href="#" class="btn-light-blue mt-40 mx-auto voice-btn">
+        <a href="#" class="c-btn-light-blue btn-light-bluemt-40 mx-auto voice-btn">
           <p class="text-white fs-16 font-outfit">View More</p>
           <img src="assets/img/common/icon_btn_green_arrow.svg" alt="アイコン" />
         </a>
       </section>
 
       <!--Movie Section-->
-      <section class="movie-section relative">
+      <section class="p-top-movie movie-section relative">
         <img src="assets/img/common/icon_movie_ribbon.svg" alt="リボン" class="movie-ribbon clip-grow-right">
-        <div class="movie-section-container">
+        <div class="p-top-movie__container movie-section-container">
           <div class="flex flex-row gap-75px items-center">
-            <div class="section-header-wrapper flex flex-col gap-18px">
-              <p class="reveal section-sub-text fs-18 fw-500 text-black1">Amazonesについて</p>
-              <h2 class="reveal section-header-text fs-100 lh-normal font-outfit fw-400">Movie</h2>
+            <div class="c-section-header section-header-wrapper flex flex-col gap-18px">
+              <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">Amazonesについて</p>
+              <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit fw-400">Movie</h2>
             </div>
             <div class="reveal-scale flex flex-col gap-25px items-start">
               <div class="movie-label-break  flex flex-row gap-20px items-center">
@@ -1924,36 +1919,36 @@
               </video>
               <div>
                 <div class="thumbs flex flex-row gap-30px mt-10">
-                  <div class="thumb" onclick="playVid('one')">
+                  <div class="p-top-movie__thumb thumb" onclick="playVid('one')">
                     <img
                       src="assets/img/common/img_movie_thumbnail1.webp"
-                      class="movie-thumbnail"
+                      class="p-top-movie__thumbnail movie-thumbnail"
                       alt="[Are big goals discouraging?] A must-read for those who have just joined a gym!"
                     />
                   </div>
-                  <div class="thumb" onclick="playVid('two')">
+                  <div class="p-top-movie__thumb thumb" onclick="playVid('two')">
                     <img
                       src="assets/img/common/img_movie_thumbnail2.webp"
-                      class="movie-thumbnail"
+                      class="p-top-movie__thumbnail movie-thumbnail"
                       alt=""
                     />
                   </div>
-                  <div class="thumb" onclick="playVid('three')">
+                  <div class="p-top-movie__thumb thumb" onclick="playVid('three')">
                     <img
                       src="assets/img/common/img_movie_thumbnail3.webp"
-                      class="movie-thumbnail"
+                      class="p-top-movie__thumbnail movie-thumbnail"
                       alt=""
                     />
                   </div>
-                  <div class="thumb" onclick="playVid('four')">
+                  <div class="p-top-movie__thumb thumb" onclick="playVid('four')">
                     <img
                       src="assets/img/common/img_movie_thumbnail4.webp"
-                      class="movie-thumbnail"
+                      class="p-top-movie__thumbnail movie-thumbnail"
                       alt=""
                     />
                   </div>
                 </div>
-                <a href="#" class="btn-light-blue mt-40 mx-auto">
+                <a href="#" class="c-btn-light-blue btn-light-bluemt-40 mx-auto">
                   <p class="text-white fs-16 font-outfit">View More</p>
                   <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
                 </a>
@@ -1990,36 +1985,36 @@
                 
                 <div class = 'w-full'>
                     <div class="thumbs flex flex-row gap-30px mt-10">
-                        <div class="thumb" onclick="playVid('one')">
+                        <div class="p-top-movie__thumb thumb" onclick="playVid('one')">
                             <img
                                 src="assets/img/common/img_movie_thumbnail1.webp"
-                                class="movie-thumbnail"
+                                class="p-top-movie__thumbnail movie-thumbnail"
                                 alt="[Are big goals discouraging?] A must-read for those who have just joined a gym!"
                             />
                         </div>
-                        <div class="thumb" onclick="playVid('two')">
+                        <div class="p-top-movie__thumb thumb" onclick="playVid('two')">
                             <img
                                 src="assets/img/common/img_movie_thumbnail2.webp"
-                                class="movie-thumbnail"
+                                class="p-top-movie__thumbnail movie-thumbnail"
                                 alt=""
                             />
                         </div>
-                        <div class="thumb" onclick="playVid('three')">
+                        <div class="p-top-movie__thumb thumb" onclick="playVid('three')">
                             <img
                                 src="assets/img/common/img_movie_thumbnail3.webp"
-                                class="movie-thumbnail"
+                                class="p-top-movie__thumbnail movie-thumbnail"
                                 alt=""
                             />
                         </div>
-                        <div class="thumb" onclick="playVid('four')">
+                        <div class="p-top-movie__thumb thumb" onclick="playVid('four')">
                             <img
                                 src="assets/img/common/img_movie_thumbnail4.webp"
-                                class="movie-thumbnail"
+                                class="p-top-movie__thumbnail movie-thumbnail"
                                 alt=""
                             />
                         </div>
                     </div>
-                    <a href="#" class="btn-light-blue mt-40 mx-auto">
+                    <a href="#" class="c-btn-light-blue btn-light-bluemt-40 mx-auto">
                         <p class="text-white fs-16 font-outfit">View More</p>
                         <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
                     </a>
@@ -2048,11 +2043,11 @@
 
 
       <!--Column Section-->
-      <section class="column-section">
-        <div class="column-section-container flex flex-col gap-40px">
+      <section class="p-top-column column-section">
+        <div class="p-top-column__container column-section-container flex flex-col gap-40px">
           <div class="column-section-box flex flex-row gap-75px items-center">
-            <div class="section-header-wrapper flex flex-col gap-18px">
-              <p class="reveal section-sub-text fs-18 fw-500 text-black1">ゾネスタイムズ</p>
+            <div class="c-section-header section-header-wrapper flex flex-col gap-18px">
+              <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1">ゾネスタイムズ</p>
               <h2 class="reveal section-header-text  fs-100 lh-normal font-outfit fw-400">Column</h2>
             </div>
             <div class = 'reveal-scale'>
@@ -2073,8 +2068,8 @@
             </div>
           
           </div>
-          <div class="reveal-scale column-box-container mt-20">
-            <div class="column-box">
+          <div class="p-top-column__grid reveal-scale column-box-container mt-20">
+            <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column1.webp" alt="ジム通いの目標設定、どうしたらいい？続かない女性のための“無理しない”続け方">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.17</p>
@@ -2082,7 +2077,7 @@
               </div>
             </div>
 
-            <div class="column-box">
+            <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column2.webp" alt="【挫折しないジム通い】続けられる女性は“何が違う？” 今すぐ変われるコツと習慣まとめ【女性専用ジム監修】">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.03</p>
@@ -2090,7 +2085,7 @@
               </div>
             </div>
 
-            <div class="column-box">
+            <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column3.webp" alt="【生理中でも無理なく通える】女性専用ジムが教える“ゆらぎ期”の正しいトレーニングガイド">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.03</p>
@@ -2098,7 +2093,7 @@
               </div>
             </div>
 
-            <div class="column-box">
+            <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column4.webp" alt="女性が続けられる！運動・筋トレのモチ">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.03</p>
@@ -2106,7 +2101,7 @@
               </div>
             </div>
 
-            <div class="column-box">
+            <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column5.webp" alt="快適に通える！ジムマナー完全ガイド">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
@@ -2114,7 +2109,7 @@
               </div>
             </div>
 
-            <div class="column-box">
+            <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column6.webp" alt="苦手マシン克服で痩せる！女性の弱点を変える最短ダイエット術">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
@@ -2122,7 +2117,7 @@
               </div>
             </div>
 
-            <div class="column-box">
+            <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column7.webp" alt="初心者女性がジムで失敗する理由と防ぐコツ">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
@@ -2130,7 +2125,7 @@
               </div>
             </div>
 
-              <div class="column-box">
+              <div class="p-top-column__card column-box">
               <img src="assets/img/common/img_column8.webp" alt="【専門トレーナーが解説】ダイエットに本気で効く！おすすめの有酸素運動３選">
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
@@ -2139,7 +2134,7 @@
             </div>
 
           </div>
-          <a href="#" class="btn-light-blue mx-auto">
+          <a href="#" class="c-btn-light-blue btn-light-bluemx-auto">
             <p class="text-white fs-16 font-outfit">View More</p>
             <img src="assets/img/common/icon_btn_green_arrow.svg" alt="アイコン" />
           </a>
@@ -2149,14 +2144,14 @@
 
 
       <!--Top Banner-->
-     <section class="top-banner-section">
-      <div class="top-banner-container flex flex-col gap-53px items-center justify-center relative">
+     <section class="c-top-banner top-banner-section">
+      <div class="c-top-banner__container top-banner-container flex flex-col gap-53px items-center justify-center relative">
         <h2 class="reveal fw-700 fs-32">まずはお気軽に<br class='display-sp'/>無料体験・見学へ <span class="fs-60 font-outfit fw-600 text-lightBlue">GO!</span></h2>
         <p class="reveal fw-500 fs-16 lh-180">
           女性専用24時間ジムAmazones（アマゾネス）では、無料体験や見学を随時受付しております。<br class="banner-break"/>
           トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
         </p>
-        <a href="#" class="btn-light-blue mx-auto">
+        <a href="#" class="c-btn-light-blue btn-light-bluemx-auto">
                 <img src="assets/img/top/icon_24_white.svg " alt="アイコン" />
                 <p class="text-white fs-16 font-outfit">無料体験・見学予約はこちら <img src="assets/img/common/icon_btn_green_arrow.svg" alt="アイコン" />
                 </p>
@@ -2177,8 +2172,8 @@
     </section>
 
       <!--TOP TEXT SLIDER-->
-      <div class="text-slider w-full">
-          <div class="slide-track">
+      <div class="c-text-slider text-slider w-full">
+          <div class="c-text-slider__track slide-track">
             <div class="slide">
               <p class="font-outfit fw-300 fs-36 text-white">
                For a free trial or tour enquiry, please here.
@@ -2254,11 +2249,11 @@
 
 
       <!--TOP RECRUIT BANNER-->
-      <section class="recruit-banner-section flex flex-row items-center justify-center gap-70px">
-          <div class="flex flex-col items-start gap-35px recruit-info">
-            <div class="section-header-wrapper flex flex-col gap-18px">
-              <p class="reveal section-sub-text fs-18 fw-500 text-black1 text-white">採用情報</p>
-              <h2 class="reveal section-header-text fs-100 lh-normal font-outfit fw-400 text-white">Recruitment </h2>
+      <section class="c-recruit-banner recruit-banner-section flex flex-row items-center justify-center gap-70px">
+          <div class="c-recruit-banner__info flex flex-col items-start gap-35px recruit-info">
+            <div class="c-section-header section-header-wrapper flex flex-col gap-18px">
+              <p class="c-section-header__sub-text reveal section-sub-text fs-18 fw-500 text-black1 text-white">採用情報</p>
+              <h2 class="c-section-header__heading reveal section-header-text fs-100 lh-normal font-outfit fw-400 text-white">Recruitment </h2>
             </div>
             <div class="flex flex-col items-start gap-36px">
               <p class="reveal fw-700 fs-20 text-white">女性の健康と美を支えるジム</p>
@@ -2273,7 +2268,7 @@
 
           <div class="">
             <div class="recruit-banner">
-               <div class="recruit-banner-track">
+               <div class="c-recruit-banner__track recruit-banner-track">
                 <!-- Random order first set -->
                 <img src="assets/img/common/img_recruit_img3.png" alt="" class="recruit-img">
                 <img src="assets/img/common/img_recruit_img8.png" alt="" class="recruit-img">
@@ -2301,7 +2296,7 @@
 
               </div>
 
-                <div class="recruit-banner-track recruit-banner-track2">
+                <div class="c-recruit-banner__track c-recruit-banner__track--reverse recruit-banner-track recruit-banner-track2">
                   <img src="assets/img/common/img_recruit_img9.png" alt="" class="recruit-img">
                   <img src="assets/img/common/img_recruit_img6.png" alt="" class="recruit-img">
                   <img src="assets/img/common/img_recruit_img7.png" alt="" class="recruit-img">
@@ -2338,8 +2333,8 @@
       </section>
     </main>
 
-  <footer class="I-footer w-full flex flex-col gap-0px">
-    <div class="footer-main-container flex flex-col gap-100px">
+  <footer class="l-footer I-footer w-full flex flex-col gap-0px">
+    <div class="l-footer__main footer-main-container flex flex-col gap-100px">
       <div class="flex flex-row justify-between w-full">
       <div class="flex flex-col items-start gap-40px ">
         <div class="flex flex-col gap-20px ">
@@ -2348,11 +2343,11 @@
         </div>
        
         <div class="flex flex-col gap-20px"> 
-            <a href="#" class="btn-light-blue footer-blue-btn">
+            <a href="#" class="c-btn-light-blue btn-light-bluefooter-blue-btn">
                 <p class="text-white fs-16 font-outfit">お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
             </a>
-            <a href="#" class="btn-light-blue footer-blue-btn">
+            <a href="#" class="c-btn-light-blue btn-light-bluefooter-blue-btn">
                 <p class="text-white fs-16 font-outfit ">マイページ</p>
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
             </a>

@@ -1,0 +1,57 @@
+// ─────────────────────────────────────────────
+//  Variables
+// ─────────────────────────────────────────────
+
+// Colors
+$color-black: #4f4f4f;
+$color-gray: #eef0f3;
+$color-light-gray: #fdfdfd;
+$color-gray-blue: #97a5b5;
+$color-white: #ffffff;
+$color-light-blue: #81d8d0;
+$color-red: #f53662;
+$color-light-pink: #f53561;
+$color-peach: #ec73b2;
+$color-brown: #8c4239;
+$color-dark-gray: #97a5b5;
+$color-dark-blue-gray: #98a6b5;
+$color-bg: #faf8f5;
+
+// Fonts
+$font-outfit: "Outfit", sans-serif;
+$font-zen: "Zen Kaku Gothic New", sans-serif;
+
+// Breakpoints
+$bp-xl: 1440px;
+$bp-lg: 1200px;
+$bp-md: 1090px;
+$bp-sm: 767px;
+$bp-xs: 500px;
+$bp-xxs: 375px;
+
+// CSS Custom Properties (kept for backward compatibility)
+:root {
+  --base-black: #{$color-black};
+  --base-gray: #{$color-gray};
+  --base-lightGray: #{$color-light-gray};
+  --base-grayBlue: #{$color-gray-blue};
+  --base-white: #{$color-white};
+  --base-lightBlue: #{$color-light-blue};
+  --base-red: #{$color-red};
+  --base-lightPink: #{$color-light-pink};
+  --base-peach: #{$color-peach};
+  --base-brown: #{$color-brown};
+  --base-darkGray: #{$color-dark-gray};
+  --base-darkBlueGray: #{$color-dark-blue-gray};
+
+  --text-black1: #{$color-black};
+  --text-white: #{$color-white};
+  --text-lightBlue: #{$color-light-blue};
+  --text-red: #{$color-red};
+  --text-peach: #{$color-peach};
+  --text-brown: #{$color-brown};
+  --text-lightPink: #{$color-light-pink};
+
+  --font-outfit: #{$font-outfit};
+  --font-zen: #{$font-zen};
+}
