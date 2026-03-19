@@ -586,36 +586,46 @@
       </section>
 
       <!--DR AMAZONES-->
-      <section
-        class="dr-amazones-container bg-linearLightGray flex flex-row items-center relative"
-      >
-        <img
-          src="../../assets/img/top/img_drAmazones.webp"
-          alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
-        />
-        <div class="flex flex-col items-start dr-amazones-section">
+
+      <section class="p-storedetail_dr-amazones">
+        <picture>
+          <source
+            srcset="../../assets/img/top/img_drAmazones_sp.webp"
+            media="(max-width:767px)"
+          />
+          <img
+            src="../../assets/img/top/img_drAmazones.webp"
+            alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
+            class="p-storedetail_dr-amazones-pic"
+          />
+        </picture>
+
+        <div class="p-storedetail_dr-amazones-content">
           <img
             src="../../assets/img/top/img_triangle.svg"
             alt="三角形のアイコン"
-            class="triangle-icon"
+            class="p-storedetail_dr-amazones-triangle"
           />
-          <div class="flex flex-col gap-50px">
-            <div class="flex flex-col gap-20px">
-              <p class="fs-18 fw-500">ドクターアマゾネス</p>
+          <div class="p-storedetail_dr-amazones-inner">
+            <div class="p-storedetail_dr-amazones-header">
+              <p class="reveal fs-18 fw-500">ドクターアマゾネス</p>
               <img
                 src="../../assets/img/top/img_drAmazonesClinic.svg"
                 alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
+                class="reveal p-storedetail_dr-amazones-label"
               />
             </div>
-            <div class="flex flex-col gap-35px">
-              <p class="fw-700 fs-20">「医療×トレーニング」驚きの相乗効果</p>
-              <p class="fw-500 fs-16">
+            <div class="reveal p-storedetail_dr-amazones-body">
+              <p class="fw-700 fs-20 lh-200">
+                「医療×トレーニング」驚きの相乗効果
+              </p>
+              <p class="fw-500 fs-16 lh-200">
                 太りやすい、体重が落ちにくい方も医学的根拠で健康的に痩せる。
               </p>
             </div>
           </div>
 
-          <a href="#" class="btn-light-blue mt-40">
+          <a href="#" class="btn-light-blue p-storedetail_dr-amazones-btn">
             <p class="text-white fs-16 font-outfit">View More</p>
             <img
               src="../../assets/img/top/icon_btn_green_arrow.svg"
@@ -3081,7 +3091,10 @@
                   />
                 </div>
                 <div class="btn-green-wrapper" data-slider-next>
-                  <img src="../../assets/img/top/icon_arrow.svg" alt="アイコン" />
+                  <img
+                    src="../../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                  />
                 </div>
               </div>
               <div class="topic-slider__dots" data-slider-dots></div>
@@ -3091,7 +3104,7 @@
           </div>
         </div>
 
-        <a href="#" class="btn-light-blue mt-40 mx-auto voice-btn">
+        <a href="#" class="btn-light-blue mt-40 mx-auto">
           <p class="text-white fs-16 font-outfit">View More</p>
           <img
             src="../../assets/img/top/icon_btn_green_arrow.svg"
