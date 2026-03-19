@@ -5362,7 +5362,7 @@ a {
     END OF HOVER 
    ============================================ */
 /* start jump animation */
-   .c-animation-jump {
+.c-animation-jump {
   display: block;
   transform-origin: center bottom;
 }
@@ -6082,8 +6082,6 @@ a {
 }
 /*END TOPIC SECTION*/
 
-
-
 /*RECRUIT BANNER*/
 .recruit-banner-section {
   width: 100%;
@@ -6342,6 +6340,87 @@ a {
 /* Custom Breadcrumb styles for reservation page  */
 .p-breadcrumb {
   top: 140%;
+}
+
+/* --- Banner Responsive Breakpoints --- */
+
+/* Laptop / small desktop */
+@media screen and (max-width: 1440px) {
+  .p-banner {
+    height: calc(100vw * 300 / 1440);
+  }
+  .p-banner-title {
+    font-size: 2rem;
+  }
+  .p-banner-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .ribbon-banner {
+    max-width: 50rem;
+  }
+
+  .p-banner-ribbon {
+    position: absolute;
+    right: -45%;
+    top: -43%;
+    transform: translateY(-50%);
+    height: 250%;
+    width: auto;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .p-banner-content {
+    left: 4rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .p-banner {
+    height: calc(100vw * 280 / 1024);
+  }
+  .p-banner-title {
+    font-size: 1.75rem;
+  }
+  .p-banner-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+  .ribbon-banner {
+    max-width: 50rem;
+  }
+  .p-banner-content {
+    left: 3rem;
+  }
+}
+
+/* Small tablet / large mobile */
+@media screen and (max-width: 768px) {
+  .p-banner {
+    height: calc(100vw * 260 / 768);
+  }
+  .p-banner-title {
+    font-size: 1.375rem;
+  }
+  .p-banner-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .ribbon-banner {
+    max-width: 160px;
+    bottom: -6px;
+  }
+  .p-banner-content {
+    left: 2rem;
+  }
+  .p-breadcrumb {
+    top: 120%;
+  }
+  .c-breadcrumb {
+    font-size: 0.75rem;
+  }
 }
 
 /* ============================================
@@ -6709,7 +6788,6 @@ a {
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
   background-position: 0% -170%;
- 
 }
 
 /* END WHITE BACKGROUND */
@@ -6723,7 +6801,6 @@ a {
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;
-  
 }
 
 /* END LIGHT BLUE BACKGROUND */
@@ -6802,8 +6879,6 @@ a {
   flex-direction: row;
   gap: 2.5rem;
 }
-
-
 
 /* END ENDNOTE */
 
