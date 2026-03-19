@@ -542,8 +542,8 @@
 .p-storedetail_introduction_ribbon {
   position: absolute;
   top: 14%;
-  right: -27%;
-  width: 80%;
+  right: -6%;
+  width: 60%;
   height: auto;
   z-index: 0;
   pointer-events: none; /* decorative — must not block clicks */
@@ -559,6 +559,17 @@
   bottom: -110%;
   z-index: 0;
   pointer-events: none; /* decorative — must not block clicks */
+}
+
+.p-storedetail_introduction_people-img {
+  width: auto;
+  object-fit: contain;
+}
+.p-storedetail_introduction_people-img--01 {
+  height: 359px;
+}
+.p-storedetail_introduction_people-img--02 {
+  height: 320px;
 }
 
 /* INTRODUCTION IMAGES */
@@ -1469,9 +1480,25 @@
     margin-top: 0 !important;
   }
 
-  /* Hide decorative people floating out of frame */
+  /* Show people figure as centered block on tablet */
   .p-storedetail_introduction_people {
-    display: none;
+    display: flex;
+    position: static;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .p-storedetail_introduction_people-img--01 {
+    height: 280px;
+  }
+  .p-storedetail_introduction_people-img--02 {
+    height: 250px;
+  }
+
+  /* Stack text + figure vertically on tablet */
+  .c-section_lightBlue .flex.gap-30px.relative {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1560,10 +1587,32 @@
 
   /* ── Introduction Section ── */
   .p-storedetail_introduction_ribbon {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 21%;
+    right: 70%;
+    width: 90%;
   }
+  /* Show people figure as centered block on mobile */
   .p-storedetail_introduction_people {
-    display: none;
+    display: flex;
+    position: static;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    gap: 1.2rem;
+  }
+  .p-storedetail_introduction_people-img--01 {
+    height: 16rem;
+  }
+  .p-storedetail_introduction_people-img--02 {
+    height: 16rem;
+  }
+
+  /* Stack text + figure vertically on mobile */
+  .c-section_lightBlue .flex.gap-30px.relative {
+    flex-direction: column;
+    align-items: center;
   }
   .p-storedetail_introduction-layout {
     grid-template-columns: 1fr;
