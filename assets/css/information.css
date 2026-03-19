@@ -127,79 +127,84 @@
 
 /* Pagination Styles */
 .pagination-container {
-   display: flex;
-  justify-content: flex-end;
-  /* margin: 50px 0 30px; */
-  margin-top:40px;
-}
-
-.pagination-container.hidden {
-  display: none;
-}
-
-.pagination-numbers {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 30px;
 }
 
-.pagination-number {
-   width: 40px;
-  height: 40px;
-  border: 1px solid var(--base-lightBlue);
-  background: white;
-  color: var(--base-lightBlue);
-  border-radius: 50%;
-  cursor: pointer;
+.pagination-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  transition: all 0.3s ease;
+  gap: 40px;
 }
 
-.pagination-number.active {
-   background: var(--base-lightBlue);
-  color: white;
-  border-color: var(--base-lightBlue);
-}
-.pagination-number.active:hover {
-   background: var(--base-white);
-  color: var(--text-lightBlue);
-  border-color: var(--base-lightBlue);
-}
-
-
-.pagination-number:hover:not(.active) {
-  background: var(--base-lightBlue);
-  color: white;
+.pagination-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-black1);
+  font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
 }
 
-.btn-pagination {
+.pagination-nav-item:hover {
+  opacity: 0.7;
+}
+
+.btn-pagination-circle {
   width: 40px;
   height: 40px;
-  border: 1px solid #81D8D0;
-  background: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 5px;
+  border-radius: 50%;
+  background: var(--base-lightBlue);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.btn-pagination:disabled {
-   opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
+.btn-pagination-circle img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
 }
 
-.btn-pagination:hover:not(:disabled) {
-  background: rgba(129, 216, 208, 0.1);
+.pagination-nav-label {
+  font-family: var(--font-outfit);
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.btn-pagination img {
-  width: 20px;
-  height: 20px;
+.pagination-back {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-back-to-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--base-lightBlue);
+  color: var(--text-white);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.btn-back-to-list:hover {
+  opacity: 0.8;
+}
+
+.btn-back-to-list img {
+  width: 18px;
+  height: 18px;
 }
 
 
