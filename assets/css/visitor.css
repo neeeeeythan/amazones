@@ -101,6 +101,7 @@
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .p-visitor__content {
@@ -175,6 +176,7 @@
 .p-visitor__campaign-header h2 {
   font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 .p-visitor__campaign-header span {
@@ -216,6 +218,7 @@
   justify-content: center;
   /* gap: 1rem; */
   background-color: white;
+  flex: 1 1 0%;
 }
 
 .p-visitor__about-card--alt {
@@ -236,16 +239,19 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-family: var(--font-zen);
 }
 
 .p-visitor__about-card-body p {
   font-weight: 500;
   line-height: 2rem;
+  font-family: var(--font-zen);
 }
 
 .p-visitor__about-card-body--alt p {
   font-weight: 500;
   line-height: 2rem;
+  font-family: var(--font-zen);
 }
 
 .p-visitor__about-card-icon {
@@ -272,8 +278,14 @@
   padding: 1rem 0;
 }
 
+.p-visitor__about-header h4,
+.p-visitor__about-header--red h4 {
+  font-family: var(--font-zen);
+}
+
 .p-visitor__about-header--red {
   background-color: var(--base-red);
+  gap: 0.5rem;
 }
 
 .p-visitor__about-subheader h4 {
@@ -472,6 +484,11 @@
 .p-visitor__checklist-item {
   color: #333;
   line-height: 1.6;
+  font-family: var(--font-zen);
+}
+
+.p-visitor__checklist-item span {
+  color: var(--text-lightBlue);
 }
 
 .p-visitor__checklist-note {
@@ -482,6 +499,106 @@
 }
 
 /* END CHECKLIST */
+
+/* ============================================
+   NEW BEM CLASSES (replacing utility classes)
+   ============================================ */
+
+/* CAMPAIGN ROW */
+.p-visitor__campaign-row {
+  display: flex;
+  gap: 30px;
+}
+
+/* CAMPAIGN BLOCK */
+.p-visitor__campaign-block {
+  font-family: var(--font-zen);
+}
+
+/* CAMPAIGN DESC */
+.p-visitor__campaign-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 500;
+  font-family: var(--font-zen);
+}
+
+/* ABOUT GROUPS */
+.p-visitor__about-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* ABOUT GROUP */
+.p-visitor__about-group {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ABOUT ROW */
+.p-visitor__about-row {
+  display: flex;
+  gap: 50px;
+}
+
+/* ABOUT ALT HEADING */
+.p-visitor__about-alt-heading {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 12px 0;
+  line-height: 2;
+}
+
+.p-visitor__about-alt-heading h2 {
+  font-family: var(--font-zen);
+  color: var(--text-lightBlue);
+}
+
+/* SUBTITLE & TITLE font families */
+.p-visitor__subtitle {
+  font-family: var(--font-zen);
+}
+
+.p-visitor__title {
+  font-family: var(--font-outfit);
+}
+
+/* White text for howto section */
+.p-visitor__howto-section .p-visitor__title-container,
+.p-visitor__howto-section .p-visitor__subtitle,
+.p-visitor__howto-section .p-visitor__title {
+  color: white;
+}
+
+/* HOWTO CONTENT (was py-100) */
+.p-visitor__howto-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* HOWTO CONTENT BODY */
+.p-visitor__howto-content-body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* FAQ CONTENT (was py-100) */
+.p-visitor__faq-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* FAQ LIST */
+.p-visitor__faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
 .footer-page-link h3 {
   margin: 0;
@@ -546,6 +663,7 @@
   font-weight: 500;
   color: white;
   letter-spacing: 0.05em;
+  font-family: var(--font-outfit);
 }
 
 .p-visitor__howto-step-title {
@@ -553,6 +671,7 @@
   font-weight: 600;
   color: var(--text-lightBlue);
   letter-spacing: 0.05em;
+  font-family: var(--font-zen);
 }
 
 .p-visitor__howto-step-desc {
@@ -562,6 +681,7 @@
   line-height: 2.5rem;
   /* max-width: 18rem; */
   text-align: justify;
+  font-family: var(--font-zen);
 }
 
 .p-visitor__howto-step-btn {
@@ -624,8 +744,15 @@
     height: 1px;
     align-self: center;
   }
+  .p-visitor__howto-content { padding-top: 60px; padding-bottom: 60px; }
+  .p-visitor__howto-content-body { gap: 2rem; }
+
+  /* ABOUT GROUPS */
+  .p-visitor__about-groups { gap: 3rem; }
+  .p-visitor__about-group { gap: 2rem; }
 
   /* FAQ */
+  .p-visitor__faq-content { padding-top: 60px; padding-bottom: 60px; }
   .p-visitor__faq-ribbon { width: 90vw; right: -5%; }
   .p-visitor__faq-row { flex-direction: column; gap: 1.5rem; }
 
@@ -693,8 +820,10 @@
   .p-visitor__howto-step { padding: 2rem 1.25rem; gap: 1.5rem; }
   .p-visitor__howto-step-title { font-size: 1.5rem; }
   .p-visitor__howto-step-desc { line-height: 2rem; }
+  .p-visitor__howto-content { padding-top: 40px; padding-bottom: 40px; }
 
   /* FAQ */
+  .p-visitor__faq-content { padding-top: 40px; padding-bottom: 40px; }
   .p-visitor__faq { padding: 4rem 0; }
   .p-visitor__faq-ribbon { width: 100vw; right: 0; top: 0; }
 
