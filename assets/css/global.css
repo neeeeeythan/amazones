@@ -6283,6 +6283,15 @@ a {
   max-width: none;
 }
 
+.p-banner-img2 {
+  position: absolute;
+  right: -150.8%;
+  top: -85%;
+  width: auto;
+  height: 325%;
+  max-width: none;
+}
+
 .p-banner-overlay {
   position: absolute;
   top: 0;
@@ -6409,7 +6418,7 @@ a {
     margin-bottom: 0.5rem;
   }
   .ribbon-banner {
-    max-width: 160px;
+    max-width: auto;
     bottom: -6px;
   }
   .p-banner-content {

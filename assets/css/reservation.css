@@ -195,6 +195,7 @@
 }
 
 .p-reservation-flow__title-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -532,8 +533,8 @@
 /* 01 */
 .p-reservation-speak__container--01 {
   position: absolute;
-  right: 20%;
-  top:15%;
+  right: 0%;
+  top: 15%;
 }
 
 .p-reservation-speak__image--01 {
@@ -852,13 +853,75 @@
     line-height: 1.2;
   }
 
-  /* Hide all decorative speak characters on mobile */
-  .p-reservation-speak__container--01,
+  /* Hide all decorative speak characters on mobile except 01 */
   .p-reservation-speak__container--02,
-  .p-reservation-speak__container--03,
+  .p-reservation-speak__container--03 {
+    display: none;
+  }
+
+  /* ANNOUNCEMENT — show speak persons below container on mobile */
+  .p-reservation-announcement {
+    padding-bottom: 14rem;
+  }
+
   .p-reservation-speak__container--04,
   .p-reservation-speak__container--05 {
-    display: none;
+    display: block;
+    bottom: -1rem;
+  }
+
+  .p-reservation-speak__container--04 {
+    right: 5rem;
+  }
+
+  .p-reservation-speak__container--05 {
+    left: 2rem;
+  }
+
+  .p-reservation-speak__person--04,
+  .p-reservation-speak__person--05 {
+    height: 12rem;
+  }
+
+  .p-reservation-speak__bubble--04 {
+    right: -5rem;
+    top:-2rem;
+    width: 5rem;
+    height: auto;
+  }
+
+  /* Show and center the simulation people on mobile */
+  .p-reservation-simulation .p-reservation-speak__container--02 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .p-reservation-simulation .p-reservation-speak__person--02 {
+    height: 16rem;
+  }
+
+  .p-reservation-speak__container--01 {
+    display: block;
+    position: relative;
+    right: auto;
+    top: auto;
+    align-self: center;
+  }
+
+  .p-reservation-speak__person--01 {
+    height: 15rem;
+  }
+
+  .p-reservation-speak__bubble--01 {
+    top: 0.5rem;
+    left: -6rem;
+    width: 6rem;
+    height: auto;
   }
 
   /* STEPS */
@@ -908,9 +971,9 @@
   }
 
   .p-reservation-simulation__ribbon {
-    left: -5%;
+    left: -55%;
     top: auto;
-    bottom: 0;
+    bottom: -22rem;
     height: 35%;
   }
 
@@ -926,7 +989,7 @@
   }
 
   .p-reservation-simulation__phone img {
-    height: 55vw;
+    height: 85vw;
   }
 
   .p-reservation-simulation__phone-video {
@@ -982,7 +1045,7 @@
   }
 
   .p-reservation-announcement {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1.5rem 16rem;
     gap: 1.5rem;
     max-width: 100%;
   }
