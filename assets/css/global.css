@@ -6285,10 +6285,10 @@ a {
 
 .p-banner-img2 {
   position: absolute;
-  right: -150.8%;
-  top: -85%;
+  right: -25.8%;
+  bottom: -146%;
   width: auto;
-  height: 325%;
+  height: 425%;
   max-width: none;
 }
 
@@ -6424,6 +6424,19 @@ a {
   .p-banner-content {
     left: 2rem;
   }
+
+  .p-banner-img {
+    right: -170%;
+    top: -80%;
+    height: 300%;
+  }
+
+  .p-banner-img2 {
+    right: -120%;
+    bottom: -70%;
+    height: 280%;
+  }
+
   .p-breadcrumb {
     top: 120%;
   }
