@@ -14,6 +14,8 @@
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/family.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css" />
+
 
     <!-- SCRIPTS -->
     <script src="../assets/js/family.js" defer></script>
@@ -117,7 +119,7 @@
       </div>
     </header>
 
-    <main class="bg-white">
+    <main class="p-family__main bg-white">
       <!--HERO BANNER-->
       <section class="banner-section">
         <div class="p-banner">
@@ -171,46 +173,75 @@
 
       <!--MAIN CONTENT-->
 
-      <section class="family-content">
-        <div class="family-main-container">
-          <div class="family-content family-content1 w-full">
-            <div class="family-content1-wrapper flex flex-row gap-40px">
-              <div class="flex flex-col gap-40px items-start">
-                <h2 class="fw-700 fs-24">
-                  二親等以内のご家族なら、月会費が 最大半額<span
-                    class="fs-24 fw-700 text-lightBlue"
-                    >「家族割キャンペーン</span
-                  >
-                </h2>
-                <p class="fw-500 fs-16 lh-200">
-                  Amazonesに通っているご家族（二親等以内）からのご紹介で、入会金0円・月会費が最大半額
-                  になる「家族割キャンペーン」をスタート！ <br />
-                  女性専用だから、親子でも安心して通える！この機会に、運動の習慣を大切なご家族と一緒に始めてみませんか？
-                </p>
+      <section class="p-family">
+        <div class="p-family__container">
+          <!-- CONTENT 1 -->
+          <div class="p-family p-family__container__content01 w-full">
+            <div class="flex gap-30px">
+              <div class="p-protein_campaign_block font-zen">
+                <div class="p-protein_campaign_header">
+                  <p class="reveal">
+                    月会費がショップで使えるポイントに変わる<b
+                      class="text-lightBlue"
+                      >「月会費ポイント還元」+「特典・優待</b
+                    >
+                  </p>
+                </div>
+                <div class="sm-block">
+                  <img
+                    src="../assets/img/top/img_topic3.webp"
+                    width="100%"
+                    alt="家族割キャンペーン"
+                  />
+                </div>
+                <div class="reveal font-zen flex flex-col gap-4 fw-500">
+                  <p>
+                    Amazonesに通っているご家族（二親等以内）からのご紹介で、入会金0円・月会費が最大半額
+                    になる「家族割キャンペーン」をスタート！
+                  </p>
+                  <p>
+                    女性専用だから、親子でも安心して通える！この機会に、運動の習慣を大切なご家族と一緒に始めてみませんか？
+                  </p>
+                </div>
               </div>
-              <img
-                src="../assets/img/top/img_topic1.webp"
-                alt="二親等以内のご家族なら、月会費が 最大半額 「家族割キャンペーン」"
-                height="221px"
-                width="auto"
-              />
+              <div class="md-block">
+                <img
+                  src="../assets/img/top/img_topic3.webp"
+                  alt="家族割キャンペーン"
+                />
+              </div>
             </div>
           </div>
 
-          <div class="family-content family-content2">
-            <div class="family-content2-wrapper flex flex-col gap-77px">
-              <div class="flex flex-col gap-18px">
-                <p class="fs-18 fw-500 text-black1">キャンペーン概要</p>
-                <h2 class="fs-100 lh-normal font-outfit fw-400">Summary</h2>
-              </div>
-              <div class="w-full flex flex-row gap-60px">
-                <div class="summary-content-left w-full flex flex-col gap-50px">
-                  <div class="bg-white w-full relative flex flex-col gap-20px pt-70 pb-40">
-                    <p class="fs-16 fw-700 text-white summary-label">
+          <!-- CONTENT 2 -->
+          <div class="p-family p-family__content02">
+            <div class="p-family__content02-wrapper flex flex-col gap-77px">
+              <!-- Summary hgroup -->
+              <hgroup class="section-header-wrapper flex flex-col gap-18px">
+                <p class="reveal section-sub-text fs-18 fw-500 text-black1">
+                  キャンペーン概要
+                </p>
+                <h2
+                  class="reveal section-header-text fs-100 lh-normal font-outfit fw-400"
+                >
+                  Summary
+                </h2>
+              </hgroup>
+
+              <div class="reveal-scale w-full flex flex-row gap-60px">
+                <!-- LEFT COLUMN -->
+                <ul
+                  class="p-family__summary-left w-full flex flex-col gap-50px"
+                >
+                  <!-- PRICING TABLE -->
+                  <li
+                    class="bg-white w-full relative flex flex-col gap-20px pt-70 pb-40"
+                  >
+                    <p class="fs-16 fw-700 text-white p-family__summary__label">
                       割引内容（料金例）
                     </p>
-                    <div class="w-full pricing-table-wrapper">
-                      <table class="pricing-table">
+                    <div class="w-full p-family__table__wrapper">
+                      <table class="p-family__table">
                         <thead>
                           <tr>
                             <th>プラン名</th>
@@ -222,291 +253,500 @@
                         <tbody>
                           <tr>
                             <td>スタンダード会員A / 12ヶ月契約</td>
-                            <td class="normal">月額 7,700円</td>
-                            <td>
-                              <a
-                                href="#"
-                                class="btn-green-wrapper"
-                                data-slider-prev
-                                disabled
-                              >
-                                <img
-                                  src="../assets/img/top/icon_arrow.svg"
-                                  alt="アイコン"
-                                />
-                              </a>
+                            <td class="p-family__table__normal">
+                              月額 7,700円
                             </td>
-                            <td class="discount">月額 3,850円</td>
+                            <td>
+                              <a href="#" class="btn-green-wrapper"
+                                ><img
+                                  src="../assets/img/top/icon_arrow.svg"
+                                  alt="→"
+                              /></a>
+                            </td>
+                            <td class="p-family__table__item__discount">
+                              月額 3,850円
+                            </td>
                           </tr>
                           <tr>
                             <td>スタンダード会員B / 6ヶ月契約</td>
-                            <td class="normal">月額 8,800円</td>
-                            <td>
-                              <a
-                                href="#"
-                                class="btn-green-wrapper"
-                                data-slider-prev
-                                disabled
-                              >
-                                <img
-                                  src="../assets/img/top/icon_arrow.svg"
-                                  alt="アイコン"
-                                />
-                              </a>
+                            <td class="p-family__table__normal">
+                              月額 8,800円
                             </td>
-                            <td class="discount">月額 4,400円</td>
+                            <td>
+                              <a href="#" class="btn-green-wrapper"
+                                ><img
+                                  src="../assets/img/top/icon_arrow.svg"
+                                  alt="→"
+                              /></a>
+                            </td>
+                            <td class="p-family__table__item__discount">
+                              月額 4,400円
+                            </td>
                           </tr>
                           <tr>
                             <td>サポートプラン</td>
-                            <td class="normal">月額 11,000円</td>
-                            <td>
-                              <a
-                                href="#"
-                                class="btn-green-wrapper"
-                                data-slider-prev
-                                disabled
-                              >
-                                <img
-                                  src="../assets/img/top/icon_arrow.svg"
-                                  alt="アイコン"
-                                />
-                              </a>
+                            <td class="p-family__table__normal">
+                              月額 11,000円
                             </td>
-                            <td class="discount">月額 6,600円</td>
+                            <td>
+                              <a href="#" class="btn-green-wrapper"
+                                ><img
+                                  src="../assets/img/top/icon_arrow.svg"
+                                  alt="→"
+                              /></a>
+                            </td>
+                            <td class="p-family__table__item__discount">
+                              月額 6,600円
+                            </td>
                           </tr>
                           <tr>
                             <td>アドバンスプラン</td>
-                            <td class="normal">月額 13,200円</td>
-                            <td>
-                              <a
-                                href="#"
-                                class="btn-green-wrapper"
-                                data-slider-prev
-                                disabled
-                              >
-                                <img
-                                  src="../assets/img/top/icon_arrow.svg"
-                                  alt="アイコン"
-                                />
-                              </a>
+                            <td class="p-family__table__normal">
+                              月額 13,200円
                             </td>
-                            <td class="discount">月額 8,800円</td>
+                            <td>
+                              <a href="#" class="btn-green-wrapper"
+                                ><img
+                                  src="../assets/img/top/icon_arrow.svg"
+                                  alt="→"
+                              /></a>
+                            </td>
+                            <td class="p-family__table__item__discount">
+                              月額 8,800円
+                            </td>
                           </tr>
                           <tr>
                             <td>パーソナルプランA / ライト</td>
-                            <td class="normal">月額 22,000円</td>
-                            <td>
-                              <a
-                                href="#"
-                                class="btn-green-wrapper"
-                                data-slider-prev
-                                disabled
-                              >
-                                <img
-                                  src="../assets/img/top/icon_arrow.svg"
-                                  alt="アイコン"
-                                />
-                              </a>
+                            <td class="p-family__table__normal">
+                              月額 22,000円
                             </td>
-                            <td class="discount">月額 17,600円</td>
+                            <td>
+                              <a href="#" class="btn-green-wrapper"
+                                ><img
+                                  src="../assets/img/top/icon_arrow.svg"
+                                  alt="→"
+                              /></a>
+                            </td>
+                            <td class="p-family__table__item__discount">
+                              月額 17,600円
+                            </td>
                           </tr>
                           <tr>
                             <td>パーソナルプランB / 通い放題</td>
-                            <td class="normal">月額 44,000円</td>
-                            <td>
-                              <a
-                                href="#"
-                                class="btn-green-wrapper"
-                                data-slider-prev
-                                disabled
-                              >
-                                <img
-                                  src="../assets/img/top/icon_arrow.svg"
-                                  alt="アイコン"
-                                />
-                              </a>
+                            <td class="p-family__table__normal">
+                              月額 44,000円
                             </td>
-                            <td class="discount">月額 39,600円</td>
+                            <td>
+                              <a href="#" class="btn-green-wrapper"
+                                ><img
+                                  src="../assets/img/top/icon_arrow.svg"
+                                  alt="→"
+                              /></a>
+                            </td>
+                            <td class="p-family__table__item__discount">
+                              月額 39,600円
+                            </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div
+                    <ul
                       class="flex flex-col gap-15px items-start mt-20 ml-20 mr-20"
+                      style="list-style: none; padding: 0"
                     >
-                      <p class="fs-14 fw-500">※ 表示価格はすべて税込です</p>
-                      <p class="fs-14 fw-500">
+                      <li class="fs-14 fw-500">※ 表示価格はすべて税込です</li>
+                      <li class="fs-14 fw-500">
                         ※ 割引は初月から日割りで適用されます
-                      </p>
-                      <p class="fs-14 fw-500">
-                        ※ 在籍期間は通常通りです（プランに準じます）/p>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="summary-content bg-white relative">
-                    <p class="fs-16 fw-700 text-white summary-label">
-                      割引内容（料金例）
+                      </li>
+                      <li class="fs-14 fw-500">
+                        ※ 在籍期間は通常通りです（プランに準じます）
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- CONDITIONS -->
+                  <li class="p-family__summary bg-white relative">
+                    <p class="fs-16 fw-700 text-white p-family__summary__label">
+                      割引適用条件
                     </p>
-                    <div class="flex flex-col items-start gap-15px">
-                      <p class="fw-500 fs-16 lh-200">
-                        <span class="fw-700 text-lightBlue mr-10">1.</span>
-                        紹介者（既存会員様）が在籍中であること
-                      </p>
-                      <p class="fw-500 fs-16 lh-200">
-                        <span class="fw-700 text-lightBlue mr-10">2.</span>
-                        紹介者が退会された場合、割引は翌月より通常料金に戻ります
-                      </p>
-                      <p class="fw-500 fs-16 lh-200">
-                        <span class="fw-700 text-lightBlue mr-10">3.</span>
-                        初月の月会費は店頭にて現金支払いとなります
-                      </p>
-                      <p class="fw-500 fs-16 lh-200">
-                        <span class="fw-700 text-lightBlue mr-10">4.</span>
-                        他の紹介キャンペーンとの併用はできません（選択制）
-                      </p>
-                      <p class="fw-500 fs-16 lh-200">
-                        <span class="fw-700 text-lightBlue mr-10">5.</span>
-                        キャンペーン適応にて既に紹介者がご入会の場合は紹介者の在籍必須期間が満了してから適応可能です
-                      </p>
-                    </div>
-                  </div>
-                  <div class="summary-content bg-white relative pb-30">
-                    <p class="fs-16 fw-700 text-white summary-label">
+                    <ol
+                      class="flex flex-col items-start gap-15px"
+                      style="list-style: none; padding: 0"
+                    >
+                      <li class="fw-500 fs-16 lh-200">
+                        <b class="fw-700 text-lightBlue mr-10">1.</b
+                        >紹介者（既存会員様）が在籍中であること
+                      </li>
+                      <li class="fw-500 fs-16 lh-200">
+                        <b class="fw-700 text-lightBlue mr-10">2.</b
+                        >紹介者が退会された場合、割引は翌月より通常料金に戻ります
+                      </li>
+                      <li class="fw-500 fs-16 lh-200">
+                        <b class="fw-700 text-lightBlue mr-10">3.</b
+                        >初月の月会費は店頭にて現金支払いとなります
+                      </li>
+                      <li class="fw-500 fs-16 lh-200">
+                        <b class="fw-700 text-lightBlue mr-10">4.</b
+                        >他の紹介キャンペーンとの併用はできません（選択制）
+                      </li>
+                      <li class="fw-500 fs-16 lh-200">
+                        <b class="fw-700 text-lightBlue mr-10">5.</b
+                        >キャンペーン適応にて既に紹介者がご入会の場合は紹介者の在籍必須期間が満了してから適応可能です
+                      </li>
+                    </ol>
+                  </li>
+
+                  <!-- STAFF BENEFIT -->
+                  <li class="p-family__summary bg-white relative pb-30">
+                    <p class="fs-16 fw-700 text-white p-family__summary__label">
                       スタッフの家族割特典
                     </p>
-                    <p class="fw-500 fs-16">
+                    <p class="fw-500 fs-16 lh-200">
                       Amazonesスタッフのご家族も対象です。このお得な機会にぜひご紹介ください。
                     </p>
-                  </div>
-                </div>
+                  </li>
+                </ul>
 
-                <div class =  'summary-content-right w-full flex flex-col gap-50px'>
-                  <div class="summary-content bg-white relative pb-30">
-                    <p class="fs-16 fw-700 text-white summary-label">
+                <!-- RIGHT COLUMN -->
+                <ul
+                  class="p-family__summary-right w-full flex flex-col gap-50px"
+                >
+                  <!-- ELIGIBLE FAMILY -->
+                  <li class="p-family__summary bg-white relative pb-30">
+                    <p class="fs-16 fw-700 text-white p-family__summary__label">
                       対象となるご家族
                     </p>
                     <p class="fw-500 fs-16 lh-200">
-                        母・娘・姉妹・祖母・孫・義母・義娘 <br/>
-                        ※ 色々なパターンでお得に入会することが可能です
+                      母・娘・姉妹・祖母・孫・義母・義娘<br />
+                      ※ 色々なパターンでお得に入会することが可能です
                     </p>
-                  </div>
-                  <div class="summary-content summary-last-content bg-white relative ">
-                    <p class="fs-16 fw-700 text-white summary-label">
+                  </li>
+
+                  <!-- CASE EXAMPLES -->
+                  <li
+                    class="p-family__summary p-family__summary__last bg-white relative"
+                  >
+                    <p class="fs-16 fw-700 text-white p-family__summary__label">
                       キャンペーン適用例
                     </p>
-                    <div class = 'flex flex-col items-center justify-center gap-42px'>
-                        <div class = 'case-item flex flex-row items-start justify-center gap-35px'>
-                            <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case1_icon1.webp" alt="すでに通っているお母さん">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'><span class =  'text-lightBlue'>すでに通っている</span>お母さん<br/>
-                                   スタンダード会員A <br/>
-                                   月額 7,700円
-                                </p>
-                            </div>
-                            <div class = 'flex flex-col gap-25px items-center justify-center'>
-                                <p class =  'fs-24 text-lightBlue font-outfit fw-600'>Case01</p>
-                                <img src="../assets/img/family/icon_x.svg">
-                            </div>
-                             <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case1_icon2.webp" alt="娘さんが紹介で入会">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'>娘さん<span class =  'text-lightBlue'>が紹介で入会</span><br/>
-                                    アドバンスプラン  <br/>
-                                    <span class = 'case-strike'>月額 13,200円</span>→<span class = 'text-red'>月額 8,800円</span>
-                                </p>
-                            </div>
-                        </div>
+                    <ul
+                      class="flex flex-col items-center justify-center gap-42px"
+                      style="list-style: none; padding: 0"
+                    >
+                      <li
+                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                      >
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case1_icon1.webp"
+                            alt="すでに通っているお母さん"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            <b class="text-lightBlue">すでに通っている</b
+                            >お母さん<br />スタンダード会員A<br />月額 7,700円
+                          </figcaption>
+                        </figure>
+                        <aside
+                          class="flex flex-col gap-25px items-center justify-center"
+                        >
+                          <p class="fs-24 text-lightBlue font-outfit fw-600">
+                            Case01
+                          </p>
+                          <img src="../assets/img/family/icon_x.svg" alt="×" />
+                        </aside>
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case1_icon2.webp"
+                            alt="娘さんが紹介で入会"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            娘さん<b class="text-lightBlue">が紹介で入会</b
+                            ><br />アドバンスプラン<br />
+                            <s class="case-strike">月額 13,200円</s>→<b
+                              class="text-red"
+                              >月額 8,800円</b
+                            >
+                          </figcaption>
+                        </figure>
+                      </li>
 
-                        <div class = 'case-item flex flex-row items-start justify-center gap-35px'>
-                            <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case2_icon1.webp" alt="すでに通っているお姉さん">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'><span class =  'text-lightBlue'>すでに通っている</span>お姉さん<br/>
-                                    パーソナルプランライト<br/>
-                                   月額 22,000円
-                                </p>
-                            </div>
-                            <div class = 'flex flex-col gap-25px items-center justify-center'>
-                                <p class =  'fs-24 text-lightBlue font-outfit fw-600'>Case02</p>
-                                <img src="../assets/img/family/icon_x.svg">
-                            </div>
-                             <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case2_icon2.webp" alt="妹さんが紹介で入会">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'>妹さん<span class =  'text-lightBlue'>が紹介で入会</span><br/>
-                                    パーソナルプランライト  <br/>
-                                    <span class = 'case-strike'>月額 22,000円 </span>→<span class = 'text-red'>月額 17,600円</span>
-                                </p>
-                            </div>
-                        </div>
+                      <li
+                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                      >
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case2_icon1.webp"
+                            alt="すでに通っているお姉さん"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            <b class="text-lightBlue">すでに通っている</b
+                            >お姉さん<br />パーソナルプランライト<br />月額
+                            22,000円
+                          </figcaption>
+                        </figure>
+                        <aside
+                          class="flex flex-col gap-25px items-center justify-center"
+                        >
+                          <p class="fs-24 text-lightBlue font-outfit fw-600">
+                            Case02
+                          </p>
+                          <img src="../assets/img/family/icon_x.svg" alt="×" />
+                        </aside>
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case2_icon2.webp"
+                            alt="妹さんが紹介で入会"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            妹さん<b class="text-lightBlue">が紹介で入会</b
+                            ><br />パーソナルプランライト<br />
+                            <s class="case-strike">月額 22,000円</s>→<b
+                              class="text-red"
+                              >月額 17,600円</b
+                            >
+                          </figcaption>
+                        </figure>
+                      </li>
 
-                        <div class = 'case-item flex flex-row items-start justify-center gap-35px'>
-                            <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case3_icon1.webp" alt="すでに通っている娘さん">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'><span class =  'text-lightBlue'>すでに通っている</span>娘さん<br/>
-                                    サポートプラン<br/>
-                                   月額 11,000円
-                                </p>
-                            </div>
-                            <div class = 'flex flex-col gap-25px items-center justify-center'>
-                                <p class =  'fs-24 text-lightBlue font-outfit fw-600'>Case03</p>
-                                <img src="../assets/img/family/icon_x.svg">
-                            </div>
-                             <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case3_icon2.webp" alt="お母さんが紹介で入会">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'>お母さん<span class =  'text-lightBlue'>が紹介で入会</span><br/>
-                                    スタンダード会員B  <br/>
-                                    <span class = 'case-strike'>月額 8,800円 </span>→<span class = 'text-red'>月額 4,400円</span>
-                                </p>
-                            </div>
-                        </div>
+                      <li
+                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                      >
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case3_icon1.webp"
+                            alt="すでに通っている娘さん"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            <b class="text-lightBlue">すでに通っている</b
+                            >娘さん<br />サポートプラン<br />月額 11,000円
+                          </figcaption>
+                        </figure>
+                        <aside
+                          class="flex flex-col gap-25px items-center justify-center"
+                        >
+                          <p class="fs-24 text-lightBlue font-outfit fw-600">
+                            Case03
+                          </p>
+                          <img src="../assets/img/family/icon_x.svg" alt="×" />
+                        </aside>
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case3_icon2.webp"
+                            alt="お母さんが紹介で入会"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            お母さん<b class="text-lightBlue">が紹介で入会</b
+                            ><br />スタンダード会員B<br />
+                            <s class="case-strike">月額 8,800円</s>→<b
+                              class="text-red"
+                              >月額 4,400円</b
+                            >
+                          </figcaption>
+                        </figure>
+                      </li>
 
+                      <li
+                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                      >
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case4_icon1.webp"
+                            alt="すでに通っているおばあさん"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            <b class="text-lightBlue">すでに通っている</b
+                            >おばあさん<br />スタンダード会員B<br />月額 8,800円
+                          </figcaption>
+                        </figure>
+                        <aside
+                          class="flex flex-col gap-25px items-center justify-center"
+                        >
+                          <p class="fs-24 text-lightBlue font-outfit fw-600">
+                            Case04
+                          </p>
+                          <img src="../assets/img/family/icon_x.svg" alt="×" />
+                        </aside>
+                        <figure
+                          class="flex flex-col items-center justify-center gap-22px"
+                        >
+                          <img
+                            src="../assets/img/family/icon_case4_icon2.webp"
+                            alt="お孫さんが紹介で入会"
+                          />
+                          <figcaption class="fs-16 fw-700 lh-200 text-center">
+                            お孫さん<b class="text-lightBlue">が紹介で入会</b
+                            ><br />スタンダード会員A<br />
+                            <s class="case-strike">月額 7,700円</s>→<b
+                              class="text-red"
+                              >月額 3,850円</b
+                            >
+                          </figcaption>
+                        </figure>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                         <div class = 'case-item flex flex-row items-start justify-center gap-35px'>
-                            <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case4_icon1.webp" alt="すでに通っているおばあさん">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'><span class =  'text-lightBlue'>すでに通っている</span>おばあさん<br/>
-                                    スタンダード会員B<br/>
-                                  月額 8,800円
-                                </p>
-                            </div>
-                            <div class = 'flex flex-col gap-25px items-center justify-center'>
-                                <p class =  'fs-24 text-lightBlue font-outfit fw-600'>Case04</p>
-                                <img src="../assets/img/family/icon_x.svg">
-                            </div>
-                             <div class  =  'flex  flex-col items-center justify-center gap-22px'>
-                                <img src="../assets/img/family/icon_case4_icon2.webp" alt="お孫さんが紹介で入会">
-                                <p class =  'fs-16 fw-700 lh-200 text-center'>お孫さん<span class =  'text-lightBlue'>が紹介で入会</span><br/>
-                                    スタンダード会員A <br/>
-                                    <span class = 'case-strike'>月額 7,700円 </span>→<span class = 'text-red'>月額 3,850円</span>
-                                </p>
-                            </div>
-                        </div>
+          <!-- FAQ -->
+          <div class="c-faq flex flex-col gap-40px items-start relative">
+            <img
+              src="../assets/img/family/icon_family_ribbon.svg"
+              alt="ribbon"
+              class="clip-grow-right c-faq__ribbon"
+            />
+            <div class="c-faq__content flex flex-col gap-40px">
+              <hgroup
+                class="reveal section-header-wrapper flex flex-col gap-18px"
+              >
+                <p class="section-sub-text fs-18 fw-500 text-black1">
+                  よくあるご質問　- 家族割について -
+                </p>
+                <h2
+                  class="section-header-text fs-100 lh-normal font-outfit fw-400"
+                >
+                  Faq
+                </h2>
+              </hgroup>
 
+              <div class="faq-container w-full">
+                <!-- FAQ 1 — open on both PC and mobile -->
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="faq-1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="faq-1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        紹介者（既存会員様）が途中で退会したらどうなりますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 answer-text lh-210">
+                        退会月の翌月から、通常価格に戻ります。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 2 — open on PC, closed on mobile -->
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="faq-2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="faq-2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        家族全員が新規入会する場合はどうなりますか
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 answer-text lh-210">
+                        1人は通常価格でご入会いただき、残りの方に割引が適用されます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 3 — open on PC, closed on mobile -->
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="faq-3"
+                     class="c-faq__container__toggle"
+                  />
+                  <label for="faq-3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        姉がAmazonesで働いています。家族でもキャンペーンは適用されますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 answer-text lh-210">
+                        はい、適用可能です。
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="family-faq faq-item-container flex flex-col gap-40px items-start relative">
-            <img src="../assets/img/family/icon_family_ribbon.svg" alt="ribbon" class = 'clip-grow-right family-ribbon'>
-            <div class="faq-item-content flex flex-col gap-40px">
-             <div class="flex flex-col gap-18px">
-                <p class="fs-18 fw-500 text-black1">よくあるご質問　- 家族割について -</p>
-                <h2 class="fs-100 lh-normal font-outfit fw-400">Faq</h2>
-              </div>
-             <div class="faq-container w-full" id="faqContainer"></div>
-            </div>
-          </div>
-
-
-        
         </div>
       </section>
 
-
-
       <!--MEMBER BANNER-->
-      <section class="top-banner-section">
+      <!-- <section class="top-banner-section">
         <div
           class="top-banner-container flex flex-col gap-53px items-center justify-center relative"
         >
@@ -557,6 +797,64 @@
               height="360px"
               width="135.1px"
             />
+          </div>
+        </div>
+      </section> -->
+
+      <section class="top-banner-section">
+        <div
+          class="top-banner-container flex flex-col gap-53px items-center justify-center relative"
+        >
+          <h2 class="reveal fw-700 fs-32">
+            まずはお気軽に<br class="display-sp" />無料体験・見学へ
+            <span class="fs-60 font-outfit fw-600 text-lightBlue">GO!</span>
+          </h2>
+          <p class="reveal fw-500 fs-16 lh-180">
+            女性専用24時間ジムAmazones（アマゾネス）では、無料体験や見学を随時受付しております。<br
+              class="banner-break"
+            />
+            トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
+          </p>
+          <a href="#" class="btn-light-blue mx-auto">
+            <img src="../assets/img/top/icon_24_white.svg " alt="アイコン" />
+            <p class="text-white fs-16 font-outfit">
+              無料体験・見学予約はこちら
+              <img
+                src="../assets/img/top/icon_btn_green_arrow.svg"
+                alt="アイコン"
+              />
+            </p>
+          </a>
+
+          <div class="banner-stickers-row">
+            <div class="banner-sticker1">
+              <img
+                src="../assets/img/top/img_banner_speechbubble1.svg"
+                alt="待ってるよー"
+                class="banner-speechbubble1 speech-bubble"
+              />
+              <img
+                src="../assets/img/family/img_family_sticker1.webp"
+                alt="待ってるよー"
+                height="361px"
+                width="auto"
+                class="banner-img01"
+              />
+            </div>
+            <div class="banner-sticker2">
+              <img
+                src="../assets/img/top/img_banner_speechbubble2.svg"
+                alt="待ってるよー"
+                class="banner-speechbubble2 speech-bubble"
+              />
+              <img
+                src="../assets/img/family/img_family_sticker2.webp"
+                alt="待ってるよー"
+                height="360px"
+                width="auto"
+                class="banner-img02"
+              />
+            </div>
           </div>
         </div>
       </section>

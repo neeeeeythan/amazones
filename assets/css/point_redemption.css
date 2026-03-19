@@ -203,6 +203,11 @@
 .p-online-shop .gap-50px {
   gap: 40px;
 }
+.p-point ol,
+.p-point ul {
+  list-style-type: none !important;
+}
+
 @media screen and (max-width: 1200px) {
   .p-point__item01 {
     flex-direction: column;
@@ -321,16 +326,6 @@
   }
 }
 /*END OF RECOMMENDED SECTION*/
-
-
-
-
-
-
-
-
-
-
 
 /*REUSABLE*/
 /*DR AMAZONES*/
@@ -459,8 +454,5 @@
   .p-protein_campaign_header span {
     font-size: 1rem;
     /* line-height: 1.7; */
-  }
-  .p-protein_campaign_block {
-    /* line-height: 1.5rem; */
   }
 }

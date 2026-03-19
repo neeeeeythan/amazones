@@ -14,24 +14,32 @@
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/faq.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css" />
 
     <!-- SCRIPTS -->
     <script src="../assets/js/global.js" defer></script>
-    <script src="../assets/js/faq.js" defer></script>
+    <script src="../assets/js/family.js" defer></script>
   </head>
   <body>
     <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div
+        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+      >
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
-            width="159.97"
-            height="62.77"
+            width="159.97px"
+            height="62.77px"
+            class="amazones-header-logo"
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14"
+            >アマゾネス</a
+          >
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">
+            WOMEN ONLY24h GYM
+          </p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -49,7 +57,11 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
 
@@ -71,7 +83,11 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
         </div>
@@ -85,8 +101,18 @@
             id="floating-menu-btn"
             class="flex flex-col items-center gap-13px"
           >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
+            <img
+              src="../assets/img/top/icon_menu.svg"
+              alt="アイコン"
+              class="desktop-menu-icon"
+            />
             <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+            <button class="mobile-hamburger" aria-label="メニュー">
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+            </button>
           </div>
 
           <div
@@ -113,6 +139,64 @@
               />
             </div>
           </div>
+        </div>
+
+        <!--header mobile-->
+        <div class="mobile-header-overlay relative">
+          <div class="mobile-header-overlay-content">
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+            ©2026 Wellness Land Co., Ltd.
+          </p>
         </div>
       </div>
     </header>
@@ -166,11 +250,13 @@
           class="ribbon-banner clip-grow-right"
         />
       </section>
-      
-      <section class="faq-main-content">
-        <div class="faq-nav flex flex-row gap-30px">
+
+      <section class="p-faq__main__content">
+        <div class="p-faq__nav flex flex-row gap-30px">
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-初めての方へ" class="fs-14 fw-500 banner-a-link">初めての方へ</a>
+            <a href="#faq-初めての方へ" class="fs-14 fw-500 banner-a-link"
+              >初めての方へ</a
+            >
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +272,9 @@
             </svg>
           </div>
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-施設について" class="fs-14 fw-500 banner-a-link">施設について</a>
+            <a href="#faq-施設について" class="fs-14 fw-500 banner-a-link"
+              >施設について</a
+            >
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +290,9 @@
             </svg>
           </div>
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-ご入会について" class="fs-14 fw-500 banner-a-link">ご入会について</a>
+            <a href="#faq-ご入会について" class="fs-14 fw-500 banner-a-link"
+              >ご入会について</a
+            >
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +308,9 @@
             </svg>
           </div>
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-ご予約について" class="fs-14 fw-500 banner-a-link">ご予約について</a>
+            <a href="#faq-ご予約について" class="fs-14 fw-500 banner-a-link"
+              >ご予約について</a
+            >
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -234,7 +326,9 @@
             </svg>
           </div>
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-料金・プランについて" class="fs-14 fw-500 banner-a-link"
+            <a
+              href="#faq-料金・プランについて"
+              class="fs-14 fw-500 banner-a-link"
               >料金・プランについて</a
             >
             <svg
@@ -252,7 +346,9 @@
             </svg>
           </div>
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-お手続き（休会/退会/変更）について" class="fs-14 fw-500 banner-a-link"
+            <a
+              href="#faq-お手続き（休会/退会/変更）について"
+              class="fs-14 fw-500 banner-a-link"
               >お手続き（休会/退会/変更）について</a
             >
             <svg
@@ -270,7 +366,9 @@
             </svg>
           </div>
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-お支払いについて" class="fs-14 fw-500 banner-a-link">お支払いについて</a>
+            <a href="#faq-お支払いについて" class="fs-14 fw-500 banner-a-link"
+              >お支払いについて</a
+            >
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +384,9 @@
             </svg>
           </div>
           <div class="flex flex-row gap-10px items-center">
-            <a href="#faq-採用について" class="fs-14 fw-500 banner-a-link">採用について</a>
+            <a href="#faq-採用について" class="fs-14 fw-500 banner-a-link"
+              >採用について</a
+            >
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -319,10 +419,13 @@
           </div>
         </div>
 
-        <section class="faq-section">
-          <!-- 初めての方へ FAQs will render here -->
-          <div id =  'faq-初めての方へ' class="faq-item-container  faq-item-container1 flex flex-col gap-40px items-start">
-            <div class="faq-item-content flex flex-col gap-40px">
+        <section class="p-faq__page__section">
+          <!-- 初めての方へ -->
+          <div
+            id="faq-初めての方へ"
+            class="p-faq__page__item__container faq-item-container1 flex flex-col gap-40px items-start"
+          >
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label1.svg"
@@ -330,34 +433,628 @@
                 />
                 <h2 class="fw-700 fs-24">よくあるご質問（一般）</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="初めての方へ"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s1-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s1-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        Amazonesではどのようなサービスを提供しているのでしょうか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        Amazonesでは「女性が輝く未来をつくりたい」をスローガンに、フィットネスを通じて健康で喜びに満ちた未来をつくるお手伝いをするとともに、「また行きたい」「家に帰る前に行きたく
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s1-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s1-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">ジムの見学や体験はできますか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        Amazonesでは全店舗で常時、無料体験・見学を実施しております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s1-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s1-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        友達と体験・見学を受けたいです。一緒に受けることは可能ですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        一緒に受けていただくことは可能です。ご予約の際に店舗へお申し出ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s1-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s1-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        プログラムの予約方法を教えてください
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">マイページ</a
+                        >の予約フォームから予約が可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s1-q5"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s1-q5" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        ジムには何分前までに来店が必要ですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        5分前を目途に来ていただければ、ご案内がスムーズです。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s1-q6"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s1-q6" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        初回体験時のレンタル品はありますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        初回体験のお客様には以下のアイテムを無料提供とレンタルしております。<br />・レンタルウェアセット（上下）・シューズ・タオル<br />・水素水・プロテイン
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s1-q7"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s1-q7" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        ジムに通っている方の年齢層を教えてください
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        10代～80代と幅広い年齢層の方にご利用いただいております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- 施設について FAQs will render here -->
-
-          <div id = 'faq-施設について' class="faq-item-container faq-item-container2  flex flex-col gap-40px items-start">
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- 施設について -->
+          <div
+            id="faq-施設について"
+            class="p-faq__page__item__container p-faq__page__item__container2 flex flex-col gap-40px items-start"
+          >
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label2.svg"
-                  alt="よくあるご質問（一般）"
+                  alt="施設について"
                 />
                 <h2 class="fw-700 fs-24">施設について</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="施設について"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        病気や怪我、妊娠中でもジムの利用は可能でしょうか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        妊娠中の場合でも運動は推奨されておりますが、安定期に入るまでは不安な方も多いと思いますので、安定期に入るまでの間休会も受け付けており、以降有酸素運動などしていただくと健やかに妊娠中を過ごしていただけるかと思います。<br />病気や怪我も同様に休会（月¥2,200）が可能です。また、医師の判断により運動が止められている場合はご利用をご遠慮いただいております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">館内に忘れ物をしました。</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        忘れ物BOXまたは受付（カウンター内）で預かっております。<br />保管期間は1週間となっております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">営業時間は何時ですか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        24時間年中無休ご利用いただけます。<br />ただし、スタッフアワーは(水)(日)以外の11:00～20:00となっております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">駐車場はありますか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        店舗によって異なります。詳しくは<a
+                          href="#"
+                          class="text-link"
+                          >店舗情報</a
+                        >をご覧ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q5"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q5" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        施設を利用するにあたって注意点やルールはありますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">ご利用規約</a
+                        >をご確認ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q6"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q6" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">シャワーはありますか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        店舗によって異なります。詳しくは<a
+                          href="#"
+                          class="text-link"
+                          >店舗情報</a
+                        >をご覧ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q7"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q7" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">どの時間帯が混みますか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        店舗により異なりますが、平日の18時以降が混み合うことが多いです。土日は、夜よりお昼間の方が利用者が多いです。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q8"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q8" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        水素水・プロテインを契約していないのですが、単発で購入することは可能ですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        基本的には200円で購入可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s2-q9"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s2-q9" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        ロッカーは契約しなくても使えますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        空いているロッカーは皆様ご利用可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-           <!-- ご入会について FAQs will render here -->
-
-          <div id =  'faq-ご入会について' class="faq-item-container faq-item-container3 flex flex-col gap-40px items-start relative">
-            <img src="../assets/img/faq/icon_ribbon_faq3.svg" class = 'faq3-ribbon clip-grow-right'>
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- ご入会について -->
+          <div
+            id="faq-ご入会について"
+            class="p-faq__page__item__container p-faq__page__item__container3 flex flex-col gap-40px items-start relative"
+          >
+            <img
+              src="../assets/img/faq/icon_ribbon_faq3.svg"
+              class="p-faq__page__item__ribbon3 clip-grow-right"
+              alt=""
+            />
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label3.svg"
@@ -365,16 +1062,161 @@
                 />
                 <h2 class="fw-700 fs-24">ご入会について</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="ご入会について"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s3-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s3-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">入会はオンラインでできますか</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        オンラインから入会は可能となっておりますが、別途店頭にて書類の記入が必要となりますので、店舗での入会をお勧めしております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s3-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s3-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        入会手続きで必要なものを教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        ・顔写真付きの身分証明書<br />・学生会員希望の方は有効な学生証<br />・会費の支払い方法はクレジットカードか口座振替となっております。<br />※クレジットカード引落希望の方はクレジットカードをお持ちください。<br />※口座振替の場合は口座情報の分かるものをお持ちください。（口座振替の場合、2ヵ月分の会費を入会時に現金でお支払いいただきます）
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s3-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s3-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        会員規則・利用規約などはありますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">ご利用規約</a
+                        >をご確認ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s3-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s3-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">未成年でも利用可能ですか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        可能となっております。18歳未満の方は入会時に保護者同意書の提出が必要です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-           <!-- ご予約について FAQs will render here -->
-
-          <div id =  'faq-ご予約について'  class="faq-item-container faq-item-container4 flex flex-col gap-40px items-start">
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- ご予約について -->
+          <div
+            id="faq-ご予約について"
+            class="p-faq__page__item__container p-faq__page__item__container4flex flex-col gap-40px items-start"
+          >
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label4.svg"
@@ -382,17 +1224,427 @@
                 />
                 <h2 class="fw-700 fs-24">ご予約について</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="ご予約について"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        体験・見学の予約はどこからできますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        無料体験・見学のご予約は<a href="#" class="text-link"
+                          >こちらから</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        プログラムの予約はどこから取れますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">マイページ</a
+                        >の予約フォームから予約が可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        チケットの種類が3種類ありますがそれぞれどういったチケットですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        パーソナルチケット：パーソナルライト/パーソナル通い放題のプランに加入の方。<br />また、有料パーソナルチケットをご購入いただいた方。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        マイページから予約が取れません。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        本人確認がまだだった。<br />パーソナルプランじゃないのにパーソナルチケットで予約をとっていた場合
+                        ＞
+                        サポート・スタンダード・学生・シニアプランの場合は、無料サポートチケットを選択してください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q5"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q5" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        予約のキャンセルや変更はできますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        キャンセル・変更は可能ですが、当日のキャンセルはチケット消化の対象となります。<br />また、当日中での時間変更は可能ですが、別日への変更は当日キャンセルと同様の扱いとなります。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q6"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q6" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">予約枠の制限はありますか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        1日でチケット2枚（1時間）まで使用可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q7"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q7" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        残りのチケットの枚数を確認したい。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">マイページ</a
+                        >より保有している予約権利の下「チケット」から確認が可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q8"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q8" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        予約スケジュールはいつ公開されますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        毎月末頃に翌月のご予約を公開しております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q9"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q9" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        初めてのジムで不安いっぱいです。大丈夫でしょうか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        当ジムは入会者様へ無料サポート4回受けていただけるチケットを付与しております。<br />トレーナーが丁寧にサポートさせていただきます。初めての方がほとんどですので、安心してご来館くださいませ。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q10"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q10" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        ジムが休館になることはありますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        ございます。設備に不具合が発生し動作不能となった場合、または地震などの災害により一定時間の避難が必要となった場合は、休館とさせていただく可能性がございます。<br />状況に応じての対応、ご連絡をさせていただきます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s4-q11"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s4-q11" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        パーソナル以外で自分でトレーニングに来る際も予約は必要ですか？回数制限はありますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        予約は不要で、回数制限もございません。24時間いつでもご利用いただけます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-
-           <!-- 料金・プランについて FAQs will render here -->
-
-          <div id = 'faq-料金・プランについて' class="faq-item-container faq-item-container5 flex flex-col gap-40px items-start">
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- 料金・プランについて -->
+          <div
+            id="faq-料金・プランについて"
+            class="p-faq__page__item__container faq-item-container5 flex flex-col gap-40px items-start"
+          >
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label5.svg"
@@ -400,16 +1652,170 @@
                 />
                 <h2 class="fw-700 fs-24">料金・プランについて</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="料金プランについて"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s5-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s5-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        チケットの購入方法を教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">マイページ</a
+                        >より「チケット購入」を押し、店舗選択。購入するチケットの種類を選び、クレジットカード入力いただくと購入可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s5-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s5-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        購入チケットでの予約をキャンセルした場合、チケットの払い戻しはありますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        一度決済いただきましたら、基本払い戻しはございません。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s5-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s5-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        各種プラン料金を教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        各種プランについては、<a href="#">店舗情報か</a
+                        >らご希望店舗の内容をご覧ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s5-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s5-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        プランはどのようなプランがありますか
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        10種類のプランをご用意しております。詳しくは、<a
+                          href="#"
+                          class="text-link"
+                          >店舗情報か</a
+                        >らご希望店舗の内容をご覧ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-           <!-- お手続き（休会/退会/復会）について FAQs will render here -->
-
-          <div id = 'faq-お手続き（休会/退会/変更）について' class="faq-item-container faq-item-container6 flex flex-col gap-40px items-start">
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- お手続き（休会/退会/変更）について -->
+          <div
+            id="faq-お手続き（休会/退会/変更）について"
+            class="p-faq__page__item__container faq-item-container6 flex flex-col gap-40px items-start"
+          >
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label6.svg"
@@ -417,16 +1823,278 @@
                 />
                 <h2 class="fw-700 fs-24">お手続き（休会/退会/復会）について</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="お手続き休会退会復会について"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s6-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s6-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        プラン変更方法を教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">マイページ</a
+                        >より「契約管理」を選択し、「プランを変更」から変更手続きをお願いいたします。<br />または、各店舗公式LINEにてお申し出ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s6-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s6-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        途中でのプラン変更は可能ですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        在籍3か月目からプラン変更可能でございます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s6-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s6-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        休会したいです。各種手続きの申請方法を教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">マイページ</a
+                        >より「契約管理」を選択し、「プランを変更」から変更手続きをお願いいたします。<br />または、各店舗公式LINEにてお申し出ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s6-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s6-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        休会中です。再開したいのですが、各種変更手続きの申請方法を教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        <a href="#" class="text-link">マイページ</a
+                        >より「契約管理」を選択し、「プランを変更」から変更手続きをお願いいたします。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s6-q5"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s6-q5" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        退会したいです。各種手続きを教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        退会手続きは店頭でのみ手続き可能となっております。店頭スタッフ、または各店公式LINEにてお声掛けください。<br />クレジットカード払いの方は毎月19日まで、口座振替の方は毎月9日までの申請となります。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s6-q6"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s6-q6" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        退会手続き後、いつまで通うことができますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        クレジットカード払いの方は毎月19日まで、口座振替の方は毎月9日までの申請となり、翌月末退会とし退会日までご利用可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s6-q7"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s6-q7" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        在籍必須期間中ですが、退会したいです。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        同意書記載通り、残りの在籍必須期間分の会費全てお支払いいただく必要がございます。お支払い後、退会可能です。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-           <!-- お手続き（休会/退会/復会）について FAQs will render here -->
-
-          <div id = 'faq-お支払いについて' class="faq-item-container faq-item-container7 flex flex-col gap-40px items-start">
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- お支払いについて -->
+          <div
+            id="faq-お支払いについて"
+            class="p-faq__page__item__container p-faq__page__item__container7flex flex-col gap-40px items-start"
+          >
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label7.svg"
@@ -434,16 +2102,247 @@
                 />
                 <h2 class="fw-700 fs-24">お支払いについて</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="お支払いについて"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s7-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s7-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        月会費のお支払い方法を教えてください。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        お支払い方法は2種類ございます<br /><span
+                          class="text-lightBlue"
+                          >【カード払い】</span
+                        ><br />店頭にてスタッフと新規契約手続きお願いいたします。契約日に初期費用として以下のものが決済されます。<br />・入会金＋セキュリティ登録料<br />・契約月の会費（日割りの場合もあり）<br />・翌月会費<br />※2か月目以降は毎月20日に翌月分の決済が行われます<br />※キャンペーン利用は上記と変更あり<br /><span
+                          class="text-lightBlue"
+                          >【口座振替】</span
+                        ><br />店頭にてスタッフと新規契約手続きお願いいたします。初期費用は店頭にて現金、または各店舗で対応しているキャッシュレス決済にてお支払いいただきます。<br />・入会金＋セキュリティ登録料<br />・契約月の会費（日割りの場合もあり）<br />・翌月会費
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s7-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s7-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        月会費はいつ引き落としになりますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        お支払方法により引落し日が異なります。<br /><span
+                          class="text-lightBlue"
+                          >【カード払いの場合】</span
+                        >毎月20日に翌月分の引落し
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s7-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s7-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        デビットカードやプリペイドカードでのお支払いはできますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        以下のカードブランドがプリントされたカードであれば、デビットカードやプリペイドカードのご利用も原則可能となっております。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s7-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s7-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        月会費の支払いに関して、クレジット明細はどのように記載されますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        プラン種別と料金は<a href="#" class="text-link"
+                          >こちら</a
+                        >でご確認ください。明細は各クレジット会社にお問い合わせください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s7-q5"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s7-q5" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">領収書は発行できますか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        領収書は店頭にて手書きでの発行が可能でございます。店頭スタッフまでお声掛けください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s7-q6"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s7-q6" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        決済完了後の払い戻しはできますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        決済後、契約完了後の払い戻しは受け付けておりません。あらかじめご了承ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-           <!-- 採用について FAQs will render here -->
-
-          <div id = 'faq-採用について' class="faq-item-container faq-item-container8 flex flex-col gap-40px items-start">
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- 採用について -->
+          <div
+            id="faq-採用について"
+            class="p-faq__page__item__container p-faq__page__item__container8 flex flex-col gap-40px items-start"
+          >
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
                 <img
                   src="../assets/img/faq/icon_faq_label8.svg"
@@ -451,30 +2350,340 @@
                 />
                 <h2 class="fw-700 fs-24">採用について</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="採用について"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s8-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s8-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        トレーナーは採用されていますか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        随時トレーナーを募集しております。詳しくは<a
+                          href="#"
+                          class="text-link"
+                          >こちら</a
+                        >をご確認ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s8-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s8-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        女性専用24時間ジムAmazonesで働いてみたいです。話だけでも聞くことは可能ですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        お話だけでも可能となっております。お問い合わせは<a
+                          href="#"
+                          class="text-link"
+                          >こちら</a
+                        >からお願いいたします。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s8-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s8-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">アルバイトは募集していますか？</p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        アルバイトも随時募集しております。お問い合わせは<a
+                          href="#"
+                          class="text-link"
+                          >こちら</a
+                        >からお願いいたします。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s8-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s8-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        プランはどのようなプランがありますか
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        10種類のプランをご用意しております。詳しくは、<a
+                          href="#"
+                          class="text-link"
+                          >店舗情報か</a
+                        >らご希望店舗の内容をご覧ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-           <!-- その他 FAQs will render here -->
-
-          <div id = 'faq-その他' class="faq-item-container faq-item-container9 flex flex-col gap-40px items-start relative">
-            <img src="../assets/img/faq/icon_ribbon_faq9.svg" class = 'faq9-ribbon clip-grow-right'>
-            <div class="faq-item-content flex flex-col gap-40px">
+          <!-- その他 -->
+          <div
+            id="faq-その他"
+            class="p-faq__page__item__container p-faq__page__item__container9 flex flex-col gap-40px items-start relative"
+          >
+            <img
+              src="../assets/img/faq/icon_ribbon_faq9.svg"
+              class="p-faq__page__item__ribbon9 clip-grow-right"
+              alt=""
+            />
+            <div class="p-faq__page__item flex flex-col gap-40px">
               <div class="flex flex-row gap-26px items-center">
-                <img
-                  src="../assets/img/faq/icon_faq_label9.svg"
-                  alt="その他"
-                />
+                <img src="../assets/img/faq/icon_faq_label9.svg" alt="その他" />
                 <h2 class="fw-700 fs-24">その他</h2>
               </div>
-              <div class="page-faq-container pos-relative">
-                <div class="faq-container w-full" id="その他"></div>
+              <div class="faq-container w-full">
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s9-q1"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s9-q1" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        靴はどうすれば良いですか？どのような靴がおすすめですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        室内シューズ（スニーカー）であれば何でも構いません。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s9-q2"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s9-q2" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        筋肉痛がこなくなり、きちんと効いているか不安です。
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        慣れてくると筋肉痛はマシになってきますので、効いていないわけではありません。<br />また、重量を上げたりフォームが奇麗になると慣れてからもくることがあります。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s9-q3"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s9-q3" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        「よくある質問」を読みましたが、解決しません。どうすれば良いですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        その他のお問い合わせは、<a href="#" class="text-link"
+                          >お問い合わせフォーム</a
+                        >かお電話にて承ります。<br />また、ジムにお越しの際にスタッフに直接お聞きいただくことも可能です。お気軽にお問い合わせください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reveal c-faq__accordion">
+                  <input
+                    type="checkbox"
+                    id="s9-q4"
+                    class="c-faq__container__toggle"
+                  />
+                  <label for="s9-q4" class="c-faq__accordion_header">
+                    <div class="flex flex-row items-center gap-20px">
+                      <img
+                        src="../assets/img/faq/icon_q.svg"
+                        alt="Q"
+                        class="c-faq__icon__q"
+                      />
+                      <p class="fw-700 fs-16">
+                        月会費の安い店舗に入会して、月会費の高い店舗を継続利用して良いのですか？
+                      </p>
+                    </div>
+                    <div class="i_box">
+                      <i class="c-faq__accordion_toggle"></i>
+                    </div>
+                  </label>
+                  <div class="c-faq__accordion_inner">
+                    <div
+                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    >
+                      <img
+                        src="../assets/img/faq/icon_a.svg"
+                        alt="A"
+                        class="c-faq__icon__a"
+                      />
+                      <p class="fw-500 fs-16 lh-210">
+                        他店を利用されるにあたり、所属店舗より他の特定の店舗を主に利用していると所定の基準に基づき判断された場合は、文書での通知をもって所属店舗が自動的に変更になります。<br />その際、会員様自身でのお手続きは不要です。移籍の際には、移籍後の所属店舗において定められた会費等をお支払いいただきます。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
         </section>
       </section>
     </main>
