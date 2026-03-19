@@ -5246,7 +5246,14 @@ body,
 html {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+html {
   overflow-x: hidden;
+}
+
+body {
+  overflow-x: clip;
 }
 
 html {
@@ -5412,6 +5419,9 @@ a {
 .I-header {
   width: calc(100% - 100px);
   background-color: var(--base-white);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .header-btn {
   width: fit-content;
@@ -5533,7 +5543,7 @@ a {
 }
 @media screen and (max-width: 1090px) {
   .I-header {
-    position: fixed;
+    position: sticky;
     top: 0px;
     z-index: 999;
   }
