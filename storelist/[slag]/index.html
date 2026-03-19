@@ -57,7 +57,6 @@
     <!-- SCRIPTS -->
     <script src="../../assets/js/global.js" defer></script>
     <script src="../../assets/js/public-main.js" defer></script>
-    <script src="../../assets/js/front.min.js" defer></script>
     <!-- Swiper JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
@@ -486,73 +485,103 @@
         </div>
 
         <!-- SERVICES -->
-        <div class="pb-100">
+        <section
+          class="service-section flex flex-col gap-50px"
+          id="service-section"
+        >
+          <div class="section-header-wrapper flex flex-col gap-18px service-section-title pl-240">
+            <p class="reveal section-sub-text fs-18 fw-500 text-black1">サービス</p>
+            <h2 class="reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
+              Service
+            </h2>
+          </div>
           <div
-            class="service-section flex flex-col gap-50px"
-            id="service-section"
+            class="service-container w-full flex flex-row gap-0px justify-center items-center"
           >
-            <div class="flex flex-col gap-18px service-section-title pl-240">
-              <p class="fs-18 fw-500 text-black1">サービス</p>
-              <h2 class="fs-100 lh-normal font-outfit text-black1 fw-400">
-                Service
-              </h2>
-            </div>
-            <div class="p-service_slider_wrapper">
-              <button
-                class="p-service_nav p-service_nav--prev"
-                aria-label="前へ"
-              >
-                <svg
-                  width="20"
-                  height="5"
-                  viewBox="0 0 20 5"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style="transform: scaleX(-1)"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M0 4.9713V4.01685H9.99195V4.9713H0Z"
-                    fill="white"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M9.92773 5.00108H19.9195L9.92773 0V5.00108Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-              <button
-                class="p-service_nav p-service_nav--next"
-                aria-label="次へ"
-              >
-                <svg
-                  width="20"
-                  height="5"
-                  viewBox="0 0 20 5"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M0 4.9713V4.01685H9.99195V4.9713H0Z"
-                    fill="white"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M9.92773 5.00108H19.9195L9.92773 0V5.00108Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
+            <!--SERVICE 1-->
+            <div class="reveal-left service-wrapper">
+              <img
+                src="../../assets/img/top/img_service1.png"
+                alt="女性専用24時間ジム"
+                class="service-img"
+              />
               <div
-                class="service-container w-full flex flex-row gap-0px justify-center items-center"
+                class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
               >
-                <!--SERVICE 1-->
+                <p class="fs-16 fw-700">全店舗利用可能</p>
+                <p class="fs-30 text-lightBlue fw-700">女性専用24時間ジム</p>
+                <p class="fs-16 fw-500 lh-200 text-center">
+                  Amazones（アマゾネス）は全国に20店舗以上！<br />もちろん、全店舗行き来自由！
+                </p>
+                <a href="#" class="btn-green-wrapper">
+                  <img src="../../assets/img/top/icon_arrow.svg" alt="アイコン" />
+                </a>
+              </div>
+            </div>
+
+            <!--SERVICE 2-->
+            <div class="reveal service-wrapper service-wrapper2">
+              <img
+                src="../../assets/img/top/img_service2.webp"
+                alt="女性専用24時間ジム"
+                class="service-img"
+              />
+              <div
+                class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
+              >
+                <p class="fs-16 fw-700">未来姿勢や症状予測を測定</p>
+                <p class="fs-30 text-lightBlue fw-700">AI姿勢診断・改善</p>
+                <p class="fs-16 fw-500 lh-200 text-center">
+                  姿勢診断の判定結果に基づいたトレーニングや自宅でできる体操、
+                  <br />ストレッチ・一本歯下駄？のトレーニングで効果的に改善！
+                </p>
+                <a href="#" class="btn-green-wrapper">
+                  <img src="../../assets/img/top/icon_arrow.svg" alt="アイコン" />
+                </a>
+              </div>
+            </div>
+
+            <!--SERVICE 3-->
+            <div class="reveal-right service-wrapper service-wrapper3">
+              <img
+                src="../../assets/img/top/img_service3.webp"
+                alt="女性専用24時間ジム"
+                class="service-img"
+              />
+              <div
+                class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
+              >
+                <p class="fs-16 fw-700">全員女性トレーナー</p>
+                <p class="fs-30 text-lightBlue fw-700">
+                  パーソナルトレーニング
+                </p>
+                <p class="fs-16 fw-500 lh-200 text-center">
+                  ダイエットの知識やトレーニングマシンの使い方をはじめ
+                  <br />トレーニングジムの利用方法までしっかりと解消！
+                </p>
+                <div class="btn-green-wrapper">
+                  <img src="../../assets/img/top/icon_arrow.svg" alt="アイコン" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-container-sp p-medical_voice_slider_wrapper">
+            <button
+              class="p-medical_voice_nav p-medical_voice_nav--prev"
+              aria-label="前へ"
+            >
+              <img src="../../assets/img/common/icon_arrow_white.svg" style = 'transform:scaleX(-1)'>
+            </button>
+            <button
+              class="p-medical_voice_nav p-medical_voice_nav--next"
+              aria-label="次へ"
+            >
+              <img src="../../assets/img/common/icon_arrow_white.svg">
+            </button>
+            <div class="p-medical_voice_grid">
+              <!-- Voice 1 -->
+              <div class="p-medical_voice_card">
                 <div class="service-wrapper">
                   <img
                     src="../../assets/img/top/img_service1.png"
@@ -563,22 +592,19 @@
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
                   >
                     <p class="fs-16 fw-700">全店舗利用可能</p>
-                    <p class="fs-30 text-lightBlue fw-700">
-                      女性専用24時間ジム
-                    </p>
+                    <p class="fs-30 text-lightBlue fw-700">女性専用24時間ジム</p>
                     <p class="fs-16 fw-500 lh-200 text-center">
                       Amazones（アマゾネス）は全国に20店舗以上！<br />もちろん、全店舗行き来自由！
                     </p>
                     <a href="#" class="btn-green-wrapper">
-                      <img
-                        src="../../assets/img/top/icon_arrow.svg"
-                        alt="アイコン"
-                      />
+                      <img src="../../assets/img/top/icon_arrow.svg" alt="アイコン" />
                     </a>
                   </div>
                 </div>
 
-                <!--SERVICE 2-->
+              </div>
+              <!-- Voice 2 -->
+              <div class="p-medical_voice_card">
                 <div class="service-wrapper service-wrapper2">
                   <img
                     src="../../assets/img/top/img_service2.webp"
@@ -588,23 +614,22 @@
                   <div
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
                   >
-                    <p class="fs-16 fw-700">未来姿勢や症状予測を測定</p>
+                    <p class="fs-16 fw-700">未来姿勢や症状予測を測定 </p>
                     <p class="fs-30 text-lightBlue fw-700">AI姿勢診断・改善</p>
                     <p class="fs-16 fw-500 lh-200 text-center">
                       姿勢診断の判定結果に基づいたトレーニングや自宅でできる体操、
-                      <br />ストレッチ・一本歯下駄？のトレーニングで効果的に改善！
+                      <br class = 'service-break'/>ストレッチ・一本歯下駄？のトレーニングで効果的に改善！
                     </p>
                     <a href="#" class="btn-green-wrapper">
-                      <img
-                        src="../../assets/img/top/icon_arrow.svg"
-                        alt="アイコン"
-                      />
+                      <img src="../../assets/img/top/icon_arrow.svg" alt="アイコン" />
                     </a>
                   </div>
                 </div>
-
-                <!--SERVICE 3-->
-                <div class="service-wrapper service-wrapper3">
+               
+              </div>
+              <!-- Voice 3 -->
+              <div class="p-medical_voice_card">
+                 <div class="service-wrapper service-wrapper3">
                   <img
                     src="../../assets/img/top/img_service3.webp"
                     alt="女性専用24時間ジム"
@@ -619,21 +644,18 @@
                     </p>
                     <p class="fs-16 fw-500 lh-200 text-center">
                       ダイエットの知識やトレーニングマシンの使い方をはじめ
-                      <br />トレーニングジムの利用方法までしっかりと解消！
+                       <br class = 'service-break'/>トレーニングジムの利用方法までしっかりと解消！
                     </p>
                     <div class="btn-green-wrapper">
-                      <img
-                        src="../../assets/img/top/icon_arrow.svg"
-                        alt="アイコン"
-                      />
+                      <img src="../../assets/img/top/icon_arrow.svg" alt="アイコン" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- /.p-service_slider_wrapper -->
           </div>
-        </div>
+        </section>
+
       </section>
 
       <!--DR AMAZONES-->
@@ -749,24 +771,6 @@
               </div>
             </div>
           </div>
-          <!-- IMAGES -->
-          <!-- <div class="p-storedetail_introduction-layout">
-            <div class="p-storedetail_introduction-main-photo"></div>
-            <div class="p-storedetail_introduction-grid-photos">
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-              <div class="p-storedetail_introduction-thumb"></div>
-            </div>
-          </div> -->
           <div class="mx-[calc(50%-50vw)] md:pt-20 md:pb-20 pb-12">
             <div class="container">
               <div
