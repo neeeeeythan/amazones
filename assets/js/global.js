@@ -589,39 +589,10 @@ function playVid(ID) {
 // ─────────────────────────────────────────────
 //  Voice slider (mobile only)
 // ─────────────────────────────────────────────
-(function () {
-  const grid = document.querySelector(".p-medical_voice_grid");
-  const btnPrev = document.querySelector(".p-medical_voice_nav--prev");
-  const btnNext = document.querySelector(".p-medical_voice_nav--next");
-  if (!grid || !btnPrev || !btnNext) return;
-
-  const cards = grid.querySelectorAll(".p-medical_voice_card");
-  const total = cards.length;
-  let current = 0;
-
-  function isMobile() {
-    return window.innerWidth <= 1200;
-  }
-
-  function goTo(index) {
-    if (!isMobile()) return;
-    current = (index + total) % total;
-    grid.style.transform = "translateX(-" + current * 100 + "%)";
-  }
-
-  btnPrev.addEventListener("click", function () {
-    goTo(current - 1);
-  });
-
-  btnNext.addEventListener("click", function () {
-    goTo(current + 1);
-  });
-
-  // Reset transform when resizing to desktop
-  window.addEventListener("resize", function () {
-    if (!isMobile()) {
-      grid.style.transform = "";
-      current = 0;
-    }
-  });
-})();
+initMobileCarousel({
+  container: ".p-medical_voice_grid",
+  cards: ".p-medical_voice_card",
+  prev: ".p-medical_voice_nav--prev",
+  next: ".p-medical_voice_nav--next",
+  breakpoint: 1200
+});

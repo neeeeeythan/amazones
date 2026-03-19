@@ -20,6 +20,7 @@
     <link href="../assets/css/medical.css" rel="stylesheet" type="text/css" />
 
     <!-- SCRIPTS -->
+    <script src="../assets/js/utils.js" defer></script>
     <script src="../assets/js/global.js" defer></script>
     <script src="../assets/js/medical.js" defer></script>
   </head>
@@ -1270,7 +1271,134 @@
           </div>
           <!-- FAQ LIST -->
           <div class="flex flex-col gap-40px py-50">
-            <div id="医療FAQ" class="faq-container w-full"></div>
+            <div id="医療FAQ" class="faq-container w-full">
+              <div class="accordion_one">
+                <div class="accordion_header" role="button" tabindex="0" aria-expanded="false" data-id="1">
+                  <div class="flex flex-row items-center gap-20px">
+                    <div class="bg-lightBlue radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0">
+                      <p class="font-outfit text-white fs-24">Q</p>
+                    </div>
+                    <p class="font-zen fw-700 fs-16">保険は適用されますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="one_i"></i>
+                  </div>
+                </div>
+                <div class="accordion_inner">
+                  <div class="box_one flex flex-row items-start gap-20px">
+                    <div class="radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0;background-color:#98a6b5">
+                      <p class="font-outfit text-white fs-24">A</p>
+                    </div>
+                    <p class="font-zen fw-500 fs-16 answer-text lh-210">完全自費診療（保険外診療）のため、保険は適用されません。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_one">
+                <div class="accordion_header" role="button" tabindex="0" aria-expanded="false" data-id="2">
+                  <div class="flex flex-row items-center gap-20px">
+                    <div class="bg-lightBlue radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0">
+                      <p class="font-outfit text-white fs-24">Q</p>
+                    </div>
+                    <p class="font-zen fw-700 fs-16">他の薬と併用できますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="one_i"></i>
+                  </div>
+                </div>
+                <div class="accordion_inner">
+                  <div class="box_one flex flex-row items-start gap-20px">
+                    <div class="radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0;background-color:#98a6b5">
+                      <p class="font-outfit text-white fs-24">A</p>
+                    </div>
+                    <p class="font-zen fw-500 fs-16 answer-text lh-210">問診票に記載の上、診察時に医師にご相談ください。飲み合わせに問題のないお薬の処方を行わせていただきます。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_one">
+                <div class="accordion_header" role="button" tabindex="0" aria-expanded="false" data-id="3">
+                  <div class="flex flex-row items-center gap-20px">
+                    <div class="bg-lightBlue radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0">
+                      <p class="font-outfit text-white fs-24">Q</p>
+                    </div>
+                    <p class="font-zen fw-700 fs-16">ドラッグストアで購入できる薬との違いはなんですか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="one_i"></i>
+                  </div>
+                </div>
+                <div class="accordion_inner">
+                  <div class="box_one flex flex-row items-start gap-20px">
+                    <div class="radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0;background-color:#98a6b5">
+                      <p class="font-outfit text-white fs-24">A</p>
+                    </div>
+                    <p class="font-zen fw-500 fs-16 answer-text lh-210">医療用漢方製剤が医師の診察に基づいて選ばれるのに対して、ドラッグストアなどで販売している一般用漢方製剤は、服用者自身で選び、購入することができます。<br/>しかし、一般用漢方製剤は安全性を考慮して1日の服用量中の成分量を調整しており、多くの場合においては医療用漢方薬の50～80%程度の成分量しか含まれておりません。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_one">
+                <div class="accordion_header" role="button" tabindex="0" aria-expanded="false" data-id="4">
+                  <div class="flex flex-row items-center gap-20px">
+                    <div class="bg-lightBlue radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0">
+                      <p class="font-outfit text-white fs-24">Q</p>
+                    </div>
+                    <p class="font-zen fw-700 fs-16">処方薬の効果はどのくらいで出ますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="one_i"></i>
+                  </div>
+                </div>
+                <div class="accordion_inner">
+                  <div class="box_one flex flex-row items-start gap-20px">
+                    <div class="radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0;background-color:#98a6b5">
+                      <p class="font-outfit text-white fs-24">A</p>
+                    </div>
+                    <p class="font-zen fw-500 fs-16 answer-text lh-210">2～3ヶ月使用していただくと徐々に効果があらわれます。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_one">
+                <div class="accordion_header" role="button" tabindex="0" aria-expanded="false" data-id="5">
+                  <div class="flex flex-row items-center gap-20px">
+                    <div class="bg-lightBlue radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0">
+                      <p class="font-outfit text-white fs-24">Q</p>
+                    </div>
+                    <p class="font-zen fw-700 fs-16">薬が合わなかった時は、どうしたら良いですか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="one_i"></i>
+                  </div>
+                </div>
+                <div class="accordion_inner">
+                  <div class="box_one flex flex-row items-start gap-20px">
+                    <div class="radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0;background-color:#98a6b5">
+                      <p class="font-outfit text-white fs-24">A</p>
+                    </div>
+                    <p class="font-zen fw-500 fs-16 answer-text lh-210">薬が合わなかった場合は、いつでもLINEで相談できます。お薬の変更も可能です。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_one">
+                <div class="accordion_header" role="button" tabindex="0" aria-expanded="false" data-id="6">
+                  <div class="flex flex-row items-center gap-20px">
+                    <div class="bg-lightBlue radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0">
+                      <p class="font-outfit text-white fs-24">Q</p>
+                    </div>
+                    <p class="font-zen fw-700 fs-16">副作用のリスクはありますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="one_i"></i>
+                  </div>
+                </div>
+                <div class="accordion_inner">
+                  <div class="box_one flex flex-row items-start gap-20px">
+                    <div class="radius-100 flex items-center justify-center" style="width:50px;height:50px;flex-shrink:0;background-color:#98a6b5">
+                      <p class="font-outfit text-white fs-24">A</p>
+                    </div>
+                    <p class="font-zen fw-500 fs-16 answer-text lh-210">西洋薬のように飲み始めて数日間で治療が必要なほど大きな副作用が出るということはまれですが、吐き気や下痢といった副作用が起こる可能性はあります。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
