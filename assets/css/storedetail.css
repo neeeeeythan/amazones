@@ -1071,6 +1071,10 @@
   overflow: hidden;
 }
 
+.p-storedetail_reason_ribbon01--sp {
+  display: none;
+}
+
 /* FAQ */
 .p-storedetail_faq_ribbon {
   position: absolute;
@@ -1954,15 +1958,29 @@
     display: none;
   }
 
-  .p-reservation-flow__content {
-    padding-top: 2rem;
+  .p-storedetail__whychooseus-title {
+    position: relative;
+  }
+  .p-storedetail_reason_ribbon01--sp {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20rem;
+    z-index: 0;
+    pointer-events: none;
+    width: 80vw;
+  }
+  .p-storedetail__whychooseus-title
+    > *:not(.p-storedetail_reason_ribbon01--sp) {
+    position: relative;
+    z-index: 1;
   }
 
   /* ── Free Trial ── */
   .p-storedetail_freetrial_speak_container01 {
     /* display: none; */
     right: 5%;
-    top: 1rem;
+    top: 0rem;
   }
 
   .p-reservation-speak__person--01 {
@@ -2481,6 +2499,10 @@
 
 @media (max-width: 767px) {
   .p-storedetail__intro-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .p-storedetail-reservation_flow__section {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
