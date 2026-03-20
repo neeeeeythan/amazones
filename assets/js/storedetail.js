@@ -165,6 +165,7 @@ function renderFranchiseSection(section, questions) {
 // ─────────────────────────────────────────────
 Object.keys(franchiseContainers).forEach((section) => {
   const container = franchiseContainers[section];
+  if (!container) return;
 
   container.addEventListener("click", (e) => {
     const header = e.target.closest(".accordion_header");
