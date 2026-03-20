@@ -7239,16 +7239,15 @@
       </section>
 
       <!-- RESERVATION FLOW -->
-      <section id="reservation-method" class="c-section_lightBlue">
+      <section id="reservation-method" class="c-section_lightBlue p-storedetail-reservation_flow__section">
         <!-- CONTENT -->
-        <div class="p-reservation-flow__content py-100 c-maxWidth">
+        <div
+          id="reservation-flow"
+          class="p-reservation-flow__content c-maxWidth"
+        >
           <!-- TITLE -->
-          <div class="p-reservation-flow__title-container relative">
-            <p class="p-reservation-flow__subtitle font-zen">ご予約の流れ</p>
-            <h1 class="p-reservation-flow__title font-outfit">
-              Flow / Reservation
-            </h1>
-            <div class="p-storedetail_freetrial_speak_container01">
+          <div class="p-reservation-flow__title-container">
+            <div class="p-reservation-speak__container--01">
               <div class="p-reservation-speak__image--01">
                 <img
                   src="../../assets/img/reservation/img_reservation_speak_person01.webp"
@@ -7256,13 +7255,18 @@
                   class="p-reservation-speak__person--01"
                 />
                 <img
-                  src="../../assets/img/reservation/img_reservation_speak_bubble01.webp"
+                  src="../../assets/img/reservation/img_reservation_speak_bubble01-white.png"
                   alt="speak image"
-                  class="p-reservation-speak__bubble--01 speech-bubble"
+                  class="p-reservation-speak__bubble--01-white speech-bubble"
                 />
               </div>
             </div>
+            <p class="p-reservation-flow__subtitle font-zen">ご予約の流れ</p>
+            <h1 class="p-reservation-flow__title font-outfit">
+              Flow / Reservation
+            </h1>
           </div>
+
           <!-- STEPS -->
           <div class="p-reservation-step__list">
             <!-- STEP 1 -->
@@ -7350,7 +7354,8 @@
                 </p>
               </div>
             </div>
-            <a href="/reservation">
+
+            <div class="p-reservation-step__btn-wrapper">
               <button class="btn-light-blue02 mt-20 cursor-pointer">
                 ご予約から無料体験・見学までの流れはこちら
                 <svg
@@ -7374,7 +7379,20 @@
                   />
                 </svg>
               </button>
-            </a>
+              <!-- Mobile only: person beside button -->
+              <div class="p-reservation-speak__image--01-btn">
+                <img
+                  src="../../assets/img/reservation/img_reservation_speak_bubble01.webp"
+                  alt="speak image"
+                  class="p-reservation-speak__bubble--01-btn speech-bubble"
+                />
+                <img
+                  src="../../assets/img/reservation/img_reservation_speak_person01.webp"
+                  alt="speak image"
+                  class="p-reservation-speak__person--01-btn"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

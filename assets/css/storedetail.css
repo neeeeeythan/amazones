@@ -145,7 +145,7 @@
   }
 }
 
-/* PAYMENT LINKS */
+/* LINKS */
 
 .p-storedetail_links-nav {
   display: flex;
@@ -1310,6 +1310,12 @@
 .dot.active {
   background: #3bb8b8;
   transform: scale(1.2);
+}
+
+/* RESERVATION SECTION */
+.p-storedetail-reservation_flow__section{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @media (max-width: 640px) {

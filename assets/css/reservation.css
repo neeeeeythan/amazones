@@ -539,8 +539,8 @@
 /* 01 */
 .p-reservation-speak__container--01 {
   position: absolute;
-  right: 0%;
-  top: 15%;
+  right: 5%;
+  top: -35%;
 }
 
 .p-reservation-speak__image--01 {
@@ -550,13 +550,18 @@
   align-items: center;
 }
 
-.p-reservation-speak__bubble--01 {
+.p-reservation-speak__bubble--01,
+.p-reservation-speak__bubble--01-white {
   position: absolute;
   top: 1rem;
   left: -10rem;
   width: auto;
   height: auto;
   z-index: 1;
+}
+
+.p-reservation-speak__bubble--01-white {
+  height: 8rem;
 }
 
 .p-reservation-speak__person--01 {
