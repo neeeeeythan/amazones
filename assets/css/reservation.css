@@ -589,7 +589,7 @@
 
 .p-reservation-speak__person--02 {
   width: auto;
-  height: 25rem;
+  height: 18vw;
   object-fit: contain;
 }
 
@@ -725,11 +725,11 @@
   }
 
   .p-reservation-simulation__phone {
-    left: 38%;
+    left: 50%;
   }
 
   .p-reservation-simulation__phone img {
-    height: 24vw;
+    height: 40vw;
   }
 
   .p-reservation-simulation__content {
@@ -746,13 +746,8 @@
     font-size: 0.875rem;
   }
 
-  .p-reservation-speak__container--02 {
-    left: 3%;
-    bottom: 10%;
-  }
-
   .p-reservation-speak__person--02 {
-    height: 18rem;
+    height: 22vw;
   }
 
   /* FORM */
