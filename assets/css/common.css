@@ -1,3 +1,240 @@
+
+/* ============================================
+    HERO ANIMATION
+   ============================================ */
+
+.c-hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #003032;
+  max-height: 850px;
+}
+
+.c-hero-slider__images {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.c-hero-slider__frames {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.clip-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.c-hero-slider__frames__clip1 {
+  background-image: none; 
+  background-repeat: unset;
+  background-position: unset;
+  background-size: unset;
+  background-color: orange; 
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 37% 100%);
+  animation: heroSlideTopLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.c-hero-slider__frames__clip2 {
+  background-image: none; 
+  background-size: unset;
+  background-repeat: unset;
+  background-position: unset;
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 37% 100%);
+  animation: heroSlideBottomRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    forwards;
+  position: absolute;
+  right: 0px;
+  width: 100vw;
+  overflow: hidden;
+}
+.c-hero-slider__frames__clip1 .clip-img {
+  width: 70%; 
+  height: 100%;
+  position: absolute;
+  left: 0;
+  object-position: -200px;
+  background-size: contain;
+}
+
+.c-hero-slider__frames__clip2 .clip-img {
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  right: 0; 
+}
+
+.c-hero-slider__ribbon {
+  position: absolute;
+  bottom: 0;
+  top: -15px;
+  left: 20px;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.c-hero-slider__title {
+  position: absolute;
+  top: 214px;
+  left: 105px;
+  z-index: 10;
+}
+
+@keyframes heroSlideTopLeft {
+  0% {
+    transform: translate(-80px, -80px);
+    clip-path: inset(0 100% 0 0);
+  }
+  40% {
+    clip-path: polygon(0 0, 43% 0, 57% 100%, 0% 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+    clip-path: polygon(0 0, 43% 0, 57% 100%, 0% 100%);
+  }
+}
+
+@keyframes heroSlideBottomRight {
+  0% {
+    opacity: 0;
+    transform: translate(80px, 80px);
+    clip-path: inset(0 0 0 100%);
+  }
+  40% {
+    clip-path: inset(0 0 0 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0%);
+  }
+}
+
+
+@media screen and (max-width: 1580px) {
+  .c-hero-slider__frames__clip1 {
+    background-position: -200px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .c-hero-slider {
+    max-height: 100vh;
+  }
+  .clip-img {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+
+    background-size: cover;
+  }
+  .c-hero-slider__frames__clip1 .clip-img {
+    width: 100vw;
+    height: 100%;
+
+    object-position: 100%;
+    background-size: cover;
+  }
+
+  .c-hero-slider {
+    height: 100vh;
+  }
+
+  .c-hero-slider__images {
+    height: 100vh;
+  }
+
+  .c-hero-slider__title {
+    top: 80px;
+    left: 20px;
+  }
+
+  .c-hero-slider__frames__clip1 {
+    animation: heroSlideTopMobile 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+
+  .c-hero-slider__frames__clip2 {
+    animation: heroSlideBottomMobile 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+  }
+
+  @keyframes heroSlideTopMobile {
+    0% {
+      opacity: 0;
+      transform: translate(-80px, -40px);
+      clip-path: inset(0 100% 0 0);
+    }
+    40% {
+      clip-path: polygon(0 0, 100% 0, 100% 58%, 0 42%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+      clip-path: polygon(0 0, 100% 0, 100% 58%, 0 42%);
+    }
+  }
+
+  @keyframes heroSlideBottomMobile {
+    0% {
+      opacity: 0;
+      transform: translate(80px, 40px);
+      clip-path: inset(0 0 0 100%);
+    }
+    40% {
+      clip-path: polygon(0 42%, 100% 58%, 100% 100%, 0 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+      clip-path: polygon(0 42%, 100% 58%, 100% 100%, 0 100%);
+    }
+  }
+  .c-hero-slider__ribbon {
+    transform: scale(1.5);
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-hero-slider__ribbon {
+    top: 520px;
+    left: -350px;
+    transform: scale(3);
+  }
+  .c-hero-slider__title h1 {
+    font-size: 22px;
+  }
+}
+
+/* ============================================
+    END HERO ANIMATION
+   ============================================ */
+
+
+   
 /* ============================================
     START NEWS
    ============================================ */
@@ -191,13 +428,6 @@
 /* ============================================
     START SHOP
    ============================================ */
-.p-attraction_page{
-  background-image: url("../img/top/bg_shop_training_machine.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 20% 100px;
-  padding-top: 100px;
-}
 
 .c-shop {
   max-width: 1920px;
@@ -1200,6 +1430,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .c-footer-banner__container {
   width: 100%;
   max-width: 1000px;
@@ -1208,46 +1439,56 @@
   overflow: visible;
 }
 
-.c-footer-banner__sticker1{
+.c-footer-banner__stickers {
+  display: contents;
+}
+
+.c-footer-banner__sticker1 {
   position: absolute;
   top: 45px;
-  left: 0px;
+  left: 0;
 }
-.banner-speechbubble1{
+
+.c-footer-banner__bubble1 {
   position: absolute;
   top: -60px;
   left: -93px;
 }
-.banner-sticker2 {
+
+.c-footer-banner__sticker2 {
   position: absolute;
   top: 30px;
   right: -40px;
 }
-.banner-speechbubble2 {
+
+.c-footer-banner__bubble2 {
   position: absolute;
   top: -60px;
   right: -63px;
 }
-.c-footer-banner__container a p img {
+
+.c-footer-banner__btn p img {
   margin-left: 10px;
   margin-bottom: 2px;
 }
 
-.banner-stickers-row {
-  display: contents;
-}
-
+/* ================================
+   BREAKPOINT: 1200px
+   ================================ */
 @media screen and (max-width: 1200px) {
   .c-footer-banner__container h2 {
     line-height: 200%;
   }
+
   .c-footer-banner__container a {
     line-height: 180%;
   }
-  .banner-sticker1,
-  .banner-sticker2 {
+
+  .c-footer-banner__sticker1,
+  .c-footer-banner__sticker2 {
     display: none;
   }
+
   .c-footer-banner__container {
     width: auto;
     padding-left: 80px;
@@ -1255,28 +1496,35 @@
   }
 }
 
+/* ================================
+   BREAKPOINT: 767px (Mobile)
+   ================================ */
 @media screen and (max-width: 767px) {
   .c-footer-banner {
     padding: 40px 16px;
   }
+
   .c-footer-banner__container {
     width: 100%;
     padding: 40px 26px 0 26px;
     gap: 10px;
   }
+
   .c-footer-banner__container h2 {
     font-size: 24px;
     text-align: center;
   }
-  .c-footer-banner__container h2 span {
+
+  .c-footer-banner__container h2 b {
     font-size: 36px;
   }
+
   .c-footer-banner__container a {
     padding: 10px 35px 10px 20px;
     margin-top: 10px;
   }
 
-  .banner-stickers-row {
+  .c-footer-banner__stickers {
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
@@ -1287,8 +1535,8 @@
     z-index: 22;
   }
 
-  .banner-sticker1,
-  .banner-sticker2 {
+  .c-footer-banner__sticker1,
+  .c-footer-banner__sticker2 {
     display: block !important;
     position: relative;
     top: 10px;
@@ -1297,13 +1545,14 @@
     bottom: auto;
   }
 
-  .c-footer-banner__sticker1img:last-child {
+  .c-footer-banner__sticker1 img:last-child {
     width: 130px;
     height: auto;
     display: block !important;
     margin-left: 25px;
   }
-  .c-footer-banner__sticker1img:first-child {
+
+  .c-footer-banner__sticker1 img:first-child {
     position: absolute;
     top: -45px;
     left: -40px;
@@ -1312,12 +1561,13 @@
     display: block !important;
   }
 
-  .banner-sticker2 img:last-child {
+  .c-footer-banner__sticker2 img:last-child {
     width: 170px;
     height: auto;
     display: block;
   }
-  .banner-sticker2 img:first-child {
+
+  .c-footer-banner__sticker2 img:first-child {
     position: absolute;
     top: -50px;
     right: -5px;
