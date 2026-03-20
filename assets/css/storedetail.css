@@ -1892,19 +1892,27 @@
   .p-storedetail_whychooseus_text_container_left,
   .p-storedetail_whychooseus_text_container_right {
     position: static;
-    width: 100%;
-    padding: 1.5rem 1rem;
+    width: 95%;
+    margin-top: -2rem;
+    padding: 0rem 1.5rem 1rem 2rem;
     box-sizing: border-box;
     left: auto;
     right: auto;
     bottom: auto;
     transform: none;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
   }
+
+  .p-storedetail_whychooseus_text_container_left {
+    align-self: flex-end;
+  }
+
   .p-storedetail_reason_img01,
   .p-storedetail_reason_img02,
   .p-storedetail_reason_img03 {
     width: 100%;
-    height: 15rem;
+    height: 18rem;
   }
   .p-storedetail_reason_ribbon01,
   .p-storedetail_reason_ribbon02 {
