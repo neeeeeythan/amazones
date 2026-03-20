@@ -530,6 +530,11 @@
 
 /* SPEAK PERSON */
 
+/* Mobile-only duplicate (beside button) — hidden on desktop/tablet */
+.p-reservation-speak__image--01-btn {
+  display: none;
+}
+
 /* 01 */
 .p-reservation-speak__container--01 {
   position: absolute;
@@ -903,6 +908,45 @@
 
   .p-reservation-simulation .p-reservation-speak__person--02 {
     height: 16rem;
+  }
+
+  /* Hide original speak person from title on mobile */
+  .p-reservation-flow__title-container .p-reservation-speak__container--01 {
+    display: none;
+  }
+
+  /* Smaller button text on mobile */
+  .p-reservation-step__btn-wrapper .btn-light-blue02 {
+    font-size: 0.75rem;
+  }
+
+  /* Button + person row wrapper */
+  .p-reservation-step__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0;
+  }
+
+  /* Mobile duplicate person beside button */
+  .p-reservation-speak__image--01-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .p-reservation-speak__person--01-btn {
+    height: 13rem;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .p-reservation-speak__bubble--01-btn {
+    width: 6rem;
+    height: auto;
+    margin-bottom: 0.25rem;
   }
 
   .p-reservation-speak__container--01 {
