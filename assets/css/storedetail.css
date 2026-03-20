@@ -849,6 +849,12 @@
   text-align: center;
   background-color: var(--base-lightBlue);
   padding: 0.7rem 1rem;
+  text-shadow: none;
+  margin-top: 1rem;
+}
+
+.p-storedetail_cta_note-mobile {
+  display: none;
 }
 
 .p-storedetail_cta_people {
@@ -1852,7 +1858,14 @@
     text-align: center;
   }
   .p-storedetail_cta_note {
+    display: none;
+  }
+  .p-storedetail_cta_note-mobile {
+    display: block;
     font-size: 1rem;
+    color: white;
+    text-align: center;
+    background-color: var(--base-lightBlue);
     padding: 1rem 1.75rem;
     width: max-content;
   }
