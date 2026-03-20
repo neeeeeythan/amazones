@@ -1,3 +1,6 @@
+.p-member ul{
+  list-style: none;
+}
 .p-member-page-section {
   width: 100%;
   display: flex;
@@ -40,53 +43,6 @@
   border-bottom: 1px solid var(--base-gray);
 }
 
-/* Pagination Styles */
-.p-member-pagination-container {
-  display: flex;
-  justify-content: center;
-  margin: 50px 0 30px;
-  align-self: flex-end;
-}
-
-.p-pagination {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-top: 20px;
-  list-style: none;
-}
-
-.p-member-pagination-btn {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--base-lightBlue);
-  background: white;
-  color: var(--base-lightBlue);
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-.p-member-pagination-btn:hover:not(.disabled):not(.active) {
-  background: var(--base-lightBlue);
-  color: white;
-}
-
-.p-member-pagination-btn.active {
-  background: var(--base-lightBlue);
-  color: white;
-  border-color: var(--base-lightBlue);
-}
-
-.p-member-pagination-btn.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
-}
 .p-member-speech-bubble {
   position: absolute;
   top: -230px;
@@ -99,7 +55,7 @@
 }
 
 @media screen and (max-width: 1350px) {
-  .p-member-page-container div:first-child:not(.p-pagination) {
+  .p-member-page-container div:first-child:not(.c-pager1__list) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -201,9 +157,6 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .p-member-pagination-container {
-    margin: 20px 0 30px;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -213,3 +166,6 @@
     row-gap: 20px;
   }
 }
+
+
+
