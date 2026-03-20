@@ -898,7 +898,7 @@
   /* Show and center the simulation people on mobile */
   .p-reservation-simulation .p-reservation-speak__container--02 {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     position: relative;
     left: auto;
     bottom: auto;
@@ -1007,7 +1007,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0rem;
   }
 
   .p-reservation-simulation::before {
@@ -1015,9 +1015,9 @@
   }
 
   .p-reservation-simulation__ribbon {
-    left: -55%;
+    left: -5%;
     top: auto;
-    bottom: -22rem;
+    bottom: -16.5rem;
     height: 35%;
   }
 
@@ -1026,10 +1026,12 @@
     position: relative;
     top: auto;
     left: auto;
-    transform: none;
+    transform: translateY(13rem);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-self: flex-start;
     z-index: 2;
+    margin-top: -10rem;
   }
 
   .p-reservation-simulation__phone img {
