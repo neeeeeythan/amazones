@@ -147,6 +147,7 @@ function renderVisitorSection(section, questions) {
 // ─────────────────────────────────────────────
 Object.keys(visitorContainers).forEach((section) => {
   const container = visitorContainers[section];
+  if (!container) return;
 
   container.addEventListener("click", (e) => {
     const header = e.target.closest(".accordion_header");
