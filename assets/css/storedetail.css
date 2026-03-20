@@ -1466,6 +1466,7 @@
 
   /* Service section — stack at tablet too */
   .service-container {
+    display: flex !important;
     flex-direction: column;
     align-items: stretch;
     margin-right: 0;
@@ -1501,7 +1502,7 @@
   }
 
   /* Stack text + figure vertically on tablet */
-  .c-section_lightBlue .flex.gap-30px.relative {
+  .p-storedetail__intro-text-row {
     flex-direction: column;
     align-items: center;
   }
@@ -1615,7 +1616,7 @@
   }
 
   /* Stack text + figure vertically on mobile */
-  .c-section_lightBlue .flex.gap-30px.relative {
+  .p-storedetail__intro-text-row {
     flex-direction: column;
     align-items: center;
   }
@@ -1885,6 +1886,7 @@
     overflow: hidden;
   }
   .service-container {
+    display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap;
     align-items: stretch;
@@ -1899,6 +1901,11 @@
     max-width: 100%;
     width: 100%;
     margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-content {
+    flex: 1;
   }
   .service-img {
     width: 100%;
@@ -1926,18 +1933,12 @@
   .p-service_nav--next {
     right: 0.75rem;
   }
-  /* Service section title: reset huge left padding */
-  .service-section-title {
-    padding-left: 1.5rem;
-  }
-
-  .service-section-title h2 {
+  .p-storedetail__service-header h2 {
     font-size: 60px !important;
   }
 
   /* ── Opening Block: stack text + jump image ── */
-  /* The parent <div class="flex gap-30px"> wraps text + person image */
-  .c-maxWidth.pb-100.flex.flex-col > .flex.gap-30px {
+  .p-storedetail__opening-content > .p-storedetail__opening-row {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -2088,5 +2089,202 @@
     transform: scale(1.4);
     object-position: 0 -20px;
     margin-top: 40px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   STOREDETAIL — BEM ELEMENT CLASSES
+   (utility classes converted to explicit BEM rules)
+   ═══════════════════════════════════════════════════ */
+
+/* Arrow flip — replaces inline style="transform:scaleX(-1)" */
+.p-storedetail__arrow-flip {
+  transform: scaleX(-1);
+}
+
+/* ── Service container & card content (base desktop styles) ── */
+.service-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;    /* gap-30px */
+  padding: 2.5rem 1rem; /* py-40 px-16 */
+}
+
+/* ── Opening section ── */
+.p-storedetail__opening-content {
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-storedetail__opening-row {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.p-storedetail__opening-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+/* ── Service Section — base styles (mirrors top.css for page independence) ── */
+.service-wrapper {
+  width: 100%;
+  max-width: 640px;
+  background-color: var(--base-white);
+  z-index: 2;
+  overflow: hidden;
+}
+.service-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.service-wrapper2 {
+  margin-top: -90px;
+  background-color: var(--base-gray);
+}
+.service-wrapper3 {
+  margin-top: -180px;
+}
+
+/* ── Service section ── */
+.p-storedetail__service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding-top: 120px;
+}
+
+.p-storedetail__service-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  max-width: 90rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+/* ── Introduction section ── */
+.p-storedetail__intro-section {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  position: relative;
+}
+
+.p-storedetail__intro-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  z-index: 10;
+  position: relative;
+}
+
+.p-storedetail__intro-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+.p-storedetail__intro-text-row {
+  display: flex;
+  gap: 1.875rem;
+  position: relative;
+}
+
+.p-storedetail__intro-text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.p-storedetail__intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+/* ── Photo gallery bleed ── */
+.p-storedetail__gallery-bleed {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-bottom: 3rem;
+}
+
+.p-storedetail__gallery-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .p-storedetail__gallery-bleed {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-storedetail__gallery-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* ── Dr. Amazones text elements ── */
+.p-storedetail__dr-label {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.p-storedetail__dr-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.p-storedetail__dr-text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* ── Tablet responsive overrides (≤ 1024px) ── */
+@media (max-width: 1024px) {
+  .p-storedetail__service-section {
+    gap: 2rem;
+  }
+}
+
+/* ── Mobile responsive overrides (≤ 767px) ── */
+@media (max-width: 767px) {
+  .p-storedetail__opening-content {
+    padding-bottom: 3rem;
+  }
+
+  .p-storedetail__intro-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
