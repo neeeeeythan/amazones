@@ -44,6 +44,7 @@
 .p-medical__breadcrumb {
   bottom: 4%;
   left: 5%;
+  z-index: 15;
 }
 
 /* ONLINE CONSULT */
@@ -678,6 +679,26 @@
 @media (max-width: 767px) {
   .p-medical__banner-logo--pc {
     display: none;
+  }
+
+    /* ── BANNER ── */
+
+  /* Left frame image — object-position horizontal, transform for vertical */
+   .c-hero-slider__frames__clip1 .clip-img {
+    left: 0;
+    width: 100%;
+    object-position: 40% top; /* horizontal: 0%=left, 100%=right */
+    object-fit: contain;
+    transform: scale(2) translateY(22%); /* vertical: positive=show top, negative=show bottom */
+  }
+
+  /* Right frame image */
+  .c-hero-slider__frames__clip2 .clip-img {
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-position: center center;
+    transform: scale(1) translateY(30%);
   }
 
   .p-medical__banner-logo--sp {
