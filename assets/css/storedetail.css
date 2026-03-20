@@ -937,6 +937,10 @@
   text-decoration: underline;
 }
 
+.p-storedetail-freetrial__span--red {
+  color: var(--text-red);
+}
+
 .p-storedetail_freetrial_step_list {
   display: flex;
   flex-direction: column;
