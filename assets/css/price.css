@@ -903,6 +903,10 @@
     padding-bottom: 3rem !important;
   }
 
+  .p-price__section--white.pt-100 {
+    padding-top: 3rem !important;
+  }
+
   .p-price__section--lightblue {
     padding-top: 3rem;
     padding-bottom: 3rem;

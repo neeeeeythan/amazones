@@ -147,6 +147,7 @@
 @media screen and (max-width: 767px) {
   .p-storedetail__whychooseus-title-desc--sp {
     margin-bottom: 2.5rem;
+    line-height: 2;
   }
 }
 
