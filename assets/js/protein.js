@@ -147,6 +147,7 @@ function renderProteinSection(section, questions) {
 // ─────────────────────────────────────────────
 Object.keys(proteinContainers).forEach((section) => {
   const container = proteinContainers[section];
+  if (!container) return;
 
   container.addEventListener("click", (e) => {
     const header = e.target.closest(".p-protein__faq-header");
