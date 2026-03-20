@@ -681,6 +681,10 @@
   display: none;
 }
 
+.p-reservation-speak__mobile-row {
+  display: none;
+}
+
 /* ============================================
    TABLET (max-width: 1024px)
    ============================================ */
@@ -799,6 +803,36 @@
     display: none;
   }
 
+  .p-reservation-speak__mobile-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 1.5rem;
+  }
+
+  .p-reservation-speak__mobile-persons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .p-reservation-speak__mobile-persons img {
+    height: 12rem;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .p-reservation-speak__bubble--04-mobile {
+    position: absolute;
+    top: -3rem;
+    right: 5%;
+    height: 6rem;
+    width: auto;
+  }
+
   /* ENDNOTE */
   .p-reservation-end-note__row {
     gap: 1.5rem;
@@ -902,43 +936,39 @@
     height: 6rem;
   }
 
-  /* ANNOUNCEMENT — show speak persons below container on mobile */
+  /* ANNOUNCEMENT — mobile row with side-by-side persons */
   .p-reservation-announcement {
-    padding-bottom: 14rem;
+    padding-bottom: 2rem;
   }
 
-  .p-reservation-speak__container--04,
-  .p-reservation-speak__container--05 {
-    display: block;
-    bottom: -1rem;
+  .p-reservation-speak__mobile-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 1.5rem;
   }
 
-  .p-reservation-speak__container--04 {
-    right: 3rem;
+  .p-reservation-speak__mobile-persons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
   }
 
-  .p-reservation-speak__container--05 {
-    left: 2rem;
-  }
-
-  .p-reservation-speak__person--04,
-  .p-reservation-speak__person--05 {
-    display: none;
-  }
-
-  .p-reservation-speak__person--05-mobile,
-  .p-reservation-speak__person--04-mobile {
-    display: block;
+  .p-reservation-speak__mobile-persons img {
     height: 12rem;
     width: auto;
     object-fit: contain;
   }
 
-  .p-reservation-speak__bubble--04 {
-    right: -1rem;
-    top: -2rem;
-    width: 7rem;
-    height: auto;
+  .p-reservation-speak__bubble--04-mobile {
+    position: absolute;
+    top: -3rem;
+    right: 5%;
+    height: 6rem;
+    width: auto;
   }
 
   /* Show and center the simulation people on mobile */
@@ -1138,7 +1168,7 @@
   }
 
   .p-reservation-announcement {
-    padding: 2.5rem 1.5rem 16rem;
+    padding: 2.5rem 1.5rem 3rem;
     gap: 1.5rem;
     max-width: 100%;
   }
