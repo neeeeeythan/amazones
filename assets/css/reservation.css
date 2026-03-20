@@ -334,7 +334,8 @@
   gap: 1rem;
   box-sizing: border-box;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
+  margin-bottom: -5rem;
 }
 
 .p-reservation-form__title-container {
@@ -595,11 +596,12 @@
 
 /* 03 */
 .p-reservation-speak__container--03 {
-  position: absolute;
-  left: 29.5%;
-  bottom: -10.5%;
-  width: auto;
+  position: relative;
+  left: 29%;
+  /* bottom: -10.5%; */
+  width: fit-content;
   height: auto;
+  margin-top: -10rem;
   z-index: 1;
 }
 
@@ -608,12 +610,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
 }
 
 .p-reservation-speak__bubble--03 {
   position: absolute;
   top: -1.5rem;
-  left: -9.5rem;
+  left: -10rem;
   width: auto;
   height: auto;
   z-index: 1;
@@ -764,8 +767,22 @@
     padding: 2.5rem;
   }
 
+  /* Show speak bubble 03 centered on mobile */
   .p-reservation-speak__container--03 {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -7rem;
+    /* margin-bottom: -5rem; */
+  }
+
+  .p-reservation-speak__person--03 {
+    height: 16rem;
+  }
+
+  .p-reservation-speak__bubble--03 {
+    top: -1rem;
+    left: -7rem;
+    height: 6rem;
   }
 
   /* ANNOUNCEMENT */
@@ -859,9 +876,30 @@
   }
 
   /* Hide all decorative speak characters on mobile except 01 */
-  .p-reservation-speak__container--02,
-  .p-reservation-speak__container--03 {
+  .p-reservation-speak__container--02 {
     display: none;
+  }
+
+  .p-reservation-form {
+    margin-bottom: 0rem;
+  }
+
+  /* Show speak bubble 03 centered on mobile */
+  .p-reservation-speak__container--03 {
+    display: flex;
+    justify-content: center;
+    margin-top: -3rem;
+    margin-bottom: -5rem;
+  }
+
+  .p-reservation-speak__person--03 {
+    height: 16rem;
+  }
+
+  .p-reservation-speak__bubble--03 {
+    top: -1rem;
+    left: -7rem;
+    height: 6rem;
   }
 
   /* ANNOUNCEMENT — show speak persons below container on mobile */
@@ -898,7 +936,7 @@
 
   .p-reservation-speak__bubble--04 {
     right: -1rem;
-    top:-2rem;
+    top: -2rem;
     width: 7rem;
     height: auto;
   }
