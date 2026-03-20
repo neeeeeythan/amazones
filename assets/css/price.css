@@ -101,6 +101,7 @@
   background-image: url("../img/common/bg_white_pattern.webp");
   background-size: cover;
   background-position: 0% -10%;
+  position: relative;
 }
 
 .p-price__content {
