@@ -2,25 +2,14 @@
 /* START BANNER */
 .p-personal-banner {
   width: 100%;
-  height: 53.5rem;
-  background-image: url("../img/personal/banner_personal.png");
-  background-size: cover;
-  background-position: center top;
-  position: relative;
-  overflow: hidden;
 }
 
-.p-personal-banner__ribbon {
+.p-personal-banner__overlay {
   position: absolute;
-  bottom: 8%;
-  left: 2%;
-  width: 100vw;
-  height: auto;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
   pointer-events: none;
-}
-
-.p-personal-banner__ribbon--sp {
-  display: none;
 }
 
 .p-personal-banner__title {
@@ -28,6 +17,7 @@
   top: 35%;
   left: 8%;
   color: white;
+  z-index: 15;
 }
 
 .p-personal-banner__title h1 {
@@ -40,6 +30,7 @@
 .p-personal-banner__breadcrumb {
   bottom: 5%;
   left: 8%;
+  z-index: 15;
 }
 
 /* END BANNER */
@@ -539,11 +530,6 @@
   }
 
   /* BANNER */
-  .p-personal-banner {
-    height: 36rem;
-    background-position: center top;
-  }
-
   .p-personal-banner__title {
     top: 30%;
     left: 5%;
@@ -556,13 +542,6 @@
 
   .p-personal-banner__breadcrumb {
     left: 5%;
-  }
-
-  /* Banner ribbon: scale down to avoid overflow */
-  .p-personal-banner__ribbon {
-    bottom: 5%;
-    left: 0;
-    width: 120vw;
   }
 
   /* AMAZONES METHOD SECTION */
@@ -674,12 +653,6 @@
   }
 
   /* BANNER */
-  .p-personal-banner {
-    height: 800px;
-    background-position: 70% top;
-    background-image: url("../img/personal/banner_personal_sp.png");
-  }
-
   .p-personal-banner__title {
     top: 15%;
     left: 1.25rem;
@@ -694,20 +667,6 @@
     position: absolute;
     left: 1.25rem;
     bottom: 4%;
-  }
-
-  /* Banner ribbon: keep visible, fit mobile width */
-  .p-personal-banner__ribbon {
-    display: none;
-  }
-
-  .p-personal-banner__ribbon--sp {
-    display: block;
-    position: absolute;
-    top: 20%;
-    left: auto;
-    right: -15%;
-    height: 50%;
   }
 
   /* AMAZONES METHOD SECTION */
