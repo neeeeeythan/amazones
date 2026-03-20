@@ -792,7 +792,25 @@
   }
 
   .p-price__people-image {
-    display: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+  }
+
+  .p-price__people-jump {
+    height: 18rem;
+  }
+
+  .p-price__people-jump--02 {
+    height: 15rem;
+  }
+
+  .p-price__people-jump--03 {
+    height: 18rem;
   }
 
   /* BANNER */
