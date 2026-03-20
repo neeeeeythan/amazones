@@ -1914,6 +1914,13 @@
     width: 100%;
     height: 18rem;
   }
+  .p-storedetail_reason_img01 img {
+    width: auto;
+    height: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
   .p-storedetail_reason_ribbon01,
   .p-storedetail_reason_ribbon02 {
     display: none;
