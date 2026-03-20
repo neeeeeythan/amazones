@@ -1947,7 +1947,7 @@
 
   /* ── Free Trial ── */
   .p-storedetail_freetrial_speak_container01 {
-    display: none;
+    /* display: none; */
   }
   .p-storedetail_freetrial_step_list {
     flex-direction: column;
