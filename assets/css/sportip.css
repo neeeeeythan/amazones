@@ -2,10 +2,15 @@
     START SPORTIP BANNER
    ============================================ */
 .p-sportip__banner {
-  /* width: 100%;
-  height: calc(100vw * 300 / 1920); */
-  position: relative;
-  overflow: visible;
+  /* layout handled by c-hero-slider */
+}
+
+.p-sportip__banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  pointer-events: none;
 }
 
 .p-sportip__banner-logo {
@@ -15,31 +20,7 @@
   width: 15%;
   height: 15%;
   overflow: hidden;
-}
-
-.p-sportip__banner-img {
-  width: 100%;
-  height: 100%;
-}
-
-.p-sportip__banner-img--sp {
-  display: none;
-}
-
-.p-sportip__banner-ribbon--sp {
-  display: none;
-}
-
-/* Ribbon banner SVG decoration */
-.p-sportip__banner-ribbon {
-  position: absolute;
-  left: 0%;
-  bottom: -38%;
-  transform: translateY(-50%);
-  height: 100%;
-  width: auto;
-  z-index: 2;
-  pointer-events: none;
+  z-index: 15;
 }
 
 /* Text content */
@@ -48,7 +29,7 @@
   top: 50%;
   left: 5.75rem;
   transform: translateY(-50%);
-  z-index: 3;
+  z-index: 15;
 }
 
 .p-sportip__banner-title {
@@ -73,6 +54,7 @@
 .p-sportip__breadcrumb {
   bottom: 4%;
   left: 5%;
+  z-index: 15;
 }
 
 /* ============================================
@@ -580,13 +562,6 @@
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
   /* BANNER */
-  .p-sportip__banner {
-    width: 100%;
-    height: 20rem;
-    position: relative;
-    overflow: visible;
-  }
-
   .p-sportip__banner-content {
     left: 3rem;
   }
@@ -643,25 +618,6 @@
   }
 
   /* ── BANNER ── */
-  .p-sportip__banner {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .p-sportip__banner-img--pc {
-    display: none;
-  }
-
-  .p-sportip__banner-img--sp {
-    display: block;
-  }
-
-  .p-sportip__banner-img--sp img {
-    width: auto;
-    height: 100%;
-  }
-
   .p-sportip__banner-content {
     top: 20%;
     left: 1.25rem;
@@ -675,19 +631,6 @@
 
   .p-sportip__banner-logo {
     display: none;
-  }
-
-  .p-sportip__banner-ribbon {
-    display: none;
-  }
-
-  .p-sportip__banner-ribbon--sp {
-    display: block;
-    position: absolute;
-    top: 20%;
-    left: auto;
-    right: -15%;
-    height: 50%;
   }
 
   .p-sportip__breadcrumb {
