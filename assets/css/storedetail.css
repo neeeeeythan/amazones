@@ -95,6 +95,7 @@
   flex-direction: column;
   gap: 1rem;
   color: #4f4f4f;
+  margin-bottom: 2rem;
 }
 
 .p-storedetail_topic_header p {
@@ -106,6 +107,10 @@
   font-size: 6.25rem;
   line-height: 7.5rem;
   font-weight: 400;
+}
+
+.p-storedetail_topic_break {
+  display: inline;
 }
 
 /* WHY CHOOSE US TITLE */
@@ -1313,7 +1318,7 @@
 }
 
 /* RESERVATION SECTION */
-.p-storedetail-reservation_flow__section{
+.p-storedetail-reservation_flow__section {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -1582,6 +1587,9 @@
   }
 
   /* ── Topic Headers ── */
+  .p-storedetail_topic_break {
+    display: block;
+  }
   .p-storedetail_topic_header h2,
   .p-storedetail_topic_header h3 {
     font-size: 3rem;
@@ -1945,9 +1953,20 @@
     display: none;
   }
 
+  .p-reservation-flow__content {
+    padding-top: 2rem;
+  }
+
   /* ── Free Trial ── */
   .p-storedetail_freetrial_speak_container01 {
     /* display: none; */
+    right: 5%;
+    top: 1rem;
+  }
+
+  .p-reservation-speak__person--01 {
+    width: auto;
+    height: 12rem;
   }
   .p-storedetail_freetrial_step_list {
     flex-direction: column;

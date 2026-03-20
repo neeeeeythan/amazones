@@ -1062,6 +1062,7 @@
 
   .p-reservation-step__card-title > p {
     font-size: 1.125rem;
+    line-height: 1.5rem;
   }
 
   .p-reservation-step__card-icon {
