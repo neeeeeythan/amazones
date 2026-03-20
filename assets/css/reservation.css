@@ -538,6 +538,7 @@
   position: absolute;
   right: 5%;
   top: -35%;
+  z-index: 3;
 }
 
 .p-reservation-speak__image--01 {
