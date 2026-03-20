@@ -1,11 +1,3 @@
-.p-medical__banner-img--pc {
-  display: block;
-}
-
-.p-medical__banner-img--sp {
-  display: none;
-}
-
 .p-medical__banner-logo--pc {
   display: flex;
   flex-direction: column;
@@ -38,24 +30,12 @@
   flex-direction: column;
   gap: 1.5rem;
   align-items: flex-start;
-  z-index: 2;
+  z-index: 15;
 }
 
 .p-medical__breadcrumb {
   bottom: 4%;
   left: 5%;
-}
-
-/* Ribbon banner SVG decoration */
-.p-medical__banner-ribbon {
-  position: absolute;
-  right: -2%;
-  top: -10%;
-  /* transform: translateY(-50%); */
-  height: 100%;
-  width: auto;
-  z-index: 0;
-  pointer-events: none;
 }
 
 /* ONLINE CONSULT */
@@ -65,10 +45,6 @@
 }
 
 .p-medical__online-consult-heading--sp {
-  display: none;
-}
-
-.p-medical__banner-ribbon--sp {
   display: none;
 }
 
@@ -561,12 +537,6 @@
     line-height: 1.6;
   }
 
-  .p-medical__banner-ribbon {
-    bottom: -30%;
-    left: -1%;
-    height: 80%;
-  }
-
   /* SECTION TITLE ROW — stack on tablet */
   .p-medical__section-title-row {
     flex-direction: column;
@@ -698,13 +668,6 @@
    MOBILE  (max-width: 767px)
    ────────────────────────────────────────── */
 @media (max-width: 767px) {
-  .p-medical__banner-img--pc {
-    display: none;
-  }
-  .p-medical__banner-img--sp {
-    display: block;
-  }
-
   .p-medical__banner-logo--pc {
     display: none;
   }
@@ -718,6 +681,7 @@
     left: 50%;
     transform: translate(-50%, 50%);
     width: max-content;
+    z-index: 15;
   }
 
   .p-medical__banner-heading {
@@ -750,19 +714,6 @@
     position: absolute;
     left: 1.25rem;
     bottom: 3%;
-  }
-
-  .p-medical__banner-ribbon {
-    display: none;
-  }
-
-  .p-medical__banner-ribbon--sp {
-    display: block;
-    position: absolute;
-    top: 20%;
-    left: auto;
-    right: -15%;
-    height: 50%;
   }
 
   /* SECTION HEADER */
