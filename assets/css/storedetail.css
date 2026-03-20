@@ -108,6 +108,43 @@
   font-weight: 400;
 }
 
+/* WHY CHOOSE US TITLE */
+.p-storedetail__whychooseus-title {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+  padding-bottom: 4.375rem;
+}
+
+.p-storedetail__whychooseus-title-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.875rem;
+}
+
+.p-storedetail__whychooseus-title-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.p-storedetail__whychooseus-title-heading {
+  font-size: 1.25rem;
+}
+
+.p-storedetail__whychooseus-title-desc,
+.p-storedetail__whychooseus-title-desc--sp {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .p-storedetail__whychooseus-title-desc--sp {
+    margin-bottom: 2.5rem;
+  }
+}
+
 /* PAYMENT LINKS */
 
 .p-storedetail_links-nav {
@@ -1568,27 +1605,27 @@
   }
 
   /* ── Why Choose Us title: stack header + icon row vertically ── */
-  .flex.items-center.gap-50px {
+  .p-storedetail__whychooseus-title {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     padding-bottom: 2rem;
   }
-  .flex.items-center.gap-50px > .flex.gap-3.items-center {
+  .p-storedetail__whychooseus-title-meta {
     flex-wrap: nowrap;
     align-items: center;
     gap: 1rem;
     margin-top: 0;
   }
-  .flex.items-center.gap-50px > .flex.gap-3.items-center > svg {
+  .p-storedetail__whychooseus-title-meta > svg {
     flex-shrink: 0;
     width: 40px;
     height: 34px;
   }
-  .flex.items-center.gap-50px > .flex.gap-3.items-center h3 {
+  .p-storedetail__whychooseus-title-heading {
     font-size: 1rem;
   }
-  .flex.items-center.gap-50px > .flex.gap-3.items-center p {
+  .p-storedetail__whychooseus-title-desc {
     font-size: 0.875rem;
   }
 
