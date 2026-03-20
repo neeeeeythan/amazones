@@ -1374,7 +1374,8 @@
    ═══════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
   /* Topic headers */
-  .p-storedetail_topic_header h2 {
+  .p-storedetail_topic_header h2,
+  .p-storedetail_topic_header h3 {
     font-size: 3.5rem;
   }
 
@@ -1532,9 +1533,10 @@
   }
 
   /* ── Topic Headers ── */
-  .p-storedetail_topic_header h2 {
+  .p-storedetail_topic_header h2,
+  .p-storedetail_topic_header h3 {
     font-size: 3rem;
-    line-height: 2rem;
+    line-height: 1;
   }
   .p-storedetail_topic_header p {
     font-size: 0.9rem;
@@ -1562,6 +1564,31 @@
     font-size: 1rem;
   }
   .flex.items-center.gap-70px > .flex.gap-3.items-center p {
+    font-size: 0.875rem;
+  }
+
+  /* ── Why Choose Us title: stack header + icon row vertically ── */
+  .flex.items-center.gap-50px {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .flex.items-center.gap-50px > .flex.gap-3.items-center {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .flex.items-center.gap-50px > .flex.gap-3.items-center > svg {
+    flex-shrink: 0;
+    width: 40px;
+    height: 34px;
+  }
+  .flex.items-center.gap-50px > .flex.gap-3.items-center h3 {
+    font-size: 1rem;
+  }
+  .flex.items-center.gap-50px > .flex.gap-3.items-center p {
     font-size: 0.875rem;
   }
 
