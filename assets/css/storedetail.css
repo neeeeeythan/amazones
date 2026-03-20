@@ -1812,6 +1812,11 @@
     height: 25rem;
     transform: translateX(-1rem);
   }
+  .p-storedetail_cta_btn {
+    width: fit-content;
+    white-space: nowrap;
+    bottom: -1.5rem;
+  }
 
   /* ── Why Choose Us ── */
   div:has(> .p-storedetail_whychooseus_text_container_left),
