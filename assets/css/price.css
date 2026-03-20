@@ -918,6 +918,10 @@
     gap: 3rem;
   }
 
+  .p-price__tier-desc {
+    text-align: start;
+  }
+
   /* TIER CARDS */
   .p-price__tiers {
     flex-direction: column;
