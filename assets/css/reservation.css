@@ -673,6 +673,11 @@
   object-fit: contain;
 }
 
+.p-reservation-speak__person--05-mobile,
+.p-reservation-speak__person--04-mobile {
+  display: none;
+}
+
 /* ============================================
    TABLET (max-width: 1024px)
    ============================================ */
@@ -871,7 +876,7 @@
   }
 
   .p-reservation-speak__container--04 {
-    right: 5rem;
+    right: 3rem;
   }
 
   .p-reservation-speak__container--05 {
@@ -880,13 +885,21 @@
 
   .p-reservation-speak__person--04,
   .p-reservation-speak__person--05 {
+    display: none;
+  }
+
+  .p-reservation-speak__person--05-mobile,
+  .p-reservation-speak__person--04-mobile {
+    display: block;
     height: 12rem;
+    width: auto;
+    object-fit: contain;
   }
 
   .p-reservation-speak__bubble--04 {
-    right: -5rem;
+    right: -1rem;
     top:-2rem;
-    width: 5rem;
+    width: 7rem;
     height: auto;
   }
 
