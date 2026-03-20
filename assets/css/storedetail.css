@@ -128,6 +128,12 @@
   margin-top: 1.875rem;
 }
 
+.p-storedetail__whychooseus-title-meta > svg {
+  width: 67px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
 .p-storedetail__whychooseus-title-content {
   display: flex;
   flex-direction: column;
@@ -1659,12 +1665,10 @@
   }
   .p-storedetail__whychooseus-title-meta > svg {
     flex-shrink: 0;
-    width: 40px;
-    height: 34px;
+    width: 90px;
+    height: 75px;
   }
-  .p-storedetail__whychooseus-title-heading {
-    font-size: 1rem;
-  }
+
   .p-storedetail__whychooseus-title-desc {
     font-size: 0.875rem;
   }
@@ -1980,7 +1984,7 @@
     display: block;
     position: absolute;
     top: 10px;
-    right: 20rem;
+    right: 16rem;
     z-index: 0;
     pointer-events: none;
     width: 80vw;
