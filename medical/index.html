@@ -15,6 +15,7 @@
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/faq.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css" />
 
     <!--MEDICAL CSS-->
     <link href="../assets/css/medical.css" rel="stylesheet" type="text/css" />
@@ -1321,7 +1322,123 @@
           </div>
           <!-- FAQ LIST -->
           <div class="flex flex-col gap-40px py-50">
-            <div id="医療FAQ" class="faq-container w-full"></div>
+            <div class="faq-container w-full">
+
+              <div class="reveal c-faq__accordion">
+                <input type="checkbox" id="m-q1" class="c-faq__container__toggle" />
+                <label for="m-q1" class="c-faq__accordion_header">
+                  <div class="flex flex-row items-center gap-20px">
+                    <img src="../assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
+                    <p class="fw-700 fs-16">保険は適用されますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="c-faq__accordion_toggle"></i>
+                  </div>
+                </label>
+                <div class="c-faq__accordion_inner">
+                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                    <img src="../assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
+                    <p class="fw-500 fs-16 lh-210">完全自費診療（保険外診療）のため、保険は適用されません。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reveal c-faq__accordion">
+                <input type="checkbox" id="m-q2" class="c-faq__container__toggle" />
+                <label for="m-q2" class="c-faq__accordion_header">
+                  <div class="flex flex-row items-center gap-20px">
+                    <img src="../assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
+                    <p class="fw-700 fs-16">他の薬と併用できますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="c-faq__accordion_toggle"></i>
+                  </div>
+                </label>
+                <div class="c-faq__accordion_inner">
+                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                    <img src="../assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
+                    <p class="fw-500 fs-16 lh-210">問診票に記載の上、診察時に医師にご相談ください。飲み合わせに問題のないお薬の処方を行わせていただきます。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reveal c-faq__accordion">
+                <input type="checkbox" id="m-q3" class="c-faq__container__toggle" />
+                <label for="m-q3" class="c-faq__accordion_header">
+                  <div class="flex flex-row items-center gap-20px">
+                    <img src="../assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
+                    <p class="fw-700 fs-16">ドラッグストアで購入できる薬との違いはなんですか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="c-faq__accordion_toggle"></i>
+                  </div>
+                </label>
+                <div class="c-faq__accordion_inner">
+                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                    <img src="../assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
+                    <p class="fw-500 fs-16 lh-210">医療用漢方製剤が医師の診察に基づいて選ばれるのに対して、ドラッグストアなどで販売している一般用漢方製剤は、服用者自身で選び、購入することができます。<br/>しかし、一般用漢方製剤は安全性を考慮して1日の服用量中の成分量を調整しており、多くの場合においては医療用漢方薬の50～80%程度の成分量しか含まれておりません。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reveal c-faq__accordion">
+                <input type="checkbox" id="m-q4" class="c-faq__container__toggle" />
+                <label for="m-q4" class="c-faq__accordion_header">
+                  <div class="flex flex-row items-center gap-20px">
+                    <img src="../assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
+                    <p class="fw-700 fs-16">処方薬の効果はどのくらいで出ますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="c-faq__accordion_toggle"></i>
+                  </div>
+                </label>
+                <div class="c-faq__accordion_inner">
+                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                    <img src="../assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
+                    <p class="fw-500 fs-16 lh-210">2～3ヶ月使用していただくと徐々に効果があらわれます。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reveal c-faq__accordion">
+                <input type="checkbox" id="m-q5" class="c-faq__container__toggle" />
+                <label for="m-q5" class="c-faq__accordion_header">
+                  <div class="flex flex-row items-center gap-20px">
+                    <img src="../assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
+                    <p class="fw-700 fs-16">薬が合わなかった時は、どうしたら良いですか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="c-faq__accordion_toggle"></i>
+                  </div>
+                </label>
+                <div class="c-faq__accordion_inner">
+                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                    <img src="../assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
+                    <p class="fw-500 fs-16 lh-210">薬が合わなかった場合は、いつでもLINEで相談できます。お薬の変更も可能です。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reveal c-faq__accordion">
+                <input type="checkbox" id="m-q6" class="c-faq__container__toggle" />
+                <label for="m-q6" class="c-faq__accordion_header">
+                  <div class="flex flex-row items-center gap-20px">
+                    <img src="../assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
+                    <p class="fw-700 fs-16">副作用のリスクはありますか？</p>
+                  </div>
+                  <div class="i_box">
+                    <i class="c-faq__accordion_toggle"></i>
+                  </div>
+                </label>
+                <div class="c-faq__accordion_inner">
+                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                    <img src="../assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
+                    <p class="fw-500 fs-16 lh-210">西洋薬のように飲み始めて数日間で治療が必要なほど大きな副作用が出るということはまれですが、吐き気や下痢といった副作用が起こる可能性はあります。</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>

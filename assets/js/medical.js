@@ -158,6 +158,7 @@ function renderMedicalSection(section, questions) {
 // ─────────────────────────────────────────────
 Object.keys(medicalContainers).forEach((section) => {
   const container = medicalContainers[section];
+  if (!container) return;
 
   container.addEventListener("click", (e) => {
     const header = e.target.closest(".accordion_header");
