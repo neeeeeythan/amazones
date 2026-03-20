@@ -8,31 +8,42 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      月会費ポイント還元 + 特典・優待 | Amazones（アマゾネス） | 初心者向け女性専用24時間ジム
+      月会費ポイント還元 + 特典・優待 | Amazones（アマゾネス） |
+      初心者向け女性専用24時間ジム
     </title>
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/point_redemption.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../assets/css/point_redemption.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- SCRIPTS -->
     <script src="../assets/js/global.js" defer></script>
-      <script src="../assets/js/top.js" defer></script>
-
+    <script src="../assets/js/top.js" defer></script>
   </head>
   <body>
     <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div
+        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+      >
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
-            width="159.97"
-            height="62.77"
+            width="159.97px"
+            height="62.77px"
+            class="amazones-header-logo"
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14"
+            >アマゾネス</a
+          >
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">
+            WOMEN ONLY24h GYM
+          </p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -50,7 +61,11 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
 
@@ -72,7 +87,11 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img
+                src="../assets/img/top/icon_arrow.svg"
+                alt="アイコン"
+                class="arrow-img"
+              />
             </div>
           </a>
         </div>
@@ -86,8 +105,18 @@
             id="floating-menu-btn"
             class="flex flex-col items-center gap-13px"
           >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
+            <img
+              src="../assets/img/top/icon_menu.svg"
+              alt="アイコン"
+              class="desktop-menu-icon"
+            />
             <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+            <button class="mobile-hamburger" aria-label="メニュー">
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+              <span class="mh-bar"></span>
+            </button>
           </div>
 
           <div
@@ -114,6 +143,64 @@
               />
             </div>
           </div>
+        </div>
+
+        <!--header mobile-->
+        <div class="mobile-header-overlay relative">
+          <div class="mobile-header-overlay-content">
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow.svg"
+                    alt="アイコン"
+                    class="arrow-img"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+            ©2026 Wellness Land Co., Ltd.
+          </p>
         </div>
       </div>
     </header>
@@ -172,393 +259,638 @@
 
       <!--SUMMARY CONTENT-->
 
-
-      <section class="point-redemption-content">
-        <div class="point-redemption-main-container">
-          <div class="point-redemption-content point-redemption-content1 w-full">
-            <div class="point-redemption-content1-wrapper flex flex-row gap-40px">
-              <div class="flex flex-col gap-40px items-start">
-                <h2 class="fw-700 fs-24">
-                  月会費がショップで使えるポイントに変わる<span
-                    class="fs-24 fw-700 text-lightBlue"
-                    >「月会費ポイント還元」+「特典・優待</span
-                  >
-                </h2>
-                <p class="fw-500 fs-16 lh-200">
-                  女性専用24時間ジムAmazones（アマゾネス）では、日頃のご利用への感謝を込めて、月会費に応じて当社のオンラインショップで使えるポイントを還元するサービスを開始しました。<br/>
-                 トレーニング用品やサプリメントなど、「キレイと健康」に役立つ商品がポイントでお得に手に入ります！ <br/>
-                  また会員様については特典として特別会員のランクをご用意しています。<br/>
-                  割引クーポンの付与やポイントアップキャンペーンなども実施予定なので、ぜひご利用ください
-                </p>
-              </div>
-              <img
-                src="../assets/img/top/img_topic3.webp"
-                alt="二親等以内のご家族なら、月会費が 最大半額 「家族割キャンペーン」"
-                height="221px"
-                width="auto"
-              />
-            </div>
-          </div>
-
-          <div class="point-redemption-content point-redemption-content2">
-            <div class="point-redemption-content2-wrapper flex flex-col gap-77px">
-              <div class="flex flex-col gap-18px">
-                <p class="fs-18 fw-500 text-black1">キャンペーン概要</p>
-                <h2 class="fs-100 lh-normal font-outfit fw-400">Summary</h2>
-              </div>
-              <div class = 'flex flex-col gap-50px items-start'>
-                <div class="w-full flex flex-row gap-60px">
-                <div class="summary-content-left w-full flex flex-col gap-50px">
-                 
-                 
-                  <div class="summary-content bg-white relative ">
-                    <p class="fs-16 fw-700 text-white summary-label">
-                      対象
-                    </p>
-                    <p class="fw-500 fs-16">
-                      女性専用24時間ジムAmazones（アマゾネス）会員限定
+      <section class="p-point">
+        <article class="p-point__container">
+          <!-- CONTENT 1 -->
+          <div class="p-point p-point__container__content01 w-full">
+            <div
+              class="p-point__container__content01-wrapper flex flex-row gap-40px"
+            >
+              <div class="flex gap-30px">
+                <!-- TEXT BLOCK -->
+                <div class="p-protein_campaign_block font-zen">
+                  <div class="p-protein_campaign_header">
+                    <p class="reveal">
+                      月会費がショップで使えるポイントに変わる<span
+                        >「月会費ポイント還元」+「特典・優待</span
+                      >
                     </p>
                   </div>
-
-                   <div class="summary-content bg-white relative ">
-                    <p class="fs-16 fw-700 text-white summary-label">
-                      付与のタイミング
-                    </p>
-                    <p class="fw-500 fs-16">
-                     月会費支払い完了後、翌月の月末までに反映されます。
-                    </p>
+                  <!-- IMG BLOCK SP-->
+                  <div class="sm-block">
+                    <img
+                      src="../assets/img/top/img_topic3.webp"
+                      width="100%"
+                    />
                   </div>
-                  <div class="summary-content bg-white relative ">
-                    <p class="fs-16 fw-700 text-white summary-label">
-                      ポイント利用可能商品
+                  <div class="reveal font-zen flex flex-col gap-4 fw-500">
+                    <p>
+                      女性専用24時間ジムAmazones（アマゾネス）では、日頃のご利用への感謝を込めて、月会費に応じて当社のオンラインショップで使えるポイントを還元するサービスを開始しました。
                     </p>
-                    <p class="fw-500 fs-16">
-                     全商品使用可能
+                    <p>
+                      トレーニング用品やサプリメントなど、「キレイと健康」に役立つ商品がポイントでお得に手に入ります！
                     </p>
-                  </div>
-                  <div class="summary-content bg-white relative ">
-                    <p class="fs-16 fw-700 text-white summary-label">
-                      項目タイトル
+                    <p>
+                      また会員様については特典として特別会員のランクをご用意しています
                     </p>
-                    <p class="fw-500 fs-16">
-                     テキストが入りますテキストが入ります
+                    <p>
+                      割引クーポンの付与やポイントアップキャンペーンなども実施予定なので、ぜひご利用ください。
                     </p>
                   </div>
                 </div>
+                <!-- IMG BLOCK PC -->
+                <div class="md-block">
+                  <img
+                    src="../assets/img/top/img_topic3.webp"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
-                <div class =  'summary-content-right w-full flex flex-col gap-50px'>
-                   <div class="summary-content-left w-full flex flex-col gap-50px">
-                  <div class="bg-white w-full relative flex flex-col gap-20px pt-70 pb-40">
-                    <p class="fs-16 fw-700 text-white summary-label">
-                      割引内容（料金例）
-                    </p>
-                    <div class="w-full pricing-table-wrapper">
-                      <table class="pricing-table">
-                        <thead>
-                          <tr>
-                            <th>月会費（オプション契約含む）</th>
-                            <th>進呈ポイント</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>6,000円未満</td>
-                            <td>100ポイント</td>
-                          </tr>
-                          <tr>
-                             <td>6,000円以上</td>
-                            <td>300ポイント</td>
-                          </tr>
-                          <tr>
-                             <td>8,000円以上</td>
-                            <td>400ポイント</td>
-                          </tr>
-                          <tr>
-                             <td>10,000円以上</td>
-                            <td>500ポイント</td>
-                          </tr>
-                          <tr>
-                             <td>20,000円以上</td>
-                            <td>1,000ポイント</td>
-                          </tr>
-                          <tr>
-                             <td>30,000円以上</td>
-                            <td>1,500ポイント</td>
-                          </tr>
-                          <tr>
-                             <td>40,000円以上</td>
-                            <td>2,000ポイント</td>
-                          </tr>
-                          <tr>
-                             <td>50,000円以上</td>
-                            <td>2,500ポイント</td>
-                          </tr>
-                        </tbody>
-                      </table>
+          <!-- CONTENT 2 -->
+          <div class="p-point p-point__container__content02">
+            <div
+              class="p-point__container__content02-wrapper flex flex-col gap-77px"
+            >
+              <hgroup
+                class="reveal section-header-wrapper flex flex-col gap-18px"
+              >
+                <p class="section-sub-text fs-18 fw-500 text-black1">
+                  キャンペーン概要
+                </p>
+                <h2
+                  class="section-header-text fs-100 lh-normal font-outfit fw-400"
+                >
+                  Summary
+                </h2>
+              </hgroup>
+
+              <div class="reveal-scale flex flex-col gap-50px items-start">
+                <div class="p-point__item01 w-full flex flex-row gap-60px">
+                  <!-- LEFT SUMMARY ITEMS -->
+                  <ul
+                    class="p-point__item_summary-left w-full flex flex-col gap-50px"
+                  >
+                    <li class="p-point__item_summary bg-white relative">
+                      <p
+                        class="fs-16 fw-700 text-white p-point__item_summary_label"
+                      >
+                        対象
+                      </p>
+                      <p class="fw-500 fs-16">
+                        女性専用24時間ジムAmazones（アマゾネス）会員限定
+                      </p>
+                    </li>
+                    <li class="p-point__item_summary bg-white relative">
+                      <p
+                        class="fs-16 fw-700 text-white p-point__item_summary_label"
+                      >
+                        付与のタイミング
+                      </p>
+                      <p class="fw-500 fs-16">
+                        月会費支払い完了後、翌月の月末までに反映されます。
+                      </p>
+                    </li>
+                    <li class="p-point__item_summary bg-white relative">
+                      <p
+                        class="fs-16 fw-700 text-white p-point__item_summary_label"
+                      >
+                        ポイント利用可能商品
+                      </p>
+                      <p class="fw-500 fs-16">全商品使用可能</p>
+                    </li>
+                    <li class="p-point__item_summary bg-white relative">
+                      <p
+                        class="fs-16 fw-700 text-white p-point__item_summary_label"
+                      >
+                        項目タイトル
+                      </p>
+                      <p class="fw-500 fs-16">
+                        テキストが入りますテキストが入ります
+                      </p>
+                    </li>
+                  </ul>
+
+                  <!-- RIGHT SUMMARY - PRICING TABLE -->
+                  <div
+                    class="p-point__item_summary-right w-full flex flex-col gap-50px"
+                  >
+                    <div
+                      class="p-point__item_summary-left w-full flex flex-col gap-50px"
+                    >
+                      <div
+                        class="bg-white w-full relative flex flex-col gap-20px pt-70 pb-40"
+                      >
+                        <p
+                          class="fs-16 fw-700 text-white p-point__item_summary_label"
+                        >
+                          割引内容（料金例）
+                        </p>
+                        <div class="w-full p-point__table-wrapper">
+                          <table class="p-point__table">
+                            <thead>
+                              <tr>
+                                <th>月会費（オプション契約含む）</th>
+                                <th>進呈ポイント</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>6,000円未満</td>
+                                <td>100ポイント</td>
+                              </tr>
+                              <tr>
+                                <td>6,000円以上</td>
+                                <td>300ポイント</td>
+                              </tr>
+                              <tr>
+                                <td>8,000円以上</td>
+                                <td>400ポイント</td>
+                              </tr>
+                              <tr>
+                                <td>10,000円以上</td>
+                                <td>500ポイント</td>
+                              </tr>
+                              <tr>
+                                <td>20,000円以上</td>
+                                <td>1,000ポイント</td>
+                              </tr>
+                              <tr>
+                                <td>30,000円以上</td>
+                                <td>1,500ポイント</td>
+                              </tr>
+                              <tr>
+                                <td>40,000円以上</td>
+                                <td>2,000ポイント</td>
+                              </tr>
+                              <tr>
+                                <td>50,000円以上</td>
+                                <td>2,500ポイント</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                </div>
-                </div>
 
-                <div class = 'summary-content summary-content-warn bg-white  relative w-full'>
-                  <p class="fs-16 fw-700 text-white summary-label summary-label-red">
-                     <img src="../assets/img/point-redemption/icon_warn.svg" height = '20px' width = '23.7px'>
-                     <span>ご注意ください</span>
+                <!-- WARNING BLOCK -->
+                <aside
+                  class="p-point__item_summary point__item_summary-warn bg-white relative w-full"
+                >
+                  <p
+                    class="fs-16 fw-700 text-white p-point__item_summary_label p-point__item_summary_label-red"
+                  >
+                    <img
+                      src="../assets/img/point-redemption/icon_warn.svg"
+                      height="20px"
+                      width="23.7px"
+                      alt="警告"
+                    />
+                    ご注意ください
                   </p>
-                   <p class="fw-500 fs-16">
-                      <ul>
-                        <li>月会費（オプションを含む）のお支払いが確認できない場合や未払いがある場合は、ポイントは付与されません。また、月会費以外のお支払いにはポイントは付与されません。</li>
-                        <li>月会費を2か月分まとめてお支払いいただいた場合は、翌月末までにポイントがまとめて付与されます。</li>
-                        <li>特典・優待を受けられる際は、必ずAmazones会員登録時に登録したメールアドレスで登録をお願いいたします。（メールアドレスが異なる場合は特典・優待を受けることができません）</li>
-                        <li>Amazonesサービス利用状況の審査は随時行っています。（反映までは10～30日が目安です）</li>
-                        <li>会員情報の切り替えが確認できない場合は、お手数ですが<a href  =  '#' class = 'text-link'>お問い合わせフォーム</a>よりご連絡いただけますと幸いです。</li>
-                      </ul>
-                    </p>
-                </div>
+                  <ul class="fw-500 fs-16">
+                    <li>
+                      月会費（オプションを含む）のお支払いが確認できない場合や未払いがある場合は、ポイントは付与されません。また、月会費以外のお支払いにはポイントは付与されません。
+                    </li>
+                    <li>
+                      月会費を2か月分まとめてお支払いいただいた場合は、翌月末までにポイントがまとめて付与されます。
+                    </li>
+                    <li>
+                      特典・優待を受けられる際は、必ずAmazones会員登録時に登録したメールアドレスで登録をお願いいたします。（メールアドレスが異なる場合は特典・優待を受けることができません）
+                    </li>
+                    <li>
+                      Amazonesサービス利用状況の審査は随時行っています。（反映までは10～30日が目安です）
+                    </li>
+                    <li>
+                      会員情報の切り替えが確認できない場合は、お手数ですが<a
+                        href="#"
+                        class="text-link"
+                        >お問い合わせフォーム</a
+                      >よりご連絡いただけますと幸いです。
+                    </li>
+                  </ul>
+                </aside>
               </div>
-             
             </div>
-          </div>    
-        </div>
+          </div>
+        </article>
       </section>
 
-
       <!-- RECOMMENDED SECTION-->
-      <section class="recommended-container topic-container flex flex-col gap-52px relative mt-40 pb-120">
-          <div class="flex flex-col gap-18px pl-240">
-            <p class="fs-18 fw-500 text-black1">オススメ商品</p>
-            <h2 class="fs-100 lh-normal font-outfit text-black1 fw-400">
-              Recommended
-            </h2>
-          </div>
+      <section
+        class="p-recommended topic-container flex flex-col gap-52px relative mt-40 pb-120"
+      >
+        <div
+          class="reveal section-header-wrapper flex flex-col gap-18px pl-240"
+        >
+          <p class="section-sub-text fs-18 fw-500 text-black1">オススメ商品</p>
+          <h2
+            class="section-header-text fs-100 lh-normal font-outfit text-black1 fw-400"
+          >
+            Recommended
+          </h2>
+        </div>
 
-          <div class="relative" data-slider>
-
-            <ul class="slider-wrapper topic-slider__track" data-slider-track>
-              <li>
-                <div class="slide">
-                  <div class="slide-content"></div>
-                </div>
-              </li>
-              <li>
-                <div class="slide">
-                  <div class="slide-content relative">
-                    <img
-                      src="../assets/img/point-redemption/img_recommendation1.webp"
-                      alt="アマゾンのおすすめ"
-                    />
-                    <a href="" class = 'btn-red fs-16 fw-700 recommended-btn'>
-                      ご購入はこちら
-                      <img src="../assets/img/common/icon_arrow_white.svg">
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="slide">
-                  <div class="slide-content relative">
-                    <img
-                      src="../assets/img/point-redemption/img_recommendation2.webp"
-                      alt="アマゾンのおすすめ"
-                    />
-                     <a href="" class = 'btn-red fs-16 fw-700 recommended-btn'>
-                      ご購入はこちら
-                      <img src="../assets/img/common/icon_arrow_white.svg">
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="slide">
-                  <div class="slide-content relative">
-                    <img
-                      src="../assets/img/point-redemption/img_recommendation3.webp"
-                      alt="アマゾンのおすすめ"
-                    />
-                     <a href="" class = 'btn-red fs-16 fw-700 recommended-btn'>
-                      ご購入はこちら
-                      <img src="../assets/img/common/icon_arrow_white.svg">
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="slide ">
-                  <div class="slide-content relative">
-                    <img
-                      src="../assets/img/point-redemption/img_recommendation4.webp"
-                      alt="アマゾンのおすすめ"
-                    />
-                     <a href="" class = 'btn-red fs-16 fw-700 recommended-btn'>
-                      ご購入はこちら
-                      <img src="../assets/img/common/icon_arrow_white.svg">
-                    </a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-            <div
-              class="pl-240 topic-buttons-container flex flex-row gap-30px items-center mt-30"
-            >
-              <div class="topic-slider__buttons flex flex-row gap-10px">
-                <div class="btn-green-wrapper" data-slider-prev disabled>
+        <div class="relative" data-slider>
+          <ul class="slider-wrapper topic-slider__track" data-slider-track>
+            <li>
+              <div class="slide">
+                <div class="slide-content"></div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <div class="slide-content relative">
                   <img
-                    src="../assets/img/top/icon_arrow.svg"
-                    alt="アイコン"
-                    style="transform: scaleX(-1)"
+                    src="../assets/img/point-redemption/img_recommendation1.webp"
+                    alt="アマゾンのおすすめ"
                   />
-                </div>
-                <div class="btn-green-wrapper" data-slider-next>
-                  <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+                  <a href="" class="btn-red fs-16 fw-700 p-recommended_btn">
+                    ご購入はこちら
+                    <img src="../assets/img/common/icon_arrow_white.svg" />
+                  </a>
                 </div>
               </div>
-              <div class="topic-slider__dots" data-slider-dots></div>
-            </div>
+            </li>
+            <li>
+              <div class="slide">
+                <div class="slide-content relative">
+                  <img
+                    src="../assets/img/point-redemption/img_recommendation2.webp"
+                    alt="アマゾンのおすすめ"
+                  />
+                  <a href="" class="btn-red fs-16 fw-700 p-recommended_btn">
+                    ご購入はこちら
+                    <img src="../assets/img/common/icon_arrow_white.svg" />
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <div class="slide-content relative">
+                  <img
+                    src="../assets/img/point-redemption/img_recommendation3.webp"
+                    alt="アマゾンのおすすめ"
+                  />
+                  <a href="" class="btn-red fs-16 fw-700 p-recommended_btn">
+                    ご購入はこちら
+                    <img src="../assets/img/common/icon_arrow_white.svg" />
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <div class="slide-content relative">
+                  <img
+                    src="../assets/img/point-redemption/img_recommendation4.webp"
+                    alt="アマゾンのおすすめ"
+                  />
+                  <a href="" class="btn-red fs-16 fw-700 p-recommended_btn">
+                    ご購入はこちら
+                    <img src="../assets/img/common/icon_arrow_white.svg" />
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
 
-            <!-- Dots Navigator -->
+          <div
+            class="pl-240 topic-buttons-container flex flex-row gap-30px items-center mt-30"
+          >
+            <div class="topic-slider__buttons flex flex-row gap-10px">
+              <div class="btn-green-wrapper" data-slider-prev disabled>
+                <img
+                  src="../assets/img/top/icon_arrow.svg"
+                  alt="アイコン"
+                  style="transform: scaleX(-1)"
+                />
+              </div>
+              <div class="btn-green-wrapper" data-slider-next>
+                <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              </div>
+            </div>
+            <div class="topic-slider__dots" data-slider-dots></div>
           </div>
+
+          <!-- Dots Navigator -->
+        </div>
       </section>
 
       <!--HOSPITALITY SECTION-->
-      <section class = 'hospitality-section'>
-        <div class = 'hospitality-main-container'>
-          <div class="flex flex-col gap-18px ">
-            <p class="fs-18 fw-500 text-black1">特典・優待について</p>
-            <h2 class="fs-100 lh-normal font-outfit text-black1 fw-400">
+      <section class="p-hospitality">
+        <div class="p-hospitality__container">
+          <hgroup class="reveal section-header-wrapper flex flex-col gap-18px">
+            <p class="section-sub-text fs-18 fw-500 text-black1">
+              特典・優待について
+            </p>
+            <h2
+              class="section-header-text fs-100 lh-normal font-outfit text-black1 fw-400"
+            >
               Hospitality
             </h2>
-          </div>
-          <div class  = 'w-full flex flex-col gap-62px items-start'>
-            <p class = 'fs-16 fw-500 lh-200'>AMAZONES ONLINE SHOPで一般会員よりもポイント還元率が高く、お得なお買い物が可能です。<br/>
-            ゴールド会員にランクアップした場合のポイント還元率は一般会員（ノーマル）と比較して10倍となっております。
-            </p>
-            <div class = 'w-full flex flex-col gap-60px items-start'>
-              <div class = 'flex flex-col items-start gap-30px w-full'>
-                <div class = 'flex flex-row gap-30px items-center justify-center'>
-                  <img src="../assets/img/point-redemption/icon_hospitality1.svg" alt="Amazones会員ランク">
-                  <p class = 'fs-24 fw-700'>Amazones会員ランク</p>
-                </div>
-                  <div class = 'hospitality-item-wrapper'>
-                    <div>
-                      <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label'>ゴールドランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>ポイント還元率　<span class = 'text-lightPink fw-700 fs-16'>10%</span></p>
-                    </div>
-                    <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label'>ゴールドランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>
-                        当日から過去180日の合計購入金額が　<br/>
-                        150,000円未満（149,999円以下）<br/>
-                        <span class = 'text-lightPink fw-700 fs-16'>シルバーランクへダウン↓</span></p>
-                    </div>
-                    </div>
-                    <div>
-                      <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label'>シルバーランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>ポイント還元率　<span class = 'text-lightPink  fw-700 fs-16'>5%</span></p>
-                    </div>
-                    <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label'>ランクアップ↑条件</p>
-                      <p class = 'fw-16 fw-500 lh-200'>
-                        当日から過去180日の合計購入金額が　<br/>
-                        150,000円以上<br/>
-                        <span class = 'text-lightPink fw-700 fs-16'>ゴールドランクへアップ↑</span></p>
-                    </div>
-                    </div>
-                    <div>
-                      <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label'>ノーマルランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>ポイント還元率<span class = 'text-lightPink ml-20 fw-700 fs-16'>3%</span></p>
-                    </div>
-                    <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label'>ランクアップ↑条件</p>
-                      <p class = 'fw-16 fw-500 lh-200'>
-                       当日から過去180日の合計購入金額が　<br/>
-                        50,000円以上<br/>
-                        <span class = 'text-lightPink fw-700 fs-16'>シルバーランクへアップ↑</span></p>
-                    </div>
-                    </div>
-                  </div>
-              </div>
+          </hgroup>
 
-               <div class = 'flex flex-col items-start gap-30px w-full'>
-                <div class = 'flex flex-row gap-30px items-center justify-center'>
-                  <img src="../assets/img/point-redemption/icon_hospitality2.svg" alt="Amazones会員ランク">
-                  <p class = 'fs-24 fw-700'>一般会員ランク</p>
+          <div class="w-full flex flex-col gap-62px items-start">
+            <p class="reveal fs-16 fw-500 lh-200">
+              AMAZONES ONLINE
+              SHOPで一般会員よりもポイント還元率が高く、お得なお買い物が可能です。<br />
+              ゴールド会員にランクアップした場合のポイント還元率は一般会員（ノーマル）と比較して10倍となっております。
+            </p>
+
+            <div class="w-full flex flex-col gap-60px items-start">
+              <!-- AMAZONES MEMBER RANK -->
+              <article
+                class="reveal-scale flex flex-col items-start gap-30px w-full"
+              >
+                <div class="flex flex-row gap-30px items-center justify-center">
+                  <img
+                    src="../assets/img/point-redemption/icon_hospitality1.svg"
+                    alt="Amazones会員ランク"
+                  />
+                  <p class="fs-24 fw-700">Amazones会員ランク</p>
                 </div>
-                  <div class = 'hospitality-item-wrapper'>
-                    <div>
-                      <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label hospitality-label2'>ゴールドランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>ポイント還元率<span class = 'text-lightPink ml-20 fw-700 fs-16'>5%</span></p>
+                <ul class="p-hospitality__item_wrapper">
+                  <li>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label"
+                      >
+                        ゴールドランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        ポイント還元率　<b class="text-lightPink fw-700 fs-16"
+                          >10%</b
+                        >
+                      </p>
                     </div>
-                    <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label  hospitality-label2'>ゴールドランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>
-                        当日から過去180日の合計購入金額が　<br/>
-                        150,000円未満（149,999円以下）<br/>
-                        <span class = 'text-lightPink fw-700 fs-16'>シルバーランクへダウン↓</span></p>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label"
+                      >
+                        ゴールドランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        当日から過去180日の合計購入金額が　<br />
+                        150,000円未満（149,999円以下）<br />
+                        <b class="text-lightPink fw-700 fs-16"
+                          >シルバーランクへダウン↓</b
+                        >
+                      </p>
                     </div>
+                  </li>
+                  <li>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label"
+                      >
+                        シルバーランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        ポイント還元率　<b class="text-lightPink fw-700 fs-16"
+                          >5%</b
+                        >
+                      </p>
                     </div>
-                    <div>
-                      <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label hospitality-label2'>シルバーランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>ポイント還元率<span class = 'text-lightPink ml-20 fw-700 fs-16'>3%</span></p>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label"
+                      >
+                        ランクアップ↑条件
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        当日から過去180日の合計購入金額が　<br />
+                        150,000円以上<br />
+                        <b class="text-lightPink fw-700 fs-16"
+                          >ゴールドランクへアップ↑</b
+                        >
+                      </p>
                     </div>
-                    <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label hospitality-label2'>ランクアップ↑条件</p>
-                      <p class = 'fw-16 fw-500 lh-200'>
-                       当日から過去180日の合計購入金額が　<br/>
-                        150,000円以上<br/>
-                        <span class = 'text-lightPink fw-700 fs-16'>ゴールドランクへアップ↑</span></p>
+                  </li>
+                  <li>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label"
+                      >
+                        ノーマルランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        ポイント還元率<b
+                          class="text-lightPink ml-20 fw-700 fs-16"
+                          >3%</b
+                        >
+                      </p>
                     </div>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label"
+                      >
+                        ランクアップ↑条件
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        当日から過去180日の合計購入金額が　<br />
+                        50,000円以上<br />
+                        <b class="text-lightPink fw-700 fs-16"
+                          >シルバーランクへアップ↑</b
+                        >
+                      </p>
                     </div>
-                    <div>
-                      <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label hospitality-label2'>ノーマルランク</p>
-                      <p class = 'fw-16 fw-500 lh-200'>ポイント還元率<span class = 'text-lightPink ml-20 fw-700 fs-16'>1%</span></p>
+                  </li>
+                </ul>
+              </article>
+
+              <!-- GENERAL MEMBER RANK -->
+              <article
+                class="reveal-scale flex flex-col items-start gap-30px w-full"
+              >
+                <div class="flex flex-row gap-30px items-center justify-center">
+                  <img
+                    src="../assets/img/point-redemption/icon_hospitality2.svg"
+                    alt="一般会員ランク"
+                  />
+                  <p class="fs-24 fw-700">一般会員ランク</p>
+                </div>
+                <ul class="p-hospitality__item_wrapper">
+                  <li>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
+                      >
+                        ゴールドランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        ポイント還元率<b
+                          class="text-lightPink ml-20 fw-700 fs-16"
+                          >5%</b
+                        >
+                      </p>
                     </div>
-                    <div class = 'hospitality-item w-full'>
-                      <p class = 'text-white fs-16 fw-700 hospitality-label hospitality-label2'>ランクアップ↑条件</p>
-                      <p class = 'fw-16 fw-500 lh-200'>
-                       当日から過去180日の合計購入金額が　<br/>
-                        50,000円以上<br/>
-                        <span class = 'text-lightPink fw-700 fs-16'>シルバーランクへアップ↑</span></p>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
+                      >
+                        ゴールドランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        当日から過去180日の合計購入金額が　<br />
+                        150,000円未満（149,999円以下）<br />
+                        <b class="text-lightPink fw-700 fs-16"
+                          >シルバーランクへダウン↓</b
+                        >
+                      </p>
                     </div>
+                  </li>
+                  <li>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
+                      >
+                        シルバーランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        ポイント還元率<b
+                          class="text-lightPink ml-20 fw-700 fs-16"
+                          >3%</b
+                        >
+                      </p>
                     </div>
-                  </div>
-              </div>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
+                      >
+                        ランクアップ↑条件
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        当日から過去180日の合計購入金額が　<br />
+                        150,000円以上<br />
+                        <b class="text-lightPink fw-700 fs-16"
+                          >ゴールドランクへアップ↑</b
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
+                      >
+                        ノーマルランク
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        ポイント還元率<b
+                          class="text-lightPink ml-20 fw-700 fs-16"
+                          >1%</b
+                        >
+                      </p>
+                    </div>
+                    <div class="p-hospitality__item w-full">
+                      <p
+                        class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
+                      >
+                        ランクアップ↑条件
+                      </p>
+                      <p class="fw-16 fw-500 lh-200">
+                        当日から過去180日の合計購入金額が　<br />
+                        50,000円以上<br />
+                        <b class="text-lightPink fw-700 fs-16"
+                          >シルバーランクへアップ↑</b
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
             </div>
           </div>
         </div>
-
       </section>
 
-
       <!--AMAXZONES ONLINE SHOP BANNER-->
-      <section class = 'online-shop-section relative'>
-        <div class   = 'relative w-full'>
-           <img src="../assets/img/point-redemption/img_online_shop.webp" alt="アマゾネスオンラインショップ" class = 'online-shop-img'>
-          <div class = 'online-shop-desc flex flex-col gap-52px relative'>
-            <img src="../assets/img/top/img_triangle.svg" class = 'shop-triangle'>
-            <h2 class = 'font-outfit fs-60'>Amazones Online Shop</h2>
-            <div class = 'flex flex-col gap-36px'>
-              <p class = 'fw-700 fs-20'>女性の健康と美を支えるショップサイト</p>
-              <p class = 'fs-500 fs-15 lh-200'>「女性の輝く未来をつくりたい」というスローガンのもと、<br/>フィットネスを通じて女性の健康と美をサポートしています。</p>
+      <!-- <section class="online-shop-section relative">
+        <div class="relative w-full">
+          <img
+            src="../assets/img/point-redemption/img_online_shop.webp"
+            alt="アマゾネスオンラインショップ"
+            class="online-shop-img"
+          />
+          <div class="online-shop-desc flex flex-col gap-52px relative">
+            <img
+              src="../assets/img/top/img_triangle.svg"
+              class="shop-triangle"
+            />
+            <h2 class="font-outfit fs-60">Amazones Online Shop</h2>
+            <div class="flex flex-col gap-36px">
+              <p class="fw-700 fs-20">女性の健康と美を支えるショップサイト</p>
+              <p class="fs-500 fs-15 lh-200">
+                「女性の輝く未来をつくりたい」というスローガンのもと、<br />フィットネスを通じて女性の健康と美をサポートしています。
+              </p>
             </div>
-            
+
             <a href="#" class="btn-light-blue footer-blue-btn">
               <p class="text-white fs-16 font-outfit">View More</p>
               <img src="../assets/img/top/icon_videos.svg" alt="アイコン" />
             </a>
           </div>
         </div>
-       
+      </section> -->
 
+      <section class="p-online-shop">
+        <!--TOP DR AMAZONES-->
+        <div
+          class="dr-amazones-container bg-linearLightGray flex flex-row items-center relative"
+        >
+          <picture>
+            <source
+              srcset="../assets/img/point-redemption/img_online_shop_sp.webp"
+              media="(max-width:767px)"
+            />
+            <img
+              src="../assets/img/point-redemption/img_online_shop.webp"
+              alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
+              class="drAmazones-pic"
+            />
+          </picture>
+
+          <div class="flex flex-col items-start dr-amazones-section">
+            <img
+              src="../assets/img/top/img_triangle.svg"
+              alt="三角形のアイコン"
+              class="triangle-icon"
+            />
+            <div class="flex flex-col gap-50px">
+              <!-- <div class="flex flex-col gap-20px">
+                  <p class="reveal fs-18 fw-500">ドクターアマゾネス</p>
+                  <img
+                    src="../assets/img/top/img_drAmazonesClinic.svg"
+                    alt="[提携医療機関]  東京銀座 NEW AGE CLINIC"
+                    class = 'reveal dr-amazones-label'
+                  />
+                </div> -->
+              <h2 class="reveal font-outfit fs-60 mt-20">
+                Amazones Online Shop
+              </h2>
+              <div class="reveal flex flex-col gap-35px">
+                <p class="fw-700 fs-20 lh-200">
+                  女性の健康と美を支えるショップサイト
+                </p>
+                <p class="fw-500 fs-16 lh-200">
+                  女性の輝く未来をつくりたい」というスローガンのもと、<br />
+                  フィットネスを通じて女性の健康と美をサポートしています。
+                </p>
+              </div>
+            </div>
+
+            <a href="#" class="btn-light-blue mt-40 dr-amazones-btn">
+              <p class="text-white fs-16 font-outfit">View More</p>
+              <img src="../assets/img/top/icon_videos.svg" alt="アイコン" />
+            </a>
+          </div>
+        </div>
       </section>
-
     </main>
 
     <footer class="I-footer w-full flex flex-col gap-0px">

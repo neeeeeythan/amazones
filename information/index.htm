@@ -14,6 +14,8 @@
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css" />
+
     <link
       href="../assets/css/information.css"
       rel="stylesheet"
@@ -22,21 +24,21 @@
 
     <!-- SCRIPTS -->
     <script src="../assets/js/global.js" defer></script>
-    <script src="../assets/js/information.js" defer></script>
   </head>
   <body>
     <!--HEADER-->
     <header class="I-header">
-      <div class="pl-40 pr-30 py-18 flex flex-row items-center justify-between">
+      <div class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
         <div class="flex flex-row items-center flex-1 gap-24px">
           <img
             src="../assets/img/top/icon_logo.svg"
             alt="アマゾネス"
-            width="159.97"
-            height="62.77"
+            width="159.97px"
+            height="62.77px"
+            class = 'amazones-header-logo'
           />
-          <a href="#" class="text-black1 fw-500 fs-14">アマゾネス</a>
-          <p class="font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
+          <a href="#" class="header-text text-black1 fw-500 fs-14">アマゾネス</a>
+          <p class="header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
 
         <div class="flex flex-row items-center gap-15px">
@@ -54,7 +56,7 @@
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
             </div>
           </a>
 
@@ -76,39 +78,39 @@
                   体験予約はこちら
                 </p>
               </div>
-              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" />
+              <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
             </div>
           </a>
         </div>
 
-        <!--FLOATING HEADER MENU-->
+       <!--FLOATING HEADER MENU-->
         <div
           id="header-floating-menu"
           class="header-floating-menu flex flex-col items-center justify-between relative"
         >
-          <div
-            id="floating-menu-btn"
-            class="flex flex-col items-center gap-13px"
-          >
-            <img src="../assets/img/top/icon_menu.svg" alt="アイコン" />
-            <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
-          </div>
+        <div
+          id="floating-menu-btn"
+          class="flex flex-col items-center gap-13px"
+        >
+          <img src="../assets/img/top/icon_menu.svg" alt="アイコン" class="desktop-menu-icon" />
+          <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
+
+          <button class="mobile-hamburger" aria-label="メニュー">
+            <span class="mh-bar"></span>
+            <span class="mh-bar"></span>
+            <span class="mh-bar"></span>
+          </button>
+        </div>
 
           <div
             id="floating-menu-content"
             class="floating-menu-content cursor-pointer"
           >
-            <p
-              class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500"
-            >
+            <p class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500">
               ©2026 Wellness Land Co., Ltd.
             </p>
-            <div
-              class="flex flex-col items-center gap-8px justify-center bg-base-black1"
-            >
-              <p
-                class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover"
-              >
+            <div class="flex flex-col items-center gap-8px justify-center bg-base-black1">
+              <p class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover">
                 SCROLL DOWN
               </p>
               <img
@@ -119,10 +121,60 @@
             </div>
           </div>
         </div>
+
+      
+        <!--header mobile-->
+        <div class = 'mobile-header-overlay relative'>
+          <div class = 'mobile-header-overlay-content'>
+            <div class="reveal-scale flex flex-col items-center gap-15px">
+              <a
+                href="#"
+                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_search.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700">全店相互利用可能</p>
+                    <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
+                  </div>
+                  <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="header-btn sp-header-btn  bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+              >
+                <div
+                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                >
+                  <img src="../assets/img/top/icon_24.svg" alt="アイコン" />
+                </div>
+                <div class="flex flex-row items-end gap-5px">
+                  <div class="flex flex-col items-start gap-8px">
+                    <p class="text-white fs-14 fw-700 text-center">
+                      24時間WEB予約可能
+                    </p>
+                    <p class="text-white fs-15 fw-700 text-center">
+                      体験予約はこちら
+                    </p>
+                  </div>
+                  <img src="../assets/img/top/icon_arrow.svg" alt="アイコン" class = 'arrow-img'/>
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="trademark fs-12 font-outfit fw-500">
+              ©2026 Wellness Land Co., Ltd.
+            </p>
       </div>
     </header>
 
-    <main class="bg-white">
+    <main class="p-newspage bg-white">
       <!--HERO BANNER-->
       <section class="banner-section">
         <div class="p-banner">
@@ -175,23 +227,37 @@
         class="news-section w-full flex flex-col pt-100 relative"
         id="news-section"
       >
-       
-          
-
         <!-- news tab container 1-->
         <div class="news-tabs-container flex flex-col gap-30px">
-          <div class  =  'button-filter-wrapper flex flex-row items-center justify-center gap-15px w-fit-content'>
-              <button>2026年 <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon"></button>
-              <button>2025年 <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon"></button>
-              <button>2024年 <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon"></button>
+          <div
+            class="p-newspage__btnwrap flex flex-row items-center justify-center gap-15px w-fit-content"
+          >
+            <button class =  'active-year'>
+              2026年
+              <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon" />
+            </button>
+            <button>
+              2025年
+              <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon" />
+            </button>
+            <button>
+              2024年
+              <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon" />
+            </button>
           </div>
           <!-- ADDED: data-items-per-page="10" -->
+          <!-- Tabs Widget -->
           <div
             data-widget="tabs"
             data-tabs-animate="400, 80"
-            data-items-per-page="10"
+            class="reveal-scale"
           >
-            <div class="tabs-controls" data-type="fancy">
+            <!-- Tab Controls -->
+            <nav
+              class="tabs-controls"
+              data-type="fancy"
+              aria-label="ニュースカテゴリ"
+            >
               <button
                 type="button"
                 class="tabs-control"
@@ -224,557 +290,577 @@
               >
                 その他のお知らせ
               </button>
-            </div>
+            </nav>
+
+            <!-- Tab Panels -->
             <div class="tabs-panels">
-              <!--Tabs Panel1 - すべて - ADDED: data-current-page="1" -->
-              <div
+              <!-- Panel 1: すべて -->
+              <article
                 class="tabs-panel flex flex-col gap-20px items-start"
                 id="fancy-first"
                 aria-selected="true"
-                data-current-page="1"
               >
-                <!--Panel Content1-->
-                <div class="panel-content">
+                <a href="#" class="panel-content">
                   <div
-                    class="flex flex-row justify-between items-center w-full"
+                    class="news-info-container flex flex-row gap-25px items-center"
                   >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
+                    <p class="fw-500 fs-14 news-label">新店舗情報</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
                     >
-                      <p class="fw-500 fs-14 news-label">新店舗情報</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります
+                    </p>
                   </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">プレスリリース</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content3-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-              </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります
+                  </p>
+                </a>
 
-              <!--Tabs Panel2 - 新店舗情報 - ADDED: data-current-page="1" -->
-              <div
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">プレスリリース</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります。こちらにお知らせタイトルが入ります。
+                  </p>
+                </a>
+              </article>
+
+              <!-- Panel 2: 新店舗情報 -->
+              <article
                 class="tabs-panel flex flex-col gap-20px items-start"
                 id="fancy-second"
                 aria-selected="false"
-                data-current-page="1"
               >
-                <!--Panel Content1-->
-                <div class="panel-content">
+                <a href="#" class="panel-content">
                   <div
-                    class="flex flex-row justify-between items-center w-full"
+                    class="news-info-container flex flex-row gap-25px items-center"
                   >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
+                    <p class="fw-500 fs-14 news-label">新店舗情報</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
                     >
-                      <p class="fw-500 fs-14 news-label">新店舗情報</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        こちらにお知らせタイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      こちらにお知らせタイトルが入ります
+                    </p>
                   </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">新店舗情報</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.01
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        2つ目の新店舗情報タイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">新店舗情報</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.01
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        2つ目の新店舗情報タイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">新店舗情報</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.01
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        2つ目の新店舗情報タイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">新店舗情報</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.01
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        2つ目の新店舗情報タイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">新店舗情報</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.01
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        2つ目の新店舗情報タイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-              </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    こちらにお知らせタイトルが入ります
+                  </p>
+                </a>
 
-              <!--Tabs Panel3 - プレスリリース - ADDED: data-current-page="1" -->
-              <div
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">新店舗情報</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-01"
+                      >2026.00.01</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      2つ目の新店舗情報タイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    2つ目の新店舗情報タイトルが入ります
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">新店舗情報</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-01"
+                      >2026.00.01</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      2つ目の新店舗情報タイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    2つ目の新店舗情報タイトルが入ります
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">新店舗情報</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-01"
+                      >2026.00.01</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      2つ目の新店舗情報タイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    2つ目の新店舗情報タイトルが入ります
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">新店舗情報</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-01"
+                      >2026.00.01</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      2つ目の新店舗情報タイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    2つ目の新店舗情報タイトルが入ります
+                  </p>
+                </a>
+
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">新店舗情報</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-01"
+                      >2026.00.01</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      2つ目の新店舗情報タイトルが入ります
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    2つ目の新店舗情報タイトルが入ります
+                  </p>
+                </a>
+              </article>
+
+              <!-- Panel 3: プレスリリース -->
+              <article
                 class="tabs-panel flex flex-col gap-20px items-start"
                 id="fancy-third"
                 aria-selected="false"
-                data-current-page="1"
               >
-                <!--Panel Content1-->
-                <div class="panel-content">
+                <a href="#" class="panel-content">
                   <div
-                    class="flex flex-row justify-between items-center w-full"
+                    class="news-info-container flex flex-row gap-25px items-center"
                   >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
+                    <p class="fw-500 fs-14 news-label">プレスリリース</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
                     >
-                      <p class="fw-500 fs-14 news-label">プレスリリース</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        プレスリリースのお知らせが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      プレスリリースのお知らせが入ります
+                    </p>
                   </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">プレスリリース</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.05
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        2つ目のプレスリリースタイトル
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-              </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    プレスリリースのお知らせが入ります
+                  </p>
+                </a>
 
-              <!--Tabs Panel4 - その他のお知らせ - ADDED: data-current-page="1" -->
-              <div
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">プレスリリース</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-05"
+                      >2026.00.05</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      2つ目のプレスリリースタイトル
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    2つ目のプレスリリースタイトル
+                  </p>
+                </a>
+              </article>
+
+              <!-- Panel 4: その他のお知らせ -->
+              <article
                 class="tabs-panel flex flex-col gap-20px items-start"
                 id="fancy-fourth"
                 aria-selected="false"
-                data-current-page="1"
               >
-                <!--Panel Content1-->
-                <div class="panel-content">
+                <a href="#" class="panel-content">
                   <div
-                    class="flex flex-row justify-between items-center w-full"
+                    class="news-info-container flex flex-row gap-25px items-center"
                   >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-00"
+                      >2026.00.00</time
                     >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.00
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">
-                        その他のお知らせタイトルが入ります
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      その他のお知らせタイトルが入ります
+                    </p>
                   </div>
-                </div>
-                <!--Panel Content2-->
-                <div class="panel-content">
-                  <div
-                    class="flex flex-row justify-between items-center w-full"
-                  >
-                    <div
-                      class="news-info-container flex flex-row gap-25px items-center"
-                    >
-                      <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
-                      <p class="fs-16 fw-500 font-outfit text-lightBlue">
-                        2026.00.10
-                      </p>
-                      <p class="fw-500 fs-16 ls-20">臨時休業のお知らせ</p>
-                    </div>
-                    <img
-                      src="../assets/img/top/icon_arrow_blue.svg"
-                      alt="アイコン"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    その他のお知らせタイトルが入ります
+                  </p>
+                </a>
 
-            <!--PAGINATION-->
-            <div
-              class="pagination-container hidden flex justify-center gap-10px mt-30px"
-            >
-             
-              <div class="pagination-numbers flex gap-10px"></div>
-            
+                <a href="#" class="panel-content">
+                  <div
+                    class="news-info-container flex flex-row gap-25px items-center"
+                  >
+                    <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
+                    <time
+                      class="fs-16 fw-500 font-outfit text-lightBlue"
+                      datetime="2026-00-10"
+                      >2026.00.10</time
+                    >
+                    <p class="panel-content-text-desk fw-500 fs-16 ls-20">
+                      臨時休業のお知らせ
+                    </p>
+                  </div>
+                  <img
+                    src="../assets/img/top/icon_arrow_blue.svg"
+                    alt="アイコン"
+                  />
+                  <p class="panel-content-text-sp fw-500 fs-16 ls-20">
+                    臨時休業のお知らせ
+                  </p>
+                </a>
+              </article>
             </div>
+            <!--PAGINATION-->
+            <nav class="c-pager1">
+              <ul class="c-pager1__list">
+                <li class="c-pager1__item">
+                  <a class="c-pager1__link active">1</a>
+                </li>
+                <li class="c-pager1__item"><a class="c-pager1__link">2</a></li>
+                <li class="c-pager1__item"><a class="c-pager1__link">3</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </section>
