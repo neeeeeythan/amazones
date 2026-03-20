@@ -1678,7 +1678,7 @@
   /* ── Introduction Section ── */
   .p-storedetail_introduction_ribbon {
     position: absolute;
-    top: 24%;
+    top: 22%;
     right: -20%;
     width: 150%;
   }
@@ -2294,7 +2294,6 @@
 
 /* ── Opening section ── */
 .p-storedetail__opening-content {
-  padding-bottom: 6.25rem;
   display: flex;
   flex-direction: column;
 }
@@ -2480,13 +2479,13 @@
 /* ── Mobile responsive overrides (≤ 767px) ── */
 
 @media (max-width: 767px) {
-  .p-storedetail__opening-content {
-    padding-bottom: 3rem;
-  }
-
   .p-storedetail__intro-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .p-storedetail__intro-inner {
+    gap: 1.5rem;
   }
 
   .p-storedetail__meta-row {

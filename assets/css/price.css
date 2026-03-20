@@ -775,8 +775,7 @@
 
   .p-price__speak-image--mobile {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-top: 5rem;
     width: 100%;
     justify-content: center;
   }
@@ -786,10 +785,10 @@
   }
 
   .p-price__speak-image--mobile .p-price__speak-bubble--01 {
-    width: 5rem;
+    width: 7rem;
     height: auto;
-    top: -2rem;
-    right: -1rem;
+    top: -6rem;
+    right: 25%;
   }
 
   .p-price__people-image {
@@ -851,7 +850,7 @@
 
   /* CONTENT LAYOUT */
   .p-price__content {
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
   }
 
   .p-price__content .flex,
