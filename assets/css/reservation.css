@@ -1020,9 +1020,11 @@
   }
 
   .p-reservation-speak__bubble--01-btn {
+    position: absolute;
     width: 6rem;
     height: auto;
     margin-bottom: 0.25rem;
+    left: -7rem;
   }
 
   .p-reservation-speak__container--01 {
