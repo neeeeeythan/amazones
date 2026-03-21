@@ -1525,6 +1525,99 @@
     background-position: 35% center;
   }
 
+    /* ── CTA Section ── */
+  .p-storedetail_cta_container {
+    height: auto;
+    min-height: 30svh;
+    padding: 4rem 1.5rem 22rem;
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .p-storedetail_cta_ribbon {
+    z-index: 0;
+    top: 5%;
+    left: -90%;
+    width: 200%;
+    height: auto;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .p-storedetail_cta_ribbon svg {
+    width: 100%;
+    height: auto;
+  }
+  .p-storedetail_cta_content {
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  .p-storedetail_cta_heading {
+    font-size: 1.75rem;
+  }
+  .p-storedetail_cta_stats_row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .p-storedetail_cta_stats {
+    align-items: center;
+  }
+  .p-storedetail_cta_stats_number {
+    font-size: 9rem;
+    line-height: 1;
+  }
+  .p-storedetail_cta_stats_number span {
+    font-size: 3rem;
+  }
+  .p-storedetail_cta_stats_left {
+    display: flex;
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  .p-storedetail_cta_note {
+    display: none;
+  }
+  .p-storedetail_cta_note-mobile {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    background-color: var(--base-lightBlue);
+    padding: 1rem 1.75rem;
+    width: max-content;
+  }
+  .p-storedetail_cta_people {
+    display: flex;
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .p-storedetail_cta_person01 {
+    display: block;
+    height: 40rem;
+    transform: translate(1rem, 13rem);
+  }
+  .p-storedetail_cta_person02 {
+    display: block;
+    height: 25rem;
+    transform: translateX(-1rem);
+  }
+  .p-storedetail_cta_btn {
+    width: fit-content;
+    white-space: nowrap;
+    bottom: -1.5rem;
+  }
+
+
   /* Dr. Amazones — constrain at tablet too */
   .dr-amazones-container {
     flex-direction: column;
@@ -1844,97 +1937,6 @@
     font-size: 0.8125rem; /* 13px — down from 16px */
   }
 
-  /* ── CTA Section ── */
-  .p-storedetail_cta_container {
-    height: auto;
-    min-height: 30svh;
-    padding: 4rem 1.5rem 22rem;
-    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .p-storedetail_cta_ribbon {
-    z-index: 0;
-    top: 5%;
-    left: -90%;
-    width: 200%;
-    height: auto;
-    overflow: hidden;
-    pointer-events: none;
-  }
-  .p-storedetail_cta_ribbon svg {
-    width: 100%;
-    height: auto;
-  }
-  .p-storedetail_cta_content {
-    padding: 0;
-    z-index: 3;
-    width: 100%;
-    align-items: center;
-    gap: 0.75rem;
-    text-align: center;
-  }
-  .p-storedetail_cta_heading {
-    font-size: 1.75rem;
-  }
-  .p-storedetail_cta_stats_row {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-  }
-  .p-storedetail_cta_stats {
-    align-items: center;
-  }
-  .p-storedetail_cta_stats_number {
-    font-size: 9rem;
-    line-height: 1;
-  }
-  .p-storedetail_cta_stats_number span {
-    font-size: 3rem;
-  }
-  .p-storedetail_cta_stats_left {
-    display: flex;
-    font-size: 1.375rem;
-    text-align: center;
-  }
-  .p-storedetail_cta_note {
-    display: none;
-  }
-  .p-storedetail_cta_note-mobile {
-    display: block;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    background-color: var(--base-lightBlue);
-    padding: 1rem 1.75rem;
-    width: max-content;
-  }
-  .p-storedetail_cta_people {
-    display: flex;
-    position: absolute;
-    bottom: -6rem;
-    left: 0;
-    gap: 3rem;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-  }
-  .p-storedetail_cta_person01 {
-    display: block;
-    height: 40rem;
-    transform: translate(1rem, 13rem);
-  }
-  .p-storedetail_cta_person02 {
-    display: block;
-    height: 25rem;
-    transform: translateX(-1rem);
-  }
-  .p-storedetail_cta_btn {
-    width: fit-content;
-    white-space: nowrap;
-    bottom: -1.5rem;
-  }
 
   /* ── Why Choose Us ── */
   div:has(> .p-storedetail_whychooseus_text_container_left),
