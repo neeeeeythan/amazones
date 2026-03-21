@@ -7,41 +7,70 @@ document.querySelector('.scroll-up').addEventListener('click', () => {
 const floatingBtn = document.getElementById("floating-menu-btn");
 const floatingBtnContent = document.getElementById("floating-menu-content");
 const headerFloatingMenu = document.getElementById("header-floating-menu");
+const navPopup = document.getElementById("nav-menu-popup");
 
-floatingBtn.addEventListener("mouseenter", function () {
+const isMobile = () => window.innerWidth <= 1091;
+
+function showMenu() {
+  if (isMobile()) return;
   floatingBtnContent.classList.add("active");
   headerFloatingMenu.classList.add("active");
-});
+  if (navPopup) navPopup.classList.add("active");
+}
 
-floatingBtnContent.addEventListener("mouseenter", function () {
-  floatingBtnContent.classList.add("active");
-  headerFloatingMenu.classList.add("active");
-});
+let menuPinned = false;
 
-floatingBtnContent.addEventListener("mouseleave", function (e) {
-  const relatedTarget = e.relatedTarget;
-
-  if (relatedTarget && headerFloatingMenu.contains(relatedTarget)) {
-    return;
-  }
-
+function hideMenu() {
+  if (menuPinned) return;
   floatingBtnContent.classList.remove("active");
   headerFloatingMenu.classList.remove("active");
+  if (navPopup) navPopup.classList.remove("active");
+}
+
+function toggleMenu() {
+  if (isMobile()) return;
+  if (menuPinned) {
+    menuPinned = false;
+    floatingBtnContent.classList.remove("active");
+    headerFloatingMenu.classList.remove("active");
+    if (navPopup) navPopup.classList.remove("active");
+  } else {
+    menuPinned = true;
+    showMenu();
+  }
+}
+
+floatingBtn.addEventListener("click", toggleMenu);
+floatingBtn.addEventListener("mouseenter", showMenu);
+floatingBtnContent.addEventListener("mouseenter", showMenu);
+if (navPopup) navPopup.addEventListener("mouseenter", showMenu);
+
+floatingBtnContent.addEventListener("mouseleave", function (e) {
+  const rel = e.relatedTarget;
+  if (rel && (headerFloatingMenu.contains(rel) || (navPopup && (navPopup === rel || navPopup.contains(rel))))) return;
+  hideMenu();
 });
 
 headerFloatingMenu.addEventListener("mouseleave", function (e) {
-  const relatedTarget = e.relatedTarget;
-
+  const rel = e.relatedTarget;
+  if (navPopup && (navPopup === rel || navPopup.contains(rel))) return;
   if (
-    relatedTarget !== floatingBtnContent &&
-    relatedTarget !== floatingBtn &&
-    !floatingBtnContent.contains(relatedTarget) &&
-    !floatingBtn.contains(relatedTarget)
+    rel !== floatingBtnContent &&
+    rel !== floatingBtn &&
+    !floatingBtnContent.contains(rel) &&
+    !floatingBtn.contains(rel)
   ) {
-    floatingBtnContent.classList.remove("active");
-    headerFloatingMenu.classList.remove("active");
+    hideMenu();
   }
 });
+
+if (navPopup) {
+  navPopup.addEventListener("mouseleave", function (e) {
+    const rel = e.relatedTarget;
+    if (rel && headerFloatingMenu.contains(rel)) return;
+    hideMenu();
+  });
+}
 
 //FOR ELEMENT ANIMATIONS
 document.addEventListener("DOMContentLoaded", function () {
@@ -86,8 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // HEADER MOBILE
-const isMobile = () => window.innerWidth <= 1091;
-
 floatingBtn.addEventListener("click", function () {
   if (!isMobile()) return;
 
@@ -107,44 +134,12 @@ window.addEventListener("resize", function () {
 
     overlay.classList.remove("active");
     hamburger.classList.remove("active");
-    headerFloatingMenu.classList.remove("active");
+    menuPinned = false;
+    hideMenu();
   }
 });
 
-// Guard hover listeners so they don't fire on mobile
-floatingBtn.addEventListener("mouseenter", function () {
-  if (isMobile()) return;
-  floatingBtnContent.classList.add("active");
-  headerFloatingMenu.classList.add("active");
-});
-
-floatingBtnContent.addEventListener("mouseenter", function () {
-  if (isMobile()) return;
-  floatingBtnContent.classList.add("active");
-  headerFloatingMenu.classList.add("active");
-});
-
-floatingBtnContent.addEventListener("mouseleave", function (e) {
-  if (isMobile()) return;
-  const relatedTarget = e.relatedTarget;
-  if (relatedTarget && headerFloatingMenu.contains(relatedTarget)) return;
-  floatingBtnContent.classList.remove("active");
-  headerFloatingMenu.classList.remove("active");
-});
-
-headerFloatingMenu.addEventListener("mouseleave", function (e) {
-  if (isMobile()) return;
-  const relatedTarget = e.relatedTarget;
-  if (
-    relatedTarget !== floatingBtnContent &&
-    relatedTarget !== floatingBtn &&
-    !floatingBtnContent.contains(relatedTarget) &&
-    !floatingBtn.contains(relatedTarget)
-  ) {
-    floatingBtnContent.classList.remove("active");
-    headerFloatingMenu.classList.remove("active");
-  }
-});
+// (Guarded hover listeners consolidated into showMenu/hideMenu above)
 
 
 
