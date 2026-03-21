@@ -6650,6 +6650,18 @@ a {
 /* ============================================
      FOOTER SECTION
 ============================================ */
+/* Make the floating menu fixed so it follows the user on desktop */
+.header-floating-menu {
+  position: fixed;   /* already fixed — confirm this stays fixed, not sticky */
+  right: 0;
+  top: 0;
+}
+
+/* Ensure SCROLL DOWN fades smoothly */
+.floating-menu-content {
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;   /* show it's clickable */
+}
 .I-footer {
   overflow: hidden;
   background-image: url("../img/top/bg-footer.webp");

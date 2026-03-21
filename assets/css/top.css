@@ -12,7 +12,7 @@
   margin: auto;
   z-index: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 .carousel-img-container {
   position: absolute;
