@@ -350,6 +350,10 @@
   margin-right: -5.8rem;
 }
 
+.p-price__people-image.c-animation-jump {
+  display: flex;
+}
+
 .p-price__people-image-mobile,
 .p-price__people-image-mobile.c-animation-jump {
   display: none;
