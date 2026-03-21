@@ -57,6 +57,13 @@
 
 /* PAYMENT LINKS */
 
+.p-payment__links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: contents;
+}
+
 .p-payment__links-nav {
   display: flex;
   align-items: center;
