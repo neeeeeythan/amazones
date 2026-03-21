@@ -192,11 +192,10 @@
 
 /* ABOUT GROUP */
 .p-visitor__about-group {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
 }
-
 /* ABOUT ROW */
 .p-visitor__about-row {
   display: flex;
@@ -458,7 +457,7 @@
   .p-visitor__about-card-body,
   .p-visitor__about-card-body--alt { padding: 1.5rem; }
   .p-visitor__about-groups { gap: 3rem; }
-  .p-visitor__about-group { gap: 2rem; }
+  .p-visitor__about-group { display: flex; flex-direction: column; gap: 2rem; }
 
   /* SPEAK PERSONS — reposition at bottom on tablet/mobile */
   .p-visitor__speak-container--left {
@@ -563,4 +562,12 @@
   .p-visitor__faq { padding: 4rem 0; }
   .p-visitor__faq-ribbon { width: 100vw; right: 0; top: 0; }
   /* END: CTA */
+}
+
+/* Desktop-only: reorder summary cards to 対象|期間 (row1), 内容|施設 (row2) */
+@media (min-width: 1025px) {
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(1) { order: 1; }
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(2) { order: 3; }
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(3) { order: 2; }
+  .p-visitor__about-group > .p-visitor__about-card:nth-child(4) { order: 4; }
 }
