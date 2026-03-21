@@ -1719,6 +1719,29 @@
     flex-direction: column;
     align-items: center;
   }
+
+  /* ── Opening Block: stack text + jump image ── */
+  .p-storedetail__opening-content > .p-storedetail__opening-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p-storedetail_opening_header p,
+  .p-storedetail_opening_header span {
+    font-size: 1rem;
+  }
+
+  .p-storedetail_opening_header span {
+    display: block;
+  }
+
+  .p-storedetail_opening_jump {
+    display: flex;
+    justify-content: center;
+  }
+  .p-storedetail_opening_jump img {
+    max-height: 16rem;
+    width: auto;
+  }
 }
 
 /* ═══════════════════════════════════════════════════
@@ -1806,11 +1829,6 @@
 
   .p-storedetail__whychooseus-title-desc {
     font-size: 0.875rem;
-  }
-
-  /* ── Opening Section ── */
-  .p-storedetail_opening_block {
-    flex-direction: column;
   }
 
   /* ── Service Cards ── */
@@ -2192,28 +2210,6 @@
     font-size: 60px !important;
   }
 
-  /* ── Opening Block: stack text + jump image ── */
-  .p-storedetail__opening-content > .p-storedetail__opening-row {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .p-storedetail_opening_header p,
-  .p-storedetail_opening_header span {
-    font-size: 1rem;
-  }
-
-  .p-storedetail_opening_header span {
-    display: block;
-  }
-
-  .p-storedetail_opening_jump {
-    display: flex;
-    justify-content: center;
-  }
-  .p-storedetail_opening_jump img {
-    max-height: 16rem;
-    width: auto;
-  }
 }
 
 /* ═══════════════════════════════════════════════════
