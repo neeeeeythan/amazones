@@ -1,9 +1,6 @@
 /* ============================================
     START SPORTIP BANNER
    ============================================ */
-.p-sportip__banner {
-  /* layout handled by c-hero-slider */
-}
 
 .p-sportip__banner-overlay {
   position: absolute;
@@ -58,7 +55,7 @@
 }
 
 /* Left frame image position */
-.p-sportip__banner .c-hero-slider__frames__clip1 .clip-img {
+.c-hero-slider__frames__clip1 .clip-img {
   object-position: right top; /* 0%=left edge, 100%=right edge */
   width: 105%; /* keep left% and extra width% equal to avoid gaps */
   left: auto;
@@ -66,7 +63,7 @@
 }
 
 /* Right frame image position */
-.p-sportip__banner .c-hero-slider__frames__clip2 .clip-img {
+ .c-hero-slider__frames__clip2 .clip-img {
   left: 10%;
   /* right: auto; */
   object-position: left center; /* 0%=left edge, 100%=right edge */
@@ -582,6 +579,26 @@
     left: 3rem;
   }
 
+    /* ── BANNER ── */
+
+  /* Left frame image — object-position horizontal, transform for vertical */
+  .c-hero-slider__frames__clip1 .clip-img {
+    left: 0;
+    width: 100vw;
+    object-position: 70% center; /* horizontal: 0%=left, 100%=right */
+    transform: scale(1) translateY(0%); /* vertical: positive=show top, negative=show bottom */
+  }
+
+  /* Right frame image */
+  .c-hero-slider__frames__clip2 .clip-img {
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-position: 55% center;
+    transform: scale(1) translateY(30%);
+  }
+
+
   .p-sportip__banner-title {
     font-size: 1.875rem;
   }
@@ -633,24 +650,6 @@
     background-position: 0% -170%;
   }
 
-  /* ── BANNER ── */
-
-  /* Left frame image — object-position horizontal, transform for vertical */
-  .p-sportip__banner .c-hero-slider__frames__clip1 .clip-img {
-    left: 0;
-    width: 100vw;
-    object-position: 70% center; /* horizontal: 0%=left, 100%=right */
-    transform: scale(1) translateY(0%); /* vertical: positive=show top, negative=show bottom */
-  }
-
-  /* Right frame image */
-  .p-sportip__banner .c-hero-slider__frames__clip2 .clip-img {
-    left: 0;
-    right: 0;
-    width: 100%;
-    object-position: 55% center;
-    transform: scale(1) translateY(30%);
-  }
 
   .p-sportip__banner-content {
     top: 20%;
