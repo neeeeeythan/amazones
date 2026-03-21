@@ -203,14 +203,11 @@
 .p-online-shop .gap-50px {
   gap: 40px;
 }
-.p-point ol,
-.p-point ul {
-  list-style-type: none !important;
-}
 
 @media screen and (max-width: 1200px) {
   .p-point__item01 {
     flex-direction: column;
+    gap:20px;
   }
   .p-point__item_summary-right {
     width: 100%;
@@ -263,7 +260,7 @@
     min-width: 200px;
   }
   .p-point__item_summary {
-    padding: 55px 15px 20px 15px;
+    /* padding: 55px 20px 20px 15px; */
   }
   .p-point__table tbody tr td:first-child {
     width: 140px;

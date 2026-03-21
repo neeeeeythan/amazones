@@ -37,7 +37,7 @@
 
         <div class="flex flex-row items-center gap-15px">
           <a
-            href="#"
+            href="storelist/index.html"
             class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
           >
             <div
@@ -55,7 +55,7 @@
           </a>
 
           <a
-            href="#"
+            href="reservation/index.html"
             class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
           >
             <div
@@ -103,7 +103,7 @@
             <p class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500">
               ©2026 Wellness Land Co., Ltd.
             </p>
-            <div class="flex flex-col items-center gap-8px justify-center bg-base-black1">
+            <div id = 'scroll-down-text' class="flex flex-col items-center gap-8px justify-center bg-base-black1">
               <p class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover">
                 SCROLL DOWN
               </p>
@@ -168,7 +168,7 @@
       </div>
     </header>
 
-    <main>
+    <main class = 'bg-white'>
       <!--TOP HERO SECTION-->
       <section class="carousel-container relative">
         <div
@@ -318,7 +318,7 @@
       </section>
 
       <!--TOP NEWS SECTION-->
-      <section class="news-section w-full flex flex-col items-center justify-center pt-100 relative" id="news-section">
+      <section id = 'news' class="news-section w-full flex flex-col items-center justify-center pt-100 relative" id="news-section">
         
         <!-- Ribbon Scroll -->
         <div class="ribbon-scroll-container news-ribbon">
@@ -539,7 +539,7 @@
 
             </div>
 
-            <a href="#" class="btn-light-blue mt-50 ml-auto mr-auto">
+            <a href="information/index.htm" class="btn-light-blue mt-50 ml-auto mr-auto">
               <p class="text-white fs-16 font-outfit">View All</p>
               <img src="assets/img/top/icon_btn_green_arrow.svg" alt="アイコン">
             </a>
@@ -694,7 +694,7 @@
           >
             <!--SERVICE 1-->
            
-              <a href = '#' class="reveal-left service-wrapper">
+              <a href = 'personal/index.html' class="reveal-left service-wrapper">
                 <img
                   src="assets/img/top/img_service1.png"
                   alt="女性専用24時間ジム"
@@ -716,7 +716,7 @@
             
 
             <!--SERVICE 2-->
-              <a href = '#' class="reveal service-wrapper service-wrapper2">
+              <a href = 'sportip/index.html' class="reveal service-wrapper service-wrapper2">
               <img
                 src="assets/img/top/img_service2.webp"
                 alt="女性専用24時間ジム"
@@ -739,7 +739,7 @@
            
 
             <!--SERVICE 3-->
-            <a href = '#' class="reveal-right service-wrapper service-wrapper3">
+            <a href = 'about/index.html' class="reveal-right service-wrapper service-wrapper3">
               <img
                 src="assets/img/top/img_service3.webp"
                 alt="女性専用24時間ジム"
@@ -891,7 +891,7 @@
                 <div class="slide">
                   <div class="slide-content">
                     <img
-                      src="assets/img/top/img_topic1.webp"
+                      src="assets/img/common/img_family.png"
                       alt="アマゾネスのトピック"
                     />
                   </div>
@@ -1006,7 +1006,7 @@
                 </div>
               </div>
 
-              <a href="#" class="btn-light-blue mt-40 dr-amazones-btn">
+              <a href="medical/index.html" class="btn-light-blue mt-40 dr-amazones-btn">
                 <p class="text-white fs-16 font-outfit">View More</p>
                 <img
                   src="assets/img/top/icon_btn_green_arrow.svg"
@@ -1078,7 +1078,7 @@
                     Amazones（アマゾネス）は、女性専用24時間ジムとして全国No.1の店舗数を誇り、現在30店舗を展開中。大阪・兵庫を中心に、東京や神奈川など幅広いエリアに広がっています。<br class="shop-break" />
                     全店舗追加料金なしで相互利用OK。お仕事帰りやお出掛け先など、ライフスタイルに合わせて好きな店舗を自由に使えるからジム通いがもっと便利に、もっと続けやすくなります。
                   </p>
-                  <a href="#" class="btn-light-blue mt-30">
+                  <a href="storelist/index.html" class="btn-light-blue mt-30">
                     <p class="text-white fs-16 font-outfit">近くの店舗を探す</p>
                     <img src="../assets/img/top/icon_btn_green_arrow.svg" alt="アイコン" />
                   </a>
@@ -1277,7 +1277,7 @@
        <section class="c-price-plan">
         <div class="c-price-plan__container flex flex-col items-start gap-50px">
 
-          <header class="c-price-plan__header flex flex-row gap-60px">
+          <div class="c-price-plan__header flex flex-row gap-60px">
             <hgroup class="reveal section-header-wrapper flex flex-col gap-18px">
               <p class="reveal section-sub-text fs-18 fw-500 text-black1 text-white">料金案内</p>
               <h2 class="section-header-text fs-100 lh-normal font-outfit text-black1 fw-400 text-white">Price</h2>
@@ -1290,23 +1290,23 @@
               </div>
             </div>
             <p class="display-sp fw-500 fs-16 text-white lh-200">月額プランや人数限定のお得なプランを多数ご用意しております。</p>
-          </header>
+          </div>
 
           <div class="c-price-plan__desc-wrapper w-full">
             <ul class="c-price-plan__list">
 
               <!-- Price item 1 -->
               <li class="reveal c-price-plan__item">
-                <div class="c-price-plan__item-content">
+                <a href = 'price/index.html#monthly-plan' class="c-price-plan__item-content">
                   <img src="../assets/img/top/icon_check_calender.svg" alt="基本月額プラン" />
                   <div class="flex flex-col items-center justify-center gap-20px">
                     <p class="mt-10 fw-700 fs-24 text-lightBlue">基本月額プラン</p>
-                    <a href="#" class="text-white font-outfit fs-16 fw-400 c-price-plan__link">
+                    <span  class="text-white font-outfit fs-16 fw-400 c-price-plan__link">
                       Monthly Plan
                       <img src="../assets/img/top/icon_arrow.svg" alt="矢印" />
-                    </a>
+                    </span>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li aria-hidden="true">
@@ -1318,16 +1318,16 @@
 
               <!-- Price item 2 -->
               <li class="reveal c-price-plan__item c-price-plan__item--2">
-                <div class="c-price-plan__item-content">
+                <a href = 'price/index.html#special-plan' class="c-price-plan__item-content">
                   <img src="../assets/img/top/icon_plan.svg" alt="限定プラン" />
                   <div class="c-price-plan__item-content-inner flex flex-col items-center justify-center gap-20px">
                     <p class="mt-10 fw-700 fs-24 text-lightBlue">限定プラン</p>
-                    <a href="#" class="text-white font-outfit fs-16 fw-400 c-price-plan__link">
+                    <span class="text-white font-outfit fs-16 fw-400 c-price-plan__link">
                       Special Plan
                       <img src="../assets/img/top/icon_arrow.svg" alt="矢印" />
-                    </a>
+                    </span>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li aria-hidden="true">
@@ -1339,22 +1339,22 @@
 
               <!-- Price item 3 -->
               <li class="reveal c-price-plan__item c-price-plan__item--3">
-                <div class="c-price-plan__item-content">
+                <a href = 'price/index.html#initial-cost' class="c-price-plan__item-content">
                   <img src="../assets/img/top/icon_energy.svg" alt="オプション" />
                   <div class="flex flex-col items-center justify-center gap-20px">
                     <p class="mt-10 fw-700 fs-24 text-lightBlue">オプション</p>
-                    <a href="#" class="text-white font-outfit fs-16 fw-400 c-price-plan__link">
+                    <span  class="text-white font-outfit fs-16 fw-400 c-price-plan__link">
                       Option
                       <img src="../assets/img/top/icon_arrow.svg" alt="矢印" />
-                    </a>
+                    </span>
                   </div>
-                </div>
+                </a>
               </li>
 
             </ul>
           </div>
 
-          <a href="#" class="btn-light-blue mt-30 c-price-plan__btn mx-auto">
+          <a href="payment/index.html" class="btn-light-blue mt-30 c-price-plan__btn mx-auto">
             <p class="text-white fs-16 font-outfit">お支払方法についてはこちら</p>
             <img src="../assets/img/top/icon_btn_green_arrow.svg" alt="アイコン" />
           </a>
@@ -1367,7 +1367,7 @@
                   よくあるご質問
                   <img src="../assets/img/top/icon_blueLine.svg" alt="" class="c-price-plan__blue-line" />
                 </p>
-                <a href="#" class="btn-green-wrapper">
+                <a href="faq/index.html" class="btn-green-wrapper">
                   <img src="../assets/img/top/icon_arrow.svg" alt="よくあるご質問を見る" />
                 </a>
               </div>
@@ -1383,7 +1383,7 @@
                   ご利用規約
                   <img src="../assets/img/top/icon_blueLine.svg" alt="" class="c-price-plan__blue-line" />
                 </p>
-                <a href="#" class="btn-green-wrapper">
+                <a href="rules/index.html" class="btn-green-wrapper">
                   <img src="../assets/img/top/icon_arrow.svg" alt="ご利用規約を見る" />
                 </a>
               </div>
@@ -1546,7 +1546,7 @@
           </div>
         </div>
 
-        <a href="#" class="btn-light-blue mt-40 mx-auto voice-btn">
+        <a href="member/index.html" class="btn-light-blue mt-40 mx-auto voice-btn">
           <p class="text-white fs-16 font-outfit">View More</p>
           <img src="assets/img/top/icon_btn_green_arrow.svg" alt="アイコン" />
         </a>
@@ -1815,7 +1815,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn-light-blue mx-auto">
+          <a href="column/index.html" class="btn-light-blue mx-auto">
             <p class="text-white fs-16 font-outfit">View More</p>
             <img src="assets/img/top/icon_btn_green_arrow.svg" alt="アイコン" />
           </a>
@@ -1837,7 +1837,7 @@
       トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
     </p>
 
-    <a href="#" class="btn-light-blue mx-auto c-footer-banner__btn">
+    <a href="reservation/index.html" class="btn-light-blue mx-auto c-footer-banner__btn">
       <img src="assets/img/top/icon_24_white.svg" alt="24時間" />
       <p class="text-white fs-16 font-outfit">
         無料体験・見学予約はこちら
@@ -1947,7 +1947,7 @@
               <p class="reveal fw-700 fs-20 text-white">女性の健康と美を支えるジム</p>
               <p class="reveal fw-500 fs-16 lh-200 text-white">「女性の輝く未来をつくりたい」というスローガンのもと、フィットネスを通じて女性の健康と美をサポートしています。</p>
             </div>
-            <a href="#" class="btn-light-blue">
+            <a href="https://recruit.amazones.fit" target="_blank" class="btn-light-blue">
                   <p class="text-white fs-16 font-outfit">View More</p>
                   <img src="assets/img/top/icon_videos.svg" alt="アイコン" />
                 </a>

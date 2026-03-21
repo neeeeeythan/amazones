@@ -1,3 +1,9 @@
+
+//scroll up
+document.querySelector('.scroll-up').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 const floatingBtn = document.getElementById("floating-menu-btn");
 const floatingBtnContent = document.getElementById("floating-menu-content");
 const headerFloatingMenu = document.getElementById("header-floating-menu");
