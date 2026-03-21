@@ -144,6 +144,26 @@ floatingBtn.addEventListener("click", function () {
   hamburger.classList.toggle("active", isActive);
 });
 
+// Mobile accordion toggle
+document.querySelectorAll('.js-sp-nav-toggle').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var section = this.closest('.sp-nav-section');
+    section.classList.toggle('is-open');
+  });
+});
+
+// Mobile nav X-close button
+var spNavClose = document.querySelector('.sp-nav-close');
+if (spNavClose) {
+  spNavClose.addEventListener('click', function () {
+    var overlay = document.querySelector('.mobile-header-overlay');
+    var hamburger = document.querySelector('.mobile-hamburger');
+    overlay.classList.remove('active');
+    hamburger.classList.remove('active');
+    headerFloatingMenu.classList.remove('active');
+  });
+}
+
 // Close overlay + reset hamburger on resize to desktop
 window.addEventListener("resize", function () {
   if (!isMobile()) {
