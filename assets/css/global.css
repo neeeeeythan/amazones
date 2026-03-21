@@ -14,6 +14,7 @@
   --base-brown: #8c4239;
   --base-darkGray: #97a5b5;
   --base-darkBlueGray: #98a6b5;
+  --base-inputGray:#CDD6DD;
 
   /*TEXT COLORS*/
   --text-black1: #4f4f4f;
@@ -6330,6 +6331,7 @@ a {
   left: 5.75rem;
   transform: translateY(-50%);
   z-index: 3;
+  width:100%;
 }
 
 .p-banner-title {

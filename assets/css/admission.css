@@ -40,6 +40,7 @@
   padding-right: 60px;
   padding-bottom: 40px;
   background-color: var(--base-white);
+  z-index:1
 }
 .admission-p {
   padding-left: 40px;
@@ -158,6 +159,10 @@
   width: auto;
   margin-right: 90px;
   margin-top: 20px;
+}
+.p-admission-web-sticker{
+  z-index:2 !important;
+  position:relative;
 }
 @media screen and (max-width: 1400px) {
   .c-other-details-banner-item {
