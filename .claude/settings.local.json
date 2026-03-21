@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(powershell -Command \"Get-ChildItem -Path ''d:\\\\Part Time\\\\amazones\\\\amazones'' -Filter ''*.html'' -Recurse | ForEach-Object { \\(Get-Content $_.FullName -Raw\\) -replace ''flex flex-row justify-between w-full items-center flex-wrap gap-20px'', ''flex flex-col w-full gap-20px'' | Set-Content $_.FullName -NoNewline }\")",
-      "Bash(powershell -Command \"Get-ChildItem -Path ''d:\\\\Part Time\\\\amazones\\\\amazones'' -Filter ''*.html'' -Recurse | ForEach-Object { $content = [System.IO.File]::ReadAllText\\($_.FullName\\); $newContent = $content -replace ''flex flex-row justify-between w-full items-center flex-wrap gap-20px'', ''flex flex-col w-full gap-20px''; [System.IO.File]::WriteAllText\\($_.FullName, $newContent\\) }\")"
-    ]
-  }
-}
