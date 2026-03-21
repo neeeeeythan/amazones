@@ -636,7 +636,26 @@ function playVid(ID) {
 
 
 
+/* ============================================
+    C-BTN JS 
+   ============================================ */
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const yearButtons = document.querySelectorAll('.c-btn__nav .c-btn__nav__item');
+  yearButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      yearButtons.forEach(b => b.classList.remove('is-active'));
+      this.classList.add('is-active');
+    });
+  });
+});
+
+function init__tabs(selector = '[data-widget="tabs"]') {
+  let tabs = document.querySelectorAll(selector);
+  if (!tabs.length) return;
+
+}
 
 /* ============================================
     START NEWS
@@ -646,16 +665,6 @@ function init__tabs(selector = '[data-widget="tabs"]') {
   if (!tabs.length) return;
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const yearButtons = document.querySelectorAll('.p-newspage__btnwrap button');
-
-  yearButtons.forEach(btn => {
-    btn.addEventListener('click', function () {
-      yearButtons.forEach(b => b.classList.remove('active-year'));
-      this.classList.add('active-year');
-    });
-  });
-
-
   function updateFancyIndicator(tabsRoot, tab) {
     const width = tab.offsetWidth;
     const offset = tab.offsetLeft;

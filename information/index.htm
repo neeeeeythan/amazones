@@ -13,8 +13,6 @@
     </title>
     <!-- GLOBAL CSS -->
     <link href="../assets/css/global.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/buttons.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/common.css" rel="stylesheet" type="text/css" />
 
     <link
       href="../assets/css/information.css"
@@ -229,24 +227,20 @@
       >
         <!-- news tab container 1-->
         <div class="news-tabs-container flex flex-col gap-30px">
-          <div
-            class="p-newspage__btnwrap flex flex-row items-center justify-center gap-15px w-fit-content"
-          >
-            <button class =  'active-year'>
+          <div class="c-btn__nav flex flex-row items-center justify-center gap-15px w-fit-content">
+            <button class="c-btn__nav__item is-active">
               2026年
               <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon" />
             </button>
-            <button>
+            <button class="c-btn__nav__item">
               2025年
               <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon" />
             </button>
-            <button>
+            <button class="c-btn__nav__item">
               2024年
               <img src="../assets/img/common/icon_arrow_gray.svg" alt="icon" />
             </button>
           </div>
-          <!-- ADDED: data-items-per-page="10" -->
-          <!-- Tabs Widget -->
           <div
             data-widget="tabs"
             data-tabs-animate="400, 80"
@@ -863,6 +857,8 @@
             </nav>
           </div>
         </div>
+
+        
       </section>
     </main>
 

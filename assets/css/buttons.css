@@ -1,9 +1,9 @@
 .header-btn:hover,
-.sp-header-btn:hover{
-  opacity:0.7;
+.sp-header-btn:hover {
+  opacity: 0.7;
 }
 .header-btn:hover .arrow-img,
-.sp-header-btn:hover .arrow-img{
+.sp-header-btn:hover .arrow-img {
   transform: translateX(8px);
 }
 
@@ -41,24 +41,21 @@
   transition: all 0.3s ease-in-out;
 }
 
-.btn-light-blue:hover {
-  /* background-color: var(--base-white);
-  border: 1px solid var(--base-lightBlue);
-  color: var(--text-lightBlue); */
-  opacity:0.7;
+.btn-light-blue:hover,
+.btn-red:hover {
+  opacity: 0.7;
 }
 
-.btn-light-blue:hover p {
-  /* color: var(--text-lightBlue); */
+.btn-light-blue img,
+.btn-red img {
+  transition: all 0.3s ease-in-out;
 }
-.btn-light-blue img{
-  transition:all 0.3s ease-in-out;
+.btn-light-blue:hover img:last-child,
+.btn-red:hover img:last-child {
+  transform: translateX(8px);
 }
-.btn-light-blue:hover img:last-child {
-  /* filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
-    hue-rotate(96deg) brightness(92%) contrast(82%); */
-      transform: translateX(8px);
-
+.btn-light-blue.p-recommended__btn:hover img {
+  margin-right: 8px;
 }
 
 .btn-light-blue02 {
@@ -104,33 +101,22 @@
   outline: none;
 }
 
-
-.btn-red{
-  background-color:var(--base-lightPink);
-  padding:15px 30px;
-  border-radius:50px;
-  display:flex;
+.btn-red {
+  background-color: var(--base-lightPink);
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  color:var(--text-white);
-  width:fit-content;
-  gap:10px;
-  border:1px solid transparent;
-  transition:all 0.3s ease-in-out;
-
+  color: var(--text-white);
+  width: fit-content;
+  gap: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
-.btn-red:hover{
-  background-color: var(--base-white);
-  border:1px solid var(--base-lightPink);
-  color:var(--base-lightPink);
-}
-.btn-red:hover img{
-  filter: brightness(0) saturate(100%) invert(30%) sepia(36%) saturate(5575%) hue-rotate(330deg) brightness(104%) contrast(92%);
-}
-
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
   .btn-light-blue {
-    font-size:16px;
+    font-size: 16px;
   }
 }
