@@ -1,86 +1,6 @@
-.p-protein__banner {
-  width: 100%;
-  height: calc(100vw * 300 / 1920);
-  position: relative;
-  overflow: visible;
-}
-
-.p-protein__banner-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.p-protein__banner-img {
-  position: absolute;
-  right: -25.8%;
-  bottom: -146%;
-  width: auto;
-  height: 425%;
-  max-width: none;
-}
-
-.p-protein__banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgb(79, 79, 79, 1) 0%,
-    rgb(79, 79, 79, 1) 47%,
-    rgb(79, 79, 79, 0) 100%
-  );
-  z-index: 1;
-}
-
-/* Ribbon banner SVG decoration */
-.p-protein__banner-ribbon {
-  position: absolute;
-  right: -45%;
-  top: -43%;
-  transform: translateY(-50%);
-  height: 300%;
-  width: auto;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Text content */
-.p-protein__banner-content {
-  position: absolute;
-  top: 50%;
-  left: 5.75rem;
-  transform: translateY(-50%);
-  z-index: 3;
-}
-
-.p-protein__banner-title {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.375rem;
-  font-weight: 400;
-}
-
-.p-protein__banner-subtitle {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  color: var(--base-lightBlue);
-  letter-spacing: 0.02em;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-  padding-left: 0.75rem;
-}
-
-/* Custom Breadcrumb styles for protein page  */
-.p-protein__breadcrumb {
-  top: 140%;
-}
+/* ========================================
+   START: Section Title
+   ======================================== */
 
 .p-protein__content {
   position: relative;
@@ -128,6 +48,39 @@
   width: auto;
 }
 
+.p-protein__section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #4f4f4f;
+}
+
+.p-protein__section-header p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.p-protein__section-header h2 {
+  font-size: 6.25rem;
+  line-height: 7.5rem;
+  font-weight: 400;
+}
+
+/* END: Section Title */
+
+/* ========================================
+   START: Protein Flavor Cards
+   ======================================== */
+
+.p-protein__banner-img {
+  position: absolute;
+  right: -25.8%;
+  bottom: -146%;
+  width: auto;
+  height: 425%;
+  max-width: none;
+}
+
 .p-protein__point-card {
   background-color: white;
   padding: 2rem;
@@ -150,24 +103,6 @@
   display: none;
 }
 
-.p-protein__section-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  color: #4f4f4f;
-}
-
-.p-protein__section-header p {
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-
-.p-protein__section-header h2 {
-  font-size: 6.25rem;
-  line-height: 7.5rem;
-  font-weight: 400;
-}
-
 .p-protein__card-header--light-blue {
   width: 15rem;
   background-color: var(--base-lightBlue);
@@ -183,8 +118,6 @@
   display: flex;
   gap: 3rem;
 }
-
-/* PROTEIN FLAVOR CARD */
 
 .p-protein__text-container,
 .p-protein__onlineshop-text-container {
@@ -221,52 +154,6 @@
   width: auto;
   height: auto;
   z-index: 1;
-}
-
-/* YOUTUBE */
-.p-protein__youtube-wrap {
-  margin-top: 3rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.p-protein__youtube {
-  position: relative;
-  width: 55rem;
-  height: 31rem;
-  background-color: #1a1a1a;
-  overflow: hidden;
-}
-
-.p-protein__youtube iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.p-protein__text-block {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.p-protein__text-block p {
-  font-size: 1rem;
-  line-height: 2rem;
-  font-weight: 600;
-}
-
-.p-protein__text-block span {
-  font-weight: 500;
-  color: var(--text-lightBlue);
-}
-
-.p-protein__card-logo {
-  width: auto;
-  height: 1.5rem;
 }
 
 /* SPEAK PERSON */
@@ -372,53 +259,11 @@
   overflow: hidden;
 }
 
-.p-protein__faq-card {
-  border: 1px solid var(--base-lightBlue);
-  width: 100%;
-  padding: 0 1.2rem;
-  display: flex;
-  flex-direction: column;
-}
+/* END: Protein Flavor Cards */
 
-.p-protein__faq-q,
-.p-protein__faq-a {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  padding: 1.2rem 0;
-}
-
-.p-protein__faq-q {
-  border-bottom: 1px solid var(--base-lightBlue);
-}
-
-.p-protein__horizontal-line {
-  width: 5%;
-  height: 2px;
-  background-color: var(--base-lightBlue);
-}
-
-/* BUTTON CUSTOM */
-.btn-buyNow {
-  border-radius: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
-  gap: 14px;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid transparent;
-  transition: all 0.3s ease-in-out;
-  color: white;
-  font-size: 1rem;
-}
-
-.btn-buyNow:hover {
-  cursor: pointer;
-  filter: brightness(0.85);
-}
-
-/* ONLINE SHOP */
+/* ========================================
+   START: Online Shop
+   ======================================== */
 
 .p-protein__onlineshop-text-container {
   width: 50dvw;
@@ -427,7 +272,11 @@
   transform: translateY(-50%);
 }
 
-/* MODAL */
+/* END: Online Shop */
+
+/* ========================================
+   START: Modal
+   ======================================== */
 
 .p-protein__modal-overlay {
   display: flex;
@@ -485,11 +334,42 @@
   z-index: 1;
 }
 
-/* ──────────────────────────────────────────
-   LAPTOP  (min-width: 1025px and max-width: 1440px)
-   ────────────────────────────────────────── */
+/* END: Modal */
+
+/* ========================================
+   START: CTA / Button
+   ======================================== */
+
+.btn-buyNow {
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 14px;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-buyNow:hover {
+  cursor: pointer;
+  filter: brightness(0.85);
+}
+
+/* END: CTA / Button */
+
+/* ========================================
+   MEDIA: max-width 1440px (min-width 1025px)
+   ======================================== */
 
 @media (min-width: 1025px) and (max-width: 1440px) {
+  /* ========================================
+     START: Protein Flavor Cards
+     ======================================== */
+
   .p-protein__flavor-img {
     max-width: 45vw;
   }
@@ -541,24 +421,30 @@
   div:has(> .p-protein__text-container--left) {
     padding-bottom: 15rem;
   }
+
+  /* END: Protein Flavor Cards */
 }
 
-/* ──────────────────────────────────────────
-   TABLET  (max-width: 1024px)
-   ────────────────────────────────────────── */
+/* ========================================
+   MEDIA: max-width 1024px
+   ======================================== */
+
 @media (max-width: 1024px) {
-  /* BANNER — adjust protein image position */
-  .p-protein__banner-img {
-    right: -15%;
-    bottom: -110%;
-    height: 380%;
-  }
+  /* ========================================
+     START: Section Title
+     ======================================== */
 
   /* SECTION HEADER — shrink large display font */
   .p-protein__section-header h2 {
     font-size: 4.5rem;
     line-height: 5.5rem;
   }
+
+  /* END: Section Title */
+
+  /* ========================================
+     START: Protein Flavor Cards
+     ======================================== */
 
   /* ── FLAVOR SECTION — stacked layout (matches mobile) ── */
 
@@ -790,18 +676,120 @@
     width: auto;
   }
 
+  /* ── EXTRA WORDS CARDS ── */
+  .c-section_lightBlue > .c-maxWidth > .flex.w-full.gap-30px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* ── FAQ SECTION ── */
+  .p-protein__faq-ribbon {
+    display: none;
+  }
+
+  /* END: Protein Flavor Cards */
+
+  /* ========================================
+     START: Online Shop
+     ======================================== */
+
   /* ONLINE SHOP text container */
   .p-protein__onlineshop-text-container {
     width: 54dvw;
     right: 0;
     padding: 2.5rem;
   }
+
+  /* ── BUY NOW SECTION ── */
+
+  /* Title row — stack */
+  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .c-section_lightBlue
+    .c-maxWidth
+    > .flex.items-center.gap-70px.pb-50
+    .flex.gap-3.items-end {
+    margin-top: 0 !important;
+  }
+
+  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 h3 {
+    font-size: 1rem !important;
+  }
+
+  /* Product list — stack */
+  .c-section_lightBlue .c-maxWidth > .flex.gap-30px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Individual buy now cards — reduce padding */
+  div:has(> h5.font-outfit.fs-24.fw-600.text-red),
+  div:has(> h5.font-outfit.fs-24.fw-600.text-peach),
+  div:has(> h5.font-outfit.fs-24.fw-600.text-brown) {
+    padding: 2rem 1.5rem !important;
+    gap: 1rem !important;
+  }
+
+  /* Flavor name size in buy now cards */
+  .c-section_lightBlue .font-zen.fs-30.fw-700 {
+    font-size: 1.25rem;
+  }
+
+  /* Product images in buy now */
+  .c-section_lightBlue img[width="250"] {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Stack the background image + text panel */
+  section.relative:has(.p-protein__onlineshop-text-container) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.relative:has(.p-protein__onlineshop-text-container) > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .p-protein__onlineshop-text-container {
+    position: relative;
+    width: 100%;
+    transform: none;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    top: auto;
+    right: auto;
+    overflow: hidden;
+  }
+
+  .p-protein__onlineshop-text-container .fs-60 {
+    font-size: 1.75rem !important;
+  }
+
+  .p-protein__onlineshop-text-container .flex.flex-col.gap-40px {
+    gap: 1.5rem;
+  }
+
+  /* END: Online Shop */
 }
 
-/* ──────────────────────────────────────────
-   MOBILE  (max-width: 767px)
-   ────────────────────────────────────────── */
+/* ========================================
+   MEDIA: max-width 767px
+   ======================================== */
+
 @media (max-width: 767px) {
+  /* ========================================
+     START: Protein Flavor Cards
+     ======================================== */
+
   /* ── BANNER ── */
   .p-protein__banner-img {
     right: -120%;
@@ -1063,184 +1051,6 @@
   div:has(> img[alt="peach flavor"]) > img {
     object-position: right top;
   }
-}
 
-@media (max-width: 1024px) {
-  /* ── EXTRA WORDS CARDS ── */
-  .c-section_lightBlue > .c-maxWidth > .flex.w-full.gap-30px {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  /* ── FAQ SECTION ── */
-  .p-protein__faq-ribbon {
-    display: none;
-  }
-
-  /* ── BUY NOW SECTION ── */
-
-  /* Title row — stack */
-  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  .c-section_lightBlue
-    .c-maxWidth
-    > .flex.items-center.gap-70px.pb-50
-    .flex.gap-3.items-end {
-    margin-top: 0 !important;
-  }
-
-  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 h3 {
-    font-size: 1rem !important;
-  }
-
-  /* Product list — stack */
-  .c-section_lightBlue .c-maxWidth > .flex.gap-30px {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  /* Individual buy now cards — reduce padding */
-  div:has(> h5.font-outfit.fs-24.fw-600.text-red),
-  div:has(> h5.font-outfit.fs-24.fw-600.text-peach),
-  div:has(> h5.font-outfit.fs-24.fw-600.text-brown) {
-    padding: 2rem 1.5rem !important;
-    gap: 1rem !important;
-  }
-
-  /* Flavor name size in buy now cards */
-  .c-section_lightBlue .font-zen.fs-30.fw-700 {
-    font-size: 1.25rem;
-  }
-
-  /* Product images in buy now */
-  .c-section_lightBlue img[width="250"] {
-    width: 160px;
-    height: 160px;
-  }
-
-  /* ── ONLINE SHOP SECTION ── */
-
-  /* Stack the background image + text panel */
-  section.relative:has(.p-protein__onlineshop-text-container) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  section.relative:has(.p-protein__onlineshop-text-container) > img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .p-protein__onlineshop-text-container {
-    position: relative;
-    width: 100%;
-    transform: none;
-    padding: 2rem 1.5rem;
-    box-sizing: border-box;
-    top: auto;
-    right: auto;
-    overflow: hidden;
-  }
-
-  .p-protein__onlineshop-text-container .fs-60 {
-    font-size: 1.75rem !important;
-  }
-
-  .p-protein__onlineshop-text-container .flex.flex-col.gap-40px {
-    gap: 1.5rem;
-  }
-}
-
-/* ──────────────────────────────────────────
-   FAQ ACCORDION (BEM, protein-page only)
-   ────────────────────────────────────────── */
-.p-protein__faq-item {
-  margin-bottom: 30px;
-  overflow: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid var(--base-lightBlue);
-  background-color: var(--base-white);
-  width: 100%;
-}
-
-.p-protein__faq-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
-.p-protein__faq-header:hover {
-  opacity: 0.7;
-}
-
-.p-protein__faq-icon {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-protein__faq-icon::before,
-.p-protein__faq-icon::after {
-  content: "";
-  position: absolute;
-  background-color: var(--base-lightBlue);
-  transition: transform 0.3s ease;
-}
-
-.p-protein__faq-icon::before {
-  width: 16px;
-  height: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.p-protein__faq-icon::after {
-  width: 2px;
-  height: 16px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.p-protein__faq-icon--active::after {
-  transform: translate(-50%, -50%) scale(0);
-}
-
-.p-protein__faq-body {
-  max-height: 0;
-  overflow: hidden;
-  border-top: 1px solid var(--base-lightBlue);
-  opacity: 0;
-  box-sizing: border-box;
-  transform: translateZ(0);
-}
-
-.p-protein__faq-body--open {
-  background-color: var(--base-white);
-  max-height: 500px;
-  opacity: 1;
-  padding: 20px 0;
-}
-
-.p-protein__faq-body--opening {
-  animation: slideDown 0.4s ease forwards;
-}
-
-.p-protein__faq-body--closing {
-  animation: slideUp 0.4s ease forwards;
+  /* END: Protein Flavor Cards */
 }

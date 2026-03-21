@@ -1,97 +1,6 @@
-/* ============================================
-    START VISITOR BANNER
-   ============================================ */
-.p-visitor__banner {
-  width: 100%;
-  height: calc(100vw * 300 / 1920);
-  position: relative;
-  overflow: visible;
-}
-
-.p-visitor__banner-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.p-visitor__banner-img {
-  position: absolute;
-  right: -25.8%;
-  bottom: -146%;
-  width: auto;
-  height: 425%;
-  max-width: none;
-}
-
-.p-visitor__banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgb(79, 79, 79, 1) 0%,
-    rgb(79, 79, 79, 1) 47%,
-    rgb(79, 79, 79, 0) 100%
-  );
-  z-index: 1;
-}
-
-/* Ribbon banner SVG decoration */
-.p-visitor__banner-ribbon {
-  position: absolute;
-  right: -45%;
-  top: -43%;
-  transform: translateY(-50%);
-  height: 300%;
-  width: auto;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Text content */
-.p-visitor__banner-content {
-  position: absolute;
-  top: 50%;
-  left: 5.75rem;
-  transform: translateY(-50%);
-  z-index: 3;
-}
-
-.p-visitor__banner-title {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.375rem;
-  font-weight: 400;
-}
-
-.p-visitor__banner-subtitle {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  color: var(--base-lightBlue);
-  letter-spacing: 0.02em;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-  padding-left: 0.75rem;
-}
-
-/* Custom Breadcrumb styles for visitor page  */
-.p-visitor__breadcrumb {
-  top: 140%;
-}
-
-/* ============================================
-    END VISITOR BANNER
-   ============================================ */
-
-/* ============================================
-   START VISITOR
-   ============================================ */
+/* ========================================
+   START: Section Title
+   ======================================== */
 
 .p-visitor__section--white {
   width: 100%;
@@ -110,38 +19,6 @@
   padding-bottom: 7rem;
 }
 
-/* TEXT CONTAINER */
-.p-visitor__text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background-color: white;
-  padding: 2.5rem;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.p-visitor__text-block {
-  display: flex;
-  flex-direction: column;
-}
-
-.p-visitor__text-block p {
-  font-size: 1rem;
-  line-height: 2rem;
-  font-weight: 500;
-}
-
-.p-visitor__text-block span {
-  font-weight: 500;
-  color: var(--text-lightBlue);
-}
-
-.p-visitor__card-logo {
-  width: auto;
-  height: 1.5rem;
-}
-
 .p-visitor__title-container {
   display: flex;
   flex-direction: column;
@@ -152,6 +29,7 @@
 .p-visitor__subtitle {
   font-size: 1.125rem;
   font-weight: 500;
+  font-family: var(--font-zen);
 }
 
 .p-visitor__title {
@@ -159,13 +37,21 @@
   line-height: 1.3;
   font-weight: 400;
   margin: 0;
+  font-family: var(--font-outfit);
 }
+
+/* END: Section Title */
+
+/* ========================================
+   START: Campaign Block
+   ======================================== */
 
 .p-visitor__campaign-block {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  font-family: var(--font-zen);
 }
 
 .p-visitor__campaign-header {
@@ -185,13 +71,35 @@
   font-weight: 500;
 }
 
-/* ============================================
-   END VISITOR
-   ============================================ */
+/* CAMPAIGN ROW */
+.p-visitor__campaign-row {
+  display: flex;
+  gap: 30px;
+}
 
-/* ============================================
-    START ABOUT
-    ============================================ */
+/* CAMPAIGN DESC */
+.p-visitor__campaign-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 500;
+  font-family: var(--font-zen);
+}
+
+/* Campaign image — desktop sizing */
+.p-visitor__campaign-img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* END: Campaign Block */
+
+/* ========================================
+   START: About / Cards
+   ======================================== */
+
 .p-visitor__section--lightblue {
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
@@ -254,19 +162,6 @@
   font-family: var(--font-zen);
 }
 
-.p-visitor__about-card-icon {
-  width: auto;
-  height: auto;
-  padding: 1.5rem;
-  box-sizing: border-box;
-  width: 5.625rem;
-  height: 5.625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--base-lightBlue);
-}
-
 .p-visitor__about-header,
 .p-visitor__about-header--red {
   width: 15rem;
@@ -288,124 +183,61 @@
   gap: 0.5rem;
 }
 
-.p-visitor__about-subheader h4 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-/* ============================================
-   END ABOUT
-   ============================================ */
-
-/* ============================================
-   START FAQ
-   ============================================ */
-
-.p-visitor__faq-ribbon {
-  position: absolute;
-  top: -5%;
-  right: -10%;
-  width: 82vw;
-  height: auto;
-  pointer-events: none;
-  overflow: hidden;
-}
-.p-visitor__faq-card {
-  border: 1px solid var(--base-lightBlue);
-  width: 100%;
-  padding: 0 1.2rem;
+/* ABOUT GROUPS */
+.p-visitor__about-groups {
   display: flex;
   flex-direction: column;
+  gap: 100px;
 }
 
-.p-visitor__faq-question,
-.p-visitor__faq-answer {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  padding: 1.2rem 0;
-}
-
-.p-visitor__faq-question {
-  border-bottom: 1px solid var(--base-lightBlue);
-}
-
-.p-visitor__horizontal-line {
-  width: 5%;
-  height: 2px;
-  background-color: var(--base-lightBlue);
-}
-
-.p-visitor__faq-section {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/common/img_gym01.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.p-visitor__faq {
+/* ABOUT GROUP */
+.p-visitor__about-group {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-  padding: 8rem 0;
+  gap: 50px;
 }
 
-.p-visitor__info-card {
+/* ABOUT ROW */
+.p-visitor__about-row {
+  display: flex;
+  gap: 50px;
+}
+
+/* ABOUT ALT HEADING */
+.p-visitor__about-alt-heading {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 12px 0;
+  line-height: 2;
+}
+
+.p-visitor__about-alt-heading h2 {
+  font-family: var(--font-zen);
+  color: var(--text-lightBlue);
+}
+
+/* START CHECKLIST */
+.p-visitor__checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-
-  background-color: white;
-  flex: 1;
+  gap: 0.75rem;
 }
 
-.p-visitor__info-card-header {
-  display: flex;
-  align-items: center;
+.p-visitor__checklist-item {
+  color: #333;
+  line-height: 1.6;
+  font-family: var(--font-zen);
 }
 
-.p-visitor__info-card-header h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.p-visitor__checklist-item span {
+  color: var(--text-lightBlue);
 }
 
-.p-visitor__info-card-icon {
-  background-color: var(--base-lightBlue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  height: 5.625rem;
-  width: 5.625rem;
-}
-
-.p-visitor__info-card-icon-btn {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: var(--base-lightBlue);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-visitor__info-card-body {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
-  padding: 2rem 2.5rem;
-}
-
-.p-visitor__info-card span {
-  color: var(--base-lightBlue);
-}
-
-.p-visitor__faq-row {
-  display: flex;
-  flex-direction: row;
-  gap: 2.5rem;
-}
+/* END CHECKLIST */
 
 /* SPEAK PERSON */
 
@@ -471,100 +303,19 @@
   object-fit: contain;
 }
 
-/* START CHECKLIST */
-.p-visitor__checklist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
+/* END: About / Cards */
 
-.p-visitor__checklist-item {
-  color: #333;
-  line-height: 1.6;
-  font-family: var(--font-zen);
-}
+/* ========================================
+   START: How-To Steps
+   ======================================== */
 
-.p-visitor__checklist-item span {
-  color: var(--text-lightBlue);
-}
-
-.p-visitor__checklist-note {
-  color: #555;
-  padding-left: 1.2rem;
-  line-height: 1.6;
-  font-size: 0.9em;
-}
-
-/* END CHECKLIST */
-
-/* ============================================
-   NEW BEM CLASSES (replacing utility classes)
-   ============================================ */
-
-/* CAMPAIGN ROW */
-.p-visitor__campaign-row {
-  display: flex;
-  gap: 30px;
-}
-
-/* CAMPAIGN BLOCK */
-.p-visitor__campaign-block {
-  font-family: var(--font-zen);
-}
-
-/* CAMPAIGN DESC */
-.p-visitor__campaign-desc {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-weight: 500;
-  font-family: var(--font-zen);
-}
-
-/* ABOUT GROUPS */
-.p-visitor__about-groups {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
-
-/* ABOUT GROUP */
-.p-visitor__about-group {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-/* ABOUT ROW */
-.p-visitor__about-row {
-  display: flex;
-  gap: 50px;
-}
-
-/* ABOUT ALT HEADING */
-.p-visitor__about-alt-heading {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  padding: 12px 0;
-  line-height: 2;
-}
-
-.p-visitor__about-alt-heading h2 {
-  font-family: var(--font-zen);
-  color: var(--text-lightBlue);
-}
-
-/* SUBTITLE & TITLE font families */
-.p-visitor__subtitle {
-  font-family: var(--font-zen);
-}
-
-.p-visitor__title {
-  font-family: var(--font-outfit);
+.p-visitor__howto-section {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/common/img_gym03.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* White text for howto section */
@@ -585,34 +336,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-}
-
-/* FAQ CONTENT (was py-100) */
-.p-visitor__faq-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-/* FAQ LIST */
-.p-visitor__faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.footer-page-link h3 {
-  margin: 0;
-}
-
-/* START HOW TO USE SECTION */
-
-.p-visitor__howto-section {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/common/img_gym03.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .p-visitor__glassy-bg {
@@ -646,18 +369,6 @@
   align-self: center;
 }
 
-.p-visitor__howto-step-icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  border: 1.5px solid var(--base-lightBlue);
-  border-radius: 0.375rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  box-sizing: border-box;
-}
-
 .p-visitor__howto-step-label {
   font-size: 1.5rem;
   font-weight: 500;
@@ -684,77 +395,70 @@
   font-family: var(--font-zen);
 }
 
-.p-visitor__howto-step-btn {
+/* END: How-To Steps */
+
+/* ========================================
+   START: CTA
+   ======================================== */
+
+/* FAQ CONTENT (was py-100) */
+.p-visitor__faq-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* FAQ LIST */
+.p-visitor__faq-list {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-  padding: 0.625rem 1.75rem;
-  border: 1px solid var(--base-lightBlue);
-  border-radius: 50px;
-  color: var(--base-lightBlue);
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.p-visitor__howto-step-btn:hover {
-  background-color: var(--base-lightBlue);
-  color: white;
-}
-
-/* END HOW TO USE SECTION */
-
-/* Campaign image — desktop sizing */
-.p-visitor__campaign-img {
-  width: 40%;
+.p-visitor__faq-ribbon {
+  position: absolute;
+  top: -5%;
+  right: -10%;
+  width: 82vw;
   height: auto;
-  object-fit: cover;
-  flex-shrink: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
 
-/* TABLET + MOBILE */
+/* END: CTA */
+
+/* ========================================
+   START: Utility Overrides
+   ======================================== */
+
+.footer-page-link h3 {
+  margin: 0;
+}
+
+/* END: Utility Overrides */
+
+/* ========================================
+   MEDIA: max-width 1024px
+   ======================================== */
 @media (max-width: 1024px) {
-  /* BANNER */
-  .p-banner-content { left: 2.5rem; }
-  .p-banner-title { font-size: 1.875rem; }
-  .p-banner-subtitle { font-size: 1.125rem; }
-
-  /* VISITOR TITLE */
+  /* START: Section Title */
   .p-visitor__title { font-size: 4rem; }
+  /* END: Section Title */
 
-  /* CAMPAIGN SECTION — stack vertically */
+  /* START: Campaign Block */
   .p-visitor__campaign-row { flex-direction: column; }
   .p-visitor__campaign-img { width: 100%; max-width: 100%; }
   .p-visitor__content { padding-top: 4rem; padding-bottom: 4rem; }
+  /* END: Campaign Block */
 
-  /* SUMMARY / ABOUT — stack card rows to single column */
+  /* START: About / Cards */
   .p-visitor__about { padding-top: 3rem; padding-bottom: 3rem; }
   .p-visitor__about-row { flex-direction: column; gap: 2rem; }
   .p-visitor__about-header,
   .p-visitor__about-header--red { width: 100%; }
   .p-visitor__about-card-body,
   .p-visitor__about-card-body--alt { padding: 1.5rem; }
-
-  /* HOW TO USE — stack steps vertically, rotate dividers */
-  .p-visitor__howto-steps { flex-direction: column; }
-  .p-visitor__howto-divider {
-    width: 80%;
-    height: 1px;
-    align-self: center;
-  }
-  .p-visitor__howto-content { padding-top: 60px; padding-bottom: 60px; }
-  .p-visitor__howto-content-body { gap: 2rem; }
-
-  /* ABOUT GROUPS */
   .p-visitor__about-groups { gap: 3rem; }
   .p-visitor__about-group { gap: 2rem; }
-
-  /* FAQ */
-  .p-visitor__faq-content { padding-top: 60px; padding-bottom: 60px; }
-  .p-visitor__faq-ribbon { width: 90vw; right: -5%; }
-  .p-visitor__faq-row { flex-direction: column; gap: 1.5rem; }
 
   /* SPEAK PERSONS — reposition at bottom on tablet/mobile */
   .p-visitor__speak-container--left {
@@ -784,22 +488,49 @@
   .c-announcement {
     padding-bottom: 14rem !important;
   }
+  /* END: About / Cards */
+
+  /* START: How-To Steps */
+  .p-visitor__howto-steps { flex-direction: column; }
+  .p-visitor__howto-divider {
+    width: 80%;
+    height: 1px;
+    align-self: center;
+  }
+  .p-visitor__howto-content { padding-top: 60px; padding-bottom: 60px; }
+  .p-visitor__howto-content-body { gap: 2rem; }
+  /* END: How-To Steps */
+
+  /* START: CTA */
+  .p-visitor__faq-content { padding-top: 60px; padding-bottom: 60px; }
+  .p-visitor__faq-ribbon { width: 90vw; right: -5%; }
+  /* END: CTA */
+
+  /* START: Banner */
+  .p-banner-content { left: 2.5rem; }
+  .p-banner-title { font-size: 1.875rem; }
+  .p-banner-subtitle { font-size: 1.125rem; }
+  /* END: Banner */
 }
 
-/* MOBILE — fine-tuning */
+/* ========================================
+   MEDIA: max-width 767px
+   ======================================== */
 @media (max-width: 767px) {
-  /* BANNER */
+  /* START: Banner */
   .p-banner-content { left: 1.25rem; gap: 0.5rem; }
   .p-banner-title { font-size: 1.375rem; }
   .p-banner-subtitle { font-size: 0.9375rem; }
+  /* END: Banner */
 
-  /* VISITOR TITLES */
+  /* START: Section Title */
   .p-visitor__title { font-size: 2.5rem; }
   .p-visitor__subtitle { font-size: 1rem; }
   .p-visitor__content { padding-top: 3rem; padding-bottom: 3rem; }
   .p-visitor__title-container { margin-bottom: 1.5rem; }
+  /* END: Section Title */
 
-  /* CAMPAIGN SECTION — mobile fine-tuning */
+  /* START: Campaign Block */
   .p-visitor__campaign-row {
     gap: 1.5rem;
     align-items: center;
@@ -808,26 +539,28 @@
     max-height: 260px;
     object-fit: contain;
   }
-
-  /* CAMPAIGN HEADING */
   .p-visitor__campaign-header h2 { font-size: 1.25rem; }
+  /* END: Campaign Block */
 
-  /* ABOUT CARDS */
+  /* START: About / Cards */
   .p-visitor__about-card-body,
   .p-visitor__about-card-body--alt { padding: 1.25rem; }
-
-  /* HOW TO USE */
-  .p-visitor__howto-step { padding: 2rem 1.25rem; gap: 1.5rem; }
-  .p-visitor__howto-step-title { font-size: 1.5rem; }
-  .p-visitor__howto-step-desc { line-height: 2rem; }
-  .p-visitor__howto-content { padding-top: 40px; padding-bottom: 40px; }
-
-  /* FAQ */
-  .p-visitor__faq-content { padding-top: 40px; padding-bottom: 40px; }
-  .p-visitor__faq { padding: 4rem 0; }
-  .p-visitor__faq-ribbon { width: 100vw; right: 0; top: 0; }
 
   /* SPEAK PERSONS — fine-tune size on mobile */
   .p-visitor__speak-person--left,
   .p-visitor__speak-person--right { height: 15rem; }
+  /* END: About / Cards */
+
+  /* START: How-To Steps */
+  .p-visitor__howto-step { padding: 2rem 1.25rem; gap: 1.5rem; }
+  .p-visitor__howto-step-title { font-size: 1.5rem; }
+  .p-visitor__howto-step-desc { line-height: 2rem; }
+  .p-visitor__howto-content { padding-top: 40px; padding-bottom: 40px; }
+  /* END: How-To Steps */
+
+  /* START: CTA */
+  .p-visitor__faq-content { padding-top: 40px; padding-bottom: 40px; }
+  .p-visitor__faq { padding: 4rem 0; }
+  .p-visitor__faq-ribbon { width: 100vw; right: 0; top: 0; }
+  /* END: CTA */
 }

@@ -1,3 +1,7 @@
+/* ========================================
+   START: Banner
+   ======================================== */
+
 .p-medical__banner-overlay {
   position: absolute;
   inset: 0;
@@ -47,7 +51,11 @@
   z-index: 15;
 }
 
-/* ONLINE CONSULT */
+/* END: Banner */
+
+/* ========================================
+   START: Online Consultation
+   ======================================== */
 
 .p-medical__online-consult-heading--lg {
   display: block;
@@ -74,48 +82,11 @@
   background-position: center;
 }
 
-.p-medical__online-consult-heading {
-  display: block;
-}
+/* END: Online Consultation */
 
-/* PARTNERS */
-.p-medical__partners-logo-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.p-medical__partners-clinic {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: max-content;
-}
-
-.p-medical__partners-clinic h4 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--text-black1);
-  line-height: 2.5rem;
-}
-
-.p-medical__partners-clinic p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-black1);
-  line-height: 1rem;
-}
-
-.p-medical__list-box {
-  width: 6.25rem;
-  height: 6.25rem;
-  background-color: var(--base-lightBlue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* ========================================
+   START: Features / Steps
+   ======================================== */
 
 .p-medical__section-header {
   display: flex;
@@ -238,6 +209,56 @@
   height: 63px;
 }
 
+/* END: Features / Steps */
+
+/* ========================================
+   START: Partners
+   ======================================== */
+
+.p-medical__partners-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.p-medical__partners-clinic {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: max-content;
+}
+
+.p-medical__partners-clinic h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-black1);
+  line-height: 2.5rem;
+}
+
+.p-medical__partners-clinic p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-black1);
+  line-height: 1rem;
+}
+
+.p-medical__list-box {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: var(--base-lightBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* END: Partners */
+
+/* ========================================
+   START: CTA
+   ======================================== */
+
 .p-medical__light-blue-container {
   width: fit-content;
   background-color: var(--base-lightBlue);
@@ -258,104 +279,11 @@
   overflow: hidden;
 }
 
-.p-medical__faq-card {
-  border: 1px solid var(--base-lightBlue);
-  width: 100%;
-  padding: 0 1.2rem;
-  display: flex;
-  flex-direction: column;
-}
+/* END: CTA */
 
-.p-medical__faq-q,
-.p-medical__faq-a {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  padding: 1.2rem 0;
-}
-
-.p-medical__faq-q {
-  border-bottom: 1px solid var(--base-lightBlue);
-}
-
-.p-medical__horizontal-line {
-  width: 5%;
-  height: 2px;
-  background-color: var(--base-lightBlue);
-}
-
-.p-medical__faq-section {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/common/img_gym01.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.p-medical__faq {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  padding: 8rem 0;
-}
-
-.p-medical__faq-card-header {
-  display: flex;
-  flex-direction: column;
-
-  background-color: white;
-  flex: 1;
-}
-
-.p-medical__faq-card-header {
-  display: flex;
-  align-items: center;
-}
-
-.p-medical__faq-card-header h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.p-medical__faq-card-icon {
-  background-color: var(--base-lightBlue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  height: 5.625rem;
-  width: 5.625rem;
-}
-
-.p-medical__faq-card-icon-btn {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: var(--base-lightBlue);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-medical__faq-card-body {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
-  padding: 2rem 2.5rem;
-}
-
-.p-medical__faq-card span {
-  color: var(--base-lightBlue);
-}
-
-.p-medical__faq-row {
-  display: flex;
-  flex-direction: row;
-  gap: 2.5rem;
-}
-
-/* SPEAK PERSON */
+/* ========================================
+   START: Speak Person
+   ======================================== */
 
 /* 01 */
 .p-medical__speak-container--01 {
@@ -419,7 +347,12 @@
   object-fit: contain;
 }
 
-/* VOICE */
+/* END: Speak Person */
+
+/* ========================================
+   START: Voice
+   ======================================== */
+
 .p-medical__voice-grid {
   display: flex;
   align-items: flex-end;
@@ -526,56 +459,69 @@
   display: none; /* hidden on desktop/tablet */
 }
 
-/* ============================================
-   MEDICAL PAGE — RESPONSIVE STYLES
-   Tablet ≤ 1024px  |  Mobile ≤ 767px
-   ============================================ */
+/* END: Voice */
 
-/* ──────────────────────────────────────────
-   TABLET  (max-width: 1024px)
-   ────────────────────────────────────────── */
+/* ========================================
+   MEDIA: max-width 1024px
+   ======================================== */
 @media (max-width: 1024px) {
-  /* BANNER */
+  /* ----------------------------------------
+     START: Banner
+     ---------------------------------------- */
   .p-medical__banner-content {
     top: 28%;
     left: 4%;
     gap: 1rem;
   }
 
-  /* ── BANNER ── */
-
-  /* Left frame image — object-position horizontal, transform for vertical */
-  /* .c-hero-slider__frames__clip1 .clip-img {
-    width: 100%;
-    height: 60%;
-    object-position: 30% center;  */
-  /* } */
-
-  /* Right frame image */
-  /* .c-hero-slider__frames__clip2 .clip-img {
-    width: 100%;
-    height: 80%;
-    object-position: left center;
-    transform: scale(1) translateY(30%);
-  } */
-
   .p-medical__banner-heading {
     font-size: 1.8rem;
     line-height: 1.6;
   }
+  /* END: Banner */
 
-  /* SECTION TITLE ROW — stack on tablet */
-  .p-medical__section-title-row {
+  /* ----------------------------------------
+     START: Online Consultation
+     ---------------------------------------- */
+  .p-medical__online-consultation-banner {
+    height: auto;
+    padding: 5rem 0;
+  }
+
+  .p-medical__online-consultation-banner h2 {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+  /* END: Online Consultation */
+
+  /* ----------------------------------------
+     START: Partners
+     ---------------------------------------- */
+  .p-medical__partners-row {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
+    gap: 3rem;
   }
 
-  .p-medical__section-subtitle {
-    margin-top: 0;
+  .p-medical__partners-logo-row {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* ENGAGEMENT — stack left/right */
+  .p-medical__partners-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .p-medical__partners-right {
+    width: 100%;
+  }
+  /* END: Partners */
+
+  /* ----------------------------------------
+     START: Features / Steps
+     ---------------------------------------- */
   .p-medical__engagement-row {
     flex-direction: column;
     align-items: center;
@@ -597,40 +543,6 @@
     justify-content: center;
   }
 
-  /* ONLINE CONSULTATION BANNER */
-  .p-medical__online-consultation-banner {
-    height: auto;
-    padding: 5rem 0;
-  }
-
-  .p-medical__online-consultation-banner h2 {
-    font-size: 3rem;
-    line-height: 1.4;
-  }
-
-  /* PARTNERS — stack columns */
-  .p-medical__partners-row {
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  .p-medical__partners-logo-row {
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .p-medical__partners-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .p-medical__partners-right {
-    width: 100%;
-  }
-
-  /* STEPS — reduce gap */
   .p-medical__steps-wrapper {
     gap: 2rem;
     padding: 2rem 0;
@@ -650,8 +562,11 @@
     width: auto;
     height: 100px;
   }
+  /* END: Features / Steps */
 
-  /* VOICE — reduce stagger */
+  /* ----------------------------------------
+     START: Voice
+     ---------------------------------------- */
   .p-medical__voice-card:nth-child(2) {
     margin-bottom: 3rem;
   }
@@ -663,20 +578,20 @@
   .p-medical__voice-card-body {
     padding: 2rem;
   }
+  /* END: Voice */
 
-  /* FAQ RIBBON */
+  /* ----------------------------------------
+     START: CTA
+     ---------------------------------------- */
   .p-medical__faq-ribbon {
     right: -5%;
     width: 90vw;
   }
+  /* END: CTA */
 
-  /* FAQ ROW — stack */
-  .p-medical__faq-row {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  /* SPEAK PERSONS */
+  /* ----------------------------------------
+     START: Speak Person
+     ---------------------------------------- */
   .p-medical__speak-container--01 {
     left: 1rem;
   }
@@ -689,12 +604,16 @@
   .p-medical__speak-person--02 {
     height: 18rem;
   }
+  /* END: Speak Person */
 }
 
-/* ──────────────────────────────────────────
-   MOBILE  (max-width: 767px)
-   ────────────────────────────────────────── */
+/* ========================================
+   MEDIA: max-width 767px
+   ======================================== */
 @media (max-width: 767px) {
+  /* ----------------------------------------
+     START: Banner
+     ---------------------------------------- */
   .p-medical__banner-logo--pc {
     display: none;
   }
@@ -724,7 +643,6 @@
     font-size: 0.875rem;
   }
 
-  /* BANNER */
   .p-medical__banner-content {
     top: 15%;
     left: 1.25rem;
@@ -742,8 +660,11 @@
     left: 1.25rem;
     bottom: 3%;
   }
+  /* END: Banner */
 
-  /* SECTION HEADER */
+  /* ----------------------------------------
+     START: Features / Steps
+     ---------------------------------------- */
   .p-medical__section-header h2 {
     font-size: 3.8rem;
     line-height: 3.5rem;
@@ -753,7 +674,6 @@
     font-size: 1rem;
   }
 
-  /* ENGAGEMENT */
   .p-medical__engagement-row {
     flex-direction: column;
     align-items: center;
@@ -816,7 +736,82 @@
     line-height: 1.6;
   }
 
-  /* ONLINE CONSULTATION BANNER */
+  /* HOW TO USE title — stack vertically */
+  .p-medical__how-to-use-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .p-medical__how-to-use-title .mt-50 {
+    margin-top: 0;
+  }
+
+  /* STEPS — stack vertically, unified gap */
+  .p-medical__steps-wrapper {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .p-medical__step-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .p-medical__step-card-title h3 {
+    font-size: 1.25rem;
+  }
+
+  .p-medical__step-card-title > p {
+    font-size: 1.125rem;
+  }
+
+  .p-medical__step-card-body {
+    padding: 1.25rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  /* inline code/input row in step 6 */
+  .p-medical__step-card-body .bg-gray {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* LINEUP — single column full-width list */
+  .p-medical__lineup-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .p-medical__lineup-header .mt-50 {
+    margin-top: 0;
+  }
+
+  .p-medical__lineup-grid {
+    gap: 0.625rem;
+    flex-direction: column;
+  }
+
+  .p-medical__lineup-item {
+    width: 100%;
+  }
+
+  .p-medical__lineup-item p {
+    font-size: 0.9375rem;
+  }
+
+  .p-medical__lineup-icon {
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+  }
+  /* END: Features / Steps */
+
+  /* ----------------------------------------
+     START: Online Consultation
+     ---------------------------------------- */
   .p-medical__online-consultation-banner {
     height: 28rem;
     padding: 0;
@@ -858,8 +853,11 @@
   .p-medical__online-consultation-banner .flex.flex-col.gap-4 {
     gap: 0.5rem;
   }
+  /* END: Online Consultation */
 
-  /* PARTNERS */
+  /* ----------------------------------------
+     START: Partners
+     ---------------------------------------- */
   .p-medical__partners-row {
     flex-direction: column;
     gap: 2rem;
@@ -907,53 +905,25 @@
   .p-medical__partners-row .fs-30 {
     font-size: 1.25rem;
   }
+  /* END: Partners */
 
-  /* HOW TO USE title — stack vertically */
-  .p-medical__how-to-use-title {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-
-  .p-medical__how-to-use-title .mt-50 {
-    margin-top: 0;
-  }
-
-  /* STEPS — stack vertically, unified gap */
-  .p-medical__steps-wrapper {
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-  }
-
-  .p-medical__step-row {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .p-medical__step-card-title h3 {
-    font-size: 1.25rem;
-  }
-
-  .p-medical__step-card-title > p {
-    font-size: 1.125rem;
-  }
-
-  .p-medical__step-card-body {
-    padding: 1.25rem 1.5rem;
-    font-size: 0.9375rem;
-  }
-
+  /* ----------------------------------------
+     START: CTA
+     ---------------------------------------- */
   .p-medical__light-blue-container p {
     font-size: 0.9375rem;
   }
 
-  /* inline code/input row in step 6 */
-  .p-medical__step-card-body .bg-gray {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
+  .p-medical__faq-ribbon {
+    top: -2%;
+    right: -10%;
+    width: 120vw;
   }
+  /* END: CTA */
 
+  /* ----------------------------------------
+     START: Voice
+     ---------------------------------------- */
   /* VOICE — slider on mobile */
   .p-medical__voice-slider-wrapper {
     margin-top: 1.5rem;
@@ -1019,58 +989,11 @@
   .p-medical__voice-nav svg {
     display: block;
   }
+  /* END: Voice */
 
-  /* LINEUP — single column full-width list */
-  .p-medical__lineup-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-
-  .p-medical__lineup-header .mt-50 {
-    margin-top: 0;
-  }
-
-  .p-medical__lineup-grid {
-    gap: 0.625rem;
-    flex-direction: column;
-  }
-
-  .p-medical__lineup-item {
-    width: 100%;
-  }
-
-  .p-medical__lineup-item p {
-    font-size: 0.9375rem;
-  }
-
-  .p-medical__lineup-icon {
-    width: 4rem;
-    height: 4rem;
-    min-width: 4rem;
-  }
-
-  /* FAQ */
-  .p-medical__faq-ribbon {
-    top: -2%;
-    right: -10%;
-    width: 120vw;
-  }
-
-  .p-medical__faq {
-    padding: 4rem 0;
-    gap: 1.5rem;
-  }
-
-  .p-medical__faq-card-header h3 {
-    font-size: 1.125rem;
-  }
-
-  .p-medical__faq-card-body {
-    padding: 1.25rem 1.5rem;
-    font-size: 0.9375rem;
-  }
-
+  /* ----------------------------------------
+     START: Speak Person
+     ---------------------------------------- */
   /* SPEAK PERSONS — show on mobile, repositioned */
   .p-medical__speak-container--01,
   .p-medical__speak-container--02 {
@@ -1103,7 +1026,11 @@
     right: -6rem;
     top: -2rem;
   }
+  /* END: Speak Person */
 
+  /* ----------------------------------------
+     START: Utility Overrides
+     ---------------------------------------- */
   /* GRAY INPUT CODE BOX — code on row 1, explanation on row 2 */
   .c-announcement_body .bg-gray {
     flex-wrap: wrap;
@@ -1129,4 +1056,5 @@
     width: calc(100% - 4rem) !important;
     padding: 2rem 1.75rem 14rem !important;
   }
+  /* END: Utility Overrides */
 }

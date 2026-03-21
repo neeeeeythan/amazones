@@ -1,93 +1,6 @@
-/* ============================================
-    START STORELIST BANNER
-   ============================================ */
-.p-storedetail_banner {
-  width: 100%;
-  height: calc(100vw * 300 / 1920);
-  position: relative;
-  overflow: visible;
-}
-
-.p-storedetail_banner-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.p-storedetail_banner-img {
-  position: absolute;
-  right: -9.8%;
-  top: -85%;
-  width: auto;
-  height: 325%;
-  max-width: none;
-}
-
-.p-storedetail_banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgb(79, 79, 79, 1) 0%,
-    rgb(79, 79, 79, 1) 47%,
-    rgb(79, 79, 79, 0) 100%
-  );
-  z-index: 1;
-}
-
-/* Ribbon banner SVG decoration */
-.p-storedetail_banner-ribbon {
-  position: absolute;
-  right: -45%;
-  top: -43%;
-  transform: translateY(-50%);
-  height: 300%;
-  width: auto;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Text content */
-.p-storedetail_banner-content {
-  position: absolute;
-  top: 50%;
-  left: 5.75rem;
-  transform: translateY(-50%);
-  z-index: 3;
-}
-
-.p-storedetail_banner-title {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.375rem;
-  font-weight: 400;
-}
-
-.p-storedetail_banner-subtitle {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  color: var(--base-lightBlue);
-  letter-spacing: 0.02em;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-  padding-left: 0.75rem;
-}
-
-/* Custom Breadcrumb styles for storedetail page  */
-.p-storedetail_breadcrumb {
-  top: 140%;
-}
-
-/* ============================================
-    END STORELIST BANNER
-   ============================================ */
+/* ========================================
+   START: Section Title
+   ======================================== */
 
 /* TOPIC HEADERS */
 .p-storedetail_topic_header {
@@ -232,175 +145,6 @@
   display: inline-flex;
 }
 
-/* LOCATION ICON */
-.p-storedetail_location_icon {
-  width: 5.625rem;
-  height: 5.625rem;
-  background-color: var(--base-lightBlue);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* FILTERS */
-.p-storedetail_filter-row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 0.25rem 0;
-}
-
-.p-storedetail_filter-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-  padding: 0.5rem 1rem;
-  border-radius: 62.4375rem;
-  border: 0.09375rem solid var(--base-grayBlue);
-  background: white;
-  color: var(--base-grayBlue);
-  font-size: 0.8125rem;
-  font-weight: 700;
-  cursor: pointer;
-  white-space: nowrap;
-  transition:
-    background 0.15s,
-    color 0.15s;
-}
-
-.p-storedetail_filter-btn:hover {
-  background: #f0f1f3;
-}
-
-.p-storedetail_filter-btn.active {
-  background: var(--base-grayBlue);
-  color: white;
-  border-color: var(--base-grayBlue);
-}
-
-/* STORE */
-
-.p-storedetail_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  z-index: 2;
-}
-
-.p-storedetail_card {
-  background: white;
-  overflow: hidden;
-  box-shadow: 0 0rem 0.25rem rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.p-storedetail_card-header {
-  display: flex;
-  align-items: center;
-
-  gap: 0.75rem;
-}
-
-.p-storedetail_card-header-inner {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex: 1;
-  padding-bottom: 0.875rem;
-  border-bottom: 0.0625rem solid #e8f5f5;
-}
-
-.p-storedetail_prefecture-tag {
-  background: #7ecfcf;
-  color: white;
-  font-size: 0.75rem;
-  padding: 0.25rem 1rem;
-  white-space: nowrap;
-  font-weight: 500;
-}
-
-.p-storedetail_store-name {
-  font-size: 0.875rem;
-  color: #333;
-  flex: 1;
-  font-weight: 400;
-}
-
-.p-storedetail_arrow-icon {
-  color: #7ecfcf;
-  line-height: 1;
-  margin-left: auto;
-}
-
-.p-storedetail_card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.p-storedetail_info-row {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-  color: var(--text-black1);
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.p-storedetail_icon {
-  width: 1.125rem;
-  height: 1.125rem;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-storedetail_address-text {
-  font-size: 0.8125rem;
-  color: #444;
-}
-
-.p-storedetail_map-link {
-  color: #555;
-  font-size: 0.8125rem;
-  text-decoration: none;
-}
-
-.p-storedetail_phone-row {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.p-storedetail_phone-number {
-  font-size: 0.8125rem;
-  color: #444;
-}
-
-.p-storedetail_facilities-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.p-storedetail_facilities-label {
-  font-size: 1rem;
-  color: var(--text-lightBlue);
-  font-weight: 700;
-  white-space: nowrap;
-  margin-right: 0.25rem;
-}
-
-.p-storedetail_facility-icons {
-  display: flex;
-  gap: 0.375rem;
-}
-
 .p-storedetail_facility-tile {
   width: 2.5rem;
   height: 2.5rem;
@@ -408,192 +152,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* SPEAK */
-/* 01 */
-.p-storedetail_speak_container01 {
-  position: absolute;
-  bottom: 0rem;
-  left: -1rem;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.p-storedetail_speak_image01 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.p-storedetail_speak_bubble01 {
-  position: absolute;
-  top: -3rem;
-  right: 10rem;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.p-storedetail_speak_person01 {
-  width: auto;
-  height: 25rem;
-  object-fit: contain;
-}
-
-/* 02 */
-.p-storedetail_speak_container02 {
-  position: absolute;
-  bottom: 0rem;
-  right: -1rem;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.p-storedetail_speak_image02 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.p-storedetail_speak_bubble02 {
-  position: absolute;
-  top: -4rem;
-  right: -7rem;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.p-storedetail_speak_person02 {
-  width: auto;
-  height: 25rem;
-  object-fit: contain;
-}
-
-/* RIBBON  */
-.p-storedetail_ribbon01 {
-  position: absolute;
-  bottom: -2rem;
-  right: -10rem;
-  width: auto;
-  height: auto;
-  z-index: 0;
-}
-
-.p-storedetail_ribbon02 {
-  position: absolute;
-  bottom: 3rem;
-  right: 0rem;
-  width: auto;
-  height: auto;
-  z-index: 0;
-}
-
-/* SERVICE */
-.p-storedetail_service_grid {
-  display: flex;
-  align-items: flex-end;
-}
-
-.p-storedetail_service_card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: visible;
-}
-
-.p-storedetail_service_card:nth-child(1) {
-  margin-bottom: 0;
-}
-
-.p-storedetail_service_card:nth-child(2) {
-  margin-bottom: 5rem;
-}
-
-.p-storedetail_service_card:nth-child(3) {
-  margin-bottom: 10rem;
-}
-
-.p-storedetail_service_card:nth-child(1) .p-storedetail_service_card_body {
-  background-color: white;
-}
-
-.p-storedetail_service_card:nth-child(2) .p-storedetail_service_card_body {
-  background-color: var(--base-gray);
-}
-
-.p-storedetail_service_card:nth-child(3) .p-storedetail_service_card_body {
-  background-color: white;
-}
-
-.p-storedetail_service_card_img {
-  width: auto;
-  height: 18.75rem;
-  overflow: hidden;
-}
-
-.p-storedetail_service_card_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #e0e0e0;
-}
-
-.p-storedetail_service_card_body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding: 3rem;
-}
-
-.p-storedetail_service_watermark {
-  position: absolute;
-  top: -0.5rem;
-  right: 0;
-  font-size: 3.75rem;
-  font-weight: 400;
-  color: rgba(79, 79, 79, 0.15);
-  line-height: 1;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.p-storedetail_service_badge {
-  display: inline-block;
-  background-color: var(--base-lightBlue);
-  color: white;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  position: relative;
-  z-index: 1;
-}
-
-.p-storedetail_service_card_body h3 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  line-height: 2.5;
-  color: var(--text-lightBlue);
-  margin-bottom: 1rem;
-  position: relative;
-  z-index: 1;
-}
-
-.p-storedetail_service_card_body > p {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.8;
-  color: #4f4f4f;
-  position: relative;
-  z-index: 1;
 }
 
 /* INTRO RIBBON */
@@ -628,38 +186,6 @@
 }
 .p-storedetail_introduction_people-img--02 {
   height: 320px;
-}
-
-/* INTRODUCTION IMAGES */
-.p-storedetail_introduction-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 1em;
-  z-index: 1;
-  width: 100%;
-}
-
-.p-storedetail_introduction-main-photo {
-  background: #ccc;
-  aspect-ratio: 4/3;
-  border-radius: 4px;
-  width: 100%;
-}
-
-.p-storedetail_introduction-grid-photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 0.5rem;
-  width: 100%;
-  min-width: 0; /* prevents grid blowout */
-}
-
-.p-storedetail_introduction-thumb {
-  background: #ccc;
-  aspect-ratio: 4/3;
-  border-radius: 3px;
-  width: 100%;
 }
 
 /* GRAY CONTAINER */
@@ -732,6 +258,12 @@
   line-height: 1.4;
 }
 
+/* END: Section Title */
+
+/* ========================================
+   START: Price Table
+   ======================================== */
+
 /* PRICE IMAGE */
 .p-storedetail_price_image_container {
   display: flex;
@@ -764,7 +296,102 @@
   background-image: url("../img/storedetail/img_storedetail_price_titleImg02.png");
 }
 
-/* CTA */
+/* WHY CHOOSE US  */
+.p-storedetail_whychooseus_text_container_left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 61rem;
+  bottom: 10%;
+  left: 49%;
+}
+
+.p-storedetail_whychooseus_text_container_right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  width: 61rem;
+  bottom: 10%;
+  right: 49%;
+}
+
+.p-storedetail_reason_img01 {
+  width: 87.5rem;
+  height: 37.5rem;
+  overflow: hidden;
+  background-image: url("../img/common/img_gym06.png");
+  background-size: cover;
+  background-position: 10% 60%;
+  position: relative;
+}
+
+.p-storedetail_reason_img01 img {
+  position: absolute;
+  width: 50rem;
+  height: 37.5rem;
+  left: 7rem;
+  bottom: -2rem;
+}
+
+.p-storedetail_reason_img02 {
+  width: 87.5rem;
+  height: 37.5rem;
+  overflow: hidden;
+  background-image: url("../img/common/img_gym07.png");
+  background-size: cover;
+  background-position: 10% 60%;
+  position: relative;
+}
+
+.p-storedetail_reason_img03 {
+  width: 87.5rem;
+  height: 37.5rem;
+  overflow: hidden;
+  background-image: url("../img/common/img_gym_people04.png");
+  background-size: cover;
+  background-position: 50% 30%;
+  position: relative;
+}
+
+.p-storedetail_reason_ribbon01 {
+  position: absolute;
+  top: -15%;
+  left: 60%;
+  /* width: 82vw; */
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.p-storedetail_reason_ribbon02 {
+  position: absolute;
+  /* top: 0%; */
+  bottom: -70%;
+  /* left: -10%; */
+  /* width: 82vw; */
+  height: auto;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.p-storedetail_reason_ribbon01--sp {
+  display: none;
+}
+
+/* END: Price Table */
+
+/* ========================================
+   START: CTA
+   ======================================== */
+
 .p-storedetail_cta_container {
   height: 47.75rem;
   width: 100%;
@@ -919,28 +546,6 @@
   z-index: 5;
 }
 
-.p-storedetail_freetrial_speak_image01 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.p-storedetail_freetrial_speak_bubble01 {
-  position: absolute;
-  top: -1rem;
-  left: -10rem;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.p-storedetail_freetrial_speak_person01 {
-  width: auto;
-  height: 23rem;
-  object-fit: contain;
-}
-
 .p-storedetail-freetrial_spanLightBlue {
   color: var(--base-lightBlue);
   text-decoration: underline;
@@ -948,152 +553,6 @@
 
 .p-storedetail-freetrial__span--red {
   color: var(--text-red);
-}
-
-.p-storedetail_freetrial_step_list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-}
-
-.p-storedetail_freetrial_step_card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* gap: 1rem; */
-  background-color: white;
-}
-
-.p-storedetail_freetrial_step_card_body {
-  font-weight: 500;
-  padding: 1.5rem 2.5rem;
-  box-sizing: border-box;
-  line-height: 2rem;
-}
-
-.p-storedetail_freetrial_step_card_icon {
-  width: 5.625rem;
-  height: 5.625rem;
-  /* padding: 1.5rem; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  background-color: var(--base-lightBlue);
-}
-
-.p-storedetail_freetrial_step_card_title {
-  display: flex;
-  align-items: center;
-  padding-left: 1.5rem;
-  gap: 1rem;
-}
-
-.p-storedetail_freetrial_step_card_title h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--text-lightBlue);
-}
-
-.p-storedetail_freetrial_step_card_title > p {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-black1);
-}
-
-/* WHY CHOOSE US  */
-.p-storedetail_whychooseus_text_container_left {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background-color: white;
-  padding: 0 2rem 2rem 2rem;
-  box-sizing: border-box;
-  position: absolute;
-  width: 61rem;
-  bottom: 10%;
-  left: 49%;
-}
-
-.p-storedetail_whychooseus_text_container_right {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background-color: white;
-  padding: 0 2rem 2rem 2rem;
-  box-sizing: border-box;
-  position: absolute;
-  width: 61rem;
-  bottom: 10%;
-  right: 49%;
-}
-
-.p-storedetail_reason_img01 {
-  width: 87.5rem;
-  height: 37.5rem;
-  overflow: hidden;
-  background-image: url("../img/common/img_gym06.png");
-  background-size: cover;
-  background-position: 10% 60%;
-  position: relative;
-}
-
-.p-storedetail_reason_img01 img {
-  position: absolute;
-  width: 50rem;
-  height: 37.5rem;
-  left: 7rem;
-  bottom: -2rem;
-}
-
-.p-storedetail_reason_img02 {
-  width: 87.5rem;
-  height: 37.5rem;
-  overflow: hidden;
-  background-image: url("../img/common/img_gym07.png");
-  background-size: cover;
-  background-position: 10% 60%;
-  position: relative;
-}
-
-.p-storedetail_reason_img03 {
-  width: 87.5rem;
-  height: 37.5rem;
-  overflow: hidden;
-  background-image: url("../img/common/img_gym_people04.png");
-  background-size: cover;
-  background-position: 50% 30%;
-  position: relative;
-}
-
-.p-storedetail_reason_ribbon01 {
-  position: absolute;
-  top: -15%;
-  left: 60%;
-  /* width: 82vw; */
-  height: auto;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.p-storedetail_reason_ribbon02 {
-  position: absolute;
-  /* top: 0%; */
-  bottom: -70%;
-  /* left: -10%; */
-  /* width: 82vw; */
-  height: auto;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.p-storedetail_reason_ribbon01--sp {
-  display: none;
 }
 
 /* FAQ */
@@ -1106,6 +565,12 @@
   pointer-events: none;
   overflow: hidden;
 }
+
+/* END: CTA */
+
+/* ========================================
+   START: Slider / Gallery
+   ======================================== */
 
 /* GOOGLE REVIEWS */
 .reviews-widget {
@@ -1349,12 +814,6 @@
   padding-bottom: 8rem;
 }
 
-@media (max-width: 640px) {
-  .review-card {
-    min-width: 100%;
-  }
-}
-
 /* ═══════════════════════════════════════════════════════
    Photo Gallery – Missing responsive utility classes
    (Tailwind-style lg:/md: breakpoint variants)
@@ -1364,53 +823,6 @@
 .mx-\[calc\(50\%-50vw\)\] {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-}
-
-/* Responsive padding at md (768px): md:pt-20, md:pb-20 */
-@media (min-width: 768px) {
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-  .md\:pb-20 {
-    padding-bottom: 5rem;
-  }
-}
-
-/* Responsive layout at lg (1024px) */
-@media (min-width: 1024px) {
-  /* Switch flex column → row */
-  .lg\:flex-row {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  /* 2/3 width for main slider */
-  .lg\:w-2\/3 {
-    width: 66.666667%;
-    flex-shrink: 0;
-  }
-  /* 1/3 width for thumbnail grid */
-  .lg\:w-1\/3 {
-    width: 33.333333%;
-    flex-shrink: 0;
-  }
-}
-
-/* ── lg:self-start utility (missing from global.css) ── */
-@media (min-width: 1024px) {
-  .lg\:self-start {
-    align-self: flex-start;
-  }
-}
-
-/* ── .container fallback (no definition in global.css) ── */
-.container {
-  width: 100%;
-  max-width: 90rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  box-sizing: border-box;
 }
 
 /* ── Photo gallery slider ── */
@@ -1449,772 +861,24 @@
   object-fit: cover;
 }
 
-/* ═══════════════════════════════════════════════════
-   MOBILE RESPONSIVE — TABLET  (max-width: 1024px)
-   ═══════════════════════════════════════════════════ */
-@media (max-width: 1024px) {
-  /* Topic headers */
-  .p-storedetail_topic_header h2,
-  .p-storedetail_topic_header h3 {
-    font-size: 3.5rem;
-  }
-
-  /* Links nav */
-  .p-storedetail_links-nav {
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  /* Service card stagger — reduce on tablet */
-  .p-storedetail_service_card:nth-child(2) {
-    margin-bottom: 2.5rem;
-  }
-  .p-storedetail_service_card:nth-child(3) {
-    margin-bottom: 5rem;
-  }
-
-  /* CTA section */
-  .p-storedetail_cta_container {
-    height: auto;
-    min-height: 30rem;
-  }
-  .p-storedetail_cta_stats_number {
-    font-size: 8rem;
-  }
-
-  /* Why Choose Us — reduce panel width */
-  .p-storedetail_whychooseus_text_container_left,
-  .p-storedetail_whychooseus_text_container_right {
-    width: 70vw;
-  }
-
-  /* Reason images */
-  .p-storedetail_reason_img01,
-  .p-storedetail_reason_img02,
-  .p-storedetail_reason_img03 {
-    width: 100%;
-    height: 25rem;
-  }
-
-  /* ── Price Images ── */
-  .p-storedetail_price_image_container {
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 2rem;
-  }
-  .p-storedetail_price_image_left,
-  .p-storedetail_price_image_right {
-    height: auto;
-    flex: none;
-    width: 100%;
-    padding: 2rem;
-    background-size: cover;
-  }
-
-  .p-storedetail_price_image_left {
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
-    background-position: left center;
-  }
-
-  .p-storedetail_price_image_right {
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
-    background-position: 35% center;
-  }
-
-    /* ── CTA Section ── */
-  .p-storedetail_cta_container {
-    height: auto;
-    min-height: 30svh;
-    padding: 4rem 1.5rem 22rem;
-    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .p-storedetail_cta_ribbon {
-    z-index: 0;
-    top: 5%;
-    left: -90%;
-    width: 200%;
-    height: auto;
-    overflow: hidden;
-    pointer-events: none;
-  }
-  .p-storedetail_cta_ribbon svg {
-    width: 100%;
-    height: auto;
-  }
-  .p-storedetail_cta_content {
-    padding: 0;
-    z-index: 3;
-    width: 100%;
-    align-items: center;
-    gap: 0.75rem;
-    text-align: center;
-  }
-  .p-storedetail_cta_heading {
-    font-size: 1.75rem;
-  }
-  .p-storedetail_cta_stats_row {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-  }
-  .p-storedetail_cta_stats {
-    align-items: center;
-  }
-  .p-storedetail_cta_stats_number {
-    font-size: 9rem;
-    line-height: 1;
-  }
-  .p-storedetail_cta_stats_number span {
-    font-size: 3rem;
-  }
-  .p-storedetail_cta_stats_left {
-    display: flex;
-    font-size: 1.375rem;
-    text-align: center;
-  }
-  .p-storedetail_cta_note {
-    display: none;
-  }
-  .p-storedetail_cta_note-mobile {
-    display: block;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    background-color: var(--base-lightBlue);
-    padding: 1rem 1.75rem;
-    width: max-content;
-  }
-  .p-storedetail_cta_people {
-    display: flex;
-    position: absolute;
-    bottom: -6rem;
-    left: 0;
-    gap: 3rem;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-  }
-  .p-storedetail_cta_person01 {
-    display: block;
-    height: 40rem;
-    transform: translate(1rem, 13rem);
-  }
-  .p-storedetail_cta_person02 {
-    display: block;
-    height: 25rem;
-    transform: translateX(-1rem);
-  }
-  .p-storedetail_cta_btn {
-    width: fit-content;
-    white-space: nowrap;
-    bottom: -1.5rem;
-  }
-
-
-  /* Dr. Amazones — constrain at tablet too */
-  .dr-amazones-container {
-    flex-direction: column;
-    overflow: hidden;
-  }
-  .dr-amazones-container > img:first-child {
-    width: 100%;
-    height: 22rem;
-    object-fit: cover;
-    object-position: center top;
-  }
-  .dr-amazones-section {
-    position: static;
-    transform: none;
-    width: 100%;
-    padding: 2rem 2.5rem;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Service section — slider layout (same as mobile) */
-  .p-service_slider_wrapper {
-    overflow: hidden;
-    width: 100%;
-  }
-  .service-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    justify-content: flex-start !important;
-    margin-right: 0;
-    transition: transform 0.4s ease;
-  }
-  .service-wrapper,
-  .service-wrapper2,
-  .service-wrapper3 {
-    flex: 0 0 100%;
-    max-width: 100% !important;
-    width: 100% !important;
-    margin-top: 0 !important;
-    display: flex;
-    flex-direction: column;
-  }
-  .service-content {
-    flex: 1;
-  }
-  .service-img {
-    width: 100% !important;
-    height: 14rem;
-    object-fit: cover;
-  }
-  .p-service_nav {
-    display: flex;
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--base-lightBlue);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
-  .p-service_nav--prev {
-    left: 0.75rem;
-  }
-  .p-service_nav--next {
-    right: 0.75rem;
-  }
-
-  /* Show people figure as centered block on tablet */
-  .p-storedetail_introduction_people {
-    display: flex;
-    position: static;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1.5rem;
-  }
-  .p-storedetail_introduction_people-img--01 {
-    height: 280px;
-  }
-  .p-storedetail_introduction_people-img--02 {
-    height: 250px;
-  }
-
-  .p-storedetail_introduction_ribbon {
-    position: absolute;
-    top: 14%;
-    right: -6%;
-    width: 100%;
-  }
-
-  /* Stack text + figure vertically on tablet */
-  .p-storedetail__intro-text-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* ── Opening Block: stack text + jump image ── */
-  .p-storedetail__opening-content > .p-storedetail__opening-row {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .p-storedetail_opening_header p,
-  .p-storedetail_opening_header span {
-    font-size: 1rem;
-  }
-
-  .p-storedetail_opening_header span {
-    display: block;
-  }
-
-  .p-storedetail_opening_jump {
-    display: flex;
-    justify-content: center;
-  }
-  .p-storedetail_opening_jump img {
-    max-height: 16rem;
-    width: auto;
-  }
+/* ── .container fallback (no definition in global.css) ── */
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
 }
 
-/* ═══════════════════════════════════════════════════
-   MOBILE RESPONSIVE — MOBILE  (max-width: 767px)
-   ═══════════════════════════════════════════════════ */
-@media (max-width: 767px) {
-  /* ── Banner ── */
-  .p-storedetail_banner-content {
-    left: 1.5rem;
-  }
-  .p-storedetail_banner-ribbon {
-    display: none;
-  }
+/* END: Slider / Gallery */
 
-  /* ── Links Navigation ── */
-  .p-storedetail_links-nav {
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .p-storedetail_links-item {
-    flex: 0 0 auto;
-  }
-  .p-storedetail_links-divider {
-    display: block;
-  }
+/* ========================================
+   START: Review
+   ======================================== */
 
-  /* ── Topic Headers ── */
-  .p-storedetail_topic_break {
-    display: block;
-  }
-  .p-storedetail_topic_header h2,
-  .p-storedetail_topic_header h3 {
-    font-size: 3.5rem;
-    line-height: 1;
-  }
-  .p-storedetail_topic_header p {
-    font-size: 0.9rem;
-  }
-
-  /* ── Price title: stack header + icon row vertically ── */
-  .flex.items-center.gap-70px {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
-  }
-  .flex.items-center.gap-70px > .flex.gap-3.items-center {
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-top: 0;
-  }
-  .flex.items-center.gap-70px > .flex.gap-3.items-center > svg {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-  }
-  .flex.items-center.gap-70px > .flex.gap-3.items-center h3 {
-    font-size: 1rem;
-  }
-  .flex.items-center.gap-70px > .flex.gap-3.items-center p {
-    font-size: 0.875rem;
-  }
-
-  /* ── Why Choose Us title: stack header + icon row vertically ── */
-  .p-storedetail__whychooseus-title {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
-  }
-  .p-storedetail__whychooseus-title-meta {
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 0;
-  }
-  .p-storedetail__whychooseus-title-meta > svg {
-    flex-shrink: 0;
-    width: 90px;
-    height: 75px;
-  }
-
-  .p-storedetail__whychooseus-title-desc {
-    font-size: 0.875rem;
-  }
-
-  /* ── Service Cards ── */
-  .p-storedetail_service_grid {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .p-storedetail_service_card:nth-child(2) {
-    margin-bottom: 0;
-  }
-  .p-storedetail_service_card:nth-child(3) {
-    margin-bottom: 0;
-  }
-  .p-storedetail_service_card_img {
-    height: 12rem;
-  }
-
-  /* ── Speak Containers (decorative persons) ── */
-  .p-storedetail_speak_container01,
-  .p-storedetail_speak_container02 {
-    display: none;
-  }
-
-  /* ── Introduction Section ── */
-  .p-storedetail_introduction_ribbon {
-    position: absolute;
-    top: 22%;
-    right: -20%;
-    width: 150%;
-  }
-  /* Show people figure as centered block on mobile */
-  .p-storedetail_introduction_people {
-    display: flex;
-    position: static;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1.5rem;
-    gap: 1.2rem;
-  }
-  .p-storedetail_introduction_people-img--01 {
-    height: 16rem;
-  }
-  .p-storedetail_introduction_people-img--02 {
-    height: 16rem;
-    padding-bottom: 3rem;
-  }
-
-  /* Stack text + figure vertically on mobile */
-  .p-storedetail__intro-text-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .p-storedetail_introduction-layout {
-    grid-template-columns: 1fr;
-  }
-  .p-storedetail_introduction-grid-photos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Facilities — 3-col grid on mobile */
-  .p-storedetail_introduction_facilities {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 1rem;
-    justify-items: center;
-  }
-  .p-storedetail_introduction_facility {
-    width: 100%;
-    align-items: center;
-  }
-
-  .p-storedetail_introduction_facility p {
-    font-size: 0.875rem;
-  }
-
-  .p-storedetail_introduction_facility_icon {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  .p-storedetail_facility-tile {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  /* ── Grid ── */
-  .p-storedetail_grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* ── Gray Container (store info bar) ── */
-  .p-storedetail_gray_container {
-    height: auto;
-    padding: 0.75rem 1rem;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .p-storedetail_gray_container h3 {
-    font-size: 1rem;
-  }
-  .p-storedetail_cutout {
-    height: 100%;
-    width: auto;
-  }
-
-  /* ── Map Row: stack card + map vertically ── */
-  .p-storedetail_gray_container + .flex.gap-30px {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .p-storedetail_map {
-    height: 15rem;
-  }
-
-  /* ── Store Card: stack info rows + hide arrow ── */
-  .p-storelist_card .flex.gap-3 {
-    flex-direction: column;
-    line-height: 1.5;
-  }
-  .p-storelist_card-header-inner img {
-    display: none;
-  }
-
-  /* ── Price Images ── */
-  .p-storedetail_price_image_container {
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 2rem;
-  }
-  .p-storedetail_price_image_left,
-  .p-storedetail_price_image_right {
-    height: auto;
-    flex: none;
-    width: 100%;
-    padding: 2rem;
-    background-size: cover;
-  }
-
-  .p-storedetail_price_image_left {
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
-    background-position: 75% center;
-  }
-
-  .p-storedetail_price_image_right {
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
-    background-position: 35% center;
-  }
-
-  .p-storedetail_price_image_left h4,
-  .p-storedetail_price_image_right h4 {
-    font-size: 1.25rem; /* 20px — down from 30px */
-  }
-  .p-storedetail_price_image_left > p,
-  .p-storedetail_price_image_right > p {
-    font-size: 0.875rem; /* 14px — down from 16px */
-  }
-  .p-storedetail_price_image_left > div,
-  .p-storedetail_price_image_right > div {
-    font-size: 0.8125rem; /* 13px — down from 16px */
-  }
-
-
-  /* ── Why Choose Us ── */
-  div:has(> .p-storedetail_whychooseus_text_container_left),
-  div:has(> .p-storedetail_whychooseus_text_container_right) {
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
-  }
-  .p-storedetail_whychooseus_text_container_left,
-  .p-storedetail_whychooseus_text_container_right {
-    position: static;
-    width: 95%;
-    margin-top: -2rem;
-    padding: 0rem 1.5rem 1rem 2rem;
-    box-sizing: border-box;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    transform: none;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-
-  .p-storedetail_whychooseus_text_container_left {
-    align-self: flex-end;
-  }
-
-  .p-storedetail_reason_img01,
-  .p-storedetail_reason_img02,
-  .p-storedetail_reason_img03 {
-    width: 100%;
-    height: 18rem;
-  }
-  .p-storedetail_reason_img01 img {
-    width: auto;
-    height: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-  }
-  .p-storedetail_reason_ribbon01,
-  .p-storedetail_reason_ribbon02 {
-    display: none;
-  }
-
-  .p-storedetail__whychooseus-title {
-    position: relative;
-  }
-  .p-storedetail_reason_ribbon01--sp {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 16rem;
-    z-index: 0;
-    pointer-events: none;
-    width: 80vw;
-  }
-  .p-storedetail__whychooseus-title
-    > *:not(.p-storedetail_reason_ribbon01--sp) {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* ── Free Trial ── */
-  .p-storedetail_freetrial_speak_container01 {
-    /* display: none; */
-    right: 5%;
-    top: 0rem;
-    z-index: 5;
-  }
-
-  .p-reservation-speak__person--01 {
-    width: auto;
-    height: 12rem;
-  }
-  .p-storedetail_freetrial_step_list {
-    flex-direction: column;
-  }
-
-  /* ── FAQ ── */
-  .p-storedetail_faq_ribbon {
-    display: none;
-  }
-
-  /* ── Photo Gallery Slider ── */
-  /* Hide the Swiper slider on mobile — show static grid instead */
-  #js-slider {
-    display: none !important;
-  }
-
-  /* Thumbnail section becomes the primary gallery */
-  .slider-thumbs {
-    width: 100%;
-  }
-
-  /* Restore grid layout (undo horizontal scroll override) */
-  .slider-thumbs .grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-    overflow-x: visible;
-    padding: 0;
-  }
-
-  /* Hero display element — spans full width */
-  .mobile-hero {
-    grid-column: 1 / -1;
-    aspect-ratio: 3 / 2;
-    overflow: hidden;
-  }
-  .mobile-hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* Reset fixed thumbnail sizes — let images fill grid cells */
-  .slider-thumbs .js-thumb-button,
-  .slider-thumbs .grid > * {
-    flex: unset;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-  }
-
-  .slider-thumbs .js-thumb-button img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: unset;
-  }
-
-  /* ── Dr. Amazones Section ── */
-  /* On desktop the text block is position:absolute over the image.
-     On mobile we stack them and let the image fill the width. */
-  .dr-amazones-container {
-    flex-direction: column;
-    overflow: hidden;
-  }
-  /* The raw <img> in this container has no class — target it directly */
-  .dr-amazones-container > img:first-child {
-    width: 100%;
-    height: 18rem;
-    object-fit: cover;
-    object-position: center top;
-    flex-shrink: 0;
-  }
-  /* Pull the absolutely-positioned text block back into flow */
-  .dr-amazones-section {
-    position: static;
-    transform: none;
-    width: 100%;
-    padding: 2rem 1.5rem;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-  .dr-amazones-section .triangle-icon {
-    display: none;
-  }
-
-  /* ── Service Section — mobile slider ── */
-  .p-service_slider_wrapper {
-    overflow: hidden;
-  }
-  .service-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    justify-content: flex-start !important;
-    margin-right: 0;
-    transition: transform 0.4s ease;
-  }
-  .service-wrapper,
-  .service-wrapper2,
-  .service-wrapper3 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    width: 100%;
-    margin-top: 0 !important;
-    display: flex;
-    flex-direction: column;
-  }
-  .service-content {
-    flex: 1;
-  }
-  .service-img {
-    width: 100%;
-    height: 14rem;
-    object-fit: cover;
-  }
-  .p-service_nav {
-    display: flex;
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--base-lightBlue);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
-  .p-service_nav--prev {
-    left: 0.75rem;
-  }
-  .p-service_nav--next {
-    right: 0.75rem;
-  }
-  .p-storedetail__service-header h2 {
-    font-size: 60px !important;
-  }
-
-}
-
-/* ═══════════════════════════════════════════════════
-   DR AMAZONES SECTION
-   ═══════════════════════════════════════════════════ */
+/* DR AMAZONES SECTION */
 
 /* Block */
 .p-storedetail_dr-amazones {
@@ -2288,65 +952,14 @@
   margin-top: 40px;
 }
 
-/* ── Tablet (≤ 1024px) — stacked layout, same as mobile ── */
-@media (max-width: 1024px) {
-  .p-storedetail_dr-amazones {
-    flex-direction: column;
-  }
+/* END: Review */
 
-  .p-storedetail_dr-amazones-pic {
-    width: 100vw;
-  }
+/* ========================================
+   START: Utility Overrides
+   ======================================== */
 
-  .p-storedetail_dr-amazones-content {
-    position: relative;
-    top: auto;
-    transform: none;
-    align-self: flex-end;
-    width: 95%;
-    padding: 30px;
-  }
-
-  .p-storedetail_dr-amazones-inner {
-    gap: 20px;
-  }
-
-  .p-storedetail_dr-amazones-body {
-    gap: 20px;
-  }
-
-  .p-storedetail_dr-amazones-header .fs-18 {
-    font-size: 16px;
-  }
-
-  .p-storedetail_dr-amazones-label {
-    width: 295px;
-    height: auto;
-  }
-
-  .p-storedetail_dr-amazones-triangle {
-    width: 120px;
-    height: auto;
-  }
-
-  .p-storedetail_dr-amazones-btn {
-    display: none;
-  }
-}
-
-/* ── Mobile (≤ 767px) — adds image scale transform ── */
-@media (max-width: 767px) {
-  .p-storedetail_dr-amazones-pic {
-    transform: scale(1.4);
-    object-position: 0 -20px;
-    margin-top: 40px;
-  }
-}
-
-/* ═══════════════════════════════════════════════════
-   STOREDETAIL — BEM ELEMENT CLASSES
-   (utility classes converted to explicit BEM rules)
-   ═══════════════════════════════════════════════════ */
+/* STOREDETAIL — BEM ELEMENT CLASSES
+   (utility classes converted to explicit BEM rules) */
 
 /* Arrow flip — replaces inline style="transform:scaleX(-1)" */
 .p-storedetail__arrow-flip {
@@ -2488,20 +1101,6 @@
   gap: 1rem;
 }
 
-@media (min-width: 768px) {
-  .p-storedetail__gallery-bleed {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .p-storedetail__gallery-layout {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-}
-
 /* ── Dr. Amazones text elements ── */
 .p-storedetail__dr-label {
   font-size: 1.125rem;
@@ -2518,13 +1117,6 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 2;
-}
-
-/* ── Tablet responsive overrides (≤ 1024px) ── */
-@media (max-width: 1024px) {
-  .p-storedetail__service-section {
-    gap: 2rem;
-  }
 }
 
 /* ── Store info meta rows ── */
@@ -2555,9 +1147,811 @@
   gap: 0.75rem;
 }
 
-/* ── Mobile responsive overrides (≤ 767px) ── */
+/* END: Utility Overrides */
 
+/* ========================================
+   MEDIA: max-width 1024px
+   ======================================== */
+@media (max-width: 1024px) {
+  /* Topic headers */
+  .p-storedetail_topic_header h2,
+  .p-storedetail_topic_header h3 {
+    font-size: 3.5rem;
+  }
+
+  /* Links nav */
+  .p-storedetail_links-nav {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  /* CTA section */
+  .p-storedetail_cta_container {
+    height: auto;
+    min-height: 30rem;
+  }
+  .p-storedetail_cta_stats_number {
+    font-size: 8rem;
+  }
+
+  /* Why Choose Us — reduce panel width */
+  .p-storedetail_whychooseus_text_container_left,
+  .p-storedetail_whychooseus_text_container_right {
+    width: 70vw;
+  }
+
+  /* Reason images */
+  .p-storedetail_reason_img01,
+  .p-storedetail_reason_img02,
+  .p-storedetail_reason_img03 {
+    width: 100%;
+    height: 25rem;
+  }
+
+  /* ── Price Images ── */
+  .p-storedetail_price_image_container {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail_price_image_left,
+  .p-storedetail_price_image_right {
+    height: auto;
+    flex: none;
+    width: 100%;
+    padding: 2rem;
+    background-size: cover;
+  }
+
+  .p-storedetail_price_image_left {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-position: left center;
+  }
+
+  .p-storedetail_price_image_right {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-position: 35% center;
+  }
+
+  /* ── CTA Section ── */
+  .p-storedetail_cta_container {
+    height: auto;
+    min-height: 30svh;
+    padding: 4rem 1.5rem 22rem;
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .p-storedetail_cta_ribbon {
+    z-index: 0;
+    top: 5%;
+    left: -90%;
+    width: 200%;
+    height: auto;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .p-storedetail_cta_ribbon svg {
+    width: 100%;
+    height: auto;
+  }
+  .p-storedetail_cta_content {
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  .p-storedetail_cta_heading {
+    font-size: 1.75rem;
+  }
+  .p-storedetail_cta_stats_row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .p-storedetail_cta_stats {
+    align-items: center;
+  }
+  .p-storedetail_cta_stats_number {
+    font-size: 9rem;
+    line-height: 1;
+  }
+  .p-storedetail_cta_stats_number span {
+    font-size: 3rem;
+  }
+  .p-storedetail_cta_stats_left {
+    display: flex;
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  .p-storedetail_cta_note {
+    display: none;
+  }
+  .p-storedetail_cta_note-mobile {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    background-color: var(--base-lightBlue);
+    padding: 1rem 1.75rem;
+    width: max-content;
+  }
+  .p-storedetail_cta_people {
+    display: flex;
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .p-storedetail_cta_person01 {
+    display: block;
+    height: 40rem;
+    transform: translate(1rem, 13rem);
+  }
+  .p-storedetail_cta_person02 {
+    display: block;
+    height: 25rem;
+    transform: translateX(-1rem);
+  }
+  .p-storedetail_cta_btn {
+    width: fit-content;
+    white-space: nowrap;
+    bottom: -1.5rem;
+  }
+
+  /* Dr. Amazones — constrain at tablet too */
+  .dr-amazones-container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .dr-amazones-container > img:first-child {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .dr-amazones-section {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Service section — slider layout (same as mobile) */
+  .p-service_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  .service-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start !important;
+    margin-right: 0;
+    transition: transform 0.4s ease;
+  }
+  .service-wrapper,
+  .service-wrapper2,
+  .service-wrapper3 {
+    flex: 0 0 100%;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-content {
+    flex: 1;
+  }
+  .service-img {
+    width: 100% !important;
+    height: 14rem;
+    object-fit: cover;
+  }
+  .p-service_nav {
+    display: flex;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--base-lightBlue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .p-service_nav--prev {
+    left: 0.75rem;
+  }
+  .p-service_nav--next {
+    right: 0.75rem;
+  }
+
+  /* Show people figure as centered block on tablet */
+  .p-storedetail_introduction_people {
+    display: flex;
+    position: static;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .p-storedetail_introduction_people-img--01 {
+    height: 280px;
+  }
+  .p-storedetail_introduction_people-img--02 {
+    height: 250px;
+  }
+
+  .p-storedetail_introduction_ribbon {
+    position: absolute;
+    top: 14%;
+    right: -6%;
+    width: 100%;
+  }
+
+  /* Stack text + figure vertically on tablet */
+  .p-storedetail__intro-text-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ── Opening Block: stack text + jump image ── */
+  .p-storedetail__opening-content > .p-storedetail__opening-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p-storedetail_opening_header p,
+  .p-storedetail_opening_header span {
+    font-size: 1rem;
+  }
+
+  .p-storedetail_opening_header span {
+    display: block;
+  }
+
+  .p-storedetail_opening_jump {
+    display: flex;
+    justify-content: center;
+  }
+  .p-storedetail_opening_jump img {
+    max-height: 16rem;
+    width: auto;
+  }
+
+  /* ── Tablet responsive overrides ── */
+  .p-storedetail__service-section {
+    gap: 2rem;
+  }
+
+  /* ── Dr. Amazones tablet layout ── */
+  .p-storedetail_dr-amazones {
+    flex-direction: column;
+  }
+
+  .p-storedetail_dr-amazones-pic {
+    width: 100vw;
+  }
+
+  .p-storedetail_dr-amazones-content {
+    position: relative;
+    top: auto;
+    transform: none;
+    align-self: flex-end;
+    width: 95%;
+    padding: 30px;
+  }
+
+  .p-storedetail_dr-amazones-inner {
+    gap: 20px;
+  }
+
+  .p-storedetail_dr-amazones-body {
+    gap: 20px;
+  }
+
+  .p-storedetail_dr-amazones-header .fs-18 {
+    font-size: 16px;
+  }
+
+  .p-storedetail_dr-amazones-label {
+    width: 295px;
+    height: auto;
+  }
+
+  .p-storedetail_dr-amazones-triangle {
+    width: 120px;
+    height: auto;
+  }
+
+  .p-storedetail_dr-amazones-btn {
+    display: none;
+  }
+}
+
+/* ========================================
+   MEDIA: min-width 768px
+   ======================================== */
+@media (min-width: 768px) {
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+  .p-storedetail__gallery-bleed {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* ========================================
+   MEDIA: min-width 1024px
+   ======================================== */
+@media (min-width: 1024px) {
+  /* Switch flex column → row */
+  .lg\:flex-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  /* 2/3 width for main slider */
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+    flex-shrink: 0;
+  }
+  /* 1/3 width for thumbnail grid */
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+    flex-shrink: 0;
+  }
+  /* ── lg:self-start utility (missing from global.css) ── */
+  .lg\:self-start {
+    align-self: flex-start;
+  }
+  .p-storedetail__gallery-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* ========================================
+   MEDIA: max-width 767px
+   ======================================== */
 @media (max-width: 767px) {
+  /* ── Links Navigation ── */
+  .p-storedetail_links-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail_links-item {
+    flex: 0 0 auto;
+  }
+  .p-storedetail_links-divider {
+    display: block;
+  }
+
+  /* ── Topic Headers ── */
+  .p-storedetail_topic_break {
+    display: block;
+  }
+  .p-storedetail_topic_header h2,
+  .p-storedetail_topic_header h3 {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  .p-storedetail_topic_header p {
+    font-size: 0.9rem;
+  }
+
+  /* ── Price title: stack header + icon row vertically ── */
+  .flex.items-center.gap-70px {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center > svg {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center h3 {
+    font-size: 1rem;
+  }
+  .flex.items-center.gap-70px > .flex.gap-3.items-center p {
+    font-size: 0.875rem;
+  }
+
+  /* ── Why Choose Us title: stack header + icon row vertically ── */
+  .p-storedetail__whychooseus-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .p-storedetail__whychooseus-title-meta {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .p-storedetail__whychooseus-title-meta > svg {
+    flex-shrink: 0;
+    width: 90px;
+    height: 75px;
+  }
+
+  .p-storedetail__whychooseus-title-desc {
+    font-size: 0.875rem;
+  }
+
+  /* ── Introduction Section ── */
+  .p-storedetail_introduction_ribbon {
+    position: absolute;
+    top: 22%;
+    right: -20%;
+    width: 150%;
+  }
+  /* Show people figure as centered block on mobile */
+  .p-storedetail_introduction_people {
+    display: flex;
+    position: static;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    gap: 1.2rem;
+  }
+  .p-storedetail_introduction_people-img--01 {
+    height: 16rem;
+  }
+  .p-storedetail_introduction_people-img--02 {
+    height: 16rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Stack text + figure vertically on mobile */
+  .p-storedetail__intro-text-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Facilities — 3-col grid on mobile */
+  .p-storedetail_introduction_facilities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+  }
+  .p-storedetail_introduction_facility {
+    width: 100%;
+    align-items: center;
+  }
+
+  .p-storedetail_introduction_facility p {
+    font-size: 0.875rem;
+  }
+
+  .p-storedetail_introduction_facility_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .p-storedetail_facility-tile {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* ── Gray Container (store info bar) ── */
+  .p-storedetail_gray_container {
+    height: auto;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .p-storedetail_gray_container h3 {
+    font-size: 1rem;
+  }
+  .p-storedetail_cutout {
+    height: 100%;
+    width: auto;
+  }
+
+  /* ── Map Row: stack card + map vertically ── */
+  .p-storedetail_gray_container + .flex.gap-30px {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .p-storedetail_map {
+    height: 15rem;
+  }
+
+  /* ── Store Card: stack info rows + hide arrow ── */
+  .p-storelist_card .flex.gap-3 {
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .p-storelist_card-header-inner img {
+    display: none;
+  }
+
+  /* ── Price Images ── */
+  .p-storedetail_price_image_container {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .p-storedetail_price_image_left,
+  .p-storedetail_price_image_right {
+    height: auto;
+    flex: none;
+    width: 100%;
+    padding: 2rem;
+    background-size: cover;
+  }
+
+  .p-storedetail_price_image_left {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg01_sp.png");
+    background-position: 75% center;
+  }
+
+  .p-storedetail_price_image_right {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/storedetail/img_storedetail_price_titleImg02_sp.png");
+    background-position: 35% center;
+  }
+
+  .p-storedetail_price_image_left h4,
+  .p-storedetail_price_image_right h4 {
+    font-size: 1.25rem; /* 20px — down from 30px */
+  }
+  .p-storedetail_price_image_left > p,
+  .p-storedetail_price_image_right > p {
+    font-size: 0.875rem; /* 14px — down from 16px */
+  }
+  .p-storedetail_price_image_left > div,
+  .p-storedetail_price_image_right > div {
+    font-size: 0.8125rem; /* 13px — down from 16px */
+  }
+
+  /* ── Why Choose Us ── */
+  div:has(> .p-storedetail_whychooseus_text_container_left),
+  div:has(> .p-storedetail_whychooseus_text_container_right) {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+  .p-storedetail_whychooseus_text_container_left,
+  .p-storedetail_whychooseus_text_container_right {
+    position: static;
+    width: 95%;
+    margin-top: -2rem;
+    padding: 0rem 1.5rem 1rem 2rem;
+    box-sizing: border-box;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .p-storedetail_whychooseus_text_container_left {
+    align-self: flex-end;
+  }
+
+  .p-storedetail_reason_img01,
+  .p-storedetail_reason_img02,
+  .p-storedetail_reason_img03 {
+    width: 100%;
+    height: 18rem;
+  }
+  .p-storedetail_reason_img01 img {
+    width: auto;
+    height: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  .p-storedetail_reason_ribbon01,
+  .p-storedetail_reason_ribbon02 {
+    display: none;
+  }
+
+  .p-storedetail__whychooseus-title {
+    position: relative;
+  }
+  .p-storedetail_reason_ribbon01--sp {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 16rem;
+    z-index: 0;
+    pointer-events: none;
+    width: 80vw;
+  }
+  .p-storedetail__whychooseus-title
+    > *:not(.p-storedetail_reason_ribbon01--sp) {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── Free Trial ── */
+  .p-storedetail_freetrial_speak_container01 {
+    /* display: none; */
+    right: 5%;
+    top: 0rem;
+    z-index: 5;
+  }
+
+  .p-reservation-speak__person--01 {
+    width: auto;
+    height: 12rem;
+  }
+
+  /* ── FAQ ── */
+  .p-storedetail_faq_ribbon {
+    display: none;
+  }
+
+  /* ── Photo Gallery Slider ── */
+  /* Hide the Swiper slider on mobile — show static grid instead */
+  #js-slider {
+    display: none !important;
+  }
+
+  /* Thumbnail section becomes the primary gallery */
+  .slider-thumbs {
+    width: 100%;
+  }
+
+  /* Restore grid layout (undo horizontal scroll override) */
+  .slider-thumbs .grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    overflow-x: visible;
+    padding: 0;
+  }
+
+  /* Hero display element — spans full width */
+  .mobile-hero {
+    grid-column: 1 / -1;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+  .mobile-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Reset fixed thumbnail sizes — let images fill grid cells */
+  .slider-thumbs .js-thumb-button,
+  .slider-thumbs .grid > * {
+    flex: unset;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .slider-thumbs .js-thumb-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: unset;
+  }
+
+  /* ── Dr. Amazones Section ── */
+  /* On desktop the text block is position:absolute over the image.
+     On mobile we stack them and let the image fill the width. */
+  .dr-amazones-container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  /* The raw <img> in this container has no class — target it directly */
+  .dr-amazones-container > img:first-child {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
+  }
+  /* Pull the absolutely-positioned text block back into flow */
+  .dr-amazones-section {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .dr-amazones-section .triangle-icon {
+    display: none;
+  }
+
+  /* ── Service Section — mobile slider ── */
+  .p-service_slider_wrapper {
+    overflow: hidden;
+  }
+  .service-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start !important;
+    margin-right: 0;
+    transition: transform 0.4s ease;
+  }
+  .service-wrapper,
+  .service-wrapper2,
+  .service-wrapper3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-content {
+    flex: 1;
+  }
+  .service-img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+  .p-service_nav {
+    display: flex;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--base-lightBlue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .p-service_nav--prev {
+    left: 0.75rem;
+  }
+  .p-service_nav--next {
+    right: 0.75rem;
+  }
+  .p-storedetail__service-header h2 {
+    font-size: 60px !important;
+  }
+
+  /* ── Mobile responsive overrides ── */
   .p-storedetail__intro-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -2574,5 +1968,27 @@
   .p-storedetail__meta-row {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  /* ── Dr. Amazones adds image scale transform on mobile ── */
+  .p-storedetail_dr-amazones-pic {
+    transform: scale(1.4);
+    object-position: 0 -20px;
+    margin-top: 40px;
+  }
+
+  /* ── whychooseus-title-desc--sp ── */
+  .p-storedetail__whychooseus-title-desc--sp {
+    margin-bottom: 2.5rem;
+    line-height: 2;
+  }
+}
+
+/* ========================================
+   MEDIA: max-width 640px
+   ======================================== */
+@media (max-width: 640px) {
+  .review-card {
+    min-width: 100%;
   }
 }

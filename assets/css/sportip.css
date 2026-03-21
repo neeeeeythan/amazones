@@ -1,6 +1,6 @@
-/* ============================================
-    START SPORTIP BANNER
-   ============================================ */
+/* ========================================
+   START: Banner
+   ======================================== */
 
 .p-sportip__banner-overlay {
   position: absolute;
@@ -37,16 +37,6 @@
   font-weight: 400;
 }
 
-.p-sportip__banner-subtitle {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  color: var(--base-lightBlue);
-  letter-spacing: 0.02em;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-  padding-left: 0.75rem;
-}
-
 /* Custom Breadcrumb styles for sportip page  */
 .p-sportip__breadcrumb {
   bottom: 4%;
@@ -70,13 +60,35 @@
   width: 125%; /* keep left% and extra width% equal to avoid gaps */
 }
 
-/* ============================================
-    END SPORTIP BANNER
-   ============================================ */
+/* END: Banner */
 
-/* ============================================
-   START SPORTIP CONTENT
-   ============================================ */
+/* ========================================
+   START: Section Title
+   ======================================== */
+
+.p-sportip__title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.p-sportip__subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.p-sportip__title {
+  font-size: 6.259rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* END: Section Title */
+
+/* ========================================
+   START: Text Container / Cards
+   ======================================== */
 
 .p-sportip__section--white {
   width: 100%;
@@ -132,30 +144,6 @@
   z-index: 1;
 }
 
-/* YOUTUBE */
-.p-sportip__youtube-wrap {
-  margin-top: 3rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.p-sportip__youtube {
-  position: relative;
-  width: 55rem;
-  height: 31rem;
-  background-color: #1a1a1a;
-  overflow: hidden;
-}
-
-.p-sportip__youtube iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 .p-sportip__text-block {
   display: flex;
   flex-direction: column;
@@ -171,11 +159,6 @@
 .p-sportip__text-block span {
   font-weight: 500;
   color: var(--text-lightBlue);
-}
-
-.p-sportip__card-logo {
-  width: auto;
-  height: 1.5rem;
 }
 
 /* SPORTIP LINKS */
@@ -206,28 +189,46 @@
   color: var(--base-lightBlue);
 }
 
-.p-sportip__title-container {
+/* END: Text Container / Cards */
+
+/* ========================================
+   START: Point Steps
+   ======================================== */
+
+/* YOUTUBE */
+.p-sportip__youtube-wrap {
+  margin-top: 3rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 3rem;
+  justify-content: center;
 }
 
-.p-sportip__subtitle {
-  font-size: 1.125rem;
-  font-weight: 500;
+.p-sportip__youtube {
+  position: relative;
+  width: 55rem;
+  height: 31rem;
+  background-color: #1a1a1a;
+  overflow: hidden;
 }
 
-.p-sportip__title {
-  font-size: 6.259rem;
-  line-height: 1.3;
-  font-weight: 400;
-}
-
-.p-sportip__speak-img-container {
+.p-sportip__youtube iframe {
   position: absolute;
-  right: 20%;
-  top: 65%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* END: Point Steps */
+
+/* ========================================
+   START: Posture / Feature Blocks
+   ======================================== */
+
+.p-sportip__section--lightblue {
+  background-image: url("../img/common/bg_light_blue.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 .p-sportip__phone {
@@ -276,236 +277,6 @@
   flex-direction: column;
   gap: 1.875rem;
   z-index: 10;
-}
-
-/* ============================================
-   END SPORTIP CONTENT
-   ============================================ */
-
-/* ============================================
-    START ABOUT
-    ============================================ */
-.p-sportip__section--lightblue {
-  background-image: url("../img/common/bg_light_blue.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.p-sportip__about {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  box-sizing: border-box;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-/* ABOUT BOX */
-
-.p-sportip__about-card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* gap: 1rem; */
-  background-color: white;
-}
-
-.p-sportip__about-card span {
-  color: #f53662;
-}
-
-.p-sportip__about-card-body {
-  padding: 1.5rem 2.5rem;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.p-sportip__about-card-body p {
-  font-weight: 500;
-  line-height: 2rem;
-}
-
-.p-sportip__about-card-icon {
-  width: auto;
-  height: auto;
-  padding: 1.5rem;
-  box-sizing: border-box;
-  width: 5.625rem;
-  height: 5.625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--base-lightBlue);
-}
-
-.p-sportip__about-card-title {
-  display: flex;
-  align-items: center;
-  padding-left: 1.5rem;
-  gap: 1rem;
-}
-
-.p-sportip__about-card-title h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-black1);
-}
-
-.p-sportip__about-subheader {
-  width: 15rem;
-  background-color: var(--base-lightBlue);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.p-sportip__about-subheader h4 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-/* ============================================
-   END ABOUT
-   ============================================ */
-
-/* ============================================
-   START ANNOUNCEMENT
-   ============================================ */
-
-.p-sportip__announcement-people {
-  position: absolute;
-  bottom: -20%;
-  left: 10%;
-  width: auto;
-  height: auto;
-  z-index: 2;
-}
-
-.p-sportip__announcement-speak {
-  position: absolute;
-  bottom: -20%;
-  right: -4%;
-  width: auto;
-  height: auto;
-  z-index: 2;
-}
-
-/* ============================================
-   END ANNOUNCEMENT
-   ============================================ */
-
-/* ============================================
-   START FAQ
-   ============================================ */
-
-.p-sportip__faq-section {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/common/img_gym01.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.p-sportip__faq {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  padding: 8rem 0;
-}
-
-.p-sportip__faq-card {
-  display: flex;
-  flex-direction: column;
-
-  background-color: white;
-  flex: 1;
-}
-
-.p-sportip__faq-card-header {
-  display: flex;
-  align-items: center;
-}
-
-.p-sportip__faq-card-header h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.p-sportip__faq-card-icon {
-  background-color: var(--base-lightBlue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  height: 5.625rem;
-  width: 5.625rem;
-}
-
-.p-sportip__faq-card-icon-btn {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: var(--base-lightBlue);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.p-sportip__faq-card-body {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
-  padding: 2rem 2.5rem;
-}
-
-.p-sportip__faq-card span {
-  color: var(--base-lightBlue);
-}
-
-.p-sportip__faq-row {
-  display: flex;
-  flex-direction: row;
-  gap: 2.5rem;
-}
-
-/* SPEAK PERSON */
-
-/* 01 */
-.p-sportip__speak-container--01 {
-  position: absolute;
-  top: -11rem;
-  right: 3rem;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.p-sportip__speak-image--01 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.p-sportip__speak-bubble--01 {
-  position: absolute;
-  top: 0;
-  right: 10rem;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
-
-.p-sportip__speak-person--01 {
-  width: auto;
-  height: 25rem;
-  object-fit: contain;
 }
 
 /* 02 */
@@ -570,16 +341,19 @@
   object-fit: contain;
 }
 
-/* ──────────────────────────────────────────
-   TABLET  (max-width: 1024px)
-   ────────────────────────────────────────── */
+/* END: Posture / Feature Blocks */
+
+/* ========================================
+   MEDIA: max-width 1024px
+   ======================================== */
 @media (max-width: 1024px) {
-  /* BANNER */
+  /* ========================================
+     START: Banner
+     ======================================== */
+
   .p-sportip__banner-content {
     left: 3rem;
   }
-
-  /* ── BANNER ── */
 
   /* Left frame image — object-position horizontal, transform for vertical */
   .c-hero-slider__frames__clip1 .clip-img {
@@ -604,52 +378,65 @@
     font-size: 1.875rem;
   }
 
-  /* TITLE */
+  /* END: Banner */
+
+  /* ========================================
+     START: Section Title
+     ======================================== */
+
   .p-sportip__title {
     font-size: 4.5rem;
   }
 
-  /* TEXT CONTAINERS — shrink to fit tablet */
+  /* END: Section Title */
+
+  /* ========================================
+     START: Text Container / Cards
+     ======================================== */
+
   .p-sportip__text-container,
   .p-sportip__text-container--02 {
     width: 55vw;
     padding: 2.5rem;
   }
 
-  /* PHONE SECTION */
+  /* END: Text Container / Cards */
+
+  /* ========================================
+     START: Posture / Feature Blocks
+     ======================================== */
+
   .p-sportip__phone img {
     height: 28vw;
   }
 
-  /* YOUTUBE */
+  /* END: Posture / Feature Blocks */
+
+  /* ========================================
+     START: Point Steps
+     ======================================== */
+
   .p-sportip__youtube {
     width: 100%;
     height: 28rem;
   }
 
-  /* FAQ ROW — tighter gap on tablet */
-  .p-sportip__faq-row {
-    gap: 1.5rem;
-  }
-
   /* SPEAK PERSONS — scale down */
-  .p-sportip__speak-person--01,
   .p-sportip__speak-person--02,
   .p-sportip__speak-person--03 {
     height: 18rem;
   }
+
+  /* END: Point Steps */
 }
 
-/* ──────────────────────────────────────────
-   MOBILE  (max-width: 767px)
-   ────────────────────────────────────────── */
+/* ========================================
+   MEDIA: max-width 767px
+   ======================================== */
 @media (max-width: 767px) {
-  /* ── 03 SECTION — white background on mobile ── */
-  .p-sportip__section--03 {
-    background-image: url("../img/common/bg_white_pattern.webp");
-    background-size: cover;
-    background-position: 0% -170%;
-  }
+  /* ========================================
+     START: Banner
+     ======================================== */
 
   .p-sportip__banner-content {
     top: 20%;
@@ -691,6 +478,38 @@
     transform: scale(1) translateY(30%);
   }
 
+  /* END: Banner */
+
+  /* ========================================
+     START: Section Title
+     ======================================== */
+
+  .p-sportip__title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .p-sportip__subtitle {
+    font-size: 0.875rem;
+  }
+
+  .p-sportip__title-container {
+    margin-bottom: 0;
+  }
+
+  /* END: Section Title */
+
+  /* ========================================
+     START: Text Container / Cards
+     ======================================== */
+
+  /* ── 03 SECTION — white background on mobile ── */
+  .p-sportip__section--03 {
+    background-image: url("../img/common/bg_white_pattern.webp");
+    background-size: cover;
+    background-position: 0% -170%;
+  }
+
   /* ── LINKS NAV ── */
   .p-sportip__links-nav {
     flex-wrap: wrap;
@@ -704,19 +523,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-  }
-
-  .p-sportip__title-container {
-    margin-bottom: 0;
-  }
-
-  .p-sportip__title {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-
-  .p-sportip__subtitle {
-    font-size: 0.875rem;
   }
 
   /* Subtitle text + icon row — keep side-by-side */
@@ -836,6 +642,35 @@
     margin-top: 2.5rem !important;
   }
 
+  /* END: Text Container / Cards */
+
+  /* ========================================
+     START: Point Steps
+     ======================================== */
+
+  /* ── YOUTUBE ── */
+  .p-sportip__youtube-wrap {
+    margin-top: 1.5rem;
+  }
+
+  .p-sportip__youtube {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* ── DESCRIPTION SECTIONS ── */
+  .flex.flex-col.gap-30px.w-full.c-maxWidth h2 {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  /* END: Point Steps */
+
+  /* ========================================
+     START: Posture / Feature Blocks
+     ======================================== */
+
   /* ── PHONE + TEXT BLOCK SECTION ── */
   .flex.items-start.w-full.justify-between.c-maxWidth.relative {
     flex-direction: column;
@@ -894,52 +729,7 @@
     transform: translateX(-50%);
   }
 
-  /* ── YOUTUBE ── */
-  .p-sportip__youtube-wrap {
-    margin-top: 1.5rem;
-  }
-
-  .p-sportip__youtube {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
-
-  /* ── DESCRIPTION SECTIONS ── */
-  .flex.flex-col.gap-30px.w-full.c-maxWidth h2 {
-    font-size: 1.125rem;
-    line-height: 1.6;
-  }
-
-  /* ── ABOUT CARDS ── */
-  .p-sportip__about-card-body {
-    padding: 1.25rem;
-  }
-
-  .p-sportip__about-subheader {
-    width: 100%;
-  }
-
-  /* ── FAQ SECTION ── */
-  .p-sportip__faq-row {
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-
-  .p-sportip__faq-card-body {
-    padding: 1.25rem;
-    font-size: 0.875rem;
-  }
-
-  .p-sportip__faq-card-header h3 {
-    font-size: 1.125rem;
-  }
-
   /* ── SPEAK PERSONS ── */
-  .p-sportip__speak-container--01 {
-    display: none;
-  }
-
   .p-sportip__speak-container--02 {
     display: block;
     position: absolute;
@@ -971,9 +761,5 @@
     right: -6rem;
   }
 
-  /* ── ANNOUNCEMENT PEOPLE IMAGE ── */
-  .p-sportip__announcement-people,
-  .p-sportip__announcement-speak {
-    display: none;
-  }
+  /* END: Posture / Feature Blocks */
 }
