@@ -1638,19 +1638,58 @@
     box-sizing: border-box;
   }
 
-  /* Service section — stack at tablet too */
+  /* Service section — slider layout (same as mobile) */
+  .p-service_slider_wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
   .service-container {
     display: flex !important;
-    flex-direction: column;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
     align-items: stretch;
+    justify-content: flex-start !important;
     margin-right: 0;
+    transition: transform 0.4s ease;
   }
   .service-wrapper,
   .service-wrapper2,
   .service-wrapper3 {
-    max-width: 100%;
-    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100% !important;
+    width: 100% !important;
     margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-content {
+    flex: 1;
+  }
+  .service-img {
+    width: 100% !important;
+    height: 14rem;
+    object-fit: cover;
+  }
+  .p-service_nav {
+    display: flex;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--base-lightBlue);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .p-service_nav--prev {
+    left: 0.75rem;
+  }
+  .p-service_nav--next {
+    right: 0.75rem;
   }
 
   /* Show people figure as centered block on tablet */

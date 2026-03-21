@@ -289,7 +289,7 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
   var total = cards.length;
   var current = 0;
 
-  function isMobile() { return window.innerWidth <= 767; }
+  function isMobile() { return window.innerWidth <= 1024; }
 
   function goTo(index) {
     if (!isMobile()) return;
