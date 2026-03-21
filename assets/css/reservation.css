@@ -125,7 +125,6 @@
   background-color: white;
 }
 
-
 .p-reservation-step__card-body {
   font-weight: 500;
   padding: 1.5rem 2.5rem;
@@ -729,7 +728,19 @@
 
   /* Hide decorative speak characters on tablet to prevent overflow */
   .p-reservation-speak__container--01 {
-    display: none;
+    right: 5%;
+    top: -35%;
+  }
+
+  .p-reservation-speak__person--01 {
+    height: 15rem;
+  }
+
+  .p-reservation-speak__bubble--01 {
+    top: 0.5rem;
+    left: -6rem;
+    width: 6rem;
+    height: auto;
   }
 
   /* SIMULATION */

@@ -96,6 +96,8 @@
   gap: 1rem;
   color: #4f4f4f;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 5;
 }
 
 .p-storedetail_topic_header p {
@@ -914,6 +916,7 @@
   position: absolute;
   right: 5%;
   top: -2rem;
+  z-index: 5;
 }
 
 .p-storedetail_freetrial_speak_image01 {
@@ -2000,6 +2003,7 @@
     /* display: none; */
     right: 5%;
     top: 0rem;
+    z-index: 5;
   }
 
   .p-reservation-speak__person--01 {
