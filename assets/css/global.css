@@ -6493,12 +6493,12 @@ a {
 
 .mobile-header-overlay {
   position: fixed;
-  top: 0;
+  top: 98px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #fff;
-  z-index: 10000;
+  z-index: 2;
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
@@ -6693,6 +6693,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .mobile-header-overlay { top: 50px; }
   .amazones-header-logo {
     width: 70px;
     height: auto;

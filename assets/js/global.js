@@ -1,8 +1,11 @@
 
 //scroll up
-document.querySelector('.scroll-up').addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+const scrollUpEl = document.querySelector('.scroll-up');
+if (scrollUpEl) {
+  scrollUpEl.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
 // SCROLL DOWN — click to next section; fade while actively scrolling
 const scrollDownEl = document.getElementById("scroll-down-text");
