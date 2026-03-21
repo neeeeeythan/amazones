@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .scene {
+      .c-hero-animate {
         position: relative;
         width: 100%;
         overflow: hidden;
@@ -13,30 +13,27 @@
         background: #1a1a2e;
         height: auto;
       }
-      .scene img {
+      .c-hero-animate img {
         width: 100vw;
       }
-      .bg {
-      }
-
-      .panel {
+      .c-hero-animate__panel {
         position: absolute;
         inset: 0;
         z-index: 2;
         will-change: transform;
       }
-      .panel-left {
+      .c-hero-animate__panel-left {
         background: black;
         clip-path: polygon(48% 0, 0 0, 0 100%, 58% 100%);
       }
-      .panel-right {
+      .c-hero-animate__panel-right {
         background: black;
         clip-path: polygon(100% 0, 48% 0, 58% 100%, 100% 100%);
       }
-      .scene.animate .panel-left {
+      .c-hero-animate.animate .c-hero-animate__panel-left {
         animation: out-left 1.5s cubic-bezier(0.7, 0, 0.2, 1) forwards;
       }
-      .scene.animate .panel-right {
+      .c-hero-animate.animate .c-hero-animate__panel-right {
         animation: out-right 1.5s cubic-bezier(0.7, 0, 0.2, 1) forwards;
       }
       @keyframes out-left {
@@ -60,8 +57,6 @@
         0% {
           transform: translateX(0);
         }
-        /* 100% { transform: translateX(-110%); } */
-        /* 100% { transform: translateX(0); } */
         100% {
           transform: translate(-100%, -20%);
         }
@@ -75,57 +70,36 @@
           transform: translate(100%, 10%);
         }
       }
-      .controls {
-        display: flex;
-        gap: 8px;
-        margin-top: 12px;
-        align-items: center;
-      }
-      button {
-        padding: 6px 16px;
-        font-size: 13px;
-        cursor: pointer;
-        border: 0.5px solid var(--color-border-secondary);
-        border-radius: var(--border-radius-md);
-        background: transparent;
-        color: var(--color-text-primary);
-      }
-      button:hover {
-        background: var(--color-background-secondary);
-      }
+     
 
       @media screen and (max-width: 767px) {
-        /* Make panels fully cover */
-        .panel {
+        .c-hero-animate__panel {
           inset: 0;
         }
 
-        /* Adjust clip-path for better mobile proportion */
-        /* Upper-right triangle: slash runs bottom-left → top-right, panel-top takes everything above+right */
-        .panel-left {
+      
+        .c-hero-animate__panel-left {
           background: black;
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 62%, 0% 45%);
         }
 
-        /* Lower-left triangle: slash gap offset ~8% from panel-top's edge */
-        .panel-right {
+        .c-hero-animate__panel-right {
           background: black;
           clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 0% 45%, 100% 55%);
         }
 
-        /* Use horizontal animation */
-        .scene.animate .panel-left {
+        .c-hero-animate.animate .c-hero-animate__panel-left {
           animation: slide-out-left 1.2s cubic-bezier(0.7, 0, 0.2, 1) forwards;
         }
 
-        .scene.animate .panel-right {
+        .c-hero-animate.animate .c-hero-animate__panel-right {
           animation: slide-out-right 1.2s cubic-bezier(0.7, 0, 0.2, 1) forwards;
         }
       }
     </style>
   </head>
   <body>
-    <div class="scene animate" id="scene">
+    <div class="c-hero-animate animate" id="c-hero-animate">
       <picture>
         <source
           srcset="assets/img/common/bg_hero3_sp.png"
@@ -134,21 +108,11 @@
         <img src="assets/img/common/bg_hero1.png" alt="" />
       </picture>
 
-      <div class="panel panel-left"></div>
-      <div class="panel panel-right"></div>
+      <div class="c-hero-animate__panel c-hero-animate__panel-left"></div>
+      <div class="c-hero-animate__panel c-hero-animate__panel-right"></div>
     </div>
 
-    <div class="controls">
-      <button onclick="replay()">Replay ↺</button>
-    </div>
 
-    <script>
-      function replay() {
-        const s = document.getElementById("scene");
-        s.classList.remove("animate");
-        void s.offsetWidth;
-        s.classList.add("animate");
-      }
-    </script>
+
   </body>
 </html>

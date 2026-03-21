@@ -7169,10 +7169,11 @@ a {
 /* ============================================
     HERO ANIMATION
    ============================================ */
+
 .c-hero-slider {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   isolation: isolate;
   background-color: #003032;
@@ -7261,7 +7262,7 @@ a {
 
 .c-hero-slider__title {
   position: absolute;
-  top: 214px;
+  top: 40%;
   left: 105px;
   z-index: 10;
 }
@@ -7302,9 +7303,7 @@ a {
   }
 }
 @media screen and (max-width: 1250px) {
-  .c-hero-slider {
-    max-height: 100vh;
-  }
+
   .clip-img {
     width: 100vw;
     height: 100%;
@@ -7321,9 +7320,6 @@ a {
     background-size: cover;
   }
 
-  .c-hero-slider {
-    height: 100vh;
-  }
 
   .c-hero-slider__images {
     height: 100vh;
@@ -7379,7 +7375,7 @@ a {
   }
   .c-hero-slider__ribbon {
     transform: scale(1.5);
-    top: 170px;
+    top: 70px;
   }
 }
 
@@ -7410,7 +7406,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .c-hero-slider__ribbon {
-    top: 280px;
+    /* top: 280px; */
     left: -320px;
     transform: scale(2);
   }
@@ -7420,9 +7416,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .c-hero-slider {
-    height: 620px;
-  }
+ 
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
     height: 100%;
@@ -7448,16 +7442,16 @@ a {
 
 @media screen and (max-width: 600px) {
   .c-hero-slider__ribbon {
-    top: 280px;
+    top: 480px;
     left: -220px;
     transform: scale(2);
   }
 }
 @media screen and (max-width: 500px) {
   .c-hero-slider__ribbon {
-    top: 280px;
-    left: -180px;
-    transform: scale(2);
+    top: 350px;
+    left: -240px;
+    transform: scale(2.4);
   }
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
@@ -7484,14 +7478,124 @@ a {
   }
 }
 @media screen and (max-width: 365px) {
-  .c-hero-slider {
+  /* .c-hero-slider {
     height: 560px;
-  }
+  } */
 }
 /* ============================================
     END HERO ANIMATION
    ============================================ */
+/* ============================================
+    HERO ANIMATION v2
+   ============================================ */
+.c-hero-animate__banner{
+  overflow:hidden !important;
+  width:100%;
+}
+.c-hero-animate {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #1a1a2e;
+  height: auto;
+}
 
+.c-hero-animate img {
+  width: 100vw;
+  display: block;
+}
+
+.c-hero-animate__panel {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  /*
+    translateZ(0) pre-promotes the element to its own GPU compositor layer
+    at paint time — BEFORE the animation starts. Without this, the browser
+    promotes it mid-animation which causes a visible hitch on first load.
+  */
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ── Desktop ── */
+.c-hero-animate__panel-left {
+  background: #5eada5;
+  clip-path: polygon(48% 0, 0 0, 0 100%, 58% 100%);
+}
+.c-hero-animate__panel-right {
+  background: #5eada5;;
+  clip-path: polygon(100% 0, 48% 0, 58% 100%, 100% 100%);
+}
+
+.c-hero-animate.animate .c-hero-animate__panel-left {
+  animation: out-left 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+}
+.c-hero-animate.animate .c-hero-animate__panel-right {
+  animation: out-right 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+}
+
+@keyframes out-left {
+  0%   { transform: translate3d(0, 0, 0);        opacity: 1; }
+  98%  {                                          opacity: 0.9; }
+  100% { transform: translate3d(-10%, -110%, 0); opacity: 0; }
+}
+@keyframes out-right {
+  0%   { transform: translate3d(0, 0, 0);        opacity: 1; }
+  98%  {                                          opacity: 0.9; }
+  100% { transform: translate3d(10%, 110%, 0);   opacity: 0; }
+}
+
+/* ── Mobile ── */
+@media screen and (max-width:860px){
+  .c-hero-slider__title h1{
+    font-size:30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .c-hero-animate__panel { inset: 0; }
+
+  .c-hero-animate__panel-left {
+    background: #5eada5;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 62%, 0% 45%);
+    transform-origin: 0% 50%;
+  }
+  .c-hero-animate__panel-right {
+    background: #5eada5;
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 0% 45%, 100% 55%);
+    transform-origin: 100% 50%;
+  }
+
+  .c-hero-animate.animate .c-hero-animate__panel-left {
+    animation: mobile-out-left 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+  }
+  .c-hero-animate.animate .c-hero-animate__panel-right {
+    animation: mobile-out-right 1.3s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+  }
+
+@keyframes mobile-out-left {
+  0%   { transform: translate3d(0, 0, 0);          opacity: 1; }
+  98%  {                                            opacity: 0.9; }
+  100% { transform: translate3d(-110%, -20%, 0);   opacity: 0; }
+}
+@keyframes mobile-out-right {
+  0%   { transform: translate3d(0, 0, 0);          opacity: 1; }
+  98%  {                                            opacity: 0.9; }
+  100% { transform: translate3d(110%, 20%, 0);     opacity: 0; }
+}
+}
+
+@media screen and (max-width:500px){
+  .c-hero-slider__title h1{
+    font-size:20px;
+  }
+}
+/* ============================================
+    END HERO ANIMATION v2
+   ============================================ */
 /* ============================================
     START ANNOUNCEMENT SECTION
    ============================================ */

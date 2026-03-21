@@ -1,7 +1,5 @@
 //RIBBON ON SCROLL
 
-
-//HERO SLIDER JS
 //HERO SLIDER JS
 const slideContent = [
   {
