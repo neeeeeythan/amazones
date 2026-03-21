@@ -6719,6 +6719,11 @@ a {
     display: none;
   }
 
+  /* Center the button vertically when the strip is collapsed */
+  #header-floating-menu:not(.active) {
+    justify-content: center;
+  }
+
   /* Show hamburger bars on desktop inside the floating btn */
   #header-floating-menu #floating-menu-btn .mobile-hamburger {
     display: flex;
