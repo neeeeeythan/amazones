@@ -63,7 +63,7 @@
 }
 
 /* Right frame image position */
- .c-hero-slider__frames__clip2 .clip-img {
+.c-hero-slider__frames__clip2 .clip-img {
   left: 10%;
   /* right: auto; */
   object-position: left center; /* 0%=left edge, 100%=right edge */
@@ -579,25 +579,26 @@
     left: 3rem;
   }
 
-    /* ── BANNER ── */
+  /* ── BANNER ── */
 
   /* Left frame image — object-position horizontal, transform for vertical */
   .c-hero-slider__frames__clip1 .clip-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
     left: 0;
-    width: 100vw;
-    object-position: 70% center; /* horizontal: 0%=left, 100%=right */
-    transform: scale(1) translateY(0%); /* vertical: positive=show top, negative=show bottom */
   }
 
   /* Right frame image */
   .c-hero-slider__frames__clip2 .clip-img {
-    left: 0;
-    right: 0;
     width: 100%;
-    object-position: 55% center;
-    transform: scale(1) translateY(30%);
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    right: 0;
+    left: 0;
   }
-
 
   .p-sportip__banner-title {
     font-size: 1.875rem;
@@ -650,7 +651,6 @@
     background-position: 0% -170%;
   }
 
-
   .p-sportip__banner-content {
     top: 20%;
     left: 1.25rem;
@@ -663,17 +663,32 @@
   }
 
   .p-sportip__banner-logo {
-    top: 50%;
+    /* top: 50%;
     left: auto;
     right: 15%;
     width: auto;
-    height: 10%;
+    height: 10%; */
+    display: none;
   }
 
   .p-sportip__breadcrumb {
     position: absolute;
     left: 1.25rem;
     bottom: 3%;
+  }
+
+  /* ── BANNER SP IMAGE POSITIONING ── */
+  .c-hero-slider__frames__clip1 .clip-img {
+    object-position: center center;
+  }
+
+  .c-hero-slider__frames__clip2 .clip-img {
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-position: 55% center;
+    transform: scale(1) translateY(30%);
   }
 
   /* ── LINKS NAV ── */
