@@ -808,6 +808,10 @@
   transform: scale(1.2);
 }
 
+.wp-gr .wp-google-text {
+  white-space: normal !important;
+}
+
 /* RESERVATION SECTION */
 .p-storedetail-reservation_flow__section {
   padding-top: 8rem;
