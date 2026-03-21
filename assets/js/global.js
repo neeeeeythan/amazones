@@ -4,6 +4,27 @@ document.querySelector('.scroll-up').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+// SCROLL DOWN — click to next section; fade while actively scrolling
+const scrollDownEl = document.getElementById("scroll-down-text");
+if (scrollDownEl) {
+  scrollDownEl.addEventListener("click", function () {
+    const sections = Array.from(document.querySelectorAll("section")).filter(
+      s => s.parentElement.closest("section") === null
+    );
+    const next = sections.find(s => s.getBoundingClientRect().top > 10);
+    if (next) next.scrollIntoView({ behavior: "smooth" });
+  });
+
+  let scrollTimer = null;
+  window.addEventListener("scroll", function () {
+    scrollDownEl.classList.add("scrolling");
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function () {
+      scrollDownEl.classList.remove("scrolling");
+    }, 300);
+  }, { passive: true });
+}
+
 const floatingBtn = document.getElementById("floating-menu-btn");
 const floatingBtnContent = document.getElementById("floating-menu-content");
 const headerFloatingMenu = document.getElementById("header-floating-menu");
@@ -13,7 +34,6 @@ const isMobile = () => window.innerWidth <= 1091;
 
 function showMenu() {
   if (isMobile()) return;
-  floatingBtnContent.classList.add("active");
   headerFloatingMenu.classList.add("active");
   if (navPopup) navPopup.classList.add("active");
 }
@@ -22,7 +42,6 @@ let menuPinned = false;
 
 function hideMenu() {
   if (menuPinned) return;
-  floatingBtnContent.classList.remove("active");
   headerFloatingMenu.classList.remove("active");
   if (navPopup) navPopup.classList.remove("active");
 }
@@ -31,7 +50,6 @@ function toggleMenu() {
   if (isMobile()) return;
   if (menuPinned) {
     menuPinned = false;
-    floatingBtnContent.classList.remove("active");
     headerFloatingMenu.classList.remove("active");
     if (navPopup) navPopup.classList.remove("active");
   } else {

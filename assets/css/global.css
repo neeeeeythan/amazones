@@ -6447,13 +6447,27 @@ a {
 
 .floating-menu-content {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
   pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
 }
 
-.floating-menu-content.active {
+.header-floating-menu.active .floating-menu-content {
   opacity: 1;
   pointer-events: auto;
+}
+
+#scroll-down-text {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.4s ease-in-out;
+}
+
+#scroll-down-text.scrolling {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .text-vertical {
@@ -6664,11 +6678,6 @@ a {
   top: 0;
 }
 
-/* Ensure SCROLL DOWN fades smoothly */
-.floating-menu-content {
-  transition: opacity 0.4s ease-in-out;
-  cursor: pointer;   /* show it's clickable */
-}
 
 /* NAV MENU POPUP */
 .nav-menu-popup {
