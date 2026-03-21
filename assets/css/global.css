@@ -49,9 +49,16 @@ ul li::marker {
   width: 10px;
   height: 10px;
 }
-h1, h2, h3, h4, h5, h6, a, p, span {
-  text-wrap:wrap;
-  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
+  text-wrap: wrap;
 }
 /* ===========================================
    🎨 COLOR UTILITIES
@@ -6465,7 +6472,7 @@ a {
   }
 
   .p-banner-img2 {
-    right: -120%;
+    right: -70%;
     bottom: -70%;
     height: 280%;
   }
@@ -6477,6 +6484,12 @@ a {
     left: -40%;
     top: -20%;
     height: 180%;
+  }
+
+  .p-banner-img2 {
+    right: -125%;
+    bottom: -70%;
+    height: 280%;
   }
 }
 
@@ -6501,12 +6514,12 @@ a {
   padding: 72px 16px 60px 16px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.c-footer-banner__sticker1{
+.c-footer-banner__sticker1 {
   position: absolute;
   top: 45px;
   left: 0px;
 }
-.banner-speechbubble1{
+.banner-speechbubble1 {
   position: absolute;
   top: -60px;
   left: -93px;
@@ -6596,12 +6609,12 @@ a {
   background-color: rgba(255, 255, 255, 0.9);
   overflow: visible;
 }
-.c-footer-banner__sticker1{
+.c-footer-banner__sticker1 {
   position: absolute;
   top: 45px;
   left: 0px;
 }
-.banner-speechbubble1{
+.banner-speechbubble1 {
   position: absolute;
   top: -60px;
   left: -93px;
@@ -6715,9 +6728,6 @@ a {
   }
 }
 /*END TOP FOOTER BANNER SECTION*/
-
-
-
 
 /*FOOTER SECTION*/
 .I-footer {
