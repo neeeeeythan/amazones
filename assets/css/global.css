@@ -17,7 +17,7 @@
   --base-brown: #8c4239;
   --base-darkGray: #97a5b5;
   --base-darkBlueGray: #98a6b5;
-  --base-inputGray:#CDD6DD;
+  --base-inputGray: #cdd6dd;
 
   /*TEXT COLORS*/
   --text-black1: #4f4f4f;
@@ -5288,7 +5288,6 @@ a {
     END GENERAL UTILITIES
    ============================================ */
 
-
 /* ============================================
    BUTTONS
    ============================================ */
@@ -5396,9 +5395,8 @@ a {
   justify-content: center;
   border: none;
   outline: none;
-  transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 1px solid transparent;
-
 }
 
 .btn-red {
@@ -5421,8 +5419,7 @@ a {
   }
 }
 
-
-   /* ============================================
+/* ============================================
    END OF BUTTONS
    ============================================ */
 /* ============================================
@@ -5649,7 +5646,6 @@ a {
      END OF RIBBONS
 ============================================ */
 
-
 /* ============================================
      MAXWIDTH AND BREADCRUMBS
 ============================================ */
@@ -5681,13 +5677,12 @@ a {
 /* Custom Breadcrumb styles for reservation page  */
 .p-breadcrumb {
   top: 140%;
-  width:90%;
+  width: 90%;
 }
 
 /* ============================================
      END OF MAXWIDTH AND BREADCRUMBS
 ============================================ */
-
 
 /* ============================================
      TEXT SLIDER
@@ -6242,7 +6237,7 @@ a {
   left: 5.75rem;
   transform: translateY(-50%);
   z-index: 3;
-  width:100%;
+  width: 100%;
 }
 
 .p-banner-title {
@@ -6251,7 +6246,7 @@ a {
   letter-spacing: 0.08em;
   margin-bottom: 0.375rem;
   font-weight: 400;
-  width:90%;
+  width: 90%;
 }
 
 .p-banner-subtitle {
@@ -6783,12 +6778,12 @@ a {
   padding: 72px 16px 60px 16px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.c-footer-banner__sticker1{
+.c-footer-banner__sticker1 {
   position: absolute;
   top: 45px;
   left: 0px;
 }
-.banner-speechbubble1{
+.banner-speechbubble1 {
   position: absolute;
   top: -60px;
   left: -93px;
@@ -6826,12 +6821,12 @@ a {
   padding: 72px 16px 60px 16px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.c-footer-banner__sticker1{
+.c-footer-banner__sticker1 {
   position: absolute;
   top: 45px;
   left: 0px;
 }
-.banner-speechbubble1{
+.banner-speechbubble1 {
   position: absolute;
   top: -60px;
   left: -93px;
@@ -7320,7 +7315,7 @@ a {
 /* ============================================
     START ANNOUNCEMENT SECTION
    ============================================ */
-   .c-announcement_section {
+.c-announcement_section {
   background-image: url("../img/common/bg_camouflage01.webp");
   background-size: cover;
   background-position: center;
@@ -7414,7 +7409,7 @@ a {
 /* ============================================
     START END NOTE SECTION
    ============================================ */
-   .c-endNote_section {
+.c-endNote_section {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/common/img_gym01.webp");
@@ -8395,7 +8390,6 @@ a {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-
 
 /* ================================
    BREAKPOINT: 1300px
