@@ -128,9 +128,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.c-other-details-banner-p {
-  padding-left: 40px;
-}
+
 .c-other-details-banner-container {
   width: 100%;
   max-width: 1440px;
@@ -333,6 +331,10 @@
   .p-admission-item .btn-light-blue {
     margin: 0px auto;
     margin-top: 20px;
+  }
+  .c-other-details-banner {
+    padding-top:50px;
+    padding-bottom:50px;
   }
   /* .p-admission-page .c-footer-banner__sticker1 img:last-child {
     margin-left: 0px;

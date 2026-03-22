@@ -154,6 +154,10 @@
   margin-top:-10px;
 }
 
+.p-family__table .btn-green-wrapper{
+  transform:scale(0.85);
+  margin-left:20px;
+}
 @media screen and (max-width: 1200px) {
   .p-family__content02-wrapper .gap-60px {
     flex-direction: column;

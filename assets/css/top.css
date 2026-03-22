@@ -1,36 +1,33 @@
-/*HERO SECTION IMG SLIDER*/
-.hero-text-slider-container {
-  position: absolute;
-  top: 214px;
-  left: 105px;
-  z-index: 2;
-}
+/* ============================================
+    CAROUSEL CONTAINER
+   ============================================ */
+
 .carousel-container {
-  overflow: hidden;
   max-width: 100%;
   position: relative;
   margin: auto;
-  z-index: 0;
   width: 100vw;
-  height: 100%;
+  background-color: orange;
+  overflow: hidden;
 }
+
 .carousel-img-container {
-  position: absolute;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  width: 100%;
   z-index: 1;
 }
 
 .mySlides {
   display: none;
 }
+
 .mySlides img {
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
+
 .dots {
   cursor: pointer;
   height: 3px;
@@ -46,14 +43,28 @@
   background-color: var(--base-lightBlue);
 }
 
-/* transition animation */
 .animate {
   -webkit-animation-name: animate;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 3s;
   animation-name: animate;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
-
+.hero-ribbon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  top: 0px;
+}
+.hero-text-slider-container {
+  position: absolute;
+  top: 214px;
+  left: 105px;
+  z-index: 3;
+}
+.carousel-container .hero-ribbon {
+  position: absolute;
+}
 @keyframes animate {
   from {
     transform: scale(1.1) rotateY(10deg);
@@ -63,28 +74,15 @@
   }
 }
 
-@media screen and (max-width:1250px){
-  .carousel-container{
-    height:620px;
-  }
-}
 @media screen and (max-width: 1090px) {
-  .carousel-container {
-    /* margin-top: 90px; */
-  }
-  .hero-ribbon {
+  .carousel-container .hero-ribbon {
     top: 300px;
     right: -20px;
-  }
-  .hero-ribbon {
-    top: 80px;
-    right: 150px;
-    transform: scale(2);
   }
 }
 
 @media screen and (max-width: 800px) {
-  .hero-ribbon {
+  .carousel-container .hero-ribbon {
     top: 250px;
     right: 150px;
     transform: scale(2);
@@ -94,13 +92,13 @@
   .carousel-container {
     margin-top: 0px;
   }
-  .mySlides img {
-    object-position: 0px 50px;
+  .carousel-container .btn-green-wrapper {
+    transform: scale(0.85);
   }
   .hero-text-slider-container {
-    top: 120px;
+    top: 100px;
     left: 20px;
-    gap: 10px;
+    gap: 0px;
   }
   .hero-text {
     gap: 10px;
@@ -114,10 +112,10 @@
 }
 
 @media screen and (max-width: 450px) {
-  .hero-ribbon {
-    top: 300px;
-    right: 350px;
-    transform: scale(3);
+  .carousel-container .hero-ribbon {
+    top: 360px;
+    left: -200px;
+    transform: scale(2.2);
   }
 }
 @media screen and (max-width: 375px) {
@@ -131,11 +129,8 @@
     object-position: -100px center !important;
   }
 }
-/*END HERO SECTION SLIDER*/
 
-
-
-/* ══════════════════════════════════════
+/* ═════news-banner-context ═════════════════════════════════
    NEWS BANNER — DESKTOP
 ══════════════════════════════════════ */
 .news-banner-desk {
@@ -168,7 +163,7 @@
   right: -30px;
 }
 
-.news-c-footer-banner__sticker1{
+.news-c-footer-banner__sticker1 {
   position: absolute;
   top: -90px;
   left: 365px;
@@ -252,7 +247,7 @@
 }
 
 @media screen and (max-width: 1665px) {
-  .news-c-footer-banner__sticker1{
+  .news-c-footer-banner__sticker1 {
     left: 265px;
   }
   .news-banner-sticker2 {
@@ -267,7 +262,7 @@
   }
 }
 @media screen and (max-width: 1440px) {
-  .news-c-footer-banner__sticker1{
+  .news-c-footer-banner__sticker1 {
     left: 165px;
   }
   .news-banner-sticker2 {
@@ -283,7 +278,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .news-c-footer-banner__sticker1{
+  .news-c-footer-banner__sticker1 {
     left: 65px;
   }
   .news-banner-sticker2 {
@@ -338,12 +333,19 @@
     margin-left: 8px;
   }
 }
-/*END TOP NEWS SECTION*/
 
-
-
-
-/*TOP TEXT SLIDER*/
+@media screen and (max-width:370px){
+  .news-banner-sticker3-sp,
+  .news-banner-sticker4-sp  {
+    bottom:-20px;
+  }
+  .news-30min-label {
+    font-size:18px;
+  }
+}
+/* ============================================
+    TOP TEXT SLIDER
+   ============================================ */
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -396,14 +398,13 @@
   text-wrap: nowrap;
 }
 
-/*END TOP TEXT SLIDER*/
-
-/*TOP SERVICE*/
-.shop-training-machine-container{
-  background-image:url('../img/top/bg_shop_training_machine.webp');
-  background-repeat:no-repeat;
-  background-size:cover;
-
+/* ============================================
+    TOP SERVICE
+   ============================================ */
+.shop-training-machine-container {
+  background-image: url("../img/top/bg_shop_training_machine.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .service-topic-container {
   background-image: url("../img/top/bg_service_topic.svg");
@@ -422,9 +423,13 @@
   background-color: var(--base-white);
   z-index: 2;
   overflow: hidden;
+  transition:all 0.3s ease-in-out;
+}
+.service-wrapper:hover .service-img{
+  transform:scale(1.1);
 }
 .service-container {
-  line-height:30px;
+  line-height: 30px;
 }
 a.service-wrapper {
   display: block;
@@ -432,11 +437,19 @@ a.service-wrapper {
   color: inherit;
   cursor: pointer;
   align-self: flex-start;
+  transition:all  0.3s ease-in-out;
+}
+.service-img-wrapper{
+  height:320px;
+  overflow:hidden;
 }
 .service-img {
   height: 320px;
+  max-height:320px;
   object-fit: cover;
   object-position: center center !important;
+    transition:all  0.3s ease-in-out;
+
 }
 .service-wrapper2 {
   margin-top: -90px;
@@ -453,7 +466,9 @@ a.service-wrapper {
   z-index: 1;
 }
 
-/* VOICE — slider on mobile */
+/* ============================================
+   VOICE SLIDER MOBILE
+   ============================================ */
 .p-medical_voice_slider_wrapper {
   position: relative;
   overflow: hidden;
@@ -564,9 +579,10 @@ a.service-wrapper {
     display: none;
   }
 }
-/*END TOP SERVICE*/
 
-/*TOP DR AMAZONES SECTION*/
+/* ============================================
+   DR AMAZONES TOP
+   ============================================ */
 .dr-amazones-container {
   width: 100%;
   max-width: 1920px;
@@ -601,9 +617,6 @@ a.service-wrapper {
     align-self: end;
     margin-top: 100px;
   }
-  .dr-amazones-section {
-    /* max-height:350px; */
-  }
   .dr-amazones-container {
     max-height: 1000px;
   }
@@ -619,9 +632,6 @@ a.service-wrapper {
   }
   .drAmazones-pic {
     width: 100vw;
-    /* transform:scale(1.4);
-  object-position: 0 -20px;
-  margin-top:40px; */
   }
   .dr-amazones-section {
     padding: 30px;
@@ -650,11 +660,10 @@ a.service-wrapper {
     margin-top: 40px;
   }
 }
-/*END DR AMAZONES SECTION*/
 
-
-
-/*TRAINING MACHINE SECTION*/
+/* ============================================
+   TRAINING SECTION
+   ============================================ */
 .training-machine-section {
   background-image: url("../img/top/bg_training_machine.webp");
   background-repeat: no-repeat;
@@ -729,17 +738,15 @@ a.service-wrapper {
     align-items: flex-start;
     gap: 0px;
   }
-  .training-machine-section .fs-24 {
-  }
+
   .machine-label-p {
     display: block;
   }
 }
-/*END TRAINING MACHINE SECTION*/
 
-
-
-/*VOICE SECTION*/
+/* ============================================
+   VOICE SECTION
+   ============================================ */
 .voice-section {
   background-image: url("../img/top/bg_voice.webp");
   background-repeat: no-repeat;
@@ -823,9 +830,10 @@ a.service-wrapper {
     bottom: 50px;
   }
 }
-/*END VOICE SECTION*/
 
-/*MOVIE SECTION*/
+/* ============================================
+    MOVIE SECTION
+   ============================================ */
 .movie-section {
   display: flex;
   align-items: center;
@@ -1074,6 +1082,3 @@ a.service-wrapper {
   }
 }
 /*END MOVIE SECTION*/
-
-
-
