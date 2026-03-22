@@ -617,7 +617,13 @@
   .p-medical__banner-logo--pc {
     display: none;
   }
-
+  
+  .p-medical__banner-logo--pc ~ h1{
+    margin-top:60px; 
+  }
+ .p-medical__banner-logo--pc ~ h1 > span {
+  display: block;
+}
   .p-medical__banner-logo--sp {
     position: absolute;
     display: flex;
