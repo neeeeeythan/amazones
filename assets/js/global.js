@@ -855,3 +855,39 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ============================================
     END NEWS
    ============================================ */
+
+/* ============================================
+   COOKIE NOTICE
+   ============================================ */
+(function () {
+  var notice = document.querySelector('.cookie-notice');
+  if (!notice) return;
+
+  if (localStorage.getItem('cookieAccepted')) {
+    notice.style.display = 'none';
+    return;
+  }
+
+  var okBtn = notice.querySelector('.footer-btn');
+  if (okBtn) {
+    okBtn.addEventListener('click', function () {
+      notice.classList.remove('visible');
+      notice.classList.add('hide');
+      notice.addEventListener('transitionend', function () {
+        notice.style.display = 'none';
+      }, { once: true });
+      localStorage.setItem('cookieAccepted', '1');
+    });
+  }
+
+  // Double rAF ensures browser renders the off-screen state first,
+  // then the transition to .visible plays smoothly
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
+      notice.classList.add('visible');
+    });
+  });
+})();
+/* ============================================
+   END COOKIE NOTICE
+   ============================================ */

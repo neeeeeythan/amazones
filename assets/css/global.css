@@ -7783,6 +7783,37 @@ a {
 /* ============================================
      END GLOBAL UTILITYS FOR HEADER, ANNOUNCEMENT ENDNOTE FOOTER SECTION TEXTSLIDER
    ============================================ */
+
+/* COOKIE NOTICE */
+.cookie-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.cookie-notice.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cookie-notice.hide {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.cookie-notice .footer-btn {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.cookie-notice .footer-btn:hover {
+  opacity: 0.75;
+}
 /* ============================================
    GLOBAL RESPONSIVE STYLES
    Tablet  ≤ 1024px  |  Mobile ≤ 767px
