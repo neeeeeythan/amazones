@@ -130,7 +130,7 @@
   }
 }
 
-/* ══════════════════════════════════════
+/* ═════news-banner-context ═════════════════════════════════
    NEWS BANNER — DESKTOP
 ══════════════════════════════════════ */
 .news-banner-desk {
@@ -334,6 +334,15 @@
   }
 }
 
+@media screen and (max-width:370px){
+  .news-banner-sticker3-sp,
+  .news-banner-sticker4-sp  {
+    bottom:-20px;
+  }
+  .news-30min-label {
+    font-size:18px;
+  }
+}
 /* ============================================
     TOP TEXT SLIDER
    ============================================ */
@@ -414,6 +423,10 @@
   background-color: var(--base-white);
   z-index: 2;
   overflow: hidden;
+  transition:all 0.3s ease-in-out;
+}
+.service-wrapper:hover .service-img{
+  transform:scale(1.1);
 }
 .service-container {
   line-height: 30px;
@@ -424,11 +437,19 @@ a.service-wrapper {
   color: inherit;
   cursor: pointer;
   align-self: flex-start;
+  transition:all  0.3s ease-in-out;
+}
+.service-img-wrapper{
+  height:320px;
+  overflow:hidden;
 }
 .service-img {
   height: 320px;
+  max-height:320px;
   object-fit: cover;
   object-position: center center !important;
+    transition:all  0.3s ease-in-out;
+
 }
 .service-wrapper2 {
   margin-top: -90px;

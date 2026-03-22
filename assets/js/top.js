@@ -3,29 +3,29 @@
 //HERO SLIDER JS
 const slideContent = [
   {
-    h1: "女性による<br /> 女性のための<br /> 女性専用24時間ジム",
+    h1: "女性による<span class =  'block'> 女性のための</span><span class = 'block'> 女性専用24時間ジム</span>",
     p: "Amazonesの特徴をみる",
-    href: "#"
+    href: "about/index.html"
   },
   {
-    h1: "科学的アプローチで実現する <br />最適なトレーニング環境<br />AI姿勢診断・改善",
+    h1: "科学的アプローチで実現する <span class =  'block'>最適なトレーニング環境</span><span class =  'block'>AI姿勢診断・改善</span>",
     p: "施設・設備をみる",
-    href: "#"
+    href: "sportip/index.html"
   },
   {
-    h1: "女性トレーナーが <br />貴方を全力でサポート<br />Amazonesの ",
+    h1: "女性トレーナーが <span class= 'block'>貴方を全力でサポート</span>Amazonesの ",
     p: "パーソナルトレーニング",
-    href: "#"
+    href: "personal/index.html"
   },
   {
-    h1: "ダイエット効果を<br />最大化する <br />オンライン診療サービス",
+    h1: "ダイエット効果を<span class = 'block' >最大化する </span><span class = 'block'/>オンライン診療サービス</span>",
     p: "ドクターアマゾネス",
-    href: "#"
+    href: "medical/index.html"
   },
   {
-    h1: "諦めるのはまだ早い<br />いつ始めても遅くない！ム<br />無料体験・見学を予約する",
+    h1: "諦めるのはまだ早い<span class = 'block'>いつ始めても遅くない！ム</span><span class = 'block'>無料体験・見学を予約する</span>",
     p: "店舗一覧をみる",
-    href: "#"
+    href: "reservation/index.html"
   }
 ];
 

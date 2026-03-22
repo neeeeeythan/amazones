@@ -373,10 +373,10 @@
             <div class="c-hero-animate animate" id="c-hero-animate">
               <picture>
                 <source
-                  srcset="../assets/img/common/bg_hero2_sp.png"
+                  srcset="assets/img/common/bg_hero2_sp.png"
                   media="(max-width:650px)"
                 />
-                <img src="../assets/img/common/bg_hero2.png" alt="" />
+                <img src="assets/img/common/bg_hero2.png" alt="" />
               </picture>
             <div class="c-hero-animate__panel c-hero-animate__panel-left"></div>
             <div
@@ -390,10 +390,10 @@
             <div class="c-hero-animate animate" id="c-hero-animate">
               <picture>
                 <source
-                  srcset="../assets/img/common/bg_hero3_sp.png"
+                  srcset="assets/img/common/bg_hero3_sp.png"
                   media="(max-width:650px)"
                 />
-                <img src="../assets/img/common/bg_hero3.png" alt="" />
+                <img src="assets/img/common/bg_hero3.png" alt="" />
               </picture>
             <div class="c-hero-animate__panel c-hero-animate__panel-left"></div>
             <div
@@ -407,10 +407,10 @@
             <div class="c-hero-animate animate" id="c-hero-animate">
               <picture>
                 <source
-                  srcset="../assets/img/common/bg_hero4_sp.png"
+                  srcset="assets/img/common/bg_hero4_sp.png"
                   media="(max-width:650px)"
                 />
-                <img src="../assets/img/common/bg_hero4.png" alt="" />
+                <img src="assets/img/common/bg_hero4.png" alt="" />
               </picture>
             <div class="c-hero-animate__panel c-hero-animate__panel-left"></div>
             <div
@@ -424,10 +424,10 @@
             <div class="c-hero-animate animate" id="c-hero-animate">
               <picture>
                 <source
-                  srcset="../assets/img/common/bg_hero5_sp.png"
+                  srcset="assets/img/common/bg_hero5_sp.png"
                   media="(max-width:650px)"
                 />
-                <img src="../assets/img/common/bg_hero4.png" alt="" />
+                <img src="assets/img/common/bg_hero5.png" alt="" />
               </picture>
             <div class="c-hero-animate__panel c-hero-animate__panel-left"></div>
             <div
@@ -674,7 +674,7 @@
           <img src="assets/img/top/img_news_banner_sticker1_sp.webp" class="news-banner-sticker1 z-10  c-animation-jump " width="210" height="auto" alt="">
           <img src="assets/img/top/img_news_banner_sticker2_sp.webp" class="news-banner-sticker2 z-10  c-animation-jump" width="139" height="auto" alt="">
 
-          <div class="news-banner-context flex flex-col items-center gap-42px">
+          <div class="news-banner-context flex flex-col items-center gap-42px z-10">
             <div class="flex flex-col gap-40px items-center">
               <p class="reveal news-30min-label text-white fs-24">
                 1日<img src="assets/img/top/icon_30min.svg" alt="30分">から始める運動習慣
@@ -816,11 +816,14 @@
             <!--SERVICE 1-->
            
               <a href = 'personal/index.html' class="reveal-left service-wrapper">
-                <img
+                <div class  = 'service-img-wrapper'>
+                  <img
                   src="assets/img/top/img_service1.png"
                   alt="女性専用24時間ジム"
                   class="service-img"
                 />
+                </div>
+                
                 <div
                   class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
                 >
@@ -835,14 +838,16 @@
                 </div>
               </a>
             
-
             <!--SERVICE 2-->
               <a href = 'sportip/index.html' class="reveal service-wrapper service-wrapper2">
-              <img
-                src="assets/img/top/img_service2.webp"
-                alt="女性専用24時間ジム"
-                class="service-img"
-              />
+                 <div class  = 'service-img-wrapper'>
+                    <img
+                      src="assets/img/top/img_service2.webp"
+                      alt="女性専用24時間ジム"
+                      class="service-img"
+                    />
+                 </div>
+              
               <div
                 class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
               >
@@ -858,14 +863,16 @@
               </div>
               </a>
            
-
             <!--SERVICE 3-->
             <a href = 'about/index.html' class="reveal-right service-wrapper service-wrapper3">
-              <img
-                src="assets/img/top/img_service3.webp"
-                alt="女性専用24時間ジム"
-                class="service-img"
-              />
+               <div class  = 'service-img-wrapper'>
+                   <img
+                    src="assets/img/top/img_service3.webp"
+                    alt="女性専用24時間ジム"
+                    class="service-img"
+                  />
+               </div>
+             
               <div
                 class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
               >
@@ -881,8 +888,7 @@
                   <img src="assets/img/top/icon_arrow.svg" alt="アイコン" />
                 </span>
               </div>
-            </a>
-           
+            </a>      
           </div>
 
           <div class="service-container-sp p-medical_voice_slider_wrapper">
@@ -899,13 +905,17 @@
               <img src="assets/img/common/icon_arrow_white.svg">
             </button>
             <div class="p-medical_voice_grid">
-              <div class="p-medical_voice_card">
+              <!-- service 1-->
+              <a href = 'personal/index.html' class="p-medical_voice_card">
                 <div class="service-wrapper">
-                  <img
-                    src="assets/img/top/img_service1.png"
-                    alt="女性専用24時間ジム"
-                    class="service-img"
-                  />
+                  
+                      <img
+                      src="assets/img/top/img_service1.png"
+                      alt="女性専用24時間ジム"
+                      class="service-img"
+                    />
+                  
+                  
                   <div
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
                   >
@@ -914,21 +924,24 @@
                     <p class="fs-16 fw-500 lh-200 text-center">
                       Amazones（アマゾネス）は全国に20店舗以上！<br />もちろん、全店舗行き来自由！
                     </p>
-                    <a href="#" class="btn-green-wrapper">
+                    <span class="btn-green-wrapper">
                       <img src="assets/img/top/icon_arrow.svg" alt="アイコン" />
-                    </a>
+                    </span>
                   </div>
                 </div>
 
-              </div>
-              <!-- Voice 2 -->
-              <div class="p-medical_voice_card">
+              </a>
+              <!-- service  2 -->
+              <a href = 'sportip/index.html' class="p-medical_voice_card">
                 <div class="service-wrapper service-wrapper2">
-                  <img
-                    src="assets/img/top/img_service2.webp"
-                    alt="女性専用24時間ジム"
-                    class="service-img"
-                  />
+                    
+                    <img
+                      src="assets/img/top/img_service2.webp"
+                      alt="女性専用24時間ジム"
+                      class="service-img"
+                    />
+                    
+                
                   <div
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
                   >
@@ -938,20 +951,23 @@
                       姿勢診断の判定結果に基づいたトレーニングや自宅でできる体操、
                       <br class = 'service-break'/>ストレッチ・一本歯下駄？のトレーニングで効果的に改善！
                     </p>
-                    <a href="#" class="btn-green-wrapper">
+                    <span class="btn-green-wrapper">
                       <img src="assets/img/top/icon_arrow.svg" alt="アイコン" />
-                    </a>
+                    </span>
                   </div>
                 </div>
-              </div>
-              <!-- Voice 3 -->
-              <div class="p-medical_voice_card">
+              </a>
+              <!-- service 3 -->
+              <a href = 'about/index.html' class="p-medical_voice_card">
                  <div class="service-wrapper service-wrapper3">
-                  <img
-                    src="assets/img/top/img_service3.webp"
-                    alt="女性専用24時間ジム"
-                    class="service-img"
-                  />
+                  
+                       <img
+                        src="assets/img/top/img_service3.webp"
+                        alt="女性専用24時間ジム"
+                        class="service-img"
+                      />
+                   
+                 
                   <div
                     class="service-content flex flex-col items-center justify-center gap-30px py-40 px-16"
                   >
@@ -963,12 +979,12 @@
                       ダイエットの知識やトレーニングマシンの使い方をはじめ
                        <br class = 'service-break'/>トレーニングジムの利用方法までしっかりと解消！
                     </p>
-                    <div class="btn-green-wrapper">
+                    <span class="btn-green-wrapper">
                       <img src="assets/img/top/icon_arrow.svg" alt="アイコン" />
-                    </div>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
@@ -981,7 +997,7 @@
               <img src="assets/img/top/icon_ribbon_service.svg" alt="リボン"  class = 'topic-ribbon'/>
             </div>
           </div>
-          <div class="section-header-wrapper flex flex-col gap-18px pl-240">
+          <div class="section-header-wrapper flex flex-col gap-18px pl-240 z-10">
             <p class="reveal section-sub-text fs-18 fw-500 text-black1">トピックス</p>
             <h2 class="reveal section-header-text fs-100 lh-normal font-outfit text-black1 fw-400">
               Topics
@@ -1223,11 +1239,11 @@
                 </div>
                 <figure class="c-shop__sticker-sp__figure1">
                   <img src="assets/img/top/img_trainingmachine_sticker1.webp" alt="好きな時間に好きな店舗へ通い放題！" height="auto" width="104px" />
-                  <img src="assets/img/top/img_trainingmachine_speechBubble1.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-sp__bubble1" width="119px" height="auto" />
+                  <img src="assets/img/top/img_trainingmachine_speechBubble1.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-sp__bubble1 speech-bubble " width="119px" height="auto" />
                 </figure>
                 <figure class="c-shop__sticker-sp__figure2">
                   <img src="assets/img/top/img_trainingmachine_sticker2.webp" alt="好きな時間に好きな店舗へ通い放題！" height="auto" width="150px" />
-                  <img src="assets/img/top/img_trainingmachine_speechBubble2.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-sp__bubble2" width="98px" height="auto" />
+                  <img src="assets/img/top/img_trainingmachine_speechBubble2.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-sp__bubble2  speech-bubble" width="98px" height="auto" />
                 </figure>
               </aside>
 
@@ -1240,11 +1256,11 @@
                 </div>
                 <figure class="c-shop__sticker-desk__figure1">
                   <img src="assets/img/top/img_trainingmachine_sticker1.webp" alt="好きな時間に好きな店舗へ通い放題！" height="410px" width="149px" />
-                  <img src="assets/img/top/img_trainingmachine_speechBubble1.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-desk__bubble1" />
+                  <img src="assets/img/top/img_trainingmachine_speechBubble1.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-desk__bubble1 speech-bubble" />
                 </figure>
                 <figure class="c-shop__sticker-desk__figure2">
                   <img src="assets/img/top/img_trainingmachine_sticker2.webp" alt="好きな時間に好きな店舗へ通い放題！" height="400px" width="241px" />
-                  <img src="assets/img/top/img_trainingmachine_speechBubble2.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-desk__bubble2" />
+                  <img src="assets/img/top/img_trainingmachine_speechBubble2.svg" alt="好きな時間に好きな店舗へ通い放題！" class="c-shop__sticker-desk__bubble2 speech-bubble" />
                 </figure>
               </aside>
 
@@ -1458,13 +1474,13 @@
 
               <!-- Price item 3 -->
               <li class="reveal c-price-plan__item c-price-plan__item--3">
-                <a href = 'price/index.html#initial-cost' class="c-price-plan__item-content">
-                  <img src="../assets/img/top/icon_energy.svg" alt="オプション" />
+                <a href = 'price/index.html#option-service' class="c-price-plan__item-content">
+                  <img src="assets/img/top/icon_energy.svg" alt="オプション" />
                   <div class="flex flex-col items-center justify-center gap-20px">
                     <p class="mt-10 fw-700 fs-24 text-lightBlue">オプション</p>
                     <span  class="text-white font-outfit fs-16 fw-400 c-price-plan__link">
                       Option
-                      <img src="../assets/img/top/icon_arrow.svg" alt="矢印" />
+                      <img src="assets/img/top/icon_arrow.svg" alt="矢印" />
                     </span>
                   </div>
                 </a>
@@ -1490,9 +1506,9 @@
                   <img src="assets/img/top/icon_arrow.svg" alt="よくあるご質問を見る" />
                 </a>
               </div>
-              <p class="reveal fw-500 fs-16 lh-180">
+              <p class=" fw-500 fs-16 lh-180">
                 よくあるお問い合わせ内容をまとめて掲載しております。<br class="c-price-plan__break" />
-                掲載のないご質問につきましては、<a href="#" class="text-lightBlue c-price-plan__link-text">お問い合わせフォーム</a>からご質問ください。
+                掲載のないご質問につきましては、<a href="contact/index.html" class="text-lightBlue c-price-plan__link-text">お問い合わせフォーム</a>からご質問ください。
               </p>
             </article>
 
@@ -1820,7 +1836,7 @@
                             />
                         </div>
                     </div>
-                    <a href="#" class="btn-light-blue mt-40 mx-auto">
+                    <a href="https://www.youtube.com/@%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%8D%E3%82%B9ch" target="_blank" class="btn-light-blue mt-40 mx-auto">
                         <p class="text-white fs-16 font-outfit">View More</p>
                         <img src="assets/img/top/icon_videos.svg" alt="アイコン" />
                     </a>
@@ -1868,8 +1884,8 @@
             </div>
           </div>
 
-          <div class="reveal-scale c-column__grid mt-20">
-            <div class="c-column__item">
+          <div class="c-column__grid mt-20">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column1.webp" alt="ジム通いの目標設定、どうしたらいい？続かない女性のための"無理しない"続け方" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.17</p>
@@ -1877,7 +1893,7 @@
               </div>
             </div>
 
-            <div class="c-column__item">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column2.webp" alt="【挫折しないジム通い】続けられる女性は"何が違う？" 今すぐ変われるコツと習慣まとめ【女性専用ジム監修】" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.03</p>
@@ -1885,7 +1901,7 @@
               </div>
             </div>
 
-            <div class="c-column__item">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column3.webp" alt="【生理中でも無理なく通える】女性専用ジムが教える"ゆらぎ期"の正しいトレーニングガイド" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.03</p>
@@ -1893,7 +1909,7 @@
               </div>
             </div>
 
-            <div class="c-column__item">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column4.webp" alt="女性が続けられる！運動・筋トレのモチ" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.12.03</p>
@@ -1901,7 +1917,7 @@
               </div>
             </div>
 
-            <div class="c-column__item">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column5.webp" alt="快適に通える！ジムマナー完全ガイド" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
@@ -1909,7 +1925,7 @@
               </div>
             </div>
 
-            <div class="c-column__item">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column6.webp" alt="苦手マシン克服で痩せる！女性の弱点を変える最短ダイエット術" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
@@ -1917,7 +1933,7 @@
               </div>
             </div>
 
-            <div class="c-column__item">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column7.webp" alt="初心者女性がジムで失敗する理由と防ぐコツ" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
@@ -1925,7 +1941,7 @@
               </div>
             </div>
 
-            <div class="c-column__item">
+            <div class="reveal-scale c-column__item">
               <img src="assets/img/top/img_column8.webp" alt="【専門トレーナーが解説】ダイエットに本気で効く！おすすめの有酸素運動３選" />
               <div class="flex flex-col gap-20px w-full py-24 px-30 base-white">
                 <p class="fw-700 fs-16 text-lightBlue">2025.11.27</p>
