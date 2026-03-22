@@ -2892,7 +2892,7 @@ body .c-policy-content > ol > li > dl {
   padding-left: 1px;
 }
 
-/* outline width */
+/* アウトライン幅 */
 
 @media (min-width: 1280px) {
   .c-form dd,
@@ -8828,7 +8828,7 @@ body .c-policy-content > ol > li > dl {
   }
 } */
 
-/* ──── Photo Gallery Slider Thumbnails ──── */
+/* ──── フォトギャラリースライダーサムネイル ──── */
 .js-thumb-button {
   display: block;
   cursor: pointer;

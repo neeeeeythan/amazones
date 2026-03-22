@@ -1,4 +1,4 @@
-//scroll up
+// スクロールアップ
 const scrollUpEl = document.querySelector(".scroll-up");
 if (scrollUpEl) {
   scrollUpEl.addEventListener("click", () => {
@@ -6,7 +6,7 @@ if (scrollUpEl) {
   });
 }
 
-// SCROLL DOWN — click to next section; fade while actively scrolling
+// スクロールダウン — 次のセクションへクリック移動、スクロール中はフェード
 const scrollDownEl = document.getElementById("scroll-down-text");
 if (scrollDownEl) {
   scrollDownEl.addEventListener("click", function () {
@@ -101,17 +101,17 @@ if (navPopup) {
   });
 }
 
-//FOR ELEMENT ANIMATIONS
+// 要素アニメーション
 document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (!entry.target.classList.contains("is-in-view")) {
-            // Add class to trigger animation
+            // アニメーション発火のためクラスを追加
             entry.target.classList.add("is-in-view");
 
-            // Remove class after animation completes
+            // アニメーション完了後にクラスを削除
             setTimeout(() => {
               entry.target.classList.remove("is-in-view");
             }, 1800);
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.3, // Trigger when 30% of element is visible
+      threshold: 0.3, // 要素の30%が見えたら発火
       rootMargin: "0px",
     },
   );
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// HEADER MOBILE
+// モバイルヘッダー
 floatingBtn.addEventListener("click", function () {
   if (!isMobile()) return;
 
@@ -154,7 +154,7 @@ floatingBtn.addEventListener("click", function () {
   hamburger.classList.toggle("active", isActive);
 });
 
-// Mobile accordion toggle
+// モバイルアコーディオン切り替え
 document.querySelectorAll(".js-sp-nav-toggle").forEach(function (btn) {
   btn.addEventListener("click", function () {
     var section = this.closest(".sp-nav-section");
@@ -162,7 +162,7 @@ document.querySelectorAll(".js-sp-nav-toggle").forEach(function (btn) {
   });
 });
 
-// Mobile nav X-close button
+// モバイルナビ閉じるボタン
 var spNavClose = document.querySelector(".sp-nav-close");
 if (spNavClose) {
   spNavClose.addEventListener("click", function () {
@@ -174,7 +174,7 @@ if (spNavClose) {
   });
 }
 
-// Close overlay + reset hamburger on resize to desktop
+// デスクトップリサイズ時にオーバーレイ閉じる＋ハンバーガーリセット
 window.addEventListener("resize", function () {
   if (!isMobile()) {
     const overlay = document.querySelector(".mobile-header-overlay");
@@ -187,13 +187,13 @@ window.addEventListener("resize", function () {
   }
 });
 
-// (Guarded hover listeners consolidated into showMenu/hideMenu above)
+// （ホバーリスナーは上記のshowMenu/hideMenuに統合済み）
 
 /* ============================================
-   INFINITE LOOP SLIDER – works with [data-slider]
-   Clones slides for seamless looping.
-   Full mobile touch/swipe support.
-   Generic spacer detection for all sliders.
+   無限ループスライダー – [data-slider]と連携
+   シームレスなループのためスライドを複製
+   モバイルタッチ/スワイプ完全対応
+   全スライダー用の汎用スペーサー検出
    ============================================ */
 function initSliders() {
   document.querySelectorAll("[data-slider]").forEach(function (container) {
@@ -205,7 +205,7 @@ function initSliders() {
     if (!track) return;
 
     /* ──────────────────────────────────────────
-       1. Create overflow-hidden wrapper
+       1. overflow-hidden ラッパーを作成
     ────────────────────────────────────────── */
     var wrapper = document.createElement("div");
     wrapper.style.overflow = "hidden";
@@ -216,7 +216,7 @@ function initSliders() {
     wrapper.appendChild(track);
 
     /* ──────────────────────────────────────────
-       2. Kill native scroll
+       2. ネイティブスクロールを無効化
     ────────────────────────────────────────── */
     track.style.overflow = "visible";
     track.style.overflowX = "visible";
@@ -226,9 +226,9 @@ function initSliders() {
     track.style.touchAction = "pan-y";
 
     /* ──────────────────────────────────────────
-       3. Detect spacer generically:
-          First <li> is a spacer if its
-          .slide-content has no <img> inside.
+       3. スペーサーを汎用的に検出:
+          最初の<li>がスペーサーかどうかは
+          .slide-content内に<img>がないかで判定
     ────────────────────────────────────────── */
     var allItems = Array.from(track.children);
     var spacer = null;
@@ -250,7 +250,7 @@ function initSliders() {
     if (totalOriginal === 0) return;
 
     /* ──────────────────────────────────────────
-       4. Clone all slides and append
+       4. 全スライドを複製して追加
     ────────────────────────────────────────── */
     originalSlides.forEach(function (slide) {
       var clone = slide.cloneNode(true);
@@ -262,7 +262,7 @@ function initSliders() {
     var slides = spacer ? allSlideItems.slice(1) : allSlideItems;
 
     /* ──────────────────────────────────────────
-       5. State
+       5. 状態
     ────────────────────────────────────────── */
     var currentIndex = 0;
     var trackIndex = 0;
@@ -271,7 +271,7 @@ function initSliders() {
     var isTransitioning = false;
 
     /* ──────────────────────────────────────────
-       6. Measure cumulative offset
+       6. 累積オフセットを計測
     ────────────────────────────────────────── */
     function getTargetX(idx) {
       if (idx <= 0) return 0;
@@ -283,7 +283,7 @@ function initSliders() {
     }
 
     /* ──────────────────────────────────────────
-       7. Move track
+       7. トラックを移動
     ────────────────────────────────────────── */
     function moveTrack(x, animate) {
       if (animate) {
@@ -306,7 +306,7 @@ function initSliders() {
     }
 
     /* ──────────────────────────────────────────
-       8. Dots (only for original slides)
+       8. ドット（オリジナルスライドのみ）
     ────────────────────────────────────────── */
     function buildDots() {
       if (!dotsWrap) return;
@@ -333,7 +333,7 @@ function initSliders() {
     }
 
     /* ──────────────────────────────────────────
-       9. Seamless reset on transition end
+       9. トランジション終了時のシームレスリセット
     ────────────────────────────────────────── */
     track.addEventListener("transitionend", function (e) {
       if (e.target !== track) return;
@@ -355,7 +355,7 @@ function initSliders() {
     });
 
     /* ──────────────────────────────────────────
-       10. Navigation
+       10. ナビゲーション
     ────────────────────────────────────────── */
     function goTo(index) {
       if (isTransitioning) return;
@@ -395,7 +395,7 @@ function initSliders() {
       if (trackIndex <= 0) {
         trackIndex = totalOriginal;
         moveTrack(getTargetX(trackIndex), false);
-        track.offsetHeight; // force reflow
+        track.offsetHeight; // リフロー強制
 
         trackIndex = totalOriginal - 1;
         currentIndex = trackIndex % totalOriginal;
@@ -421,7 +421,7 @@ function initSliders() {
     }
 
     /* ──────────────────────────────────────────
-       11. Auto-play
+       11. 自動再生
     ────────────────────────────────────────── */
     function startAutoPlay() {
       stopAutoPlay();
@@ -442,7 +442,7 @@ function initSliders() {
     }
 
     /* ──────────────────────────────────────────
-       12. Button clicks
+       12. ボタンクリック
     ────────────────────────────────────────── */
     if (prevBtn) {
       prevBtn.addEventListener("click", function () {
@@ -460,7 +460,7 @@ function initSliders() {
     }
 
     /* ──────────────────────────────────────────
-       13. Touch / Swipe – full mobile support
+       13. タッチ / スワイプ – モバイル完全対応
     ────────────────────────────────────────── */
     var touchStartX = 0;
     var touchStartY = 0;
@@ -545,13 +545,13 @@ function initSliders() {
     });
 
     /* ──────────────────────────────────────────
-       14. Pause on hover (desktop)
+       14. ホバー時に一時停止（デスクトップ）
     ────────────────────────────────────────── */
     wrapper.addEventListener("mouseenter", stopAutoPlay);
     wrapper.addEventListener("mouseleave", startAutoPlay);
 
     /* ──────────────────────────────────────────
-       15. Init
+       15. 初期化
     ────────────────────────────────────────── */
     buildDots();
     moveTrack(0, false);
@@ -567,8 +567,8 @@ if (document.readyState === "loading") {
   initSliders();
 }
 
-//if vidoes are fetched from wp files
-//TOP MOVIE
+// WPファイルから動画を取得する場合
+// トップ動画
 // var myMp4 = document.getElementById("mp4"),
 //     myWebm = document.getElementById("webm"),
 //     myVid = document.getElementById("myVideo"),
@@ -628,16 +628,16 @@ if (document.readyState === "loading") {
 //     selectVid(ID);
 //     myVid.play();
 // }
-// YouTube video IDs mapping
+// YouTube動画IDマッピング
 
-//if vidoes are fetched from youtube
+// YouTubeから動画を取得する場合
 const videoIds = {
   one: "9lsfbbWFtEM",
   two: "c-JyRI7P4zk",
   three: "sf4CZ-kEXB0",
   four: "KqAKFB3-w30",
 };
-// Get the YouTube iframe element
+// YouTube iframe要素を取得
 const youtubePlayer = document.getElementById("youtube-player");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -645,7 +645,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function selectVid(ID) {
-  // Update active thumbnail
+  // アクティブサムネイルを更新
   var thumbnails = document.querySelectorAll(".thumb");
   thumbnails.forEach(function (thumb) {
     thumb.classList.remove("active-thumb");
@@ -671,7 +671,7 @@ function selectVid(ID) {
   if (activeThumb) {
     activeThumb.classList.add("active-thumb");
   }
-  // Update YouTube video
+  // YouTube動画を更新
   if (youtubePlayer) {
     youtubePlayer.src =
       "https://www.youtube.com/embed/" +
@@ -682,7 +682,7 @@ function selectVid(ID) {
 
 function playVid(ID) {
   selectVid(ID);
-  // Auto-play the video after selection
+  // 選択後に動画を自動再生
   if (youtubePlayer) {
     youtubePlayer.src =
       "https://www.youtube.com/embed/" +
@@ -690,13 +690,13 @@ function playVid(ID) {
       "?enablejsapi=1&autoplay=1";
   }
 }
-//END MOVIE
+// 動画セクション終了
 
-//scroll animation
+// スクロールアニメーション
 (function () {
   "use strict";
   /* ─────────────────────────────────────────────
-               3. SCROLL REVEAL — IntersectionObserver
+               3. スクロールリビール — IntersectionObserver
             ───────────────────────────────────────────────── */
   const scrollReveal = {
     init() {
@@ -710,7 +710,7 @@ function playVid(ID) {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add("revealed");
-              observer.unobserve(entry.target); // animate once
+              observer.unobserve(entry.target); // 一度だけアニメーション
             }
           });
         },
@@ -727,7 +727,7 @@ function playVid(ID) {
   scrollReveal.init();
 
   /* ─────────────────────────────────────────────
-               5. SMOOTH ANCHOR LINKS
+               5. スムーズアンカーリンク
             ───────────────────────────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -740,7 +740,7 @@ function playVid(ID) {
   });
 })();
 
-// Trigger opening image jump each time it enters the viewport.
+// ビューポートに入るたびにオープニング画像ジャンプを発火
 (function () {
   const openingJumpImages = document.querySelectorAll(".c-animation-jump");
   if (!openingJumpImages.length) return;
@@ -750,7 +750,7 @@ function playVid(ID) {
 
   const triggerJump = (element) => {
     element.classList.remove("is-jump-once");
-    // Reflow ensures the CSS animation restarts on each viewport entry.
+    // リフローでCSSアニメーションを再スタート
     void element.offsetWidth;
     element.classList.add("is-jump-once");
   };
@@ -779,7 +779,7 @@ function playVid(ID) {
   openingJumpImages.forEach((image) => observer.observe(image));
 })();
 
-// Voice slider (mobile only) — using shared initMobileCarousel from common.js
+// お客様の声スライダー（モバイルのみ）— common.jsのinitMobileCarouselを使用
 initMobileCarousel({
   trackSelector: ".p-medical_voice_grid",
   prevSelector: ".p-medical_voice_nav--prev",
@@ -789,7 +789,7 @@ initMobileCarousel({
 });
 
 /* ============================================
-    C-BTN JS 
+    C-BTN JS（ボタン制御）
    ============================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -810,7 +810,7 @@ function init__tabs(selector = '[data-widget="tabs"]') {
 }
 
 /* ============================================
-    START NEWS
+    ニュース開始
    ============================================ */
 function init__tabs(selector = '[data-widget="tabs"]') {
   let tabs = document.querySelectorAll(selector);
@@ -991,11 +991,11 @@ document.addEventListener("DOMContentLoaded", () => {
   init__tabs();
 });
 /* ============================================
-    END NEWS
+    ニュース終了
    ============================================ */
 
 /* ============================================
-   COOKIE NOTICE
+   Cookie通知
    ============================================ */
 (function () {
   var notice = document.querySelector(".cookie-notice");
@@ -1029,11 +1029,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 })();
 /* ============================================
-   END COOKIE NOTICE
+   Cookie通知終了
    ============================================ */
 
 /* ============================================
-  FOOTER FUNCTINALITY
+  フッター機能
    ============================================ */
 function initAccordions() {
   const isMobile = window.innerWidth <= 1050;

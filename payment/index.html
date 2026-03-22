@@ -15,7 +15,7 @@
     <!-- グローバルCSS -->
     <link href="assets/css/global.css" rel="stylesheet" type="text/css" />
 
-    <!--PAYMENT CSS-->
+    <!--お支払いCSS-->
     <link href="assets/css/payment.css" rel="stylesheet" type="text/css" />
 
     <!-- スクリプト -->
@@ -29,13 +29,15 @@
     <header class="I-header">
       <div class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
         <div class="flex flex-row items-center flex-1 gap-24px">
-          <img
-            src="assets/img/common/icon_logo.svg"
-            alt="アマゾネス"
-            width="159.97px"
-            height="62.77px"
-            class="amazones-header-logo"
-          />
+          <a href="./">
+            <img
+              src="assets/img/common/icon_logo.svg"
+              alt="アマゾネス"
+              width="159.97px"
+              height="62.77px"
+              class="amazones-header-logo"
+            />
+          </a>
           <a href="./" class="header-text text-black1 fw-500 fs-14">アマゾネス</a>
           <p class="header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
@@ -341,7 +343,7 @@
             </nav>
           </div>
         </div>
-        <!-- RIBBON DECORATION 01-->
+        <!-- リボン装飾01-->
         <img
           src="assets/img/common/img_ribbon_banner.svg"
           alt="リボン装飾"
@@ -349,7 +351,7 @@
         />
       </section>
 
-      <!-- PAYMENT CONTENT -->
+      <!-- お支払いコンテンツ -->
       <section class="p-payment__section--white">
         <!-- リンク -->
         <nav class="p-payment__links-nav c-maxWidth">
@@ -466,7 +468,7 @@
           </div>
           <!-- テキストコンテナ -->
           <div class="p-payment__text-container reveal-scale">
-            <!-- FLOATING SPEAK PERSON 01 -->
+            <!-- フローティング人物01 -->
             <div class="p-payment__speak-container--01">
               <div class="p-payment__speak-image--01">
                 <img
@@ -481,7 +483,7 @@
                 />
               </div>
             </div>
-            <!-- TEXT BLOCK 1 -->
+            <!-- テキストブロック1 -->
             <div class="p-payment__text-block reveal-scale">
               <p class="font-zen">
                 お支払い方法は、クレジットカードと口座振替からお選びいただけます。
@@ -537,7 +539,7 @@
               </li>
             </ul>
 
-            <!-- TEXT BLOCK 2 -->
+            <!-- テキストブロック2 -->
             <div class="p-payment__text-block reveal-scale">
               <ul style="list-style: none; margin: 0; padding: 0">
                 <li class="font-zen">
@@ -553,7 +555,7 @@
         </div>
       </section>
 
-      <!-- BG LIGHT BLUE SECTION 1-->
+      <!-- 水色背景セクション1-->
       <section id="credit-card" class="p-payment__section--lightblue">
         <div class="p-payment__about c-maxWidth">
           <div class="p-payment__about-card reveal-scale">
@@ -623,7 +625,7 @@
         </div>
       </section>
 
-      <!-- WHITE SECTION 1 -->
+      <!-- 白セクション1 -->
       <section id="bank-transfer" class="p-payment__section--white">
         <div class="p-payment__about c-maxWidth">
           <div class="p-payment__about-card reveal-scale">
@@ -690,7 +692,7 @@
         </div>
       </section>
 
-      <!-- BG LIGHT BLUE SECTION 2-->
+      <!-- 水色背景セクション2-->
       <section id="cash-payment" class="p-payment__section--lightblue">
         <div class="p-payment__about c-maxWidth">
           <div class="p-payment__about-card reveal-scale">
@@ -729,7 +731,7 @@
         </div>
       </section>
 
-      <!-- WHITE SECTION 2 -->
+      <!-- 白セクション2 -->
       <section id="prorated" class="p-payment__section--white">
         <div class="p-payment__about c-maxWidth">
           <div class="p-payment__about-card reveal-scale">
@@ -836,7 +838,7 @@
               </svg>
             </span>
           </button>
-          <!-- MOBILE ONLY: Speak persons in-flow below button (hidden on desktop) -->
+          <!-- モバイルのみ: ボタン下の人物表示（デスクトップでは非表示） -->
           <div class="p-payment__speak-mobile">
             <div class="p-payment__speak-mobile-item">
               <img
@@ -863,7 +865,7 @@
               />
             </div>
           </div>
-          <!-- FLOATING SPEAK PERSON 02 -->
+          <!-- フローティング人物02 -->
           <div class="p-payment__speak-container--02">
             <div class="p-payment__speak-image--02">
               <img
@@ -878,7 +880,7 @@
               />
             </div>
           </div>
-          <!-- FLOATING SPEAK PERSON 03 -->
+          <!-- フローティング人物03 -->
           <div class="p-payment__speak-container--03">
             <div class="p-payment__speak-image--03">
               <img
@@ -896,7 +898,7 @@
         </div>
       </section>
 
-      <!--TOP TEXT SLIDER-->
+      <!--トップテキストスライダー-->
       <section>
         <div class="text-slider w-full">
           <div class="slide-track">
@@ -1192,14 +1194,16 @@
      <footer class="I-footer">
       <section class="footer-main-container">
 
-        <!-- Top row: brand + nav -->
+        <!-- 上部: ブランド + ナビ -->
         <section class="footer-top">
 
-          <!-- Brand -->
+          <!-- ブランド -->
           <aside class="footer-brand">
             <figure class="footer-brand-logo">
-              <img src="assets/img/common/icon_logo.svg" alt="アマゾネス" />
-              <p class="font-outfit fw-500">WOMEN ONLY 24h GYM</p>
+              <a href="./">
+                <img src="assets/img/common/icon_logo.svg" alt="アマゾネス" />
+                <p class="font-outfit fw-500">WOMEN ONLY 24h GYM</p>
+              </a>
             </figure>
 
             <nav class="footer-cta-links" aria-label="クイックリンク">
@@ -1214,7 +1218,7 @@
             </nav>
           </aside>
 
-          <!-- Nav columns -->
+          <!-- ナビカラム -->
           <section class="footer-nav-columns">
 
             <!-- 会社について -->
@@ -1234,7 +1238,7 @@
                 <li><a href="/column/" class="fw-500 fs-15">ゾネスタイムズ</a></li>
                 <li><a href="/storelist/" class="fw-500 fs-15">店舗一覧</a></li>
                 <li><a href="/reservation/" class="fw-500 fs-15">無料体験・見学予約</a></li>
-                <li><a href="/reservation/index.html#reservation-flow" class="fw-500 fs-15 text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
+                <li><a href="/reservation#reservation-flow" class="fw-500 fs-15 text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
                 <li><a href="/price/" class="fw-500 fs-15">料金案内</a></li>
                 <li><a href="/admission/" class="fw-500 fs-15 text-lightBlue">入会手続きのご案内</a></li>
                 <li><a href="/payment/" class="fw-500 fs-15 text-lightBlue">お支払いについて</a></li>
@@ -1264,7 +1268,7 @@
                 </ul>
               </nav>
 
-              <!-- Recruitment -->
+              <!-- 採用情報 -->
               <nav class="footer-nav-section" aria-label="Recruitment">
                 <button class="footer-page-link relative" aria-expanded="false">
                   <p class="font-outfit fs-18 fw-500">Recruitment</p>
@@ -1357,7 +1361,7 @@
           </section>
         </section>
 
-        <!-- Bottom row: legal links + scroll-up -->
+        <!-- 下部: 法的リンク + スクロールアップ -->
         <section class="footer-bottom">
           <ul class="footer-legal-links">
             <li>

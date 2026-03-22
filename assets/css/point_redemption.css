@@ -151,7 +151,7 @@
   right: 10px;
 }
 
-/*RECOMMENDED SECTION*/
+/* おすすめセクション */
 .p-hospitality {
   width: 100%;
   padding: 100px 16px;
@@ -322,11 +322,11 @@
     text-align: center;
   }
 }
-/*END OF RECOMMENDED SECTION*/
+/* おすすめセクション終了 */
 
-/*REUSABLE*/
-/*DR AMAZONES*/
-/*TOP DR AMAZONES SECTION*/
+/* 再利用可能 */
+/* DR AMAZONES */
+/* トップ DR AMAZONES セクション */
 .dr-amazones-container {
   width: 100%;
   max-width: 1920px;
@@ -420,9 +420,9 @@
     margin-top: 40px;
   }
 }
-/*END DR AMAZONES SECTION*/
+/* DR AMAZONES セクション終了 */
 
-/*reusable*/
+/* 再利用可能 */
 .p-protein_campaign_block {
   flex: 1;
   display: flex;

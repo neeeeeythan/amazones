@@ -1,10 +1,10 @@
 /**
- * Shared utility functions used across multiple pages.
- * Import this file before page-specific scripts.
+ * 複数ページで使用する共通ユーティリティ関数
+ * ページ固有スクリプトより前にインポートしてください
  */
 
 /**
- * Smooth scroll navigation for anchor links within a container.
+ * コンテナ内のアンカーリンク用スムーススクロールナビゲーション
  * @param {string} selector - CSS selector for the nav link container (e.g. '.p-payment__links-nav a')
  */
 function initSmoothScroll(selector) {
@@ -21,7 +21,7 @@ function initSmoothScroll(selector) {
 }
 
 /**
- * Mobile carousel with prev/next navigation.
+ * 前/次ナビゲーション付きモバイルカルーセル
  * @param {Object} config
  * @param {string} config.trackSelector - CSS selector for the scrollable track/grid
  * @param {string} config.prevSelector  - CSS selector for the previous button
@@ -67,7 +67,7 @@ function initMobileCarousel(config) {
 }
 
 /**
- * Generic modal open/close with overlay click and Escape key support.
+ * オーバーレイクリックとEscキー対応の汎用モーダル開閉
  * @param {string} modalId - The DOM id of the modal overlay element
  * @returns {Object} - { open, close } functions
  */

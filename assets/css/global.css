@@ -1,10 +1,10 @@
 /* ============================================
-    GENERAL UTILITIES
+    一般ユーティリティ
    ============================================ */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
 
 :root {
-  /*BASE COLORS*/
+  /* ベースカラー */
   --base-black: #4f4f4f;
   --base-gray: #eef0f3;
   --base-lightGray: #fdfdfd;
@@ -19,7 +19,7 @@
   --base-darkBlueGray: #98a6b5;
   --base-inputGray: #cdd6dd;
 
-  /*TEXT COLORS*/
+  /* テキストカラー */
   --text-black1: #4f4f4f;
   --text-white: #ffffff;
   --text-lightBlue: #81d8d0;
@@ -28,7 +28,7 @@
   --text-brown: #8c4239;
   --text-lightPink: #f53561;
 
-  /*FONTS*/
+  /* フォント */
   --font-outfit: "Outfit";
   --font-zen: "Zen Kaku Gothic New";
 }
@@ -162,7 +162,7 @@ span {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-/* ========== DISPLAY ========== */
+/* ========== 表示 ========== */
 .block {
   display: block;
 }
@@ -188,7 +188,7 @@ span {
   display: none;
 }
 
-/* ========== POSITIONING ========== */
+/* ========== 配置 ========== */
 .static {
   position: static;
 }
@@ -205,7 +205,7 @@ span {
   position: sticky;
 }
 
-/* Top / Right / Bottom / Left */
+/* 上 / 右 / 下 / 左 */
 .top-0 {
   top: 0;
 }
@@ -254,7 +254,7 @@ span {
   border-radius: 100%;
 }
 
-/* Z-index */
+/* Zインデックス */
 .z-0 {
   z-index: 0;
 }
@@ -274,7 +274,7 @@ span {
   z-index: 50;
 }
 
-/* Overflow */
+/* オーバーフロー */
 .overflow-hidden {
   overflow: hidden;
 }
@@ -285,7 +285,7 @@ span {
   overflow: scroll;
 }
 
-/* ========== FLEXBOX ========== */
+/* ========== フレックスボックス ========== */
 .flex-row {
   flex-direction: row;
 }
@@ -379,7 +379,7 @@ span {
   align-self: stretch;
 }
 
-/* Flex grow / shrink */
+/* フレックス拡大 / 縮小 */
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -718,7 +718,7 @@ span {
   gap: 100px;
 }
 
-/* ========== GRID ========== */
+/* ========== グリッド ========== */
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -761,7 +761,7 @@ span {
   place-content: center;
 }
 
-/* ========== ALIGNMENT / TEXT ========== */
+/* ========== 配置 / テキスト ========== */
 .text-left {
   text-align: left;
 }
@@ -2426,13 +2426,13 @@ span {
 .w-fit-content {
   width: fit-content;
 }
-/* Make sure columns play nice inside flex/grid containers */
+/* フレックス/グリッドコンテナ内でカラムが正しく動作するようにする */
 /* [class*="col-"] {
   box-sizing: border-box;
   flex: 0 0 auto;
 } */
 
-/* ========== RESPONSIVE BREAKPOINTS ========== */
+/* ========== レスポンシブブレークポイント ========== */
 @media screen and (max-width: 1024px) {
   .lg-block {
     display: block;
@@ -2492,7 +2492,7 @@ span {
     font-size: 44px;
   }
 
-  /* All sides */
+  /* 全辺 */
   .lg-p-0 {
     padding: 0;
   }
@@ -2551,7 +2551,7 @@ span {
     padding: 50px;
   }
 
-  /* Padding top */
+  /* パディング上 */
   .lg-pt-0 {
     padding-top: 0;
   }
@@ -2610,7 +2610,7 @@ span {
     padding-top: 50px;
   }
 
-  /* Padding bottom */
+  /* パディング下 */
   .lg-pb-0 {
     padding-bottom: 0;
   }
@@ -2669,7 +2669,7 @@ span {
     padding-bottom: 50px;
   }
 
-  /* Padding left */
+  /* パディング左 */
   .lg-pl-0 {
     padding-left: 0;
   }
@@ -2728,7 +2728,7 @@ span {
     padding-left: 50px;
   }
 
-  /* Padding right */
+  /* パディング右 */
   .lg-pr-0 {
     padding-right: 0;
   }
@@ -2787,7 +2787,7 @@ span {
     padding-right: 50px;
   }
 
-  /* Horizontal shorthand */
+  /* 水平方向ショートハンド */
   .lg-px-5 {
     padding-left: 5px;
     padding-right: 5px;
@@ -2829,7 +2829,7 @@ span {
     padding-right: 50px;
   }
 
-  /* Vertical shorthand */
+  /* 垂直方向ショートハンド */
   .lg-py-5 {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -2871,7 +2871,7 @@ span {
     padding-bottom: 50px;
   }
 
-  /* All sides */
+  /* 全辺 */
   .lg-m-0 {
     margin: 0;
   }
@@ -2930,7 +2930,7 @@ span {
     margin: 50px;
   }
 
-  /* Margin top */
+  /* マージン上 */
   .lg-mt-0 {
     margin-top: 0;
   }
@@ -2989,7 +2989,7 @@ span {
     margin-top: 50px;
   }
 
-  /* Margin bottom */
+  /* マージン下 */
   .lg-mb-0 {
     margin-bottom: 0;
   }
@@ -3048,7 +3048,7 @@ span {
     margin-bottom: 50px;
   }
 
-  /* Margin left */
+  /* マージン左 */
   .lg-ml-0 {
     margin-left: 0;
   }
@@ -3107,7 +3107,7 @@ span {
     margin-left: 50px;
   }
 
-  /* Margin right */
+  /* マージン右 */
   .lg-mr-0 {
     margin-right: 0;
   }
@@ -3166,7 +3166,7 @@ span {
     margin-right: 50px;
   }
 
-  /* Horizontal shorthand */
+  /* 水平方向ショートハンド */
   .lg-mx-5 {
     margin-left: 5px;
     margin-right: 5px;
@@ -3208,7 +3208,7 @@ span {
     margin-right: 50px;
   }
 
-  /* Vertical shorthand */
+  /* 垂直方向ショートハンド */
   .lg-my-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -3459,7 +3459,7 @@ span {
     font-size: 70px;
   }
 
-  /* All sides */
+  /* 全辺 */
   .md-p-0 {
     padding: 0;
   }
@@ -3518,7 +3518,7 @@ span {
     padding: 50px;
   }
 
-  /* Padding top */
+  /* パディング上 */
   .md-pt-0 {
     padding-top: 0;
   }
@@ -3583,7 +3583,7 @@ span {
     padding-top: 80px;
   }
 
-  /* Padding bottom */
+  /* パディング下 */
   .md-pb-0 {
     padding-bottom: 0;
   }
@@ -3648,7 +3648,7 @@ span {
     padding-bottom: 130px;
   }
 
-  /* Padding left */
+  /* パディング左 */
   .md-pl-0 {
     padding-left: 0;
   }
@@ -3707,7 +3707,7 @@ span {
     padding-left: 50px;
   }
 
-  /* Padding right */
+  /* パディング右 */
   .md-pr-0 {
     padding-right: 0;
   }
@@ -3766,7 +3766,7 @@ span {
     padding-right: 50px;
   }
 
-  /* Horizontal shorthand */
+  /* 水平方向ショートハンド */
   .md-px-5 {
     padding-left: 5px;
     padding-right: 5px;
@@ -3816,7 +3816,7 @@ span {
     padding-right: 50px;
   }
 
-  /* Vertical shorthand */
+  /* 垂直方向ショートハンド */
   .md-py-5 {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -3878,7 +3878,7 @@ span {
     padding-bottom: 70px;
   }
 
-  /* All sides */
+  /* 全辺 */
   .md-m-0 {
     margin: 0;
   }
@@ -3937,7 +3937,7 @@ span {
     margin: 50px;
   }
 
-  /* Margin top */
+  /* マージン上 */
   .md-mt-0 {
     margin-top: 0;
   }
@@ -4008,7 +4008,7 @@ span {
     margin-top: 70px;
   }
 
-  /* Margin bottom */
+  /* マージン下 */
   .md-mb-0 {
     margin-bottom: 0;
   }
@@ -4067,7 +4067,7 @@ span {
     margin-bottom: 50px;
   }
 
-  /* Margin left */
+  /* マージン左 */
   .md-ml-0 {
     margin-left: 0;
   }
@@ -4126,7 +4126,7 @@ span {
     margin-left: 50px;
   }
 
-  /* Margin right */
+  /* マージン右 */
   .md-mr-0 {
     margin-right: 0;
   }
@@ -4185,7 +4185,7 @@ span {
     margin-right: 50px;
   }
 
-  /* Horizontal shorthand */
+  /* 水平方向ショートハンド */
 
   .md-mx-auto {
     margin-left: auto;
@@ -4232,7 +4232,7 @@ span {
     margin-right: 50px;
   }
 
-  /* Vertical shorthand */
+  /* 垂直方向ショートハンド */
   .md-my-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -4423,7 +4423,7 @@ span {
     font-size: 44px;
   }
 
-  /* All sides */
+  /* 全辺 */
   .sm-p-0 {
     padding: 0;
   }
@@ -4482,7 +4482,7 @@ span {
     padding: 50px;
   }
 
-  /* Top */
+  /* 上 */
   .sm-pt-0 {
     padding-top: 0;
   }
@@ -4541,7 +4541,7 @@ span {
     padding-top: 50px;
   }
 
-  /* Bottom */
+  /* 下 */
   .sm-pb-0 {
     padding-bottom: 0;
   }
@@ -4600,7 +4600,7 @@ span {
     padding-bottom: 50px;
   }
 
-  /* Left */
+  /* 左 */
   .sm-pl-0 {
     padding-left: 0;
   }
@@ -4659,7 +4659,7 @@ span {
     padding-left: 50px;
   }
 
-  /* Right */
+  /* 右 */
   .sm-pr-0 {
     padding-right: 0;
   }
@@ -4718,7 +4718,7 @@ span {
     padding-right: 50px;
   }
 
-  /* Horizontal (x-axis) */
+  /* 水平方向（X軸） */
   .sm-px-5 {
     padding-left: 5px;
     padding-right: 5px;
@@ -4760,7 +4760,7 @@ span {
     padding-right: 50px;
   }
 
-  /* Vertical (y-axis) */
+  /* 垂直方向（Y軸） */
   .sm-py-5 {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -4802,7 +4802,7 @@ span {
     padding-bottom: 50px;
   }
 
-  /* All sides */
+  /* 全辺 */
   .sm-m-0 {
     margin: 0;
   }
@@ -4861,7 +4861,7 @@ span {
     margin: 50px;
   }
 
-  /* Margin top */
+  /* マージン上 */
   .sm-mt-0 {
     margin-top: 0;
   }
@@ -4920,7 +4920,7 @@ span {
     margin-top: 50px;
   }
 
-  /* Margin bottom */
+  /* マージン下 */
   .sm-mb-0 {
     margin-bottom: 0;
   }
@@ -4979,7 +4979,7 @@ span {
     margin-bottom: 50px;
   }
 
-  /* Margin left */
+  /* マージン左 */
   .sm-ml-0 {
     margin-left: 0;
   }
@@ -5038,7 +5038,7 @@ span {
     margin-left: 50px;
   }
 
-  /* Margin right */
+  /* マージン右 */
   .sm-mr-0 {
     margin-right: 0;
   }
@@ -5097,7 +5097,7 @@ span {
     margin-right: 50px;
   }
 
-  /* Horizontal shorthand */
+  /* 水平方向ショートハンド */
   .sm-mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -5143,7 +5143,7 @@ span {
     margin-right: 50px;
   }
 
-  /* Vertical shorthand */
+  /* 垂直方向ショートハンド */
   .sm-my-5 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -5383,7 +5383,7 @@ a {
     hue-rotate(96deg) brightness(92%) contrast(82%);
 }
 
-/* START ICON BUTTON ARROW LIGHT BLUE */
+/* アイコンボタン矢印ライトブルー開始 */
 .btn_icn_light_blue {
   width: 2.5rem;
   height: 2.5rem;
@@ -5674,7 +5674,7 @@ a {
   font-size: 1rem;
   color: var(--text-lightBlue);
 }
-/* Custom Breadcrumb styles for reservation page  */
+/* 予約ページ用パンくずリストスタイル */
 .p-breadcrumb {
   top: 140%;
   width: 90%;
@@ -6223,7 +6223,7 @@ a {
   z-index: 1;
 }
 
-/* Ribbon banner SVG decoration */
+/* リボンバナーSVG装飾 */
 .p-banner-ribbon {
   position: absolute;
   right: -45%;
@@ -6235,7 +6235,7 @@ a {
   pointer-events: none;
 }
 
-/* Text content */
+/* テキストコンテンツ */
 .p-banner-content {
   position: absolute;
   top: 50%;
@@ -6263,7 +6263,7 @@ a {
   font-weight: 300;
   padding-left: 0.75rem;
 }
-/* Laptop / small desktop */
+/* ラップトップ / 小型デスクトップ */
 @media screen and (max-width: 1440px) {
   .p-banner {
     height: calc(100vw * 300 / 1440);
@@ -6295,7 +6295,7 @@ a {
   }
 }
 
-/* Tablet */
+/* タブレット */
 @media screen and (max-width: 1024px) {
   .p-banner {
     height: calc(100vw * 280 / 1024);
@@ -6312,7 +6312,7 @@ a {
   }
 }
 
-/* Small tablet / large mobile */
+/* 小型タブレット / 大型モバイル */
 @media screen and (max-width: 768px) {
   .p-banner {
     height: 20rem;
@@ -6352,7 +6352,7 @@ a {
     );
   }
 
-  /* BREADCRUMB */
+  /* パンくずリスト */
   .c-breadcrumb {
     font-size: 0.8125rem;
     position: relative;
@@ -6377,7 +6377,7 @@ a {
   }
 }
 
-/* NORMAL MOBILE */
+/* 通常モバイル */
 @media screen and (max-width: 425px) {
   .p-banner-img {
     left: -40%;
@@ -6523,7 +6523,7 @@ a {
   pointer-events: auto;
 }
 
-/* Accordion nav styles */
+/* アコーディオンナビスタイル */
 .sp-nav-header {
   display: flex;
   align-items: center;
@@ -6814,14 +6814,14 @@ a {
 /* ============================================
      FOOTER SECTION
 ============================================ */
-/* Make the floating menu fixed so it follows the user on desktop */
+/* フローティングメニューを固定にしてデスクトップでユーザーに追従させる */
 .header-floating-menu {
-  position: fixed; /* already fixed — confirm this stays fixed, not sticky */
+  position: fixed; /* 既にfixed — stickyではなくfixedを維持 */
   right: 0;
   top: 0;
 }
 
-/* NAV MENU POPUP */
+/* ナビメニューポップアップ */
 .nav-menu-popup {
   position: fixed;
   right: 100px;
@@ -6847,7 +6847,7 @@ a {
   pointer-events: auto;
 }
 
-/* Disable floating-menu-close (hamburger animation replaces it) */
+/* floating-menu-closeを無効化（ハンバーガーアニメーションが代替） */
 .floating-menu-close {
   display: none;
 }
@@ -6856,18 +6856,18 @@ a {
 }
 
 @media screen and (min-width: 1091px) {
-  /* Hide MENU icon + text — hamburger replaces them on desktop */
+  /* MENUアイコン＋テキストを非表示 — デスクトップではハンバーガーが代替 */
   #header-floating-menu #floating-menu-btn .desktop-menu-icon,
   #header-floating-menu #floating-menu-btn > p {
     display: none;
   }
 
-  /* Center the button vertically when the strip is collapsed */
+  /* ストリップが折りたたまれた時にボタンを垂直中央揃え */
   #header-floating-menu:not(.active) {
     justify-content: center;
   }
 
-  /* Show hamburger bars on desktop inside the floating btn */
+  /* デスクトップのフローティングボタン内にハンバーガーバーを表示 */
   #header-floating-menu #floating-menu-btn .mobile-hamburger {
     display: flex;
     flex-direction: column;
@@ -6888,7 +6888,7 @@ a {
     transform-origin: center;
   }
 
-  /* Animate bars → X on hover/active */
+  /* バーをホバー/アクティブ時にXにアニメーション */
   .header-floating-menu.active
     #floating-menu-btn
     .mobile-hamburger
@@ -6937,7 +6937,7 @@ a {
   gap: 100px;
 }
 
-/* ── Top row ── */
+/* ── 上部行 ── */
 .footer-top {
   display: flex;
   flex-direction: row;
@@ -6946,7 +6946,7 @@ a {
   gap: 60px;
 }
 
-/* ── Brand block ── */
+/* ── ブランドブロック ── */
 .footer-brand {
   display: flex;
   flex-direction: column;
@@ -6972,7 +6972,7 @@ a {
   gap: 20px;
 }
 
-/* ── Nav columns ── */
+/* ── ナビカラム ── */
 .footer-nav-columns {
   display: flex;
   flex-direction: row;
@@ -6980,7 +6980,7 @@ a {
   flex-wrap: wrap;
 }
 
-/* ── Each nav section ── */
+/* ── 各ナビセクション ── */
 .footer-nav-section {
   display: flex;
   flex-direction: column;
@@ -6997,7 +6997,7 @@ a {
   gap: 60px;
 }
 
-/* ── Section header / accordion trigger ── */
+/* ── セクションヘッダー / アコーディオントリガー ── */
 .footer-page-link {
   /* display: flex;
       flex-direction: row;
@@ -7034,7 +7034,7 @@ a {
 .footer-page-link p {
   color: var(--base-black);
 }
-/* ── Nav links list ── */
+/* ── ナビリンクリスト ── */
 .footer-nav-list {
   list-style: none;
   display: flex;
@@ -7071,7 +7071,7 @@ a {
   margin-right: 5px;
 }
 
-/* ── Bottom row ── */
+/* ── 下部行 ── */
 .footer-bottom {
   display: flex;
   flex-direction: row;
@@ -7099,7 +7099,7 @@ a {
   text-decoration: none;
 }
 
-/* ── Cookie notice ── */
+/* ── Cookie通知 ── */
 
 .footer-btn {
   padding: 8px 16px;
@@ -7161,13 +7161,13 @@ a {
     gap: 40px;
   }
 
-  /* Stack brand + nav vertically */
+  /* ブランド＋ナビを縦に積み重ね */
   .footer-top {
     flex-direction: column;
     gap: 40px;
   }
 
-  /* Nav columns become a single stacked list */
+  /* ナビカラムを単一の積み重ねリストに */
   .footer-nav-columns {
     flex-direction: column;
     gap: 10px;
@@ -7178,19 +7178,19 @@ a {
     gap: 0;
   }
 
-  /* Each section is a self-contained accordion item */
+  /* 各セクションは独立したアコーディオンアイテム */
   .footer-nav-section {
     gap: 0;
   }
 
-  /* Accordion trigger */
+  /* アコーディオントリガー */
   .footer-page-link {
     cursor: pointer;
     padding: 16px 0;
     user-select: none;
   }
 
-  /* Arrow rotates when open */
+  /* 開いた時に矢印が回転 */
   .footer-page-link img.accordion-arrow {
     transition: transform 0.3s ease;
   }
@@ -7199,7 +7199,7 @@ a {
     transform: rotate(90deg);
   }
 
-  /* Collapsible content */
+  /* 折りたたみコンテンツ */
   .footer-nav-list {
     max-height: 0;
     overflow: hidden;
@@ -7215,7 +7215,7 @@ a {
     padding-top: 20px;
   }
 
-  /* Bottom row stacks */
+  /* 下部行の積み重ね */
   .footer-bottom {
     /* flex-direction: column;
         align-items: flex-start;
@@ -7813,7 +7813,7 @@ a {
   -webkit-backface-visibility: hidden;
 }
 
-/* ── Desktop ── */
+/* ── デスクトップ ── */
 .c-hero-animate__panel-left {
   background: #5eada5;
   clip-path: polygon(48% 0, 0 0, 0 100%, 58% 100%);
@@ -7857,7 +7857,7 @@ a {
   }
 }
 
-/* ── Mobile ── */
+/* ── モバイル ── */
 @media screen and (max-width: 860px) {
   .c-hero-slider__title h1 {
     font-size: 30px;
@@ -7987,9 +7987,9 @@ a {
   font-size: 1.25rem;
 }
 
-/* END ANNOUNCEMENT SECTION */
+/* お知らせセクション終了 */
 
-/* START WHITE BACKGROUND */
+/* 白背景開始 */
 .c-section_white {
   width: 100%;
   height: auto;
@@ -8000,9 +8000,9 @@ a {
   background-position: 0% -170%;
 }
 
-/* END WHITE BACKGROUND */
+/* 白背景終了 */
 
-/* START LIGHT BLUE BACKGROUND */
+/* ライトブルー背景開始 */
 .c-section_lightBlue {
   width: 100%;
   height: auto;
@@ -8100,7 +8100,7 @@ a {
      END GLOBAL UTILITYS FOR HEADER, ANNOUNCEMENT ENDNOTE FOOTER SECTION TEXTSLIDER
    ============================================ */
 
-/* COOKIE NOTICE */
+/* Cookie通知 */
 .cookie-notice {
   position: fixed;
   bottom: 0;
@@ -8151,7 +8151,7 @@ a {
    TABLET  (max-width: 1024px)
    ────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  /* MAX-WIDTH CONTAINER */
+  /* 最大幅コンテナ */
   .c-maxWidth {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -8161,19 +8161,19 @@ a {
     display: block;
   }
 
-  /* HEADER */
+  /* ヘッダー */
   .I-header {
     width: 100%;
   }
 
-  /* Shrink the header action buttons slightly but keep them visible */
+  /* ヘッダーアクションボタンを少し縮小するが表示は維持 */
   .header-btn {
     min-width: 0;
     padding-left: 14px !important;
     padding-right: 14px !important;
   }
 
-  /* C-ANNOUNCEMENT */
+  /* お知らせ */
   .c-announcement {
     width: 100%;
     padding: 3.5rem 2.5rem;
@@ -8188,7 +8188,7 @@ a {
     font-size: 2.75rem;
   }
 
-  /* ENDNOTE */
+  /* エンドノート */
   .c-endNote {
     padding: 6rem 0;
     gap: 2rem;
@@ -8198,25 +8198,25 @@ a {
     gap: 1.5rem;
   }
 
-  /* FOOTER */
+  /* フッター */
   .footer-main-container {
     padding: 60px 48px 40px 48px;
     gap: 60px;
   }
 
-  /* Stack the top footer row (logo/links) vertically */
+  /* 上部フッター行（ロゴ/リンク）を縦に積み重ね */
   .footer-main-container > .flex.flex-row.justify-between.w-full:first-child {
     flex-direction: column;
     gap: 40px;
   }
 
-  /* Footer link columns: wrap instead of overflow */
+  /* フッターリンクカラム: オーバーフローの代わりに折り返し */
   .footer-main-container .flex.flex-row.gap-100px {
     flex-wrap: wrap;
     gap: 40px;
   }
 
-  /* TEXT SLIDER */
+  /* テキストスライダー */
   .text-slider {
     height: 64px;
   }
@@ -8240,13 +8240,13 @@ a {
     display: none;
   }
 
-  /* MAX-WIDTH CONTAINER */
+  /* 最大幅コンテナ */
   .c-maxWidth {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  /* C-ANNOUNCEMENT */
+  /* お知らせ */
   .c-announcement {
     width: 100%;
     padding: 2.5rem 1.25rem;
@@ -8278,7 +8278,7 @@ a {
     font-size: 1rem;
   }
 
-  /* ENDNOTE */
+  /* エンドノート */
   .c-endNote {
     padding: 4rem 2rem;
     gap: 1.5rem;
@@ -8304,7 +8304,7 @@ a {
     padding: 1.25rem 1.5rem;
   }
 
-  /* TEXT SLIDER */
+  /* テキストスライダー */
   .text-slider {
     height: 56px;
   }
@@ -8313,40 +8313,40 @@ a {
     font-size: 24px !important;
   }
 
-  /* FOOTER */
+  /* フッター */
   .footer-main-container {
     padding: 48px 1.25rem 32px 1.25rem;
     gap: 40px;
   }
 
-  /* Stack all footer rows vertically */
+  /* 全フッター行を縦に積み重ね */
   .footer-main-container > div {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 32px !important;
   }
 
-  /* Footer nav column groups: stack */
+  /* フッターナビカラムグループ: 積み重ね */
   .footer-main-container .flex.flex-row.gap-100px,
   .footer-main-container .flex.flex-row.gap-60px {
     flex-direction: column;
     gap: 32px;
   }
 
-  /* Bottom footer row: links + scroll-up */
+  /* 下部フッター行: リンク＋スクロールアップ */
   .footer-main-container > .flex.flex-row.justify-between.w-full.items-center {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 20px !important;
   }
 
-  /* Footer bottom links: wrap */
+  /* フッター下部リンク: 折り返し */
   .footer-main-container .flex.flex-row.gap-55px {
     flex-wrap: wrap;
     gap: 12px;
   }
 
-  /* Cookie bar */
+  /* Cookieバー */
   .flex.flex-row.items-center.gap-15px.py-15.px-120 {
     flex-direction: column;
     align-items: flex-start;
@@ -8355,7 +8355,7 @@ a {
     gap: 12px;
   }
 
-  /* BANNER STICKERS — hide on mobile to avoid overflow */
+  /* バナーステッカー — オーバーフロー防止のためモバイルで非表示 */
   .banner-sticker1,
   .banner-sticker2,
   .c-footer-banner__speech1,

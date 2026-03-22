@@ -26,13 +26,15 @@
         class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
       >
         <div class="flex flex-row items-center flex-1 gap-24px">
-          <img
-            src="assets/img/common/icon_logo.svg"
-            alt="アマゾネス"
-            width="159.97px"
-            height="62.77px"
-            class="amazones-header-logo"
-          />
+          <a href="./">
+            <img
+              src="assets/img/common/icon_logo.svg"
+              alt="アマゾネス"
+              width="159.97px"
+              height="62.77px"
+              class="amazones-header-logo"
+            />
+          </a>
           <a href="./" class="header-text text-black1 fw-500 fs-14"
             >アマゾネス</a
           >
@@ -353,7 +355,7 @@
             </nav>
           </div>
         </div>
-        <!-- RIBBON DECORATION 01-->
+        <!-- リボン装飾 01-->
         <img
           src="assets/img/common/img_ribbon_banner.svg"
           alt="リボン装飾"
@@ -364,7 +366,7 @@
       <!--メインコンテンツ-->
       <section class="p-sitemap-content">
         <div class="p-sitemap-content-container">
-          <!--First Content-->
+          <!--第1コンテンツ-->
           <div class="flex flex-col items-start gap-39px p-sitemap-content">
             <div class="p-sitemap-content-item">
               <div class="p-sitemap-label">
@@ -381,15 +383,15 @@
                 <li><a href="column/">ゾネスタイムズ</a></li>
                 <li>
                   <div class="p-sitemap-nested-link">
-                    <a href = '../reservation/index.html' class="fw-500 fs-16">無料体験・見学予約</a>
-                    <a href="reservation/index.html#reservation-flow" class="p-sitemap-ul-sub-link"
+                    <a href = '../reservation' class="fw-500 fs-16">無料体験・見学予約</a>
+                    <a href="reservation#reservation-flow" class="p-sitemap-ul-sub-link"
                       >ご予約から無料体験・見学までの流れ</a
                     >
                   </div>
                 </li>
                 <li>
                   <div class="p-sitemap-nested-link">
-                    <a href = '../member/index.html' class="fw-500 fs-16">入会手続きのご案内</a>
+                    <a href = '../member' class="fw-500 fs-16">入会手続きのご案内</a>
                     <a href="payment/" class="p-sitemap-ul-sub-link"
                       >お支払い方法について</a
                     >
@@ -429,7 +431,7 @@
             </div>
           </div>
 
-          <!--Second Content-->
+          <!--第2コンテンツ-->
           <div class="flex flex-col items-start gap-39px p-sitemap-content">
             <div class="p-sitemap-content-item">
               <div class="p-sitemap-label">
@@ -442,7 +444,7 @@
               <ul class="p-sitemap-ul">
                 <li>
                   <div class="p-sitemap-nested-link">
-                    <a href = '../storelist/index.html' class="fw-500 fs-16">店舗一覧</a>
+                    <a href = '../storelist' class="fw-500 fs-16">店舗一覧</a>
                     <a href="#" class="p-sitemap-ul-sub-link">難波本店</a>
                     <a href="#" class="p-sitemap-ul-sub-link">和歌山駅前店</a>
                     <a href="#" class="p-sitemap-ul-sub-link">岡山野田店</a>
@@ -474,7 +476,7 @@
             </div>
           </div>
 
-          <!-- Third section - Topics, Other Stores, Recruitment -->
+          <!-- 第3セクション - トピックス、他店舗、採用情報 -->
           <div class="flex flex-col items-start gap-39px p-sitemap-content">
             <div class="p-sitemap-content-item">
               <div class="p-sitemap-label">
@@ -594,50 +596,6 @@
           </div>
         </div>
       </section>
-
-
-
-      <!--SITEMAP BANNER-->
-        <!-- <div class="p-sitemap-banner-container flex flex-row gap-40px">
-          <div class="p-p-sitemap-banner-item flex flex-col gap-32px w-full">
-            <div class="flex flex-row justify-between items-center w-full">
-              <div class="flex flex-row gap-32px items-center">
-                <img
-                  src="assets/img/sitemap/icon_message.svg"
-                  alt="お問い合わせ"
-                />
-                <p class="fw-700 fs-24">お問い合わせ</p>
-              </div>
-
-              <div class="btn-green-wrapper">
-                <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
-              </div>
-            </div>
-            <p class="fw-500 fs-16 p-sitemap-banner-p">
-              各ページの掲載内容についてご不明点はお気軽にお尋ねください
-            </p>
-          </div>
-
-          <div class="p-p-sitemap-banner-item flex flex-col gap-32px w-full">
-            <div class="flex flex-row justify-between items-center w-full">
-              <div class="flex flex-row gap-32px items-center">
-                <img
-                  src="assets/img/sitemap/icon_user.svg"
-                  alt="マイページ"
-                />
-                <p class="fw-700 fs-24">マイページ</p>
-              </div>
-
-              <div class="btn-green-wrapper">
-                <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
-              </div>
-            </div>
-            <p class="fw-500 fs-16 p-sitemap-banner-p">
-              パーソナルトレーニングはこちらのページからご予約ください。
-            </p>
-          </div>
-        </div> -->
-      
         <div class="c-other-details-banner">
           <div
             class="reveal-scale c-other-details-banner-container flex flex-row gap-40px"
@@ -654,7 +612,7 @@
                     />
                     <p class="fw-700 fs-24">お問い合わせ</p>
                   </div>
-                  <a href = '../contact/index.html' class="btn-green-wrapper">
+                  <a href = '../contact' class="btn-green-wrapper">
                     <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                   </a>
                 </div>
@@ -674,7 +632,7 @@
                     />
                     <p class="fw-700 fs-24">マイページ</p>
                   </div>
-                  <a href = '../reservation/index.html' class="btn-green-wrapper">
+                  <a href = '../reservation' class="btn-green-wrapper">
                     <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
                   </a>
                 </div>

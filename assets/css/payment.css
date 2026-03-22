@@ -1,5 +1,5 @@
 /* ========================================
-   START: Payment Methods / Icons
+   開始: 支払い方法 / アイコン
    ======================================== */
 
 .p-payment__section--white {
@@ -54,10 +54,10 @@
   height: 1.5rem;
 }
 
-/* END: Payment Methods / Icons */
+/* 支払い方法 / アイコン終了 */
 
 /* ========================================
-   START: Navigation / Links
+   開始: ナビゲーション / リンク
    ======================================== */
 
 .p-payment__links-list {
@@ -93,10 +93,10 @@
   color: var(--base-lightBlue);
 }
 
-/* END: Navigation / Links */
+/* ナビゲーション / リンク終了 */
 
 /* ========================================
-   START: Section Title
+   開始: セクションタイトル
    ======================================== */
 
 .p-payment__title-container {
@@ -117,10 +117,10 @@
   font-weight: 400;
 }
 
-/* END: Section Title */
+/* セクションタイトル終了 */
 
 /* ========================================
-   START: Announcement
+   開始: お知らせ
    ======================================== */
 
 .p-payment__section--lightblue {
@@ -205,10 +205,10 @@
   font-weight: 600;
 }
 
-/* END: Announcement */
+/* お知らせ終了 */
 
 /* ========================================
-   START: CTA
+   開始: CTA
    ======================================== */
 
 .p-payment__faq-row {
@@ -217,10 +217,10 @@
   gap: 2.5rem;
 }
 
-/* END: CTA */
+/* CTA終了 */
 
 /* ========================================
-   START: Utility Overrides
+   開始: ユーティリティオーバーライド
    ======================================== */
 
 /* 01 */
@@ -316,19 +316,19 @@
   object-fit: contain;
 }
 
-/* Mobile-only speak block — hidden by default on desktop */
+/* モバイル専用スピークブロック — デスクトップではデフォルト非表示 */
 .p-payment__speak-mobile {
   display: none;
 }
 
-/* END: Utility Overrides */
+/* ユーティリティオーバーライド終了 */
 
 /* ========================================
-   MEDIA: max-width 1024px
+   メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
   /* ----------------------------------------
-     START: Banner
+     開始: バナー
      ---------------------------------------- */
   .p-banner-content {
     left: 2.5rem;
@@ -339,10 +339,10 @@
   .p-banner-subtitle {
     font-size: 1.125rem;
   }
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ----------------------------------------
-     START: Navigation / Links
+     開始: ナビゲーション / リンク
      ---------------------------------------- */
   .p-payment__links-nav {
     flex-wrap: wrap;
@@ -350,18 +350,18 @@
     padding-top: 2rem;
     margin-bottom: 4rem;
   }
-  /* END: Navigation / Links */
+  /* ナビゲーション / リンク終了 */
 
   /* ----------------------------------------
-     START: Section Title
+     開始: セクションタイトル
      ---------------------------------------- */
   .p-payment__title {
     font-size: 4rem;
   }
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ----------------------------------------
-     START: Announcement
+     開始: お知らせ
      ---------------------------------------- */
   .p-payment__about {
     padding-top: 3rem;
@@ -381,19 +381,19 @@
     width: 100%;
     max-width: 28rem;
   }
-  /* END: Announcement */
+  /* お知らせ終了 */
 
   /* ----------------------------------------
-     START: CTA
+     開始: CTA
      ---------------------------------------- */
   .p-payment__faq-row {
     flex-direction: column;
     gap: 1.5rem;
   }
-  /* END: CTA */
+  /* CTA終了 */
 
   /* ----------------------------------------
-     START: Utility Overrides
+     開始: ユーティリティオーバーライド
      ---------------------------------------- */
   .p-payment__speak-container--01 {
     display: none;
@@ -434,15 +434,15 @@
     width: auto;
     object-fit: contain;
   }
-  /* END: Utility Overrides */
+  /* ユーティリティオーバーライド終了 */
 }
 
 /* ========================================
-   MEDIA: max-width 767px
+   メディア: max-width 767px
    ======================================== */
 @media (max-width: 767px) {
   /* ----------------------------------------
-     START: Banner
+     開始: バナー
      ---------------------------------------- */
   .p-banner-content {
     left: 1.25rem;
@@ -454,10 +454,10 @@
   .p-banner-subtitle {
     font-size: 0.9375rem;
   }
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ----------------------------------------
-     START: Navigation / Links
+     開始: ナビゲーション / リンク
      ---------------------------------------- */
   .p-payment__links-nav {
     gap: 0.75rem;
@@ -467,10 +467,10 @@
   .p-payment__links-item {
     font-size: 0.875rem;
   }
-  /* END: Navigation / Links */
+  /* ナビゲーション / リンク終了 */
 
   /* ----------------------------------------
-     START: Section Title
+     開始: セクションタイトル
      ---------------------------------------- */
   .p-payment__title {
     font-size: 2.5rem;
@@ -481,10 +481,10 @@
   .p-payment__title-container {
     margin-bottom: 1.5rem;
   }
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ----------------------------------------
-     START: Payment Methods / Icons
+     開始: 支払い方法 / アイコン
      ---------------------------------------- */
   .p-payment__content {
     padding-bottom: 3rem;
@@ -495,10 +495,10 @@
   .p-payment__card-logo {
     height: 1.25rem;
   }
-  /* END: Payment Methods / Icons */
+  /* 支払い方法 / アイコン終了 */
 
   /* ----------------------------------------
-     START: Announcement
+     開始: お知らせ
      ---------------------------------------- */
   .p-payment__about-card-body {
     padding: 1.25rem;
@@ -516,10 +516,10 @@
     flex-shrink: 0;
     padding: 0.5rem;
   }
-  /* END: Announcement */
+  /* お知らせ終了 */
 
   /* ----------------------------------------
-     START: Utility Overrides
+     開始: ユーティリティオーバーライド
      ---------------------------------------- */
   .p-payment__speak-person-mobile {
     height: 18rem;
@@ -551,5 +551,5 @@
     right: 7rem;
     height: 6rem;
   }
-  /* END: Utility Overrides */
+  /* ユーティリティオーバーライド終了 */
 }

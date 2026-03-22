@@ -1,5 +1,5 @@
 /* ============================================
-    CAROUSEL CONTAINER
+    カルーセルコンテナ
    ============================================ */
 
 .carousel-container {
@@ -161,7 +161,7 @@
 }
 
 /* ═════news-banner-context ═════════════════════════════════
-   NEWS BANNER — DESKTOP
+   ニュースバナー — デスクトップ
 ══════════════════════════════════════ */
 .news-banner-desk {
   position: relative;
@@ -230,7 +230,7 @@
 }
 
 /* ══════════════════════════════════════
-   NEWS BANNER — MOBILE
+   ニュースバナー — モバイル
 ══════════════════════════════════════ */
 .news-banner-sp {
   display: none;
@@ -374,7 +374,7 @@
   }
 }
 /* ============================================
-    TOP TEXT SLIDER
+    トップテキストスライダー
    ============================================ */
 @-webkit-keyframes scroll {
   0% {
@@ -429,7 +429,7 @@
 }
 
 /* ============================================
-    TOP SERVICE
+    トップサービス
    ============================================ */
 .shop-training-machine-container {
   background-image: url("../img/top/bg_shop_training_machine.webp");
@@ -496,7 +496,7 @@ a.service-wrapper {
 }
 
 /* ============================================
-   VOICE SLIDER MOBILE
+   お客様の声スライダー モバイル
    ============================================ */
 .p-medical_voice_slider_wrapper {
   position: relative;
@@ -519,7 +519,7 @@ a.service-wrapper {
   width: 100%;
 }
 
-/* NAV BUTTONS — shown on mobile, overlaid on the image */
+/* ナビボタン — モバイルで表示、画像上にオーバーレイ */
 .p-medical_voice_nav {
   display: flex;
   align-items: center;
@@ -610,7 +610,7 @@ a.service-wrapper {
 }
 
 /* ============================================
-   DR AMAZONES TOP
+   DR AMAZONES トップ
    ============================================ */
 .dr-amazones-container {
   width: 100%;
@@ -691,7 +691,7 @@ a.service-wrapper {
 }
 
 /* ============================================
-   TRAINING SECTION
+   トレーニングセクション
    ============================================ */
 .training-machine-section {
   background-image: url("../img/top/bg_training_machine.webp");
@@ -774,7 +774,7 @@ a.service-wrapper {
 }
 
 /* ============================================
-   VOICE SECTION
+   お客様の声セクション
    ============================================ */
 .voice-section {
   background-image: url("../img/top/bg_voice.webp");
@@ -861,7 +861,7 @@ a.service-wrapper {
 }
 
 /* ============================================
-    MOVIE SECTION
+    動画セクション
    ============================================ */
 .movie-section {
   display: flex;
@@ -1110,4 +1110,4 @@ a.service-wrapper {
     top: 130px;
   }
 }
-/*END MOVIE SECTION*/
+/* 動画セクション終了 */

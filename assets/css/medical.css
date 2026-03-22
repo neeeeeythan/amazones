@@ -1,5 +1,5 @@
 /* ========================================
-   START: Banner
+   開始: バナー
    ======================================== */
 
 .p-medical__banner-overlay {
@@ -51,10 +51,10 @@
   z-index: 15;
 }
 
-/* END: Banner */
+/* バナー終了 */
 
 /* ========================================
-   START: Online Consultation
+   開始: オンライン相談
    ======================================== */
 
 .p-medical__online-consult-heading--lg {
@@ -82,10 +82,10 @@
   background-position: center;
 }
 
-/* END: Online Consultation */
+/* オンライン相談終了 */
 
 /* ========================================
-   START: Features / Steps
+   開始: 特徴 / ステップ
    ======================================== */
 
 .p-medical__section-header {
@@ -171,7 +171,7 @@
   line-height: 1.2;
 }
 
-/* Lineup grid */
+/* ラインナップグリッド */
 .p-medical__lineup-grid {
   display: flex;
   flex-wrap: wrap;
@@ -209,10 +209,10 @@
   height: 63px;
 }
 
-/* END: Features / Steps */
+/* 特徴 / ステップ終了 */
 
 /* ========================================
-   START: Partners
+   開始: パートナー
    ======================================== */
 
 .p-medical__partners-logo-row {
@@ -253,10 +253,10 @@
   justify-content: center;
 }
 
-/* END: Partners */
+/* パートナー終了 */
 
 /* ========================================
-   START: CTA
+   開始: CTA
    ======================================== */
 
 .p-medical__light-blue-container {
@@ -279,10 +279,10 @@
   overflow: hidden;
 }
 
-/* END: CTA */
+/* CTA終了 */
 
 /* ========================================
-   START: Speak Person
+   開始: スピークパーソン
    ======================================== */
 
 /* 01 */
@@ -347,10 +347,10 @@
   object-fit: contain;
 }
 
-/* END: Speak Person */
+/* スピークパーソン終了 */
 
 /* ========================================
-   START: Voice
+   開始: お客様の声
    ======================================== */
 
 .p-medical__voice-grid {
@@ -450,23 +450,23 @@
   z-index: 1;
 }
 
-/* VOICE — slider wrapper & nav buttons */
+/* お客様の声 — スライダーラッパー＆ナビボタン */
 .p-medical__voice-slider-wrapper {
   position: relative;
 }
 
 .p-medical__voice-nav {
-  display: none; /* hidden on desktop/tablet */
+  display: none; /* デスクトップ/タブレットでは非表示 */
 }
 
-/* END: Voice */
+/* お客様の声終了 */
 
 /* ========================================
-   MEDIA: max-width 1024px
+   メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
   /* ----------------------------------------
-     START: Banner
+     開始: バナー
      ---------------------------------------- */
   .p-medical__banner-content {
     top: 28%;
@@ -478,10 +478,10 @@
     font-size: 1.8rem;
     line-height: 1.6;
   }
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ----------------------------------------
-     START: Online Consultation
+     開始: オンライン相談
      ---------------------------------------- */
   .p-medical__online-consultation-banner {
     height: auto;
@@ -492,10 +492,10 @@
     font-size: 3rem;
     line-height: 1.4;
   }
-  /* END: Online Consultation */
+  /* オンライン相談終了 */
 
   /* ----------------------------------------
-     START: Partners
+     開始: パートナー
      ---------------------------------------- */
   .p-medical__partners-row {
     flex-direction: column;
@@ -517,10 +517,10 @@
   .p-medical__partners-right {
     width: 100%;
   }
-  /* END: Partners */
+  /* パートナー終了 */
 
   /* ----------------------------------------
-     START: Features / Steps
+     開始: 特徴 / ステップ
      ---------------------------------------- */
   .p-medical__engagement-row {
     flex-direction: column;
@@ -552,20 +552,20 @@
     gap: 2rem;
   }
 
-  /* LINEUP — 3 per row */
+  /* ラインナップ — 3列 */
   .p-medical__lineup-item {
     width: calc(33.333% - 1.35rem);
   }
 
-  /* HOW TO USE */
+  /* 使い方 */
   .p-medical__howtouse-icn {
     width: auto;
     height: 100px;
   }
-  /* END: Features / Steps */
+  /* 特徴 / ステップ終了 */
 
   /* ----------------------------------------
-     START: Voice
+     開始: お客様の声
      ---------------------------------------- */
   .p-medical__voice-card:nth-child(2) {
     margin-bottom: 3rem;
@@ -578,19 +578,19 @@
   .p-medical__voice-card-body {
     padding: 2rem;
   }
-  /* END: Voice */
+  /* お客様の声終了 */
 
   /* ----------------------------------------
-     START: CTA
+     開始: CTA
      ---------------------------------------- */
   .p-medical__faq-ribbon {
     right: -5%;
     width: 90vw;
   }
-  /* END: CTA */
+  /* CTA終了 */
 
   /* ----------------------------------------
-     START: Speak Person
+     開始: スピークパーソン
      ---------------------------------------- */
   .p-medical__speak-container--01 {
     left: 1rem;
@@ -604,15 +604,15 @@
   .p-medical__speak-person--02 {
     height: 18rem;
   }
-  /* END: Speak Person */
+  /* スピークパーソン終了 */
 }
 
 /* ========================================
-   MEDIA: max-width 767px
+   メディア: max-width 767px
    ======================================== */
 @media (max-width: 767px) {
   /* ----------------------------------------
-     START: Banner
+     開始: バナー
      ---------------------------------------- */
   .p-medical__banner-logo--pc {
     display: none;
@@ -666,10 +666,10 @@
     left: 1.25rem;
     bottom: 3%;
   }
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ----------------------------------------
-     START: Features / Steps
+     開始: 特徴 / ステップ
      ---------------------------------------- */
   .p-medical__section-header h2 {
     font-size: 3.8rem;
@@ -696,7 +696,7 @@
     width: 100%;
   }
 
-  /* Reverse inner div: logo SVG shows above clinic name on mobile */
+  /* 内部divを反転: モバイルではロゴSVGがクリニック名の上に表示 */
   .p-medical__engagement-logo > div {
     flex-direction: column-reverse;
     align-items: end;
@@ -710,7 +710,7 @@
     height: auto;
   }
 
-  /* Stretch children to full width — fixes button */
+  /* 子要素を全幅に — ボタン修正 */
   .p-medical__engagement-right {
     width: 100%;
     align-items: stretch;
@@ -721,7 +721,7 @@
     text-align: left;
   }
 
-  /* Slashes stay flanking the text; text wraps internally inside h4 */
+  /* スラッシュがテキストの両側に維持; h4内部でテキスト折り返し */
   .p-medical__engagement-tagline {
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -742,7 +742,7 @@
     line-height: 1.6;
   }
 
-  /* HOW TO USE title — stack vertically */
+  /* 使い方タイトル — 縦方向に積み重ね */
   .p-medical__how-to-use-title {
     flex-direction: column;
     align-items: flex-start;
@@ -753,7 +753,7 @@
     margin-top: 0;
   }
 
-  /* STEPS — stack vertically, unified gap */
+  /* ステップ — 縦方向に積み重ね、統一された間隔 */
   .p-medical__steps-wrapper {
     gap: 1.5rem;
     padding: 1.5rem 0;
@@ -777,14 +777,14 @@
     font-size: 0.9375rem;
   }
 
-  /* inline code/input row in step 6 */
+  /* ステップ6のインラインコード/入力行 */
   .p-medical__step-card-body .bg-gray {
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 0.75rem 1rem;
   }
 
-  /* LINEUP — single column full-width list */
+  /* ラインナップ — 単列全幅リスト */
   .p-medical__lineup-header {
     flex-direction: column;
     align-items: flex-start;
@@ -813,10 +813,10 @@
     height: 4rem;
     min-width: 4rem;
   }
-  /* END: Features / Steps */
+  /* 特徴 / ステップ終了 */
 
   /* ----------------------------------------
-     START: Online Consultation
+     開始: オンライン相談
      ---------------------------------------- */
   .p-medical__online-consultation-banner {
     height: 28rem;
@@ -859,10 +859,10 @@
   .p-medical__online-consultation-banner .flex.flex-col.gap-4 {
     gap: 0.5rem;
   }
-  /* END: Online Consultation */
+  /* オンライン相談終了 */
 
   /* ----------------------------------------
-     START: Partners
+     開始: パートナー
      ---------------------------------------- */
   .p-medical__partners-row {
     flex-direction: column;
@@ -911,10 +911,10 @@
   .p-medical__partners-row .fs-30 {
     font-size: 1.25rem;
   }
-  /* END: Partners */
+  /* パートナー終了 */
 
   /* ----------------------------------------
-     START: CTA
+     開始: CTA
      ---------------------------------------- */
   .p-medical__light-blue-container p {
     font-size: 0.9375rem;
@@ -925,12 +925,12 @@
     right: -10%;
     width: 120vw;
   }
-  /* END: CTA */
+  /* CTA終了 */
 
   /* ----------------------------------------
-     START: Voice
+     開始: お客様の声
      ---------------------------------------- */
-  /* VOICE — slider on mobile */
+  /* お客様の声 — モバイルスライダー */
   .p-medical__voice-slider-wrapper {
     margin-top: 1.5rem;
     position: relative;
@@ -979,7 +979,7 @@
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
-    /* vertically centre within the image portion (~50vw tall) */
+    /* 画像部分内で垂直中央揃え（約50vwの高さ） */
     top: calc(50vw * 0.5);
     transform: translateY(-50%);
   }
@@ -995,12 +995,12 @@
   .p-medical__voice-nav svg {
     display: block;
   }
-  /* END: Voice */
+  /* お客様の声終了 */
 
   /* ----------------------------------------
-     START: Speak Person
+     開始: スピークパーソン
      ---------------------------------------- */
-  /* SPEAK PERSONS — show on mobile, repositioned */
+  /* スピークパーソン — モバイルで表示、再配置 */
   .p-medical__speak-container--01,
   .p-medical__speak-container--02 {
     display: block;
@@ -1032,12 +1032,12 @@
     right: -6rem;
     top: -2rem;
   }
-  /* END: Speak Person */
+  /* スピークパーソン終了 */
 
   /* ----------------------------------------
-     START: Utility Overrides
+     開始: ユーティリティオーバーライド
      ---------------------------------------- */
-  /* GRAY INPUT CODE BOX — code on row 1, explanation on row 2 */
+  /* グレー入力コードボックス — 1行目にコード、2行目に説明 */
   .c-announcement_body .bg-gray {
     flex-wrap: wrap;
     padding-left: 0.75rem !important;
@@ -1057,10 +1057,10 @@
     white-space: nowrap;
   }
 
-  /* ANNOUNCEMENT — increased side padding + bottom room for persons */
+  /* お知らせ — 左右パディング増加＋人物用の下部余白 */
   .c-announcement {
     width: calc(100% - 4rem) !important;
     padding: 2rem 1.75rem 14rem !important;
   }
-  /* END: Utility Overrides */
+  /* ユーティリティオーバーライド終了 */
 }

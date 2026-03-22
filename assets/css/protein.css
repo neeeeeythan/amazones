@@ -1,5 +1,5 @@
 /* ========================================
-   START: Section Title
+   開始: セクションタイトル
    ======================================== */
 
 .p-protein__content {
@@ -66,10 +66,10 @@
   font-weight: 400;
 }
 
-/* END: Section Title */
+/* セクションタイトル終了 */
 
 /* ========================================
-   START: Protein Flavor Cards
+   開始: プロテインフレーバーカード
    ======================================== */
 
 .p-protein__banner-img {
@@ -93,7 +93,7 @@
   flex: 1;
 }
 
-/* Points slider wrapper */
+/* ポイントスライダーラッパー */
 .p-protein__points-slider {
   position: relative;
   width: 100%;
@@ -156,7 +156,7 @@
   z-index: 1;
 }
 
-/* SPEAK PERSON */
+/* スピークパーソン */
 
 /* 01 */
 .p-protein__opening-speak-bubble {
@@ -222,7 +222,7 @@
   width: 10rem;
 }
 
-/* FLAVOR */
+/* フレーバー */
 .p-protein__flavor-header {
   color: white;
   padding: 0.9rem 1.5rem;
@@ -242,7 +242,7 @@
   padding: 1.5rem 0;
 }
 
-/* HORIZONTAL LINE */
+/* 水平線 */
 .p-protein__horizontal-line {
   width: 5%;
   height: 2px;
@@ -259,10 +259,10 @@
   overflow: hidden;
 }
 
-/* END: Protein Flavor Cards */
+/* プロテインフレーバーカード終了 */
 
 /* ========================================
-   START: Online Shop
+   開始: オンラインショップ
    ======================================== */
 
 .p-protein__onlineshop-text-container {
@@ -272,10 +272,10 @@
   transform: translateY(-50%);
 }
 
-/* END: Online Shop */
+/* オンラインショップ終了 */
 
 /* ========================================
-   START: Modal
+   開始: モーダル
    ======================================== */
 
 .p-protein__modal-overlay {
@@ -334,10 +334,10 @@
   z-index: 1;
 }
 
-/* END: Modal */
+/* モーダル終了 */
 
 /* ========================================
-   START: CTA / Button
+   開始: CTA / ボタン
    ======================================== */
 
 .btn-buyNow {
@@ -359,15 +359,15 @@
   filter: brightness(0.85);
 }
 
-/* END: CTA / Button */
+/* CTA / ボタン終了 */
 
 /* ========================================
-   MEDIA: max-width 1440px (min-width 1025px)
+   メディア: max-width 1440px (min-width 1025px)
    ======================================== */
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   /* ========================================
-     START: Protein Flavor Cards
+     開始: プロテインフレーバーカード
      ======================================== */
 
   .p-protein__flavor-img {
@@ -422,16 +422,16 @@
     padding-bottom: 15rem;
   }
 
-  /* END: Protein Flavor Cards */
+  /* プロテインフレーバーカード終了 */
 }
 
 /* ========================================
-   MEDIA: max-width 1024px
+   メディア: max-width 1024px
    ======================================== */
 
 @media (max-width: 1024px) {
   /* ========================================
-     START: Section Title
+     開始: セクションタイトル
      ======================================== */
 
   /* SECTION HEADER — shrink large display font */
@@ -440,10 +440,10 @@
     line-height: 5.5rem;
   }
 
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ========================================
-     START: Protein Flavor Cards
+     開始: プロテインフレーバーカード
      ======================================== */
 
   /* ── FLAVOR SECTION — stacked layout (matches mobile) ── */
@@ -687,10 +687,10 @@
     display: none;
   }
 
-  /* END: Protein Flavor Cards */
+  /* プロテインフレーバーカード終了 */
 
   /* ========================================
-     START: Online Shop
+     開始: オンラインショップ
      ======================================== */
 
   /* ONLINE SHOP text container */
@@ -778,16 +778,16 @@
     gap: 1.5rem;
   }
 
-  /* END: Online Shop */
+  /* オンラインショップ終了 */
 }
 
 /* ========================================
-   MEDIA: max-width 767px
+   メディア: max-width 767px
    ======================================== */
 
 @media (max-width: 767px) {
   /* ========================================
-     START: Protein Flavor Cards
+     開始: プロテインフレーバーカード
      ======================================== */
 
   /* ── BANNER ── */
@@ -1052,5 +1052,5 @@
     object-position: right top;
   }
 
-  /* END: Protein Flavor Cards */
+  /* プロテインフレーバーカード終了 */
 }

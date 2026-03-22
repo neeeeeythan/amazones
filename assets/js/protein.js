@@ -1,9 +1,9 @@
-// Modals — using shared initModal from common.js
+// モーダル — common.jsのinitModalを使用
 var modalApple = initModal('ingredientsModalApple');
 var modalPeach = initModal('ingredientsModalPeach');
 var modalChocolate = initModal('ingredientsModalChocolate');
 
-// Global functions referenced by onclick attributes in HTML
+// HTMLのonclick属性から参照されるグローバル関数
 function openIngredientsModalApple() { modalApple.open(); }
 function closeIngredientsModalApple() { modalApple.close(); }
 function openIngredientsModalPeach() { modalPeach.open(); }
@@ -11,7 +11,7 @@ function closeIngredientsModalPeach() { modalPeach.close(); }
 function openIngredientsModalChocolate() { modalChocolate.open(); }
 function closeIngredientsModalChocolate() { modalChocolate.close(); }
 
-// Points card carousel (mobile) — using shared initMobileCarousel from common.js
+// ポイントカードカルーセル（モバイル）— common.jsのinitMobileCarouselを使用
 initMobileCarousel({
   trackSelector: '.p-protein__points-track',
   prevSelector: '.p-protein__points-nav--prev',

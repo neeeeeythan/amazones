@@ -1,8 +1,8 @@
 /* ========================================
-   START: Section Title
+   開始: セクションタイトル
    ======================================== */
 
-/* TOPIC HEADERS */
+/* トピックヘッダー */
 .p-storedetail_topic_header {
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   display: inline;
 }
 
-/* WHY CHOOSE US TITLE */
+/* 選ばれる理由タイトル */
 .p-storedetail__whychooseus-title {
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@
   }
 }
 
-/* LINKS */
+/* リンク */
 
 .p-storedetail_links-nav {
   display: flex;
@@ -108,7 +108,7 @@
   width: 100%;
 }
 
-/* ── Service Slider Wrapper ── */
+/* ── サービススライダーラッパー ── */
 .p-service_slider_wrapper {
   position: relative;
 }
@@ -154,7 +154,7 @@
   justify-content: center;
 }
 
-/* INTRO RIBBON */
+/* 紹介リボン */
 .p-storedetail_introduction_ribbon {
   position: absolute;
   top: 14%;
@@ -162,10 +162,10 @@
   width: 60%;
   height: auto;
   z-index: 0;
-  pointer-events: none; /* decorative — must not block clicks */
+  pointer-events: none; /* 装飾用 — クリックをブロックしてはならない */
 }
 
-/* INTRODUCTION PEOPLE */
+/* 紹介人物 */
 .p-storedetail_introduction_people {
   position: absolute;
   display: flex;
@@ -174,7 +174,7 @@
   right: 3%;
   bottom: -110%;
   z-index: 0;
-  pointer-events: none; /* decorative — must not block clicks */
+  pointer-events: none; /* 装飾用 — クリックをブロックしてはならない */
 }
 
 .p-storedetail_introduction_people-img {
@@ -188,7 +188,7 @@
   height: 320px;
 }
 
-/* GRAY CONTAINER */
+/* グレーコンテナ */
 
 .p-storedetail_gray_container {
   width: 100%;
@@ -207,7 +207,7 @@
   width: auto;
 }
 
-/* MAP */
+/* マップ */
 
 .p-storedetail_map {
   flex: 1;
@@ -224,7 +224,7 @@
   display: block;
 }
 
-/* FACILITIES */
+/* 設備 */
 .p-storedetail_introduction_facilities {
   display: flex;
   flex-wrap: wrap;
@@ -258,13 +258,13 @@
   line-height: 1.4;
 }
 
-/* END: Section Title */
+/* セクションタイトル終了 */
 
 /* ========================================
    START: Price Table
    ======================================== */
 
-/* PRICE IMAGE */
+/* 料金画像 */
 .p-storedetail_price_image_container {
   display: flex;
   height: 33.75rem;
@@ -296,7 +296,7 @@
   background-image: url("../img/storedetail/img_storedetail_price_titleImg02.png");
 }
 
-/* WHY CHOOSE US  */
+/* 選ばれる理由 */
 .p-storedetail_whychooseus_text_container_left {
   display: flex;
   flex-direction: column;
@@ -386,7 +386,7 @@
   display: none;
 }
 
-/* END: Price Table */
+/* 料金表終了 */
 
 /* ========================================
    START: CTA
@@ -418,7 +418,7 @@
   z-index: 0;
 }
 
-/* CTA CONTENT */
+/* CTAコンテンツ */
 .p-storedetail_cta_content {
   display: flex;
   flex-direction: column;
@@ -538,7 +538,7 @@
   transform: translateX(-50%);
 }
 
-/* FREETRIAL SPEAK */
+/* 無料体験スピーク */
 .p-storedetail_freetrial_speak_container01 {
   position: absolute;
   right: 5%;
@@ -555,7 +555,7 @@
   color: var(--text-red);
 }
 
-/* FAQ */
+/* FAQ（よくある質問） */
 .p-storedetail_faq_ribbon {
   position: absolute;
   top: -5%;
@@ -566,13 +566,13 @@
   overflow: hidden;
 }
 
-/* END: CTA */
+/* CTA終了 */
 
 /* ========================================
    START: Slider / Gallery
    ======================================== */
 
-/* GOOGLE REVIEWS */
+/* Googleレビュー */
 .reviews-widget {
   background: white;
   border-radius: 16px;
@@ -582,7 +582,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
 }
 
-/* Header */
+/* ヘッダー */
 .reviews-header {
   display: flex;
   align-items: flex-start;
@@ -664,7 +664,7 @@
   background: #1557b0;
 }
 
-/* Carousel */
+/* カルーセル */
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -757,7 +757,7 @@
   overflow: hidden;
 }
 
-/* Nav */
+/* ナビ */
 .nav-btn {
   background: white;
   border: 1px solid #ddd;
@@ -783,7 +783,7 @@
   cursor: default;
 }
 
-/* Dots */
+/* ドット */
 .dots {
   display: flex;
   justify-content: center;
@@ -812,7 +812,7 @@
   white-space: normal !important;
 }
 
-/* RESERVATION SECTION */
+/* 予約セクション */
 .p-storedetail-reservation_flow__section {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -823,13 +823,13 @@
    (Tailwind-style lg:/md: breakpoint variants)
    ═══════════════════════════════════════════════════════ */
 
-/* Full-width bleed section: mx-[calc(50%-50vw)] */
+/* 全幅ブリードセクション: mx-[calc(50%-50vw)] */
 .mx-\[calc\(50\%-50vw\)\] {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
 
-/* ── Photo gallery slider ── */
+/* ── フォトギャラリースライダー ── */
 #js-slider {
   overflow: hidden;
   background: transparent;
@@ -838,7 +838,7 @@
   margin-right: 0;
 }
 
-/* Before Swiper initialises, prevent all 10 slides from stacking */
+/* Swiper初期化前に、全10スライドの積み重ねを防止 */
 #js-slider:not(.swiper-initialized) .swiper-slide:not(:first-child) {
   display: none;
 }
@@ -850,7 +850,7 @@
   object-fit: cover;
 }
 
-/* Thumbnail grid — prevent rows from stretching to fill parent */
+/* サムネイルグリッド — 行が親要素いっぱいに伸びるのを防止 */
 .slider-thumbs .grid {
   align-content: start;
 }
@@ -876,15 +876,15 @@
   box-sizing: border-box;
 }
 
-/* END: Slider / Gallery */
+/* スライダー / ギャラリー終了 */
 
 /* ========================================
    START: Review
    ======================================== */
 
-/* DR AMAZONES SECTION */
+/* DR AMAZONESセクション */
 
-/* Block */
+/* ブロック */
 .p-storedetail_dr-amazones {
   width: 100%;
   max-width: 1920px;
@@ -896,13 +896,13 @@
   background: linear-gradient(to bottom, #fafcfb 0%, #fdfdfd 100%);
 }
 
-/* Full-width photo */
+/* 全幅写真 */
 .p-storedetail_dr-amazones-pic {
   width: 100%;
   display: block;
 }
 
-/* Content panel — absolutely positioned over the image on desktop */
+/* コンテンツパネル — デスクトップで画像上に絶対配置 */
 .p-storedetail_dr-amazones-content {
   z-index: 2;
   position: absolute;
@@ -918,45 +918,45 @@
   align-items: flex-start;
 }
 
-/* Decorative triangle — top-right corner of content panel */
+/* 装飾三角形 — コンテンツパネルの右上角 */
 .p-storedetail_dr-amazones-triangle {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* Inner flex wrapper (title block + body block) */
+/* 内部フレックスラッパー（タイトルブロック＋本文ブロック） */
 .p-storedetail_dr-amazones-inner {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-/* Header: subtitle label + clinic logo */
+/* ヘッダー: サブタイトルラベル＋クリニックロゴ */
 .p-storedetail_dr-amazones-header {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Clinic logo image */
+/* クリニックロゴ画像 */
 .p-storedetail_dr-amazones-label {
   /* sized by its natural dimensions; overridden on small screens */
 }
 
-/* Body: heading + description text */
+/* 本文: 見出し＋説明テキスト */
 .p-storedetail_dr-amazones-body {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
 
-/* CTA button */
+/* CTAボタン */
 .p-storedetail_dr-amazones-btn {
   margin-top: 40px;
 }
 
-/* END: Review */
+/* レビュー終了 */
 
 /* ========================================
    START: Utility Overrides
@@ -965,7 +965,7 @@
 /* STOREDETAIL — BEM ELEMENT CLASSES
    (utility classes converted to explicit BEM rules) */
 
-/* Arrow flip — replaces inline style="transform:scaleX(-1)" */
+/* 矢印反転 — インラインstyle="transform:scaleX(-1)"を置換 */
 .p-storedetail__arrow-flip {
   transform: scaleX(-1);
 }
@@ -1151,7 +1151,7 @@
   gap: 0.75rem;
 }
 
-/* END: Utility Overrides */
+/* ユーティリティオーバーライド終了 */
 
 /* ========================================
    MEDIA: max-width 1024px

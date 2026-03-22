@@ -3,10 +3,10 @@ html {
 }
 
 /* ========================================
-   START: Search / Filter
+   開始: 検索 / フィルター
    ======================================== */
 
-/* LINKS */
+/* リンク */
 .p-storelist__links-nav {
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@ html {
   color: var(--base-lightBlue);
 }
 
-/* LOCATION ICON */
+/* ロケーションアイコン */
 .p-storelist__location-icon {
   width: 5.625rem;
   height: 5.625rem;
@@ -65,7 +65,7 @@ html {
   align-items: center;
 }
 
-/* FILTERS */
+/* フィルター */
 .p-storelist__filter-row {
   display: flex;
   gap: 1rem;
@@ -102,10 +102,10 @@ html {
   border-color: var(--base-grayBlue);
 }
 
-/* END: Search / Filter */
+/* 検索 / フィルター終了 */
 
 /* ========================================
-   START: Store Grid
+   開始: 店舗グリッド
    ======================================== */
 
 .p-storelist__grid {
@@ -115,10 +115,10 @@ html {
   z-index: 2;
 }
 
-/* END: Store Grid */
+/* 店舗グリッド終了 */
 
 /* ========================================
-   START: Store Card
+   開始: 店舗カード
    ======================================== */
 
 .p-storelist__card {
@@ -169,10 +169,10 @@ html {
   gap: 0.75rem;
 }
 
-/* END: Store Card */
+/* 店舗カード終了 */
 
 /* ========================================
-   START: Store Info
+   開始: 店舗情報
    ======================================== */
 
 .p-storelist__info-row {
@@ -234,13 +234,13 @@ html {
   justify-content: center;
 }
 
-/* END: Store Info */
+/* 店舗情報終了 */
 
 /* ========================================
-   START: CTA
+   開始: CTA
    ======================================== */
 
-/* SPEAK */
+/* スピーク */
 /* 01 */
 .p-storelist__speak-container--01 {
   position: absolute;
@@ -303,7 +303,7 @@ html {
   object-fit: contain;
 }
 
-/* RIBBON  */
+/* リボン */
 .p-storelist__ribbon--01 {
   position: absolute;
   bottom: -2rem;
@@ -322,13 +322,13 @@ html {
   z-index: 0;
 }
 
-/* END: CTA */
+/* CTA終了 */
 
 /* ========================================
-   MEDIA: max-width 1024px
+   メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
-  /* --- NAV LINKS --- */
+  /* --- ナビリンク --- */
   .p-storelist__links-nav {
     flex-wrap: wrap;
     gap: 0.875rem;
@@ -341,14 +341,14 @@ html {
     gap: 0.875rem;
   }
 
-  /* --- SECTION HEADER --- */
+  /* --- セクションヘッダー --- */
   .p-storelist__location-icon {
     width: 3.5rem;
     height: 3.5rem;
     flex-shrink: 0;
   }
 
-  /* --- SECTION CONTENT PADDING --- */
+  /* --- セクションコンテンツパディング --- */
   #hokkaido-tohoku .c-maxWidth,
   #kanto .c-maxWidth,
   #chubu .c-maxWidth,
@@ -359,7 +359,7 @@ html {
     padding-bottom: 3rem;
   }
 
-  /* --- STORE CARD GRID: 1 column --- */
+  /* --- 店舗カードグリッド: 1列 --- */
   .p-storelist__grid {
     grid-template-columns: 1fr;
   }
@@ -369,7 +369,7 @@ html {
     gap: 1rem;
   }
 
-  /* --- DECORATIVE ELEMENTS --- */
+  /* --- 装飾要素 --- */
   .p-storelist__speak-container--01,
   .p-storelist__speak-container--02 {
     display: none;
@@ -382,14 +382,14 @@ html {
 }
 
 /* ========================================
-   MEDIA: max-width 767px
+   メディア: max-width 767px
    ======================================== */
 @media (max-width: 767px) {
   .p-storelist__links-nav {
     margin-bottom: 2rem;
   }
 
-  /* Re-show speak containers on mobile */
+  /* モバイルでスピークコンテナを再表示 */
   .p-storelist__speak-container--01,
   .p-storelist__speak-container--02 {
     display: block;

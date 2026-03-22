@@ -1,5 +1,5 @@
 /* ========================================
-   START: Navigation / Links
+   開始: ナビゲーション / リンク
    ======================================== */
 
 .p-price__links-nav {
@@ -28,10 +28,10 @@
   color: var(--base-lightBlue);
 }
 
-/* END: Navigation / Links */
+/* ナビゲーション / リンク終了 */
 
 /* ========================================
-   START: Section Title
+   開始: セクションタイトル
    ======================================== */
 
 .p-price__title-container {
@@ -67,10 +67,10 @@
   font-weight: 600;
 }
 
-/* END: Section Title */
+/* セクションタイトル終了 */
 
 /* ========================================
-   START: Price Table / Plans
+   開始: 料金表 / プラン
    ======================================== */
 
 .p-price__section--white {
@@ -226,13 +226,13 @@
   flex: 1;
 }
 
-/* END: Price Table / Plans */
+/* 料金表 / プラン終了 */
 
 /* ========================================
-   START: Items / Rows
+   開始: アイテム / 行
    ======================================== */
 
-/* Two-column list that stacks to single column on mobile */
+/* モバイルで単一列に積み重なる2列リスト */
 .p-price__flex-list {
   display: flex;
 }
@@ -241,7 +241,7 @@
   display: flex;
 }
 
-/* TEXT CONTAINER */
+/* テキストコンテナ */
 .p-price__text-container {
   display: flex;
   flex-direction: column;
@@ -273,10 +273,10 @@
   color: var(--text-lightBlue);
 }
 
-/* END: Items / Rows */
+/* アイテム / 行終了 */
 
 /* ========================================
-   START: CTA
+   開始: CTA
    ======================================== */
 
 .p-price__faq-card {
@@ -318,13 +318,13 @@
   color: var(--base-lightBlue);
 }
 
-/* END: CTA */
+/* CTA終了 */
 
 /* ========================================
-   START: Utility Overrides
+   開始: ユーティリティオーバーライド
    ======================================== */
 
-/* DESKTOP SHOW/HIDE DEFAULTS */
+/* デスクトップ表示/非表示デフォルト */
 .p-price__title-row--desktop {
   display: flex;
 }
@@ -337,7 +337,7 @@
   display: none;
 }
 
-/* PEOPLE JUMP */
+/* ジャンプする人々 */
 .p-price__people-image {
   position: relative;
   top: -13rem;
@@ -382,7 +382,7 @@
   z-index: 2;
 }
 
-/* SPEAK PERSON */
+/* スピークパーソン */
 
 /* 01 */
 
@@ -471,16 +471,16 @@
   object-fit: contain;
 }
 
-/* END: Utility Overrides */
+/* ユーティリティオーバーライド終了 */
 
 /* ========================================
-   MEDIA: max-width 1024px
+   メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
   /* ----------------------------------------
-     START: Navigation / Links
+     開始: ナビゲーション / リンク
      ---------------------------------------- */
-  /* LINKS NAV */
+  /* リンクナビ */
   .p-price__links-nav {
     flex-wrap: wrap;
     gap: 1rem;
@@ -488,12 +488,12 @@
     margin-bottom: 3rem;
   }
 
-  /* END: Navigation / Links */
+  /* ナビゲーション / リンク終了 */
 
   /* ----------------------------------------
-     START: Section Title
+     開始: セクションタイトル
      ---------------------------------------- */
-  /* TITLE */
+  /* タイトル */
   .p-price__title {
     font-size: 2.5rem;
   }
@@ -502,17 +502,17 @@
     margin-bottom: 1.5rem;
   }
 
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ----------------------------------------
-     START: Price Table / Plans
+     開始: 料金表 / プラン
      ---------------------------------------- */
   .p-price__special-plan {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
-  /* TIER CARDS */
+  /* ティアカード */
   .p-price__tiers {
     flex-direction: column;
     gap: 1.5rem;
@@ -537,12 +537,12 @@
     margin-top: 1rem;
   }
 
-  /* END: Price Table / Plans */
+  /* 料金表 / プラン終了 */
 
   /* ----------------------------------------
-     START: Items / Rows
+     開始: アイテム / 行
      ---------------------------------------- */
-  /* CONTENT LAYOUT */
+  /* コンテンツレイアウト */
   .p-price__content {
     padding-bottom: 0rem;
   }
@@ -556,7 +556,7 @@
     padding: 1.25rem;
   }
 
-  /* TWO-COLUMN PRICE LISTS */
+  /* 2列料金リスト */
   .p-price__text-container.flex-1 {
     flex: 1 1 100%;
   }
@@ -565,7 +565,7 @@
     flex-direction: column;
   }
 
-  /* Price item row: stack name + span vertically, constrain to available space */
+  /* 料金アイテム行: 名前＋spanを縦に積み重ね、利用可能なスペースに制約 */
   .p-price__item-row__name {
     display: flex;
     flex-direction: column;
@@ -573,14 +573,14 @@
     min-width: 0;
   }
 
-  /* Anchor price to the right — never shrink, never wrap */
+  /* 料金を右に固定 — 縮小・折り返しなし */
   .p-price__item-row__value {
     flex-shrink: 0;
     white-space: nowrap;
     padding-left: 0.75rem;
   }
 
-  /* Adjust font sizes for mobile */
+  /* モバイル用フォントサイズ調整 */
   .p-price__item-row p {
     font-size: 0.85rem;
     line-height: 1.5rem;
@@ -591,7 +591,7 @@
     line-height: 1.4rem;
   }
 
-  /* SECTION PADDING */
+  /* セクションパディング */
   .p-price__section--white.py-100 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -601,15 +601,15 @@
     padding-top: 3rem !important;
   }
 
-  /* GAP-100PX CONTAINERS */
+  /* GAP-100PXコンテナ */
   .flex.flex-col.gap-100px {
     gap: 3rem;
   }
 
-  /* END: Items / Rows */
+  /* アイテム / 行終了 */
 
   /* ----------------------------------------
-     START: CTA
+     開始: CTA
      ---------------------------------------- */
   .p-price__faq-card-header h3 {
     font-size: 1.125rem;
@@ -625,12 +625,12 @@
     min-width: 4rem;
   }
 
-  /* END: CTA */
+  /* CTA終了 */
 
   /* ----------------------------------------
-     START: Utility Overrides
+     開始: ユーティリティオーバーライド
      ---------------------------------------- */
-  /* DESKTOP/MOBILE TOGGLE */
+  /* デスクトップ/モバイル切り替え */
   .p-price__title-row--desktop {
     display: none;
   }
@@ -687,7 +687,7 @@
     height: 18rem;
   }
 
-  /* ANNOUNCEMENT SPEAK PERSONS */
+  /* お知らせスピークパーソン */
   .p-price__speak-container--02 {
     bottom: -1.5rem;
     left: 4.5rem;
@@ -721,5 +721,5 @@
     padding-bottom: 14rem !important;
   }
 
-  /* END: Utility Overrides */
+  /* ユーティリティオーバーライド終了 */
 }

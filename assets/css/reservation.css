@@ -1,5 +1,5 @@
 /* ========================================
-   START: Simulation / Flow Steps
+   開始: シミュレーション / フローステップ
    ======================================== */
 
 .p-reservation-flow {
@@ -14,7 +14,7 @@
   padding-bottom: 7rem;
 }
 
-/* STEPS */
+/* ステップ */
 
 .p-reservation-step__list {
   display: flex;
@@ -72,13 +72,13 @@
   color: var(--text-black1);
 }
 
-/* END: Simulation / Flow Steps */
+/* シミュレーション / フローステップ終了 */
 
 /* ========================================
-   START: Navigation / Links
+   開始: ナビゲーション / リンク
    ======================================== */
 
-/* RESERVATION LINKS */
+/* 予約リンク */
 
 .p-reservation-flow__nav {
   display: flex;
@@ -106,10 +106,10 @@
   color: var(--base-lightBlue);
 }
 
-/* END: Navigation / Links */
+/* ナビゲーション / リンク終了 */
 
 /* ========================================
-   START: Section Title
+   開始: セクションタイトル
    ======================================== */
 
 .p-reservation-flow__title-container {
@@ -131,15 +131,15 @@
   font-weight: 400;
 }
 
-/* END: Section Title */
+/* セクションタイトル終了 */
 
 /* ========================================
-   START: Hero / Speak Bubbles
+   開始: ヒーロー / 吹き出し
    ======================================== */
 
-/* SPEAK PERSON */
+/* スピークパーソン */
 
-/* Mobile-only duplicate (beside button) — hidden on desktop/tablet */
+/* モバイル専用複製（ボタン横）— デスクトップ/タブレットでは非表示 */
 .p-reservation-speak__image--01-btn {
   display: none;
 }
@@ -294,10 +294,10 @@
   display: none;
 }
 
-/* END: Hero / Speak Bubbles */
+/* ヒーロー / 吹き出し終了 */
 
 /* ========================================
-   START: Simulation
+   開始: シミュレーション
    ======================================== */
 
 .p-reservation-simulation {
@@ -318,7 +318,7 @@
   z-index: 0;
 }
 
-/* Ribbon simulation SVG decoration */
+/* リボンシミュレーションSVG装飾 */
 .p-reservation-simulation__ribbon {
   position: absolute;
   left: -2%;
@@ -387,10 +387,10 @@
   line-height: 2;
 }
 
-/* END: Simulation */
+/* シミュレーション終了 */
 
 /* ========================================
-   START: Form
+   開始: フォーム
    ======================================== */
 
 .p-reservation-form-section {
@@ -432,10 +432,10 @@
   background-color: white;
 }
 
-/* END: Form */
+/* フォーム終了 */
 
 /* ========================================
-   START: Announcement
+   開始: お知らせ
    ======================================== */
 
 .p-reservation-announcement-section {
@@ -501,14 +501,14 @@
   font-size: 1.25rem;
 }
 
-/* END: Announcement */
+/* お知らせ終了 */
 
 /* ========================================
-   MEDIA: max-width 1024px
+   メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
   /* ----------------------------------------
-     START: Simulation / Flow Steps
+     開始: シミュレーション / フローステップ
      ---------------------------------------- */
   .p-reservation-flow__title {
     font-size: 4rem;
@@ -521,12 +521,12 @@
     padding-top: 2rem;
   }
 
-  /* END: Simulation / Flow Steps */
+  /* シミュレーション / フローステップ終了 */
 
   /* ----------------------------------------
-     START: Hero / Speak Bubbles
+     開始: ヒーロー / 吹き出し
      ---------------------------------------- */
-  /* Hide decorative speak characters on tablet to prevent overflow */
+  /* オーバーフロー防止のため、タブレットで装飾スピークキャラクターを非表示 */
   .p-reservation-speak__container--01 {
     right: 5%;
     top: -35%;
@@ -547,7 +547,7 @@
     height: 22vw;
   }
 
-  /* Show speak bubble 03 centered on mobile */
+  /* モバイルで吹き出し03を中央に表示 */
   .p-reservation-speak__container--03 {
     display: flex;
     justify-content: center;
@@ -599,10 +599,10 @@
     height: 6rem;
     width: auto;
   }
-  /* END: Hero / Speak Bubbles */
+  /* ヒーロー / 吹き出し終了 */
 
   /* ----------------------------------------
-     START: Simulation
+     開始: シミュレーション
      ---------------------------------------- */
   .p-reservation-simulation {
     height: auto;
@@ -631,10 +631,10 @@
     width: 28vw;
     font-size: 0.875rem;
   }
-  /* END: Simulation */
+  /* シミュレーション終了 */
 
   /* ----------------------------------------
-     START: Form
+     開始: フォーム
      ---------------------------------------- */
   .p-reservation-form__title-container h2 {
     font-size: 4rem;
@@ -643,23 +643,23 @@
   .p-reservation-form__content {
     padding: 2.5rem;
   }
-  /* END: Form */
+  /* フォーム終了 */
 
   /* ----------------------------------------
-     START: Announcement
+     開始: お知らせ
      ---------------------------------------- */
   .p-reservation-announcement {
     padding: 3rem 2rem;
   }
-  /* END: Announcement */
+  /* お知らせ終了 */
 }
 
 /* ========================================
-   MEDIA: max-width 767px
+   メディア: max-width 767px
    ======================================== */
 @media (max-width: 767px) {
   /* ----------------------------------------
-     START: Simulation / Flow Steps
+     開始: シミュレーション / フローステップ
      ---------------------------------------- */
   .p-reservation-flow {
     padding-bottom: 4rem;
@@ -691,7 +691,7 @@
     line-height: 1.2;
   }
 
-  /* STEPS */
+  /* ステップ */
   .p-reservation-step__list {
     gap: 1.25rem;
   }
@@ -726,29 +726,29 @@
     align-items: center;
   }
 
-  /* Smaller button text on mobile */
+  /* モバイルでボタンテキスト縮小 */
   .p-reservation-step__btn-wrapper .btn-light-blue02 {
     font-size: 0.75rem;
   }
 
-  /* Button + person row wrapper */
+  /* ボタン＋パーソン行ラッパー */
   .p-reservation-step__btn-wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     gap: 0;
   }
-  /* END: Simulation / Flow Steps */
+  /* シミュレーション / フローステップ終了 */
 
   /* ----------------------------------------
-     START: Hero / Speak Bubbles
+     開始: ヒーロー / 吹き出し
      ---------------------------------------- */
-  /* Hide all decorative speak characters on mobile except 01 */
+  /* モバイルで01以外の装飾スピークキャラクターをすべて非表示 */
   .p-reservation-speak__container--02 {
     display: none;
   }
 
-  /* Show speak bubble 03 centered on mobile */
+  /* モバイルで吹き出し03を中央に表示 */
   .p-reservation-speak__container--03 {
     display: flex;
     justify-content: center;
@@ -766,12 +766,12 @@
     height: 6rem;
   }
 
-  /* Hide original speak person from title on mobile */
+  /* モバイルでタイトルの元のスピークパーソンを非表示 */
   .p-reservation-flow__title-container .p-reservation-speak__container--01 {
     display: none;
   }
 
-  /* Mobile duplicate person beside button */
+  /* モバイル複製パーソン（ボタン横） */
   .p-reservation-speak__image--01-btn {
     position: relative;
     display: flex;
@@ -813,7 +813,7 @@
     height: auto;
   }
 
-  /* ANNOUNCEMENT — mobile row with side-by-side persons */
+  /* お知らせ — モバイル行で人物を横並び */
   .p-reservation-speak__mobile-row {
     display: flex;
     flex-direction: column;
@@ -843,10 +843,10 @@
     height: 6rem;
     width: auto;
   }
-  /* END: Hero / Speak Bubbles */
+  /* ヒーロー / 吹き出し終了 */
 
   /* ----------------------------------------
-     START: Simulation
+     開始: シミュレーション
      ---------------------------------------- */
   .p-reservation-simulation {
     height: auto;
@@ -869,7 +869,7 @@
     height: 35%;
   }
 
-  /* Stack phone + content vertically */
+  /* スマートフォン＋コンテンツを縦に積み重ね */
   .p-reservation-simulation__phone {
     position: relative;
     top: auto;
@@ -911,7 +911,7 @@
     text-align: left;
   }
 
-  /* Show and center the simulation people on mobile */
+  /* モバイルでシミュレーション人物を表示＆中央揃え */
   .p-reservation-simulation .p-reservation-speak__container--02 {
     display: flex;
     justify-content: end;
@@ -925,10 +925,10 @@
   .p-reservation-simulation .p-reservation-speak__person--02 {
     height: 16rem;
   }
-  /* END: Simulation */
+  /* シミュレーション終了 */
 
   /* ----------------------------------------
-     START: Form
+     開始: フォーム
      ---------------------------------------- */
   .p-reservation-form {
     margin-bottom: 0rem;
@@ -951,10 +951,10 @@
   .p-reservation-form__content {
     padding: 1.25rem;
   }
-  /* END: Form */
+  /* フォーム終了 */
 
   /* ----------------------------------------
-     START: Announcement
+     開始: お知らせ
      ---------------------------------------- */
   .p-reservation-announcement-section {
     padding: 8% 0;
@@ -985,5 +985,5 @@
     font-size: 1rem;
     text-align: center;
   }
-  /* END: Announcement */
+  /* お知らせ終了 */
 }

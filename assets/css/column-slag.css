@@ -38,7 +38,7 @@
 .p-column-slag__wrapper h2 span {
   margin-right: 15px;
 } /* ================================
-       p-toc (reusable component)
+       p-toc（再利用可能コンポーネント）
        ================================ */
 .p-toc {
   width: 100%;
@@ -76,7 +76,7 @@
   gap: 0;
 }
 
-/* ── top-level items ── */
+/* ── トップレベル項目 ── */
 .p-toc__item {
   border-bottom: 1px solid #e8f8f7;
 }
@@ -117,7 +117,7 @@
   flex: 1;
 }
 
-/* ── sub items (3-1, 3-2 etc.) ── */
+/* ── サブ項目（3-1, 3-2 など） ── */
 .p-toc__sublist {
   list-style: none;
   margin: 0;
@@ -240,7 +240,7 @@ mark {
 }
 
 /* ================================
-   RESPONSIVE — 767px and below
+   レスポンシブ — 767px以下
    ================================ */
 @media screen and (max-width: 767px) {
     .p-column-slag__wrapper article img{
@@ -302,12 +302,12 @@ mark {
     padding: 12px 14px;
   }
 
-  /* fix highlight pseudo-element on mobile */
+  /* モバイルでのハイライト疑似要素修正 */
   .p-column-info__highlited-text::after {
     width: 100%;
   }
 
-  /* content blocks */
+  /* コンテンツブロック */
   .p-article-boxy__content1 p,
   .p-article-boxy__content2 p {
     max-width: 100%;
@@ -329,7 +329,7 @@ mark {
     justify-content: center;
   } */
 
-  /* general font size reductions */
+  /* フォントサイズ全般縮小 */
   .c-recommended_btn{
     gap:20px;
   }

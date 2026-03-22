@@ -1,5 +1,5 @@
 /* ========================================
-   START: Banner
+   開始: バナー
    ======================================== */
 
 .p-sportip__banner-overlay {
@@ -22,7 +22,7 @@
   margin-bottom:20px;
 }
 
-/* Text content */
+/* テキストコンテンツ */
 .p-sportip__banner-content {
   position: absolute;
   top: 50%;
@@ -39,14 +39,14 @@
   font-weight: 400;
 }
 
-/* Custom Breadcrumb styles for sportip page  */
+/* sportipページ用パンくずリストスタイル */
 .p-sportip__breadcrumb {
   bottom: 4%;
   left: 5%;
   z-index: 15;
 }
 
-/* Left frame image position */
+/* 左フレーム画像位置 */
 .c-hero-slider__frames__clip1 .clip-img {
   object-position: right top; /* 0%=left edge, 100%=right edge */
   width: 105%; /* keep left% and extra width% equal to avoid gaps */
@@ -54,7 +54,7 @@
   right: 30%;
 }
 
-/* Right frame image position */
+/* 右フレーム画像位置 */
 .c-hero-slider__frames__clip2 .clip-img {
   left: 10%;
   /* right: auto; */
@@ -62,10 +62,10 @@
   width: 125%; /* keep left% and extra width% equal to avoid gaps */
 }
 
-/* END: Banner */
+/* バナー終了 */
 
 /* ========================================
-   START: Section Title
+   開始: セクションタイトル
    ======================================== */
 
 .p-sportip__title-container {
@@ -86,10 +86,10 @@
   font-weight: 400;
 }
 
-/* END: Section Title */
+/* セクションタイトル終了 */
 
 /* ========================================
-   START: Text Container / Cards
+   開始: テキストコンテナ / カード
    ======================================== */
 
 .p-sportip__section--white {
@@ -107,7 +107,7 @@
   padding-bottom: 2rem;
 }
 
-/* IMG CONTAINER */
+/* 画像コンテナ */
 
 .p-sportip__img {
   display: block;
@@ -117,7 +117,7 @@
   max-width: 63rem;
 }
 
-/* TEXT CONTAINER */
+/* テキストコンテナ */
 .p-sportip__text-container,
 .p-sportip__text-container--02 {
   display: flex;
@@ -163,7 +163,7 @@
   color: var(--text-lightBlue);
 }
 
-/* SPORTIP LINKS */
+/* SPORTIPリンク */
 
 .p-sportip__links-nav {
   display: flex;
@@ -191,13 +191,13 @@
   color: var(--base-lightBlue);
 }
 
-/* END: Text Container / Cards */
+/* テキストコンテナ / カード終了 */
 
 /* ========================================
-   START: Point Steps
+   開始: ポイントステップ
    ======================================== */
 
-/* YOUTUBE */
+/* YouTube */
 .p-sportip__youtube-wrap {
   margin-top: 3rem;
   width: 100%;
@@ -221,10 +221,10 @@
   border: none;
 }
 
-/* END: Point Steps */
+/* ポイントステップ終了 */
 
 /* ========================================
-   START: Posture / Feature Blocks
+   開始: 姿勢 / 機能ブロック
    ======================================== */
 
 .p-sportip__section--lightblue {
@@ -266,7 +266,7 @@
   z-index: 1;
 }
 
-/* Mobile phone duplicate — hidden on desktop */
+/* モバイルスマートフォン複製 — デスクトップでは非表示 */
 .p-sportip__phone--mobile {
   display: none;
 }
@@ -343,21 +343,21 @@
   object-fit: contain;
 }
 
-/* END: Posture / Feature Blocks */
+/* 姿勢 / 機能ブロック終了 */
 
 /* ========================================
-   MEDIA: max-width 1024px
+   メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
   /* ========================================
-     START: Banner
+     開始: バナー
      ======================================== */
 
   .p-sportip__banner-content {
     left: 3rem;
   }
 
-  /* Left frame image — object-position horizontal, transform for vertical */
+  /* 左フレーム画像 — 水平方向のobject-position、垂直方向のtransform */
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
     height: 100%;
@@ -366,7 +366,7 @@
     left: 0;
   }
 
-  /* Right frame image */
+  /* 右フレーム画像 */
   .c-hero-slider__frames__clip2 .clip-img {
     width: 100%;
     height: 100%;
@@ -380,20 +380,20 @@
     font-size: 1.875rem;
   }
 
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ========================================
-     START: Section Title
+     開始: セクションタイトル
      ======================================== */
 
   .p-sportip__title {
     font-size: 4.5rem;
   }
 
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ========================================
-     START: Text Container / Cards
+     開始: テキストコンテナ / カード
      ======================================== */
 
   .p-sportip__text-container,
@@ -402,20 +402,20 @@
     padding: 2.5rem;
   }
 
-  /* END: Text Container / Cards */
+  /* テキストコンテナ / カード終了 */
 
   /* ========================================
-     START: Posture / Feature Blocks
+     開始: 姿勢 / 機能ブロック
      ======================================== */
 
   .p-sportip__phone img {
     height: 28vw;
   }
 
-  /* END: Posture / Feature Blocks */
+  /* 姿勢 / 機能ブロック終了 */
 
   /* ========================================
-     START: Point Steps
+     開始: ポイントステップ
      ======================================== */
 
   .p-sportip__youtube {
@@ -423,21 +423,21 @@
     height: 28rem;
   }
 
-  /* SPEAK PERSONS — scale down */
+  /* スピークパーソン — 縮小 */
   .p-sportip__speak-person--02,
   .p-sportip__speak-person--03 {
     height: 18rem;
   }
 
-  /* END: Point Steps */
+  /* ポイントステップ終了 */
 }
 
 /* ========================================
-   MEDIA: max-width 767px
+   メディア: max-width 767px
    ======================================== */
 @media (max-width: 767px) {
   /* ========================================
-     START: Banner
+     開始: バナー
      ======================================== */
 
   .p-sportip__banner-content {
@@ -480,10 +480,10 @@
     transform: scale(1) translateY(30%);
   }
 
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ========================================
-     START: Section Title
+     開始: セクションタイトル
      ======================================== */
 
   .p-sportip__title {
@@ -499,10 +499,10 @@
     margin-bottom: 0;
   }
 
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ========================================
-     START: Text Container / Cards
+     開始: テキストコンテナ / カード
      ======================================== */
 
   /* ── 03 SECTION — white background on mobile ── */
@@ -644,10 +644,10 @@
     margin-top: 2.5rem !important;
   }
 
-  /* END: Text Container / Cards */
+  /* テキストコンテナ / カード終了 */
 
   /* ========================================
-     START: Point Steps
+     開始: ポイントステップ
      ======================================== */
 
   /* ── YOUTUBE ── */
@@ -667,10 +667,10 @@
     line-height: 1.6;
   }
 
-  /* END: Point Steps */
+  /* ポイントステップ終了 */
 
   /* ========================================
-     START: Posture / Feature Blocks
+     開始: 姿勢 / 機能ブロック
      ======================================== */
 
   /* ── PHONE + TEXT BLOCK SECTION ── */
@@ -704,12 +704,12 @@
     align-items: baseline;
   }
 
-  /* Desktop phone — hide on mobile */
+  /* デスクトップスマートフォン — モバイルでは非表示 */
   .p-sportip__phone--desktop {
     display: none;
   }
 
-  /* Mobile phone — show and center */
+  /* モバイルスマートフォン — 表示＆中央揃え */
   .p-sportip__phone--mobile {
     display: flex;
     justify-content: center;
@@ -763,5 +763,5 @@
     right: -6rem;
   }
 
-  /* END: Posture / Feature Blocks */
+  /* 姿勢 / 機能ブロック終了 */
 }

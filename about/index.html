@@ -23,13 +23,15 @@
         class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
       >
         <div class="flex flex-row items-center flex-1 gap-24px">
-          <img
-            src="assets/img/common/icon_logo.svg"
-            alt="アマゾネス"
-            width="159.97px"
-            height="62.77px"
-            class="amazones-header-logo"
-          />
+          <a href="./">
+            <img
+              src="assets/img/common/icon_logo.svg"
+              alt="アマゾネス"
+              width="159.97px"
+              height="62.77px"
+              class="amazones-header-logo"
+            />
+          </a>
           <a href="./" class="header-text text-black1 fw-500 fs-14"
             >アマゾネス</a
           >
@@ -586,7 +588,7 @@
         </section>
       </section>
 
-      <!-- SHOP SECTION -->
+      <!-- ショップセクション -->
       <div class="p-attraction_page">
         <section class="c-shop__bg">
           <div class="c-shop pt-120 relative">
@@ -673,7 +675,7 @@
                   </div>
                 </div>
 
-                <!-- SP map box (inline, shown ≤1250px) -->
+                <!-- SPマップボックス（インライン、1250px以下で表示） -->
                 <figure class="c-shop__map-box c-shop__map-box--sp">
                   <p
                     class="c-shop__map-number fs-320 font-outfit fw-600 text-lightBlue text-nowrap"
@@ -705,7 +707,7 @@
               </div>
             </div>
 
-            <!-- Desktop map box (absolute, hidden ≤1250px) -->
+            <!-- PCマップボックス（absolute、1250px以下で非表示） -->
             <figure class="c-shop__map-box">
               <p
                 class="c-shop__map-number fs-320 font-outfit fw-600 text-lightBlue"
@@ -719,7 +721,7 @@
               />
             </figure>
 
-            <!-- SP stickers (shown ≤1250px) -->
+            <!-- SPステッカー（1250px以下で表示） -->
             <aside
               class="c-shop__sticker-sp c-shop__sticker-container relative"
             >
@@ -766,7 +768,7 @@
               </figure>
             </aside>
 
-            <!-- Desktop stickers (hidden ≤1250px) -->
+            <!-- PCステッカー（1250px以下で非表示） -->
             <aside class="c-shop__sticker-desk">
               <div
                 class="grow-wrapper-right c-shop__ribbon"
@@ -811,7 +813,7 @@
         </section>
       </div>
 
-      <!-- SPACE SECTION -->
+      <!-- スペースセクション -->
       <section class="p-space">
         <div class="p-space__container">
           <div class="p-space__content1">
@@ -905,7 +907,7 @@
         </div>
       </section>
 
-      <!-- PRICE SECTION -->
+      <!-- 料金セクション -->
       <section class="c-price-plan">
         <div class="c-price-plan__container flex flex-col items-start gap-50px">
           <header class="c-price-plan__header flex flex-row gap-60px">
@@ -949,7 +951,7 @@
           <div class="c-price-plan__desc-wrapper w-full">
             <ul class="c-price-plan__list">
               <li class="reveal c-price-plan__item">
-                <a href = '../price/index.html#monthly-plan' class="c-price-plan__item-content">
+                <a href = '../price#monthly-plan' class="c-price-plan__item-content">
                   <img
                     src="assets/img/common/icon_check_calender.svg"
                     alt="基本月額プラン"
@@ -978,7 +980,7 @@
                 </picture>
               </li>
               <li class="reveal c-price-plan__item c-price-plan__item--2">
-                <a href = '../price/index.html#special-plan' class="c-price-plan__item-content">
+                <a href = '../price#special-plan' class="c-price-plan__item-content">
                   <img src="assets/img/common/icon_plan.svg" alt="限定プラン" />
                   <div
                     class="c-price-plan__item-content-inner flex flex-col items-center justify-center gap-20px"
@@ -1002,7 +1004,7 @@
                 </picture>
               </li>
               <li class="reveal c-price-plan__item c-price-plan__item--3">
-                <a href = '../price/index.html#option-service'  class="c-price-plan__item-content">
+                <a href = '../price#option-service'  class="c-price-plan__item-content">
                   <img
                     src="assets/img/common/icon_energy.svg"
                     alt="オプション"
@@ -1151,14 +1153,16 @@
     <footer class="I-footer">
       <section class="footer-main-container">
 
-        <!-- Top row: brand + nav -->
+        <!-- 上部: ブランド + ナビ -->
         <section class="footer-top">
 
-          <!-- Brand -->
+          <!-- ブランド -->
           <aside class="footer-brand">
             <figure class="footer-brand-logo">
-              <img src="assets/img/common/icon_logo.svg" alt="アマゾネス" />
-              <p class="font-outfit fw-500">WOMEN ONLY 24h GYM</p>
+              <a href="./">
+                <img src="assets/img/common/icon_logo.svg" alt="アマゾネス" />
+                <p class="font-outfit fw-500">WOMEN ONLY 24h GYM</p>
+              </a>
             </figure>
 
             <nav class="footer-cta-links" aria-label="クイックリンク">
@@ -1173,7 +1177,7 @@
             </nav>
           </aside>
 
-          <!-- Nav columns -->
+          <!-- ナビカラム -->
           <section class="footer-nav-columns">
 
             <!-- 会社について -->
@@ -1193,7 +1197,7 @@
                 <li><a href="/column/" class="fw-500 fs-15">ゾネスタイムズ</a></li>
                 <li><a href="/storelist/" class="fw-500 fs-15">店舗一覧</a></li>
                 <li><a href="/reservation/" class="fw-500 fs-15">無料体験・見学予約</a></li>
-                <li><a href="/reservation/index.html#reservation-flow" class="fw-500 fs-15 text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
+                <li><a href="/reservation#reservation-flow" class="fw-500 fs-15 text-lightBlue">ご予約から無料体験・見学までの流れ</a></li>
                 <li><a href="/price/" class="fw-500 fs-15">料金案内</a></li>
                 <li><a href="/admission/" class="fw-500 fs-15 text-lightBlue">入会手続きのご案内</a></li>
                 <li><a href="/payment/" class="fw-500 fs-15 text-lightBlue">お支払いについて</a></li>
@@ -1223,7 +1227,7 @@
                 </ul>
               </nav>
 
-              <!-- Recruitment -->
+              <!-- 採用情報 -->
               <nav class="footer-nav-section" aria-label="Recruitment">
                 <button class="footer-page-link relative" aria-expanded="false">
                   <p class="font-outfit fs-18 fw-500">Recruitment</p>
@@ -1316,7 +1320,7 @@
           </section>
         </section>
 
-        <!-- Bottom row: legal links + scroll-up -->
+        <!-- 下部: 法的リンク + スクロールアップ -->
         <section class="footer-bottom">
           <ul class="footer-legal-links">
             <li>

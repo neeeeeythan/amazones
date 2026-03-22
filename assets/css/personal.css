@@ -1,5 +1,5 @@
 /* ========================================
-   START: Banner
+   開始: バナー
    ======================================== */
 .p-personal-banner {
   width: 100%;
@@ -27,21 +27,21 @@
   font-weight: 500;
 }
 
-/* BREADCRUMB */
+/* パンくずリスト */
 .p-personal-banner__breadcrumb {
   bottom: 5%;
   left: 8%;
   z-index: 15;
 }
 
-/* Left frame image — shift right */
+/* 左フレーム画像 — 右にシフト */
 .p-personal-banner .c-hero-slider__frames__clip1 .clip-img {
   object-position: right center;
 }
-/* END: Banner */
+/* バナー終了 */
 
 /* ========================================
-   START: Method Section
+   開始: メソッドセクション
    ======================================== */
 .p-personal-method,
 .p-personal-program {
@@ -75,10 +75,10 @@
   right: 0%;
   top: 20%;
 }
-/* END: Method Section */
+/* メソッドセクション終了 */
 
 /* ========================================
-   START: Section Title
+   開始: セクションタイトル
    ======================================== */
 .p-personal-section__topic {
   display: flex;
@@ -119,10 +119,10 @@
   line-height: 2rem;
   font-weight: 500;
 }
-/* END: Section Title */
+/* セクションタイトル終了 */
 
 /* ========================================
-   START: Program Section
+   開始: プログラムセクション
    ======================================== */
 .p-personal-case-study {
   width: 100%;
@@ -252,10 +252,10 @@
   gap: 1rem;
   padding-top: 1.5rem;
 }
-/* END: Program Section */
+/* プログラムセクション終了 */
 
 /* ========================================
-   START: CTA
+   開始: CTA
    ======================================== */
 .p-personal-cta {
   width: 100%;
@@ -287,16 +287,16 @@
   line-height: 4.375rem;
   font-weight: 500;
 }
-/* END: CTA */
+/* CTA終了 */
 
 /* ========================================
-   START: Utility Overrides
+   開始: ユーティリティオーバーライド
    ======================================== */
 .text-pink {
   color: #e8527a;
 }
 
-/* Icon hover lightblue effect */
+/* アイコンホバーライトブルー効果 */
 .icon-hover-lightblue {
   transition: filter 0.3s ease;
 }
@@ -305,12 +305,12 @@
   filter: invert(82%) sepia(28%) saturate(512%) hue-rotate(128deg)
     brightness(102%) contrast(83%);
 }
-/* END: Utility Overrides */
+/* ユーティリティオーバーライド終了 */
 
 /* ========================================
-   START: Trainer / Staff
+   開始: トレーナー / スタッフ
    ======================================== */
-/* SPEAK */
+/* スピーク */
 /* 01 */
 .p-personal-speak__container--01 {
   position: absolute;
@@ -372,14 +372,14 @@
   height: 25rem;
   object-fit: contain;
 }
-/* END: Trainer / Staff */
+/* トレーナー / スタッフ終了 */
 
 /* ========================================
-   MEDIA: max-width 1440px
+   メディア: max-width 1440px
    ======================================== */
 @media (max-width: 1440px) {
   /* ----------------------------------------
-     START: Banner
+     開始: バナー
      ---------------------------------------- */
   .p-personal-banner__title {
     top: 30%;
@@ -394,17 +394,17 @@
   .p-personal-banner__breadcrumb {
     left: 5%;
   }
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ----------------------------------------
-     START: Method Section
+     開始: メソッドセクション
      ---------------------------------------- */
   .p-personal-method,
   .p-personal-case-study {
     overflow: hidden;
   }
 
-  /* Method image: shrink and reposition so it doesn't overlap text */
+  /* メソッド画像: テキストと重ならないように縮小・再配置 */
   .p-personal-method__img {
     width: 35rem;
     height: auto;
@@ -412,22 +412,22 @@
     top: 25%;
   }
 
-  /* Give text container more breathing room */
+  /* テキストコンテナに余白を追加 */
   .p-personal-section__topic {
     max-width: 55%;
   }
-  /* END: Method Section */
+  /* メソッドセクション終了 */
 
   /* ----------------------------------------
-     START: Section Title
+     開始: セクションタイトル
      ---------------------------------------- */
-  /* Section header title */
+  /* セクションヘッダータイトル */
   .p-personal-section__header h2 {
     font-size: 4.5rem;
     line-height: 5.5rem;
   }
 
-  /* Case study: stack header + topic icon vertically */
+  /* ケーススタディ: ヘッダー＋トピックアイコンを縦に積み重ね */
   .p-personal-case-study__header {
     flex-direction: column;
     align-items: flex-start;
@@ -438,14 +438,14 @@
     margin-top: 0;
   }
 
-  /* Boxed info items: allow wrapping */
+  /* ボックス情報アイテム: 折り返し許可 */
   .p-personal-boxed-info__row {
     flex-wrap: wrap;
   }
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ----------------------------------------
-     START: CTA
+     開始: CTA
      ---------------------------------------- */
   .p-personal-cta {
     height: auto;
@@ -468,21 +468,21 @@
     left: -15%;
     top: -5%;
   }
-  /* END: CTA */
+  /* CTA終了 */
 
   /* ----------------------------------------
-     START: Program Section
+     開始: プログラムセクション
      ---------------------------------------- */
   .p-personal-program__white-box-header h3 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  /* END: Program Section */
+  /* プログラムセクション終了 */
 
   /* ----------------------------------------
-     START: Trainer / Staff
+     開始: トレーナー / スタッフ
      ---------------------------------------- */
-  /* Push speak characters further out so they don't overlap content */
+  /* スピークキャラクターをコンテンツと重ならないようにさらに外側に配置 */
   .p-personal-speak__container--01 {
     left: -6%;
   }
@@ -495,15 +495,15 @@
   .p-personal-speak__person--02 {
     height: 18rem;
   }
-  /* END: Trainer / Staff */
+  /* トレーナー / スタッフ終了 */
 }
 
 /* ========================================
-   MEDIA: max-width 768px
+   メディア: max-width 768px
    ======================================== */
 @media (max-width: 768px) {
   /* ----------------------------------------
-     START: Banner
+     開始: バナー
      ---------------------------------------- */
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
@@ -536,10 +536,10 @@
     left: 1.25rem;
     bottom: 4%;
   }
-  /* END: Banner */
+  /* バナー終了 */
 
   /* ----------------------------------------
-     START: Method Section
+     開始: メソッドセクション
      ---------------------------------------- */
   .p-personal-method {
     background-image: url("../img/common/bg_white_pattern.webp");
@@ -547,7 +547,7 @@
     background-position: 0% -170%;
   }
 
-  /* Method image: switch to in-flow block above text */
+  /* メソッド画像: テキスト上のインフローブロックに切り替え */
   .p-personal-method__img {
     position: relative;
     right: auto;
@@ -557,24 +557,24 @@
     margin-bottom: 1.5rem;
   }
 
-  /* Let text container go full width */
+  /* テキストコンテナを全幅に */
   .p-personal-section__topic {
     max-width: 100%;
     gap: 1.5rem;
   }
 
-  /* Section container: tighter padding */
+  /* セクションコンテナ: パディング縮小 */
   .p-personal-method .c-maxWidth,
   .p-personal-case-study .c-maxWidth {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
-  /* END: Method Section */
+  /* メソッドセクション終了 */
 
   /* ----------------------------------------
-     START: Section Title
+     開始: セクションタイトル
      ---------------------------------------- */
-  /* Section header */
+  /* セクションヘッダー */
   .p-personal-section__header h2 {
     font-size: 4rem;
     line-height: 4.5rem;
@@ -584,7 +584,7 @@
     font-size: 1rem;
   }
 
-  /* Topic header icon row: keep side-by-side on mobile */
+  /* トピックヘッダーアイコン行: モバイルで横並びを維持 */
   .p-personal-section__topic-header {
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -599,7 +599,7 @@
     min-width: 0;
   }
 
-  /* Boxed info: stack pairs into single column */
+  /* ボックス情報: ペアを単一列に積み重ね */
   .p-personal-boxed-info__row {
     flex-direction: column;
     gap: 0.75rem;
@@ -613,7 +613,7 @@
     font-size: 1rem;
   }
 
-  /* Case study: stack and remove large top margin */
+  /* ケーススタディ: 積み重ね＆大きな上マージン削除 */
   .p-personal-case-study__container {
     margin-top: 0;
     gap: 2rem;
@@ -624,10 +624,10 @@
     align-items: flex-start;
     gap: 1.5rem;
   }
-  /* END: Section Title */
+  /* セクションタイトル終了 */
 
   /* ----------------------------------------
-     START: CTA
+     開始: CTA
      ---------------------------------------- */
   .p-personal-cta {
     height: auto;
@@ -649,7 +649,7 @@
     line-height: 2.25rem;
   }
 
-  /* CTA ribbon: keep visible, rescale */
+  /* CTAリボン: 表示を維持、リスケール */
   .p-personal-cta__ribbon {
     left: -20%;
     top: -8%;
@@ -659,10 +659,10 @@
     width: 100vw;
     height: auto;
   }
-  /* END: CTA */
+  /* CTA終了 */
 
   /* ----------------------------------------
-     START: Program Section
+     開始: プログラムセクション
      ---------------------------------------- */
   .p-personal-program__white-box {
     margin-top: -6rem;
@@ -680,17 +680,17 @@
     gap: 1.5rem;
   }
 
-  /* Program illustration: allow horizontal scroll, show scrollbar hint */
+  /* プログラムイラスト: 横スクロール許可、スクロールバーヒント表示 */
   .p-personal-program__illustration {
     width: 60rem;
     margin-top: 1rem;
   }
-  /* END: Program Section */
+  /* プログラムセクション終了 */
 
   /* ----------------------------------------
-     START: Trainer / Staff
+     開始: トレーナー / スタッフ
      ---------------------------------------- */
-  /* Floating speak characters: reposition for mobile */
+  /* フローティングスピークキャラクター: モバイル用に再配置 */
   .p-personal-speak__container--01,
   .p-personal-speak__container--02 {
     display: block;
@@ -722,5 +722,5 @@
     top: -3.5rem;
     right: -5rem;
   }
-  /* END: Trainer / Staff */
+  /* トレーナー / スタッフ終了 */
 }

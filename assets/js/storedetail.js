@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────
-//  Nav smooth scroll
+//  ナビスムーススクロール
 // ─────────────────────────────────────────────
 document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
   link.addEventListener('click', e => {
@@ -13,20 +13,20 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
 });
 
 // ─────────────────────────────────────────────
-//  Photo Gallery Slider
-//  (script is defer-loaded so DOM is already ready — no DOMContentLoaded needed)
+//  フォトギャラリースライダー
+//  （スクリプトはdefer読み込みのためDOMは準備済み — DOMContentLoaded不要）
 // ─────────────────────────────────────────────
 (function () {
   const sliderEl = document.getElementById("js-slider");
 
-  // Mobile: create a dedicated hero image, swap src on thumbnail click
+  // モバイル: 専用ヒーロー画像を作成、サムネイルクリックでsrcを切り替え
   if (window.innerWidth < 768) {
     var grid = document.querySelector(".slider-thumbs .grid");
     if (!grid) return;
     var thumbs = grid.querySelectorAll(".js-thumb-button");
     if (!thumbs.length) return;
 
-    // Create hero element from first thumbnail's image
+    // 最初のサムネイル画像からヒーロー要素を作成
     var hero = document.createElement("div");
     hero.className = "mobile-hero";
     var heroImg = document.createElement("img");
@@ -37,7 +37,7 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
     hero.appendChild(heroImg);
     grid.prepend(hero);
 
-    // Mark first thumb as active
+    // 最初のサムネイルをアクティブにする
     thumbs[0].classList.add("swiper-slide-thumb-active");
 
     thumbs.forEach(function (btn) {
@@ -45,7 +45,7 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
         var img = this.querySelector("img");
         heroImg.src = img.src;
         heroImg.srcset = img.srcset || "";
-        // Update active state
+        // アクティブ状態を更新
         thumbs.forEach(function (b) { b.classList.remove("swiper-slide-thumb-active"); });
         this.classList.add("swiper-slide-thumb-active");
       });
@@ -53,7 +53,7 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
     return;
   }
 
-  // Desktop: Swiper slider
+  // デスクトップ: Swiperスライダー
   if (!sliderEl || typeof Swiper === "undefined") return;
 
   const swiper = new Swiper(sliderEl, {
@@ -90,7 +90,7 @@ document.querySelectorAll('.p-storedetail_links-nav a').forEach(link => {
   setActiveThumb(0, false);
 }());
 
-// Service section — mobile slider
+// サービスセクション — モバイルスライダー
 (function () {
   var container = document.querySelector('.service-container');
   var btnPrev = document.querySelector('.p-service_nav--prev');
