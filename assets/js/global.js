@@ -557,16 +557,7 @@ function initSliders() {
     moveTrack(0, false);
     startAutoPlay();
 
-    console.log(
-      "[Slider] " +
-        container.closest("section").className.split(" ")[0] +
-        " – " +
-        totalOriginal +
-        " original, " +
-        slides.length +
-        " total (with clones)" +
-        (spacer ? " [spacer detected]" : " [no spacer]"),
-    );
+
   });
 }
 
