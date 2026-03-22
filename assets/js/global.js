@@ -183,227 +183,390 @@ window.addEventListener("resize", function () {
 // (Guarded hover listeners consolidated into showMenu/hideMenu above)
 
 
+/* ============================================
+   INFINITE LOOP SLIDER – works with [data-slider]
+   Clones slides for seamless looping.
+   Full mobile touch/swipe support.
+   Generic spacer detection for all sliders.
+   ============================================ */
+function initSliders() {
+  document.querySelectorAll("[data-slider]").forEach(function (container) {
+    var track = container.querySelector("[data-slider-track]");
+    var prevBtn = container.querySelector("[data-slider-prev]");
+    var nextBtn = container.querySelector("[data-slider-next]");
+    var dotsWrap = container.querySelector("[data-slider-dots]");
 
+    if (!track) return;
 
-// // // TOP TOPIC JS - Multiple Sliders Support
-// function initTopicSlider(sliderElement) {
-//   if (!sliderElement) return;
+    /* ──────────────────────────────────────────
+       1. Create overflow-hidden wrapper
+    ────────────────────────────────────────── */
+    var wrapper = document.createElement("div");
+    wrapper.style.overflow = "hidden";
+    wrapper.style.width = "100%";
+    wrapper.style.position = "relative";
+    wrapper.style.touchAction = "pan-y";
+    track.parentNode.insertBefore(wrapper, track);
+    wrapper.appendChild(track);
 
-//   const track = sliderElement.querySelector("[data-slider-track]");
-//   const prev = sliderElement.querySelector("[data-slider-prev]");
-//   const next = sliderElement.querySelector("[data-slider-next]");
-//   const dotsContainer = sliderElement.querySelector("[data-slider-dots]");
-//   const sliderContainer = document.querySelector(".slider-wrapper"); // Fixed: Changed to querySelector
-//   let hasSlid = false; // Flag to track if sliding has occurred
+    /* ──────────────────────────────────────────
+       2. Kill native scroll
+    ────────────────────────────────────────── */
+    track.style.overflow = "visible";
+    track.style.overflowX = "visible";
+    track.style.scrollSnapType = "none";
+    track.style.scrollBehavior = "unset";
+    track.style.willChange = "transform";
+    track.style.touchAction = "pan-y";
 
-//   if (track && dotsContainer) {
-//     const slides = track.children;
-//     const totalSlides = slides.length;
+    /* ──────────────────────────────────────────
+       3. Detect spacer generically:
+          First <li> is a spacer if its
+          .slide-content has no <img> inside.
+    ────────────────────────────────────────── */
+    var allItems = Array.from(track.children);
+    var spacer = null;
 
-//     // Clear existing dots (in case of re-initialization)
-//     dotsContainer.innerHTML = "";
-
-//     const createDots = () => {
-//       for (let i = 0; i < totalSlides; i++) {
-//         const dot = document.createElement("button");
-//         dot.classList.add("topic-slider__dot");
-//         dot.setAttribute("data-slider-dot", i);
-
-//         dot.addEventListener("click", () => {
-//           const slideWidth = slides[0].offsetWidth;
-//           track.scrollTo({
-//             left: slideWidth * i,
-//             behavior: "smooth",
-//           });
-//           removePaddingOnFirstSlide(); // Remove padding when dot is clicked
-//         });
-
-//         dotsContainer.appendChild(dot);
-//       }
-//     };
-
-//     const updateActiveDot = () => {
-//       const trackScrollWidth = track.scrollWidth;
-//       const trackOuterWidth = track.clientWidth;
-//       const maxScroll = trackScrollWidth - trackOuterWidth;
-
-//       const slideWidth = slides[0].offsetWidth;
-//       const currentIndex = Math.round(track.scrollLeft / slideWidth);
-
-//       const dots = dotsContainer.querySelectorAll("[data-slider-dot]");
-//       dots.forEach((dot, index) => {
-//         if (index === currentIndex) {
-//           dot.classList.add("active");
-//         } else {
-//           dot.classList.remove("active");
-//         }
-//       });
-
-//       if (prev) prev.removeAttribute("disabled");
-//       if (next) next.removeAttribute("disabled");
-
-//       if (track.scrollLeft <= 0 && prev) {
-//         prev.setAttribute("disabled", "");
-//       }
-
-//       if (track.scrollLeft >= maxScroll - 1 && next) {
-//         next.setAttribute("disabled", "");
-//       }
-//     };
-
-//     // Function to remove padding on first slide
-//     const removePaddingOnFirstSlide = () => {
-//       if (!hasSlid && sliderContainer) {
-//         sliderContainer.style.paddingLeft = "0"; // Remove padding by setting to 0
-//         // Alternative: sliderContainer.classList.remove('pl-240'); if using class
-//         hasSlid = true;
-//       }
-//     };
-
-//     createDots();
-
-//     setTimeout(() => {
-//       updateActiveDot();
-//     }, 100);
-
-//     if (prev) {
-//       prev.addEventListener("click", () => {
-//         removePaddingOnFirstSlide(); // Remove padding on first slide
-//         if (next) next.removeAttribute("disabled");
-//         track.scrollTo({
-//           left: track.scrollLeft - track.firstElementChild.offsetWidth,
-//           behavior: "smooth",
-//         });
-//       });
-//     }
-
-//     if (next) {
-//       next.addEventListener("click", () => {
-//         removePaddingOnFirstSlide(); // Remove padding on first slide
-//         if (prev) prev.removeAttribute("disabled");
-//         track.scrollTo({
-//           left: track.scrollLeft + track.firstElementChild.offsetWidth,
-//           behavior: "smooth",
-//         });
-//       });
-//     }
-
-//     track.addEventListener("scroll", () => {
-//       updateActiveDot();
-//     });
-
-//     window.addEventListener("resize", () => {
-//       updateActiveDot();
-//     });
-//   }
-// }
-
-// // Initialize all sliders
-// document.addEventListener("DOMContentLoaded", () => {
-//   const sliders = document.querySelectorAll("[data-slider]");
-//   sliders.forEach((slider) => {
-//     initTopicSlider(slider);
-//   });
-// });
-
-function initTopicSlider(sliderElement) {
-  if (!sliderElement) return;
-
-  const track = sliderElement.querySelector("[data-slider-track]");
-  const prev = sliderElement.querySelector("[data-slider-prev]");
-  const next = sliderElement.querySelector("[data-slider-next]");
-  const dotsContainer = sliderElement.querySelector("[data-slider-dots]");
-  const sliderContainer = document.querySelector(".slider-wrapper");
-  let hasSlid = false;
-
-  if (track && dotsContainer) {
-    const getVisibleSlides = () =>
-      Array.from(track.children).filter(
-        (el) => el.offsetWidth > 0 && el.offsetHeight > 0
-      );
-
-    // ── reads the inner .slide width so CSS breakpoint changes are respected ──
-    const getSlideWidth = () => {
-      const firstVisible = getVisibleSlides()[0];
-      if (!firstVisible) return 0;
-      const innerSlide = firstVisible.querySelector(".slide");
-      return (innerSlide ?? firstVisible).offsetWidth;
-    };
-
-    const createDots = () => {
-      dotsContainer.innerHTML = "";
-      const visibleSlides = getVisibleSlides();
-      visibleSlides.forEach((_, i) => {
-        const dot = document.createElement("button");
-        dot.classList.add("topic-slider__dot");
-        dot.setAttribute("data-slider-dot", i);
-        dot.addEventListener("click", () => {
-          track.scrollTo({ left: getSlideWidth() * i, behavior: "smooth" });
-          removePaddingOnFirstSlide();
-        });
-        dotsContainer.appendChild(dot);
-      });
-    };
-
-    const updateActiveDot = () => {
-      const visibleSlides = getVisibleSlides();
-      if (!visibleSlides.length) return;
-
-      const maxScroll = track.scrollWidth - track.clientWidth;
-      const slideWidth = getSlideWidth();
-      const currentIndex = slideWidth > 0 ? Math.round(track.scrollLeft / slideWidth) : 0;
-
-      dotsContainer.querySelectorAll("[data-slider-dot]").forEach((dot, i) => {
-        dot.classList.toggle("active", i === currentIndex);
-      });
-
-      if (prev) prev.removeAttribute("disabled");
-      if (next) next.removeAttribute("disabled");
-      if (track.scrollLeft <= 0 && prev) prev.setAttribute("disabled", "");
-      if (track.scrollLeft >= maxScroll - 1 && next) next.setAttribute("disabled", "");
-    };
-
-    const removePaddingOnFirstSlide = () => {
-      if (!hasSlid && sliderContainer) {
-        sliderContainer.style.paddingLeft = "0";
-        hasSlid = true;
+    if (allItems.length > 1) {
+      var firstContent = allItems[0].querySelector(".slide-content");
+      if (firstContent) {
+        var hasImage = firstContent.querySelector("img");
+        var hasText = firstContent.textContent.trim().length > 0;
+        if (!hasImage && !hasText) {
+          spacer = allItems[0];
+        }
       }
-    };
-
-    if (prev) {
-      prev.addEventListener("click", () => {
-        removePaddingOnFirstSlide();
-        next?.removeAttribute("disabled");
-        track.scrollTo({ left: track.scrollLeft - getSlideWidth(), behavior: "smooth" });
-      });
     }
 
-    if (next) {
-      next.addEventListener("click", () => {
-        removePaddingOnFirstSlide();
-        prev?.removeAttribute("disabled");
-        track.scrollTo({ left: track.scrollLeft + getSlideWidth(), behavior: "smooth" });
-      });
-    }
+    var originalSlides = spacer ? allItems.slice(1) : allItems;
+    var totalOriginal = originalSlides.length;
 
-    track.addEventListener("scroll", updateActiveDot);
+    if (totalOriginal === 0) return;
 
-    window.addEventListener("resize", () => {
-      createDots();
-      updateActiveDot();
+    /* ──────────────────────────────────────────
+       4. Clone all slides and append
+    ────────────────────────────────────────── */
+    originalSlides.forEach(function (slide) {
+      var clone = slide.cloneNode(true);
+      clone.classList.add("slider-clone");
+      track.appendChild(clone);
     });
 
-    createDots();
-    setTimeout(updateActiveDot, 100);
-  }
+    var allSlideItems = Array.from(track.children);
+    var slides = spacer ? allSlideItems.slice(1) : allSlideItems;
+
+    /* ──────────────────────────────────────────
+       5. State
+    ────────────────────────────────────────── */
+    var currentIndex = 0;
+    var trackIndex = 0;
+    var AUTO_INTERVAL = 20000;
+    var autoTimer = null;
+    var isTransitioning = false;
+
+    /* ──────────────────────────────────────────
+       6. Measure cumulative offset
+    ────────────────────────────────────────── */
+    function getTargetX(idx) {
+      if (idx <= 0) return 0;
+      var x = 0;
+      for (var i = 0; i < idx && i < slides.length; i++) {
+        x += slides[i].getBoundingClientRect().width;
+      }
+      return x;
+    }
+
+    /* ──────────────────────────────────────────
+       7. Move track
+    ────────────────────────────────────────── */
+    function moveTrack(x, animate) {
+      if (animate) {
+        track.style.transition = "transform 0.5s ease";
+      } else {
+        track.style.transition = "none";
+      }
+      track.style.transform = "translateX(" + -x + "px)";
+    }
+
+    function getCurrentX() {
+      var transform = window.getComputedStyle(track).transform;
+      if (!transform || transform === "none") return 0;
+      var matrix = transform.match(/matrix.*\((.+)\)/);
+      if (matrix) {
+        var values = matrix[1].split(", ");
+        return parseFloat(values[4]) || 0;
+      }
+      return 0;
+    }
+
+    /* ──────────────────────────────────────────
+       8. Dots (only for original slides)
+    ────────────────────────────────────────── */
+    function buildDots() {
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = "";
+      for (var i = 0; i < totalOriginal; i++) {
+        (function (idx) {
+          var dot = document.createElement("button");
+          dot.className =
+            "topic-slider__dot" + (idx === 0 ? " active" : "");
+          dot.setAttribute("aria-label", "Slide " + (idx + 1));
+          dot.addEventListener("click", function () {
+            goTo(idx);
+          });
+          dotsWrap.appendChild(dot);
+        })(i);
+      }
+    }
+
+    function updateDots() {
+      if (!dotsWrap) return;
+      var dots = dotsWrap.querySelectorAll(".topic-slider__dot");
+      for (var i = 0; i < dots.length; i++) {
+        dots[i].classList.toggle("active", i === currentIndex);
+      }
+    }
+
+    /* ──────────────────────────────────────────
+       9. Seamless reset on transition end
+    ────────────────────────────────────────── */
+    track.addEventListener("transitionend", function (e) {
+      if (e.target !== track) return;
+      isTransitioning = false;
+
+      if (trackIndex >= totalOriginal) {
+        trackIndex = trackIndex - totalOriginal;
+        currentIndex = trackIndex;
+        moveTrack(getTargetX(trackIndex), false);
+        updateDots();
+      }
+
+      if (trackIndex < 0) {
+        trackIndex = totalOriginal + trackIndex;
+        currentIndex = trackIndex;
+        moveTrack(getTargetX(trackIndex), false);
+        updateDots();
+      }
+    });
+
+    /* ──────────────────────────────────────────
+       10. Navigation
+    ────────────────────────────────────────── */
+    function goTo(index) {
+      if (isTransitioning) return;
+      trackIndex = index;
+      currentIndex =
+        ((index % totalOriginal) + totalOriginal) % totalOriginal;
+      isTransitioning = true;
+
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          moveTrack(getTargetX(trackIndex), true);
+        });
+      });
+
+      updateDots();
+      resetAutoPlay();
+    }
+
+    function goNext() {
+      if (isTransitioning) return;
+      trackIndex++;
+      currentIndex = trackIndex % totalOriginal;
+      isTransitioning = true;
+
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          moveTrack(getTargetX(trackIndex), true);
+        });
+      });
+
+      updateDots();
+      resetAutoPlay();
+    }
+
+    function goPrev() {
+      if (isTransitioning) return;
+
+      if (trackIndex <= 0) {
+        trackIndex = totalOriginal;
+        moveTrack(getTargetX(trackIndex), false);
+        track.offsetHeight; // force reflow
+
+        trackIndex = totalOriginal - 1;
+        currentIndex = trackIndex % totalOriginal;
+        isTransitioning = true;
+
+        requestAnimationFrame(function () {
+          moveTrack(getTargetX(trackIndex), true);
+        });
+      } else {
+        trackIndex--;
+        currentIndex = trackIndex % totalOriginal;
+        isTransitioning = true;
+
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            moveTrack(getTargetX(trackIndex), true);
+          });
+        });
+      }
+
+      updateDots();
+      resetAutoPlay();
+    }
+
+    /* ──────────────────────────────────────────
+       11. Auto-play
+    ────────────────────────────────────────── */
+    function startAutoPlay() {
+      stopAutoPlay();
+      autoTimer = setInterval(function () {
+        goNext();
+      }, AUTO_INTERVAL);
+    }
+
+    function stopAutoPlay() {
+      if (autoTimer) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+      }
+    }
+
+    function resetAutoPlay() {
+      startAutoPlay();
+    }
+
+    /* ──────────────────────────────────────────
+       12. Button clicks
+    ────────────────────────────────────────── */
+    if (prevBtn) {
+      prevBtn.addEventListener("click", function () {
+        goPrev();
+      });
+      prevBtn.style.cursor = "pointer";
+      prevBtn.removeAttribute("disabled");
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () {
+        goNext();
+      });
+      nextBtn.style.cursor = "pointer";
+      nextBtn.removeAttribute("disabled");
+    }
+
+    /* ──────────────────────────────────────────
+       13. Touch / Swipe – full mobile support
+    ────────────────────────────────────────── */
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchMoveX = 0;
+    var isDragging = false;
+    var isHorizontal = null;
+    var dragStartTranslateX = 0;
+    var SWIPE_THRESHOLD = 40;
+    var DIRECTION_LOCK_THRESHOLD = 8;
+
+    wrapper.addEventListener("touchstart", function (e) {
+      if (isTransitioning) return;
+      var touch = e.changedTouches[0];
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+      touchMoveX = touch.clientX;
+      isDragging = true;
+      isHorizontal = null;
+      dragStartTranslateX = getCurrentX();
+
+      track.style.transition = "none";
+      stopAutoPlay();
+    });
+
+    wrapper.addEventListener("touchmove", function (e) {
+      if (!isDragging) return;
+      var touch = e.changedTouches[0];
+      var dx = touch.clientX - touchStartX;
+      var dy = touch.clientY - touchStartY;
+
+      if (isHorizontal === null) {
+        if (
+          Math.abs(dx) > DIRECTION_LOCK_THRESHOLD ||
+          Math.abs(dy) > DIRECTION_LOCK_THRESHOLD
+        ) {
+          isHorizontal = Math.abs(dx) > Math.abs(dy);
+        }
+      }
+
+      if (isHorizontal === false) {
+        isDragging = false;
+        return;
+      }
+
+      if (isHorizontal === true) {
+        e.preventDefault();
+        touchMoveX = touch.clientX;
+        var offset = -(dragStartTranslateX + dx);
+        track.style.transform = "translateX(" + offset + "px)";
+      }
+    });
+
+    wrapper.addEventListener("touchend", function (e) {
+      if (!isDragging) {
+        resetAutoPlay();
+        return;
+      }
+      isDragging = false;
+
+      var dx = touchMoveX - touchStartX;
+
+      if (isHorizontal && Math.abs(dx) > SWIPE_THRESHOLD) {
+        if (dx < 0) {
+          goNext();
+        } else {
+          goPrev();
+        }
+      } else {
+        var x = getTargetX(trackIndex);
+        moveTrack(x, true);
+      }
+
+      resetAutoPlay();
+    });
+
+    wrapper.addEventListener("touchcancel", function () {
+      if (isDragging) {
+        isDragging = false;
+        moveTrack(getTargetX(trackIndex), true);
+        resetAutoPlay();
+      }
+    });
+
+    /* ──────────────────────────────────────────
+       14. Pause on hover (desktop)
+    ────────────────────────────────────────── */
+    wrapper.addEventListener("mouseenter", stopAutoPlay);
+    wrapper.addEventListener("mouseleave", startAutoPlay);
+
+    /* ──────────────────────────────────────────
+       15. Init
+    ────────────────────────────────────────── */
+    buildDots();
+    moveTrack(0, false);
+    startAutoPlay();
+
+    console.log(
+      "[Slider] " + container.closest("section").className.split(" ")[0] +
+        " – " + totalOriginal + " original, " +
+        slides.length + " total (with clones)" +
+        (spacer ? " [spacer detected]" : " [no spacer]")
+    );
+  });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("[data-slider]").forEach(initTopicSlider);
-});
-
-
-
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initSliders);
+} else {
+  initSliders();
+}
 
 
 
@@ -628,45 +791,14 @@ function playVid(ID) {
 
 
 
-// ─────────────────────────────────────────────
-//  Voice slider (mobile only)
-// ─────────────────────────────────────────────
-(function () {
-  const grid = document.querySelector(".p-medical_voice_grid");
-  const btnPrev = document.querySelector(".p-medical_voice_nav--prev");
-  const btnNext = document.querySelector(".p-medical_voice_nav--next");
-  if (!grid || !btnPrev || !btnNext) return;
-
-  const cards = grid.querySelectorAll(".p-medical_voice_card");
-  const total = cards.length;
-  let current = 0;
-
-  function isMobile() {
-    return window.innerWidth <= 1200;
-  }
-
-  function goTo(index) {
-    if (!isMobile()) return;
-    current = (index + total) % total;
-    grid.style.transform = "translateX(-" + current * 100 + "%)";
-  }
-
-  btnPrev.addEventListener("click", function () {
-    goTo(current - 1);
-  });
-
-  btnNext.addEventListener("click", function () {
-    goTo(current + 1);
-  });
-
-  // Reset transform when resizing to desktop
-  window.addEventListener("resize", function () {
-    if (!isMobile()) {
-      grid.style.transform = "";
-      current = 0;
-    }
-  });
-})();
+// Voice slider (mobile only) — using shared initMobileCarousel from common.js
+initMobileCarousel({
+  trackSelector: '.p-medical_voice_grid',
+  prevSelector: '.p-medical_voice_nav--prev',
+  nextSelector: '.p-medical_voice_nav--next',
+  cardSelector: '.p-medical_voice_card',
+  breakpoint: 1200
+});
 
 
 

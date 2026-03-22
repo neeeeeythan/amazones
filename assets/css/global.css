@@ -5769,6 +5769,7 @@ a {
   margin-right: calc(var(--slider-column-gap) * -1);
   z-index: 2;
   scroll-padding-right: 100px;
+  margin-left: -100px;
 }
 
 .topic-slider__track > * {
@@ -5855,7 +5856,7 @@ a {
   position: absolute;
   top: -170px;
   left: 555px;
-  z-index: 1;
+  z-index: 0;
  
 }
 .topic-speech-bubble {
@@ -5953,7 +5954,7 @@ a {
   .top-topic-sticker {
     left: 180px;
     top: -120px;
-    z-index: 1;
+    z-index: 0;
   }
   .img-topic-sticker {
     width: 94.2px;
