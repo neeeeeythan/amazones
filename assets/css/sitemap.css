@@ -70,6 +70,10 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
+  width:fit-content;
+}
+.p-sitemap-nested-link a{
+  width:fit-content;
 }
 .p-p-sitemap-banner-item {
   background-color: var(--base-white);
