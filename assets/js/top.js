@@ -1,37 +1,46 @@
-//RIBBON ON SCROLL
-
-//HERO SLIDER JS
 const slideContent = [
   {
-    h1: "女性による<span class =  'block'> 女性のための</span><span class = 'block'> 女性専用24時間ジム</span>",
+    h1: "女性による<span class='block'> 女性のための</span><span class='block'> 女性専用24時間ジム</span>",
     p: "Amazonesの特徴をみる",
-    href: "about/index.html"
+    href: "about/index.html",
+    img: ""
   },
   {
-    h1: "科学的アプローチで実現する <span class =  'block'>最適なトレーニング環境</span><span class =  'block'>AI姿勢診断・改善</span>",
-    p: "施設・設備をみる",
-    href: "sportip/index.html"
+    h1: "科学的アプローチで実現する <span class='block'>最適なトレーニング環境</span>",
+    p: "AI姿勢診断・改善",
+    href: "sportip/index.html",
+    img: "assets/img/common/img_sportip_logo.png"
   },
   {
-    h1: "女性トレーナーが <span class= 'block'>貴方を全力でサポート</span>Amazonesの ",
+    h1: "女性トレーナーが <span class='block'>貴方を全力でサポート</span>Amazonesの ",
     p: "パーソナルトレーニング",
-    href: "personal/index.html"
+    href: "personal/index.html",
+    img: ""
   },
   {
-    h1: "ダイエット効果を<span class = 'block' >最大化する </span><span class = 'block'/>オンライン診療サービス</span>",
+    h1: "ダイエット効<span>果を最大化する</span><span class='block'>オンライン診療サービス</span>",
     p: "ドクターアマゾネス",
-    href: "medical/index.html"
+    href: "medical/index.html",
+    img: "assets/img/common/img_drAmazones_logo.png"
   },
   {
-    h1: "諦めるのはまだ早い<span class = 'block'>いつ始めても遅くない！ム</span><span class = 'block'>無料体験・見学を予約する</span>",
+    h1: "諦めるのはまだ早い<span class='block'>いつ始めても遅くない！ム</span><span class='block'>無料体験・見学を予約する</span>",
     p: "店舗一覧をみる",
-    href: "reservation/index.html"
+    href: "reservation/index.html",
+    img: ""
   }
 ];
 
 let slideIndex = 0;
 let timer = 20;
 const _timer = 20;
+
+const slides = document.querySelectorAll(".mySlides");
+const dots = document.querySelectorAll(".dots");
+const h1 = document.querySelector(".hero-text h1");
+const p = document.querySelector(".hero-text p");
+const a = document.querySelector(".hero-text a");
+const img = document.querySelector(".hero-slider-img");
 
 showSlides();
 
@@ -54,12 +63,6 @@ function currentSlide(n) {
 }
 
 function showSlides() {
-  let slides = document.querySelectorAll(".mySlides");
-  let dots = document.querySelectorAll(".dots");
-  const h1 = document.querySelector(".hero-text h1");
-  const p = document.querySelector(".hero-text p");
-  const a = document.querySelector(".hero-text a");
-
   if (slideIndex > slides.length - 1) slideIndex = 0;
   if (slideIndex < 0) slideIndex = slides.length - 1;
 
@@ -69,13 +72,30 @@ function showSlides() {
   dots.forEach((dot) => dot.classList.remove("active"));
   dots[slideIndex].classList.add("active");
 
-  if (slideContent[slideIndex]) {
-    h1.innerHTML = slideContent[slideIndex].h1;
-    p.textContent = slideContent[slideIndex].p;
-    a.href = slideContent[slideIndex].href;
+  const current = slideContent[slideIndex];
+
+  if (current) {
+    const isMobile = window.innerWidth <= 767;
+
+    let h1Content = current.h1;
+
+    if (isMobile) {
+      h1Content = h1Content.replace(/<span(.*?)>/g, "<span class='block'>");
+    }
+
+    h1.innerHTML = h1Content;
+    p.textContent = current.p;
+    a.href = current.href;
+
+    if (current.img && !isMobile) {
+      img.src = current.img;
+      img.style.display = "block";
+    } else {
+      img.removeAttribute("src");
+      img.style.display = "none";
+    }
   }
 }
-
 setInterval(() => {
   timer--;
 
@@ -84,15 +104,3 @@ setInterval(() => {
     timer = _timer;
   }
 }, 1000);
-
-
-
-
-
-
-
-
-
-
-
-// //TOP TOPIC JS
