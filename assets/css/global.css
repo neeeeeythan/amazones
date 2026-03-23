@@ -6775,6 +6775,12 @@ a {
     display: none;
   }
 
+  /* モバイルではスクロールダウンテキストを非表示 */
+  .header-floating-menu.active #scroll-down-text {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
   .mobile-hamburger {
     display: flex;
     flex-direction: column;
