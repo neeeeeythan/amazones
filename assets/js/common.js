@@ -77,13 +77,13 @@ function initModal(modalId) {
 
   function open() {
     overlay.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
   }
 
   function close() {
     overlay.classList.remove('is-open');
     overlay.addEventListener('transitionend', function restore() {
-      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
       overlay.removeEventListener('transitionend', restore);
     });
   }
