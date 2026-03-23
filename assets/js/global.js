@@ -1,34 +1,56 @@
 // スクロールアップ
-const scrollUpEl = document.querySelector(".scroll-up");
+var scrollUpEl = document.querySelector(".scroll-up");
 if (scrollUpEl) {
-  scrollUpEl.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  scrollUpEl.addEventListener("click", function () {
+    smoothScrollTo(0, 600);
   });
 }
 
-// スクロールダウン — 次のセクションへクリック移動、スクロール中はフェード
-const scrollDownEl = document.getElementById("scroll-down-text");
-if (scrollDownEl) {
-  scrollDownEl.addEventListener("click", function () {
-    const sections = Array.from(document.querySelectorAll("section")).filter(
-      (s) => s.parentElement.closest("section") === null,
-    );
-    const next = sections.find((s) => s.getBoundingClientRect().top > 10);
-    if (next) next.scrollIntoView({ behavior: "smooth" });
-  });
+// カスタムスムーズスクロール（ブラウザ設定に依存しない全ブラウザ対応）
+function smoothScrollTo(targetY, duration) {
+  var startY = window.scrollY;
+  var diff = targetY - startY;
+  var startTime = null;
+  function ease(t) { return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; }
+  function step(now) {
+    if (!startTime) startTime = now;
+    var elapsed = now - startTime;
+    var progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, startY + diff * ease(progress));
+    if (elapsed < duration) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
 
-  let scrollTimer = null;
-  window.addEventListener(
-    "scroll",
-    function () {
-      scrollDownEl.classList.add("scrolling");
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(function () {
-        scrollDownEl.classList.remove("scrolling");
-      }, 300);
-    },
-    { passive: true },
+function scrollToNextSection() {
+  var sections = Array.from(document.querySelectorAll("section")).filter(
+    function(s) { return s.parentElement.closest("section") === null; }
   );
+  var next = sections.find(function(s) { return s.getBoundingClientRect().top > 10; });
+  if (next) smoothScrollTo(next.getBoundingClientRect().top + window.scrollY, 600);
+}
+
+// スクロールダウン（デスクトップ）
+var scrollDownEl = document.getElementById("scroll-down-text");
+if (scrollDownEl) {
+  scrollDownEl.addEventListener("click", scrollToNextSection);
+  var scrollTimer = null;
+  window.addEventListener("scroll", function () {
+    scrollDownEl.classList.add("scrolling");
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function () { scrollDownEl.classList.remove("scrolling"); }, 300);
+  }, { passive: true });
+}
+
+// スクロールダウン（モバイル）
+var scrollDownMobileEl = document.getElementById("scroll-down-mobile");
+if (scrollDownMobileEl) {
+  scrollDownMobileEl.addEventListener("click", scrollToNextSection);
+  window.addEventListener("scroll", function () {
+    scrollDownMobileEl.classList.add("scrolling");
+    clearTimeout(scrollDownMobileEl._scrollTimer);
+    scrollDownMobileEl._scrollTimer = setTimeout(function () { scrollDownMobileEl.classList.remove("scrolling"); }, 300);
+  }, { passive: true });
 }
 
 const floatingBtn = document.getElementById("floating-menu-btn");
@@ -152,6 +174,7 @@ floatingBtn.addEventListener("click", function () {
 
   headerFloatingMenu.classList.toggle("active", isActive);
   hamburger.classList.toggle("active", isActive);
+  if (scrollDownMobileEl) scrollDownMobileEl.classList.toggle("hidden-by-menu", isActive);
 });
 
 // モバイルアコーディオン切り替え
@@ -171,6 +194,7 @@ if (spNavClose) {
     overlay.classList.remove("active");
     hamburger.classList.remove("active");
     headerFloatingMenu.classList.remove("active");
+    if (scrollDownMobileEl) scrollDownMobileEl.classList.remove("hidden-by-menu");
   });
 }
 

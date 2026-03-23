@@ -6472,11 +6472,62 @@ a {
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.header-floating-menu.active #scroll-down-text {
+  opacity: 1;
+  pointer-events: auto !important;
+  z-index: 10;
 }
 
 #scroll-down-text.scrolling {
-  opacity: 0;
+  opacity: 0 !important;
   pointer-events: none;
+}
+
+/* モバイル用スクロールダウン（複製） — デスクトップでは非表示 */
+#scroll-down-mobile {
+  display: none;
+}
+
+#scroll-down-mobile.hidden-by-menu {
+  display: none !important;
+}
+
+@media screen and (max-width: 1090px) {
+  #scroll-down-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: transparent;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 998;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  #scroll-down-mobile p {
+    color: white;
+    /* Dark shadow outline — white text readable on any background */
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  #scroll-down-mobile img {
+    filter: brightness(0) invert(1) drop-shadow(0 0 3px rgba(0, 0, 0, 0.4));
+  }
+
+  #scroll-down-mobile.scrolling {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .text-vertical {
