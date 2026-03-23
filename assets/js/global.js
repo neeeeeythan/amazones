@@ -26,7 +26,9 @@ function scrollToNextSection() {
   var sections = Array.from(document.querySelectorAll("section")).filter(
     function(s) { return s.parentElement.closest("section") === null; }
   );
-  var next = sections.find(function(s) { return s.getBoundingClientRect().top > 10; });
+  // scrollY < 50 のとき最初のセクションをスキップ（ほぼスクロールしない現象を防ぐ）
+  var startIdx = window.scrollY < 50 ? 1 : 0;
+  var next = sections.slice(startIdx).find(function(s) { return s.getBoundingClientRect().top > 10; });
   if (next) smoothScrollTo(next.getBoundingClientRect().top + window.scrollY, 600);
 }
 
