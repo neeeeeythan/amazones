@@ -218,22 +218,29 @@
   position: absolute;
   top: -70px;
   left: -450px;
+  z-index:1;
 }
 .news-ribbon-desk2 {
   position: absolute;
   bottom: -90px;
   right: -30px;
+  z-index:1;
 }
 
 .news-c-footer-banner__sticker1 {
   position: absolute;
   top: -90px;
   left: 365px;
+
 }
 .news-banner-sticker2 {
   position: absolute;
   top: -100px;
   right: 300px;
+    z-index:2;
+  
+
+  
 }
 .news-banner-sticker3 {
   position: absolute;
@@ -284,7 +291,10 @@
   bottom: 0;
   right: -70px;
 }
-
+.news-banner-sticker1{
+  z-index:10;
+  position:relative;
+}
 .news-banner-sticker1-sp {
   position: absolute;
   top: -75px;
