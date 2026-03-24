@@ -361,6 +361,7 @@
   width: 100%;
   max-width: 1920px;
   margin: 0px auto;
+   position:relative;
 }
 .dr-amazones-section {
   z-index: 2;
@@ -399,6 +400,7 @@
   }
   .dr-amazones-container {
     max-height: 1000px;
+   
   }
   .drAmazones-pic {
     width: 100vw;
@@ -426,9 +428,7 @@
   .dr-amazones-section {
     padding: 30px;
   }
-  .dr-amazones-section .fs-18 {
-    font-size: 16px;
-  }
+
   .dr-amazones-label {
     width: 295px;
     height: auto;
