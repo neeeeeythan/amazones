@@ -8281,11 +8281,15 @@ a {
 .c-endNote_card_header {
   display: flex;
   align-items: center;
+  width: 100%;
+  padding-right: 1rem;
 }
 
 .c-endNote_card_header h3 {
   font-size: 1.5rem;
   font-weight: 600;
+  padding-left: 1rem;
+  flex: 1;
 }
 
 .c-endNote_card_icon {
