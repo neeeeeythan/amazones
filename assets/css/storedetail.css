@@ -88,6 +88,7 @@
 .p-storedetail__faq-stack           { padding-top: 50px; padding-bottom: 50px; }
 .p-storedetail__faq-section-header  { gap: 26px; margin-top: 50px; margin-bottom: 50px; }
 .p-storedetail__scroll-top-icon     { transform: scaleX(-1) rotate(-90deg); }
+.p-storedetail__price-header        { display: flex; align-items: center; gap: 70px; padding-bottom: 100px; }
 
 @media screen and (max-width: 767px) {
   .p-storedetail__whychooseus-title-desc--sp {
@@ -1589,27 +1590,27 @@
   }
 
   /* ── Price title: stack header + icon row vertically ── */
-  .c-section__header-row {
+  .p-storedetail__price-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     padding-bottom: 2rem;
   }
-  .c-section__header-row > .c-flex-gap-3 {
+  .p-storedetail__price-header > .c-section__sub-text {
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 1rem;
     margin-top: 0;
   }
-  .c-section__header-row > .c-flex-gap-3 > svg {
+  .p-storedetail__price-header > .c-section__sub-text > svg {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
   }
-  .c-section__header-row > .c-flex-gap-3 h3 {
+  .p-storedetail__price-header > .c-section__sub-text h3 {
     font-size: 1rem;
   }
-  .c-section__header-row > .c-flex-gap-3 p {
+  .p-storedetail__price-header > .c-section__sub-text p {
     font-size: 0.875rem;
   }
 
