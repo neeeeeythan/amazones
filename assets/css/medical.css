@@ -1067,7 +1067,7 @@
   /* ユーティリティオーバーライド終了 */
 }
 .p-medical__engagement-row { display: flex; align-items: center; justify-content: center; gap: 90px; }
-.p-medical__partners-list { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 50px; }
+.p-medical__partners-list { display: flex; align-items: center; justify-content: flex-start; gap: 1rem; margin-bottom: 50px; }
 .p-medical__engagement-tagline { display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
 .p-medical__lineup-header { display: flex; align-items: center; gap: 70px; }
 .p-medical__how-to-use-title { display: flex; align-items: center; gap: 70px; }
@@ -1076,3 +1076,101 @@
 .p-medical__partners-row { display: flex; gap: 100px; }
 .p-medical__engagement-right { display: flex; flex-direction: column; width: fit-content; gap: 1rem; }
 .p-medical__engagement-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+
+/* ========================================
+   開始: インラインスタイル → BEMクラス
+   ======================================== */
+
+/* オンライン相談バナー — コンテンツラッパー */
+.p-medical__online-consult-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+}
+
+/* パートナー — 左カラム */
+.p-medical__partners-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+/* パートナー — ロゴラベル */
+.p-medical__partners-logo-label {
+  position: absolute;
+  top: 0;
+  right: 0.8rem;
+}
+
+/* エンゲージメント — フレックスリセット */
+.p-medical__engagement-column {
+  flex: unset;
+  justify-content: unset;
+}
+
+/* 斜線装飾 — 反転 */
+.p-medical__diagonal-line--mirrored {
+  transform: scaleX(-1);
+}
+
+/* エンゲージメント — ラベル幅 */
+.p-medical__engagement-label {
+  width: 100%;
+}
+
+/* エンゲージメント — ラベルテキスト */
+.p-medical__engagement-label-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* サブ見出し */
+.p-medical__sub-heading {
+  font-size: 1.25rem;
+}
+
+/* サブ本文 */
+.p-medical__sub-body {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* パートナー紹介テキスト */
+.p-medical__partners-intro {
+  margin-bottom: 50px;
+}
+
+/* お客様の声 — 区切り線 */
+.p-medical__voice-divider {
+  height: 1px;
+  margin-bottom: 1rem;
+}
+
+/* よくある質問リスト */
+.p-medical__faq-list {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* LINEブランドカラー */
+.p-medical__line-brand {
+  color: #4cc764;
+}
+
+/* お知らせ — LINE行 */
+.p-medical__announcement-line-row {
+  justify-content: center;
+  align-items: center;
+}
+
+/* スクロールアップアイコン */
+.p-medical__scroll-up-icon {
+  transform: scaleX(-1) rotate(-90deg);
+}
+
+/* ========================================
+   終了: インラインスタイル → BEMクラス
+   ======================================== */
