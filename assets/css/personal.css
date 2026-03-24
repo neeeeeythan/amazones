@@ -87,6 +87,7 @@
   flex-direction: column;
   gap: 2rem;
   max-width: 43.75rem;
+  margin-top: 1rem;
 }
 
 .p-personal-section__header {
@@ -173,14 +174,14 @@
 
 .p-personal-boxed-info__row {
   display: flex;
-  gap: 0.75rem;                /* gap-3 = 0.75rem */
-  align-items: flex-start;     /* items-start */
+  gap: 0.75rem; /* gap-3 = 0.75rem */
+  align-items: flex-start; /* items-start */
 }
 .p-personal-section__topic-header {
   display: flex;
-  gap: 0.75rem;                /* gap-3 */
-  align-items: center;         /* items-center */
-  margin-top: 50px;            /* mt-50 */
+  gap: 0.75rem; /* gap-3 */
+  align-items: center; /* items-center */
+  margin-top: 50px; /* mt-50 */
 }
 .p-personal-case-study__container {
   display: flex;
@@ -391,6 +392,20 @@
   object-fit: contain;
 }
 /* トレーナー / スタッフ終了 */
+
+.p-personal-case-study__header {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+/* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-personal__hero-ribbon     { width: 100vw; overflow: hidden; }
+.p-personal__clip-grow       { width: 100%; }
+.p-personal__hero-svg        { width: 100vw; height: auto; display: block; }
+.p-personal__scroll-top-icon { transform: scaleX(-1) rotate(-90deg); }
 
 /* ========================================
    メディア: max-width 1440px
@@ -607,6 +622,7 @@
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 1rem;
+    margin-top: 0;
   }
 
   .p-personal-section__topic-header > svg {
@@ -741,9 +757,4 @@
     right: -5rem;
   }
   /* トレーナー / スタッフ終了 */
-}
-.p-personal-case-study__header {
-  display: flex;
-  align-items: center;
-  gap: 70px;
 }

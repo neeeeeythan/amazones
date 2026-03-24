@@ -608,6 +608,16 @@
   }
   /* スピークパーソン終了 */
 }
+.p-medical__engagement-row { display: flex; align-items: center; justify-content: center; gap: 90px; }
+.p-medical__partners-list { display: flex; align-items: center; justify-content: flex-start; gap: 1rem; margin-bottom: 50px; }
+.p-medical__engagement-tagline { display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+.p-medical__lineup-header { display: flex; align-items: center; gap: 70px; }
+.p-medical__how-to-use-title { display: flex; align-items: center; gap: 4.375rem; }
+.p-medical__voice-header { display: flex; align-items: center; gap: 70px; padding-bottom: 100px; }
+.p-medical__partners-right { flex: 1 1 0%; display: flex; align-items: center; justify-content: center; }
+.p-medical__partners-row { display: flex; gap: 100px; }
+.p-medical__engagement-right { display: flex; flex-direction: column; width: fit-content; gap: 1rem; }
+.p-medical__engagement-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
 
 /* ========================================
    メディア: max-width 767px
@@ -748,7 +758,7 @@
   .p-medical__how-to-use-title {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 0.5rem;
   }
 
   .p-medical__how-to-use-title .mt-50 {
@@ -1066,16 +1076,6 @@
   }
   /* ユーティリティオーバーライド終了 */
 }
-.p-medical__engagement-row { display: flex; align-items: center; justify-content: center; gap: 90px; }
-.p-medical__partners-list { display: flex; align-items: center; justify-content: flex-start; gap: 1rem; margin-bottom: 50px; }
-.p-medical__engagement-tagline { display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
-.p-medical__lineup-header { display: flex; align-items: center; gap: 70px; }
-.p-medical__how-to-use-title { display: flex; align-items: center; gap: 70px; }
-.p-medical__voice-header { display: flex; align-items: center; gap: 70px; padding-bottom: 100px; }
-.p-medical__partners-right { flex: 1 1 0%; display: flex; align-items: center; justify-content: center; }
-.p-medical__partners-row { display: flex; gap: 100px; }
-.p-medical__engagement-right { display: flex; flex-direction: column; width: fit-content; gap: 1rem; }
-.p-medical__engagement-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
 
 /* ========================================
    開始: インラインスタイル → BEMクラス
@@ -1160,10 +1160,41 @@
   color: #4cc764;
 }
 
+/* お知らせ — コンテンツスタック */
+.p-medical__announcement-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 /* お知らせ — LINE行 */
 .p-medical__announcement-line-row {
+  display: flex;
+  gap: 0.75rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+/* お知らせ — 入力コードバー */
+.p-medical__line-bar{
+  background-color: var(--base-gray);
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* お知らせ — バッジ */
+.p-medical__line-badge {
+  background-color: var(--base-white);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* スクロールアップアイコン */

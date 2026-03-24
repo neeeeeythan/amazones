@@ -107,7 +107,7 @@
 .p-protein__points-track {
   width: 100%;
   display: flex;
-  gap: 40px;                   /* gap-40px */
+  gap: 40px; /* gap-40px */
 }
 .p-protein__points-nav {
   display: none;
@@ -225,6 +225,7 @@
   display: flex;
   flex-direction: column;
   padding: 30px;
+  gap: 1rem;
 }
 
 .p-protein__quality-line {
@@ -250,6 +251,19 @@
   justify-content: space-between;
   border-bottom: 1px solid var(--base-gray);
   padding: 1.5rem 0;
+}
+
+.p-protein__flavor-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.p-protein__flavor-ratings {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 60px;
 }
 
 /* 水平線 */
@@ -369,6 +383,71 @@
   filter: brightness(0.85);
 }
 
+.online-shop-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  position: relative;
+}
+
+.p-protein__opening-stack {
+  gap: 30px;
+}
+.p-protein__arrow--flipped {
+  transform: scaleX(-1);
+}
+.p-protein__point-icon {
+  height: 70px;
+  width: auto;
+}
+.p-protein__section-title-row {
+  gap: 70px;
+  padding-bottom: 50px;
+}
+.p-protein__subheading {
+  font-size: 1.25rem;
+}
+.p-protein__about-grid {
+  width: 100%;
+}
+.p-protein__card--auto-size {
+  flex: unset;
+  height: fit-content;
+  width: fit-content;
+}
+.p-protein__flavor-list {
+  margin-top: 10rem;
+}
+.p-protein__row--end {
+  justify-content: flex-end;
+}
+.p-protein__quality-section {
+  padding-top: 50px;
+}
+.p-protein__quality-grid {
+  width: 100%;
+}
+.p-protein__faq-list {
+  padding: 50px 0;
+}
+.p-protein__buynow-subtitle {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.p-protein__buynow-heading {
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+}
+.p-protein__scroll-top-icon {
+  transform: scaleX(-1) rotate(-90deg);
+}
+.p-protein__modal img {
+  display: block;
+  width: 100%;
+}
+
 /* CTA / ボタン終了 */
 
 /* ========================================
@@ -416,13 +495,13 @@
   }
 
   /* Inner row — reduce gap and margin so columns don't overflow */
-  .p-protein__text-container > .c-section__stack-50 > .c-flex-gap-50,
-  .p-protein__text-container--left > .c-section__stack-50 > .c-flex-gap-50 {
+  .p-protein__text-container > .p-protein__flavor-inner > .c-flex-gap-50,
+  .p-protein__text-container--left > .p-protein__flavor-inner > .c-flex-gap-50 {
     gap: 1.5rem;
   }
 
-  .p-protein__text-container .c-card-white-flex1,
-  .p-protein__text-container--left .c-card-white-flex1 {
+  .p-protein__text-container .p-protein__flavor-ratings,
+  .p-protein__text-container--left .p-protein__flavor-ratings {
     margin-right: 1rem;
   }
 
@@ -583,14 +662,14 @@
   }
 
   /* Stack nutrition + taste factor columns to prevent overflow */
-  .p-protein__text-container > .c-section__stack-50 > .c-flex-gap-50,
-  .p-protein__text-container--left > .c-section__stack-50 > .c-flex-gap-50 {
+  .p-protein__text-container > .p-protein__flavor-inner > .c-flex-gap-50,
+  .p-protein__text-container--left > .p-protein__flavor-inner > .c-flex-gap-50 {
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  .p-protein__text-container .c-card-white-flex1,
-  .p-protein__text-container--left .c-card-white-flex1 {
+  .p-protein__text-container .p-protein__flavor-ratings,
+  .p-protein__text-container--left .p-protein__flavor-ratings {
     margin-right: 0;
   }
 
@@ -647,8 +726,8 @@
   }
 
   /* Inner content gap */
-  .p-protein__text-container > .c-section__stack-50,
-  .p-protein__text-container--left > .c-section__stack-50 {
+  .p-protein__text-container > .p-protein__flavor-inner,
+  .p-protein__text-container--left > .p-protein__flavor-inner {
     gap: 1.25rem;
   }
 
@@ -1006,21 +1085,21 @@
   }
 
   /* Inner content gap */
-  .p-protein__text-container > .c-section__stack-50,
-  .p-protein__text-container--left > .c-section__stack-50 {
+  .p-protein__text-container > .p-protein__flavor-inner,
+  .p-protein__text-container--left > .p-protein__flavor-inner {
     gap: 1.25rem;
   }
 
   /* Stack nutrition table + taste factor */
-  .p-protein__text-container > .c-section__stack-50 > .c-flex-gap-50,
-  .p-protein__text-container--left > .c-section__stack-50 > .c-flex-gap-50 {
+  .p-protein__text-container > .p-protein__flavor-inner > .c-flex-gap-50,
+  .p-protein__text-container--left > .p-protein__flavor-inner > .c-flex-gap-50 {
     flex-direction: column;
     gap: 1.25rem;
   }
 
   /* Taste factor — remove right margin */
-  .p-protein__text-container .c-card-white-flex1,
-  .p-protein__text-container--left .c-card-white-flex1 {
+  .p-protein__text-container .p-protein__flavor-ratings,
+  .p-protein__text-container--left .p-protein__flavor-ratings {
     margin-right: 0;
   }
 
@@ -1057,11 +1136,14 @@
     margin-top: 1rem;
   }
 
-  /* Peach flavor — shift image left to avoid clipping */
-  div:has(> img[alt="peach flavor"]) > img {
+  /* Peach flavor — shift image crop left on mobile */
+  .p-protein__flavor-img[alt="もも味"] {
     object-position: right top;
   }
 
   /* プロテインフレーバーカード終了 */
+
+  .p-protein__buynow-subtitle {
+    margin-top: 0;
+  }
 }
-.online-shop-desc { display: flex; flex-direction: column; gap: 52px; position: relative; }
