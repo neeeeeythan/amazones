@@ -528,9 +528,27 @@
   .p-personal-speak__person--02 {
     height: 18rem;
   }
+    .p-personal-section__topic-subtitle,
+  .p-personal-boxed-info__item  p{
+    line-height:30px;
+  }
   /* トレーナー / スタッフ終了 */
 }
+@media screen and (max-width:1200px){
+   /* メソッド画像: テキスト上のインフローブロックに切り替え */
+  .p-personal-method__img {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  .p-personal-section__topic{
+    max-width:100%;
+  }
 
+}
 /* ========================================
    メディア: max-width 768px
    ======================================== */
@@ -580,16 +598,7 @@
     background-position: 0% -170%;
   }
 
-  /* メソッド画像: テキスト上のインフローブロックに切り替え */
-  .p-personal-method__img {
-    position: relative;
-    right: auto;
-    top: auto;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.5rem;
-  }
-
+ 
   /* テキストコンテナを全幅に */
   .p-personal-section__topic {
     max-width: 100%;
@@ -755,6 +764,23 @@
     height: 5rem;
     top: -3.5rem;
     right: -5rem;
+  }
+  .p-personal-boxed-info{
+    /* padding-left:10px;
+    padding-right:10px; */
+  }
+
+  .p-personal-method .btn-green-wrapper,
+  .p-personal-case-study .btn-green-wrapper{
+    transform:scale(0.8)
+  }
+  .p-personal-case-study .btn-green-wrapper{
+    min-width:40px;
+    height:40px;
+  }
+  .p-personal-case-study .p-personal-boxed-info{
+    padding-left:10px;
+    padding-right:10px;
   }
   /* トレーナー / スタッフ終了 */
 }
