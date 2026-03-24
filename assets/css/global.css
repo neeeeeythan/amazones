@@ -10417,3 +10417,14 @@ a {
 .c-faq { display: flex; flex-direction: column; gap: 40px; align-items: flex-start; position: relative; }
 .c-faq__content { display: flex; flex-direction: column; gap: 40px; }
 .c-recommended_btn { display: flex; flex-direction: column; gap: 50px; margin-top: 10px; }
+
+/* ========================================
+   インラインスタイル → BEMモディファイア
+   ======================================== */
+.c-section__sub-text--sm-gap { gap: 0.75rem; }
+.c-section__header-row--sm-gap { gap: 0.75rem; }
+.c-section__header-row--lg-gap { gap: 70px; }
+.c-hero-slider__ribbon--overflow { width: 100vw; overflow: hidden; }
+.c-hero-slider__ribbon-inner { width: 100%; }
+.c-hero-slider__ribbon-svg { width: 100vw; height: auto; display: block; }
+.nav-menu-popup__bottom--gap { gap: 20px; }
