@@ -1,0 +1,34 @@
+// ============================================
+//  Amazones メインスタイルシート
+//  全SCSSパーシャルをインポート
+// ============================================
+
+// グローバル（変数、ユーティリティ、共通コンポーネント）
+@import "global";
+
+// ページ別スタイル
+@import "top";
+@import "about";
+@import "admission";
+@import "column";
+@import "column-slag";
+@import "contact";
+@import "family";
+@import "faq";
+@import "information";
+@import "medical";
+@import "member";
+@import "payment";
+@import "personal";
+@import "point_redemption";
+@import "price";
+@import "protein";
+@import "reservation";
+@import "rules";
+@import "sitemap";
+@import "sportip";
+@import "storedetail";
+@import "storedetail-introduction";
+@import "storedetail-review";
+@import "storelist";
+@import "visitor";
