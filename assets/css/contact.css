@@ -26,7 +26,6 @@
 }
 .p-contact__field {
   display: flex;
-
   gap: 16px;
   padding: 14px 0;
   border: none;
@@ -309,7 +308,7 @@
 
 @media screen and (max-width: 1000px) {
   .p-contact__wrapper {
-    gap: 00px;
+    gap: 0px;
   }
   .p-contact__sticker {
     position: relative;
@@ -326,9 +325,7 @@
   .p-contact__card {
     margin-top: -150px;
   }
-  .p-contact__header .mt-60 {
-    margin-top: 20px;
-  }
+
   .p-contact__header {
     max-width: 100%;
   }
