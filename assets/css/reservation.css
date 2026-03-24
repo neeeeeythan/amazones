@@ -993,11 +993,3 @@
   /* お知らせ終了 */
 }
 
-.p-reservation-faq__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-}
