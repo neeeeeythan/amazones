@@ -400,6 +400,14 @@
 }
 
 /* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-personal__hero-ribbon     { width: 100vw; overflow: hidden; }
+.p-personal__clip-grow       { width: 100%; }
+.p-personal__hero-svg        { width: 100vw; height: auto; display: block; }
+.p-personal__scroll-top-icon { transform: scaleX(-1) rotate(-90deg); }
+
+/* ========================================
    メディア: max-width 1440px
    ======================================== */
 @media (max-width: 1440px) {

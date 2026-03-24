@@ -202,7 +202,7 @@
           </div>
 
           <!-- 下部行 -->
-          <div class="nav-menu-popup__bottom" style="gap: 20px">
+          <div class="nav-menu-popup__bottom nav-menu-popup__bottom--gap">
             <div class="nav-menu-popup__bottom-btns">
               <a href="contact/" class="btn-light-blue footer-blue-btn">
                 <p class="text-white fs-16 font-outfit">お問い合わせ</p>
@@ -489,7 +489,7 @@
               <p class="font-zen">
                 お支払い方法は、クレジットカードと口座振替からお選びいただけます。
               </p>
-              <ul style="list-style: none; margin: 0; padding: 0">
+              <ul class="p-payment__list-reset">
                 <li class="font-zen">
                   <span>● クレジットカードの場合｜</span
                   >クレジットカード（VISA・MasterCard・JCB・American
@@ -499,10 +499,7 @@
               </ul>
             </div>
             <!-- 決済ロゴ -->
-            <ul
-              class="c-flex-gap-3" style="gap:0.5rem"
-              style="list-style: none; margin: 0; padding: 0"
-            >
+            <ul class="c-flex-gap-3 p-payment__list-sm-gap">
               <li>
                 <img
                   src="assets/img/common/img_visa_logo.svg"
@@ -542,7 +539,7 @@
 
             <!-- テキストブロック2 -->
             <div class="p-payment__text-block reveal-scale">
-              <ul style="list-style: none; margin: 0; padding: 0">
+              <ul class="p-payment__list-reset">
                 <li class="font-zen">
                   <span>● 口座振替の場合｜</span
                   >会費引落口座の銀行情報をお持ちください。
@@ -596,10 +593,7 @@
                   クレジットカードの変更完了報告をしていただくことにより、決済することが可能です。
                 </p>
               </div>
-              <figure
-                class="p-payment__about-figure"
-                style="margin: 0"
-              >
+              <figure class="p-payment__about-figure">
                 <img
                   src="assets/img/payment/img_payment_about01.svg"
                   alt="お支払いについて画像1"
@@ -663,10 +657,7 @@
                   なお、引き落としはご入会3か月目の月会費から開始され、ご契約した2か月目の27日（以降は毎月27日が引き落し日）が最初の引き落としとなります。
                 </p>
               </div>
-              <figure
-                class="p-payment__about-figure"
-                style="margin: 0"
-              >
+              <figure class="p-payment__about-figure">
                 <img
                   src="assets/img/payment/img_payment_about02.svg"
                   alt="お支払いについて画像2"
@@ -763,10 +754,7 @@
                   初月の日割り計算はご指定いただいたご入会日から起算されます。
                 </p>
               </div>
-              <figure
-                class="p-payment__about-figure"
-                style="margin: 0"
-              >
+              <figure class="p-payment__about-figure">
                 <img
                   src="assets/img/payment/img_payment_about03.svg"
                   alt="お支払いについて画像3"
@@ -1379,7 +1367,7 @@
           </ul>
 
           <button class="btn-light-blue scroll-up" aria-label="ページトップへ戻る">
-            <img src="assets/img/common/icon_arrow.svg" alt="" style="transform: scaleX(-1) rotate(-90deg)" />
+            <img src="assets/img/common/icon_arrow.svg" alt="" class="p-payment__scroll-top-icon" />
           </button>
         </section>
 

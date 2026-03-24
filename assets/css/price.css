@@ -437,6 +437,13 @@
 /* ユーティリティオーバーライド終了 */
 
 /* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-price__section-header-row { gap: 50px; }
+.p-price__tier-card-body     { padding-top: 15px; padding-bottom: 15px; }
+.p-price__scroll-top-icon    { transform: scaleX(-1) rotate(-90deg); }
+
+/* ========================================
    メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
