@@ -65,6 +65,30 @@
   font-weight: 500;
 }
 
+/* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-storedetail__thumb-grid          { gap: 1rem; }
+.p-storedetail__facilities-card     { flex: unset; }
+.p-storedetail__price-subtitle      { font-size: 1.25rem; }
+.p-storedetail__plan-text           { font-size: 1rem; font-weight: 500; }
+.p-storedetail__section-header-row  { gap: 50px; }
+.p-storedetail__tier-card-body      { padding-top: 15px; padding-bottom: 15px; }
+.p-storedetail__section-no-pb       { padding-bottom: 0; }
+.p-storedetail__divider             { height: 1px; }
+.p-storedetail__content-row         { position: relative; }
+.p-storedetail__content-row--end    { justify-content: flex-end; position: relative; }
+.p-storedetail__voice-col           { gap: 5px; }
+.p-storedetail__review-wrap         { padding-bottom: 26px; }
+.p-storedetail__google-blue         { color: #6186ec !important; }
+.p-storedetail__google-red          { color: #cd523f !important; }
+.p-storedetail__google-yellow       { color: #eabe43 !important; }
+.p-storedetail__google-green        { color: #63a45d !important; }
+.p-storedetail__hidden              { display: none; }
+.p-storedetail__faq-stack           { padding-top: 50px; padding-bottom: 50px; }
+.p-storedetail__faq-section-header  { gap: 26px; margin-top: 50px; margin-bottom: 50px; }
+.p-storedetail__scroll-top-icon     { transform: scaleX(-1) rotate(-90deg); }
+
 @media screen and (max-width: 767px) {
   .p-storedetail__whychooseus-title-desc--sp {
     margin-bottom: 2.5rem;
