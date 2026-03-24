@@ -1160,10 +1160,41 @@
   color: #4cc764;
 }
 
+/* お知らせ — コンテンツスタック */
+.p-medical__announcement-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 /* お知らせ — LINE行 */
 .p-medical__announcement-line-row {
+  display: flex;
+  gap: 0.75rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+/* お知らせ — 入力コードバー */
+.p-medical__line-bar{
+  background-color: var(--base-gray);
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* お知らせ — バッジ */
+.p-medical__line-badge {
+  background-color: var(--base-white);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* スクロールアップアイコン */
