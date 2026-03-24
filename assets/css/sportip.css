@@ -360,7 +360,7 @@
 .p-sportip__divider             { height: 1px; }
 .p-sportip__label               { width: 5rem; }
 .p-sportip__content-row--end    { position: relative; justify-content: flex-end; }
-.p-sportip__content-block       { padding: 0; }
+.p-sportip__content-block       { padding-top: 0; padding-bottom: 0; }
 .p-sportip__content-row--spaced { position: relative; margin-top: 100px; }
 .p-sportip__flex-col            { display: flex; flex-direction: column; }
 .p-sportip__scroll-top-icon     { transform: scaleX(-1) rotate(-90deg); }
@@ -638,17 +638,17 @@
   }
 
   /* Number + icon + label row — stack on mobile */
-  .p-sportip__text-container .c-flex-gap-4,
-  .p-sportip__text-container--02 .c-flex-gap-4 {
+  .p-sportip__text-container .c-section__header-row--md-gap,
+  .p-sportip__text-container--02 .c-section__header-row--md-gap {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
   }
 
   /* Large number heading */
-  .p-sportip__text-container h2[style],
-  .p-sportip__text-container--02 h2[style] {
-    font-size: 3.5rem !important;
+  .p-sportip__text-container .p-sportip__section-number,
+  .p-sportip__text-container--02 .p-sportip__section-number {
+    font-size: 3.5rem;
   }
 
   /* Section label heading */
