@@ -524,21 +524,21 @@
   }
 
   /* ── POINT TITLE SECTION ── */
-  .p-sportip__content .flex.gap-40px.items-center {
+  .p-sportip__content .c-section__header-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
 
   /* Subtitle text + icon row — keep side-by-side */
-  .p-sportip__content .flex.items-end.gap-15px.pb-10 {
+  .p-sportip__content .c-flex-gap-3 {
     flex-direction: row;
     align-items: flex-start;
     gap: 0.5rem;
     line-height: 2;
   }
 
-  .p-sportip__content .flex.items-end.gap-15px.pb-10 h4 {
+  .p-sportip__content .c-flex-gap-3 h4 {
     font-size: 1rem;
   }
 
@@ -608,8 +608,8 @@
   }
 
   /* Number + icon + label row — stack on mobile */
-  .p-sportip__text-container .flex.items-center.gap-4,
-  .p-sportip__text-container--02 .flex.items-center.gap-4 {
+  .p-sportip__text-container .c-flex-gap-4,
+  .p-sportip__text-container--02 .c-flex-gap-4 {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
@@ -665,7 +665,7 @@
   }
 
   /* ── DESCRIPTION SECTIONS ── */
-  .flex.flex-col.gap-30px.w-full.c-maxWidth h2 {
+  .c-maxWidth.c-maxWidth--content h2 {
     font-size: 1.125rem;
     line-height: 1.6;
   }
@@ -677,7 +677,7 @@
      ======================================== */
 
   /* ── PHONE + TEXT BLOCK SECTION ── */
-  .flex.items-start.w-full.justify-between.c-maxWidth.relative {
+  .c-maxWidth {
     flex-direction: column;
     gap: 2rem;
   }

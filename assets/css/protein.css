@@ -416,13 +416,13 @@
   }
 
   /* Inner row — reduce gap and margin so columns don't overflow */
-  .p-protein__text-container > .flex.flex-col.gap-30px > .flex.gap-50px,
-  .p-protein__text-container--left > .flex.flex-col.gap-30px > .flex.gap-50px {
+  .p-protein__text-container > .c-section__stack-50 > .c-flex-gap-50,
+  .p-protein__text-container--left > .c-section__stack-50 > .c-flex-gap-50 {
     gap: 1.5rem;
   }
 
-  .p-protein__text-container .flex.flex-col.flex-1.mr-60,
-  .p-protein__text-container--left .flex.flex-col.flex-1.mr-60 {
+  .p-protein__text-container .c-card-white-flex1,
+  .p-protein__text-container--left .c-card-white-flex1 {
     margin-right: 1rem;
   }
 
@@ -492,12 +492,12 @@
   }
 
   /* Stack text block + image side by side → column */
-  .p-protein__content > .flex.gap-30px {
+  .p-protein__content > .c-flex-gap-30 {
     flex-direction: column;
   }
 
   /* Opening image full width */
-  .p-protein__content > .flex.gap-30px > div:last-child img {
+  .p-protein__content > .c-flex-gap-30 > div:last-child img {
     width: 100%;
     height: auto;
   }
@@ -583,14 +583,14 @@
   }
 
   /* Stack nutrition + taste factor columns to prevent overflow */
-  .p-protein__text-container > .flex.flex-col.gap-30px > .flex.gap-50px,
-  .p-protein__text-container--left > .flex.flex-col.gap-30px > .flex.gap-50px {
+  .p-protein__text-container > .c-section__stack-50 > .c-flex-gap-50,
+  .p-protein__text-container--left > .c-section__stack-50 > .c-flex-gap-50 {
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  .p-protein__text-container .flex.flex-col.flex-1.mr-60,
-  .p-protein__text-container--left .flex.flex-col.flex-1.mr-60 {
+  .p-protein__text-container .c-card-white-flex1,
+  .p-protein__text-container--left .c-card-white-flex1 {
     margin-right: 0;
   }
 
@@ -606,29 +606,29 @@
   }
 
   /* FLAVOR SECTION title row — stack (matches mobile) */
-  .p-protein__about > .flex.items-center.gap-70px {
+  .p-protein__about > .c-section__header-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     padding-bottom: 2rem;
   }
 
-  .p-protein__about > .flex.items-center.gap-70px > .flex.gap-3 {
+  .p-protein__about > .c-section__header-row > .c-flex-gap-3 {
     margin-top: 0 !important;
   }
 
-  .p-protein__about > .flex.items-center.gap-70px .flex.flex-col.gap-30px h3 {
+  .p-protein__about > .c-section__header-row .c-section__stack-50 h3 {
     font-size: 1rem !important;
   }
 
   /* Recommendation card row — stack */
-  .p-protein__about .w-full.flex.gap-4 {
+  .p-protein__about .c-flex-gap-4 {
     flex-direction: column;
     gap: 0;
   }
 
   /* Flavors container — reduce top margin and gap */
-  .c-section_lightBlue > .flex.flex-col.gap-50px {
+  .c-section_lightBlue > .c-section__stack-50 {
     margin-top: 2.5rem !important;
     gap: 1rem !important;
   }
@@ -647,8 +647,8 @@
   }
 
   /* Inner content gap */
-  .p-protein__text-container > .flex.flex-col.gap-30px,
-  .p-protein__text-container--left > .flex.flex-col.gap-30px {
+  .p-protein__text-container > .c-section__stack-50,
+  .p-protein__text-container--left > .c-section__stack-50 {
     gap: 1.25rem;
   }
 
@@ -667,15 +667,15 @@
   }
 
   /* Star rating — tighten gaps */
-  .p-protein__flavor-item .flex.gap-4 {
+  .p-protein__flavor-item .c-flex-gap-4 {
     gap: 0.35rem;
     flex-wrap: wrap;
     font-size: 0.8rem;
   }
 
   /* Ingredient info button — left-align */
-  .p-protein__text-container .flex.flex-col.justify-end.items-end,
-  .p-protein__text-container--left .flex.flex-col.justify-end.items-end {
+  .p-protein__text-container .c-flex-col-end,
+  .p-protein__text-container--left .c-flex-col-end {
     align-items: flex-start;
     margin-top: 1rem;
   }
@@ -687,7 +687,7 @@
   }
 
   /* ── EXTRA WORDS CARDS ── */
-  .c-section_lightBlue > .c-maxWidth > .flex.w-full.gap-30px {
+  .c-section_lightBlue > .c-maxWidth > .c-flex-gap-30 {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -713,7 +713,7 @@
   /* ── BUY NOW SECTION ── */
 
   /* Title row — stack */
-  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 {
+  .c-section_lightBlue .c-maxWidth > .c-section__header-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -722,17 +722,17 @@
 
   .c-section_lightBlue
     .c-maxWidth
-    > .flex.items-center.gap-70px.pb-50
-    .flex.gap-3.items-end {
+    > .c-section__header-row
+    .c-flex-gap-3.items-end {
     margin-top: 0 !important;
   }
 
-  .c-section_lightBlue .c-maxWidth > .flex.items-center.gap-70px.pb-50 h3 {
+  .c-section_lightBlue .c-maxWidth > .c-section__header-row h3 {
     font-size: 1rem !important;
   }
 
   /* Product list — stack */
-  .c-section_lightBlue .c-maxWidth > .flex.gap-30px {
+  .c-section_lightBlue .c-maxWidth > .c-flex-gap-30 {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -784,7 +784,7 @@
     font-size: 1.75rem !important;
   }
 
-  .p-protein__onlineshop-text-container .flex.flex-col.gap-40px {
+  .p-protein__onlineshop-text-container .c-section__stack-40 {
     gap: 1.5rem;
   }
 
@@ -882,7 +882,7 @@
   /* ── FLAVOR SECTION ── */
 
   /* Title row — stack on mobile */
-  .p-protein__about > .flex.items-center.gap-70px {
+  .p-protein__about > .c-section__header-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
@@ -890,16 +890,16 @@
   }
 
   /* Subtitle + icon — remove the large top margin */
-  .p-protein__about > .flex.items-center.gap-70px > .flex.gap-3 {
+  .p-protein__about > .c-section__header-row > .c-flex-gap-3 {
     margin-top: 0 !important;
   }
 
-  .p-protein__about > .flex.items-center.gap-70px .flex.flex-col.gap-30px h3 {
+  .p-protein__about > .c-section__header-row .c-section__stack-50 h3 {
     font-size: 1rem !important;
   }
 
   /* Recommendation card row — stack */
-  .p-protein__about .w-full.flex.gap-4 {
+  .p-protein__about .c-flex-gap-4 {
     flex-direction: column;
     gap: 0;
   }
@@ -915,7 +915,7 @@
   }
 
   /* Flavors container — reduce huge top margin */
-  .c-section_lightBlue > .flex.flex-col.gap-50px {
+  .c-section_lightBlue > .c-section__stack-50 {
     margin-top: 2.5rem !important;
     gap: 1rem !important;
   }
@@ -1006,21 +1006,21 @@
   }
 
   /* Inner content gap */
-  .p-protein__text-container > .flex.flex-col.gap-30px,
-  .p-protein__text-container--left > .flex.flex-col.gap-30px {
+  .p-protein__text-container > .c-section__stack-50,
+  .p-protein__text-container--left > .c-section__stack-50 {
     gap: 1.25rem;
   }
 
   /* Stack nutrition table + taste factor */
-  .p-protein__text-container > .flex.flex-col.gap-30px > .flex.gap-50px,
-  .p-protein__text-container--left > .flex.flex-col.gap-30px > .flex.gap-50px {
+  .p-protein__text-container > .c-section__stack-50 > .c-flex-gap-50,
+  .p-protein__text-container--left > .c-section__stack-50 > .c-flex-gap-50 {
     flex-direction: column;
     gap: 1.25rem;
   }
 
   /* Taste factor — remove right margin */
-  .p-protein__text-container .flex.flex-col.flex-1.mr-60,
-  .p-protein__text-container--left .flex.flex-col.flex-1.mr-60 {
+  .p-protein__text-container .c-card-white-flex1,
+  .p-protein__text-container--left .c-card-white-flex1 {
     margin-right: 0;
   }
 
@@ -1044,15 +1044,15 @@
   }
 
   /* Star rating — tighten gaps */
-  .p-protein__flavor-item .flex.gap-4 {
+  .p-protein__flavor-item .c-flex-gap-4 {
     gap: 0.35rem;
     flex-wrap: wrap;
     font-size: 0.8rem;
   }
 
   /* Ingredient info button — left-align */
-  .p-protein__text-container .flex.flex-col.justify-end.items-end,
-  .p-protein__text-container--left .flex.flex-col.justify-end.items-end {
+  .p-protein__text-container .c-flex-col-end,
+  .p-protein__text-container--left .c-flex-col-end {
     align-items: flex-start;
     margin-top: 1rem;
   }

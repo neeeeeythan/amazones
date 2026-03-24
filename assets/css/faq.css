@@ -106,7 +106,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .p-faq__page__item .flex-row.gap-26px img {
+  .p-faq__page__item .c-faq__accordion_header img {
     width: 50px;
   }
   .p-faq__page__item {

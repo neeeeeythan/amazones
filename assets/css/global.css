@@ -6183,7 +6183,7 @@ a {
   .recruit-banner {
     width: 767px;
   }
-  .recruit-banner-section .gap-36px {
+  .recruit-info__content {
     gap: 25px;
   }
   .recruit-info {
@@ -8449,13 +8449,13 @@ a {
   }
 
   /* 上部フッター行（ロゴ/リンク）を縦に積み重ね */
-  .footer-main-container > .flex.flex-row.justify-between.w-full:first-child {
+  .footer-top {
     flex-direction: column;
     gap: 40px;
   }
 
   /* フッターリンクカラム: オーバーフローの代わりに折り返し */
-  .footer-main-container .flex.flex-row.gap-100px {
+  .footer-nav-columns {
     flex-wrap: wrap;
     gap: 40px;
   }
@@ -8571,27 +8571,27 @@ a {
   }
 
   /* フッターナビカラムグループ: 積み重ね */
-  .footer-main-container .flex.flex-row.gap-100px,
-  .footer-main-container .flex.flex-row.gap-60px {
+  .footer-nav-columns,
+  .footer-nav-group {
     flex-direction: column;
     gap: 32px;
   }
 
   /* 下部フッター行: リンク＋スクロールアップ */
-  .footer-main-container > .flex.flex-row.justify-between.w-full.items-center {
+  .footer-bottom {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 20px !important;
   }
 
   /* フッター下部リンク: 折り返し */
-  .footer-main-container .flex.flex-row.gap-55px {
+  .footer-legal-links {
     flex-wrap: wrap;
     gap: 12px;
   }
 
   /* Cookieバー */
-  .flex.flex-row.items-center.gap-15px.py-15.px-120 {
+  .cookie-notice {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 1.25rem !important;
@@ -8777,7 +8777,7 @@ a {
   .panel-content-text-sp {
     display: block;
   }
-  .panel-content .justify-between {
+  .panel-content .news-info-container {
     align-items: flex-start;
   }
   .panel-content img {
@@ -9171,7 +9171,7 @@ a {
     gap: 0;
   }
 
-  .c-shop__container .gap-40px {
+  .c-shop__items-wrapper {
     gap: 20px;
   }
 
@@ -9489,7 +9489,7 @@ a {
     max-width: 100px;
   }
 
-  .c-price-plan__info-container .px-40 {
+  .c-price-plan__info-card {
     padding: 20px;
   }
 
@@ -9895,7 +9895,7 @@ a {
   .c-faq__item {
     padding: 50px 20px;
   }
-  .c-faq__item .gap-40px {
+  .c-faq__content {
     gap: 30px;
   }
   .c-faq__icon__q {
@@ -9906,7 +9906,7 @@ a {
     width: 30px;
     height: auto;
   }
-  .c-faq__accordion .gap-20px {
+  .c-faq__accordion_box {
     gap: 10px;
   }
   .c-faq__accordion {
@@ -10321,14 +10321,14 @@ a {
     font-size: 11px;
   }
 
-  .c-column__item .px-30 {
+  .c-column__item-info {
     padding: 15px 15px;
     gap: 10px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .c-column__item .px-30 {
+  .c-column__item-info {
     padding: 15px 10px;
   }
 }

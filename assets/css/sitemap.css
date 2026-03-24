@@ -216,20 +216,20 @@
   .c-other-details-banner-item .fs-24 {
     font-size: 16px;
   }
-  .c-other-details-banner-item .gap-32px img {
+  .c-other-details-banner-item__title img {
     width: 75px;
   }
   .c-other-details-banner-p {
     padding-left: 20px;
   }
-  .c-other-details-banner-item .justify-between .gap-32px {
+  .c-other-details-banner-item__header .c-other-details-banner-item__title {
     gap: 15px;
   }
   .c-other-details-banner-container {
     gap: 20px;
   }
 
-  .c-other-details-banner-container .gap-40px {
+  .c-other-details-banner__list {
     gap: 20px;
   }
 }

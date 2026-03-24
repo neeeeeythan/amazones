@@ -317,7 +317,7 @@
     gap: 30px;
   }
 
-  .p-admission-item .items-center {
+  .p-admission-item__header {
     align-items: flex-end;
   }
 
@@ -351,7 +351,7 @@
     font-size: 16px;
   }
 
-  .p-admission-item .gap-26px .text-lightBlue {
+  .p-admission-item__title .text-lightBlue {
     font-size: 18px;
   }
 

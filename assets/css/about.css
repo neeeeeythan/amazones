@@ -204,12 +204,12 @@
     font-size: 16px;
   }
 
-  .p-space__content1 .gap-40px {
+  .p-space__content1__header {
     justify-content: center;
     gap: 20px;
   }
 
-  .p-space__content1 .gap-40px p {
+  .p-space__content1__header p {
     margin: 0 auto;
   }
 

@@ -843,12 +843,12 @@
     padding-bottom: 2.5rem;
   }
 
-  .p-medical__online-consultation-banner .bg-white.w-fit-content {
+  .p-medical__online-consultation-banner .c-badge-white {
     max-width: 62%;
     padding: 0.625rem 0.875rem;
   }
 
-  .p-medical__online-consultation-banner .bg-white.w-fit-content p {
+  .p-medical__online-consultation-banner .c-badge-white p {
     font-size: 0.875rem;
     line-height: 1.6;
   }
@@ -858,7 +858,7 @@
     line-height: 1.5;
   }
 
-  .p-medical__online-consultation-banner .flex.flex-col.gap-4 {
+  .p-medical__online-consultation-banner .c-flex-col-gap-4 {
     gap: 0.5rem;
   }
   /* オンライン相談終了 */

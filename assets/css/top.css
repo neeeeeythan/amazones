@@ -846,7 +846,7 @@ a.service-wrapper {
     width: 300px;
     height: auto;
   }
-  .training-machine-section .gap-40px {
+  .training-machine__info {
     gap: 20px;
   }
   .training-machine-container {

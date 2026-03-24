@@ -599,12 +599,12 @@
     padding-bottom: 3rem !important;
   }
 
-  .p-price__section--white.pt-100 {
+  .p-price__section--white {
     padding-top: 3rem !important;
   }
 
   /* GAP-100PXコンテナ */
-  .flex.flex-col.gap-100px {
+  .c-section__stack-100 {
     gap: 3rem;
   }
 
