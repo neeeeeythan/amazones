@@ -10558,6 +10558,17 @@ a {
   .c-other-details-banner {
     padding: 50px 16px;
   }
+
+  .c-section_lightBlue--padded {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .c-section_white--padded {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .c-other-details-banner-item {
     gap: 15px;
     min-height: auto;
