@@ -10643,6 +10643,9 @@ a {
 .c-section__header-row--sm-gap {
   gap: 0.75rem;
 }
+.c-section__header-row--md-gap {
+  gap: 1rem;
+}
 .c-section__header-row--lg-gap {
   gap: 70px;
 }
