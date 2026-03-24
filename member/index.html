@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <base href="/amazones/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -25,9 +25,9 @@
     <!--ヘッダー-->
     <header class="I-header">
       <div
-        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+        class="I-header-wrapper"
       >
-        <div class="flex flex-row items-center flex-1 gap-24px">
+        <div class="l-header__brand">
           <a href="./">
             <img
               src="assets/img/common/icon_logo.svg"
@@ -45,18 +45,18 @@
           </p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions">
           <a
             href="storelist/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="header-btn"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
@@ -70,15 +70,15 @@
 
           <a
             href="reservation/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="header-btn header-btn--reservation"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
@@ -98,11 +98,11 @@
         <!--フローティングヘッダーメニュー-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="header-floating-menu"
         >
           <div
             id="floating-menu-btn"
-            class="flex flex-col items-center gap-13px"
+            class="floating-menu-btn"
           >
             <img
               src="assets/img/common/icon_menu.svg"
@@ -137,16 +137,16 @@
           </div>
         
         <div id="nav-menu-popup" class="nav-menu-popup">
-          <div class="flex flex-row justify-between w-full">
+          <div class="nav-menu-popup__columns">
 
             <!-- 会社について -->
-            <div class="flex flex-col gap-30px">
-              <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__section">
+              <div class="footer-page-link">
                 <p class="font-outfit fs-18 fw-500">About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                 <div class="footer-link-line"></div>
               </div>
-              <div class="flex flex-col gap-25px items-start">
+              <div class="nav-menu-popup__links">
                 <a href="./" class="fw-500 fs-15">トップページ</a>
                 <a href="#" class="fw-500 fs-15">お知らせ</a>
                 <a href="column/" class="fw-500 fs-15">ゾネスタイムズ</a>
@@ -162,53 +162,53 @@
             </div>
 
             <!-- サービス + 採用情報 -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="about/" class="fw-500 fs-15">女性専用24時間ジム</a>
                   <a href="personal/" class="fw-500 fs-15">Amazonesのパーソナルトレーニング</a>
                   <a href="medical/" class="fw-500 fs-15">Dr.Amazones</a>
                   <a href="#" class="fw-500 fs-15">AI姿勢診断・改善</a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
             </div>
 
             <!-- 他店舗 + SNS -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="mr-5" />Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="mr-5" />Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
@@ -218,8 +218,8 @@
           </div>
 
           <!-- 下部行 -->
-          <div class="flex flex-col w-full gap-20px">
-            <div class="flex flex-row gap-20px">
+          <div class="nav-menu-popup__bottom" style="gap: 20px">
+            <div class="nav-menu-popup__bottom-btns">
               <a href="contact/" class="btn-light-blue footer-blue-btn">
                 <p class="text-white fs-16 font-outfit">お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
@@ -229,7 +229,7 @@
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
               </a>
             </div>
-            <div class="flex flex-row gap-40px flex-wrap">
+            <div class="nav-menu-popup__bottom-links">
               <a href="#" class="footer-icon-link fw-500 fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
               <a href="sitemap/" class="fw-500 fs-14">サイトマップ</a>
               <a href="#" class="fw-500 fs-14">ご利用規約</a>
@@ -315,7 +315,7 @@
     <!--/ヘッダー-->
 
     <!--メインコンテンツ-->
-    <main class="p-member bg-white">
+    <main class="p-member">
       <!-- ヒーローバナー -->
       <section class="banner-section">
         <div class="p-banner">
@@ -369,8 +369,8 @@
       <!--メインコンテンツ-->
       <section class="p-member-page-section">
         <article class="p-member-page-container">
-          <div class="p-member-header-row flex flex-row gap-75px items-center">
-            <div class="reveal section-header-wrapper flex flex-col gap-18px">
+          <div class="p-member-header-row">
+            <div class="reveal section-header-wrapper">
               <p class="section-sub-text fs-18 fw-500 text-black1">
                 会員様の声
               </p>
@@ -380,7 +380,7 @@
                 Voice
               </h2>
             </div>
-            <div class="reveal-scale flex flex-row items-center gap-20px mt-50">
+            <div class="reveal-scale c-section__sub-text">
               <img src="assets/img/common/icon_speaker.svg" alt="24時間" />
               <div>
                 <p class="fw-700 fs-24 lh-200">
@@ -398,7 +398,7 @@
             </p>
           </div>
 
-          <section class="flex flex-col items-center relative">
+          <section class="c-section__content-centered">
             <figure class="p-member-speech-bubble">
               <img
                 src="assets/img/member/img_member_sticker1.webp"
@@ -420,13 +420,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       和歌山駅前店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -446,13 +446,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       大阪梅田店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image2.png"
@@ -472,13 +472,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       東京新宿店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image3.png"
@@ -498,13 +498,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       京都四条店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -524,13 +524,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       神戸三宮店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -550,13 +550,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       横浜店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -576,13 +576,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       名古屋栄店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -602,13 +602,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       福岡天神店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -628,13 +628,13 @@
               <li class="reveal-scale  p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       札幌店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -654,13 +654,13 @@
               <li class="reveal-scalep-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       仙台店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -680,13 +680,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       広島店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -706,13 +706,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       岡山店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -732,13 +732,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       熊本店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -758,13 +758,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       静岡店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -784,13 +784,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       大宮店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -810,13 +810,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       千葉店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -836,13 +836,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       奈良店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -862,13 +862,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       滋賀店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -888,13 +888,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       金沢店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -914,13 +914,13 @@
               <li class="reveal-scale p-member-content">
                 <div class="relative p-member-voice-slide">
                   <div
-                    class="slide-content flex flex-col gap-15px w-full p-member-voice-slide-content"
+                    class="slide-content p-member-voice-slide-content"
                   >
                     <p class="fw-500 fs-14 text-white p-member-voice-label">
                       長野店
                     </p>
                     <div
-                      class="p-member-voice-img-box flex flex-row items-center gap-20px"
+                      class="p-member-voice-img-box"
                     >
                       <img
                         src="assets/img/common/icon_voice_image1.png"
@@ -954,7 +954,7 @@
 
       <!--会員バナー-->
       <section class="c-footer-banner">
-        <div class="c-footer-banner__container flex flex-col gap-53px items-center justify-center relative">
+        <div class="c-footer-banner__container">
         <h2 class="reveal fw-700 fs-32">
           まずはお気軽に<br class="display-sp" />無料体験・見学へ
           <b class="fs-60 font-outfit fw-600 text-lightBlue">GO!</b>
@@ -988,7 +988,7 @@
       </section>
 
       <!--トップテキストスライダー-->
-      <div class="text-slider w-full">
+      <div class="text-slider">
         <div class="slide-track">
           <div class="slide">
             <p class="font-outfit fw-300 fs-36 text-white">
@@ -1260,10 +1260,10 @@
       </section>
 
 
-    <aside class="cookie-notice flex flex-row items-center gap-15px py-15 px-120 bg-base-black1 ">
+    <aside class="cookie-notice">
       <p class="fw-400 fs-14 text-white lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
-      <div class="flex flex-row gap-10px">
+      <div class="cookie-notice__buttons">
         <button class="footer-btn">OK</button>
         <button class="footer-btn">プライバシーポリシー</button>
       </div>

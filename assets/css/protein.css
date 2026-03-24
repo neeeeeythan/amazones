@@ -4,6 +4,11 @@
 
 .p-protein__content {
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   /* padding: 7rem 0; */
 }
 
@@ -99,6 +104,11 @@
   width: 100%;
 }
 
+.p-protein__points-track {
+  width: 100%;
+  display: flex;
+  gap: 40px;                   /* gap-40px */
+}
 .p-protein__points-nav {
   display: none;
 }
@@ -1054,3 +1064,4 @@
 
   /* プロテインフレーバーカード終了 */
 }
+.online-shop-desc { display: flex; flex-direction: column; gap: 52px; position: relative; }

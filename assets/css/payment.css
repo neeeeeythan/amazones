@@ -189,7 +189,10 @@
   font-weight: 700;
   color: var(--text-black1);
 }
-
+.p-payment__about-figure {
+  display: flex;
+  gap: 50px;                   /* gap-50px */
+}
 .p-payment__about-subheader {
   width: 15rem;
   background-color: var(--base-lightBlue);
@@ -373,7 +376,7 @@
   .p-payment__about-subheader {
     width: 100%;
   }
-  .p-payment__about-figure {
+  .p-payment__about-figure { /* gap-50px override for SP */
     flex-direction: column;
     gap: 1.5rem;
   }

@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <base href="/amazones/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -31,9 +31,9 @@
     <!--ヘッダー-->
     <header class="I-header">
       <div
-        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+        class="I-header-wrapper"
       >
-        <div class="flex flex-row items-center flex-1 gap-24px">
+        <div class="l-header__brand">
           <a href="./">
             <img
               src="assets/img/common/icon_logo.svg"
@@ -51,18 +51,18 @@
           </p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions">
           <a
             href="storelist/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="header-btn"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
@@ -76,15 +76,15 @@
 
           <a
             href="reservation/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="header-btn header-btn--reservation"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
@@ -104,11 +104,11 @@
         <!--フローティングヘッダーメニュー-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="header-floating-menu"
         >
           <div
             id="floating-menu-btn"
-            class="flex flex-col items-center gap-13px"
+            class="floating-menu-btn"
           >
             <img
               src="assets/img/common/icon_menu.svg"
@@ -165,17 +165,17 @@
           </div>
 
           <div id="nav-menu-popup" class="nav-menu-popup">
-            <div class="flex flex-row justify-between w-full">
+            <div class="nav-menu-popup__columns">
               <!-- 会社について -->
-              <div class="flex flex-col gap-30px">
+              <div class="nav-menu-popup__section">
                 <div
-                  class="footer-page-link flex flex-row justify-between items-center relative"
+                  class="footer-page-link"
                 >
                   <p class="font-outfit fs-18 fw-500">About Us</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="./" class="fw-500 fs-15">トップページ</a>
                   <a href="#" class="fw-500 fs-15">お知らせ</a>
                   <a href="column/" class="fw-500 fs-15"
@@ -213,16 +213,16 @@
               </div>
 
               <!-- サービス + 採用情報 -->
-              <div class="flex flex-col gap-60px">
-                <div class="flex flex-col gap-30px">
+              <div class="nav-menu-popup__group">
+                <div class="nav-menu-popup__section">
                   <div
-                    class="footer-page-link flex flex-row justify-between items-center relative"
+                    class="footer-page-link"
                   >
                     <p class="font-outfit fs-18 fw-500">Service</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                     <div class="footer-link-line"></div>
                   </div>
-                  <div class="flex flex-col gap-25px items-start">
+                  <div class="nav-menu-popup__links">
                     <a href="about/" class="fw-500 fs-15"
                       >女性専用24時間ジム</a
                     >
@@ -235,15 +235,15 @@
                     <a href="#" class="fw-500 fs-15">AI姿勢診断・改善</a>
                   </div>
                 </div>
-                <div class="flex flex-col gap-30px">
+                <div class="nav-menu-popup__section">
                   <div
-                    class="footer-page-link flex flex-row justify-between items-center relative"
+                    class="footer-page-link"
                   >
                     <p class="font-outfit fs-18 fw-500">Recruitment</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                     <div class="footer-link-line"></div>
                   </div>
-                  <div class="flex flex-col gap-25px items-start">
+                  <div class="nav-menu-popup__links">
                     <a href="#" class="footer-icon-link fw-500 fs-15"
                       >採用情報
                       <img
@@ -255,16 +255,16 @@
               </div>
 
               <!-- 他店舗 + SNS -->
-              <div class="flex flex-col gap-60px">
-                <div class="flex flex-col gap-30px">
+              <div class="nav-menu-popup__group">
+                <div class="nav-menu-popup__section">
                   <div
-                    class="footer-page-link flex flex-row justify-between items-center relative"
+                    class="footer-page-link"
                   >
                     <p class="font-outfit fs-18 fw-500">Other Shops</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                     <div class="footer-link-line"></div>
                   </div>
-                  <div class="flex flex-col gap-25px items-start">
+                  <div class="nav-menu-popup__links">
                     <a href="#" class="footer-icon-link fw-500 fs-15"
                       >完全個室PRIVATE GYM Highness
                       <img
@@ -285,15 +285,15 @@
                     /></a>
                   </div>
                 </div>
-                <div class="flex flex-col gap-30px">
+                <div class="nav-menu-popup__section">
                   <div
-                    class="footer-page-link flex flex-row justify-between items-center relative"
+                    class="footer-page-link"
                   >
                     <p class="font-outfit fs-18 fw-500">Sns</p>
                     <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                     <div class="footer-link-line"></div>
                   </div>
-                  <div class="flex flex-col gap-25px items-start">
+                  <div class="nav-menu-popup__links">
                     <a href="#" class="footer-icon-link fw-500 fs-15"
                       ><img
                         src="assets/img/common/icon_youtube.svg"
@@ -318,8 +318,8 @@
             </div>
 
             <!-- 下部行 -->
-            <div class="flex flex-col w-full gap-20px">
-              <div class="flex flex-row gap-20px">
+            <div class="nav-menu-popup__bottom" style="gap: 20px">
+              <div class="nav-menu-popup__bottom-btns">
                 <a
                   href="contact/"
                   class="btn-light-blue footer-blue-btn"
@@ -332,7 +332,7 @@
                   <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
                 </a>
               </div>
-              <div class="flex flex-row gap-40px flex-wrap">
+              <div class="nav-menu-popup__bottom-links">
                 <a href="#" class="footer-icon-link fw-500 fs-14"
                   >運営会社について
                   <img
@@ -568,10 +568,10 @@
       <!-- オープニング -->
       <section class="c-section_white">
         <div
-          class="p-protein__content c-maxWidth py-100 flex flex-col gap-100px"
+          class="p-protein__content c-maxWidth"
         >
           <!-- 01 -->
-          <div class="flex gap-30px">
+          <div class="c-flex-gap-30">
             <!-- テキストブロック -->
             <div class="p-protein__campaign-block font-zen reveal">
               <div class="p-protein__campaign-header">
@@ -589,7 +589,7 @@
                   width="100%"
                 />
               </div>
-              <div class="font-zen flex flex-col gap-4 fw-500">
+              <div class="font-zen c-flex-col-gap-4 fw-500">
                 <p class="text-lightBlue">
                   ● プロテインは、美容にこそ必要な栄養です
                 </p>
@@ -617,7 +617,7 @@
           </div>
 
           <!-- 02 -->
-          <div class="flex flex-col gap-30px reveal">
+          <div class="c-section__stack-50 reveal" style="gap:30px">
             <!-- サブ -->
             <div class="p-protein__opening-gray-container">
               <img
@@ -634,7 +634,7 @@
                 class="p-protein__opening-cutout"
               />
             </div>
-            <div class="flex flex-col gap-4 fw-500 lh-150">
+            <div class="c-flex-col-gap-4 fw-500 lh-150">
               <p class="font-zen">
                 全国に展開する女性専用24時間ジムAmazones（アマゾネス）が、女性たちの“リアルな悩み”に向き合いながら開発したのが、このオリジナルプロテインです。
               </p>
@@ -673,7 +673,7 @@
                 </svg>
               </button>
 
-              <div class="w-full flex gap-40px p-protein__points-track">
+              <div class="p-protein__points-track">
                 <!-- ポイント1 -->
                 <div class="p-protein__point-card reveal-scale">
                   <svg
@@ -698,7 +698,7 @@
                   <h4 class="font-outfit text-lightBlue fs-24 fw-600">
                     Point01
                   </h4>
-                  <div class="flex flex-col items-center gap-4 fs-16 fw-500">
+                  <div class="c-flex-col-centered-4 fs-16 fw-500">
                     <p>1杯で1日に必要なタンパク質とビタミンが</p>
                     <p>しっかり摂れる</p>
                   </div>
@@ -714,7 +714,7 @@
                   <h4 class="font-outfit text-lightBlue fs-24 fw-600">
                     Point02
                   </h4>
-                  <div class="flex flex-col items-center gap-4 fs-16 fw-500">
+                  <div class="c-flex-col-centered-4 fs-16 fw-500">
                     <p>忙しい朝やトレーニング後でも</p>
                     <p>5秒でサッと飲める手軽さ</p>
                   </div>
@@ -744,7 +744,7 @@
                   <h4 class="font-outfit text-lightBlue fs-24 fw-600">
                     Point03
                   </h4>
-                  <div class="flex flex-col items-center gap-4 fs-16 fw-500">
+                  <div class="c-flex-col-centered-4 fs-16 fw-500">
                     <p>カロリーは抑えつつ</p>
                     <p>ご褒美のような美味しさを実現</p>
                   </div>
@@ -783,15 +783,15 @@
       </section>
 
       <!-- フレーバーセクション -->
-      <section class="c-section_lightBlue py-100">
+      <section class="c-section_lightBlue c-section_lightBlue--padded">
         <div class="p-protein__about c-maxWidth">
           <!-- タイトル -->
-          <div class="flex items-center gap-70px pb-50">
+          <div class="c-section__header-row" style="gap:70px;padding-bottom:50px">
             <div class="p-protein__section-header reveal">
               <p class="font-zen">続けたくなる3つの味</p>
               <h2 class="font-outfit reveal">Flavor</h2>
             </div>
-            <div class="flex gap-3 items-center mt-50 reveal">
+            <div class="c-section__sub-text reveal" style="gap:0.75rem">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -823,7 +823,7 @@
                   />
                 </g>
               </svg>
-              <div class="flex flex-col gap-30px">
+              <div class="nav-menu-popup__section">
                 <h3 class="font-zen" style="font-size: 1.25rem">
                   ただ飲めるだけじゃない、
                 </h3>
@@ -833,10 +833,10 @@
               </div>
             </div>
           </div>
-          <div class="w-full flex gap-4 reveal-scale">
+          <div class="c-flex-gap-4 reveal-scale" style="width:100%">
             <!-- カード1 -->
             <div
-              class="bg-white flex flex-col"
+              class="c-card-white-flex1" style="flex:unset"
               style="height: fit-content; width: fit-content"
             >
               <div class="p-protein__card-header--light-blue">
@@ -844,7 +844,7 @@
               </div>
               <div class="p-protein__card-body reveal-scale">
                 <!-- チェック1 -->
-                <div class="flex items-center gap-3">
+                <div class="c-section__header-row" style="gap:0.75rem">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -861,7 +861,7 @@
                   <p class="font-zen fs-16 fw-600">食事の置き換えとして</p>
                 </div>
                 <!-- チェック2 -->
-                <div class="flex items-center gap-3">
+                <div class="c-section__header-row" style="gap:0.75rem">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -880,7 +880,7 @@
                   </p>
                 </div>
                 <!-- チェック3 -->
-                <div class="flex items-center gap-3">
+                <div class="c-section__header-row" style="gap:0.75rem">
                   <svg
                     version="1.2"
                     xmlns="http://www.w3.org/2000/svg"
@@ -901,9 +901,9 @@
           </div>
         </div>
         <!-- フレーバー -->
-        <div class="flex flex-col gap-50px" style="margin-top: 10rem">
+        <div class="c-section__stack-50" style="margin-top: 10rem">
           <!-- りんご -->
-          <div class="w-100 flex mb-100">
+          <div class="c-row-mb-100">
             <!-- 画像 -->
             <div class="relative">
               <!-- 人物02 モバイル SP -->
@@ -946,12 +946,12 @@
                   class="p-protein__img-pattern"
                 />
 
-                <div class="flex flex-col gap-30px">
+                <div class="nav-menu-popup__section">
                   <h2 class="font-outfit fw-700 text-red">
                     アップルフレーバー
                   </h2>
 
-                  <div class="flex gap-50px">
+                  <div class="c-flex-gap-50">
                     <!-- 栄養成分 -->
                     <div class="p-protein__flavor-nutrition">
                       <div class="p-protein__flavor-header mb-10 bg-red">
@@ -1005,7 +1005,7 @@
                       <!-- 項目1 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">甘味</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">ひかえめ</p>
                           <p class="font-zen fw-500 text-red">★★★☆☆</p>
                           <p class="font-zen fw-500">しっかり</p>
@@ -1014,7 +1014,7 @@
                       <!-- 項目2 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">酸味</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">まろやか</p>
                           <p class="font-zen fw-500 text-red">★★☆☆☆</p>
                           <p class="font-zen fw-500">酸味あり</p>
@@ -1023,7 +1023,7 @@
                       <!-- 項目3 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">キレ</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">まろやか</p>
                           <p class="font-zen fw-500 text-red">★★☆☆☆</p>
                           <p class="font-zen fw-500">キレあり</p>
@@ -1032,13 +1032,13 @@
                       <!-- 項目4 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">まろやかさ</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">すっきり</p>
                           <p class="font-zen fw-500 text-red">★☆☆☆☆</p>
                           <p class="font-zen fw-500">まろやか</p>
                         </div>
                       </div>
-                      <div class="flex flex-col justify-end items-end flex-1">
+                      <div class="c-flex-col-end">
                         <button
                           class="btn-light-blue02 cursor-pointer"
                           onclick="openIngredientsModalApple()"
@@ -1075,7 +1075,7 @@
           </div>
 
           <!-- もも -->
-          <div class="w-100 flex justify-end mb-100">
+          <div class="c-row-mb-100" style="justify-content:flex-end">
             <!-- 画像 -->
             <div class="relative">
               <img
@@ -1092,12 +1092,12 @@
                   class="p-protein__img-pattern"
                 />
 
-                <div class="flex flex-col gap-30px">
+                <div class="nav-menu-popup__section">
                   <h2 class="font-outfit fw-700 text-peach">
                     ピーチフレーバー
                   </h2>
 
-                  <div class="flex gap-50px">
+                  <div class="c-flex-gap-50">
                     <!-- 栄養成分 -->
                     <div class="p-protein__flavor-nutrition">
                       <div class="p-protein__flavor-header bg-peach mb-10">
@@ -1149,7 +1149,7 @@
                       <!-- 項目1 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">甘味</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">ひかえめ</p>
                           <p class="font-zen fw-500 text-peach">★★★★☆</p>
                           <p class="font-zen fw-500">しっかり</p>
@@ -1158,7 +1158,7 @@
                       <!-- 項目2 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">酸味</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">まろやか</p>
                           <p class="font-zen fw-500 text-peach">★★★☆☆</p>
                           <p class="font-zen fw-500">酸味あり</p>
@@ -1167,7 +1167,7 @@
                       <!-- 項目3 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">キレ</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">まろやか</p>
                           <p class="font-zen fw-500 text-peach">★★☆☆☆</p>
                           <p class="font-zen fw-500">キレあり</p>
@@ -1176,13 +1176,13 @@
                       <!-- 項目4 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">まろやかさ</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">すっきり</p>
                           <p class="font-zen fw-500 text-peach">★☆☆☆☆</p>
                           <p class="font-zen fw-500">まろやか</p>
                         </div>
                       </div>
-                      <div class="flex flex-col justify-end items-end flex-1">
+                      <div class="c-flex-col-end">
                         <button
                           class="btn-light-blue02 cursor-pointer"
                           onclick="openIngredientsModalPeach()"
@@ -1219,7 +1219,7 @@
           </div>
 
           <!-- チョコレート -->
-          <div class="w-100 flex mb-100">
+          <div class="c-row-mb-100">
             <!-- 画像 -->
             <div class="relative">
               <img
@@ -1236,12 +1236,12 @@
                   class="p-protein__img-pattern"
                 />
 
-                <div class="flex flex-col gap-30px">
+                <div class="nav-menu-popup__section">
                   <h2 class="font-outfit fw-700 text-brown">
                     チョコレートフレーバー
                   </h2>
 
-                  <div class="flex gap-50px">
+                  <div class="c-flex-gap-50">
                     <!-- 栄養成分 -->
                     <div class="p-protein__flavor-nutrition">
                       <div class="p-protein__flavor-header mb-10 bg-brown">
@@ -1295,7 +1295,7 @@
                       <!-- 項目1 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">甘味</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">ひかえめ</p>
                           <p class="font-zen fw-500 text-brown">★★★★☆</p>
                           <p class="font-zen fw-500">しっかり</p>
@@ -1304,7 +1304,7 @@
                       <!-- 項目2 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">酸味</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">まろやか</p>
                           <p class="font-zen fw-500 text-brown">☆☆☆☆☆</p>
                           <p class="font-zen fw-500">酸味あり</p>
@@ -1313,7 +1313,7 @@
                       <!-- 項目3 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">キレ</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">まろやか</p>
                           <p class="font-zen fw-500 text-brown">☆☆☆☆☆</p>
                           <p class="font-zen fw-500">キレあり</p>
@@ -1322,13 +1322,13 @@
                       <!-- 項目4 -->
                       <div class="p-protein__flavor-item">
                         <p class="font-zen text-lightBlue fw-600">まろやかさ</p>
-                        <div class="flex gap-4">
+                        <div class="c-flex-gap-4">
                           <p class="font-zen fw-500">すっきり</p>
                           <p class="font-zen fw-500 text-brown">★★★★☆</p>
                           <p class="font-zen fw-500">まろやか</p>
                         </div>
                       </div>
-                      <div class="flex flex-col justify-end items-end flex-1">
+                      <div class="c-flex-col-end">
                         <button
                           class="btn-light-blue02 cursor-pointer"
                           onclick="openIngredientsModalChocolate()"
@@ -1364,10 +1364,10 @@
           </div>
         </div>
         <!-- 追加テキスト -->
-        <div class="c-maxWidth pt-50">
-          <div class="flex w-full gap-30px">
+        <div class="c-maxWidth" style="padding-top:50px">
+          <div class="c-flex-gap-30" style="width:100%">
             <!-- カード1 -->
-            <div class="flex flex-col bg-white flex-1">
+            <div class="c-card-white-flex1">
               <!-- ヘッダー -->
               <div class="p-protein__quality-header">
                 <p class="font-zen lh-150 text-lightBlue fw-700">
@@ -1383,14 +1383,14 @@
               </div>
               <!-- 本文 -->
               <div
-                class="p-protein__quality-body gap-4 font-zen lh-150 reveal-scale"
+                class="p-protein__quality-body font-zen lh-150 reveal-scale" style="gap:1rem"
               >
                 <p class="fw-500">
                   製造時には何度も品質チェックを重ね、厳選した素材のみを使用しています
                 </p>
-                <div class="flex flex-col gap-4">
+                <div class="c-flex-col-gap-4">
                   <!-- チェック1 -->
-                  <div class="flex items-center gap-3">
+                  <div class="c-section__header-row" style="gap:0.75rem">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1409,7 +1409,7 @@
                     </p>
                   </div>
                   <!-- チェック2 -->
-                  <div class="flex items-center gap-3">
+                  <div class="c-section__header-row" style="gap:0.75rem">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1428,7 +1428,7 @@
                     </p>
                   </div>
                   <!-- チェック3 -->
-                  <div class="flex items-center gap-3">
+                  <div class="c-section__header-row" style="gap:0.75rem">
                     <svg
                       version="1.2"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1455,7 +1455,7 @@
             </div>
 
             <!-- カード2 -->
-            <div class="flex flex-col bg-white flex-1">
+            <div class="c-card-white-flex1">
               <!-- ヘッダー -->
               <div class="p-protein__quality-header">
                 <p class="font-zen lh-150 text-lightBlue fw-700">
@@ -1471,7 +1471,7 @@
               </div>
               <!-- 本文 -->
               <div
-                class="p-protein__quality-body gap-30px font-zen lh-150 reveal-scale"
+                class="p-protein__quality-body font-zen lh-150 reveal-scale"
               >
                 <p class="fw-500">
                   髪のパサつき、肌荒れ、爪の割れやすさ…それらは、タンパク質不足のサインかもしれません。
@@ -1514,8 +1514,8 @@
             <h2 class="font-outfit reveal">Faq</h2>
           </div>
           <!-- よくある質問リスト -->
-          <div class="flex flex-col gap-40px py-50">
-            <div class="faq-container w-full">
+          <div class="c-section__stack-40" style="padding-top:50px;padding-bottom:50px">
+            <div class="faq-container">
               <div class="reveal c-faq__accordion">
                 <input
                   type="checkbox"
@@ -1523,7 +1523,7 @@
                   class="c-faq__container__toggle"
                 />
                 <label for="p-q1" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img
                       src="assets/img/faq/icon_q.svg"
                       alt="Q"
@@ -1539,7 +1539,7 @@
                 </label>
                 <div class="c-faq__accordion_inner">
                   <div
-                    class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    class="c-faq__accordion_box"
                   >
                     <img
                       src="assets/img/faq/icon_a.svg"
@@ -1560,7 +1560,7 @@
                   class="c-faq__container__toggle"
                 />
                 <label for="p-q2" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img
                       src="assets/img/faq/icon_q.svg"
                       alt="Q"
@@ -1576,7 +1576,7 @@
                 </label>
                 <div class="c-faq__accordion_inner">
                   <div
-                    class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    class="c-faq__accordion_box"
                   >
                     <img
                       src="assets/img/faq/icon_a.svg"
@@ -1597,7 +1597,7 @@
                   class="c-faq__container__toggle"
                 />
                 <label for="p-q3" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img
                       src="assets/img/faq/icon_q.svg"
                       alt="Q"
@@ -1613,7 +1613,7 @@
                 </label>
                 <div class="c-faq__accordion_inner">
                   <div
-                    class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    class="c-faq__accordion_box"
                   >
                     <img
                       src="assets/img/faq/icon_a.svg"
@@ -1634,7 +1634,7 @@
                   class="c-faq__container__toggle"
                 />
                 <label for="p-q4" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img
                       src="assets/img/faq/icon_q.svg"
                       alt="Q"
@@ -1648,7 +1648,7 @@
                 </label>
                 <div class="c-faq__accordion_inner">
                   <div
-                    class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                    class="c-faq__accordion_box"
                   >
                     <img
                       src="assets/img/faq/icon_a.svg"
@@ -1667,15 +1667,15 @@
       </section>
 
       <!-- 購入 -->
-      <section class="c-section_lightBlue py-100">
+      <section class="c-section_lightBlue c-section_lightBlue--padded">
         <div class="c-maxWidth">
           <!-- タイトル -->
-          <div class="flex items-center gap-70px pb-50">
+          <div class="c-section__header-row" style="gap:70px;padding-bottom:50px">
             <div class="p-protein__section-header">
               <p class="font-zen">ご購入はこちらから</p>
               <h2 class="font-outfit reveal">Buy Now</h2>
             </div>
-            <div class="flex gap-3 items-end mt-50 reveal">
+            <div class="reveal" style="display:flex;gap:0.75rem;align-items:flex-end;margin-top:50px">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1695,16 +1695,16 @@
                 />
               </svg>
 
-              <h3 class="font-zen pb-10 lh-150" style="font-size: 1.25rem">
+              <h3 class="font-zen lh-150" style="padding-bottom:10px" style="font-size: 1.25rem">
                 Amazones公式オンラインショップで販売中！
               </h3>
             </div>
           </div>
           <!-- リスト -->
-          <div class="flex gap-30px">
+          <div class="c-flex-gap-30">
             <!-- フレーバー1 -->
             <div
-              class="bg-white flex flex-col justify-center items-center px-40 py-70 gap-25px flex-1 reveal-scale"
+              class="c-card-white-centered reveal-scale"
             >
               <img
                 src="assets/img/protein/img_protein_flavor01.webp"
@@ -1741,7 +1741,7 @@
 
             <!-- フレーバー2 -->
             <div
-              class="bg-white flex flex-col justify-center items-center px-40 py-70 gap-25px flex-1 reveal-scale"
+              class="c-card-white-centered reveal-scale"
             >
               <img
                 src="assets/img/protein/img_protein_flavor02.webp"
@@ -1778,7 +1778,7 @@
 
             <!-- フレーバー3 -->
             <div
-              class="bg-white flex flex-col justify-center items-center px-40 py-70 gap-25px flex-1 reveal-scale"
+              class="c-card-white-centered reveal-scale"
             >
               <img
                 src="assets/img/protein/img_protein_flavor03.webp"
@@ -1833,14 +1833,14 @@
             class="p-protein__img-pattern--2"
           />
 
-          <div class="flex flex-col gap-40px reveal">
+          <div class="c-section__stack-40 reveal">
             <h2 class="font-outfit fw-400 fs-60 lh-100">
               Amazones Online Shop
             </h2>
             <p class="font-zen fw-600 lh-150">
               女性の健康と美を支えるショップサイト
             </p>
-            <div class="flex flex-col gap-4 fw-500">
+            <div class="c-flex-col-gap-4 fw-500">
               <p class="font-zen lh-150">
                 「女性の輝く未来をつくりたい」というスローガンのもと、
               </p>
@@ -2073,10 +2073,10 @@
       </section>
 
 
-    <aside class="cookie-notice flex flex-row items-center gap-15px py-15 px-120 bg-base-black1 ">
+    <aside class="cookie-notice">
       <p class="fw-400 fs-14 text-white lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
-      <div class="flex flex-row gap-10px">
+      <div class="cookie-notice__buttons">
         <button class="footer-btn">OK</button>
         <button class="footer-btn">プライバシーポリシー</button>
       </div>

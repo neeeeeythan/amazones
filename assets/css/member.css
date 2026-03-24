@@ -169,3 +169,9 @@
 
 
 
+.p-member-header-row {
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+  align-items: center;
+}

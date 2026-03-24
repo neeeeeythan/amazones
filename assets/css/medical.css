@@ -176,6 +176,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .p-medical__lineup-item {
@@ -1064,3 +1066,13 @@
   }
   /* ユーティリティオーバーライド終了 */
 }
+.p-medical__engagement-row { display: flex; align-items: center; justify-content: center; gap: 90px; }
+.p-medical__partners-list { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 50px; }
+.p-medical__engagement-tagline { display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+.p-medical__lineup-header { display: flex; align-items: center; gap: 70px; }
+.p-medical__how-to-use-title { display: flex; align-items: center; gap: 70px; }
+.p-medical__voice-header { display: flex; align-items: center; gap: 70px; padding-bottom: 100px; }
+.p-medical__partners-right { flex: 1 1 0%; display: flex; align-items: center; justify-content: center; }
+.p-medical__partners-row { display: flex; gap: 100px; }
+.p-medical__engagement-right { display: flex; flex-direction: column; width: fit-content; gap: 1rem; }
+.p-medical__engagement-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }

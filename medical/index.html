@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <base href="/amazones/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -30,8 +30,8 @@
   <body>
     <!--ヘッダー-->
     <header class="I-header">
-      <div class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
-        <div class="flex flex-row items-center flex-1 gap-24px">
+      <div class="I-header-wrapper">
+        <div class="l-header__brand">
           <a href="./">
             <img
               src="assets/img/common/icon_logo.svg"
@@ -45,18 +45,18 @@
           <p class="header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions">
           <a
             href="storelist/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="header-btn"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
@@ -66,15 +66,15 @@
 
           <a
             href="reservation/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="header-btn header-btn--reservation"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
@@ -90,11 +90,11 @@
        <!--フローティングヘッダーメニュー-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="header-floating-menu"
         >
         <div
           id="floating-menu-btn"
-          class="flex flex-col items-center gap-13px"
+          class="floating-menu-btn"
         >
           <img src="assets/img/common/icon_menu.svg" alt="アイコン" class="desktop-menu-icon" />
           <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
@@ -121,7 +121,7 @@
               ©2026 Wellness Land Co., Ltd.
             </p>
           </div>
-          <div id="scroll-down-text" class="flex flex-col items-center gap-8px justify-center bg-base-black1">
+          <div id="scroll-down-text" class="scroll-down-text">
             <p class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover">
               SCROLL DOWN
             </p>
@@ -133,16 +133,16 @@
           </div>
         
         <div id="nav-menu-popup" class="nav-menu-popup">
-          <div class="flex flex-row justify-between w-full">
+          <div class="nav-menu-popup__columns">
 
             <!-- 会社について -->
-            <div class="flex flex-col gap-30px">
-              <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__section">
+              <div class="footer-page-link">
                 <p class="font-outfit fs-18 fw-500">About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                 <div class="footer-link-line"></div>
               </div>
-              <div class="flex flex-col gap-25px items-start">
+              <div class="nav-menu-popup__links">
                 <a href="./" class="fw-500 fs-15">トップページ</a>
                 <a href="#" class="fw-500 fs-15">お知らせ</a>
                 <a href="column/" class="fw-500 fs-15">ゾネスタイムズ</a>
@@ -158,53 +158,53 @@
             </div>
 
             <!-- サービス + 採用情報 -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="about/" class="fw-500 fs-15">女性専用24時間ジム</a>
                   <a href="personal/" class="fw-500 fs-15">Amazonesのパーソナルトレーニング</a>
                   <a href="medical/" class="fw-500 fs-15">Dr.Amazones</a>
                   <a href="#" class="fw-500 fs-15">AI姿勢診断・改善</a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
             </div>
 
             <!-- 他店舗 + SNS -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="mr-5" />Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="mr-5" />Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
@@ -214,8 +214,8 @@
           </div>
 
           <!-- 下部行 -->
-          <div class="flex flex-col w-full gap-20px">
-            <div class="flex flex-row gap-20px">
+          <div class="nav-menu-popup__bottom" style="gap: 20px">
+            <div class="nav-menu-popup__bottom-btns">
               <a href="contact/" class="btn-light-blue footer-blue-btn">
                 <p class="text-white fs-16 font-outfit">お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
@@ -225,7 +225,7 @@
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
               </a>
             </div>
-            <div class="flex flex-row gap-40px flex-wrap">
+            <div class="nav-menu-popup__bottom-links">
               <a href="#" class="footer-icon-link fw-500 fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
               <a href="sitemap/" class="fw-500 fs-14">サイトマップ</a>
               <a href="#" class="fw-500 fs-14">ご利用規約</a>
@@ -360,8 +360,8 @@
             </div>
           </div>
 
-          <div class="c-hero-slider__title flex flex-col gap-15px">
-            <div class="flex flex-col gap-10px items-start">
+          <div class="c-hero-slider__title">
+            <div class="c-flex-col-start-10">
               <img src="assets/img/common/img_drAmazones_logo.png" alt="[提携医療機関]  東京銀座 NEW AGE CLINIC" class  = 'p-medical__banner-logo--pc'>
               <h1 class="reveal font-zen fw-500 text-white fs-39 lh-160">
                 
@@ -393,17 +393,17 @@
         </section>
 
       <!-- エンゲージメント -->
-      <section class="c-section_white py-100">
+      <section class="c-section_white c-section_white--padded">
         <div class="c-maxWidth">
           <div
-            class="flex items-center justify-center gap-90px p-medical__engagement-row"
+            class="p-medical__engagement-row"
           >
             <!-- 左 -->
             <div
-              class="flex flex-col items-start gap-4 p-medical__engagement-logo reveal"
+              class="p-medical__engagement-logo reveal"
             >
               <p class="font-zen fw-600">ドクターアマゾネス</p>
-              <div class="flex flex-col items-end">
+              <div class="c-flex-col-end" style="flex:unset;justify-content:unset">
                 <h5 class="font-zen fw-500 fs-16">
                   [提携医療機関] 東京銀座 NEW AGE CLINIC
                 </h5>
@@ -431,10 +431,10 @@
             </div>
             <!-- 右 -->
             <div
-              class="flex flex-col w-fit-content gap-4 p-medical__engagement-right reveal"
+              class="p-medical__engagement-right reveal"
             >
               <div
-                class="flex items-center justify-center gap-3 p-medical__engagement-tagline"
+                class="p-medical__engagement-tagline"
               >
                 <svg
                   version="1.2"
@@ -469,8 +469,8 @@
                   />
                 </svg>
               </div>
-              <div class="bg-lightBlue flex items-center justify-center w-100">
-                <p class="text-white fs-16 font-zen py-10 fw-700">
+              <div class="c-label-lightBlue" style="width:100%">
+                <p class="text-white fs-16 font-zen fw-700" style="padding-top:10px;padding-bottom:10px">
                   すべてLINEで完結する
                 </p>
               </div>
@@ -486,13 +486,13 @@
       <section class="p-medical__online-consultation-banner">
         <!-- コンテンツ -->
         <div
-          class="c-maxWidth flex flex-col justify-center"
+          class="c-maxWidth" style="display:flex;flex-direction:column;justify-content:center"
           style="height: 100%"
         >
-          <div class="flex flex-col gap-4">
+          <div class="c-flex-col-gap-4">
             <!-- PC -->
             <div class="p-medical__online-consult-heading--lg reveal">
-              <div class="bg-white w-fit-content px-30 py-20">
+              <div class="c-badge-white">
                 <p class="font-zen text-lightBlue fs-24 fw-600 lh-100">
                   アプリ不要・スマホで簡単に完結
                 </p>
@@ -500,12 +500,12 @@
             </div>
             <!-- モバイル -->
             <div class="p-medical__online-consult-heading--sp reveal">
-              <div class="bg-white w-fit-content px-30 py-20">
+              <div class="c-badge-white">
                 <p class="font-zen text-lightBlue fs-24 fw-600 lh-100">
                   アプリ不要・スマホで
                 </p>
               </div>
-              <div class="bg-white w-fit-content px-30 py-20">
+              <div class="c-badge-white">
                 <p class="font-zen text-lightBlue fs-24 fw-600 lh-100">
                   簡単に完結
                 </p>
@@ -526,10 +526,10 @@
       </section>
 
       <!-- パートナー -->
-      <section class="c-section_white py-100">
-        <div class="flex c-maxWidth gap-100px p-medical__partners-row">
+      <section class="c-section_white c-section_white--padded">
+        <div class="c-maxWidth p-medical__partners-row">
           <!-- 左 -->
-          <div class="flex flex-col items-center flex-1 reveal-left">
+          <div class="reveal-left" style="display:flex;flex-direction:column;align-items:center;flex:1 1 0%">
             <!-- ロゴ -->
             <div class="p-medical__partners-logo-row">
               <div class="relative">
@@ -577,9 +577,9 @@
             </div>
             <!-- リスト -->
             <div
-              class="flex items-center justify-center gap-4 mb-50 p-medical__partners-list"
+              class="p-medical__partners-list"
             >
-              <div class="flex flex-col items-center justify-center gap-4">
+              <div class="c-flex-col-centered-4">
                 <div class="p-medical__list-box">
                   <svg
                     version="1.2"
@@ -599,7 +599,7 @@
                 <p class="font-zen fs-14 fw-600">ダイエット</p>
               </div>
 
-              <div class="flex flex-col items-center justify-center gap-4">
+              <div class="c-flex-col-centered-4">
                 <div class="p-medical__list-box">
                   <svg
                     version="1.2"
@@ -624,7 +624,7 @@
                 <p class="font-zen fs-14 fw-600">美容内服</p>
               </div>
 
-              <div class="flex flex-col items-center justify-center gap-4">
+              <div class="c-flex-col-centered-4">
                 <div class="p-medical__list-box">
                   <svg
                     version="1.2"
@@ -644,7 +644,7 @@
                 <p class="font-zen fs-14 fw-600">再生美容幹細胞</p>
               </div>
 
-              <div class="flex flex-col items-center justify-center gap-4">
+              <div class="c-flex-col-centered-4">
                 <div class="p-medical__list-box">
                   <svg
                     version="1.2"
@@ -677,7 +677,7 @@
                 <p class="font-zen fs-14 fw-600">フェムテック</p>
               </div>
 
-              <div class="flex flex-col items-center justify-center gap-4">
+              <div class="c-flex-col-centered-4">
                 <div class="p-medical__list-box">
                   <svg
                     version="1.2"
@@ -699,7 +699,7 @@
             </div>
             <!-- テキスト -->
             <div
-              class="flex flex-col gap-2 items-center justify-center mb-50 lh-150"
+              class="c-flex-col-centered-2 lh-150" style="margin-bottom:50px"
             >
               <p class="font-zen fw-500">
                 医師によるオンライン診療。あなたのサロンと提携。
@@ -712,7 +712,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col gap-40px">
+            <div class="c-section__stack-40">
               <h3 class="font-zen fs-36 fw-700 text-black1">
                 大切なのは、正しい処方。
               </h3>
@@ -724,7 +724,7 @@
 
           <!-- 右 -->
           <div
-            class="flex-1 flex items-center justify-center p-medical__partners-right reveal-right"
+            class="p-medical__partners-right reveal-right"
           >
             <img
               src="assets/img/medical/img_medical02.svg"
@@ -737,17 +737,17 @@
       </section>
 
       <!-- ご利用方法 -->
-      <section class="c-section_lightBlue py-100">
+      <section class="c-section_lightBlue c-section_lightBlue--padded">
         <div class="c-maxWidth">
           <!-- タイトル -->
-          <div class="flex items-center gap-70px p-medical__how-to-use-title">
+          <div class="p-medical__how-to-use-title">
             <div class="p-medical__section-header reveal">
               <p class="font-zen">[Dr.Amazones] ご利用方法</p>
               <h2 class="font-outfit">How to Use</h2>
             </div>
 
             <!-- サブ -->
-            <div class="flex gap-3 items-center mt-50 reveal-scale">
+            <div class="c-section__sub-text reveal-scale" style="gap:0.75rem">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -765,7 +765,7 @@
                   d="m28 30.45c0-4.48-4.48-8.11-10-8.11-5.52 0-10 3.63-10 8.11 0 4.01 3.55 7.36 8.36 8 0.33 0.07 0.77 0.21 0.88 0.49 0.1 0.25 0.07 0.65 0.04 0.91 0 0-0.12 0.7-0.15 0.85-0.04 0.25-0.2 0.99 0.87 0.54 1.07-0.45 5.76-3.39 7.86-5.8 1.45-1.59 2.14-3.2 2.14-4.99zm-13.53 2.39c0 0.1-0.09 0.19-0.19 0.19h-2.81c-0.11 0-0.19-0.09-0.19-0.19v-4.36c0-0.11 0.08-0.19 0.19-0.19h0.71c0.1 0 0.19 0.08 0.19 0.19v3.46h1.91c0.1 0 0.19 0.08 0.19 0.19zm1.69 0c0 0.11-0.08 0.19-0.19 0.19h-0.71c-0.1 0-0.19-0.08-0.19-0.19v-4.36c0-0.11 0.09-0.19 0.19-0.19h0.71c0.11 0 0.19 0.08 0.19 0.19zm4.83 0c0 0.1-0.08 0.19-0.19 0.19h-0.7q-0.03 0-0.05-0.01-0.01 0-0.01 0 0 0-0.01 0 0 0-0.01 0 0-0.01-0.01-0.01 0 0 0 0-0.01 0-0.01-0.01-0.01 0-0.01 0 0 0 0 0-0.03-0.02-0.05-0.05l-2-2.7v2.59c0 0.1-0.09 0.19-0.2 0.19h-0.7c-0.11 0-0.2-0.09-0.2-0.19v-4.36c0-0.11 0.09-0.19 0.2-0.19h0.7q0 0 0.01 0 0 0 0.01 0 0 0 0.01 0 0 0 0.01 0 0 0 0.01 0 0 0 0 0 0.01 0 0.02 0.01 0 0 0 0 0.01 0 0.01 0 0.01 0.01 0.01 0.01 0 0 0.01 0 0 0 0.01 0.01 0 0 0.01 0 0 0.01 0 0.01 0.01 0 0.01 0.01 0 0 0 0 0.01 0.01 0.02 0.01 0 0 0 0 0.01 0.01 0.01 0.02l2 2.7v-2.59c0-0.11 0.09-0.19 0.19-0.19h0.71c0.11 0 0.19 0.08 0.19 0.19zm3.88-3.66c0 0.11-0.09 0.19-0.19 0.19h-1.91v0.74h1.91c0.1 0 0.19 0.09 0.19 0.19v0.71c0 0.11-0.09 0.19-0.19 0.19h-1.91v0.74h1.91c0.1 0 0.19 0.08 0.19 0.19v0.71c0 0.1-0.09 0.19-0.19 0.19h-2.81c-0.11 0-0.2-0.09-0.2-0.19v-0.01-4.35-0.01c0-0.1 0.09-0.19 0.2-0.19h2.81c0.1 0 0.19 0.09 0.19 0.19z"
                 />
               </svg>
-              <div class="flex flex-col gap-15px">
+              <div class="c-flex-col-gap-15">
                 <h3 class="font-zen lh-150" style="font-size: 1.25rem">
                   待ち時間なしであなたにピッタリのお薬を処方します
                 </h3>
@@ -949,8 +949,8 @@
                   </p>
                 </div>
                 <div class="p-medical__step-card-body reveal-scale">
-                  <div class="flex flex-col gap-3">
-                    <div class="flex gap-3 items-center">
+                  <div class="c-flex-col-gap-3">
+                    <div class="c-section__header-row" style="gap:0.75rem">
                       <!-- LINEロゴ -->
                       <svg
                         version="1.2"
@@ -1034,12 +1034,12 @@
                       />
                     </div>
                     <div
-                      class="bg-gray w-full px-30 py-15 flex items-center gap-4"
+                      class="c-bar-gray"
                     >
                       <p class="font-zen">入力コード</p>
                       <p class="font-zen fs-20">&#x203A;</p>
                       <div
-                        class="bg-white px-15 py-5 flex items-center justify-center"
+                        class="c-badge-white-sm"
                       >
                         <p class="font-zen">0123456789</p>
                       </div>
@@ -1054,10 +1054,10 @@
       </section>
 
       <!-- お客様の声 -->
-      <section class="c-section_white py-100">
+      <section class="c-section_white c-section_white--padded">
         <div class="c-maxWidth">
           <!-- タイトル -->
-          <div class="flex items-center gap-70px">
+          <div class="c-section__header-row" style="gap:70px">
             <div class="p-medical__section-header reveal">
               <p class="font-zen">ご利用者様の声</p>
               <h2 class="font-outfit">Voice</h2>
@@ -1163,7 +1163,7 @@
                 </h3>
                 <!-- 区切り線 -->
                 <div
-                  class="w-full bg-white"
+                  class="c-bg-white-full"
                   style="height: 1px; margin-bottom: 1rem"
                 ></div>
                 <p class="font-zen">
@@ -1202,17 +1202,17 @@
       </section>
 
       <!-- ラインナップ -->
-      <section class="c-section_lightBlue py-100">
+      <section class="c-section_lightBlue c-section_lightBlue--padded">
         <div class="c-maxWidth">
           <!-- タイトル -->
-          <div class="flex items-center gap-70px p-medical__lineup-header">
+          <div class="p-medical__lineup-header">
             <div class="p-medical__section-header reveal">
               <p class="font-zen">ラインナップ</p>
               <h2 class="font-outfit">Lineup</h2>
             </div>
 
             <!-- サブ -->
-            <div class="flex gap-3 items-center mt-50 reveal-scale">
+            <div class="c-section__sub-text reveal-scale" style="gap:0.75rem">
               <svg
                 version="1.2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1230,7 +1230,7 @@
                   d="m31.5 4.74c0-1.51-1.23-2.74-2.74-2.74h-18.52c-1.51 0-2.74 1.23-2.74 2.74v5.89h24v-5.89zm-14.03 42.6h4.06v-4.81h4.82v-4.05h-4.82v-4.82h-4.06v4.82h-4.82v4.05h4.82z"
                 />
               </svg>
-              <div class="flex flex-col gap-15px">
+              <div class="c-flex-col-gap-15">
                 <h3 class="font-zen lh-150" style="font-size: 1.25rem">
                   自慢の医療品質だからお客様にもご満足いただけています
                 </h3>
@@ -1251,7 +1251,7 @@
             </p>
           </div>
           <!-- ラインナップ -->
-          <div class="p-medical__lineup-grid py-50">
+          <div class="p-medical__lineup-grid">
             <!-- アイテム1 -->
             <div class="p-medical__lineup-item reveal-scale">
               <div class="p-medical__lineup-icon">
@@ -1431,13 +1431,13 @@
             <h2 class="font-outfit reveal">Faq</h2>
           </div>
           <!-- よくある質問リスト -->
-          <div class="flex flex-col gap-40px py-50">
-            <div class="faq-container w-full">
+          <div class="c-section__stack-40" style="padding-top:50px;padding-bottom:50px">
+            <div class="faq-container">
 
               <div class="reveal c-faq__accordion">
                 <input type="checkbox" id="m-q1" class="c-faq__container__toggle" />
                 <label for="m-q1" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img src="assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
                     <p class="fw-700 fs-16">保険は適用されますか？</p>
                   </div>
@@ -1446,7 +1446,7 @@
                   </div>
                 </label>
                 <div class="c-faq__accordion_inner">
-                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                  <div class="c-faq__accordion_box">
                     <img src="assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
                     <p class="fw-500 fs-16 lh-210">完全自費診療（保険外診療）のため、保険は適用されません。</p>
                   </div>
@@ -1456,7 +1456,7 @@
               <div class="reveal c-faq__accordion">
                 <input type="checkbox" id="m-q2" class="c-faq__container__toggle" />
                 <label for="m-q2" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img src="assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
                     <p class="fw-700 fs-16">他の薬と併用できますか？</p>
                   </div>
@@ -1465,7 +1465,7 @@
                   </div>
                 </label>
                 <div class="c-faq__accordion_inner">
-                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                  <div class="c-faq__accordion_box">
                     <img src="assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
                     <p class="fw-500 fs-16 lh-210">問診票に記載の上、診察時に医師にご相談ください。飲み合わせに問題のないお薬の処方を行わせていただきます。</p>
                   </div>
@@ -1475,7 +1475,7 @@
               <div class="reveal c-faq__accordion">
                 <input type="checkbox" id="m-q3" class="c-faq__container__toggle" />
                 <label for="m-q3" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img src="assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
                     <p class="fw-700 fs-16">ドラッグストアで購入できる薬との違いはなんですか？</p>
                   </div>
@@ -1484,7 +1484,7 @@
                   </div>
                 </label>
                 <div class="c-faq__accordion_inner">
-                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                  <div class="c-faq__accordion_box">
                     <img src="assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
                     <p class="fw-500 fs-16 lh-210">医療用漢方製剤が医師の診察に基づいて選ばれるのに対して、ドラッグストアなどで販売している一般用漢方製剤は、服用者自身で選び、購入することができます。<br/>しかし、一般用漢方製剤は安全性を考慮して1日の服用量中の成分量を調整しており、多くの場合においては医療用漢方薬の50～80%程度の成分量しか含まれておりません。</p>
                   </div>
@@ -1494,7 +1494,7 @@
               <div class="reveal c-faq__accordion">
                 <input type="checkbox" id="m-q4" class="c-faq__container__toggle" />
                 <label for="m-q4" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img src="assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
                     <p class="fw-700 fs-16">処方薬の効果はどのくらいで出ますか？</p>
                   </div>
@@ -1503,7 +1503,7 @@
                   </div>
                 </label>
                 <div class="c-faq__accordion_inner">
-                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                  <div class="c-faq__accordion_box">
                     <img src="assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
                     <p class="fw-500 fs-16 lh-210">2～3ヶ月使用していただくと徐々に効果があらわれます。</p>
                   </div>
@@ -1513,7 +1513,7 @@
               <div class="reveal c-faq__accordion">
                 <input type="checkbox" id="m-q5" class="c-faq__container__toggle" />
                 <label for="m-q5" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img src="assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
                     <p class="fw-700 fs-16">薬が合わなかった時は、どうしたら良いですか？</p>
                   </div>
@@ -1522,7 +1522,7 @@
                   </div>
                 </label>
                 <div class="c-faq__accordion_inner">
-                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                  <div class="c-faq__accordion_box">
                     <img src="assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
                     <p class="fw-500 fs-16 lh-210">薬が合わなかった場合は、いつでもLINEで相談できます。お薬の変更も可能です。</p>
                   </div>
@@ -1532,7 +1532,7 @@
               <div class="reveal c-faq__accordion">
                 <input type="checkbox" id="m-q6" class="c-faq__container__toggle" />
                 <label for="m-q6" class="c-faq__accordion_header">
-                  <div class="flex flex-row items-center gap-20px">
+                  <div class="c-faq__accordion_header">
                     <img src="assets/img/faq/icon_q.svg" alt="Q" class="c-faq__icon__q" />
                     <p class="fw-700 fs-16">副作用のリスクはありますか？</p>
                   </div>
@@ -1541,7 +1541,7 @@
                   </div>
                 </label>
                 <div class="c-faq__accordion_inner">
-                  <div class="c-faq__accordion_box flex flex-row items-start gap-20px">
+                  <div class="c-faq__accordion_box">
                     <img src="assets/img/faq/icon_a.svg" alt="A" class="c-faq__icon__a" />
                     <p class="fw-500 fs-16 lh-210">西洋薬のように飲み始めて数日間で治療が必要なほど大きな副作用が出るということはまれですが、吐き気や下痢といった副作用が起こる可能性はあります。</p>
                   </div>
@@ -1564,8 +1564,8 @@
             </h2>
           </div>
           <div class="c-announcement_body reveal">
-            <div class="flex flex-col gap-3">
-              <div class="flex gap-3 justify-center items-center">
+            <div class="c-flex-col-gap-3">
+              <div class="c-flex-gap-3" style="justify-content:center;align-items:center">
                 <!-- LINEロゴ -->
                 <svg
                   version="1.2"
@@ -1647,11 +1647,11 @@
                   height="60px"
                 />
               </div>
-              <div class="bg-gray w-full px-30 py-15 flex items-center gap-4">
+              <div class="c-bar-gray">
                 <p class="font-zen">入力コード</p>
                 <p class="font-zen fs-20">&#x203A;</p>
                 <div
-                  class="bg-white px-15 py-5 flex items-center justify-center"
+                  class="c-badge-white-sm"
                 >
                   <p class="font-zen">0123456789</p>
                 </div>
@@ -1695,7 +1695,7 @@
 
       <!--トップテキストスライダー-->
       <section>
-        <div class="text-slider w-full">
+        <div class="text-slider">
           <div class="slide-track">
             <div class="slide">
               <p class="font-outfit fw-300 fs-36 text-white">
@@ -1968,10 +1968,10 @@
       </section>
 
 
-    <aside class="cookie-notice flex flex-row items-center gap-15px py-15 px-120 bg-base-black1 ">
+    <aside class="cookie-notice">
       <p class="fw-400 fs-14 text-white lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
-      <div class="flex flex-row gap-10px">
+      <div class="cookie-notice__buttons">
         <button class="footer-btn">OK</button>
         <button class="footer-btn">プライバシーポリシー</button>
       </div>
@@ -1979,7 +1979,7 @@
     </aside>
     </footer>
     <!--/フッター-->
-  <div id="scroll-down-mobile" class="flex flex-col items-center gap-8px justify-center">
+  <div id="scroll-down-mobile" class="scroll-down-mobile">
     <p class="font-outfit fs-12 ls-10 fw-500 text-vertical">SCROLL DOWN</p>
     <img src="assets/img/common/icon_scroll_arrow.svg" alt="アイコン" class="ml-4" />
   </div>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <base href="/amazones/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -29,9 +29,9 @@
     <!--ヘッダー-->
     <header class="I-header">
       <div
-        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+        class="I-header-wrapper"
       >
-        <div class="flex flex-row items-center flex-1 gap-24px">
+        <div class="l-header__brand">
           <a href="./">
             <img
               src="assets/img/common/icon_logo.svg"
@@ -49,18 +49,18 @@
           </p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions">
           <a
             href="storelist/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="header-btn"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
@@ -74,15 +74,15 @@
 
           <a
             href="reservation/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="header-btn header-btn--reservation"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
@@ -102,11 +102,11 @@
         <!--フローティングヘッダーメニュー-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="header-floating-menu"
         >
           <div
             id="floating-menu-btn"
-            class="flex flex-col items-center gap-13px"
+            class="floating-menu-btn"
           >
             <img
               src="assets/img/common/icon_menu.svg"
@@ -141,16 +141,16 @@
           </div>
         
         <div id="nav-menu-popup" class="nav-menu-popup">
-          <div class="flex flex-row justify-between w-full">
+          <div class="nav-menu-popup__columns">
 
             <!-- 会社について -->
-            <div class="flex flex-col gap-30px">
-              <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__section">
+              <div class="footer-page-link">
                 <p class="font-outfit fs-18 fw-500">About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                 <div class="footer-link-line"></div>
               </div>
-              <div class="flex flex-col gap-25px items-start">
+              <div class="nav-menu-popup__links">
                 <a href="./" class="fw-500 fs-15">トップページ</a>
                 <a href="#" class="fw-500 fs-15">お知らせ</a>
                 <a href="column/" class="fw-500 fs-15">ゾネスタイムズ</a>
@@ -166,53 +166,53 @@
             </div>
 
             <!-- サービス + 採用情報 -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="about/" class="fw-500 fs-15">女性専用24時間ジム</a>
                   <a href="personal/" class="fw-500 fs-15">Amazonesのパーソナルトレーニング</a>
                   <a href="medical/" class="fw-500 fs-15">Dr.Amazones</a>
                   <a href="#" class="fw-500 fs-15">AI姿勢診断・改善</a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
             </div>
 
             <!-- 他店舗 + SNS -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="mr-5" />Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="mr-5" />Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
@@ -222,8 +222,8 @@
           </div>
 
           <!-- 下部行 -->
-          <div class="flex flex-col w-full gap-20px">
-            <div class="flex flex-row gap-20px">
+          <div class="nav-menu-popup__bottom" style="gap: 20px">
+            <div class="nav-menu-popup__bottom-btns">
               <a href="contact/" class="btn-light-blue footer-blue-btn">
                 <p class="text-white fs-16 font-outfit">お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
@@ -233,7 +233,7 @@
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
               </a>
             </div>
-            <div class="flex flex-row gap-40px flex-wrap">
+            <div class="nav-menu-popup__bottom-links">
               <a href="#" class="footer-icon-link fw-500 fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
               <a href="sitemap/" class="fw-500 fs-14">サイトマップ</a>
               <a href="#" class="fw-500 fs-14">ご利用規約</a>
@@ -376,11 +376,11 @@
       <section class="p-point">
         <article class="p-point__container">
           <!-- コンテンツ1 -->
-          <div class="p-point p-point__container__content01 w-full">
+          <div class="p-point p-point__container__content01">
             <div
-              class="p-point__container__content01-wrapper flex flex-row gap-40px"
+              class="p-point__container__content01-wrapper"
             >
-              <div class="flex gap-30px">
+              <div class="c-flex-gap-30">
                 <!-- テキストブロック -->
                 <div class="p-protein_campaign_block font-zen">
                   <div class="p-protein_campaign_header">
@@ -394,7 +394,7 @@
                   <div class="sm-block">
                     <img src="assets/img/top/img_topic3.webp" width="100%" />
                   </div>
-                  <div class="reveal font-zen flex flex-col gap-4 fw-500">
+                  <div class="reveal font-zen c-flex-col-gap-4 fw-500">
                     <p>
                       女性専用24時間ジムAmazones（アマゾネス）では、日頃のご利用への感謝を込めて、月会費に応じて当社のオンラインショップで使えるポイントを還元するサービスを開始しました。
                     </p>
@@ -420,10 +420,10 @@
           <!-- コンテンツ2 -->
           <div class="p-point p-point__container__content02">
             <div
-              class="p-point__container__content02-wrapper flex flex-col gap-77px"
+              class="p-point__container__content02-wrapper"
             >
               <hgroup
-                class="reveal section-header-wrapper flex flex-col gap-18px"
+                class="reveal section-header-wrapper"
               >
                 <p class="section-sub-text fs-18 fw-500 text-black1">
                   キャンペーン概要
@@ -435,14 +435,14 @@
                 </h2>
               </hgroup>
 
-              <div class="flex flex-col gap-50px items-start">
-                <div class="p-point__item01 w-full flex flex-row gap-60px">
+              <div class="c-section__stack-50" style="align-items:flex-start">
+                <div class="p-point__item01">
                   <!-- 左サマリー項目 -->
                   <ul
-                    class="p-point__item_summary-left w-full flex flex-col gap-50px"
+                    class="p-point__item_summary-left"
                   >
                     <li
-                      class="reveal-scale p-point__item_summary bg-white relative"
+                      class="reveal-scale p-point__item_summary"
                     >
                       <p
                         class="fs-16 fw-700 text-white p-point__item_summary_label"
@@ -454,7 +454,7 @@
                       </p>
                     </li>
                     <li
-                      class="reveal-scale p-point__item_summary bg-white relative"
+                      class="reveal-scale p-point__item_summary"
                     >
                       <p
                         class="fs-16 fw-700 text-white p-point__item_summary_label"
@@ -466,7 +466,7 @@
                       </p>
                     </li>
                     <li
-                      class="reveal-scale p-point__item_summary bg-white relative"
+                      class="reveal-scale p-point__item_summary"
                     >
                       <p
                         class="fs-16 fw-700 text-white p-point__item_summary_label"
@@ -476,7 +476,7 @@
                       <p class="fw-500 fs-16">全商品使用可能</p>
                     </li>
                     <li
-                      class="reveal-scale p-point__item_summary bg-white relative"
+                      class="reveal-scale p-point__item_summary"
                     >
                       <p
                         class="fs-16 fw-700 text-white p-point__item_summary_label"
@@ -491,13 +491,13 @@
 
                   <!-- 右サマリー - 料金表 -->
                   <div
-                    class="reveal-scale p-point__item_summary-right w-full flex flex-col gap-50px"
+                    class="reveal-scale p-point__item_summary-right"
                   >
                     <div
-                      class="p-point__item_summary-left w-full flex flex-col gap-50px"
+                      class="p-point__item_summary-left"
                     >
                       <div
-                        class="bg-white w-full relative flex flex-col gap-20px pt-70 pb-40"
+                        class="c-card-white-content"
                       >
                         <p
                           class="fs-16 fw-700 text-white p-point__item_summary_label"
@@ -555,7 +555,7 @@
 
                 <!-- 注意ブロック -->
                 <aside
-                  class="reveal-scale p-point__item_summary point__item_summary-warn bg-white relative w-full"
+                  class="reveal-scale p-point__item_summary point__item_summary-warn"
                 >
                   <p
                     class="fs-16 fw-700 text-white p-point__item_summary_label p-point__item_summary_label-red"
@@ -598,10 +598,10 @@
 
       <!-- おすすめセクション-->
       <section
-        class="p-recommended topic-container flex flex-col gap-52px relative mt-40 pb-120"
+        class="p-recommended topic-container" style="margin-top:40px;padding-bottom:120px"
       >
         <div
-          class="reveal section-header-wrapper flex flex-col gap-18px pl-240"
+          class="reveal section-header-wrapper topic-section-header"
         >
           <p class="section-sub-text fs-18 fw-500 text-black1">オススメ商品</p>
           <h2
@@ -693,9 +693,9 @@
           </ul>
 
           <div
-            class="pl-240 topic-buttons-container flex flex-row gap-30px items-center mt-30"
+            class="topic-buttons-container"
           >
-            <div class="topic-slider__buttons flex flex-row gap-10px">
+            <div class="topic-slider__buttons">
               <div class="btn-green-wrapper" data-slider-prev disabled>
                 <img
                   src="assets/img/common/icon_arrow.svg"
@@ -717,7 +717,7 @@
       <!--おもてなしセクション-->
       <section class="p-hospitality">
         <div class="p-hospitality__container">
-          <hgroup class="reveal section-header-wrapper flex flex-col gap-18px">
+          <hgroup class="reveal section-header-wrapper">
             <p class="section-sub-text fs-18 fw-500 text-black1">
               特典・優待について
             </p>
@@ -728,19 +728,19 @@
             </h2>
           </hgroup>
 
-          <div class="w-full flex flex-col gap-62px items-start">
+          <div class="c-flex-col-start-62">
             <p class="reveal fs-16 fw-500 lh-200">
               AMAZONES ONLINE
               SHOPで一般会員よりもポイント還元率が高く、お得なお買い物が可能です。<br />
               ゴールド会員にランクアップした場合のポイント還元率は一般会員（ノーマル）と比較して10倍となっております。
             </p>
 
-            <div class="w-full flex flex-col gap-60px items-start">
+            <div class="c-flex-col-start-60">
               <!-- アマゾネス会員ランク -->
               <article
-                class="reveal-scale flex flex-col items-start gap-30px w-full"
+                class="reveal-scale c-flex-col-start-30"
               >
-                <div class="flex flex-row gap-30px items-center justify-center">
+                <div class="c-flex-row-centered-10" style="gap:30px">
                   <img
                     src="assets/img/point-redemption/icon_hospitality1.svg"
                     alt="Amazones会員ランク"
@@ -749,7 +749,7 @@
                 </div>
                 <ul class="p-hospitality__item_wrapper">
                   <li>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label"
                       >
@@ -761,7 +761,7 @@
                         >
                       </p>
                     </div>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label"
                       >
@@ -777,7 +777,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label"
                       >
@@ -789,7 +789,7 @@
                         >
                       </p>
                     </div>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label"
                       >
@@ -805,7 +805,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label"
                       >
@@ -818,7 +818,7 @@
                         >
                       </p>
                     </div>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label"
                       >
@@ -838,9 +838,9 @@
 
               <!-- 一般会員ランク -->
               <article
-                class="reveal-scale flex flex-col items-start gap-30px w-full"
+                class="reveal-scale c-flex-col-start-30"
               >
-                <div class="flex flex-row gap-30px items-center justify-center">
+                <div class="c-flex-row-centered-10" style="gap:30px">
                   <img
                     src="assets/img/point-redemption/icon_hospitality2.svg"
                     alt="一般会員ランク"
@@ -849,7 +849,7 @@
                 </div>
                 <ul class="p-hospitality__item_wrapper">
                   <li>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
                       >
@@ -862,7 +862,7 @@
                         >
                       </p>
                     </div>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
                       >
@@ -878,7 +878,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
                       >
@@ -891,7 +891,7 @@
                         >
                       </p>
                     </div>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
                       >
@@ -907,7 +907,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
                       >
@@ -920,7 +920,7 @@
                         >
                       </p>
                     </div>
-                    <div class="p-hospitality__item w-full">
+                    <div class="p-hospitality__item">
                       <p
                         class="text-white fs-16 fw-700 p-hospitality__item__label hospitality-label2"
                       >
@@ -942,7 +942,7 @@
 
           <!-- 注意ブロック -->
           <aside
-            class="reveal-scale p-point__item_summary point__item_summary-warn bg-white relative w-full"
+            class="reveal-scale p-point__item_summary point__item_summary-warn"
           >
             <p
               class="fs-16 fw-700 text-white p-point__item_summary_label p-point__item_summary_label-red"
@@ -983,19 +983,19 @@
 
       <!--アマゾネスオンラインショップバナー-->
       <!-- <section class="online-shop-section relative">
-        <div class="relative w-full">
+        <div class="" style="position:relative;width:100%">
           <img
             src="assets/img/point-redemption/img_online_shop.webp"
             alt="アマゾネスオンラインショップ"
             class="online-shop-img"
           />
-          <div class="online-shop-desc flex flex-col gap-52px relative">
+          <div class="online-shop-desc">
             <img
               src="assets/img/top/img_triangle.svg"
               class="shop-triangle"
             />
             <h2 class="font-outfit fs-60">Amazones Online Shop</h2>
-            <div class="flex flex-col gap-36px">
+            <div class="c-flex-col-gap-3" style="gap:36px">
               <p class="fw-700 fs-20">女性の健康と美を支えるショップサイト</p>
               <p class="fs-500 fs-15 lh-200">
                 「女性の輝く未来をつくりたい」というスローガンのもと、<br />フィットネスを通じて女性の健康と美をサポートしています。
@@ -1013,7 +1013,7 @@
       <section class="p-online-shop">
         <!--トップ Dr.アマゾネス-->
         <div
-          class="dr-amazones-container bg-linearLightGray flex flex-row items-center relative"
+          class="dr-amazones-container"
         >
           <picture>
             <source
@@ -1027,14 +1027,14 @@
             />
           </picture>
 
-          <div class="flex flex-col items-start dr-amazones-section">
+          <div class="dr-amazones-section">
             <img
               src="assets/img/top/img_triangle.svg"
               alt="三角形のアイコン"
               class="triangle-icon"
             />
-            <div class="flex flex-col gap-50px">
-              <!-- <div class="flex flex-col gap-20px">
+            <div class="c-section__stack-50">
+              <!-- <div class="c-flex-col-gap-15" style="gap:20px">
                   <p class="reveal fs-18 fw-500">ドクターアマゾネス</p>
                   <img
                     src="assets/img/top/img_drAmazonesClinic.svg"
@@ -1045,7 +1045,7 @@
               <h2 class="reveal font-outfit fs-60 mt-20">
                 Amazones Online Shop
               </h2>
-              <div class="reveal flex flex-col gap-35px">
+              <div class="reveal dr-amazones-section__body">
                 <p class="fw-700 fs-20 lh-200">
                   女性の健康と美を支えるショップサイト
                 </p>
@@ -1261,10 +1261,10 @@
       </section>
 
 
-    <aside class="cookie-notice flex flex-row items-center gap-15px py-15 px-120 bg-base-black1 ">
+    <aside class="cookie-notice">
       <p class="fw-400 fs-14 text-white lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
-      <div class="flex flex-row gap-10px">
+      <div class="cookie-notice__buttons">
         <button class="footer-btn">OK</button>
         <button class="footer-btn">プライバシーポリシー</button>
       </div>

@@ -93,6 +93,7 @@
    ======================================== */
 
 .p-sportip__section--white {
+  padding-bottom: 100px;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -228,6 +229,8 @@
    ======================================== */
 
 .p-sportip__section--lightblue {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-image: url("../img/common/bg_light_blue.webp");
   background-size: cover;
   background-position: center;

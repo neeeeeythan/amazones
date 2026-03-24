@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <base href="/amazones/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -24,9 +24,9 @@
     <!--ヘッダー-->
     <header class="I-header">
       <div
-        class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between"
+        class="I-header-wrapper"
       >
-        <div class="flex flex-row items-center flex-1 gap-24px">
+        <div class="l-header__brand">
           <a href="./">
             <img
               src="assets/img/common/icon_logo.svg"
@@ -44,18 +44,18 @@
           </p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions">
           <a
             href="storelist/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="header-btn"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
@@ -69,15 +69,15 @@
 
           <a
             href="reservation/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="header-btn header-btn--reservation"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
@@ -97,11 +97,11 @@
         <!--フローティングヘッダーメニュー-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="header-floating-menu"
         >
           <div
             id="floating-menu-btn"
-            class="flex flex-col items-center gap-13px"
+            class="floating-menu-btn"
           >
             <img
               src="assets/img/common/icon_menu.svg"
@@ -136,16 +136,16 @@
           </div>
         
         <div id="nav-menu-popup" class="nav-menu-popup">
-          <div class="flex flex-row justify-between w-full">
+          <div class="nav-menu-popup__columns">
 
             <!-- 会社について -->
-            <div class="flex flex-col gap-30px">
-              <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__section">
+              <div class="footer-page-link">
                 <p class="font-outfit fs-18 fw-500">About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                 <div class="footer-link-line"></div>
               </div>
-              <div class="flex flex-col gap-25px items-start">
+              <div class="nav-menu-popup__links">
                 <a href="./" class="fw-500 fs-15">トップページ</a>
                 <a href="#" class="fw-500 fs-15">お知らせ</a>
                 <a href="column/" class="fw-500 fs-15">ゾネスタイムズ</a>
@@ -161,53 +161,53 @@
             </div>
 
             <!-- サービス + 採用情報 -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="about/" class="fw-500 fs-15">女性専用24時間ジム</a>
                   <a href="personal/" class="fw-500 fs-15">Amazonesのパーソナルトレーニング</a>
                   <a href="medical/" class="fw-500 fs-15">Dr.Amazones</a>
                   <a href="#" class="fw-500 fs-15">AI姿勢診断・改善</a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
             </div>
 
             <!-- 他店舗 + SNS -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="mr-5" />Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="mr-5" />Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
@@ -217,8 +217,8 @@
           </div>
 
           <!-- 下部行 -->
-          <div class="flex flex-col w-full gap-20px">
-            <div class="flex flex-row gap-20px">
+          <div class="nav-menu-popup__bottom" style="gap: 20px">
+            <div class="nav-menu-popup__bottom-btns">
               <a href="contact/" class="btn-light-blue footer-blue-btn">
                 <p class="text-white fs-16 font-outfit">お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
@@ -228,7 +228,7 @@
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
               </a>
             </div>
-            <div class="flex flex-row gap-40px flex-wrap">
+            <div class="nav-menu-popup__bottom-links">
               <a href="#" class="footer-icon-link fw-500 fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
               <a href="sitemap/" class="fw-500 fs-14">サイトマップ</a>
               <a href="#" class="fw-500 fs-14">ご利用規約</a>
@@ -365,8 +365,8 @@
       </section>
 
       <section class="p-faq__main__content">
-        <div class="p-faq__nav flex flex-row gap-30px">
-          <div class="flex flex-row gap-10px items-center">
+        <div class="p-faq__nav">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a href="#faq-初めての方へ" class="fs-14 fw-500 banner-a-link"
               >初めての方へ</a
             >
@@ -384,7 +384,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a href="#faq-施設について" class="fs-14 fw-500 banner-a-link"
               >施設について</a
             >
@@ -402,7 +402,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a href="#faq-ご入会について" class="fs-14 fw-500 banner-a-link"
               >ご入会について</a
             >
@@ -420,7 +420,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a href="#faq-ご予約について" class="fs-14 fw-500 banner-a-link"
               >ご予約について</a
             >
@@ -438,7 +438,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a
               href="#faq-料金・プランについて"
               class="fs-14 fw-500 banner-a-link"
@@ -458,7 +458,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a
               href="#faq-お手続き（休会/退会/変更）について"
               class="fs-14 fw-500 banner-a-link"
@@ -478,7 +478,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a href="#faq-お支払いについて" class="fs-14 fw-500 banner-a-link"
               >お支払いについて</a
             >
@@ -496,7 +496,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a href="#faq-採用について" class="fs-14 fw-500 banner-a-link"
               >採用について</a
             >
@@ -514,7 +514,7 @@
               />
             </svg>
           </div>
-          <div class="flex flex-row gap-10px items-center">
+          <div class="c-faq__accordion_header" style="gap: 10px">
             <a href="#faq-その他" class="fs-14 fw-500 banner-a-link">その他</a>
             <svg
               version="1.2"
@@ -536,17 +536,17 @@
           <!-- 初めての方へ -->
           <div
             id="faq-初めての方へ"
-            class="p-faq__page__item__container faq-item-container1 flex flex-col gap-40px items-start"
+            class="p-faq__page__item__container faq-item-container1"
           >
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label1.svg"
                   alt="よくあるご質問（一般）"
                 />
                 <h2 class="fw-700 fs-24">よくあるご質問（一般）</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -554,7 +554,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s1-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -570,7 +570,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -591,7 +591,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s1-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -605,7 +605,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -629,7 +629,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s1-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -645,7 +645,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -666,7 +666,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s1-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -682,7 +682,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -704,7 +704,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s1-q5" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -720,7 +720,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -741,7 +741,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s1-q6" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -757,7 +757,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -778,7 +778,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s1-q7" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -794,7 +794,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -814,17 +814,17 @@
           <!-- 施設について -->
           <div
             id="faq-施設について"
-            class="p-faq__page__item__container p-faq__page__item__container2 flex flex-col gap-40px items-start"
+            class="p-faq__page__item__container p-faq__page__item__container2"
           >
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label2.svg"
                   alt="施設について"
                 />
                 <h2 class="fw-700 fs-24">施設について</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -832,7 +832,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -848,7 +848,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -869,7 +869,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -883,7 +883,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -904,7 +904,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -918,7 +918,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -939,7 +939,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -953,7 +953,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -978,7 +978,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q5" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -994,7 +994,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1016,7 +1016,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q6" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1030,7 +1030,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1055,7 +1055,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q7" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1069,7 +1069,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1090,7 +1090,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q8" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1106,7 +1106,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1127,7 +1127,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s2-q9" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1143,7 +1143,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1163,22 +1163,22 @@
           <!-- ご入会について -->
           <div
             id="faq-ご入会について"
-            class="p-faq__page__item__container p-faq__page__item__container3 flex flex-col gap-40px items-start relative"
+            class="p-faq__page__item__container p-faq__page__item__container3"
           >
             <img
               src="assets/img/faq/icon_ribbon_faq3.svg"
               class="p-faq__page__item__ribbon3 clip-grow-right"
               alt=""
             />
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label3.svg"
                   alt="ご入会について"
                 />
                 <h2 class="fw-700 fs-24">ご入会について</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -1186,7 +1186,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s3-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1200,7 +1200,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1221,7 +1221,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s3-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1237,7 +1237,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1258,7 +1258,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s3-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1274,7 +1274,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1296,7 +1296,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s3-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1310,7 +1310,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1330,17 +1330,17 @@
           <!-- ご予約について -->
           <div
             id="faq-ご予約について"
-            class="p-faq__page__item__container p-faq__page__item__container4 flex flex-col gap-40px items-start"
+            class="p-faq__page__item__container p-faq__page__item__container4"
           >
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label4.svg"
                   alt="ご予約について"
                 />
                 <h2 class="fw-700 fs-24">ご予約について</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -1348,7 +1348,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1364,7 +1364,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1387,7 +1387,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1403,7 +1403,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1425,7 +1425,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1441,7 +1441,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1462,7 +1462,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1478,7 +1478,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1501,7 +1501,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q5" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1517,7 +1517,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1538,7 +1538,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q6" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1552,7 +1552,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1573,7 +1573,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q7" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1589,7 +1589,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1611,7 +1611,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q8" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1627,7 +1627,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1648,7 +1648,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q9" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1664,7 +1664,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1685,7 +1685,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q10" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1701,7 +1701,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1722,7 +1722,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s4-q11" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1738,7 +1738,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1758,17 +1758,17 @@
           <!-- 料金・プランについて -->
           <div
             id="faq-料金・プランについて"
-            class="p-faq__page__item__container faq-item-container5 flex flex-col gap-40px items-start"
+            class="p-faq__page__item__container faq-item-container5"
           >
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label5.svg"
                   alt="料金・プランについて"
                 />
                 <h2 class="fw-700 fs-24">料金・プランについて</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -1776,7 +1776,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s5-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1792,7 +1792,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1814,7 +1814,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s5-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1830,7 +1830,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1851,7 +1851,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s5-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1867,7 +1867,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1889,7 +1889,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s5-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1905,7 +1905,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1929,17 +1929,17 @@
           <!-- お手続き（休会/退会/変更）について -->
           <div
             id="faq-お手続き（休会/退会/変更）について"
-            class="p-faq__page__item__container p-faq__page__item__container6 flex flex-col gap-40px items-start"
+            class="p-faq__page__item__container p-faq__page__item__container6"
           >
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label6.svg"
                   alt="お手続き（休会/退会/復会）について"
                 />
                 <h2 class="fw-700 fs-24">お手続き（休会/退会/復会）について</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -1947,7 +1947,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s6-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -1963,7 +1963,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -1985,7 +1985,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s6-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2001,7 +2001,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2022,7 +2022,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s6-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2038,7 +2038,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2060,7 +2060,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s6-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2076,7 +2076,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2098,7 +2098,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s6-q5" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2114,7 +2114,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2135,7 +2135,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s6-q6" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2151,7 +2151,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2172,7 +2172,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s6-q7" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2188,7 +2188,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2208,17 +2208,17 @@
           <!-- お支払いについて -->
           <div
             id="faq-お支払いについて"
-            class="p-faq__page__item__container p-faq__page__item__container7 flex flex-col gap-40px items-start"
+            class="p-faq__page__item__container p-faq__page__item__container7"
           >
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label7.svg"
                   alt="お支払いについて"
                 />
                 <h2 class="fw-700 fs-24">お支払いについて</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -2226,7 +2226,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s7-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2242,7 +2242,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2269,7 +2269,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s7-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2285,7 +2285,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2309,7 +2309,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s7-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2325,7 +2325,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2346,7 +2346,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s7-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2362,7 +2362,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2385,7 +2385,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s7-q5" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2399,7 +2399,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2420,7 +2420,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s7-q6" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2436,7 +2436,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2456,17 +2456,17 @@
           <!-- 採用について -->
           <div
             id="faq-採用について"
-            class="p-faq__page__item__container p-faq__page__item__container8 flex flex-col gap-40px items-start"
+            class="p-faq__page__item__container p-faq__page__item__container8"
           >
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img
                   src="assets/img/faq/icon_faq_label8.svg"
                   alt="採用について"
                 />
                 <h2 class="fw-700 fs-24">採用について</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -2474,7 +2474,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s8-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2490,7 +2490,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2515,7 +2515,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s8-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2531,7 +2531,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2556,7 +2556,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s8-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2570,7 +2570,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2595,7 +2595,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s8-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2611,7 +2611,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2635,19 +2635,19 @@
           <!-- その他 -->
           <div
             id="faq-その他"
-            class="p-faq__page__item__container p-faq__page__item__container9 flex flex-col gap-40px items-start relative"
+            class="p-faq__page__item__container p-faq__page__item__container9"
           >
             <img
               src="assets/img/faq/icon_ribbon_faq9.svg"
               class="p-faq__page__item__ribbon9 clip-grow-right"
               alt=""
             />
-            <div class="p-faq__page__item flex flex-col gap-40px">
-              <div class="flex flex-row gap-26px items-center">
+            <div class="p-faq__page__item">
+              <div class="c-faq__accordion_header" style="gap: 26px">
                 <img src="assets/img/faq/icon_faq_label9.svg" alt="その他" />
                 <h2 class="fw-700 fs-24">その他</h2>
               </div>
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <div class="reveal c-faq__accordion">
                   <input
                     type="checkbox"
@@ -2655,7 +2655,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s9-q1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2671,7 +2671,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2692,7 +2692,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s9-q2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2708,7 +2708,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2729,7 +2729,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s9-q3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2745,7 +2745,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -2768,7 +2768,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="s9-q4" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -2784,7 +2784,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -3000,10 +3000,10 @@
       </section>
 
 
-    <aside class="cookie-notice flex flex-row items-center gap-15px py-15 px-120 bg-base-black1 ">
+    <aside class="cookie-notice">
       <p class="fw-400 fs-14 text-white lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
-      <div class="flex flex-row gap-10px">
+      <div class="cookie-notice__buttons">
         <button class="footer-btn">OK</button>
         <button class="footer-btn">プライバシーポリシー</button>
       </div>

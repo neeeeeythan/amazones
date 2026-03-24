@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <base href="/amazones/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -28,8 +28,8 @@
   <body>
     <!--ヘッダー-->
     <header class="I-header">
-      <div class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
-        <div class="flex flex-row items-center flex-1 gap-24px">
+      <div class="I-header-wrapper">
+        <div class="l-header__brand">
           <a href="./">
             <img
               src="assets/img/common/icon_logo.svg"
@@ -43,18 +43,18 @@
           <p class="header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions">
           <a
             href="#"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="header-btn"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
@@ -64,15 +64,15 @@
 
           <a
             href="#"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="header-btn header-btn--reservation"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
@@ -88,11 +88,11 @@
        <!--フローティングヘッダーメニュー-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="header-floating-menu"
         >
         <div
           id="floating-menu-btn"
-          class="flex flex-col items-center gap-13px"
+          class="floating-menu-btn"
         >
           <img src="assets/img/common/icon_menu.svg" alt="アイコン" class="desktop-menu-icon" />
           <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
@@ -111,7 +111,7 @@
             <p class="text-vertical menu-vertical-text text-white fs-12 font-outfit fw-500">
               ©2026 Wellness Land Co., Ltd.
             </p>
-            <div class="flex flex-col items-center gap-8px justify-center bg-base-black1">
+            <div class="scroll-down-text">
               <p class="font-outfit fs-12 text-white ls-10 fw-500 text-vertical text-blue-hover">
                 SCROLL DOWN
               </p>
@@ -128,18 +128,18 @@
         <!--モバイルヘッダー-->
         <div class = 'mobile-header-overlay relative'>
           <div class = 'mobile-header-overlay-content'>
-            <div class="reveal-scale flex flex-col items-center gap-15px">
+            <div class="reveal-scale c-flex-col-centered-15">
               <a
                 href="#"
-                class="header-btn sp-header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+                class="header-btn sp-header-btn"
               >
                 <div
-                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                  class="icon-wrapper"
                 >
                   <img src="assets/img/common/icon_search.svg" alt="アイコン" />
                 </div>
-                <div class="flex flex-row items-end gap-5px">
-                  <div class="flex flex-col items-start gap-8px">
+                <div class="header-btn__content">
+                  <div class="header-btn__text">
                     <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                     <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
                   </div>
@@ -149,15 +149,15 @@
 
               <a
                 href="#"
-                class="header-btn sp-header-btn  bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+                class="header-btn sp-header-btn header-btn--reservation"
               >
                 <div
-                  class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+                  class="icon-wrapper"
                 >
                   <img src="assets/img/common/icon_24.svg" alt="アイコン" />
                 </div>
-                <div class="flex flex-row items-end gap-5px">
-                  <div class="flex flex-col items-start gap-8px">
+                <div class="header-btn__content">
+                  <div class="header-btn__text">
                     <p class="text-white fs-14 fw-700 text-center">
                       24時間WEB予約可能
                     </p>
@@ -179,7 +179,7 @@
     <!--/ヘッダー-->
 
     <!--メインコンテンツ-->
-    <main class="p-newspage bg-white">
+    <main class="p-newspage">
       <!-- ヒーローバナー -->
       <section class="banner-section">
         <div class="p-banner">
@@ -229,12 +229,12 @@
 
       <!--メインコンテンツ-->
       <section
-        class="news-section w-full flex flex-col pt-100 relative"
+        class="news-section"
         id="news-section"
       >
         <!-- ニュースタブコンテナ1 -->
-        <div class="news-tabs-container flex flex-col gap-30px">
-          <div class="c-btn__nav reveal flex flex-row items-center justify-center gap-15px w-fit-content">
+        <div class="news-tabs-container">
+          <div class="c-btn__nav reveal">
             <button class="c-btn__nav__item is-active">
               2026年
               <img src="assets/img/common/icon_arrow_gray.svg" alt="アイコン" />
@@ -301,13 +301,13 @@
             <div class="reveal tabs-panels">
               <!-- パネル1: すべて -->
               <article
-                class="tabs-panel flex flex-col gap-20px items-start"
+                class="tabs-panel"
                 id="fancy-first"
                 aria-selected="true"
               >
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">新店舗情報</p>
                     <time
@@ -330,7 +330,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">プレスリリース</p>
                     <time
@@ -353,7 +353,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -376,7 +376,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -399,7 +399,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -422,7 +422,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -445,7 +445,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -468,7 +468,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -491,7 +491,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -514,7 +514,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -537,7 +537,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -560,7 +560,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -583,7 +583,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -607,13 +607,13 @@
 
               <!-- パネル2: 新店舗情報 -->
               <article
-                class="tabs-panel flex flex-col gap-20px items-start"
+                class="tabs-panel"
                 id="fancy-second"
                 aria-selected="false"
               >
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">新店舗情報</p>
                     <time
@@ -636,7 +636,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">新店舗情報</p>
                     <time
@@ -659,7 +659,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">新店舗情報</p>
                     <time
@@ -682,7 +682,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">新店舗情報</p>
                     <time
@@ -705,7 +705,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">新店舗情報</p>
                     <time
@@ -728,7 +728,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">新店舗情報</p>
                     <time
@@ -752,13 +752,13 @@
 
               <!-- パネル3: プレスリリース -->
               <article
-                class="tabs-panel flex flex-col gap-20px items-start"
+                class="tabs-panel"
                 id="fancy-third"
                 aria-selected="false"
               >
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">プレスリリース</p>
                     <time
@@ -781,7 +781,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">プレスリリース</p>
                     <time
@@ -805,13 +805,13 @@
 
               <!-- パネル4: その他のお知らせ -->
               <article
-                class="tabs-panel flex flex-col gap-20px items-start"
+                class="tabs-panel"
                 id="fancy-fourth"
                 aria-selected="false"
               >
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -834,7 +834,7 @@
 
                 <a href="#" class="panel-content">
                   <div
-                    class="news-info-container flex flex-row gap-25px items-center"
+                    class="news-info-container"
                   >
                     <p class="fw-500 fs-14 news-label">その他のお知らせ</p>
                     <time
@@ -1069,10 +1069,10 @@
       </section>
 
 
-    <aside class="cookie-notice flex flex-row items-center gap-15px py-15 px-120 bg-base-black1 ">
+    <aside class="cookie-notice">
       <p class="fw-400 fs-14 text-white lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
-      <div class="flex flex-row gap-10px">
+      <div class="cookie-notice__buttons">
         <button class="footer-btn">OK</button>
         <button class="footer-btn">プライバシーポリシー</button>
       </div>

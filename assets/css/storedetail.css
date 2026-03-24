@@ -1996,3 +1996,8 @@
     min-width: 100%;
   }
 }
+.p-storedetail_cta_stats_row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

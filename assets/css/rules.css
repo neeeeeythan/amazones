@@ -21,6 +21,9 @@
     padding-top:32px;
     padding-bottom:30px;
     border-bottom:1px solid var(--base-gray);
+    display: flex;
+    flex-direction: column;      /* flex-col */
+    gap: 28px;                   /* gap-28px */
 }
 .p-rules__container__item:last-child{
     border-bottom:none;

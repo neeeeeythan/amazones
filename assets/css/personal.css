@@ -64,6 +64,8 @@
 }
 
 .p-personal-method__inner {
+  display: flex;
+  flex-direction: column;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -134,11 +136,16 @@
 }
 
 .p-personal-case-study__inner {
+  display: flex;
+  flex-direction: column;
   padding-top: 4rem;
   padding-bottom: 8rem;
 }
 
 .p-personal-program__inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   padding-top: 3rem;
   padding-bottom: 8rem;
 }
@@ -164,6 +171,17 @@
   font-size: 1.125rem;
 }
 
+.p-personal-boxed-info__row {
+  display: flex;
+  gap: 0.75rem;                /* gap-3 = 0.75rem */
+  align-items: flex-start;     /* items-start */
+}
+.p-personal-section__topic-header {
+  display: flex;
+  gap: 0.75rem;                /* gap-3 */
+  align-items: center;         /* items-center */
+  margin-top: 50px;            /* mt-50 */
+}
 .p-personal-case-study__container {
   display: flex;
   flex-direction: column;
@@ -723,4 +741,9 @@
     right: -5rem;
   }
   /* トレーナー / スタッフ終了 */
+}
+.p-personal-case-study__header {
+  display: flex;
+  align-items: center;
+  gap: 70px;
 }

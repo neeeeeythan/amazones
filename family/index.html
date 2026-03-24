@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <base href="/amazones/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -23,8 +23,8 @@
   <body>
     <!--ヘッダー-->
      <header class="I-header">
-      <div class="I-header-wrapper pl-40 pr-30 py-18 flex flex-row items-center justify-between">
-        <div class="flex flex-row items-center flex-1 gap-24px">
+      <div class="I-header-wrapper">
+        <div class="l-header__brand">
           <a href="./">
             <img
               src="assets/img/common/icon_logo.svg"
@@ -38,18 +38,18 @@
           <p class="header-text font-outfit text-black1 fw-500 fs-13">WOMEN ONLY24h GYM</p>
         </div>
 
-        <div class="flex flex-row items-center gap-15px">
+        <div class="l-header__actions">
           <a
             href="storelist/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-25 radius-50 w-fit-content"
+            class="header-btn"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_search.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700">全店相互利用可能</p>
                 <p class="text-white fs-14 fw-700">近くの店舗を探す</p>
               </div>
@@ -59,15 +59,15 @@
 
           <a
             href="reservation/"
-            class="header-btn bg-lightBlue flex flex-row items-center justify-center gap-10px py-14 pl-21 pr-21 radius-50 w-fit-content"
+            class="header-btn header-btn--reservation"
           >
             <div
-              class="icon-wrapper bg-white radius-100 flex flex-row items-center justify-center"
+              class="icon-wrapper"
             >
               <img src="assets/img/common/icon_24.svg" alt="アイコン" />
             </div>
-            <div class="flex flex-row items-end gap-5px">
-              <div class="flex flex-col items-start gap-8px">
+            <div class="header-btn__content">
+              <div class="header-btn__text">
                 <p class="text-white fs-14 fw-700 text-center">
                   24時間WEB予約可能
                 </p>
@@ -83,11 +83,11 @@
        <!--フローティングヘッダーメニュー-->
         <div
           id="header-floating-menu"
-          class="header-floating-menu flex flex-col items-center justify-between relative"
+          class="header-floating-menu"
         >
         <div
           id="floating-menu-btn"
-          class="flex flex-col items-center gap-13px"
+          class="floating-menu-btn"
         >
           <img src="assets/img/common/icon_menu.svg" alt="アイコン" class="desktop-menu-icon" />
           <p class="font-outfit fs-14 fw-500 text-white">MENU</p>
@@ -116,16 +116,16 @@
           </div>
         
         <div id="nav-menu-popup" class="nav-menu-popup">
-          <div class="flex flex-row justify-between w-full">
+          <div class="nav-menu-popup__columns">
 
             <!-- 会社について -->
-            <div class="flex flex-col gap-30px">
-              <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__section">
+              <div class="footer-page-link">
                 <p class="font-outfit fs-18 fw-500">About Us</p>
                 <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                 <div class="footer-link-line"></div>
               </div>
-              <div class="flex flex-col gap-25px items-start">
+              <div class="nav-menu-popup__links">
                 <a href="./" class="fw-500 fs-15">トップページ</a>
                 <a href="#" class="fw-500 fs-15">お知らせ</a>
                 <a href="column/" class="fw-500 fs-15">ゾネスタイムズ</a>
@@ -141,53 +141,53 @@
             </div>
 
             <!-- サービス + 採用情報 -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Service</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="about/" class="fw-500 fs-15">女性専用24時間ジム</a>
                   <a href="personal/" class="fw-500 fs-15">Amazonesのパーソナルトレーニング</a>
                   <a href="medical/" class="fw-500 fs-15">Dr.Amazones</a>
                   <a href="#" class="fw-500 fs-15">AI姿勢診断・改善</a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Recruitment</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">採用情報 <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
             </div>
 
             <!-- 他店舗 + SNS -->
-            <div class="flex flex-col gap-60px">
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+            <div class="nav-menu-popup__group">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Other Shops</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15">完全個室PRIVATE GYM Highness <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">24時間ジム Amazones &amp; Herculest <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15">AMAZONES ONLINE SHOP <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
               </div>
-              <div class="flex flex-col gap-30px">
-                <div class="footer-page-link flex flex-row justify-between items-center relative">
+              <div class="nav-menu-popup__section">
+                <div class="footer-page-link">
                   <p class="font-outfit fs-18 fw-500">Sns</p>
                   <img src="assets/img/common/icon_arrow_blue.svg" alt="" />
                   <div class="footer-link-line"></div>
                 </div>
-                <div class="flex flex-col gap-25px items-start">
+                <div class="nav-menu-popup__links">
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_youtube.svg" alt="" class="mr-5" />Amazones｜公式YouTube <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                   <a href="#" class="footer-icon-link fw-500 fs-15"><img src="assets/img/common/icon_instragram.svg" alt="" class="mr-5" />Amazones｜公式Instagram <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
                 </div>
@@ -197,8 +197,8 @@
           </div>
 
           <!-- 下部行 -->
-          <div class="flex flex-col w-full gap-20px">
-            <div class="flex flex-row gap-20px">
+          <div class="nav-menu-popup__bottom" style="gap: 20px">
+            <div class="nav-menu-popup__bottom-btns">
               <a href="contact/" class="btn-light-blue footer-blue-btn">
                 <p class="text-white fs-16 font-outfit">お問い合わせ</p>
                 <img src="assets/img/common/icon_arrow.svg" alt="アイコン" />
@@ -208,7 +208,7 @@
                 <img src="assets/img/common/icon_videos.svg" alt="アイコン" />
               </a>
             </div>
-            <div class="flex flex-row gap-40px flex-wrap">
+            <div class="nav-menu-popup__bottom-links">
               <a href="#" class="footer-icon-link fw-500 fs-14">運営会社について <img src="assets/img/common/icon_recruitment.svg" alt="アイコン" /></a>
               <a href="sitemap/" class="fw-500 fs-14">サイトマップ</a>
               <a href="#" class="fw-500 fs-14">ご利用規約</a>
@@ -295,7 +295,7 @@
     <!--/ヘッダー-->
 
     <!--メインコンテンツ-->
-    <main class="p-family__main bg-white">
+    <main class="p-family__main">
       <!-- ヒーローバナー -->
       <section class="banner-section">
         <div class="p-banner">
@@ -351,8 +351,8 @@
       <section class="p-family">
         <div class="p-family__container">
           <!-- コンテンツ1 -->
-          <div class="p-family p-family__container__content01 w-full">
-            <div class="flex gap-30px">
+          <div class="p-family p-family__container__content01">
+            <div class="c-flex-gap-30">
               <div class="p-protein_campaign_block font-zen">
                 <div class="p-protein_campaign_header">
                   <p class="reveal">
@@ -369,7 +369,7 @@
                     alt="家族割キャンペーン"
                   />
                 </div>
-                <div class="reveal font-zen flex flex-col gap-4 fw-500">
+                <div class="reveal font-zen c-flex-col-gap-4 fw-500">
                   <p>
                     Amazonesに通っているご家族（二親等以内）からのご紹介で、入会金0円・月会費が最大半額
                     になる「家族割キャンペーン」をスタート！
@@ -390,9 +390,9 @@
 
           <!-- コンテンツ2 -->
           <div class="p-family p-family__content02">
-            <div class="p-family__content02-wrapper flex flex-col gap-77px">
+            <div class="p-family__content02-wrapper">
               <!-- サマリーグループ -->
-              <hgroup class="section-header-wrapper flex flex-col gap-18px">
+              <hgroup class="section-header-wrapper">
                 <p class="reveal section-sub-text fs-18 fw-500 text-black1">
                   キャンペーン概要
                 </p>
@@ -403,14 +403,14 @@
                 </h2>
               </hgroup>
 
-              <div class=" w-full flex flex-row gap-60px">
+              <div class="p-point__item01">
                 <!-- 左カラム -->
                 <ul
-                  class=" p-family__summary-left w-full flex flex-col gap-50px"
+                  class="p-family__summary-left"
                 >
                   <!-- 料金表 -->
                   <li
-                    class="reveal-scale bg-white w-full relative flex flex-col gap-20px pt-70 pb-40"
+                    class="reveal-scale c-card-white-content"
                   >
                     <p class="fs-16 fw-700 text-white p-family__summary__label">
                       割引内容（料金例）
@@ -526,7 +526,7 @@
                       </table>
                     </div>
                     <ul
-                      class="flex flex-col gap-15px items-start mt-20 ml-20 mr-20"
+                      class="c-flex-col-gap-15" style="align-items:flex-start;margin:20px 20px 0 20px"
                       style="list-style: none; padding: 0"
                     >
                       <li class="fs-14 fw-500">※ 表示価格はすべて税込です</li>
@@ -540,12 +540,12 @@
                   </li>
 
                   <!-- 条件 -->
-                  <li class="reveal-scale p-family__summary bg-white relative">
+                  <li class="reveal-scale p-family__summary">
                     <p class="fs-16 fw-700 text-white p-family__summary__label">
                       割引適用条件
                     </p>
                     <ol
-                      class="flex flex-col items-start gap-15px"
+                      class="c-flex-col-gap-15" style="align-items:flex-start"
                       style="list-style: none; padding: 0"
                     >
                       <li class="fw-500 fs-16 lh-200">
@@ -572,7 +572,7 @@
                   </li>
 
                   <!-- スタッフ特典 -->
-                  <li class="reveal-scale p-family__summary bg-white relative pb-30">
+                  <li class="reveal-scale p-family__summary">
                     <p class="fs-16 fw-700 text-white p-family__summary__label">
                       スタッフの家族割特典
                     </p>
@@ -584,10 +584,10 @@
 
                 <!-- 右カラム -->
                 <ul
-                  class="p-family__summary-right w-full flex flex-col gap-50px"
+                  class="p-family__summary-right"
                 >
                   <!-- 対象家族 -->
-                  <li class="reveal-scale p-family__summary bg-white relative pb-30">
+                  <li class="reveal-scale p-family__summary">
                     <p class="fs-16 fw-700 text-white p-family__summary__label">
                       対象となるご家族
                     </p>
@@ -599,20 +599,20 @@
 
                   <!-- 事例 -->
                   <li
-                    class="reveal-scale p-family__summary p-family__summary__last bg-white relative"
+                    class="reveal-scale p-family__summary p-family__summary__last"
                   >
                     <p class="fs-16 fw-700 text-white p-family__summary__label">
                       キャンペーン適用例
                     </p>
                     <ul
-                      class="flex flex-col items-center justify-center gap-42px"
+                      class="c-flex-col-centered-22" style="gap:42px"
                       style="list-style: none; padding: 0"
                     >
                       <li
-                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                        class="p-family__case__item"
                       >
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case1_icon1.webp"
@@ -624,7 +624,7 @@
                           </figcaption>
                         </figure>
                         <aside
-                          class="flex flex-col gap-25px items-center justify-center"
+                          class="c-flex-col-centered-25"
                         >
                           <p class="fs-24 text-lightBlue font-outfit fw-600">
                             Case01
@@ -632,7 +632,7 @@
                           <img src="assets/img/family/icon_x.svg" alt="×" />
                         </aside>
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case1_icon2.webp"
@@ -650,10 +650,10 @@
                       </li>
 
                       <li
-                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                        class="p-family__case__item"
                       >
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case2_icon1.webp"
@@ -666,7 +666,7 @@
                           </figcaption>
                         </figure>
                         <aside
-                          class="flex flex-col gap-25px items-center justify-center"
+                          class="c-flex-col-centered-25"
                         >
                           <p class="fs-24 text-lightBlue font-outfit fw-600">
                             Case02
@@ -674,7 +674,7 @@
                           <img src="assets/img/family/icon_x.svg" alt="×" />
                         </aside>
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case2_icon2.webp"
@@ -692,10 +692,10 @@
                       </li>
 
                       <li
-                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                        class="p-family__case__item"
                       >
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case3_icon1.webp"
@@ -707,7 +707,7 @@
                           </figcaption>
                         </figure>
                         <aside
-                          class="flex flex-col gap-25px items-center justify-center"
+                          class="c-flex-col-centered-25"
                         >
                           <p class="fs-24 text-lightBlue font-outfit fw-600">
                             Case03
@@ -715,7 +715,7 @@
                           <img src="assets/img/family/icon_x.svg" alt="×" />
                         </aside>
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case3_icon2.webp"
@@ -733,10 +733,10 @@
                       </li>
 
                       <li
-                        class="p-family__case__item flex flex-row items-start justify-center gap-35px"
+                        class="p-family__case__item"
                       >
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case4_icon1.webp"
@@ -748,7 +748,7 @@
                           </figcaption>
                         </figure>
                         <aside
-                          class="flex flex-col gap-25px items-center justify-center"
+                          class="c-flex-col-centered-25"
                         >
                           <p class="fs-24 text-lightBlue font-outfit fw-600">
                             Case04
@@ -756,7 +756,7 @@
                           <img src="assets/img/family/icon_x.svg" alt="×" />
                         </aside>
                         <figure
-                          class="flex flex-col items-center justify-center gap-22px"
+                          class="c-flex-col-centered-22"
                         >
                           <img
                             src="assets/img/family/icon_case4_icon2.webp"
@@ -780,15 +780,15 @@
           </div>
 
           <!-- よくある質問 -->
-          <div class="c-faq flex flex-col gap-40px items-start relative">
+          <div class="c-faq">
             <img
               src="assets/img/family/icon_family_ribbon.svg"
               alt="リボン"
               class="clip-grow-right c-faq__ribbon"
             />
-            <div class="c-faq__content flex flex-col gap-40px">
+            <div class="c-faq__content">
               <hgroup
-                class="reveal section-header-wrapper flex flex-col gap-18px"
+                class="reveal section-header-wrapper"
               >
                 <p class="section-sub-text fs-18 fw-500 text-black1">
                   よくあるご質問　- 家族割について -
@@ -800,7 +800,7 @@
                 </h2>
               </hgroup>
 
-              <div class="faq-container w-full">
+              <div class="faq-container">
                 <!-- よくある質問1 — PCとモバイル両方で開く -->
                 <div class="reveal c-faq__accordion">
                   <input
@@ -809,7 +809,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="faq-1" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -825,7 +825,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -847,7 +847,7 @@
                     class="c-faq__container__toggle"
                   />
                   <label for="faq-2" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -863,7 +863,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -885,7 +885,7 @@
                      class="c-faq__container__toggle"
                   />
                   <label for="faq-3" class="c-faq__accordion_header">
-                    <div class="flex flex-row items-center gap-20px">
+                    <div class="c-faq__accordion_header">
                       <img
                         src="assets/img/faq/icon_q.svg"
                         alt="Q"
@@ -901,7 +901,7 @@
                   </label>
                   <div class="c-faq__accordion_inner">
                     <div
-                      class="c-faq__accordion_box flex flex-row items-start gap-20px"
+                      class="c-faq__accordion_box"
                     >
                       <img
                         src="assets/img/faq/icon_a.svg"
@@ -921,7 +921,7 @@
       </section>
 
       <section class="c-footer-banner">
-        <div class="c-footer-banner__container flex flex-col gap-53px items-center justify-center relative">
+        <div class="c-footer-banner__container">
           <h2 class="reveal fw-700 fs-32">
             まずはお気軽に<br class="display-sp" />無料体験・見学へ
             <b class="fs-60 font-outfit fw-600 text-lightBlue">GO!</b>
@@ -951,7 +951,7 @@
       </section>
 
       <!--トップテキストスライダー-->
-      <div class="text-slider w-full">
+      <div class="text-slider">
         <div class="slide-track">
           <div class="slide">
             <p class="font-outfit fw-300 fs-36 text-white">
@@ -1223,10 +1223,10 @@
       </section>
 
 
-    <aside class="cookie-notice flex flex-row items-center gap-15px py-15 px-120 bg-base-black1 ">
+    <aside class="cookie-notice">
       <p class="fw-400 fs-14 text-white lh-180">よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie
         の使用を承諾したものとみなされます。</p>
-      <div class="flex flex-row gap-10px">
+      <div class="cookie-notice__buttons">
         <button class="footer-btn">OK</button>
         <button class="footer-btn">プライバシーポリシー</button>
       </div>

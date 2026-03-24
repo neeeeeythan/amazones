@@ -6,6 +6,12 @@
   padding: 40px 16px;
   background-color:var(--base-white);
 }
+.p-sitemap-content-container .p-sitemap-content {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 39px;                   /* gap-39px */
+  justify-content: flex-start;
+}
 .p-sitemap-content-container {
   display: flex;
   flex-direction: row;
