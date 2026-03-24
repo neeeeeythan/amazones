@@ -325,6 +325,13 @@ html {
 /* CTA終了 */
 
 /* ========================================
+   Inline style removals — BEM classes
+   ======================================== */
+.p-storelist__content-top        { padding-top: 0; }
+.p-storelist__section-header-row { gap: 30px; }
+.p-storelist__scroll-top-icon    { transform: scaleX(-1) rotate(-90deg); }
+
+/* ========================================
    メディア: max-width 1024px
    ======================================== */
 @media (max-width: 1024px) {
