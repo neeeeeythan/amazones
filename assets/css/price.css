@@ -281,45 +281,6 @@
    開始: CTA
    ======================================== */
 
-.p-price__faq-card {
-  display: flex;
-  flex-direction: column;
-
-  background-color: white;
-  flex: 1;
-}
-
-.p-price__faq-card-header {
-  display: flex;
-  align-items: center;
-}
-
-.p-price__faq-card-header h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.p-price__faq-card-icon {
-  background-color: var(--base-lightBlue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  height: 5.625rem;
-  width: 5.625rem;
-}
-
-.p-price__faq-card-body {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
-  padding: 2rem 2.5rem;
-}
-
-.p-price__faq-card span {
-  color: var(--base-lightBlue);
-}
-
 /* CTA終了 */
 
 /* ========================================
@@ -613,20 +574,6 @@
   /* ----------------------------------------
      開始: CTA
      ---------------------------------------- */
-  .p-price__faq-card-header h3 {
-    font-size: 1.125rem;
-  }
-
-  .p-price__faq-card-body {
-    padding: 1.25rem 1.5rem;
-  }
-
-  .p-price__faq-card-icon {
-    height: 4rem;
-    width: 4rem;
-    min-width: 4rem;
-  }
-
   /* CTA終了 */
 
   /* ----------------------------------------
