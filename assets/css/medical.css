@@ -134,7 +134,7 @@
 
 .p-medical__step-card-body {
   font-weight: 500;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem;
   box-sizing: border-box;
   line-height: 2rem;
 }
@@ -618,6 +618,7 @@
 .p-medical__partners-row { display: flex; gap: 100px; }
 .p-medical__engagement-right { display: flex; flex-direction: column; width: fit-content; gap: 1rem; }
 .p-medical__engagement-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.p-medical__banner-logo--pc ~ h1 p > span { display: inline; }
 
 /* ========================================
    メディア: max-width 767px
@@ -633,7 +634,7 @@
   .p-medical__banner-logo--pc ~ h1{
     margin-top:60px; 
   }
- .p-medical__banner-logo--pc ~ h1 > span {
+ .p-medical__banner-logo--pc ~ h1 p > span {
   display: block;
 }
   .p-medical__banner-logo--sp {
@@ -1168,21 +1169,33 @@
 }
 
 /* お知らせ — LINE行 */
+.c-announcement_body {
+  align-items: center;
+  text-align: center;
+}
+
 .p-medical__announcement-line-row {
   display: flex;
   gap: 0.75rem;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.p-medical__announcement-line-row > p {
+  white-space: nowrap;
 }
 
 /* お知らせ — 入力コードバー */
 .p-medical__line-bar{
   background-color: var(--base-gray);
   width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 15px 30px;
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 1rem;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -1195,6 +1208,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .p-medical__announcement-line-row {
+    gap: 0.4rem;
+  }
+
+  .p-medical__announcement-line-row > p {
+    font-size: 0.75rem;
+  }
+
+  .p-medical__announcement-line-row > svg {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto;
+  }
+
+  .p-medical__announcement-line-row > img {
+    width: 52px;
+    height: 52px;
+    flex: 0 0 auto;
+  }
 }
 
 /* スクロールアップアイコン */
