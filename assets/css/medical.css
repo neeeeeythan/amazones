@@ -618,6 +618,7 @@
 .p-medical__partners-row { display: flex; gap: 100px; }
 .p-medical__engagement-right { display: flex; flex-direction: column; width: fit-content; gap: 1rem; }
 .p-medical__engagement-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.p-medical__banner-logo--pc ~ h1 p > span { display: inline; }
 
 /* ========================================
    メディア: max-width 767px
@@ -633,7 +634,7 @@
   .p-medical__banner-logo--pc ~ h1{
     margin-top:60px; 
   }
- .p-medical__banner-logo--pc ~ h1 > span {
+ .p-medical__banner-logo--pc ~ h1 p > span {
   display: block;
 }
   .p-medical__banner-logo--sp {
