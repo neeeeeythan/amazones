@@ -72,6 +72,11 @@
   color: var(--text-black1);
 }
 
+/* ボタン padding: <a>要素はbutton要素のUAスタイルの最低高さを持たないため補正 */
+.p-reservation-step__btn-wrapper .btn-light-blue02 {
+  padding: 0.875rem 1.5rem;
+}
+
 /* シミュレーション / フローステップ終了 */
 
 /* ========================================
@@ -734,6 +739,7 @@
   /* モバイルでボタンテキスト縮小 */
   .p-reservation-step__btn-wrapper .btn-light-blue02 {
     font-size: 0.75rem;
+    padding: 0.75rem 1.5rem;
   }
 
   /* ボタン＋パーソン行ラッパー */
