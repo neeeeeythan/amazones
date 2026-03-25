@@ -204,6 +204,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .p-sportip__youtube {
@@ -212,6 +213,7 @@
   height: 31rem;
   background-color: #1a1a1a;
   overflow: hidden;
+  z-index: 1;
 }
 
 .p-sportip__youtube iframe {
@@ -220,6 +222,15 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.p-sportip__ribbon--03 {
+  position: absolute;
+  top: 0%;
+  right: -20%;
+  width: auto;
+  height: auto;
+  z-index: 0;
 }
 
 /* ポイントステップ終了 */
@@ -238,6 +249,7 @@
 
 .p-sportip__phone {
   position: relative;
+  z-index: 2;
 }
 
 .p-sportip__phone img {
@@ -255,7 +267,7 @@
   width: 90%;
   height: 95.5%;
   object-fit: fill;
-  z-index: 1;
+  z-index: 100;
   border-radius: 1.5625vw;
   background-color: var(--base-lightBlue);
 }
@@ -281,6 +293,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
+  position: relative;
   z-index: 10;
   max-width: 55rem;
 }
@@ -533,6 +546,15 @@
     background-image: url("../img/common/bg_white_pattern.webp");
     background-size: cover;
     background-position: 0% -170%;
+    
+  }
+
+  .p-sportip__ribbon--03 {
+    position: absolute;
+    top: 5%;
+    left: -74%;
+    right: auto;
+    z-index: 0;
   }
 
   /* ── LINKS NAV ── */
