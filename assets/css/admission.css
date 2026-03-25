@@ -83,6 +83,10 @@
 }
 .p-admission-step-ul {
   margin-left: 60px;
+  list-style-type: disc;
+}
+.p-admission-step-ul li::marker{
+ 
 }
 .p-admission-step-ul li {
   margin-bottom: 15px;
@@ -99,6 +103,7 @@
 .p-admission-step4-ul {
   margin-left: 60px;
   padding-left: 0px;
+  list-style-type: disc;
 }
 
 .p-admission-step4-ul li div {
@@ -126,7 +131,7 @@
   flex-direction: row;
   gap: 10px;
   width: fit-content;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .p-web-sticker {
   position: absolute;

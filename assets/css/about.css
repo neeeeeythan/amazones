@@ -84,6 +84,7 @@
   display: flex;
   align-items: stretch;
   position: relative;
+  /* overflow:hidden; */
 }
 
 .p-space__img-wrapper {
@@ -91,6 +92,7 @@
   flex-shrink: 0;
   overflow: hidden;
   min-height: 600px;
+  z-index:1;
 }
 
 .p-space__img-wrapper picture {
@@ -131,7 +133,7 @@
 .p-space__desc {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%) !important;
   width: 55%;
   max-width: 900px;
@@ -143,7 +145,11 @@
   background-color: var(--base-white); /* bg-white */
   padding: 40px 40px 70px 40px; /* pt-40 px-40 pb-70 */
 }
-
+.p-about-ribbon{
+  position:absolute;
+  top:-50px;
+  right:-40px;
+}
 /* ================================
    ブレークポイント: 1250px
    ================================ */
@@ -165,7 +171,7 @@
 
   .p-space__desc {
     position: relative;
-    top: auto;
+    top: 300px;
     right: 0;
     transform: none;
     width: calc(100% - 40px);
@@ -178,6 +184,17 @@
    ブレークポイント: 767px（モバイル）
    ================================ */
 @media screen and (max-width: 767px) {
+  .p-space__desc {
+    top: auto;
+  
+  }
+  .p-about-ribbon{
+    top:89%;
+    transform:scale(0.7);
+    right:-260px;
+    height:250px;
+    
+  }
   .p-space {
     background-image: url("../img/about/bg_space_sp.jpg");
   }
