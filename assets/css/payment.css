@@ -209,6 +209,11 @@
   font-weight: 600;
 }
 
+.p-payment__about-caption {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 /* お知らせ終了 */
 
 /* ========================================

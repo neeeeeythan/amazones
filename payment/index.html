@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <base href="/amazones-test/">
+    <base href="/">
     <base >
     <meta
       name="description"
@@ -336,9 +336,9 @@
                 </svg>
               </a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
-              <a href="#" class="text-white fs-14 banner-a-link">料金案内</a>
+              <a href="/price" class="text-white fs-14 banner-a-link">料金案内</a>
               <span class="c-breadcrumb-separator">&#x203A;</span>
-              <a href="#" class="text-white fs-14 banner-a-link"
+              <a href="#payment-section" class="text-white fs-14 banner-a-link"
                 >お支払いについて</a
               >
             </nav>
@@ -353,7 +353,7 @@
       </section>
 
       <!-- お支払いコンテンツ -->
-      <section class="p-payment__section--white">
+      <section class="p-payment__section--white" id="payment-section">
         <!-- リンク -->
         <nav class="p-payment__links-nav c-maxWidth">
           <ul class="p-payment__links-list">
@@ -602,7 +602,7 @@
                   <div class="p-payment__about-subheader">
                     <h4 class="font-zen">お支払い例</h4>
                   </div>
-                  <div class="font-zen">
+                  <div class="font-zen p-payment__about-caption">
                     <p class="text-red">
                       ※ 9月15日ご契約、ご入会日を10月1日に指定された場合
                     </p>
@@ -666,7 +666,7 @@
                   <div class="p-payment__about-subheader">
                     <h4 class="font-zen">お支払い例</h4>
                   </div>
-                  <div class="font-zen">
+                  <div class="font-zen p-payment__about-caption">
                     <p class="text-red">
                       ※ 9月15日ご契約、ご入会日を10月1日に指定された場合
                     </p>
@@ -797,6 +797,7 @@
               トレーニングマシンや設備のご説明からカウンセリング・トレーニングまで、今すぐご予約！
             </p>
           </div>
+          <a href="/reservation">
           <button type="button" class="btn-light-blue">
             <span class="c-announcement_btn cursor-pointer">
               <img
@@ -827,6 +828,7 @@
               </svg>
             </span>
           </button>
+          </a>
           <!-- モバイルのみ: ボタン下の人物表示（デスクトップでは非表示） -->
           <div class="p-payment__speak-mobile">
             <div class="p-payment__speak-mobile-item">
@@ -991,7 +993,7 @@
                 </div>
                 <div class="c-endNote_card_header">
                   <h3 class="font-zen">よくあるご質問</h3>
-                  <a href="#" class="btn-green-wrapper">
+                  <a href="/faq" class="btn-green-wrapper">
                     <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
                   </a>
                 </div>
@@ -1026,7 +1028,7 @@
                 </div>
                 <div class="c-endNote_card_header">
                   <h3 class="font-zen">ご利用規約</h3>
-                  <a href="#" class="btn-green-wrapper">
+                  <a href="/rules" class="btn-green-wrapper">
                     <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
                   </a>
                 </div>
@@ -1061,7 +1063,7 @@
                 </div>
                 <div class="c-endNote_card_header">
                   <h3 class="font-zen">お問い合わせ</h3>
-                  <a href="#" class="btn-green-wrapper">
+                  <a href="/contact" class="btn-green-wrapper">
                     <img src="assets/img/common/icon_arrow.svg" alt="アイコン">
                   </a>
                 </div>
@@ -1092,6 +1094,7 @@
                 </div>
                 <div class="c-endNote_card_header">
                   <h3 class="font-zen">マイページ</h3>
+                    <a href="/reservation" target="_blank" rel="noreferrer">
                   <div class="btn_icn_light_blue">
                     <svg
                       version="1.2"
@@ -1108,6 +1111,7 @@
                       >
                     </svg>
                   </div>
+                  </a>
                 </div>
               </div>
               <div class="c-endNote_card_body">
