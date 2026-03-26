@@ -1,0 +1,369 @@
+@use "../../foundation/forwards" as *;
+
+// ================================
+// START FAQ
+// ================================
+
+@keyframes slideDown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-width: 0;
+  }
+  1% {
+    border-top-width: 1px;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-width: 1px;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-width: 1px;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.3;
+    border-top-width: 1px;
+  }
+  99% {
+    border-top-width: 1px;
+  }
+  100% {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-width: 0;
+  }
+}
+
+.c-faq {
+  background-image: url("../img/family/bg_family_faq.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__ribbon {
+    position: absolute;
+    top: -120px;
+    z-index: 1;
+    right: -190px;
+    width: 100%;
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    line-height: 30px;
+    max-width: 1440px;
+    gap: 40px;
+  }
+
+  &__section {
+    width: 100%;
+  }
+
+  &__item {
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__ribbon02 {
+    position: absolute;
+    right: 0px;
+    top: -80px;
+  }
+
+  &__ribbon010 {
+    position: absolute;
+    right: 0px;
+    top: -140px;
+  }
+
+  &__accordion {
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid $mainColor1;
+    background-color: $white;
+    width: 100%;
+
+    &.closing {
+      animation: slideUp 0.4s ease forwards;
+    }
+  }
+
+  &__accordion_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    flex-direction: row;
+    gap: 20px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__accordion_toggle {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $mainColor1;
+      transition: transform 0.3s ease;
+    }
+
+    &::before {
+      width: 16px;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      width: 2px;
+      height: 16px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &.is-active::after {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+
+  &__accordion_inner {
+    max-height: 0;
+    overflow: hidden;
+    border-top: 1px solid $mainColor1;
+    opacity: 0;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    transition: none;
+
+    &-open {
+      max-height: 1000px;
+      opacity: 1;
+      padding: 20px 0px;
+      border-top: 1px solid $mainColor1;
+    }
+
+    &-opening {
+      animation: slideDown 0.4s ease forwards;
+    }
+  }
+
+  &__accordion_box {
+    // used in responsive overrides
+  }
+
+  &__icon__q {
+    // used in responsive overrides
+  }
+
+  &__icon__a {
+    // used in responsive overrides
+  }
+
+  &__break {
+    display: block;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__toggle {
+      display: none;
+
+      ~ .accordion_inner {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        padding: 0;
+        border-top-width: 0;
+        border-top: 1px solid $mainColor1;
+        box-sizing: border-box;
+        transition:
+          max-height 0.4s ease,
+          opacity 0.4s ease,
+          padding 0.4s ease;
+      }
+
+      &:checked ~ .accordion_inner {
+        max-height: 1000px;
+        opacity: 1;
+        padding: 20px 0;
+        border-top-width: 1px;
+      }
+
+      &:checked ~ .accordion_header .one_i::after {
+        transform: translate(-50%, -50%) scale(0);
+      }
+
+      + .c-faq__accordion_header {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      ~ .c-faq__accordion_inner {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        padding: 0;
+        border-top-width: 0;
+        border-top: 1px solid $mainColor1;
+        box-sizing: border-box;
+        transition:
+          max-height 0.4s ease,
+          opacity 0.4s ease,
+          padding 0.4s ease;
+      }
+
+      &:checked ~ .c-faq__accordion_inner {
+        max-height: 1000px;
+        opacity: 1;
+        padding: 20px 0;
+        border-top-width: 1px;
+      }
+
+      &:checked
+        ~ .c-faq__accordion_header
+        .c-faq__accordion_toggle::after {
+        transform: translate(-50%, -50%) scale(0);
+      }
+
+      &--pc ~ .c-faq__accordion_inner {
+        // used in responsive overrides
+      }
+    }
+  }
+}
+
+.c-faq__question-box {
+  width: 100%;
+}
+
+.p-member-voice-slide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.p-member-voice-img-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .c-faq {
+    padding: 50px 20px;
+
+    &__item {
+      padding: 50px 20px;
+    }
+
+    &__content {
+      gap: 30px;
+    }
+
+    &__icon__q {
+      width: 30px !important;
+      height: auto;
+    }
+
+    &__icon__a {
+      width: 30px;
+      height: auto;
+    }
+
+    &__accordion_box {
+      gap: 10px;
+    }
+
+    &__accordion {
+      margin-bottom: 20px;
+    }
+
+    &__container__toggle--pc ~ .c-faq__accordion_inner {
+      max-height: 0 !important;
+      opacity: 0 !important;
+      padding: 0 !important;
+      border-top-width: 0 !important;
+    }
+  }
+}
+
+// ============================================
+// END FAQ
+// ============================================

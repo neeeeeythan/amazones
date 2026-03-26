@@ -1,46 +1,19 @@
-/* ============================================
-    一般ユーティリティ
-   ============================================ */
+// ========================================
+// Base Styles
+// ========================================
+@use "forwards" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
-
-:root {
-  /* ベースカラー */
-  --base-black: #4f4f4f;
-  --base-gray: #eef0f3;
-  --base-lightGray: #fdfdfd;
-  --base-grayBlue: #97a5b5;
-  --base-white: #ffffff;
-  --base-lightBlue: #81d8d0;
-  --base-red: #f53662;
-  --base-lightPink: #f53561;
-  --base-peach: #ec73b2;
-  --base-brown: #8c4239;
-  --base-darkGray: #97a5b5;
-  --base-darkBlueGray: #98a6b5;
-  --base-inputGray: #cdd6dd;
-
-  /* テキストカラー */
-  --text-black1: #4f4f4f;
-  --text-white: #ffffff;
-  --text-lightBlue: #81d8d0;
-  --text-red: #f53662;
-  --text-peach: #ec73b2;
-  --text-brown: #8c4239;
-  --text-lightPink: #f53561;
-
-  /* フォント */
-  --font-outfit: "Outfit";
-  --font-zen: "Zen Kaku Gothic New";
-}
 
 html,
 body {
   scroll-behavior: smooth;
-  background-color: #faf8f5;
-  font-family: var(--font-zen);
+  background-color: $bg-body;
+  font-family: $font-zen;
   line-height: 100%;
-  color: var(--text-black1);
+  color: $text-black1;
 }
+
 html body a {
   color: inherit;
 }
@@ -48,11 +21,13 @@ html body a {
 main {
   transition: margin-top 0.35s ease;
 }
+
 ul li::marker {
-  color: var(--base-lightBlue);
+  color: $mainColor1;
   width: 10px;
   height: 10px;
 }
+
 h1,
 h2,
 h3,

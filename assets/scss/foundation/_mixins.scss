@@ -1,0 +1,27 @@
+// ========================================
+// Mixins
+// ========================================
+
+@mixin sp {
+  @media screen and (max-width: $bp-sm) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: $bp-lg) {
+    @content;
+  }
+}
+
+@mixin desk-sm {
+  @media screen and (max-width: $bp-xl) {
+    @content;
+  }
+}
+
+@mixin desk-lg {
+  @media screen and (max-width: $bp-xxl) {
+    @content;
+  }
+}

@@ -2,45 +2,71 @@
 //  Amazones - FLOCSS Architecture
 // ============================================
 
-// Foundation (variables, base element styles)
+// Foundation
+@use "foundation/forwards";
+@use "foundation/reset";
 @use "foundation/base";
-
-// Utility (u-* classes)
-@use "utility/utility";
 
 // Layout
 @use "layout/header";
 @use "layout/footer";
 
-// Component (shared components from global)
-@use "component/shared";
+// Object - Component
+@use "object/component/btn";
+@use "object/component/animation";
+@use "object/component/speech-bubble";
+@use "object/component/ribbon";
+@use "object/component/breadcrumb";
+@use "object/component/text-slider";
+@use "object/component/hero-slider";
+@use "object/component/section-header";
+@use "object/component/footer-banner";
+@use "object/component/announcement";
+@use "object/component/endnote";
+@use "object/component/cookie-notice";
+@use "object/component/shop";
+@use "object/component/price-plan";
+@use "object/component/faq";
+@use "object/component/btn-nav";
+@use "object/component/pagination";
+@use "object/component/layout-helpers";
+@use "object/component/responsive";
+@use "object/component/top-sections";
+
+// Object - Project
+@use "object/project/top";
+@use "object/project/about";
+@use "object/project/admission";
+@use "object/project/column";
+@use "object/project/column-slag";
+@use "object/project/contact";
+@use "object/project/family";
+@use "object/project/faq" as project-faq;
+@use "object/project/information";
+@use "object/project/medical";
+@use "object/project/member";
+@use "object/project/payment";
+@use "object/project/personal";
+@use "object/project/point_redemption";
+@use "object/project/price";
+@use "object/project/protein";
+@use "object/project/reservation";
+@use "object/project/rules";
+@use "object/project/sitemap";
+@use "object/project/sportip";
+@use "object/project/storedetail";
+@use "object/project/storedetail-introduction";
+@use "object/project/storedetail-review";
+@use "object/project/storelist";
+@use "object/project/visitor";
+
+// Object - Utility
+@use "object/utility/color";
+@use "object/utility/display";
+@use "object/utility/typography";
+@use "object/utility/flex";
+@use "object/utility/space";
+@use "object/utility/responsive" as utility-responsive;
 
 // Plugins
 @use "plugins/swiper";
-
-// Page
-@use "page/top";
-@use "page/about";
-@use "page/admission";
-@use "page/column";
-@use "page/column-slag";
-@use "page/contact";
-@use "page/family";
-@use "page/faq";
-@use "page/information";
-@use "page/medical";
-@use "page/member";
-@use "page/payment";
-@use "page/personal";
-@use "page/point_redemption";
-@use "page/price";
-@use "page/protein";
-@use "page/reservation";
-@use "page/rules";
-@use "page/sitemap";
-@use "page/sportip";
-@use "page/storedetail";
-@use "page/storedetail-introduction";
-@use "page/storedetail-review";
-@use "page/storelist";
-@use "page/visitor";

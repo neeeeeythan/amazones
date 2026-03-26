@@ -1,0 +1,152 @@
+@use "../../foundation/forwards" as *;
+
+// Typography utilities
+
+// Text decoration
+.u-textUnderline { text-decoration: underline !important; }
+
+// Font family
+.u- {
+  &fontOutfit { font-family: $font-outfit !important; }
+  &fontZen { font-family: $font-zen !important; }
+}
+
+// Font style / decoration
+.u-textItalic { font-style: italic !important; }
+.u-textDecorationNone { text-decoration: none !important; }
+
+// Button reset
+.btn {
+  outline: none !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+// Hover / link utilities
+.u-textHoverBlue:hover {
+  color: $mainColor1 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.u-textHoverBlue:hover ~ .u-imgBlue {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
+    hue-rotate(96deg) brightness(92%) contrast(82%) !important;
+}
+.u-textLink {
+  color: $text-lightBlue !important;
+  text-decoration: underline !important;
+  text-underline-offset: 5px !important;
+}
+
+// Nowrap
+.u-textNowrap { white-space: nowrap !important; }
+
+.u- {
+  // text-align
+  &taLeft { text-align: left !important; }
+  &taCenter { text-align: center !important; }
+  &taRight { text-align: right !important; }
+  &taJustify { text-align: justify !important; }
+  &taVertical { writing-mode: vertical-rl !important; }
+
+  // vertical-align
+  &alignTop { vertical-align: top !important; }
+  &alignMiddle { vertical-align: middle !important; }
+  &alignBottom { vertical-align: bottom !important; }
+  &alignBaseline { vertical-align: baseline !important; }
+
+  // Font size (px based)
+  &fs8 { font-size: 8px !important; }
+  &fs10 { font-size: 10px !important; }
+  &fs11 { font-size: 11px !important; }
+  &fs12 { font-size: 12px !important; }
+  &fs13 { font-size: 13px !important; }
+  &fs14 { font-size: 14px !important; }
+  &fs15 { font-size: 15px !important; }
+  &fs16 { font-size: 16px !important; }
+  &fs17 { font-size: 17px !important; }
+  &fs18 { font-size: 18px !important; }
+  &fs19 { font-size: 19px !important; }
+  &fs20 { font-size: 20px !important; }
+  &fs22 { font-size: 22px !important; }
+  &fs23 { font-size: 23px !important; }
+  &fs24 { font-size: 24px !important; }
+  &fs25 { font-size: 25px !important; }
+  &fs26 { font-size: 26px !important; }
+  &fs27 { font-size: 27px !important; }
+  &fs28 { font-size: 28px !important; }
+  &fs30 { font-size: 30px !important; }
+  &fs32 { font-size: 32px !important; }
+  &fs35 { font-size: 35px !important; }
+  &fs36 { font-size: 36px !important; }
+  &fs38 { font-size: 38px !important; }
+  &fs39 { font-size: 39px !important; }
+  &fs40 { font-size: 40px !important; }
+  &fs44 { font-size: 44px !important; }
+  &fs46 { font-size: 46px !important; }
+  &fs48 { font-size: 48px !important; }
+  &fs50 { font-size: 50px !important; }
+  &fs52 { font-size: 52px !important; }
+  &fs54 { font-size: 54px !important; }
+  &fs56 { font-size: 56px !important; }
+  &fs60 { font-size: 60px !important; }
+  &fs64 { font-size: 64px !important; }
+  &fs66 { font-size: 66px !important; }
+  &fs68 { font-size: 68px !important; }
+  &fs70 { font-size: 70px !important; }
+  &fs74 { font-size: 74px !important; }
+  &fs100 { font-size: 100px !important; }
+  &fs120 { font-size: 120px !important; }
+  &fs320 { font-size: 320px !important; }
+
+  // Font weight
+  &fw100 { font-weight: 100 !important; }
+  &fw200 { font-weight: 200 !important; }
+  &fw300 { font-weight: 300 !important; }
+  &fw400 { font-weight: 400 !important; }
+  &fw500 { font-weight: 500 !important; }
+  &fw600 { font-weight: 600 !important; }
+  &fw700 { font-weight: 700 !important; }
+  &fw800 { font-weight: 800 !important; }
+  &fw900 { font-weight: 900 !important; }
+
+  // Line height (em based)
+  &lh5 { line-height: 0.05em !important; }
+  &lh10 { line-height: 0.1em !important; }
+  &lh15 { line-height: 0.15em !important; }
+  &lh20 { line-height: 0.2em !important; }
+  &lh25 { line-height: 0.25em !important; }
+  &lh30 { line-height: 0.3em !important; }
+  &lh40 { line-height: 0.4em !important; }
+  &lh50 { line-height: 0.5em !important; }
+  &lh75 { line-height: 0.75em !important; }
+  &lh100 { line-height: 1em !important; }
+  &lh120 { line-height: 1.2em !important; }
+  &lh130 { line-height: 1.3em !important; }
+  &lh140 { line-height: 1.4em !important; }
+  &lh150 { line-height: 1.5em !important; }
+  &lh160 { line-height: 1.6em !important; }
+  &lh170 { line-height: 1.7em !important; }
+  &lh180 { line-height: 1.8em !important; }
+  &lh190 { line-height: 1.9em !important; }
+  &lh200 { line-height: 2em !important; }
+  &lh210 { line-height: 2.1em !important; }
+  &lh14px { line-height: 14px !important; }
+  &lh64px { line-height: 64px !important; }
+  &lhNormal { line-height: 100% !important; }
+
+  // Letter spacing (em based)
+  &ls3 { letter-spacing: 0.03em !important; }
+  &ls4 { letter-spacing: 0.04em !important; }
+  &ls5 { letter-spacing: 0.05em !important; }
+  &ls6 { letter-spacing: 0.06em !important; }
+  &ls7 { letter-spacing: 0.07em !important; }
+  &ls8 { letter-spacing: 0.08em !important; }
+  &ls9 { letter-spacing: 0.09em !important; }
+  &ls10 { letter-spacing: 0.1em !important; }
+  &ls15 { letter-spacing: 0.15em !important; }
+  &ls20 { letter-spacing: 0.2em !important; }
+  &ls25 { letter-spacing: 0.25em !important; }
+  &ls30 { letter-spacing: 0.3em !important; }
+  &ls40 { letter-spacing: 0.4em !important; }
+  &ls50 { letter-spacing: 0.5em !important; }
+}

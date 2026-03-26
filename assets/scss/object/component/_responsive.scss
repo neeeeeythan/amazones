@@ -1,0 +1,252 @@
+@use "../../foundation/forwards" as *;
+
+// ============================================
+// GLOBAL RESPONSIVE STYLES
+// Tablet  <= 1024px  |  Mobile <= 767px
+// ============================================
+
+// ------------------------------------------
+// TABLET  (max-width: 1024px)
+// ------------------------------------------
+@media (max-width: 1024px) {
+  // 最大幅コンテナ
+  .c-maxWidth {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .u-mdBlock {
+    display: block;
+  }
+
+  // ヘッダー
+  .l-header {
+    width: 100%;
+
+    // ヘッダーアクションボタンを少し縮小するが表示は維持
+    &__btn {
+      min-width: 0;
+      padding-left: 14px !important;
+      padding-right: 14px !important;
+    }
+  }
+
+  // お知らせ
+  .c-announcement {
+    width: 100%;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .c-announcement_titleContainer {
+    flex-direction: column;
+    text-align: center;
+
+    h2:nth-child(2) {
+      font-size: 2.75rem;
+    }
+  }
+
+  // エンドノート
+  .c-endNote {
+    padding: 6rem 0;
+    gap: 2rem;
+  }
+
+  .c-endNote_row {
+    gap: 1.5rem;
+  }
+
+  // フッター
+  .l-footer {
+    &__container {
+      padding: 60px 48px 40px 48px;
+      gap: 60px;
+    }
+
+    // 上部フッター行（ロゴ/リンク）を縦に積み重ね
+    &__top {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    // フッターリンクカラム: オーバーフローの代わりに折り返し
+    &__nav-columns {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  }
+
+  // テキストスライダー
+  .c-text-marquee {
+    height: 64px;
+  }
+}
+
+// ------------------------------------------
+// MOBILE  (max-width: 767px)
+// ------------------------------------------
+@media (max-width: 767px) {
+  .u-dSp {
+    display: block;
+  }
+
+  .u-dDesk {
+    display: none;
+  }
+
+  .lg-block {
+    display: none;
+  }
+
+  .u-mdBlock {
+    display: none;
+  }
+
+  // 最大幅コンテナ
+  .c-maxWidth {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  // お知らせ
+  .c-announcement {
+    width: 100%;
+    padding: 2.5rem 1.25rem;
+    padding-bottom: 13rem;
+    gap: 1.25rem;
+  }
+
+  .c-announcement_titleContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+
+    h2 {
+      font-size: 1.375rem;
+    }
+
+    h2:nth-child(2) {
+      font-size: 2rem;
+    }
+  }
+
+  .c-announcement_body {
+    font-size: 0.9375rem;
+    line-height: 1.9;
+  }
+
+  .c-announcement_btn {
+    font-size: 1rem;
+  }
+
+  // エンドノート
+  .c-endNote {
+    padding: 4rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .c-endNote_row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .c-endNote_card_header {
+    h3 {
+      font-size: 1.125rem;
+    }
+  }
+
+  .c-endNote_card_icon {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+  }
+
+  .c-endNote_card_body {
+    font-size: 0.9375rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  // テキストスライダー
+  .c-text-marquee {
+    height: 56px;
+
+    .c-text-marquee__slide p {
+      font-size: 24px !important;
+    }
+  }
+
+  // フッター
+  .l-footer {
+    &__container {
+      padding: 48px 1.25rem 32px 1.25rem;
+      gap: 40px;
+
+      // 全フッター行を縦に積み重ね
+      > div {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 32px !important;
+      }
+    }
+
+    // フッターナビカラムグループ: 積み重ね
+    &__nav-columns,
+    &__nav-group {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    // 下部フッター行: リンク＋スクロールアップ
+    &__bottom {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 20px !important;
+    }
+
+    // フッター下部リンク: 折り返し
+    &__legal-links {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+
+  // Cookieバー
+  .c-cookie-notice {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    gap: 12px;
+  }
+
+  // バナーステッカー — オーバーフロー防止のためモバイルで非表示
+  .banner-sticker1,
+  .banner-sticker2,
+  .c-footer-banner__speech1,
+  .banner-speechbubble2 {
+    display: none;
+  }
+
+  .p-top-topic__sticker {
+    display: none;
+  }
+
+  .c-cookie-notice {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .c-cookie-notice__sub {
+    // display:none;
+    display: inline-flex;
+    align-self: flex-end;
+  }
+}

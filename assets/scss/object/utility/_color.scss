@@ -1,0 +1,26 @@
+@use "../../foundation/forwards" as *;
+
+// COLOR UTILITIES
+
+.u- {
+  // Background colors
+  &bgBlack1 { background-color: $base-black !important; }
+  &bgGray { background-color: $base-gray !important; }
+  &bgLightGray { background-color: $base-lightGray !important; }
+  &bgLinearLightGray { background: linear-gradient(to bottom, #fafcfb 0%, #fdfdfd 100%) !important; }
+  &bgGrayBlue { background-color: $base-grayBlue !important; }
+  &bgWhite { background-color: $white !important; }
+  &bgMain1 { background-color: $mainColor1 !important; }
+  &bgRed { background-color: $base-red !important; }
+  &bgPeach { background-color: $base-peach !important; }
+  &bgBrown { background-color: $base-brown !important; }
+
+  // Text colors
+  &cBlack1 { color: $text-black1 !important; }
+  &cWhite { color: $text-white !important; }
+  &cLightBlue { color: $text-lightBlue !important; }
+  &cRed { color: $text-red !important; }
+  &cPeach { color: $text-peach !important; }
+  &cBrown { color: $text-brown !important; }
+  &cLightPink { color: $text-lightPink !important; }
+}
