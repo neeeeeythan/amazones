@@ -1,14 +1,14 @@
 /* ============================================
      HEADER CSS GLOBAL
 ============================================ */
-.I-header {
+.l-header {
   width: calc(100% - 100px);
   background-color: var(--base-white);
   position: sticky;
   top: 0;
   z-index: 999;
 }
-.header-btn {
+.l-header__btn {
   width: fit-content; /* w-fit-content */
   min-width: 235px;
   transition: all 0.3s ease-in-out;
@@ -34,23 +34,23 @@
   align-items: center;
   justify-content: center;
 }
-.header-btn--reservation {
+.l-header__btn--reservation {
   padding-right: 21px; /* pr-21 override */
 }
-.header-btn__content {
+.l-header__btn-content {
   display: flex;
   flex-direction: row;
   align-items: flex-end; /* items-end */
   gap: 5px; /* gap-5px */
 }
-.header-btn__text {
+.l-header__btn-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* items-start */
   gap: 8px; /* gap-8px */
 }
 
-.header-floating-menu {
+.l-header__floating-menu {
   background-color: var(--base-black);
   width: 100px;
   height: 104px;
@@ -67,13 +67,13 @@
   align-items: center; /* items-center */
   justify-content: space-between; /* justify-between */
 }
-.floating-menu-btn {
+.l-header__floating-btn {
   display: flex;
   flex-direction: column; /* flex-col */
   align-items: center; /* items-center */
   gap: 13px; /* gap-13px */
 }
-.scroll-down-text {
+.l-header__scroll-down {
   display: flex;
   flex-direction: column; /* flex-col */
   align-items: center; /* items-center */
@@ -82,19 +82,19 @@
   background-color: var(--base-black); /* bg-base-black1 */
 }
 
-.header-floating-menu.active {
+.l-header__floating-menu.active {
   height: 100vh;
   background-color: var(--base-black);
 }
 
-.floating-menu-content {
+.l-header__floating-content {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease-in-out;
   cursor: pointer;
 }
 
-.header-floating-menu.active .floating-menu-content {
+.l-header__floating-menu.active .l-header__floating-content {
   opacity: 1;
   pointer-events: auto;
 }
@@ -110,7 +110,7 @@
   cursor: pointer;
 }
 
-.header-floating-menu.active #scroll-down-text {
+.l-header__floating-menu.active #scroll-down-text {
   opacity: 1;
   pointer-events: auto !important;
   z-index: 10;
@@ -175,7 +175,7 @@
   }
 }
 
-.text-vertical {
+.u-text-vertical {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
@@ -196,7 +196,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.mobile-header-overlay {
+.l-header__mobile-overlay {
   position: fixed;
   top: 98px;
   left: 0;
@@ -213,7 +213,7 @@
     visibility 0.3s ease;
 }
 
-.mobile-header-overlay.active {
+.l-header__mobile-overlay.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -345,7 +345,7 @@
   margin-bottom: 20px;
   align-items: center;
 }
-.sp-nav-btns .footer-blue-btn {
+.sp-nav-btns .c-btn--light-blue {
   width: 280px;
   max-width: 100%;
   display: flex;
@@ -381,7 +381,7 @@
 .sp-nav-utility a:hover {
   color: var(--lightBlue);
 }
-.mobile-hamburger {
+.l-header__hamburger {
   display: none;
 }
 .sp-header-btn {
@@ -389,7 +389,7 @@
   gap: 20px;
   transition: all 0.3s ease-in-out;
 }
-.I-header-wrapper {
+.l-header__wrapper {
   z-index: 999999;
   display: flex;
   flex-direction: row;
@@ -414,12 +414,12 @@
   gap: 15px; /* gap-15px */
 }
 @media screen and (max-width: 1090px) {
-  .I-header {
+  .l-header {
     position: sticky;
     top: 0px;
     z-index: 999;
   }
-  .floating-menu-content {
+  .l-header__floating-content {
     display: none;
   }
   #floating-menu-btn {
@@ -431,10 +431,10 @@
   #floating-menu-btn p {
     display: none;
   }
-  .header-btn:not(.sp-header-btn) {
+  .l-header__btn:not(.sp-header-btn) {
     display: none;
   }
-  .header-floating-menu {
+  .l-header__floating-menu {
     max-height: 98.77px;
   }
   .desktop-menu-icon {
@@ -442,12 +442,12 @@
   }
 
   /* モバイルではスクロールダウンテキストを非表示 */
-  .header-floating-menu.active #scroll-down-text {
+  .l-header__floating-menu.active #scroll-down-text {
     opacity: 0 !important;
     pointer-events: none !important;
   }
 
-  .mobile-hamburger {
+  .l-header__hamburger {
     display: flex;
     flex-direction: column;
     gap: 11px;
@@ -468,17 +468,17 @@
     transform-origin: center;
   }
 
-  .mobile-hamburger.active {
+  .l-header__hamburger.active {
     background-color: transparent;
   }
-  .mobile-hamburger.active .mh-bar:nth-child(1) {
+  .l-header__hamburger.active .mh-bar:nth-child(1) {
     transform: translateY(18px) rotate(45deg);
   }
-  .mobile-hamburger.active .mh-bar:nth-child(2) {
+  .l-header__hamburger.active .mh-bar:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
   }
-  .mobile-hamburger.active .mh-bar:nth-child(3) {
+  .l-header__hamburger.active .mh-bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
@@ -487,14 +487,14 @@
   .sp-nav-main {
     margin-top: 20px;
   }
-  .mobile-header-overlay {
+  .l-header__mobile-overlay {
     top: 50px;
   }
   .amazones-header-logo {
     width: 70px;
     height: auto;
   }
-  .I-header-wrapper {
+  .l-header__wrapper {
     padding-left: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -503,30 +503,30 @@
   .l-header__brand {
     gap: 14px;
   }
-  .I-header-wrapper .header-text,
-  .I-header-wrapper .header-text {
+  .l-header__wrapper .l-header__text,
+  .l-header__wrapper .l-header__text {
     font-size: 10px;
   }
-  .header-floating-menu {
+  .l-header__floating-menu {
     max-height: 50px;
     width: 50px;
   }
 
-  .mobile-hamburger {
+  .l-header__hamburger {
     gap: 5px;
   }
   .mh-bar {
     width: 25px;
     height: 1px;
   }
-  .mobile-hamburger.active .mh-bar:nth-child(1) {
+  .l-header__hamburger.active .mh-bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .mobile-hamburger.active .mh-bar:nth-child(2) {
+  .l-header__hamburger.active .mh-bar:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
   }
-  .mobile-hamburger.active .mh-bar:nth-child(3) {
+  .l-header__hamburger.active .mh-bar:nth-child(3) {
     transform: translateY(-4px) rotate(-45deg);
   }
 }
@@ -538,14 +538,14 @@
      FOOTER SECTION
 ============================================ */
 /* フローティングメニューを固定にしてデスクトップでユーザーに追従させる */
-.header-floating-menu {
+.l-header__floating-menu {
   position: fixed; /* 既にfixed — stickyではなくfixedを維持 */
   right: 0;
   top: 0;
 }
 
 /* ナビメニューポップアップ */
-.nav-menu-popup {
+.c-nav-menu {
   position: fixed;
   right: 100px;
   top: 104px;
@@ -565,49 +565,49 @@
   z-index: 998;
 }
 
-.nav-menu-popup.active {
+.c-nav-menu.active {
   opacity: 1;
   pointer-events: auto;
 }
-.nav-menu-popup__columns {
+.c-nav-menu__columns {
   display: flex;
   flex-direction: row; /* flex-row */
   justify-content: space-between; /* justify-between */
   width: 100%; /* w-full */
 }
-.nav-menu-popup__column {
+.c-nav-menu__column {
   display: flex;
   flex-direction: column; /* flex-col */
   gap: 30px; /* gap-30px */
 }
-.nav-menu-popup__group {
+.c-nav-menu__group {
   display: flex;
   flex-direction: column; /* flex-col */
   gap: 60px; /* gap-60px */
 }
-.nav-menu-popup__section {
+.c-nav-menu__section {
   display: flex;
   flex-direction: column; /* flex-col */
   gap: 30px; /* gap-30px */
 }
-.nav-menu-popup__links {
+.c-nav-menu__links {
   display: flex;
   flex-direction: column; /* flex-col */
   gap: 25px; /* gap-25px */
   align-items: flex-start; /* items-start */
 }
-.nav-menu-popup__bottom {
+.c-nav-menu__bottom {
   display: flex;
   flex-direction: column; /* flex-col */
   width: 100%; /* w-full */
   gap: 30px; /* gap-30px */
 }
-.nav-menu-popup__bottom-btns {
+.c-nav-menu__bottom-btns {
   display: flex;
   flex-direction: row; /* flex-row */
   gap: 20px; /* gap-20px */
 }
-.nav-menu-popup__bottom-links {
+.c-nav-menu__bottom-links {
   display: flex;
   flex-direction: row; /* flex-row */
   gap: 40px; /* gap-40px */
@@ -615,10 +615,10 @@
 }
 
 /* floating-menu-closeを無効化（ハンバーガーアニメーションが代替） */
-.floating-menu-close {
+.l-header__floating-close {
   display: none;
 }
-.header-floating-menu.active .floating-menu-close {
+.l-header__floating-menu.active .l-header__floating-close {
   display: none;
 }
 
@@ -635,7 +635,7 @@
   }
 
   /* デスクトップのフローティングボタン内にハンバーガーバーを表示 */
-  #header-floating-menu #floating-menu-btn .mobile-hamburger {
+  #header-floating-menu #floating-menu-btn .l-header__hamburger {
     display: flex;
     flex-direction: column;
     gap: 11px;
@@ -656,32 +656,32 @@
   }
 
   /* バーをホバー/アクティブ時にXにアニメーション */
-  .header-floating-menu.active
+  .l-header__floating-menu.active
     #floating-menu-btn
-    .mobile-hamburger
+    .l-header__hamburger
     .mh-bar:nth-child(1) {
     transform: translateY(18px) rotate(45deg);
   }
-  .header-floating-menu.active
+  .l-header__floating-menu.active
     #floating-menu-btn
-    .mobile-hamburger
+    .l-header__hamburger
     .mh-bar:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
   }
-  .header-floating-menu.active
+  .l-header__floating-menu.active
     #floating-menu-btn
-    .mobile-hamburger
+    .l-header__hamburger
     .mh-bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
 
 @media screen and (max-width: 1090px) {
-  .nav-menu-popup {
+  .c-nav-menu {
     display: none;
   }
-  .floating-menu-close {
+  .l-header__floating-close {
     display: none !important;
   }
 }

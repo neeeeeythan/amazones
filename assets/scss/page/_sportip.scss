@@ -574,7 +574,7 @@
 
   /* ── CONTENT ITEM 01 & 03 (text container on right) ── */
 
-  /* Make the outer .relative flex-col on mobile */
+  /* Make the outer .u-relative flex-col on mobile */
   div:has(> .p-sportip__text-container) {
     display: flex;
     flex-direction: column;
@@ -668,12 +668,12 @@
   }
 
   /* mb-100 and mt-100 — reduce on mobile */
-  .w-100.flex.mb-100,
-  .w-100.flex.justify-end.mb-100 {
+  .w-100.u-flex.u-mb-100,
+  .w-100.u-flex.u-justify-end.u-mb-100 {
     margin-bottom: 2rem !important;
   }
 
-  .mt-100 {
+  .u-mt-100 {
     margin-top: 2.5rem !important;
   }
 

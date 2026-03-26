@@ -876,7 +876,7 @@
 }
 
 /* サムネイルグリッド — 行が親要素いっぱいに伸びるのを防止 */
-.slider-thumbs .grid {
+.slider-thumbs .u-grid {
   align-content: start;
 }
 
@@ -1494,7 +1494,7 @@
     gap: 20px;
   }
 
-  .p-storedetail_dr-amazones-header .fs-18 {
+  .p-storedetail_dr-amazones-header .u-fs-18 {
     font-size: 16px;
   }
 
@@ -1860,7 +1860,7 @@
   }
 
   /* Restore grid layout (undo horizontal scroll override) */
-  .slider-thumbs .grid {
+  .slider-thumbs .u-grid {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
@@ -1882,7 +1882,7 @@
 
   /* Reset fixed thumbnail sizes — let images fill grid cells */
   .slider-thumbs .js-thumb-button,
-  .slider-thumbs .grid > * {
+  .slider-thumbs .u-grid > * {
     flex: unset;
     width: 100%;
     height: auto;

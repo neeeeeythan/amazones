@@ -762,7 +762,7 @@
     gap: 0.5rem;
   }
 
-  .p-medical__how-to-use-title .mt-50 {
+  .p-medical__how-to-use-title .u-mt-50 {
     margin-top: 0;
   }
 
@@ -791,7 +791,7 @@
   }
 
   /* ステップ6のインラインコード/入力行 */
-  .p-medical__step-card-body .bg-gray {
+  .p-medical__step-card-body .u-bg-gray {
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 0.75rem 1rem;
@@ -804,7 +804,7 @@
     gap: 1.5rem;
   }
 
-  .p-medical__lineup-header .mt-50 {
+  .p-medical__lineup-header .u-mt-50 {
     margin-top: 0;
   }
 
@@ -917,11 +917,11 @@
     width: 100%;
   }
 
-  .p-medical__partners-row .fs-36 {
+  .p-medical__partners-row .u-fs-36 {
     font-size: 1.5rem;
   }
 
-  .p-medical__partners-row .fs-30 {
+  .p-medical__partners-row .u-fs-30 {
     font-size: 1.25rem;
   }
   /* パートナー終了 */
@@ -1051,7 +1051,7 @@
      開始: ユーティリティオーバーライド
      ---------------------------------------- */
   /* グレー入力コードボックス — 1行目にコード、2行目に説明 */
-  .c-announcement_body .bg-gray {
+  .c-announcement_body .u-bg-gray {
     flex-wrap: wrap;
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
@@ -1059,13 +1059,13 @@
     align-items: center;
   }
 
-  .c-announcement_body .bg-gray > p:last-child {
+  .c-announcement_body .u-bg-gray > p:last-child {
     flex: 0 0 100%;
     white-space: normal;
   }
 
-  .c-announcement_body .bg-gray p,
-  .c-announcement_body .bg-gray div p {
+  .c-announcement_body .u-bg-gray p,
+  .c-announcement_body .u-bg-gray div p {
     font-size: 0.8125rem;
     white-space: nowrap;
   }

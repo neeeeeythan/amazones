@@ -1,36 +1,46 @@
 // ============================================
-//  Amazones メインスタイルシート
-//  全SCSSパーシャルをインポート
+//  Amazones - FLOCSS Architecture
 // ============================================
 
-// グローバル（変数、ユーティリティ、共通コンポーネント）
-@use "global";
-@use "header";
-@use "footer";
+// Foundation (variables, base element styles)
+@use "foundation/base";
 
-// ページ別スタイル
-@use "top";
-@use "about";
-@use "admission";
-@use "column";
-@use "column-slag";
-@use "contact";
-@use "family";
-@use "faq";
-@use "information";
-@use "medical";
-@use "member";
-@use "payment";
-@use "personal";
-@use "point_redemption";
-@use "price";
-@use "protein";
-@use "reservation";
-@use "rules";
-@use "sitemap";
-@use "sportip";
-@use "storedetail";
-@use "storedetail-introduction";
-@use "storedetail-review";
-@use "storelist";
-@use "visitor";
+// Utility (u-* classes)
+@use "utility/utility";
+
+// Layout
+@use "layout/header";
+@use "layout/footer";
+
+// Component (shared components from global)
+@use "component/shared";
+
+// Plugins
+@use "plugins/swiper";
+
+// Page
+@use "page/top";
+@use "page/about";
+@use "page/admission";
+@use "page/column";
+@use "page/column-slag";
+@use "page/contact";
+@use "page/family";
+@use "page/faq";
+@use "page/information";
+@use "page/medical";
+@use "page/member";
+@use "page/payment";
+@use "page/personal";
+@use "page/point_redemption";
+@use "page/price";
+@use "page/protein";
+@use "page/reservation";
+@use "page/rules";
+@use "page/sitemap";
+@use "page/sportip";
+@use "page/storedetail";
+@use "page/storedetail-introduction";
+@use "page/storedetail-review";
+@use "page/storelist";
+@use "page/visitor";

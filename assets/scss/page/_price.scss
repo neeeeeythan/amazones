@@ -517,7 +517,7 @@
     padding-bottom: 0rem;
   }
 
-  .p-price__content .flex,
+  .p-price__content .u-flex,
   .p-price__col-row {
     flex-direction: column;
   }
@@ -527,7 +527,7 @@
   }
 
   /* 2列料金リスト */
-  .p-price__text-container.flex-1 {
+  .p-price__text-container.u-flex-1 {
     flex: 1 1 100%;
   }
 
@@ -562,7 +562,7 @@
   }
 
   /* セクションパディング */
-  .p-price__section--white.py-100 {
+  .p-price__section--white.u-py-100 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }

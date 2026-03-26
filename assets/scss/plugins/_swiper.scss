@@ -1,0 +1,9 @@
+/* Swiper.js overrides */
+.swiper {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--base-lightBlue);
+}

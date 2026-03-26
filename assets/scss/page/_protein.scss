@@ -713,8 +713,8 @@
   }
 
   /* Each flavor block outer wrapper — remove bottom margin */
-  .w-100.flex.mb-100,
-  .w-100.flex.justify-end.mb-100 {
+  .w-100.u-flex.u-mb-100,
+  .w-100.u-flex.u-justify-end.u-mb-100 {
     margin-bottom: 0 !important;
   }
 
@@ -802,7 +802,7 @@
   .c-section_lightBlue
     .c-maxWidth
     > .c-section__header-row
-    .c-flex-gap-3.items-end {
+    .c-flex-gap-3.u-items-end {
     margin-top: 0 !important;
   }
 
@@ -817,15 +817,15 @@
   }
 
   /* Individual buy now cards — reduce padding */
-  div:has(> h5.font-outfit.fs-24.fw-600.text-red),
-  div:has(> h5.font-outfit.fs-24.fw-600.text-peach),
-  div:has(> h5.font-outfit.fs-24.fw-600.text-brown) {
+  div:has(> h5.u-font-outfit.u-fs-24.u-fw-600.u-text-red),
+  div:has(> h5.u-font-outfit.u-fs-24.u-fw-600.u-text-peach),
+  div:has(> h5.u-font-outfit.u-fs-24.u-fw-600.u-text-brown) {
     padding: 2rem 1.5rem !important;
     gap: 1rem !important;
   }
 
   /* Flavor name size in buy now cards */
-  .c-section_lightBlue .font-zen.fs-30.fw-700 {
+  .c-section_lightBlue .u-font-zen.u-fs-30.u-fw-700 {
     font-size: 1.25rem;
   }
 
@@ -836,12 +836,12 @@
   }
 
   /* Stack the background image + text panel */
-  section.relative:has(.p-protein__onlineshop-text-container) {
+  section.u-relative:has(.p-protein__onlineshop-text-container) {
     display: flex;
     flex-direction: column;
   }
 
-  section.relative:has(.p-protein__onlineshop-text-container) > img {
+  section.u-relative:has(.p-protein__onlineshop-text-container) > img {
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -859,7 +859,7 @@
     overflow: hidden;
   }
 
-  .p-protein__onlineshop-text-container .fs-60 {
+  .p-protein__onlineshop-text-container .u-fs-60 {
     font-size: 1.75rem !important;
   }
 
@@ -1000,12 +1000,12 @@
   }
 
   /* Each flavor block outer wrapper — reduce bottom margin */
-  .w-100.flex.mb-100,
-  .w-100.flex.justify-end.mb-100 {
+  .w-100.u-flex.u-mb-100,
+  .w-100.u-flex.u-justify-end.u-mb-100 {
     margin-bottom: 0 !important;
   }
 
-  /* The inner .relative container holding image + text overlay:
+  /* The inner .u-relative container holding image + text overlay:
      switch from relative-positioned overlay to stacked column */
   div:has(> .p-protein__text-container),
   div:has(> .p-protein__text-container--left) {

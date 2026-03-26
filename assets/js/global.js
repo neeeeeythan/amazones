@@ -173,8 +173,8 @@ document.addEventListener("DOMContentLoaded", function () {
 floatingBtn.addEventListener("click", function () {
   if (!isMobile()) return;
 
-  const overlay = document.querySelector(".mobile-header-overlay");
-  const hamburger = document.querySelector(".mobile-hamburger");
+  const overlay = document.querySelector(".l-header__mobile-overlay");
+  const hamburger = document.querySelector(".l-header__hamburger");
   const isActive = overlay.classList.toggle("active");
 
   headerFloatingMenu.classList.toggle("active", isActive);
@@ -194,8 +194,8 @@ document.querySelectorAll(".js-sp-nav-toggle").forEach(function (btn) {
 var spNavClose = document.querySelector(".sp-nav-close");
 if (spNavClose) {
   spNavClose.addEventListener("click", function () {
-    var overlay = document.querySelector(".mobile-header-overlay");
-    var hamburger = document.querySelector(".mobile-hamburger");
+    var overlay = document.querySelector(".l-header__mobile-overlay");
+    var hamburger = document.querySelector(".l-header__hamburger");
     overlay.classList.remove("active");
     hamburger.classList.remove("active");
     headerFloatingMenu.classList.remove("active");
@@ -206,8 +206,8 @@ if (spNavClose) {
 // デスクトップリサイズ時にオーバーレイ閉じる＋ハンバーガーリセット
 window.addEventListener("resize", function () {
   if (!isMobile()) {
-    const overlay = document.querySelector(".mobile-header-overlay");
-    const hamburger = document.querySelector(".mobile-hamburger");
+    const overlay = document.querySelector(".l-header__mobile-overlay");
+    const hamburger = document.querySelector(".l-header__hamburger");
 
     overlay.classList.remove("active");
     hamburger.classList.remove("active");
@@ -343,7 +343,7 @@ function initSliders() {
       for (var i = 0; i < totalOriginal; i++) {
         (function (idx) {
           var dot = document.createElement("button");
-          dot.className = "topic-slider__dot" + (idx === 0 ? " active" : "");
+          dot.className = "p-top-topic__slider-dot" + (idx === 0 ? " active" : "");
           dot.setAttribute("aria-label", "Slide " + (idx + 1));
           dot.addEventListener("click", function () {
             goTo(idx);
@@ -355,7 +355,7 @@ function initSliders() {
 
     function updateDots() {
       if (!dotsWrap) return;
-      var dots = dotsWrap.querySelectorAll(".topic-slider__dot");
+      var dots = dotsWrap.querySelectorAll(".p-top-topic__slider-dot");
       for (var i = 0; i < dots.length; i++) {
         dots[i].classList.toggle("active", i === currentIndex);
       }
@@ -1035,7 +1035,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  var okBtn = notice.querySelector(".footer-btn");
+  var okBtn = notice.querySelector(".c-btn--footer");
   if (okBtn) {
     okBtn.addEventListener("click", function () {
       notice.classList.remove("visible");
@@ -1067,19 +1067,19 @@ document.addEventListener("DOMContentLoaded", () => {
 function initAccordions() {
   const isMobile = window.innerWidth <= 1050;
 
-  document.querySelectorAll(".footer-page-link").forEach((trigger) => {
+  document.querySelectorAll(".l-footer__page-link").forEach((trigger) => {
     const fresh = trigger.cloneNode(true);
     trigger.parentNode.replaceChild(fresh, trigger);
 
     if (isMobile) {
       fresh.setAttribute("aria-expanded", "false");
       fresh.addEventListener("click", () => {
-        const section = fresh.closest(".footer-nav-section");
+        const section = fresh.closest(".l-footer__nav-section");
         const isOpen = section.classList.toggle("open");
         fresh.setAttribute("aria-expanded", String(isOpen));
       });
     } else {
-      fresh.closest(".footer-nav-section")?.classList.remove("open");
+      fresh.closest(".l-footer__nav-section")?.classList.remove("open");
     }
   });
 }
