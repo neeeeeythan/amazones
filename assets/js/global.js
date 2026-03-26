@@ -1030,11 +1030,6 @@ document.addEventListener("DOMContentLoaded", () => {
   var notice = document.querySelector(".cookie-notice");
   if (!notice) return;
 
-  if (localStorage.getItem("cookieAccepted")) {
-    notice.style.display = "none";
-    return;
-  }
-
   var okBtn = notice.querySelector(".c-btn--footer");
   if (okBtn) {
     okBtn.addEventListener("click", function () {
@@ -1047,7 +1042,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         { once: true },
       );
-      localStorage.setItem("cookieAccepted", "1");
     });
   }
 
