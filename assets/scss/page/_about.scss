@@ -86,7 +86,12 @@
   align-items: stretch;
   position: relative;
 }
-
+.p-about-ribbon{
+  position:absolute;
+  top:-50px;
+  right:-50px;
+  z-index:1;
+}
 .p-space__img-wrapper {
   width: 55%;
   flex-shrink: 0;
@@ -106,6 +111,9 @@
   object-fit: cover;
   object-position: center;
   display: block;
+  z-index:2;
+  position:relative;
+  
 }
 
 .p-space__card {
@@ -132,7 +140,7 @@
 .p-space__desc {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%) !important;
   width: 55%;
   max-width: 900px;
@@ -142,13 +150,21 @@
   gap: 20px;                   /* gap-20px */
   align-items: flex-start;     /* items-start */
   background-color: var(--base-white); /* bg-white */
-  padding: 40px 40px 70px 40px; /* pt-40 px-40 pb-70 */
+  padding: 40px 40px 40px 40px; /* pt-40 px-40 pb-70 */
 }
 
 /* ================================
    ブレークポイント: 1250px
    ================================ */
 @media screen and (max-width: 1250px) {
+  .p-about-ribbon{
+    top:80%;
+  }
+  .p-space {
+
+  padding: 273px 0 50px 0;
+}
+
   .p-space__content2 {
     flex-direction: column;
     align-items: flex-end;
@@ -171,7 +187,8 @@
     transform: none;
     width: calc(100% - 40px);
     max-width: 100%;
-    margin-top: -60px;
+    margin-top: 260px;
+
   }
 }
 
@@ -181,14 +198,18 @@
 @media screen and (max-width: 767px) {
   .p-space {
     background-image: url("../img/about/bg_space_sp.jpg");
+     padding: 80px 0px;
+    margin-top: -70px;  
+  }
+  .p-about-ribbon{
+    top:90%;
+    transform:scale(0.5);
+    right:-300px;
   }
   .p-attraction_page{
     margin-top:0px;
   }
-  .p-space {
-    padding: 80px 0px;
-    margin-top: -70px;
-  }
+
   .p-space__container {
     gap: 20px;
   }

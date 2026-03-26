@@ -3126,6 +3126,13 @@
   }
 }
 
+@media screen and (max-width:1200px){
+  .c-price-plan__header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
 /* ================================
    BREAKPOINT: 1000px
    ================================ */
@@ -3143,6 +3150,7 @@
   .c-price-plan__info-container {
     flex-direction: column;
   }
+
 }
 
 /* ================================
@@ -3157,10 +3165,6 @@
     gap: 30px;
   }
 
-  .c-price-plan__header {
-    flex-direction: column;
-    gap: 20px;
-  }
 
   .c-price-plan__desc-wrapper {
     max-width: 100%;

@@ -6716,6 +6716,10 @@ a {
   gap: 20px;
 }
 
+.l-footer__cta-links a {
+  min-width: 200px;
+}
+
 /* ── ナビカラム ── */
 .l-footer__nav-columns {
   display: flex;
@@ -6835,9 +6839,9 @@ a {
 }
 
 .scroll-up {
-  width: 50px;
-  height: 50px;
-  padding: 0px;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9983,6 +9987,12 @@ a {
     gap: 100px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .c-price-plan__header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 /* ================================
    BREAKPOINT: 1000px
    ================================ */
@@ -10008,10 +10018,6 @@ a {
   }
   .c-price-plan__container {
     gap: 30px;
-  }
-  .c-price-plan__header {
-    flex-direction: column;
-    gap: 20px;
   }
   .c-price-plan__desc-wrapper {
     max-width: 100%;
@@ -11715,6 +11721,7 @@ a {
   position: relative;
   width: 100%; /* w-full */
   margin-top: -5px;
+  z-index: 2;
 }
 
 .c-text-marquee .c-text-marquee__track {
@@ -12673,6 +12680,13 @@ a.p-top-service__card {
   position: relative;
 }
 
+.p-about-ribbon {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  z-index: 1;
+}
+
 .p-space__img-wrapper {
   width: 55%;
   flex-shrink: 0;
@@ -12694,6 +12708,8 @@ a.p-top-service__card {
   -o-object-position: center;
      object-position: center;
   display: block;
+  z-index: 2;
+  position: relative;
 }
 
 .p-space__card {
@@ -12723,7 +12739,7 @@ a.p-top-service__card {
 .p-space__desc {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%) !important;
   width: 55%;
   max-width: 900px;
@@ -12733,13 +12749,19 @@ a.p-top-service__card {
   gap: 20px; /* gap-20px */
   align-items: flex-start; /* items-start */
   background-color: var(--base-white); /* bg-white */
-  padding: 40px 40px 70px 40px; /* pt-40 px-40 pb-70 */
+  padding: 40px 40px 40px 40px; /* pt-40 px-40 pb-70 */
 }
 
 /* ================================
    ブレークポイント: 1250px
    ================================ */
 @media screen and (max-width: 1250px) {
+  .p-about-ribbon {
+    top: 80%;
+  }
+  .p-space {
+    padding: 273px 0 50px 0;
+  }
   .p-space__content2 {
     flex-direction: column;
     align-items: flex-end;
@@ -12759,7 +12781,7 @@ a.p-top-service__card {
     transform: none;
     width: calc(100% - 40px);
     max-width: 100%;
-    margin-top: -60px;
+    margin-top: 260px;
   }
 }
 /* ================================
@@ -12768,13 +12790,16 @@ a.p-top-service__card {
 @media screen and (max-width: 767px) {
   .p-space {
     background-image: url("../img/about/bg_space_sp.jpg");
+    padding: 80px 0px;
+    margin-top: -70px;
+  }
+  .p-about-ribbon {
+    top: 90%;
+    transform: scale(0.5);
+    right: -300px;
   }
   .p-attraction_page {
     margin-top: 0px;
-  }
-  .p-space {
-    padding: 80px 0px;
-    margin-top: -70px;
   }
   .p-space__container {
     gap: 20px;
