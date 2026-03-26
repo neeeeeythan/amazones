@@ -3311,7 +3311,8 @@
     text-align: justify;
   }
 
-  .md-block {
+  .md-block,
+  .u-md-block {
     display: block;
   }
   .md-hidden {
@@ -4291,12 +4292,14 @@
   }
 }
 
-.sm-block {
+.sm-block,
+.u-sm-block {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  .sm-block {
+  .sm-block,
+  .u-sm-block {
     display: block;
   }
   .sm-inline-block {
