@@ -1,0 +1,58 @@
+@use "../../foundation/forwards" as *;
+
+// Display utilities
+
+.u- {
+  // display
+  &dBlock { display: block !important; }
+  &dInlineBlock { display: inline-block !important; }
+  &dInline { display: inline !important; }
+  &dFlex { display: flex !important; }
+  &dInlineFlex { display: inline-flex !important; }
+  &dGrid { display: grid !important; }
+  &dInlineGrid { display: inline-grid !important; }
+  &dHidden { display: none !important; }
+
+  // Responsive visibility
+  &dSp { display: none !important; }
+  &dDesk { display: block !important; }
+
+  // position
+  &posStatic { position: static !important; }
+  &posRelative { position: relative !important; }
+  &posAbsolute { position: absolute !important; }
+  &posFixed { position: fixed !important; }
+  &posSticky { position: sticky !important; }
+
+  // top / right / bottom / left
+  &top0 { top: 0 !important; }
+  &right0 { right: 0 !important; }
+  &bottom0 { bottom: 0 !important; }
+  &left0 { left: 0 !important; }
+
+  // border-radius
+  &radius4 { border-radius: 4px !important; }
+  &radius24 { border-radius: 24px !important; }
+  &radius99 { border-radius: 99px !important; }
+  &radius50 { border-radius: 50px !important; }
+  &radius100 { border-radius: 100% !important; }
+
+  // z-index
+  &z0 { z-index: 0 !important; }
+  &z10 { z-index: 10 !important; }
+  &z20 { z-index: 20 !important; }
+  &z30 { z-index: 30 !important; }
+  &z40 { z-index: 40 !important; }
+  &z50 { z-index: 50 !important; }
+
+  // overflow
+  &overflowHidden { overflow: hidden !important; }
+  &overflowAuto { overflow: auto !important; }
+  &overflowScroll { overflow: scroll !important; }
+
+  // width
+  &wFull { width: 100% !important; }
+
+  // cursor
+  &cursorPointer { cursor: pointer !important; }
+}

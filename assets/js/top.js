@@ -38,7 +38,7 @@ const _timer = 20;
 const slides = document.querySelectorAll(".p-top-hero__slide");
 const dots = document.querySelectorAll(".p-top-hero__dot");
 const heroText = document.querySelector(".p-top-hero__text .p-top-hero__slider-header-p");
-const p = document.querySelector(".p-top-hero__text .reveal.p-top-hero__cta p");
+const p = document.querySelector(".p-top-hero__text .c-reveal.p-top-hero__cta p");
 const a = document.querySelector(".p-top-hero__text a");
 const img = document.querySelector(".p-top-hero__slider-img");
 

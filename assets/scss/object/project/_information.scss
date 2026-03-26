@@ -1,0 +1,19 @@
+@use "../../foundation/forwards" as *;
+
+// トップニュースセクション
+.p-newspage {
+  .p-information__news-section {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-newspage {
+    .p-information__news-section {
+      padding-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@use "../../foundation/forwards" as *;
+
+// ============================================
+// SCROLL / HOVER ANIMATIONS
+// ============================================
+
+.c-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+
+  &.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition:
+      opacity 0.7s ease-out,
+      transform 0.7s ease-out;
+
+    &.is-revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition:
+      opacity 0.7s ease-out,
+      transform 0.7s ease-out;
+
+    &.is-revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out;
+
+    &.is-revealed {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.hover-text-underline {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: $mainColor1;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    right: 0;
+  }
+}
+
+.c-banner__link {
+  &:hover {
+    color: $mainColor1;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// ============================================
+// JUMP ANIMATIONS
+// ============================================
+
+.c-animation-jump {
+  display: block;
+  transform-origin: center bottom;
+
+  &.is-jump-once {
+    animation: p-storedetail-jump 1.8s ease-in-out 1;
+  }
+}
+
+@keyframes p-storedetail-jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-0.875rem);
+  }
+
+  35% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.4375rem);
+  }
+
+  65% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-animation-jump,
+  .c-animation-jump.is-jump-once {
+    animation: none;
+  }
+}

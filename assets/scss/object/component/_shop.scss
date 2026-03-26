@@ -1,0 +1,472 @@
+@use "../../foundation/forwards" as *;
+
+// ============================================
+// SHOP SECTION
+// ============================================
+
+.c-shop {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 120px;
+  position: relative;
+
+  &__container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+    padding-left: 240px;
+  }
+
+  &__items-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    list-style-type: none;
+  }
+
+  &__header {
+    &--desk {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+
+      &__inner {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+
+    &--sp {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+
+      &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 100%;
+  }
+
+  &__sub-text {
+    position: absolute;
+    top: 170px;
+    left: 760px;
+  }
+
+  &__no1-icon {
+    margin-top: -40px;
+  }
+
+  &__map-box {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+
+    &--sp {
+      align-self: flex-start;
+      width: 100%;
+      display: none;
+
+      .c-shop__map-img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__map-img {
+    margin-top: 100px;
+    margin-right: 50px;
+  }
+
+  &__map-number {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    position: absolute;
+    top: 340px;
+  }
+
+  &__ribbon {
+    margin-top: 40px;
+    z-index: 2;
+    width: 100vw;
+
+    img {
+      width: 100vw;
+    }
+  }
+
+  &__sticker-desk {
+    margin-top: 100px;
+
+    &__figure1 {
+      position: absolute;
+      left: 400px;
+      bottom: -10px;
+      z-index: 2;
+    }
+
+    &__bubble1 {
+      position: absolute;
+      top: -60px;
+      left: 120px;
+    }
+
+    &__figure2 {
+      position: absolute;
+      bottom: 0;
+      right: 300px;
+    }
+
+    &__bubble2 {
+      position: absolute;
+      top: -75px;
+      right: -130px;
+    }
+  }
+
+  &__sticker-sp {
+    display: none;
+
+    &__figure1,
+    &__figure2 {
+      display: none;
+    }
+  }
+
+  &__sticker-container {
+    // responsive overrides below
+  }
+}
+
+// ============================================
+// Responsive
+// ============================================
+
+@media screen and (max-width: 1800px) {
+  .c-shop__map-box {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1615px) {
+  .c-shop {
+    &__map-box {
+      right: -50px;
+    }
+
+    &__container {
+      padding-left: 100px;
+      max-width: 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .c-shop {
+    &__map-number {
+      font-size: 210px;
+      margin-left: 190px;
+    }
+
+    &__sub-text {
+      left: 660px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .c-shop__map-number {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .c-shop__map-number {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .c-shop {
+    &__map-box {
+      display: none;
+    }
+
+    &__sticker-desk {
+      display: none;
+    }
+
+    &__sticker-sp {
+      display: block !important;
+      min-height: 500px;
+
+      &__figure1,
+      &__figure2 {
+        display: block;
+        position: absolute;
+      }
+
+      &__figure1 {
+        top: 50px;
+        left: 30px;
+        z-index: 2;
+      }
+
+      &__figure2 {
+        right: 100px;
+        top: 140px;
+        z-index: 2;
+      }
+
+      &__bubble1 {
+        position: absolute;
+        top: -30px;
+        left: 90px;
+        z-index: 2;
+      }
+
+      &__bubble2 {
+        position: absolute;
+        top: -50px;
+        left: 140px;
+      }
+    }
+
+    &__map-box--sp {
+      display: block !important;
+      position: relative !important;
+      top: 0;
+      left: 0;
+
+      .c-shop__map-img {
+        margin: 0 auto !important;
+        margin-left: 100px !important;
+      }
+    }
+
+    &__container {
+      max-width: 100%;
+      padding-right: 140px;
+      gap: 60px;
+    }
+
+    &__map-number {
+      font-size: 310px;
+      top: 200px;
+      margin-left: 80px;
+    }
+
+    &__sub-text {
+      display: none;
+    }
+
+    &__header--desk {
+      display: none;
+    }
+
+    &__ribbon--desk {
+      display: none;
+    }
+
+    &__ribbon--sp {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 200px;
+    }
+
+    &__header--sp {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .c-shop {
+    &__map-box--sp {
+      left: 60px !important;
+
+      .c-shop__map-img {
+        margin: 0 auto !important;
+        margin-left: 0 !important;
+      }
+    }
+
+    &__map-number {
+      left: -80px;
+      font-size: 250px;
+    }
+
+    &__header--desk {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .c-shop {
+    &__map-box--sp {
+      width: 100%;
+      left: 0 !important;
+
+      .c-shop__map-img {
+        width: 100% !important;
+        height: auto;
+        margin: 0 !important;
+      }
+    }
+
+    &__map-number {
+      font-size: 180px;
+      top: 200px;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .c-shop__map-number {
+    left: -50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-shop {
+    margin-top: -120px;
+
+    &__bg {
+      background-image: none;
+      background-color: $white;
+    }
+
+    &__container {
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 0;
+      gap: 0;
+    }
+
+    &__items-wrapper {
+      gap: 20px;
+    }
+
+    &__label-icon {
+      width: 66px;
+    }
+
+    &__no1-icon {
+      width: 57.9px;
+      height: auto;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+
+    &__map-number {
+      font-size: 180px;
+      top: 200px;
+      left: 0;
+
+      .u-fs36 {
+        font-size: 18px;
+      }
+
+      span {
+        // responsive override via parent
+      }
+    }
+
+    &__sticker-container {
+      width: 100vw;
+      min-height: 480px;
+      margin-top: 20px;
+    }
+
+    &__ribbon--desk {
+      display: none;
+    }
+
+    .c-btn--light-blue {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .c-shop {
+    padding-top: 0;
+    margin-top: -120px;
+
+    &__map-box--sp {
+      left: -150px !important;
+
+      .c-shop__map-img {
+        margin-left: 190px !important;
+      }
+    }
+
+    &__map-number {
+      top: 150px;
+      margin-left: 200px;
+      text-wrap: nowrap !important;
+
+      span {
+        margin-left: -15px !important;
+      }
+    }
+
+    &__ribbon--sp {
+      transform: scale(3);
+      margin-left: -180px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .c-shop {
+    &__map-box--sp {
+      left: -150px !important;
+
+      .c-shop__map-img {
+        margin-left: 190px !important;
+      }
+    }
+
+    &__map-number {
+      top: 90px;
+      margin-left: 140px;
+      text-wrap: nowrap !important;
+
+      span {
+        margin-left: -15px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .c-shop__header--sp .u-fs18 {
+    font-size: 15px;
+  }
+}

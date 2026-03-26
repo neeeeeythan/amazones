@@ -1,0 +1,60 @@
+@use "../../foundation/forwards" as *;
+
+// ============================================
+// PAGINATION
+// ============================================
+
+.c-pager1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: fit-content;
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+  }
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $mainColor1;
+    background: white;
+    color: $mainColor1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &:hover:not(.disabled):not(.is-active) {
+      background: $mainColor1;
+      color: white;
+    }
+
+    &.is-active {
+      background: $mainColor1;
+      color: white;
+      border-color: $mainColor1;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-pager1 {
+    margin: 20px 0 30px;
+  }
+}

@@ -1,0 +1,562 @@
+@use "../../foundation/forwards" as *;
+
+.p-point {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+
+    &__content01 {
+      background-image: url("../img/family/bg_family_content1.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: -50px;
+      width: 100%;
+    }
+
+    &__content01-wrapper,
+    &__content02-wrapper {
+      width: 100%;
+      max-width: 1440px;
+      padding: 150px 20px 100px 20px;
+    }
+
+    &__content01-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      h2 {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $mainColor1;
+      }
+
+      p:first-child {
+        line-height: 30px !important;
+      }
+
+      p {
+        // intentional — see media queries below
+      }
+    }
+
+    &__content02-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 77px;
+    }
+
+    &__content02 {
+      background-image: url("../img/family/bg_summary.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+  }
+
+  &__item01 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  &__item_summary {
+    padding: 75px 30px 40px 30px;
+    background-color: $white;
+    position: relative;
+    width: 100%;
+
+    &-left,
+    &-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &-right {
+      width: calc(100% - 60px);
+    }
+  }
+
+  &__item_summary_last {
+    padding-bottom: 33px;
+  }
+
+  &__item_summary_label {
+    background-color: $mainColor1;
+    width: fit-content;
+    padding: 10px 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 240px;
+    text-align: center;
+    white-space: nowrap;
+
+    &-red {
+      background-color: $base-red;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  &__item_summary-left,
+  &__item_summary-right {
+    list-style: none;
+  }
+
+  &__table-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead th {
+      text-align: left;
+      padding: 0px 0px 25px 0px;
+      color: $text-lightBlue;
+      font-weight: 700;
+      border-bottom: 1px solid #e6eeee;
+      font-size: 16px;
+      text-wrap: nowrap;
+    }
+
+    tbody {
+      td {
+        padding: 24px 0px;
+        border-bottom: 1px solid #eaeaea;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      tr {
+        &:hover {
+          background: #f9fbfb;
+          transition: all 0.3s ease-in-out;
+        }
+
+        td:first-child {
+          width: 320px;
+          border-right: 1px solid #eaeaea;
+        }
+
+        td:last-child {
+          text-align: left;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  ul li p:not(.p-point__item_summary_label) {
+    line-height: 30px;
+  }
+}
+
+.p-hospitality__item_wrapper,
+.p-point__item_summary-left {
+  list-style: none;
+}
+
+.point-redemption-ribbon {
+  position: absolute;
+  top: -120px;
+  z-index: 1;
+  right: -190px;
+  width: 100%;
+}
+
+.point-redemption-sticker1 {
+  margin-left: 20px;
+  top: 30px;
+}
+
+.point-redemption-sticker2 {
+  margin-right: 60px;
+  top: 35px;
+}
+
+.p.point__item_summary-warn {
+  padding-bottom: 20px;
+
+  ul {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    li::marker {
+      font-size: 13px;
+    }
+  }
+}
+
+.p-recommended {
+  background-image: url("../img/point-redemption/bg_recommended.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+
+.p-recommended_btn {
+  position: absolute;
+  bottom: 11px;
+  right: 10px;
+}
+
+// おすすめセクション
+.p-hospitality {
+  width: 100%;
+  padding: 100px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/point-redemption/bg_hospitality.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__item_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    width: 100%;
+  }
+
+  &__item {
+    background-color: $white;
+    width: 100%;
+
+    &__label {
+      background-color: $mainColor1;
+      padding: 15px 0px;
+      width: 100%;
+      text-align: center;
+
+      &02 {
+        background-color: $base-darkGray;
+      }
+    }
+
+    p:not(.p-hospitality__item__label) {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  .c-flex-gap-30 {
+    // intentional — overridden in media queries
+  }
+}
+
+.point__item_summary-warn ul li {
+  line-height: 30px;
+}
+
+.p-online-shop .u-gap-50px {
+  gap: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .p-point {
+    &__item01 {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__item_summary-right {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-point__container {
+    &__content01-wrapper {
+      .c-flex-gap-30 {
+        flex-direction: column;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      p {
+        line-height: 30px !important;
+      }
+
+      .c-flex-gap-4 {
+        gap: 0px;
+      }
+    }
+
+    &__item_summary-left {
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .p-hospitality__item_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-point {
+    &__container {
+      &__content02-wrapper {
+        padding: 50px 20px;
+        gap: 30px;
+      }
+
+      &__content01-wrapper {
+        padding: 100px 0px;
+      }
+
+      &__item01 {
+        gap: 20px;
+      }
+    }
+
+    .p-protein_campaign_block {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__item_summary_label {
+      font-size: 16px;
+      text-align: center;
+      padding: 8px 0px;
+      min-width: 200px;
+    }
+
+    &__table tbody tr td:first-child {
+      width: 140px;
+    }
+
+    &__item_summary-left > :first-child {
+      padding-top: 50px;
+    }
+
+    &__item_summary-left > :last-child {
+      padding-bottom: 20px;
+    }
+  }
+
+  .p-hospitality__item__label {
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0px;
+    min-width: 200px;
+  }
+
+  .p-point__container__item01,
+  .p-point__container__content02-wrapper .c-section__stack-50 {
+    gap: 20px;
+  }
+
+  .p-recommended {
+    padding-bottom: 50px;
+  }
+
+  .p-hospitality {
+    padding: 100px 20px;
+
+    &__container {
+      gap: 30px;
+
+      .c-flex-col-start-62,
+      .c-flex-col-start-60 {
+        gap: 40px;
+      }
+    }
+
+    &__item_wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 30px;
+    }
+
+    .c-flex-gap-30 {
+      gap: 15px;
+
+      img {
+        width: 50px;
+      }
+
+      p.u-fs24 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .p-online-shop {
+    .dr-amazones-section {
+      margin-top: 200px;
+    }
+
+    .dr-amazones-container {
+      max-height: 800px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .p-point .p-point__table thead th {
+    text-wrap: wrap;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+// おすすめセクション終了
+
+// 再利用可能
+// DR AMAZONES
+// トップ DR AMAZONES セクション
+.dr-amazones-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.dr-amazones-section {
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $white;
+  padding: 60px 77px;
+  width: 100%;
+  max-width: 1000px;
+
+  .triangle-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.shop-ribbon-sp {
+  display: none;
+}
+
+.dr-amazones-container h2 {
+  line-height: 50px;
+}
+
+@media screen and (max-width: 1700px) {
+  .dr-amazones-container {
+    flex-direction: column !important;
+    max-height: 1000px;
+  }
+
+  .dr-amazones-section {
+    position: relative !important;
+    align-self: end;
+    margin-top: 100px;
+    padding: 60px 77px;
+  }
+
+  .drAmazones-pic {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dr-amazones-container h2 {
+    font-size: 42px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dr-amazones-section {
+    width: 95%;
+    padding: 30px;
+
+    &__body,
+    &__inner {
+      gap: 20px;
+    }
+  }
+
+  .dr-amazones-label {
+    width: 295px;
+    height: auto;
+  }
+
+  .triangle-icon {
+    width: 120px;
+    height: auto;
+  }
+
+  .dr-amazones-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .drAmazones-pic {
+    width: 100vw;
+    transform: scale(1.4);
+    object-position: 0 -20px;
+    margin-top: 40px;
+  }
+}
+
+// DR AMAZONES セクション終了
+
+// 再利用可能
+.p-protein_campaign_block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.p-protein_campaign_header {
+  padding: 2rem 0;
+  border-bottom: 1px solid $mainColor1;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  span {
+    font-size: 1.5rem;
+    color: $text-lightBlue;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .p-protein_campaign_header {
+    p,
+    span {
+      font-size: 1rem;
+    }
+  }
+}

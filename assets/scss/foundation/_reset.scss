@@ -1,0 +1,28 @@
+// ========================================
+// Reset
+// ========================================
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
+}
+
+a {
+  text-decoration: none;
+}

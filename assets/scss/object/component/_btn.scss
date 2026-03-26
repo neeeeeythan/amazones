@@ -1,0 +1,201 @@
+@use "../../foundation/forwards" as *;
+
+// ============================================
+// BUTTONS
+// ============================================
+
+.l-header__btn,
+.sp-header-btn {
+  &:hover {
+    opacity: 0.7;
+
+    .l-header__arrow-img {
+      transform: translateX(8px);
+    }
+  }
+}
+
+.c-btn {
+  &--green {
+    background-color: $mainColor1;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $white;
+      border: 1px solid $mainColor1;
+
+      img {
+        filter: brightness(0) saturate(100%) invert(83%) sepia(97%) saturate(209%)
+          hue-rotate(94deg) brightness(91%) contrast(85%);
+      }
+    }
+  }
+
+  &--light-blue {
+    background-color: $mainColor1;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    gap: 14px;
+    padding: 16px 35px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      opacity: 0.7;
+
+      img:last-child {
+        transform: translateX(8px);
+      }
+    }
+
+    &.p-recommended__btn:hover img {
+      margin-right: 8px;
+    }
+  }
+
+  &--red {
+    background-color: $base-lightPink;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $text-white;
+    width: fit-content;
+    gap: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      opacity: 0.7;
+
+      img:last-child {
+        transform: translateX(8px);
+      }
+    }
+  }
+
+  &--footer {
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+// Legacy names kept for HTML backward-compat (renamed in Phase 5)
+.c-btn--red {
+  background-color: $base-lightPink;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: $text-white;
+  width: fit-content;
+  gap: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    opacity: 0.7;
+
+    img:last-child {
+      transform: translateX(8px);
+    }
+  }
+}
+
+.c-btn--lightBlue02 {
+  background-color: $mainColor1;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 14px;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: $white;
+    border: 1px solid $mainColor1;
+    color: $text-lightBlue;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
+        hue-rotate(96deg) brightness(92%) contrast(82%);
+    }
+  }
+}
+
+.btn_icn_light_blue {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  background-color: $mainColor1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $white;
+    border: 1px solid $mainColor1;
+
+    svg {
+      filter: brightness(0) saturate(100%) invert(96%) sepia(12%) saturate(1406%)
+        hue-rotate(96deg) brightness(92%) contrast(82%);
+    }
+  }
+}
+
+.c-announcement_btn {
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover svg:last-child {
+    transform: translateX(8px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-btn--light-blue {
+    font-size: 16px;
+  }
+}

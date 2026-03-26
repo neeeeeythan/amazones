@@ -1,0 +1,37 @@
+@use "../../foundation/forwards" as *;
+
+// ============================================
+// RIBBONS
+// ============================================
+
+.c-ribbon__grow {
+  &.p-top-hero__ribbon {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.p-top-hero__ribbon {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  z-index: 2;
+  width: 100vw;
+}
+
+.c-ribbon__clip {
+  &.is-in-view {
+    animation: clipRevealRight 2s ease-out forwards;
+  }
+}
+
+@keyframes clipRevealRight {
+  0% {
+    clip-path: inset(0 0 0 100%);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}

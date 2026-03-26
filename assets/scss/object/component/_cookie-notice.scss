@@ -1,0 +1,57 @@
+@use "../../foundation/forwards" as *;
+
+// ============================================
+// COOKIE NOTICE
+// ============================================
+
+.c-cookie-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: $base-black;
+  opacity: 0;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+
+  &.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &.hide {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  .c-btn--footer {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    background-color: $white;
+    color: $base-black;
+    border-radius: 5px;
+    font-weight: 550;
+    padding: 5px 10px;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &-sub {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: none;
+  }
+}
