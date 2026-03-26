@@ -69,6 +69,7 @@ function showMenu() {
 }
 
 let menuPinned = false;
+let menuCooldown = false;
 
 function hideMenu() {
   if (menuPinned) return;
@@ -80,8 +81,10 @@ function toggleMenu() {
   if (isMobile()) return;
   if (menuPinned) {
     menuPinned = false;
+    menuCooldown = true;
     headerFloatingMenu.classList.remove("active");
     if (navPopup) navPopup.classList.remove("active");
+    setTimeout(function () { menuCooldown = false; }, 300);
   } else {
     menuPinned = true;
     showMenu();
@@ -89,8 +92,8 @@ function toggleMenu() {
 }
 
 floatingBtn.addEventListener("click", toggleMenu);
-floatingBtn.addEventListener("mouseenter", showMenu);
-floatingBtnContent.addEventListener("mouseenter", showMenu);
+floatingBtn.addEventListener("mouseenter", function () { if (!menuCooldown) showMenu(); });
+floatingBtnContent.addEventListener("mouseenter", function () { if (!menuCooldown) showMenu(); });
 if (navPopup) navPopup.addEventListener("mouseenter", showMenu);
 
 floatingBtnContent.addEventListener("mouseleave", function (e) {
