@@ -45,7 +45,7 @@ if (scrollDownEl) {
 }
 
 // スクロールダウン（モバイル）
-var scrollDownMobileEl = document.getElementById("scroll-down-mobile");
+var scrollDownMobileEl = document.getElementById("l-header__scroll-down");
 if (scrollDownMobileEl) {
   scrollDownMobileEl.addEventListener("click", scrollToNextSection);
   window.addEventListener("scroll", function () {
