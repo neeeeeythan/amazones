@@ -950,6 +950,10 @@ span {
   text-align: justify;
 }
 
+.u-text-nowrap {
+  white-space: nowrap;
+}
+
 .u-align-top {
   vertical-align: top;
 }
