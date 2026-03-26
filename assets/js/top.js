@@ -1,30 +1,30 @@
 const slideContent = [
   {
-    h1: "女性による<span class='block'> 女性のための</span><span class='block'> 女性専用24時間ジム</span>",
+    h2: "女性による<span class='block'> 女性のための</span><span class='block'> 女性専用24時間ジム</span>",
     p: "Amazonesの特徴をみる",
     href: "about/index.html",
     img: ""
   },
   {
-    h1: "科学的アプローチで実現する <span class='block'>最適なトレーニング環境</span>",
+    h2: "科学的アプローチで実現する <span class='block'>最適なトレーニング環境</span>",
     p: "AI姿勢診断・改善",
     href: "sportip/index.html",
     img: "assets/img/common/img_sportip_logo.png"
   },
   {
-    h1: "女性トレーナーが <span class='block'>貴方を全力でサポート</span>Amazonesの ",
+    h2: "女性トレーナーが <span class='block'>貴方を全力でサポート</span>Amazonesの ",
     p: "パーソナルトレーニング",
     href: "personal/index.html",
     img: ""
   },
   {
-    h1: "ダイエット効<span>果を最大化する</span><span class='block'>オンライン診療サービス</span>",
+    h2: "ダイエット効<span>果を最大化する</span><span class='block'>オンライン診療サービス</span>",
     p: "ドクターアマゾネス",
     href: "medical/index.html",
     img: "assets/img/common/img_drAmazones_logo.png"
   },
   {
-    h1: "諦めるのはまだ早い<span class='block'>いつ始めても遅くない！ム</span><span class='block'>無料体験・見学を予約する</span>",
+    h2: "諦めるのはまだ早い<span class='block'>いつ始めても遅くない！ム</span><span class='block'>無料体験・見学を予約する</span>",
     p: "店舗一覧をみる",
     href: "reservation/index.html",
     img: ""
@@ -37,7 +37,7 @@ const _timer = 20;
 
 const slides = document.querySelectorAll(".mySlides");
 const dots = document.querySelectorAll(".dots");
-const h1 = document.querySelector(".hero-text h1");
+const h2 = document.querySelector(".hero-text h2");
 const p = document.querySelector(".hero-text p");
 const a = document.querySelector(".hero-text a");
 const img = document.querySelector(".hero-slider-img");
@@ -77,13 +77,13 @@ function showSlides() {
   if (current) {
     const isMobile = window.innerWidth <= 767;
 
-    let h1Content = current.h1;
+    let h2Content = current.h2;
 
     if (isMobile) {
-      h1Content = h1Content.replace(/<span(.*?)>/g, "<span class='block'>");
+      h2Content = h2Content.replace(/<span(.*?)>/g, "<span class='block'>");
     }
 
-    h1.innerHTML = h1Content;
+    h2.innerHTML = h2Content;
     p.textContent = current.p;
     a.href = current.href;
 
