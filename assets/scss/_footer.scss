@@ -1,0 +1,312 @@
+/*==========================================
+  FOOTER SECTION  
+/*/
+.I-footer {
+  width: 100%;
+  background-image: url("../img/common/bg_footer.webp");
+  color: var(--base-black);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-main-container {
+  padding: 80px 120px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* ── 上部行 ── */
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px;
+}
+
+/* ── ブランドブロック ── */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.footer-brand-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-brand-logo img {
+  width: 160px;
+  height: auto;
+}
+
+.footer-cta-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── ナビカラム ── */
+.footer-nav-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* ── 各ナビセクション ── */
+.footer-nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-nav-section + .footer-nav-section {
+  margin-top: 0;
+}
+
+.footer-nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ── セクションヘッダー / アコーディオントリガー ── */
+.footer-page-link {
+  /* display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      cursor: default;
+      padding-bottom: 8px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--base-gray);
+}
+
+.footer-link-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--base-lightBlue);
+}
+
+.footer-page-link img {
+  width: 30px;
+  height: 5px;
+}
+.footer-page-link p {
+  color: var(--base-black);
+}
+/* ── ナビリンクリスト ── */
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.footer-nav-list a,
+.footer-legal-links li a,
+.nav-menu-popup a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.footer-nav-list a:hover,
+.footer-legal-links li a:hover,
+.nav-menu-popup a:hover {
+  opacity: 0.7;
+}
+
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-icon-link img {
+  width: 14px;
+  height: 14px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+/* ── 下部行 ── */
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.scroll-up {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-legal-links a {
+  text-decoration: none;
+}
+
+/* ── Cookie通知 ── */
+
+.footer-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.footer-page-link img.accordion-arrow {
+  width: 30px;
+  height: 5px;
+}
+.footer-page-link__arrow-sign {
+  display: none;
+}
+
+/* ══════════════════════════════════════
+       MOBILE  ≤ 767px
+    ══════════════════════════════════════ */
+@media (max-width: 1050px) {
+  .footer-page-link img {
+    width: 20px;
+    height: auto;
+  }
+  .footer-page-link__arrow-icon {
+    display: none !important;
+  }
+  .footer-page-link__arrow-sign {
+    display: inline-flex !important;
+  }
+
+  .footer-page-link__sign-open {
+    display: inline-block;
+  }
+  .footer-page-link__sign-close {
+    display: none;
+  }
+
+  .footer-nav-section.open .footer-page-link__sign-open {
+    display: none;
+  }
+  .footer-nav-section.open .footer-page-link__sign-close {
+    display: inline-block;
+  }
+  .footer-nav-section.open .footer-page-link__sign-close {
+    display: inline-block;
+  }
+  .footer-brand {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-brand .btn-light-blue {
+    width: 100%;
+  }
+  .footer-main-container {
+    padding: 40px 20px 30px;
+    gap: 40px;
+  }
+
+  /* ブランド＋ナビを縦に積み重ね */
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* ナビカラムを単一の積み重ねリストに */
+  .footer-nav-columns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .footer-nav-group {
+    gap: 0;
+  }
+
+  /* 各セクションは独立したアコーディオンアイテム */
+  .footer-nav-section {
+    gap: 0;
+  }
+
+  /* アコーディオントリガー */
+  .footer-page-link {
+    cursor: pointer;
+    padding: 16px 0;
+    user-select: none;
+  }
+
+  /* 開いた時に矢印が回転 */
+  .footer-page-link img.accordion-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .footer-nav-section.open .footer-page-link img.accordion-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* 折りたたみコンテンツ */
+  .footer-nav-list {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.35s ease,
+      padding 0.3s ease;
+    padding-bottom: 0;
+  }
+
+  .footer-nav-section.open .footer-nav-list {
+    max-height: 600px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  /* 下部行の積み重ね */
+  .footer-bottom {
+    /* flex-direction: column;
+        align-items: flex-start;
+        gap: 20px; */
+    align-items: flex-end;
+  }
+
+  .footer-legal-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+#nav-menu-popup .footer-blue-btn {
+  width: fit-content;
+}

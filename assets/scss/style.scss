@@ -5,6 +5,8 @@
 
 // グローバル（変数、ユーティリティ、共通コンポーネント）
 @use "global";
+@use "header";
+@use "footer";
 
 // ページ別スタイル
 @use "top";
