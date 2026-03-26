@@ -5659,6 +5659,8 @@ a {
 }
 .c-breadcrumb {
   position: absolute;
+  bottom: 20px;
+  left: 40px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -5676,8 +5678,10 @@ a {
 }
 /* 予約ページ用パンくずリストスタイル */
 .p-breadcrumb {
-  top: 140%;
+  top: auto;
+  bottom: -35px;
   width: 90%;
+  left: 10px;
 }
 
 /* ============================================
@@ -10565,6 +10569,10 @@ a {
 @media screen and (max-width: 767px) {
   .c-other-details-banner {
     padding: 50px 16px;
+  }
+
+  .p-breadcrumb {
+      bottom: 0;
   }
 
   .c-section_lightBlue--padded {
