@@ -2175,83 +2175,103 @@ span {
 }
 
 .cg-0 {
-  column-gap: 0;
+  -moz-column-gap: 0;
+       column-gap: 0;
 }
 
 .cg-2 {
-  column-gap: 2px;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
 }
 
 .cg-4 {
-  column-gap: 4px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
 }
 
 .cg-5 {
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 
 .cg-8 {
-  column-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 
 .cg-10 {
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .cg-12 {
-  column-gap: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
 }
 
 .cg-15 {
-  column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 
 .cg-16 {
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
 }
 
 .cg-18 {
-  column-gap: 18px;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
 }
 
 .cg-20 {
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .cg-24 {
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 
 .cg-25 {
-  column-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
 
 .cg-30 {
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .cg-35 {
-  column-gap: 35px;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
 }
 
 .cg-40 {
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 .cg-45 {
-  column-gap: 45px;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
 }
 
 .cg-48 {
-  column-gap: 48px;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
 }
 
 .cg-50 {
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 
 .cg-60 {
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
 }
 
 /* ===========================================
@@ -3084,6 +3104,7 @@ span {
 }
 
 .w-fit-content {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -3896,55 +3917,72 @@ span {
     margin-bottom: 50px;
   }
   .lg-cg-0 {
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
   .lg-cg-4 {
-    column-gap: 4px;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
   }
   .lg-cg-5 {
-    column-gap: 5px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
   }
   .lg-cg-8 {
-    column-gap: 8px;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
   }
   .lg-cg-10 {
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .lg-cg-12 {
-    column-gap: 12px;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
   }
   .lg-cg-15 {
-    column-gap: 15px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
   .lg-cg-16 {
-    column-gap: 16px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
   }
   .lg-cg-20 {
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
   .lg-cg-24 {
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
   .lg-cg-25 {
-    column-gap: 25px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
   }
   .lg-cg-30 {
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   .lg-cg-35 {
-    column-gap: 35px;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
   }
   .lg-cg-40 {
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   .lg-cg-45 {
-    column-gap: 45px;
+    -moz-column-gap: 45px;
+         column-gap: 45px;
   }
   .lg-cg-48 {
-    column-gap: 48px;
+    -moz-column-gap: 48px;
+         column-gap: 48px;
   }
   .lg-cg-50 {
-    column-gap: 50px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
   .lg-col-1 {
     width: 8.333333%;
@@ -4899,40 +4937,52 @@ span {
     margin-bottom: 50px;
   }
   .md-cg-0 {
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
   .md-cg-4 {
-    column-gap: 4px;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
   }
   .md-cg-5 {
-    column-gap: 5px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
   }
   .md-cg-8 {
-    column-gap: 8px;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
   }
   .md-cg-10 {
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .md-cg-12 {
-    column-gap: 12px;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
   }
   .md-cg-15 {
-    column-gap: 15px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
   .md-cg-16 {
-    column-gap: 16px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
   }
   .md-cg-20 {
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
   .md-cg-24 {
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
   .md-cg-25 {
-    column-gap: 25px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
   }
   .md-cg-30 {
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   .md-col-1 {
     width: 8.333333%;
@@ -5792,31 +5842,40 @@ span {
     margin-bottom: 50px;
   }
   .sm-cg-0 {
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
   .sm-cg-4 {
-    column-gap: 4px;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
   }
   .sm-cg-5 {
-    column-gap: 5px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
   }
   .sm-cg-8 {
-    column-gap: 8px;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
   }
   .sm-cg-10 {
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .sm-cg-12 {
-    column-gap: 12px;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
   }
   .sm-cg-15 {
-    column-gap: 15px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
   .sm-cg-16 {
-    column-gap: 16px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
   }
   .sm-cg-20 {
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
   .sm-col-1 {
     width: 8.333333%;
@@ -5906,6 +5965,7 @@ a {
 }
 
 .l-header__btn {
+  width: -moz-fit-content;
   width: fit-content; /* w-fit-content */
   min-width: 235px;
   transition: all 0.3s ease-in-out;
@@ -6248,7 +6308,8 @@ a {
 .sp-nav-sns-icon {
   width: 22px;
   height: 22px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .sp-nav-sub {
@@ -6864,7 +6925,9 @@ a {
   .l-footer__page-link {
     cursor: pointer;
     padding: 16px 0;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   /* 開いた時に矢印が回転 */
   .l-footer__page-link img.accordion-arrow {
@@ -6898,6 +6961,7 @@ a {
   }
 }
 #nav-menu-popup .c-btn--light-blue {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -6942,6 +7006,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 14px;
   padding: 16px 35px;
@@ -6976,6 +7041,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 14px;
   padding: 0.5rem 1.5rem;
@@ -7025,6 +7091,7 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--text-white);
+  width: -moz-fit-content;
   width: fit-content;
   gap: 10px;
   border: 1px solid transparent;
@@ -7295,23 +7362,11 @@ a {
 /* ============================================
      TEXT SLIDER
 ============================================ */
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-1750px);
-    transform: translateX(-1750px);
-  }
-}
 @keyframes scroll {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1750px);
     transform: translateX(-1750px);
   }
 }
@@ -7327,7 +7382,6 @@ a {
 }
 
 .c-text-marquee .c-text-marquee__track {
-  -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
   width: 3500px;
@@ -7546,7 +7600,8 @@ a {
   bottom: 163.5px;
   width: 100vw;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-top-topic__ribbon {
@@ -7683,6 +7738,7 @@ a {
   display: flex;
   flex-direction: column;
   animation: scrollUp 35s linear infinite;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -7761,6 +7817,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: -moz-fit-content;
     width: fit-content;
     height: auto;
     animation: scrollRight 35s linear infinite;
@@ -8316,8 +8373,10 @@ a {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
 }
 
@@ -8355,14 +8414,16 @@ a {
   height: 100%;
   position: absolute;
   left: 0;
-  object-position: -200px;
+  -o-object-position: -200px;
+     object-position: -200px;
   background-size: contain;
 }
 
 .c-hero-slider__frames__clip2 .clip-img {
   width: 100%;
   height: 100%;
-  object-position: 230px -50px;
+  -o-object-position: 230px -50px;
+     object-position: 230px -50px;
   position: absolute;
   right: 0;
 }
@@ -8431,7 +8492,8 @@ a {
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100vw;
     height: 100%;
-    object-position: 160%;
+    -o-object-position: 160%;
+       object-position: 160%;
     background-size: cover;
   }
   .c-hero-slider__images {
@@ -8488,23 +8550,29 @@ a {
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     left: 0;
   }
   .c-hero-slider__frames__clip2 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center bottom;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center bottom;
+       object-position: center bottom;
     right: 0;
     left: 0;
   }
   .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -8521,23 +8589,29 @@ a {
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     left: 0;
   }
   .c-hero-slider__frames__clip2 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center bottom;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center bottom;
+       object-position: center bottom;
     right: 0;
     left: 0;
   }
   .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -8556,23 +8630,29 @@ a {
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center top;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center top;
+       object-position: center top;
     left: 0;
   }
   .c-hero-slider__frames__clip2 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center bottom;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center bottom;
+       object-position: center bottom;
     right: 0;
     left: 0;
   }
   .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 @media screen and (max-width: 365px) {
@@ -9176,6 +9256,7 @@ a {
   position: absolute;
   top: 70px;
   right: 0px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -9271,6 +9352,7 @@ a {
   background-color: var(--base-gray);
   padding: 10px 0;
   min-width: 140px;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   flex-shrink: 0;
@@ -9292,7 +9374,8 @@ a {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     row-gap: 10px !important;
-    column-gap: 10px !important;
+    -moz-column-gap: 10px !important;
+         column-gap: 10px !important;
   }
   [data-widget=tabs] [data-type=fancy].tabs-controls .tabs-control {
     max-width: 100%;
@@ -10392,6 +10475,7 @@ a {
 
 .c-badge-white {
   background-color: var(--base-white);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 20px 30px;
 }
@@ -10620,6 +10704,7 @@ a {
   overflow-y: hidden;
   white-space: nowrap;
   gap: 15px;
+  width: -moz-fit-content;
   width: fit-content; /* w-fit-content */
   width: 100%;
   -webkit-overflow-scrolling: touch;
@@ -10685,6 +10770,7 @@ a {
   margin: 0px 0 30px;
   align-self: flex-end;
   justify-self: flex-end;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -10937,7 +11023,8 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 60px;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 .c-column__item {
@@ -10952,7 +11039,8 @@ a {
 @media screen and (max-width: 1200px) {
   .c-column__grid {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
     row-gap: 40px;
   }
 }
@@ -10974,7 +11062,8 @@ a {
   }
   .c-column__grid {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 16px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
     row-gap: 15px;
   }
   .c-column__item .u-fs-16 {
@@ -11089,12 +11178,14 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--base-grayBlue);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px 50px;
 }
 
 .c-badge-gray {
   background-color: var(--base-gray);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 30px;
 }
@@ -11194,8 +11285,10 @@ a {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .p-top-hero__dot {
@@ -11338,13 +11431,16 @@ a {
 }
 @media screen and (max-width: 375px) {
   .bg-hero-img1 {
-    object-position: -70px 50px !important;
+    -o-object-position: -70px 50px !important;
+       object-position: -70px 50px !important;
   }
   .bg-hero-img4 {
-    object-position: -30px 50px !important;
+    -o-object-position: -30px 50px !important;
+       object-position: -30px 50px !important;
   }
   .bg-hero-img5 {
-    object-position: -100px center !important;
+    -o-object-position: -100px center !important;
+       object-position: -100px center !important;
   }
 }
 /* ═════news-banner-context ═════════════════════════════════
@@ -11387,6 +11483,10 @@ a {
 
 .p-top-news__banner-heading--sp {
   gap: 30px; /* gap-30px */
+}
+
+.p-top-news__ribbon {
+  margin-right: -100px;
 }
 
 .p-top-news__ribbon-desk {
@@ -11594,23 +11694,11 @@ a {
 /* ============================================
     トップテキストスライダー
    ============================================ */
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-1750px);
-    transform: translateX(-1750px);
-  }
-}
 @keyframes scroll {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1750px);
     transform: translateX(-1750px);
   }
 }
@@ -11626,7 +11714,6 @@ a {
 }
 
 .c-text-marquee .c-text-marquee__track {
-  -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
   width: 3500px;
@@ -11728,8 +11815,10 @@ a.p-top-service__card {
 .service-img {
   height: 320px;
   max-height: 320px;
-  object-fit: cover;
-  object-position: center center !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center !important;
+     object-position: center center !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -11965,7 +12054,8 @@ a.p-top-service__card {
   .p-top-dr__pic {
     width: 100vw;
     transform: scale(1.4);
-    object-position: 0 -20px;
+    -o-object-position: 0 -20px;
+       object-position: 0 -20px;
     margin-top: 40px;
   }
 }
@@ -12258,7 +12348,8 @@ a.p-top-service__card {
 .p-top-movie__thumbnail {
   width: 333px;
   height: 185px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-top-movie__video {
@@ -12455,7 +12546,8 @@ a.p-top-service__card {
   }
   .p-top-movie__wrapper .thumbs {
     row-gap: 10px !important;
-    column-gap: 10px !important;
+    -moz-column-gap: 10px !important;
+         column-gap: 10px !important;
     gap: 0px !important;
   }
   .thumb {
@@ -12593,8 +12685,10 @@ a.p-top-service__card {
 .p-space__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
 }
 
@@ -12881,6 +12975,7 @@ a.p-top-service__card {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: 60px;
 }
@@ -13300,6 +13395,7 @@ a.p-top-service__card {
   background: var(--base-lightBlue);
   padding: 12px 20px;
   text-align: center;
+  width: -moz-fit-content;
   width: fit-content;
   min-width: 240px;
 }
@@ -13486,6 +13582,7 @@ mark {
 }
 
 .p-recommended__btn {
+  width: -moz-fit-content;
   width: fit-content;
   padding-left: 18px;
   padding-right: 18px;
@@ -13690,8 +13787,15 @@ mark {
   outline: none;
   background-color: var(--base-white);
   border: 1px solid var(--base-inputGray);
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 20px 20px;
+  font-size: 16px;
+}
+
+.p-contact__input::-moz-placeholder, .p-contact__textarea::-moz-placeholder {
+  color: var(--base-inputGray);
   font-size: 16px;
 }
 
@@ -13998,7 +14102,9 @@ mark {
     outline: none;
     background-color: var(--base-white);
     border: 1px solid var(--base-inputGray);
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     padding: 15px 20px;
     font-size: 16px;
   }
@@ -14062,6 +14168,7 @@ mark {
 
 .p-family__summary__label {
   background-color: var(--base-lightBlue);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px 40px;
   position: absolute;
@@ -14350,7 +14457,8 @@ mark {
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 10px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .p-faq__main__content {
@@ -14731,6 +14839,7 @@ mark {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -14762,6 +14871,7 @@ mark {
    開始: CTA
    ======================================== */
 .p-medical__light-blue-container {
+  width: -moz-fit-content;
   width: fit-content;
   background-color: var(--base-lightBlue);
   color: white;
@@ -14813,7 +14923,8 @@ mark {
 .p-medical__speak-person--01 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 02 */
@@ -14844,7 +14955,8 @@ mark {
 .p-medical__speak-person--02 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* スピークパーソン終了 */
@@ -14896,7 +15008,8 @@ mark {
 .p-medical__voice-card-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: #e0e0e0;
 }
 
@@ -15137,6 +15250,7 @@ mark {
 .p-medical__engagement-right {
   display: flex;
   flex-direction: column;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 1rem;
 }
@@ -15176,6 +15290,7 @@ mark {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
+    width: -moz-max-content;
     width: max-content;
     z-index: 15;
   }
@@ -15717,7 +15832,8 @@ mark {
 .p-member-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 40px;
 }
 
@@ -15854,7 +15970,8 @@ mark {
 @media screen and (max-width: 500px) {
   .p-member-cards-grid {
     grid-template-columns: repeat(1, 1fr);
-    column-gap: 0px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
     row-gap: 20px;
   }
 }
@@ -16100,7 +16217,8 @@ mark {
 .p-payment__speak-person--01 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 02 */
@@ -16131,7 +16249,8 @@ mark {
 .p-payment__speak-person--02 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 03 */
@@ -16162,7 +16281,8 @@ mark {
 .p-payment__speak-person--03 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* モバイル専用スピークブロック — デスクトップではデフォルト非表示 */
@@ -16291,7 +16411,8 @@ mark {
   .p-payment__speak-person-mobile {
     height: 20rem;
     width: auto;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   /* ユーティリティオーバーライド終了 */
 }
@@ -16444,7 +16565,8 @@ mark {
 
 /* 左フレーム画像 — 右にシフト */
 .p-personal-banner .c-hero-slider__frames__clip1 .clip-img {
-  object-position: right center;
+  -o-object-position: right center;
+     object-position: right center;
 }
 
 /* バナー終了 */
@@ -16767,7 +16889,8 @@ mark {
 .p-personal-speak__person--01 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 02 */
@@ -16798,7 +16921,8 @@ mark {
 .p-personal-speak__person--02 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* トレーナー / スタッフ終了 */
@@ -16946,15 +17070,19 @@ mark {
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: left top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left top;
+       object-position: left top;
     left: 0;
   }
   .c-hero-slider__frames__clip2 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: right top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right top;
+       object-position: right top;
     right: 0;
   }
   .p-personal-banner__title {
@@ -17214,6 +17342,7 @@ mark {
 
 .p-point__item_summary_label {
   background-color: var(--base-lightBlue);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px 40px;
   position: absolute;
@@ -17358,7 +17487,8 @@ mark {
 .p-hospitality__item_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   width: 100%;
 }
 
@@ -17600,7 +17730,8 @@ mark {
   .drAmazones-pic {
     width: 100vw;
     transform: scale(1.4);
-    object-position: 0 -20px;
+    -o-object-position: 0 -20px;
+       object-position: 0 -20px;
     margin-top: 40px;
   }
 }
@@ -17953,7 +18084,8 @@ mark {
 .p-price__people-jump {
   width: auto;
   height: 23rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-price__people-jump--01 {
@@ -17995,7 +18127,8 @@ mark {
 .p-price__speak-person--01 {
   width: auto;
   height: 23rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 02 */
@@ -18026,7 +18159,8 @@ mark {
 .p-price__speak-person--02 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 03 */
@@ -18057,7 +18191,8 @@ mark {
 .p-price__speak-person--03 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* ユーティリティオーバーライド終了 */
@@ -18469,7 +18604,8 @@ mark {
 .p-protein__speak-person {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-protein__speak-image.is-mobile-only {
@@ -18506,12 +18642,14 @@ mark {
 .p-protein__flavor-header {
   color: white;
   padding: 0.9rem 1.5rem;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .p-protein__flavor-nutrition {
   display: flex;
   flex-direction: column;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -18628,6 +18766,7 @@ mark {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 14px;
   padding: 0.5rem 1.5rem;
@@ -18677,7 +18816,9 @@ mark {
 
 .p-protein__card--auto-size {
   flex: unset;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -18864,15 +19005,18 @@ mark {
   .p-protein__flavor-img {
     width: 100%;
     height: 538px;
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     position: relative;
     z-index: 2;
     margin-bottom: -67px;
   }
   /* Peach image — shift right to avoid clipping */
   div:has(> img[alt="peach flavor"]) > img {
-    object-position: right top;
+    -o-object-position: right top;
+       object-position: right top;
   }
   /* SPEAK PERSON 02 — hide desktop, show mobile duplicate */
   .p-protein__speak-image {
@@ -19046,8 +19190,10 @@ mark {
   section.u-relative:has(.p-protein__onlineshop-text-container) > img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .p-protein__onlineshop-text-container {
     position: relative;
@@ -19160,6 +19306,7 @@ mark {
     gap: 0;
   }
   .p-protein__card-header--light-blue {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .p-protein__card-body {
@@ -19190,8 +19337,10 @@ mark {
   .p-protein__flavor-img {
     width: 100%;
     height: 320px;
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     position: relative;
     z-index: 2;
     margin-bottom: -60px;
@@ -19292,7 +19441,8 @@ mark {
   }
   /* Peach flavor — shift image crop left on mobile */
   .p-protein__flavor-img[alt=もも味] {
-    object-position: right top;
+    -o-object-position: right top;
+       object-position: right top;
   }
   /* プロテインフレーバーカード終了 */
   .p-protein__buynow-subtitle {
@@ -19472,7 +19622,8 @@ mark {
 .p-reservation-speak__person--01 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 02 */
@@ -19501,7 +19652,8 @@ mark {
 .p-reservation-speak__person--02 {
   width: auto;
   height: 18vw;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 03 */
@@ -19509,6 +19661,7 @@ mark {
   position: relative;
   left: 29%;
   /* bottom: -10.5%; */
+  width: -moz-fit-content;
   width: fit-content;
   height: auto;
   margin-top: -10rem;
@@ -19535,7 +19688,8 @@ mark {
 .p-reservation-speak__person--03 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 04 */
@@ -19567,7 +19721,8 @@ mark {
 .p-reservation-speak__person--04 {
   width: auto;
   height: 15rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 05 */
@@ -19583,7 +19738,8 @@ mark {
 .p-reservation-speak__person--05 {
   width: auto;
   height: 15rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-reservation-speak__mobile-row {
@@ -19646,7 +19802,8 @@ mark {
   left: 5.5%;
   width: 89%;
   height: 95.5%;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   z-index: 1;
   border-radius: 1.5625vw;
   background-color: var(--base-lightBlue);
@@ -19872,7 +20029,8 @@ mark {
   .p-reservation-speak__mobile-persons img {
     height: 12rem;
     width: auto;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .p-reservation-speak__bubble--04-mobile {
     position: absolute;
@@ -20036,7 +20194,8 @@ mark {
   .p-reservation-speak__person--01-btn {
     height: 13rem;
     width: auto;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .p-reservation-speak__bubble--01-btn {
     position: absolute;
@@ -20079,7 +20238,8 @@ mark {
   .p-reservation-speak__mobile-persons img {
     height: 12rem;
     width: auto;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .p-reservation-speak__bubble--04-mobile {
     position: absolute;
@@ -20344,6 +20504,7 @@ mark {
 
 .p-sitemap-ul-sub-link {
   color: var(--base-lightBlue);
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -20351,10 +20512,12 @@ mark {
   display: flex;
   flex-direction: column;
   gap: 23px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .p-sitemap-nested-link a {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -20563,7 +20726,8 @@ mark {
 
 /* 左フレーム画像位置 */
 .c-hero-slider__frames__clip1 .clip-img {
-  object-position: right top; /* 0%=left edge, 100%=right edge */
+  -o-object-position: right top;
+     object-position: right top; /* 0%=left edge, 100%=right edge */
   width: 105%; /* keep left% and extra width% equal to avoid gaps */
   left: auto;
   right: 30%;
@@ -20573,7 +20737,8 @@ mark {
 .c-hero-slider__frames__clip2 .clip-img {
   left: 10%;
   /* right: auto; */
-  object-position: left center; /* 0%=left edge, 100%=right edge */
+  -o-object-position: left center;
+     object-position: left center; /* 0%=left edge, 100%=right edge */
   width: 125%; /* keep left% and extra width% equal to avoid gaps */
 }
 
@@ -20759,7 +20924,8 @@ mark {
   left: 5.5%;
   width: 90%;
   height: 95.5%;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   z-index: 100;
   border-radius: 1.5625vw;
   background-color: var(--base-lightBlue);
@@ -20818,7 +20984,8 @@ mark {
 .p-sportip__speak-person--02 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 03 */
@@ -20849,7 +21016,8 @@ mark {
 .p-sportip__speak-person--03 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* ========================================
@@ -20940,16 +21108,20 @@ mark {
   .c-hero-slider__frames__clip1 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     left: 0;
   }
   /* 右フレーム画像 */
   .c-hero-slider__frames__clip2 .clip-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center bottom;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center bottom;
+       object-position: center bottom;
     right: 0;
     left: 0;
   }
@@ -21025,14 +21197,16 @@ mark {
   }
   /* ── BANNER SP IMAGE POSITIONING ── */
   .c-hero-slider__frames__clip1 .clip-img {
-    object-position: center center;
+    -o-object-position: center center;
+       object-position: center center;
   }
   .c-hero-slider__frames__clip2 .clip-img {
     left: 0;
     right: 0;
     height: 100%;
     width: 100%;
-    object-position: 55% center;
+    -o-object-position: 55% center;
+       object-position: 55% center;
     transform: scale(1) translateY(30%);
   }
   /* バナー終了 */
@@ -21068,6 +21242,7 @@ mark {
     justify-content: flex-start;
   }
   .p-sportip__links-nav a {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .p-sportip__links-item {
@@ -21102,8 +21277,10 @@ mark {
     width: 100%;
     max-width: 100%;
     max-height: 240px;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   /* Un-position the overlay text panel */
   .p-sportip__text-container {
@@ -21127,8 +21304,10 @@ mark {
     width: 100%;
     max-width: 100%;
     max-height: 240px;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .p-sportip__text-container--02 {
     position: relative;
@@ -21247,7 +21426,8 @@ mark {
   .p-sportip__phone-video {
     border-radius: 4vw;
     width: 45%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -21554,7 +21734,8 @@ mark {
 
 .p-storedetail_introduction_people-img {
   width: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-storedetail_introduction_people-img--01 {
@@ -21812,6 +21993,7 @@ mark {
   justify-content: end;
   align-items: center;
   gap: 1rem;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -21865,14 +22047,16 @@ mark {
 .p-storedetail_cta_person01 {
   width: auto;
   height: 70rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   transform: translate(-6rem, 10rem);
 }
 
 .p-storedetail_cta_person02 {
   width: auto;
   height: 40rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   /* transform: translateY(0rem); */
 }
 
@@ -21951,7 +22135,8 @@ mark {
 .business-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .business-info h3 {
@@ -22055,7 +22240,8 @@ mark {
 .avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .reviewer-info {
@@ -22189,7 +22375,8 @@ mark {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* サムネイルグリッド — 行が親要素いっぱいに伸びるのを防止 */
@@ -22204,7 +22391,8 @@ mark {
 .slider-thumbs .js-thumb-button img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* ── .container fallback (no definition in global.css) ── */
@@ -22354,8 +22542,10 @@ mark {
 
 .service-img {
   width: 100%;
-  object-fit: cover;
-  object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .service-wrapper2 {
@@ -22611,6 +22801,7 @@ mark {
     text-align: center;
     background-color: var(--base-lightBlue);
     padding: 1rem 1.75rem;
+    width: -moz-max-content;
     width: max-content;
   }
   .p-storedetail_cta_people {
@@ -22634,6 +22825,7 @@ mark {
     transform: translateX(-1rem);
   }
   .p-storedetail_cta_btn {
+    width: -moz-fit-content;
     width: fit-content;
     white-space: nowrap;
     bottom: -1.5rem;
@@ -22646,8 +22838,10 @@ mark {
   .dr-amazones-container > img:first-child {
     width: 100%;
     height: 22rem;
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
   }
   .dr-amazones-section {
     position: static;
@@ -22687,7 +22881,8 @@ mark {
   .service-img {
     width: 100% !important;
     height: 14rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .p-service_nav {
     display: flex;
@@ -23125,7 +23320,8 @@ mark {
   .mobile-hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   /* Reset fixed thumbnail sizes — let images fill grid cells */
   .slider-thumbs .js-thumb-button,
@@ -23138,7 +23334,8 @@ mark {
   .slider-thumbs .js-thumb-button img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     aspect-ratio: unset;
   }
   /* ── Dr. Amazones Section ── */
@@ -23152,8 +23349,10 @@ mark {
   .dr-amazones-container > img:first-child {
     width: 100%;
     height: 18rem;
-    object-fit: cover;
-    object-position: center top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
     flex-shrink: 0;
   }
   /* Pull the absolutely-positioned text block back into flow */
@@ -23197,7 +23396,8 @@ mark {
   .service-img {
     width: 100%;
     height: 14rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .p-service_nav {
     display: flex;
@@ -23242,7 +23442,8 @@ mark {
   /* ── Dr. Amazones adds image scale transform on mobile ── */
   .p-storedetail_dr-amazones-pic {
     transform: scale(1.4);
-    object-position: 0 -20px;
+    -o-object-position: 0 -20px;
+       object-position: 0 -20px;
     margin-top: 40px;
   }
   /* ── whychooseus-title-desc--sp ── */
@@ -24155,14 +24356,11 @@ body {
 .c-footer-menu .sub-menu > li {
   display: list-item;
   list-style-type: "-";
-  -webkit-padding-start: 1ch;
   padding-inline-start: 1ch;
-  -webkit-margin-start: 1ch;
   margin-inline-start: 1ch;
 }
 
 .c-footer-menu #footer-menu-03 .sub-menu .sub-menu > li {
-  -webkit-padding-start: 0;
   padding-inline-start: 0;
   list-style-type: disc;
 }
@@ -26294,7 +26492,6 @@ body .c-policy-content > ol > li > dl {
 
 .c-clip-diagonal {
   /* clip-path: polygon(25% 0%, 100% 0, 100% 42%, 75% 100%, 0 100%, 0 40%); */
-  -webkit-clip-path: polygon(19% 0, 100% 0, 100% 54%, 82% 100%, 0 100%, 0 33%);
   clip-path: polygon(19% 0, 100% 0, 100% 54%, 82% 100%, 0 100%, 0 33%);
 }
 
@@ -29795,7 +29992,6 @@ body .c-policy-content > ol > li > dl {
 
 .wsp-pages-list,
 .wsp-lists-list {
-  -webkit-margin-start: 1.5rem;
   margin-inline-start: 1.5rem;
   list-style-type: disc;
 }
@@ -29824,7 +30020,6 @@ body .c-policy-content > ol > li > dl {
 
 .wsp-pages-list .children,
 .wsp-lists-list .children {
-  -webkit-margin-start: 1rem;
   margin-inline-start: 1rem;
 }
 
@@ -31202,7 +31397,8 @@ body .c-policy-content > ol > li > dl {
   display: block;
   width: 100%;
   aspect-ratio: 3/2;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .js-thumb-button:hover,
@@ -31399,7 +31595,6 @@ body .c-policy-content > ol > li > dl {
   .front-main-headings-unit {
     position: relative;
     background-color: #5fced8;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 100%);
     padding-top: 4.5rem;
     padding-bottom: 7.5rem;
@@ -33092,7 +33287,6 @@ body .c-policy-content > ol > li > dl {
 
 .swiper-backface-hidden .swiper-slide {
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -33345,7 +33539,8 @@ button.swiper-pagination-bullet {
   padding: 0;
   box-shadow: none;
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -33529,13 +33724,9 @@ button.swiper-pagination-bullet {
   z-index: auto !important;
   -moz-border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
-  -moz-box-sizing: border-box !important;
-  -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
   text-shadow: none !important;
-  -webkit-transition: none !important;
   transition: none !important;
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
@@ -33641,8 +33832,6 @@ button.swiper-pagination-bullet {
 
 .wpac svg {
   vertical-align: middle !important;
-  -moz-box-sizing: content-box !important;
-  -webkit-box-sizing: content-box !important;
   box-sizing: content-box !important;
 }
 
@@ -34067,7 +34256,6 @@ button.swiper-pagination-bullet {
 }
 
 .wp-gr .grw-row {
-  display: -ms-flexbox !important;
   display: flex !important;
   flex-wrap: nowrap !important;
   align-items: center !important;
@@ -34076,7 +34264,6 @@ button.swiper-pagination-bullet {
 }
 
 .wp-gr .grw-row-xs {
-  -ms-flex-wrap: wrap !important;
   flex-wrap: wrap !important;
 }
 
@@ -34131,13 +34318,11 @@ button.swiper-pagination-bullet {
 }
 
 .wp-gr .grw-header, .wp-gr .grw-content {
-  -ms-flex: 1 0 calc(100% / var(--col, 3)) !important;
   flex: 1 0 calc(100% / var(--col, 3)) !important;
   width: calc(100% / var(--col, 3)) !important;
 }
 
 .wp-gr .grw-review {
-  -ms-flex: 1 0 calc((100% - var(--card-gap, 16px) * var(--gap, 2)) / var(--col, 3)) !important;
   flex: 1 0 calc((100% - var(--card-gap, 16px) * var(--gap, 2)) / var(--col, 3)) !important;
   width: calc((100% - var(--card-gap, 16px) * var(--gap, 2)) / var(--col, 3)) !important;
 }
@@ -34209,7 +34394,9 @@ button.swiper-pagination-bullet {
   text-align: center !important;
   cursor: pointer !important;
   border-radius: 50% !important;
-  user-select: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
 }
 
 .wp-gr .grw-btns svg path {
@@ -34248,12 +34435,10 @@ button.swiper-pagination-bullet {
 
 .wp-gr .grw-scroll::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
-  -webkit-border-radius: 4px !important;
   border-radius: 4px !important;
 }
 
 .wp-gr .grw-scroll::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px !important;
   border-radius: 10px !important;
   background: #ccc !important;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5) !important;
@@ -34278,7 +34463,9 @@ button.swiper-pagination-bullet {
   opacity: 0.9 !important;
   text-shadow: 1px 1px 0 #888 !important;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24) !important;
-  user-select: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
   transition: all 0.2s ease-in-out !important;
 }
 
@@ -34687,7 +34874,8 @@ html {
 .p-storelist__speak-person--01 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 02 */
@@ -34718,7 +34906,8 @@ html {
 .p-storelist__speak-person--02 {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* リボン */
@@ -34934,7 +35123,8 @@ html {
 .p-visitor__campaign-img {
   width: 40%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   flex-shrink: 0;
 }
 
@@ -35108,7 +35298,8 @@ html {
 .p-visitor__speak-person--left {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 右 */
@@ -35139,7 +35330,8 @@ html {
 .p-visitor__speak-person--right {
   width: auto;
   height: 25rem;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* 概要 / カード終了 */
@@ -35426,7 +35618,8 @@ html {
   }
   .p-visitor__campaign-img {
     max-height: 260px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .p-visitor__campaign-header h2 {
     font-size: 1.25rem;
@@ -35488,4 +35681,4 @@ html {
   .p-visitor__about-group > .p-visitor__about-card:nth-child(4) {
     order: 4;
   }
-}
+}/*# sourceMappingURL=style.css.map */

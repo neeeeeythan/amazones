@@ -1,30 +1,30 @@
 const slideContent = [
   {
-    h2: "女性による<span class='u-block'> 女性のための</span><span class='u-block'> 女性専用24時間ジム</span>",
+    heroText: "女性による<span class='u-block'> 女性のための</span><span class='u-block'> 女性専用24時間ジム</span>",
     p: "Amazonesの特徴をみる",
     href: "about/index.html",
     img: ""
   },
   {
-    h2: "科学的アプローチで実現する <span class='u-block'>最適なトレーニング環境</span>",
+    heroText: "科学的アプローチで実現する <span class='u-block'>最適なトレーニング環境</span>",
     p: "AI姿勢診断・改善",
     href: "sportip/index.html",
     img: "assets/img/common/img_sportip_logo.png"
   },
   {
-    h2: "女性トレーナーが <span class='u-block'>貴方を全力でサポート</span>Amazonesの ",
+    heroText: "女性トレーナーが <span class='u-block'>貴方を全力でサポート</span>",
     p: "パーソナルトレーニング",
     href: "personal/index.html",
     img: ""
   },
   {
-    h2: "ダイエット効<span>果を最大化する</span><span class='u-block'>オンライン診療サービス</span>",
+    heroText: "ダイエット効<span class='u-block'>果を最大化する</span><span class='u-block'>オンライン診療サービス</span>",
     p: "ドクターアマゾネス",
     href: "medical/index.html",
     img: "assets/img/common/img_drAmazones_logo.png"
   },
   {
-    h2: "諦めるのはまだ早い<span class='u-block'>いつ始めても遅くない！ム</span><span class='u-block'>無料体験・見学を予約する</span>",
+    heroText: "諦めるのはまだ早い<span class='u-block'>いつ始めても遅くない！</span><span class='u-block'>無料体験・見学を予約する</span>",
     p: "店舗一覧をみる",
     href: "reservation/index.html",
     img: ""
@@ -37,8 +37,8 @@ const _timer = 20;
 
 const slides = document.querySelectorAll(".p-top-hero__slide");
 const dots = document.querySelectorAll(".p-top-hero__dot");
-const h2 = document.querySelector(".p-top-hero__text h2");
-const p = document.querySelector(".p-top-hero__text p");
+const heroText = document.querySelector(".p-top-hero__text .p-top-hero__slider-header-p");
+const p = document.querySelector(".p-top-hero__text .reveal.p-top-hero__cta p");
 const a = document.querySelector(".p-top-hero__text a");
 const img = document.querySelector(".p-top-hero__slider-img");
 
@@ -70,32 +70,42 @@ function showSlides() {
   slides[slideIndex].style.display = "block";
 
   dots.forEach((dot) => dot.classList.remove("active"));
-  dots[slideIndex].classList.add("active");
+  if (dots[slideIndex]) dots[slideIndex].classList.add("active");
 
   const current = slideContent[slideIndex];
 
   if (current) {
     const isMobile = window.innerWidth <= 767;
 
-    let h2Content = current.h2;
+    let heroTextContent = current.heroText;
 
     if (isMobile) {
-      h2Content = h2Content.replace(/<span(.*?)>/g, "<span class='u-block'>");
+      heroTextContent = heroTextContent.replace(/<span(.*?)>/g, "<span class='u-block'>");
     }
 
-    h2.innerHTML = h2Content;
-    p.textContent = current.p;
-    a.href = current.href;
+    heroText.innerHTML = heroTextContent;
+    
+    if (p) p.textContent = current.p;
+    
+    if (a) a.href = current.href;
 
     if (current.img && !isMobile) {
       img.src = current.img;
       img.style.display = "block";
+      img.setAttribute("alt", "スライド画像");
     } else {
       img.removeAttribute("src");
       img.style.display = "none";
+      img.setAttribute("alt", "");
     }
   }
 }
+
+// Add resize event listener to handle responsive behavior
+window.addEventListener('resize', () => {
+  showSlides();
+});
+
 setInterval(() => {
   timer--;
 
