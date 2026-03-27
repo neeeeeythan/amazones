@@ -61,51 +61,27 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: $white;
 }
 
-.p-faq__page__item__container2 {
-  background-image: url("../img/faq/bg_faq2.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.p-faq__page__item__container3 {
-  background-image: url("../img/faq/bg_faq3.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.p-faq__page__item__container4 {
-  background-image: url("../img/faq/bg_faq4.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.p-faq__page__item__container6 {
-  background-image: url("../img/faq/bg_faq6.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.p-faq__page__item__container7 {
-  background-image: url("../img/faq/bg_faq7.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.p-faq__page__item__container8 {
-  background-image: url("../img/faq/bg_faq8.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
+.p-faq__page__item__container3,
 .p-faq__page__item__container9 {
   overflow: hidden;
+}
+
+.p-faq__category-header {
+  background-color: $mainColor1;
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+  h2 {
+    color: $white;
+  }
+
+  img {
+    filter: brightness(0) invert(1);
+  }
 }
 
 .p-faq__page__item__ribbon3 {
@@ -135,6 +111,10 @@
 
   .p-faq__page__item__container {
     padding: 40px 0px;
+  }
+
+  .p-faq__category-header {
+    padding: 15px 20px;
   }
 
   .p-faq__page__item__ribbon3 {

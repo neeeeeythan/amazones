@@ -52,6 +52,14 @@
   background-position: -10px 100px;
   padding-top: 100px;
   margin-top: -100px;
+
+  .c-shop {
+    min-height: 900px;
+  }
+
+  .c-shop__container {
+    gap: 50px;
+  }
 }
 
 // ================================
@@ -221,6 +229,14 @@
 
   .p-attraction_page {
     margin-top: 0px;
+
+    .c-shop {
+      min-height: unset;
+    }
+
+    .c-shop__container {
+      gap: 0;
+    }
   }
 
   .p-space__container {

@@ -792,7 +792,7 @@
             muted
             playsinline
           ></video>
-          <img
+<img
             src="assets/img/reservation/img_phone_screen.webp"
             alt="スマートフォン画面"
           />
@@ -827,7 +827,35 @@
               id="hacomono-widget-w0001"
               src="https://highness.hacomono.jp/widgets/1?isFilterableByCategory=false&isShowStudioInfo=false"
             ></iframe>
+            <div class="p-reservation-form__fallback" id="hacomono-fallback" style="display:none; padding: 60px 20px; text-align: center; background: #f5f5f5; border-radius: 8px;">
+              <p class="u-fw700 u-fs18" style="margin-bottom: 12px;">予約フォーム</p>
+              <p class="u-fw500 u-fs14" style="color: #666;">ご予約は本番サイトからご利用いただけます。</p>
+              <a href="https://highness.hacomono.jp/" target="_blank" class="u-fw500 u-fs14" style="color: #81d8d0; display: inline-block; margin-top: 16px;">hacomonoで予約する →</a>
+            </div>
           </div>
+          <script>
+            (function() {
+              var iframe = document.getElementById('hacomono-widget-w0001');
+              var fallback = document.getElementById('hacomono-fallback');
+              if (iframe && fallback) {
+                iframe.onerror = function() {
+                  iframe.style.display = 'none';
+                  fallback.style.display = 'block';
+                };
+                setTimeout(function() {
+                  try {
+                    if (iframe.offsetHeight < 50) {
+                      iframe.style.display = 'none';
+                      fallback.style.display = 'block';
+                    }
+                  } catch(e) {
+                    iframe.style.display = 'none';
+                    fallback.style.display = 'block';
+                  }
+                }, 5000);
+              }
+            })();
+          </script>
           <!-- 吹き出し -->
           <div class="p-reservation-speak__container--03">
             <div class="p-reservation-speak__image--03">
