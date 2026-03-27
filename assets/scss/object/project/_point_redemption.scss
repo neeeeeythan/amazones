@@ -170,7 +170,7 @@
   list-style: none;
 }
 
-.point-redemption-ribbon {
+.p-point__ribbon {
   position: absolute;
   top: -120px;
   z-index: 1;
@@ -178,17 +178,17 @@
   width: 100%;
 }
 
-.point-redemption-sticker1 {
+.p-point__sticker1 {
   margin-left: 20px;
   top: 30px;
 }
 
-.point-redemption-sticker2 {
+.p-point__sticker2 {
   margin-right: 60px;
   top: 35px;
 }
 
-.p.point__item_summary-warn {
+.p-point__item-summary-warn {
   padding-bottom: 20px;
 
   ul {
@@ -266,7 +266,7 @@
   }
 }
 
-.point__item_summary-warn ul li {
+.p-point__item-summary-warn ul li {
   line-height: 30px;
 }
 
@@ -409,11 +409,11 @@
   }
 
   .p-online-shop {
-    .dr-amazones-section {
+    .p-point__dr-section {
       margin-top: 200px;
     }
 
-    .dr-amazones-container {
+    .p-point__dr-container {
       max-height: 800px;
     }
   }
@@ -432,14 +432,14 @@
 // 再利用可能
 // DR AMAZONES
 // トップ DR AMAZONES セクション
-.dr-amazones-container {
+.p-point__dr-container {
   width: 100%;
   max-width: 1920px;
   margin: 0px auto;
   position: relative;
 }
 
-.dr-amazones-section {
+.p-point__dr-section {
   z-index: 2;
   position: absolute;
   right: 0px;
@@ -457,21 +457,21 @@
   }
 }
 
-.shop-ribbon-sp {
+.p-point__shop-ribbon-sp {
   display: none;
 }
 
-.dr-amazones-container h2 {
+.p-point__dr-container h2 {
   line-height: 50px;
 }
 
 @media screen and (max-width: 1700px) {
-  .dr-amazones-container {
+  .p-point__dr-container {
     flex-direction: column !important;
     max-height: 1000px;
   }
 
-  .dr-amazones-section {
+  .p-point__dr-section {
     position: relative !important;
     align-self: end;
     margin-top: 100px;
@@ -484,14 +484,14 @@
 }
 
 @media screen and (max-width: 800px) {
-  .dr-amazones-container h2 {
+  .p-point__dr-container h2 {
     font-size: 42px;
     margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .dr-amazones-section {
+  .p-point__dr-section {
     width: 95%;
     padding: 30px;
 

@@ -163,7 +163,7 @@
 
 .p-top-topic__slider-button {
   padding: 0.5rem 1rem;
-  background: #6c5ce7;
+  background: $purple;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -172,7 +172,7 @@
   transition: background 0.2s;
 
   &:hover:not([disabled]) {
-    background: #5b4bc4;
+    background: $purple-dark;
   }
 
   &[disabled] {
@@ -496,7 +496,7 @@
   position: relative;
 }
 
-.ribbon-banner {
+.c-ribbon-banner {
   position: absolute;
   bottom: -10px;
   z-index: 2;
@@ -609,7 +609,7 @@
     margin-bottom: 1rem;
   }
 
-  .ribbon-banner {
+  .c-ribbon-banner {
     max-width: 50rem;
   }
 
@@ -644,7 +644,7 @@
     margin-bottom: 0.75rem;
   }
 
-  .ribbon-banner {
+  .c-ribbon-banner {
     max-width: 40rem;
   }
 }
@@ -655,7 +655,7 @@
     height: 20rem;
   }
 
-  .ribbon-banner {
+  .c-ribbon-banner {
     bottom: 25%;
     right: -30%;
     height: 30%;

@@ -110,7 +110,7 @@
   width: 100%;
 }
 
-.admission-p {
+.p-admission__text {
   padding-left: 40px;
 }
 
@@ -181,16 +181,16 @@
 }
 
 .p-admission-sticker3 {
-  margin-left: 10px !important;
+  margin-left: 10px;
 }
 
 .p-admission-sticker4 {
   margin-top: 10px;
-  margin-right: 70px !important;
+  margin-right: 70px;
 }
 
 .p-admission-speechbubble4 {
-  margin-right: -40px !important;
+  margin-right: -40px;
 }
 
 .c-other-details-banner-item {
@@ -257,7 +257,7 @@
 }
 
 .p-admission-page {
-  .banner-sticker2 {
+  .c-banner__sticker2 {
     img:first-child {
       width: auto;
       margin-right: 50px;
@@ -285,7 +285,7 @@
 }
 
 .p-admission-web-sticker {
-  z-index: 2 !important;
+  z-index: 2;
   position: relative;
 }
 
@@ -414,7 +414,7 @@
   }
 
   .p-admission-step-ul li,
-  .admission-p {
+  .p-admission__text {
     line-height: 30px;
   }
 

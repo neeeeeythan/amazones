@@ -2,6 +2,20 @@
 // Functions
 // ========================================
 
+@use "sass:math";
+
 @function rem($px) {
   @return calc($px / 16) * 1rem;
+}
+
+@function mDiv($s, $ds) {
+  @return math.div($s, $ds);
+}
+
+@function cSize($s, $ds, $suffix: "rem") {
+  $size: math.div($s, $ds);
+  @if ($suffix != "rem" and $suffix != "em") {
+    $size: ($size * 100);
+  }
+  @return #{$size + $suffix};
 }

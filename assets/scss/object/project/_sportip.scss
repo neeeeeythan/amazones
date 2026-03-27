@@ -42,7 +42,7 @@
 }
 
 // 左フレーム画像位置
-.c-hero-slider__frames__clip1 .clip-img {
+.c-hero-slider__frames__clip1 .c-hero-slider__clip-img {
   object-position: right top;
   width: 105%;
   left: auto;
@@ -50,7 +50,7 @@
 }
 
 // 右フレーム画像位置
-.c-hero-slider__frames__clip2 .clip-img {
+.c-hero-slider__frames__clip2 .c-hero-slider__clip-img {
   left: 10%;
   object-position: left center;
   width: 125%;
@@ -368,7 +368,7 @@
   }
 
   // 左フレーム画像 — 水平方向のobject-position
-  .c-hero-slider__frames__clip1 .clip-img {
+  .c-hero-slider__frames__clip1 .c-hero-slider__clip-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -377,7 +377,7 @@
   }
 
   // 右フレーム画像
-  .c-hero-slider__frames__clip2 .clip-img {
+  .c-hero-slider__frames__clip2 .c-hero-slider__clip-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -442,11 +442,11 @@
   }
 
   // BANNER SP IMAGE POSITIONING
-  .c-hero-slider__frames__clip1 .clip-img {
+  .c-hero-slider__frames__clip1 .c-hero-slider__clip-img {
     object-position: center center;
   }
 
-  .c-hero-slider__frames__clip2 .clip-img {
+  .c-hero-slider__frames__clip2 .c-hero-slider__clip-img {
     left: 0;
     right: 0;
     height: 100%;

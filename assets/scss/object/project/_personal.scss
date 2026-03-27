@@ -38,7 +38,7 @@
 
 // 左フレーム画像 — 右にシフト
 .p-personal-banner {
-  .c-hero-slider__frames__clip1 .clip-img {
+  .c-hero-slider__frames__clip1 .c-hero-slider__clip-img {
     object-position: right center;
   }
 }
@@ -314,7 +314,7 @@
 // ========================================
 // ユーティリティオーバーライド
 // ========================================
-.text-pink {
+.p-personal__text-pink {
   color: #e8527a;
 }
 
@@ -518,7 +518,7 @@
 // ========================================
 @media (max-width: 768px) {
   // バナー
-  .c-hero-slider__frames__clip1 .clip-img {
+  .c-hero-slider__frames__clip1 .c-hero-slider__clip-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -526,7 +526,7 @@
     left: 0;
   }
 
-  .c-hero-slider__frames__clip2 .clip-img {
+  .c-hero-slider__frames__clip2 .c-hero-slider__clip-img {
     width: 100%;
     height: 100%;
     object-fit: cover;

@@ -2,6 +2,10 @@
 // Mixins
 // ========================================
 
+@use "./_variables" as *;
+@use "./_functions" as *;
+
+// Neytan's breakpoint mixins (keep for existing code)
 @mixin sp {
   @media screen and (max-width: $bp-sm) {
     @content;
@@ -24,4 +28,52 @@
   @media screen and (max-width: $bp-xxl) {
     @content;
   }
+}
+
+// Client-standard mq mixin
+@mixin mq($break) {
+  @media screen and #{$break} {
+    @content;
+  }
+}
+
+@mixin flex() {
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    flex: 1 1 auto;
+  }
+}
+
+@mixin flexNw() {
+  display: flex;
+  & > * {
+    flex: 1 1 auto;
+  }
+}
+
+@mixin wrapper1() {
+  margin: auto;
+  position: relative;
+  @include mq($tabMQ2) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include mq($spMQ) {
+    padding-left: cSize(20, $spW, "vw");
+    padding-right: cSize(20, $spW, "vw");
+  }
+}
+
+@mixin contentAbs($t: null, $r: null, $b: null, $l: null, $w: null, $h: null, $m: null, $z: 1) {
+  content: "";
+  position: absolute;
+  top: #{$t};
+  right: #{$r};
+  bottom: #{$b};
+  left: #{$l};
+  width: #{$w};
+  height: #{$h};
+  margin: #{$m};
+  z-index: #{$z};
 }

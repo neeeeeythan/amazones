@@ -58,7 +58,7 @@
   background-color: $mainColor1;
 }
 
-.animate {
+.is-animate {
   -webkit-animation-name: animate;
   -webkit-animation-duration: 3s;
   animation-name: animate;
@@ -265,7 +265,7 @@
   z-index: 1;
 }
 
-.news-c-footer-banner__sticker1 {
+.p-top__news-sticker1 {
   position: absolute;
   top: -90px;
   left: 365px;
@@ -362,7 +362,7 @@
 }
 
 @media screen and (max-width: 1665px) {
-  .news-c-footer-banner__sticker1 {
+  .p-top__news-sticker1 {
     left: 265px;
   }
 
@@ -380,7 +380,7 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .news-c-footer-banner__sticker1 {
+  .p-top__news-sticker1 {
     left: 165px;
   }
 
@@ -398,7 +398,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .news-c-footer-banner__sticker1 {
+  .p-top__news-sticker1 {
     left: 65px;
   }
 
@@ -564,7 +564,7 @@
   flex-direction: row;
   gap: 0px;
   justify-content: center;
-  align-items: flex-start !important;
+  align-items: flex-start;
   line-height: 30px;
 }
 
@@ -626,7 +626,7 @@ a.p-top-service__card {
   height: 320px;
   max-height: 320px;
   object-fit: cover;
-  object-position: center center !important;
+  object-position: center center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -820,7 +820,7 @@ a.p-top-service__card {
   gap: 35px;
 }
 
-.shop-ribbon-sp {
+.p-top__shop-ribbon-sp {
   display: none;
 }
 
@@ -927,25 +927,25 @@ a.p-top-service__card {
   right: 0px;
 }
 
-.training-sticker1 {
+.p-top__training-sticker1 {
   position: absolute;
   top: -385px;
   left: 540px;
 }
 
-.training-speech-bubble1 {
+.p-top__training-bubble1 {
   position: absolute;
   top: -60px;
   left: 120px;
 }
 
-.training-sticker2 {
+.p-top__training-sticker2 {
   position: absolute;
   top: -260px;
   right: 340px;
 }
 
-.training-speech-bubble2 {
+.p-top__training-bubble2 {
   position: absolute;
   top: -75px;
   right: -130px;
@@ -956,8 +956,8 @@ a.p-top-service__card {
 }
 
 @media screen and (max-width: 1250px) {
-  .training-sticker1,
-  .training-sticker2 {
+  .p-top__training-sticker1,
+  .p-top__training-sticker2 {
     display: none;
   }
 }
