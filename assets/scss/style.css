@@ -1141,30 +1141,30 @@ span {
   opacity: 1;
   transform: translateY(0);
 }
-.c-reveal-left {
+.c-reveal--left {
   opacity: 0;
   transform: translateX(-50px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
-.c-reveal-left.is-revealed {
+.c-reveal--left.is-revealed {
   opacity: 1;
   transform: translateX(0);
 }
-.c-reveal-right {
+.c-reveal--right {
   opacity: 0;
   transform: translateX(50px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
-.c-reveal-right.is-revealed {
+.c-reveal--right.is-revealed {
   opacity: 1;
   transform: translateX(0);
 }
-.c-reveal-scale {
+.c-reveal--scale {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-.c-reveal-scale.is-revealed {
+.c-reveal--scale.is-revealed {
   opacity: 1;
   transform: scale(1);
 }

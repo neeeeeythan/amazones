@@ -16,7 +16,7 @@
     transform: translateY(0);
   }
 
-  &-left {
+  &--left {
     opacity: 0;
     transform: translateX(-50px);
     transition:
@@ -29,7 +29,7 @@
     }
   }
 
-  &-right {
+  &--right {
     opacity: 0;
     transform: translateX(50px);
     transition:
@@ -42,7 +42,7 @@
     }
   }
 
-  &-scale {
+  &--scale {
     opacity: 0;
     transform: scale(0.9);
     transition:
