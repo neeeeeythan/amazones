@@ -215,7 +215,7 @@
 }
 
 // Column gap utilities
-.cg- {
+.u-cg- {
   &0 { column-gap: 0 !important; }
   &2 { column-gap: 2px !important; }
   &4 { column-gap: 4px !important; }
@@ -239,7 +239,7 @@
 }
 
 // BASE MARGIN (All sides)
-.m- {
+.u-m- {
   &0 { margin: 0 !important; }
   &4 { margin: 4px !important; }
   &5 { margin: 5px !important; }
@@ -440,10 +440,10 @@
 }
 
 // Legacy margin-right (non-u- prefixed)
-.mr-241px { margin-right: 241px !important; }
+.u-mr241px { margin-right: 241px !important; }
 
 // Column width utilities
-.col- {
+.u-col- {
   &auto { width: auto !important; }
   &1 { width: 8.333333% !important; }
   &2 { width: 16.666667% !important; }
@@ -459,4 +459,4 @@
   &12 { width: 100% !important; }
 }
 
-.w-fit-content { width: fit-content !important; }
+.u-wFitContent { width: fit-content !important; }

@@ -222,10 +222,10 @@
   }
 
   // バナーステッカー — オーバーフロー防止のためモバイルで非表示
-  .banner-sticker1,
-  .banner-sticker2,
+  .c-banner__sticker1,
+  .c-banner__sticker2,
   .c-footer-banner__speech1,
-  .banner-speechbubble2 {
+  .c-banner__speechbubble2 {
     display: none;
   }
 

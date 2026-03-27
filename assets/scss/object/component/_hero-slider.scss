@@ -40,7 +40,7 @@
   height: auto;
   overflow: hidden;
   isolation: isolate;
-  background-color: #003032;
+  background-color: $dark-teal;
   max-height: 850px;
 
   &__images {
@@ -72,7 +72,7 @@
     height: 100vh;
     z-index: 2;
 
-    .clip-img {
+    .c-hero-slider__clip-img {
       width: 70%;
       height: 100%;
       position: absolute;
@@ -95,7 +95,7 @@
     width: 100vw;
     overflow: hidden;
 
-    .clip-img {
+    .c-hero-slider__clip-img {
       width: 100%;
       height: 100%;
       object-position: 230px -50px;
@@ -140,7 +140,7 @@
   }
 }
 
-.clip-img {
+.c-hero-slider__clip-img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -159,7 +159,7 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .clip-img {
+  .c-hero-slider__clip-img {
     width: 100vw;
     height: 100%;
     position: absolute;
@@ -181,7 +181,7 @@
       animation: heroSlideTopMobile 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         forwards;
 
-      .clip-img {
+      .c-hero-slider__clip-img {
         width: 100vw;
         height: 100%;
         object-position: 160%;
@@ -237,7 +237,7 @@
 
 @media screen and (max-width: 1215px) {
   .c-hero-slider {
-    &__frames__clip1 .clip-img {
+    &__frames__clip1 .c-hero-slider__clip-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -245,7 +245,7 @@
       left: 0;
     }
 
-    &__frames__clip2 .clip-img {
+    &__frames__clip2 .c-hero-slider__clip-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -255,7 +255,7 @@
     }
   }
 
-  .clip-img {
+  .c-hero-slider__clip-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -275,7 +275,7 @@
       font-size: 22px;
     }
 
-    &__frames__clip1 .clip-img {
+    &__frames__clip1 .c-hero-slider__clip-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -283,7 +283,7 @@
       left: 0;
     }
 
-    &__frames__clip2 .clip-img {
+    &__frames__clip2 .c-hero-slider__clip-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -293,7 +293,7 @@
     }
   }
 
-  .clip-img {
+  .c-hero-slider__clip-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -319,7 +319,7 @@
       transform: scale(2.4);
     }
 
-    &__frames__clip1 .clip-img {
+    &__frames__clip1 .c-hero-slider__clip-img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -327,7 +327,7 @@
       left: 0;
     }
 
-    &__frames__clip2 .clip-img {
+    &__frames__clip2 .c-hero-slider__clip-img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -337,7 +337,7 @@
     }
   }
 
-  .clip-img {
+  .c-hero-slider__clip-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -391,7 +391,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: #1a1a2e;
+  background: $navy;
   height: auto;
 
   img {
@@ -420,12 +420,12 @@
 
   // Desktop
   &__panel-left {
-    background: #5eada5;
+    background: $teal;
     clip-path: polygon(48% 0, 0 0, 0 100%, 58% 100%);
   }
 
   &__panel-right {
-    background: #5eada5;
+    background: $teal;
     clip-path: polygon(100% 0, 48% 0, 58% 100%, 100% 100%);
   }
 
@@ -454,13 +454,13 @@
     }
 
     &__panel-left {
-      background: #5eada5;
+      background: $teal;
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 62%, 0% 45%);
       transform-origin: 0% 50%;
     }
 
     &__panel-right {
-      background: #5eada5;
+      background: $teal;
       clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 0% 45%, 100% 55%);
       transform-origin: 100% 50%;
     }

@@ -9,7 +9,7 @@
 
   ol,
   ul {
-    list-style-type: none !important;
+    list-style-type: none;
   }
 }
 
@@ -155,7 +155,7 @@
   }
 }
 
-.case-item:last-child {
+.p-family__case-item:last-child {
   padding-bottom: 0px;
   border-bottom: none;
 }
@@ -177,8 +177,8 @@
     }
   }
 
-  .banner-sticker2 {
-    .banner-speechbubble1 {
+  .c-banner__sticker2 {
+    .c-banner__speechbubble1 {
       margin-right: 40px;
     }
 

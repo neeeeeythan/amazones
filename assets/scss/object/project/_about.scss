@@ -3,14 +3,14 @@
 // ================================
 // ヒーローセクション 画像スライダー
 // ================================
-.hero-text-slider-container {
+.p-about__hero-slider {
   position: absolute;
   top: 214px;
   left: 105px;
   z-index: 2;
 }
 
-.about-hero-img {
+.p-about__hero-img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -52,6 +52,14 @@
   background-position: -10px 100px;
   padding-top: 100px;
   margin-top: -100px;
+
+  .c-shop {
+    min-height: 900px;
+  }
+
+  .c-shop__container {
+    gap: 50px;
+  }
 }
 
 // ================================
@@ -158,7 +166,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%) !important;
+  transform: translateY(-50%);
   width: 55%;
   max-width: 900px;
   z-index: 2;
@@ -221,6 +229,14 @@
 
   .p-attraction_page {
     margin-top: 0px;
+
+    .c-shop {
+      min-height: unset;
+    }
+
+    .c-shop__container {
+      gap: 0;
+    }
   }
 
   .p-space__container {

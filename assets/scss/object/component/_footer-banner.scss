@@ -68,25 +68,25 @@
 }
 
 // Legacy non-BEM sticker/bubble classes (kept for backwards compatibility)
-.banner-speechbubble1 {
+.c-banner__speechbubble1 {
   position: absolute;
   top: -60px;
   left: -93px;
 }
 
-.banner-sticker2 {
+.c-banner__sticker2 {
   position: absolute;
   top: 30px;
   right: -40px;
 }
 
-.banner-speechbubble2 {
+.c-banner__speechbubble2 {
   position: absolute;
   top: -60px;
   right: -63px;
 }
 
-.banner-stickers-row {
+.c-banner__stickers-row {
   display: contents;
 }
 
@@ -115,8 +115,8 @@
     }
   }
 
-  .banner-sticker1,
-  .banner-sticker2 {
+  .c-banner__sticker1,
+  .c-banner__sticker2 {
     display: none;
   }
 }
@@ -209,7 +209,7 @@
     }
   }
 
-  .banner-stickers-row {
+  .c-banner__stickers-row {
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
@@ -220,8 +220,8 @@
     z-index: 22;
   }
 
-  .banner-sticker1,
-  .banner-sticker2 {
+  .c-banner__sticker1,
+  .c-banner__sticker2 {
     display: block !important;
     position: relative;
     top: 10px;
@@ -246,13 +246,13 @@
     display: block !important;
   }
 
-  .banner-sticker2 img:last-child {
+  .c-banner__sticker2 img:last-child {
     width: 170px;
     height: auto;
     display: block;
   }
 
-  .banner-sticker2 img:first-child {
+  .c-banner__sticker2 img:first-child {
     position: absolute;
     top: -50px;
     right: -5px;
@@ -553,6 +553,6 @@
   gap: 70px;
 }
 
-.nav-menu-popup__bottom--gap {
+.c-nav-menu__bottom--gap {
   gap: 20px;
 }

@@ -82,10 +82,10 @@
 .p-storedetail__content-row--end    { justify-content: flex-end; position: relative; }
 .p-storedetail__voice-col           { gap: 5px; }
 .p-storedetail__review-wrap         { padding-bottom: 26px; }
-.p-storedetail__google-blue         { color: #6186ec !important; }
-.p-storedetail__google-red          { color: #cd523f !important; }
-.p-storedetail__google-yellow       { color: #eabe43 !important; }
-.p-storedetail__google-green        { color: #63a45d !important; }
+.p-storedetail__google-blue         { color: #6186ec; }
+.p-storedetail__google-red          { color: #cd523f; }
+.p-storedetail__google-yellow       { color: #eabe43; }
+.p-storedetail__google-green        { color: #63a45d; }
 .p-storedetail__hidden              { display: none; }
 .p-storedetail__faq-stack           { padding-top: 50px; padding-bottom: 50px; }
 .p-storedetail__faq-section-header  { gap: 26px; margin-top: 50px; margin-bottom: 50px; }
@@ -602,7 +602,7 @@
 // ========================================
 
 // Googleレビュー
-.reviews-widget {
+.p-storedetail__reviews-widget {
   background: white;
   border-radius: 16px;
   padding: 1.8rem 2rem 1.5rem;
@@ -612,7 +612,7 @@
 }
 
 // ヘッダー
-.reviews-header {
+.p-storedetail__reviews-header {
   display: flex;
   align-items: flex-start;
   gap: 1.2rem;
@@ -621,7 +621,7 @@
   border-bottom: 1px solid #eee;
 }
 
-.business-logo {
+.p-storedetail__business-logo {
   width: 60px;
   height: 60px;
   border-radius: 10px;
@@ -639,39 +639,39 @@
   }
 }
 
-.business-info h3 {
+.p-storedetail__business-info h3 {
   font-size: 0.88rem;
   font-weight: 700;
   color: #1a1a2e;
   line-height: 1.4;
 }
 
-.rating-row {
+.p-storedetail__rating-row {
   display: flex;
   align-items: center;
   gap: 0.4rem;
   margin-top: 0.35rem;
 }
 
-.rating-number {
+.p-storedetail__rating-number {
   font-size: 1.15rem;
   font-weight: 700;
   color: #1a1a2e;
 }
 
-.stars {
+.p-storedetail__stars {
   color: #fbbc04;
   font-size: 1.05rem;
   letter-spacing: 1px;
 }
 
-.review-count {
+.p-storedetail__review-count {
   font-size: 0.73rem;
   color: #999;
   margin-top: 0.2rem;
 }
 
-.google-badge {
+.p-storedetail__google-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -694,25 +694,25 @@
 }
 
 // カルーセル
-.carousel-wrapper {
+.p-storedetail__carousel-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   gap: 0.4rem;
 }
 
-.carousel-track-container {
+.p-storedetail__carousel-track-container {
   overflow: hidden;
   flex: 1;
 }
 
-.carousel-track {
+.p-storedetail__carousel-track {
   display: flex;
   gap: 1rem;
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.review-card {
+.p-storedetail__review-card {
   background: #fff;
   border: 1px solid #e8ecf0;
   border-radius: 12px;
@@ -721,14 +721,14 @@
   flex-shrink: 0;
 }
 
-.reviewer-row {
+.p-storedetail__reviewer-row {
   display: flex;
   align-items: center;
   gap: 0.65rem;
   margin-bottom: 0.65rem;
 }
 
-.avatar {
+.p-storedetail__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -743,12 +743,12 @@
   }
 }
 
-.reviewer-info {
+.p-storedetail__reviewer-info {
   flex: 1;
   min-width: 0;
 }
 
-.reviewer-name {
+.p-storedetail__reviewer-name {
   font-size: 0.84rem;
   font-weight: 600;
   color: #1a1a2e;
@@ -757,26 +757,26 @@
   text-overflow: ellipsis;
 }
 
-.review-date {
+.p-storedetail__review-date {
   font-size: 0.72rem;
   color: #aaa;
   margin-top: 0.1rem;
 }
 
-.g-icon {
+.p-storedetail__g-icon {
   width: 18px;
   height: 18px;
   margin-left: auto;
   flex-shrink: 0;
 }
 
-.card-stars {
+.p-storedetail__card-stars {
   color: #fbbc04;
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
 }
 
-.review-text {
+.p-storedetail__review-text {
   font-size: 0.8rem;
   color: #555;
   line-height: 1.6;
@@ -787,7 +787,7 @@
 }
 
 // ナビ
-.nav-btn {
+.p-storedetail__nav-btn {
   background: white;
   border: 1px solid #ddd;
   border-radius: 50%;
@@ -814,14 +814,14 @@
 }
 
 // ドット
-.dots {
+.p-storedetail__dots {
   display: flex;
   justify-content: center;
   gap: 6px;
   margin-top: 1.1rem;
 }
 
-.dot {
+.p-storedetail__dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1356,7 +1356,7 @@
   }
 
   // Dr. Amazones — constrain at tablet too
-  .dr-amazones-container {
+  .p-point__dr-container {
     flex-direction: column;
     overflow: hidden;
 
@@ -1368,7 +1368,7 @@
     }
   }
 
-  .dr-amazones-section {
+  .p-point__dr-section {
     position: static;
     transform: none;
     width: 100%;
@@ -1965,7 +1965,7 @@
   }
 
   // Dr. Amazones Section
-  .dr-amazones-container {
+  .p-point__dr-container {
     flex-direction: column;
     overflow: hidden;
 
@@ -1978,7 +1978,7 @@
     }
   }
 
-  .dr-amazones-section {
+  .p-point__dr-section {
     position: static;
     transform: none;
     width: 100%;
@@ -2093,7 +2093,7 @@
 // MEDIA: max-width 640px
 // ========================================
 @media (max-width: 640px) {
-  .review-card {
+  .p-storedetail__review-card {
     min-width: 100%;
   }
 }

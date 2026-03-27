@@ -33,9 +33,41 @@ $font-zen: "Zen Kaku Gothic New";
 // Background
 $bg-body: #faf8f5;
 
-// Breakpoints
+// Background
+$mainColor2: #faf8f5;
+
+// Transition
+$trans: .3s;
+$opacity: .7;
+
+// Breakpoints (px values for direct use)
 $bp-sm: 767px;
 $bp-md: 1000px;
 $bp-lg: 1090px;
 $bp-xl: 1200px;
 $bp-xxl: 1300px;
+
+// Breakpoints (FLOCSS media query strings)
+$pcBreak: 1025;
+$pcMQ: "(min-width: #{$pcBreak}px)";
+$tabBreak: 1024;
+$tabBreak2: 768;
+$tabMQ: "(min-width: #{$tabBreak}px)";
+$tabMQ2: "(min-width: #{$tabBreak2}px)";
+$underTabMQ: "(max-width: #{($tabBreak - 1)}px)";
+$spBreak: 767;
+$spMQ: "(max-width: #{$spBreak}px)";
+
+// Base sizing
+$pcFs: 16;
+$spFs: 14;
+$pcW: 1440;
+$spW: 375;
+
+// Additional Colors
+$gray-light: #f5f5f5;
+$purple: #6c5ce7;
+$purple-dark: #5b4bc4;
+$dark-teal: #003032;
+$navy: #1a1a2e;
+$teal: #5eada5;
